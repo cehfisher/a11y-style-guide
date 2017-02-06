@@ -488,7 +488,11 @@ hr {
   border: 1px solid rgba(136, 139, 141, 0.25); }
 
 #kss-node .kss-section {
-  margin-bottom: 2rem; }
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(136, 139, 141, 0.25); }
+  #kss-node .kss-section:first-child, #kss-node .kss-section:last-child {
+    border-bottom: 0; }
 
 #kss-node .kss-modifier {
   border-top: 0; }
@@ -572,7 +576,8 @@ hr {
   background: #eeeeee;
   padding: 2rem;
   width: 300px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  float: left; }
   #kss-node .kss-sidebar.kss-fixed .kss-nav {
     padding-right: 0;
     margin: 1rem -0.5rem; }
