@@ -5,6 +5,8 @@
 // wrapper is used to display multiple buttons next to each
 // other, and includes modifiers for different alignments.
 //
+//  A11y tip: A button doesn't need anything special to work! ARIA's role="button" is already assigned natively.
+//
 // .buttons--center - modifier for centered buttons
 // .buttons--right - modifier for right aligned buttons
 //

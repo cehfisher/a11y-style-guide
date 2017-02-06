@@ -10,7 +10,14 @@
 #kss-node {
 
   .kss-section {
-    margin-bottom: $padding-md;
+    margin-bottom: $padding-md-lg;
+    padding-bottom: $padding-md;
+    border-bottom: $border-thin;
+
+    &:first-child,
+    &:last-child {
+      border-bottom: 0;
+    }
   }
 
   .kss-modifier {
@@ -71,12 +78,13 @@
     background: transparent;
   }
 
-  .kss-sidebar.kss-fixed {
+  .kss-sidebar.kss-fixed { // add mobile breakpoint changes
     height: 100% !important;
     background: $color-gallery;
     padding: $padding-md;
     width: 300px;
     box-shadow: $shadow-sm;
+    float: left;
 
     .kss-nav {
       padding-right: 0;

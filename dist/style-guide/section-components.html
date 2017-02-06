@@ -90,6 +90,7 @@
 classes for different colors, sizes, etc. The <code>.buttons</code>
 wrapper is used to display multiple buttons next to each
 other, and includes modifiers for different alignments.</p>
+<p> A11y tip: A button doesn&#39;t need anything special to work! ARIA&#39;s role=&quot;button&quot; is already assigned natively.</p>
 
                 </div>
               
@@ -100,9 +101,12 @@ other, and includes modifiers for different alignments.</p>
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     <div class="buttons ">
-  <a href="#" class="button">Default Button</a>
-  <a href="#" class="button button--outline">Outline Button</a><br><br>
+  <form action="" method="post">
+    <button type="submit" href="#" class="button">Simple A11Y Button</button>
+    <button type="submit" href="#" class="button button--outline">Simple A11Y Button</button>
+  </form>
 </div>
+
                   </div>
                 </div>
 
@@ -115,9 +119,12 @@ other, and includes modifiers for different alignments.</p>
                   </div>
                   <div class="kss-modifier-example">
                     <div class="buttons buttons--center">
-  <a href="#" class="button">Default Button</a>
-  <a href="#" class="button button--outline">Outline Button</a><br><br>
+  <form action="" method="post">
+    <button type="submit" href="#" class="button">Simple A11Y Button</button>
+    <button type="submit" href="#" class="button button--outline">Simple A11Y Button</button>
+  </form>
 </div>
+
                   </div>
                 </div>
                                 <div class="kss-modifier">
@@ -129,18 +136,24 @@ other, and includes modifiers for different alignments.</p>
                   </div>
                   <div class="kss-modifier-example">
                     <div class="buttons buttons--right">
-  <a href="#" class="button">Default Button</a>
-  <a href="#" class="button button--outline">Outline Button</a><br><br>
+  <form action="" method="post">
+    <button type="submit" href="#" class="button">Simple A11Y Button</button>
+    <button type="submit" href="#" class="button button--outline">Simple A11Y Button</button>
+  </form>
 </div>
+
                   </div>
                 </div>
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code data-language="html">&lt;div class=&quot;buttons {{modifier_class}}&quot;&gt;
-  &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Default Button&lt;/a&gt;
-  &lt;a href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Outline Button&lt;/a&gt;&lt;br&gt;&lt;br&gt;
-&lt;/div&gt;</code></pre>
+  &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
+    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Simple A11Y Button&lt;/button&gt;
+    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Simple A11Y Button&lt;/button&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+</code></pre>
                   </template>
                 </div>
                               </div>
