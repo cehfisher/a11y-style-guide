@@ -1,0 +1,11 @@
+# Ignore the node modules folder (created by 'npm install').
+node_modules
+
+# We absolutely don't want to have the .sass-cache in git.
+.sass-cache
+
+# Ignore any errors thrown by npm.
+npm-debug.log
+
+# Ignore any map files. These don't need to be committed.
+*.map

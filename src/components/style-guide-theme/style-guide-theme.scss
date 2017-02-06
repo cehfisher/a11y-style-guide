@@ -1,0 +1,123 @@
+// Style Guide Theme
+//
+// This is the theme styling component for the style guide
+//
+// Markup: style-guide-theme.twig
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+#kss-node {
+
+  .kss-section {
+    margin-bottom: $padding-md;
+  }
+
+  .kss-modifier {
+    border-top: 0;
+  }
+
+  .kss-menu-full-width {
+    @include button;
+    margin-top: $padding-md;
+  }
+
+  .kss-wrapper {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  h1 > a,
+  h2 > a,
+  h3 > a,
+  .kss-menu > .kss-menu-item > a > .kss-ref,
+  .kss-menu-child > .kss-menu-item > a > .kss-ref {
+    text-align: left;
+    margin-bottom: 0;
+    color: $color-cherry;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-ruby;
+      text-decoration: underline;
+    }
+  }
+
+  .kss-doc-title,
+  h1,
+  h2 {
+    text-align: left;
+    margin-bottom: 0;
+    color: $color-cherry;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  h2,
+  h3 {
+    text-transform: uppercase;
+    color: $color-midnight;
+  }
+
+  .kss-depth-1 .kss-title,
+  .kss-overview > h1:first-child {
+    border-bottom: $border-regular;
+  }
+
+  .kss-header {
+    background: transparent;
+  }
+
+  .kss-sidebar.kss-fixed {
+    height: 100% !important;
+    background: $color-gallery;
+    padding: $padding-md;
+    width: 300px;
+    box-shadow: $shadow-sm;
+
+    .kss-nav {
+      padding-right: 0;
+      margin: $padding-sm (-$padding-xxsm);
+    }
+
+    .kss-sidebar-inner {
+      padding-top: $padding-md;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+
+  .kss-content {
+    margin-left: 350px;
+    padding-left: $padding-xxsm;
+  }
+
+  .kss-menu,
+  .kss-menu-child,
+  .kss-menu > .kss-menu-item > a {
+    border-bottom: 0;
+
+    > .kss-menu-item > a > .kss-name {
+      text-align: left;
+      color: $color-midnight;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $color-manatee;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .kss-menu-child {
+    padding: 0;
+  }
+
+  .kss-menu > .kss-menu-item {
+    margin: $padding-xxsm;
+  }
+}

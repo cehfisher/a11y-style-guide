@@ -1,0 +1,164 @@
+# http://eslint.org/docs/rules/
+# =============================
+# Which environments your script is designed to run in.
+# Each environment brings with it a certain set of predefined global variables.
+env:
+
+  # Define globals exposed by Node.js.
+  node: true
+
+  # Define globals exposed by modern browsers.
+  browser: true
+
+  # Define globals exposed by ES6 / ES2015 EXCEPT for modules.
+  es6: true
+
+  # Define globals exposed by jQuery.
+  jquery: true
+
+# Let ESLint know about defined global variables.
+globals:
+
+  Drupal: true
+
+  drupalSettings: true
+
+# Inherit settings from ESLint Recommended config.
+# Rules above override any rules configured here.
+extends: 'eslint:recommended'
+
+#  0 - turn the rule off
+#  1 - turn the rule on as a warning (doesn't affect exit code)
+#  2 - turn the rule on as an error (exit code is 1 when triggered)
+rules:
+
+  # Two space indentation.
+  indent:
+    - 2
+    - 2
+    - SwitchCase: 1
+
+  # Prefer single quotes over double.
+  quotes:
+    - 2
+    - single
+
+  # Specify Unix line endings.
+  linebreak-style:
+    - 2
+    - unix
+
+  # Enforce using semicolons.
+  semi:
+    - 2
+    - always
+
+  # Enforce camelcase for variables.
+  camelcase:
+    - 2
+
+  # Prohibit use of == and != in favor of === and !==.
+  eqeqeq:
+    - 2
+
+  # Enforce placing 'use strict' at the top function scope
+  strict:
+    - 2
+    - function
+
+  # Prohibit use of a variable before it is defined.
+  no-undef:
+    - 1
+
+  # Enforce line length to 80 characters
+  max-len:
+    - 2
+    - 80
+    - 2
+
+  # Require capitalized names for constructor functions.
+  new-cap:
+    - 2
+
+  # Warn when variables are defined but never used.
+  no-unused-vars:
+    - 1
+
+  # Require one var declaration for each variable and
+  # declare each variable on a newline.
+  one-var:
+    - 2
+    - never
+
+  # Enforce stroustrup style for braces.
+  brace-style:
+    - 2
+    - stroustrup
+
+  # Validates JSDoc comments are syntactically correct
+  valid-jsdoc:
+    - 2
+
+  # Treat var as Block Scoped
+  block-scoped-var:
+    - 1
+
+  # Require Following Curly Brace Conventions
+  curly:
+    - 2
+
+  # Disallow Use of Alert
+  no-alert:
+    - 1
+
+  # Disallow eval()
+  no-eval:
+    - 2
+
+  # Disallow the type conversion with shorter notations
+  no-implicit-coercion:
+    - 2
+
+  # Disallow Functions in Loops
+  no-loop-func:
+    - 2
+
+  # Disallow Script URLs
+  no-script-url:
+    - 2
+
+  # Disallow Use of the Comma Operator
+  no-sequences:
+    - 2
+
+  # Disallow unnecessary concatenation of strings
+  no-useless-concat:
+    - 2
+
+  # Disallow Yoda Conditions
+  yoda:
+    - 2
+
+  # Disallow Early Use
+  no-use-before-define:
+    - 2
+
+  # Require file to end with single newline
+  eol-last:
+    - 2
+
+  # Disallow trailing spaces at the end of lines
+  no-trailing-spaces:
+    - 2
+
+  # Disallow Dangling Underscores in Identifiers
+  no-underscore-dangle:
+    - 2
+
+  # Require JSDoc comment
+  require-jsdoc:
+    - 2
+
+  # Require Or Disallow Space Before Blocks
+  space-before-blocks:
+    - 2

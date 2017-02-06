@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>A11y Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  {{ styles|raw }}
+</head>
+<body id="kss-node">
+  <div class="kss-wrapper">
+
+    <div class="kss-sidebar">
+      <div class="kss-sidebar-inner">
+        <header class="kss-header">
+          <h1 class="kss-doc-title">A11y Style Guide</h1>
+        </header>
+        <nav class="kss-nav">
+          <ul class="kss-menu">
+            <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+            {% for menu_item in menu %}
+              <li class="kss-menu-item">
+                <a href="section-{{ menu_item.referenceURI }}.html"><span class="kss-ref">{{ menu_item.referenceNumber }}</span><span class="kss-name">{{ menu_item.header }}</span></a>
+                {% if menu_item.isActive and menu_item.children is not empty %}
+                  <ul class="kss-menu-child">
+                    {% for menu_child in menu_item.children %}
+                      <li class="kss-menu-item">
+                        <a href="#kssref-{{ menu_child.referenceURI }}">
+                          <span class="kss-ref {% if menu_child.isGrandChild %}kss-nav__ref-child{% endif %}">{{ menu_child.referenceNumber }}</span
+                            ><span class="kss-name">{{ menu_child.header }}</span>
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+            <li><button class="kss-menu-full-width js-full-width" title="Remove navigation and padding to show what a component looks like at full page width.">Remove Navigation</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="kss-content">
+      <article role="main" class="kss-article">
+      {% if homepage %}
+        <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
+          {{ homepage|raw }}
+        </div>
+      {% else %}
+
+        {#
+          Display each section, in order.
+
+          The "root" element comes first in this loop, and can be detected using the
+          "loop.first" variable as seen below.
+        #}
+        {% for section in sections %}
+          {% set sectionElement = loop.first ? 'div' : 'section' %}
+          <{{ sectionElement }} id="kssref-{{ section.referenceURI }}" class="kss-section kss-depth-{{ section.depth }}">
+            <div class="kss-style">
+              {% set headerElement = (section.depth > 6) ? 'h6' : 'h' ~ section.depth %}
+              <{{ headerElement }} class="kss-title kss-title--level-{{ section.depth }}">
+                <a class="kss-title__permalink" href="#kssref-{{ section.referenceURI }}">
+                  {{ section.header }}
+                </a>
+              </{{ headerElement }}>
+
+              {% if section.description %}
+                <div class="kss-description">
+                  {{ section.description|raw }}
+                </div>
+              {% endif %}
+
+              {% for parameter in section.parameters %}
+                {% if loop.first %}
+                  <div class="kss-parameters__title">Parameters:</div>
+                  <ul class="kss-parameters">
+                {% endif %}
+                  <li class="kss-parameters__item">
+                    <div class="kss-parameters__name"><code>{{ parameter.name }}</code></div>
+                    <div class="kss-parameters__description">
+                      {{ parameter.description|raw }}
+                      {% if parameter.defaultValue %}
+                        <div class="kss-parameters__default-value">
+                          Defaults to: <code>{{ parameter.defaultValue }}</code>
+                        </div>
+                      {% endif %}
+                    </div>
+                  </li>
+                {% if loop.last %}
+                  </ul>
+                {% endif %}
+              {% endfor %}
+            </div>
+
+            {% if section.example %}
+              <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    {{ section.example|raw }}
+                  </div>
+                </div>
+
+                {% for modifier in section.modifiers %}
+                <div class="kss-modifier">
+                  <div class="kss-modifier-head">
+                    <div class="kss-modifier-name">{{ modifier.name }}</div>
+                    <div class="kss-modifier-description">
+                      {{ modifier.description|raw }}
+                    </div>
+                  </div>
+                  <div class="kss-modifier-example">
+                    {{ modifier.markup|raw }}
+                  </div>
+                </div>
+                {% endfor %}
+                {% if section.markup %}
+                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ section.markup|escape('html') }}</code></pre>
+                  </template>
+                </div>
+                {% endif %}
+              </div>
+
+              {% if section.sourceFile.name %}
+                <div class="kss-source kss-style">
+                  Source: <code>{{ section.sourceFile.name }}</code>, line {{ section.sourceFile.line }}
+                </div>
+              {% endif %}
+            {% endif %}
+          </{{ sectionElement }}>
+        {% endfor %}
+      {% endif %}
+      </article>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<!-- Fake drupalSettings -->
+<script type="application/json" data-drupal-selector="drupal-settings-json">
+  {}
+</script>
+<!-- / Fake drupalSettings -->
+<script src="/core/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/core/assets/vendor/jquery-once/jquery.once.min.js"></script>
+<script src="/core/assets/vendor/domready/ready.min.js"></script>
+<script src="/core/misc/drupalSettingsLoader.js"></script>
+<script src="/core/misc/drupal.js"></script>
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/rainbow.min.js"></script>
+<script src="kss-assets/main.js"></script>
+{{ scripts|raw }}
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

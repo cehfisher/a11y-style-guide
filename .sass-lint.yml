@@ -1,0 +1,247 @@
+# Custom configuration for Sass lint.
+# https://github.com/sasstools/sass-lint
+
+options:
+  formatter: stylish
+  merge-default-rules: true
+
+# For all rules, setting their severity to 0 turns it off,
+# setting to 1 sets it as a warning (something that should not be committed in),
+# and setting to 2 set it to an error (something that should not be written).
+#
+# More info can be found here:
+# https://github.com/sasstools/sass-lint/tree/develop/docs/rules
+rules:
+
+  # Prefer the terser border: 0 over border: none.
+  border-zero:
+    - 1
+    - convention: '0'
+
+  # Prefer
+  #
+  # .foo {
+  #   content: 'foo';
+  # }
+  #
+  # over
+  #
+  # .foo
+  # {
+  #   content: 'foo';
+  # }
+  # Allow single line for one off cases.
+  brace-style:
+    - 1
+    -
+      style: stroustrup
+      allow-single-line: true
+
+  # Prefer @import paths without leading underscores and/or
+  # file extensions.
+  clean-import-paths:
+    - 1
+    -
+      filename-extension: false
+      leading-underscore: false
+
+  # Prefer empty lines between code blocks when nestings.
+  empty-line-between-blocks:
+    - 1
+    - include: true
+
+  # Prefer newline at the end of a file.
+  final-newline:
+    - 1
+    - include: true
+
+  # Don't enforce attribute nesting.
+  force-attribute-nesting: 0
+
+  # Don't enforce element nesting.
+  force-element-nesting: 0
+
+  # Don't enforce pseudo nesting.
+  force-pseudo-nesting: 0
+
+  # Prefer function name formatting with dashes.
+  function-name-format:
+    - 1
+    -
+      allow-leading-underscore: true
+      convention: hyphenatedlowercase
+
+  # Prefer short hexadecimal values for colors.
+  # #FFF vs #FFFFFF
+  hex-length:
+    - 0
+    - style: short
+
+  # Don't enforce hex-notation.
+  # #FFF vs #fff
+  hex-notation:
+    - 0
+    - style: lowercase
+
+  # Prefer two spaces for indentation.
+  indentation:
+    - 1
+    - width: 2
+
+  # Prefer leading zero for readability.
+  leading-zero:
+    - 1
+    - include: true
+
+  # Prefer mixin names with dashes.
+  mixin-name-format:
+    - 1
+    -
+      allow-leading-underscore: true
+      convention: hyphenatedlowercase
+
+  # Prefer a max-depth of 3 for nesting. 2 would really be best.
+  nesting-depth:
+    - 1
+    - max-depth: 3
+
+  # No preference for color keywords.
+  no-color-keyword: 0
+
+  # No preference for color literals.
+  no-color-literals: 0
+
+  # Allow css comments.
+  no-css-comments: 0
+
+  # Prefer debug not be used.
+  no-debug: 1
+
+  # Prefer no duplicate properties except display.
+  no-duplicate-properties:
+    - 1
+    -
+      exclude:
+        - display
+        - background
+
+  # Enforce no empty rulesets.
+  no-empty-rulesets: 2
+
+  # Let's just go ahead and say 'no extends'.
+  no-extends: 1
+
+  # Prefer no ID selectors.
+  no-ids: 1
+
+  # Prefer no importants.
+  no-important: 1
+
+  # Enforce that all hex values must be valid.
+  no-invalid-hex: 2
+
+  # Prefer no duplicate selectors that can be merged.
+  no-mergeable-selectors: 1
+
+  # Enforce that all properties are spelled correctly.
+  no-misspelled-properties:
+    - 2
+    -
+      extra-properties: []
+
+  # Prefer only allowing elements to be qualified with attributes.
+  no-qualifying-elements:
+    - 1
+    -
+      allow-element-with-attribute: true
+      allow-element-with-class: false
+      allow-element-with-id: false
+
+  class-name-format:
+    - 2
+    - allow-leading-underscore: false
+      convention: hyphenatedbem
+
+  # No preference for trailing zeros.
+  no-trailing-zero: 0
+
+  # Prefer no url absolute url paths.
+  no-url-protocols: 1
+
+  # No preference for property sort order.
+  property-sort-order: 0
+
+  # Prefer single quotes.
+  quotes:
+    - 1
+    - style: single
+
+  # Prefer shorthand values be as concise as possible.
+  #
+  # margin: 1px 1px 1px 1px;
+  #
+  # // Will be enforced to 1 value
+  # margin: 1px;
+  shorthand-values: 1
+
+  # Prefer single line per selector.
+  single-line-per-selector: 1
+
+  # Prefer no space after bang(!).
+  space-after-bang:
+    - 1
+    - include: false
+
+  # Prefer space after colon.
+  space-after-colon:
+    - 1
+    - include: true
+
+  # Prefer space after comma.
+  space-after-comma:
+    - 1
+    - include: true
+
+  # Prefer space before bang(!).
+  space-before-bang:
+    - 1
+    - include: true
+
+  # Prefer space before a brace.
+  space-before-brace:
+    - 1
+    - include: true
+
+  # Prefer NO space before colon.
+  space-before-colon: 1
+
+  # Prefer NO space between parenthesis(()).
+  space-between-parens:
+    - 1
+    - include: false
+
+  # Enforce ending each declaration with a semicolon(;).
+  trailing-semicolon: 2
+
+  # Prefer that url() uses quotes.
+  #
+  # .foo {
+  #   background-image: url('foo.png');
+  # }
+  url-quotes: 1
+
+  # No preference for forcing certain properties to use variables.
+  variable-for-property:
+    - 0
+    - properties: []
+
+  # Prefer hyphenated lowercase for variable names.
+  variable-name-format:
+    - 1
+    -
+      allow-leading-underscore: true
+      convention: hyphenatedlowercase
+
+  # Prefer zero values to be unitless.
+  # 0 vs 0px
+  zero-unit: 1

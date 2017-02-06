@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Macro for embedding svg icons
+ *
+ * @var string name
+ *   The name of the svg to embed. It should match one of the svgs
+ *   that exist within the icons/assets/ directory.
+ *
+ * Optional vars:
+ * @var string classNames
+ *   Any additional classes to be added to the svg element.
+ *   The default classes will be replaced with any classes provided.
+ */
+#}
+{% macro get(name, classNames) %}
+  {% include 'assets/' ~ name ~ '.svg.twig' with {
+    'classNames': classNames,
+    'name': name
+  } only %}
+{% endmacro %}

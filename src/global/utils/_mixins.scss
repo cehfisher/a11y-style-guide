@@ -1,0 +1,108 @@
+//=======================================================
+// Mixins
+//=======================================================
+
+// Clearfix
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+// Makes an element visually hidden, but accessible.
+// @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+@mixin element-invisible {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Turns off the element-invisible effect.
+@mixin element-invisible-off {
+  position: static !important;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: auto;
+}
+
+// Makes an element visually hidden by default, but visible when focused.
+@mixin element-focusable {
+  @include element-invisible;
+
+  &:active,
+  &:focus {
+    @include element-invisible-off;
+  }
+}
+
+// Helper function for working with Sass maps.
+// Example: @include print($configuration);
+@mixin print($declarations) {
+  @each $property, $value in $declarations {
+    #{$property}: $value;
+  }
+}
+
+// Mixin for standard buttons
+@mixin button($hover-color: $color-ruby, $background: $color-cherry, $color: $color-white, $padding: 0.8rem $padding-sm, $corners: $border-rd-md) {
+  display: inline-block;
+  background-color: $background;
+  color: $color;
+  padding: $padding;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  min-height: $button-min-height;
+  border: 3px solid $background;
+  border-radius: $border-rd-sm;
+  box-shadow: $shadow-sm;
+  text-transform: uppercase;
+  font-size: $padding-sm;
+  margin: 5px;
+
+  &:hover,
+  &:focus {
+    background-color: $color-ruby;
+    color: $color-white;
+    border: 3px solid $hover-color;
+    text-decoration: underline;
+    @include box-shadow;
+  }
+}
+
+// Mixin for outline buttons
+@mixin button-outline($hover-color: $color-ruby, $color: $color-cherry, $padding: 0.8rem $padding-sm, $corners: $border-rd-md) {
+  @include button;
+  color: $color;
+  background-color: transparent;
+  border: 3px solid $color;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $hover-color;
+    @include box-shadow;
+  }
+}
+
+@mixin outline-shadow {
+  box-shadow: $shadow-sm,
+              inset $shadow-sm;
+}
+
+@mixin box-shadow {
+  box-shadow: $shadow-sm;
+}
+
+@mixin box-shadow-large {
+  box-shadow: $shadow-lg;
+}
+
+@mixin text-shadow {
+  text-shadow: $shadow-sm;
+}

@@ -1,0 +1,9 @@
+{% import "icons.twig" as icons %}
+<div class="kss-icons">
+{% for item in items %}
+  <div class="kss-icons__item">
+    {{ icons.get(item.icon, 'kss-icons__icon') }}
+    <p class="kss-icons__name">{{ item.icon }}</p>
+  </div>
+{% endfor %}
+</div>

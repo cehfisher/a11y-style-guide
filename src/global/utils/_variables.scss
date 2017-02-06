@@ -1,0 +1,28 @@
+//=======================================================
+// Variables
+//=======================================================
+
+$asset-path: '../assets/dist';
+
+$border-rd-sm: 4px;
+$border-rd-md: 12px;
+$border-rd-lg: 32px;
+
+$border-thin: 1px solid rgba(136, 139, 141, 0.25);
+$border-regular: 2px solid rgba(136, 139, 141, 0.5);
+$border-bold: 2px solid rgba(136, 139, 141, 0.75);
+
+$padding-xxsm: 0.5rem;
+$padding-xsm: 0 0.5rem;
+$padding-sm: 1rem;
+$padding-md: 2rem;
+$padding-lg: 4rem;
+$padding-xl: 6rem;
+$padding-xxl: 8rem;
+$padding-xxxl: 10rem;
+
+$shadow-sm: 0 0 2px rgba(0, 0, 0, 0.5);
+$shadow-md: 0 2px 2px rgba(136, 139, 141, 0.5);
+$shadow-lg: 0 4px 2px rgba(136, 139, 141, 0.5);
+
+$button-min-height: 2rem;

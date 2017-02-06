@@ -1,0 +1,58 @@
+// Colors
+//
+// All Sass color variables prefixed with $color-.
+// This makes it easy to figure out what a variable
+// is for later.
+//
+// Markup:
+// <h3>Primary</h3>
+// <div class="kss-swatch" style="background-color: #ec1c24">
+//   <div class="kss-swatch__hex">$color-cherry<br>#ec1c24</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #a51323">
+//   <div class="kss-swatch__hex">$color-ruby<br>#a51323</div>
+// </div>
+// <hr>
+// <h3>Black, White, Grays</h3>
+// <div class="kss-swatch" style="background-color: #000">
+//   <div class="kss-swatch__hex">$color-black<br>#000</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #464646">
+//   <div class="kss-swatch__hex">$color-midnight<br>#464646</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #888b8d">
+//   <div class="kss-swatch__hex">$color-manatee<br>#888b8d</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #bbb">
+//   <div class="kss-swatch__hex">$color-silver<br>#bbb</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #ddd">
+//   <div class="kss-swatch__hex">$color-alto<br>#ddd</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #eee">
+//   <div class="kss-swatch__hex">$color-gallery<br>#eee</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #f7f7f7">
+//   <div class="kss-swatch__hex">$color-alabaster<br>#f7f7f7</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #FFF">
+//   <div class="kss-swatch__hex">$color-white<br>#FFF</div>
+// </div>
+//
+// Weight: 999
+//
+// Style guide: colors
+
+// Primary
+$color-cherry: #ec1c24;
+$color-ruby: #a51323;
+
+// Grays
+$color-black: #000000;
+$color-midnight: #464646;
+$color-manatee: #888b8d;
+$color-silver: #bbbbbb;
+$color-alto: #dddddd;
+$color-gallery: #eeeeee;
+$color-alabaster: #f7f7f7;
+$color-white: #ffffff;

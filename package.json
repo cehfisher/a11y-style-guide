@@ -1,0 +1,33 @@
+{
+  "name": "a11y",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "gulp",
+    "compile": "gulp compile",
+    "watch": "gulp watch",
+    "styleguide": "gulp styleguide",
+    "compress": "gulp compress",
+    "lint": "gulp lint",
+    "clean": "gulp clean",
+    "gulp": "gulp"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-remove-strict-mode": "0.0.2",
+    "babel-preset-es2015": "^6.18.0",
+    "browser-sync": "^2.18.2",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-order": "^1.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-lint": "^1.3.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "kss": "^3.0.0-beta.17",
+    "run-sequence": "^1.2.2"
+  }
+}

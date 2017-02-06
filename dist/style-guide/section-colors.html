@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>A11y Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="../all/all.css">
+
+</head>
+<body id="kss-node">
+  <div class="kss-wrapper">
+
+    <div class="kss-sidebar">
+      <div class="kss-sidebar-inner">
+        <header class="kss-header">
+          <h1 class="kss-doc-title">A11y Style Guide</h1>
+        </header>
+        <nav class="kss-nav">
+          <ul class="kss-menu">
+            <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+                          <li class="kss-menu-item">
+                <a href="section-components.html"><span class="kss-ref">1</span><span class="kss-name">Components</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-icons.html"><span class="kss-ref">2</span><span class="kss-name">Icons</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-colors.html"><span class="kss-ref">3</span><span class="kss-name">Colors</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-type.html"><span class="kss-ref">4</span><span class="kss-name">Type</span></a>
+                              </li>
+                        <li><button class="kss-menu-full-width js-full-width" title="Remove navigation and padding to show what a component looks like at full page width.">Remove Navigation</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="kss-content">
+      <article role="main" class="kss-article">
+      
+        
+                            <div id="kssref-colors" class="kss-section kss-depth-1">
+            <div class="kss-style">
+                            <h1 class="kss-title kss-title--level-1">
+                <a class="kss-title__permalink" href="#kssref-colors">
+                  Colors
+                </a>
+              </h1>
+
+                              <div class="kss-description">
+                  <p>All Sass color variables prefixed with $color-.
+This makes it easy to figure out what a variable
+is for later.</p>
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    <h3>Primary</h3>
+<div class="kss-swatch" style="background-color: #ec1c24">
+  <div class="kss-swatch__hex">$color-cherry<br>#ec1c24</div>
+</div>
+<div class="kss-swatch" style="background-color: #a51323">
+  <div class="kss-swatch__hex">$color-ruby<br>#a51323</div>
+</div>
+<hr>
+<h3>Black, White, Grays</h3>
+<div class="kss-swatch" style="background-color: #000">
+  <div class="kss-swatch__hex">$color-black<br>#000</div>
+</div>
+<div class="kss-swatch" style="background-color: #464646">
+  <div class="kss-swatch__hex">$color-midnight<br>#464646</div>
+</div>
+<div class="kss-swatch" style="background-color: #888b8d">
+  <div class="kss-swatch__hex">$color-manatee<br>#888b8d</div>
+</div>
+<div class="kss-swatch" style="background-color: #bbb">
+  <div class="kss-swatch__hex">$color-silver<br>#bbb</div>
+</div>
+<div class="kss-swatch" style="background-color: #ddd">
+  <div class="kss-swatch__hex">$color-alto<br>#ddd</div>
+</div>
+<div class="kss-swatch" style="background-color: #eee">
+  <div class="kss-swatch__hex">$color-gallery<br>#eee</div>
+</div>
+<div class="kss-swatch" style="background-color: #f7f7f7">
+  <div class="kss-swatch__hex">$color-alabaster<br>#f7f7f7</div>
+</div>
+<div class="kss-swatch" style="background-color: #FFF">
+  <div class="kss-swatch__hex">$color-white<br>#FFF</div>
+</div>
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">&lt;h3&gt;Primary&lt;/h3&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #ec1c24&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-cherry&lt;br&gt;#ec1c24&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #a51323&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-ruby&lt;br&gt;#a51323&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3&gt;Black, White, Grays&lt;/h3&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #000&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-black&lt;br&gt;#000&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #464646&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-midnight&lt;br&gt;#464646&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #888b8d&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-manatee&lt;br&gt;#888b8d&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #bbb&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-silver&lt;br&gt;#bbb&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #ddd&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-alto&lt;br&gt;#ddd&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #eee&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-gallery&lt;br&gt;#eee&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #f7f7f7&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-alabaster&lt;br&gt;#f7f7f7&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #FFF&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-white&lt;br&gt;#FFF&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </div>
+                    </article>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<!-- Fake drupalSettings -->
+<script type="application/json" data-drupal-selector="drupal-settings-json">
+  {}
+</script>
+<!-- / Fake drupalSettings -->
+<script src="/core/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/core/assets/vendor/jquery-once/jquery.once.min.js"></script>
+<script src="/core/assets/vendor/domready/ready.min.js"></script>
+<script src="/core/misc/drupalSettingsLoader.js"></script>
+<script src="/core/misc/drupal.js"></script>
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/rainbow.min.js"></script>
+<script src="kss-assets/main.js"></script>
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

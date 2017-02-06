@@ -1,0 +1,20 @@
+// Misc Styling
+//
+// This is the Misc styling component for small changes that do not need a full component
+//
+// Markup: misc.twig
+//
+// Style guide: Components.misc
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+body {
+  @include font-stack-base;
+  color: $color-midnight;
+}
+
+hr {
+  margin: $padding-md 0;
+  border: $border-thin;
+}

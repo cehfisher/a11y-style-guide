@@ -1,0 +1,17 @@
+{
+  "heading": "Sample List component",
+  "items":[
+    {
+      "title": "This is the first title",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "title": "This is the second title",
+      "desc": "Donec tristique varius tortor, a rutrum mauris rhoncus venenatis."
+    },
+    {
+      "title": "This is the third title",
+      "desc": "Etiam ac mauris vitae ante vulputate convallis non eu orci."
+    }
+  ]
+}

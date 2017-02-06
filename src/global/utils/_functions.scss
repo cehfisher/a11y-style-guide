@@ -1,0 +1,13 @@
+//=======================================================
+// Functions
+//=======================================================
+
+// Function to return a value from a map based on a key.
+@function get-var($key, $map) {
+  @if map-has-key($map, $key) {
+    @return map-get($map, $key);
+  }
+
+  @warn 'Unknown `#{$key}` in map. Try "@include print($map);" to see what\'s available.';
+  @return null;
+}

@@ -1,0 +1,42 @@
+// Type
+//
+// Custom fonts are loaded via JavaScript provided by fonts.com.
+//
+// Markup:
+// <h3>Base</h3>
+// <div style="font: 20px/2 'Verdana'"> Verdana Medium </div>
+// <div style="font: italic 20px/2 'Verdana'"> Verdana Italic </div>
+// <div style="font: bold 20px/2 'Verdana'"> Verdana Bold </div>
+// <div style="font: bold italic 20px/2 'Verdana'"> Verdana Bold Italic </div>
+// <hr>
+// <h3>Secondary</h3>
+// <div style="font: 20px/2 'Tahoma'"> Tahoma Light </div>
+// <div style="font: italic 20px/2 'Tahoma'"> Tahoma Light Italic </div>
+// <div style="font: 500 20px/2 'Tahoma'"> Tahoma Roman </div>
+// <div style="font: bold 20px/2 'Tahoma'"> Tahoma Italic </div>
+// <div style="font: bold italic 20px/2 'Tahoma'"> Tahoma Medium </div>
+// <hr>
+// <h3>Tertiary</h3>
+// <div style="font: 20px/2 'Georgia'"> Georgia Bold </div>
+// <div style="font: italic 20px/2 'Georgia'"> Georgia Bold Italic </div>
+// <div style="font: bold 20px/2 'Georgia'"> Georgia Italic </div>
+// <div style="font: bold italic 20px/2 'Georgia'"> Georgia Regular </div>
+//
+// Weight: 999
+//
+// Style guide: Type
+
+@mixin font-stack-base {
+  font-family: 'Verdana', 'Arial', sans-serif;
+}
+
+@mixin font-stack-secondary {
+  font-family: 'Tahoma', 'Arial', sans-serif;
+}
+
+@mixin font-stack-tertiary {
+  font-family: 'Georgia', serif;
+}
+
+$font-weight-bold: bold;
+$font-italic: italic;
