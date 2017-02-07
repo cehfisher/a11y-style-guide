@@ -84,9 +84,12 @@
 classes for different colors, sizes, etc. The <code>.buttons</code>
 wrapper is used to display multiple buttons next to each
 other, and includes modifiers for different alignments.</p>
-<p><b>A11y pro tip</b>:</p>
-<p>A <code>&lt;button&gt;</code> doesn&#39;t need anything special to work. ARIA&#39;s role=&quot;button&quot; is already assigned natively. If you are using a link as a button, add the <code>role=&quot;button&quot;</code> attribute.</p>
-
+<p><b>A11y pro tips</b>:</p>
+<ul>
+ <li>A <code>&lt;button&gt;</code> doesn&#39;t need anything special to work. ARIA&#39;s role=&quot;button&quot; is already assigned natively.</li>
+ <li>If you are using a link as a button, add the <code>role=&quot;button&quot;</code> attribute.</li>
+ <li>Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
+</ul>
                 </div>
               
                           </div>
@@ -99,7 +102,7 @@ other, and includes modifiers for different alignments.</p>
   <form action="" method="post">
     <button type="submit" href="#" class="button">Button</button>
     <button type="submit" href="#" class="button button--outline">Button Outline</button>
-    <a href="#" class="button" role="button">Link styled as button</a>
+    <a href="#" class="button" role="button">Read More<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
   </form>
 </div>
 
@@ -118,7 +121,7 @@ other, and includes modifiers for different alignments.</p>
   <form action="" method="post">
     <button type="submit" href="#" class="button">Button</button>
     <button type="submit" href="#" class="button button--outline">Button Outline</button>
-    <a href="#" class="button" role="button">Link styled as button</a>
+    <a href="#" class="button" role="button">Read More<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
   </form>
 </div>
 
@@ -136,7 +139,7 @@ other, and includes modifiers for different alignments.</p>
   <form action="" method="post">
     <button type="submit" href="#" class="button">Button</button>
     <button type="submit" href="#" class="button button--outline">Button Outline</button>
-    <a href="#" class="button" role="button">Link styled as button</a>
+    <a href="#" class="button" role="button">Read More<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
   </form>
 </div>
 
@@ -149,7 +152,7 @@ other, and includes modifiers for different alignments.</p>
   &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
     &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Button&lt;/button&gt;
     &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Button Outline&lt;/button&gt;
-    &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Link styled as button&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Read More&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
   &lt;/form&gt;
 &lt;/div&gt;
 </code></pre>
@@ -178,20 +181,33 @@ other, and includes modifiers for different alignments.</p>
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<section class="sample-list">
-  <h2 class="sample-list__heading">Sample List component</h2>
-    <article class="sample-list__item">
+<section class="list">
+  <h2 id="sample-list1" class="sample-list__heading">Sample List component</h2>
+    <article aria-labelledby="sample-list1" class="sample-list__item">
     <h3>This is the first title</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </article>
-    <article class="sample-list__item">
+    <article aria-labelledby="sample-list1" class="sample-list__item">
     <h3>This is the second title</h3>
     <p>Donec tristique varius tortor, a rutrum mauris rhoncus venenatis.</p>
   </article>
-    <article class="sample-list__item">
+    <article aria-labelledby="sample-list1" class="sample-list__item">
     <h3>This is the third title</h3>
     <p>Etiam ac mauris vitae ante vulputate convallis non eu orci.</p>
   </article>
+  </section>
+<hr>
+<section class="list">
+  <h2 id="sample-list2" class="sample-list__heading">Sample List component</h2>
+    <ul aria-labelledby="sample-list2" class="sample-list__item">
+    <li>This is the first title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+  </ul>
+    <ul aria-labelledby="sample-list2" class="sample-list__item">
+    <li>This is the second title: Donec tristique varius tortor, a rutrum mauris rhoncus venenatis.</li>
+  </ul>
+    <ul aria-labelledby="sample-list2" class="sample-list__item">
+    <li>This is the third title: Etiam ac mauris vitae ante vulputate convallis non eu orci.</li>
+  </ul>
   </section>
 
                   </div>
@@ -200,14 +216,23 @@ other, and includes modifiers for different alignments.</p>
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/sample-list&#039;) }}
-&lt;section class=&quot;sample-list&quot;&gt;
-  &lt;h2 class=&quot;sample-list__heading&quot;&gt;{{ heading }}&lt;/h2&gt;
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/list&#039;) }}
+&lt;section class=&quot;list&quot;&gt;
+  &lt;h2 id=&quot;sample-list1&quot; class=&quot;sample-list__heading&quot;&gt;{{ heading }}&lt;/h2&gt;
   {% for item in items %}
-  &lt;article class=&quot;sample-list__item&quot;&gt;
+  &lt;article aria-labelledby=&quot;sample-list1&quot; class=&quot;sample-list__item&quot;&gt;
     &lt;h3&gt;{{ item.title }}&lt;/h3&gt;
     &lt;p&gt;{{ item.desc }}&lt;/p&gt;
   &lt;/article&gt;
+  {% endfor %}
+&lt;/section&gt;
+&lt;hr&gt;
+&lt;section class=&quot;list&quot;&gt;
+  &lt;h2 id=&quot;sample-list2&quot; class=&quot;sample-list__heading&quot;&gt;{{ heading }}&lt;/h2&gt;
+  {% for item in items %}
+  &lt;ul aria-labelledby=&quot;sample-list2&quot; class=&quot;sample-list__item&quot;&gt;
+    &lt;li&gt;{{ item.title }}: {{ item.desc }}&lt;/li&gt;
+  &lt;/ul&gt;
   {% endfor %}
 &lt;/section&gt;
 </code></pre>

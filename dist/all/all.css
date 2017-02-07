@@ -488,6 +488,16 @@ hr {
   margin: 2rem 0;
   border: 1px solid rgba(136, 139, 141, 0.25); }
 
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
 #kss-node .kss-section {
   margin-bottom: 3rem;
   padding-bottom: 2rem;
