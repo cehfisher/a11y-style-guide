@@ -1,10 +1,19 @@
-{{ attach_library('theme_name/sample-list') }}
-<section class="sample-list">
-  <h2 class="sample-list__heading">{{ heading }}</h2>
+{{ attach_library('theme_name/list') }}
+<section class="list">
+  <h2 id="sample-list1" class="sample-list__heading">{{ heading }}</h2>
   {% for item in items %}
-  <article class="sample-list__item">
+  <article aria-labelledby="sample-list1" class="sample-list__item">
     <h3>{{ item.title }}</h3>
     <p>{{ item.desc }}</p>
   </article>
+  {% endfor %}
+</section>
+<hr>
+<section class="list">
+  <h2 id="sample-list2" class="sample-list__heading">{{ heading }}</h2>
+  {% for item in items %}
+  <ul aria-labelledby="sample-list2" class="sample-list__item">
+    <li>{{ item.title }}: {{ item.desc }}</li>
+  </ul>
   {% endfor %}
 </section>

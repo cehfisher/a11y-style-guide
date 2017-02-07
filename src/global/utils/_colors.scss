@@ -1,6 +1,6 @@
 // Colors
 //
-// All Sass color variables prefixed with $color-.
+// All color variables should be prefixed with `$color-`.
 // This makes it easy to figure out what a variable
 // is for later.
 //
@@ -12,13 +12,25 @@
 // <div class="kss-swatch" style="background-color: #a51323">
 //   <div class="kss-swatch__hex">$color-ruby<br>#a51323</div>
 // </div>
+// <div class="kss-swatch" style="background-color: #7fffd4">
+//   <div class="kss-swatch__hex">$color-sea-glass<br>#7fffd4</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #3cf73c">
+//   <div class="kss-swatch__hex">$color-grass<br>#3cf73c</div>
+// </div>
 // <div class="kss-swatch" style="background-color: #4083ae">
-//   <div class="kss-swatch__hex">$color-sea-glass<br>#4083ae</div>
+//   <div class="kss-swatch__hex">$color-cornflower<br>#4083ae</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #0a3055">
+//   <div class="kss-swatch__hex">$color-navy<br>#0a3055</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #550055">
+//   <div class="kss-swatch__hex">$color-eggplant<br>#550055</div>
 // </div>
 // <hr>
 // <h3>Black, White, Grays</h3>
-// <div class="kss-swatch" style="background-color: #000">
-//   <div class="kss-swatch__hex">$color-black<br>#000</div>
+// <div class="kss-swatch" style="background-color: #000000">
+//   <div class="kss-swatch__hex">$color-black<br>#000000</div>
 // </div>
 // <div class="kss-swatch" style="background-color: #464646">
 //   <div class="kss-swatch__hex">$color-midnight<br>#464646</div>
@@ -26,30 +38,34 @@
 // <div class="kss-swatch" style="background-color: #888b8d">
 //   <div class="kss-swatch__hex">$color-manatee<br>#888b8d</div>
 // </div>
-// <div class="kss-swatch" style="background-color: #bbb">
-//   <div class="kss-swatch__hex">$color-silver<br>#bbb</div>
+// <div class="kss-swatch" style="background-color: #bbbbbb">
+//   <div class="kss-swatch__hex">$color-silver<br>#bbbbbb</div>
 // </div>
-// <div class="kss-swatch" style="background-color: #ddd">
-//   <div class="kss-swatch__hex">$color-alto<br>#ddd</div>
+// <div class="kss-swatch" style="background-color: #dddddd">
+//   <div class="kss-swatch__hex">$color-alto<br>#dddddd</div>
 // </div>
-// <div class="kss-swatch" style="background-color: #eee">
-//   <div class="kss-swatch__hex">$color-gallery<br>#eee</div>
+// <div class="kss-swatch" style="background-color: #eeeeee">
+//   <div class="kss-swatch__hex">$color-gallery<br>#eeeeee</div>
 // </div>
 // <div class="kss-swatch" style="background-color: #f7f7f7">
 //   <div class="kss-swatch__hex">$color-alabaster<br>#f7f7f7</div>
 // </div>
-// <div class="kss-swatch" style="background-color: #FFF">
-//   <div class="kss-swatch__hex">$color-white<br>#FFF</div>
+// <div class="kss-swatch" style="background-color: #ffffff">
+//   <div class="kss-swatch__hex">$color-white<br>#ffffff</div>
 // </div>
 //
 // Weight: 999
 //
-// Style guide: colors
+// Style guide: Styling.colors
 
 // Primary
 $color-cherry: #ec1c24;
 $color-ruby: #a51323;
-$color-sea-glass: #4083ae;
+$color-sea-glass: #7fffd4;
+$color-grass: #3cf73c;
+$color-cornflower: #4083ae;
+$color-navy: #0a3055;
+$color-eggplant: #550055;
 
 // Grays
 $color-black: #000000;

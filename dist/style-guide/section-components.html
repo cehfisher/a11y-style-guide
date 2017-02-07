@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>A11y Style Guide</title>
+  <title>Style Guide</title>
 
   <meta name="description" content="">
   <meta name="generator" content="kss-node">
@@ -18,7 +18,7 @@
     <div class="kss-sidebar">
       <div class="kss-sidebar-inner">
         <header class="kss-header">
-          <h1 class="kss-doc-title">A11y Style Guide</h1>
+          <h1 class="kss-doc-title">Style Guide</h1>
         </header>
         <nav class="kss-nav">
           <ul class="kss-menu">
@@ -38,22 +38,16 @@
                             ><span class="kss-name">Sample List</span>
                         </a>
                       </li>
-                                          <li class="kss-menu-item">
-                        <a href="#kssref-components-misc">
-                          <span class="kss-ref ">1.3</span
-                            ><span class="kss-name">Misc Styling</span>
-                        </a>
-                      </li>
                                       </ul>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-icons.html"><span class="kss-ref">2</span><span class="kss-name">Icons</span></a>
+                <a href="section-fonts.html"><span class="kss-ref">2</span><span class="kss-name">Fonts</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-colors.html"><span class="kss-ref">3</span><span class="kss-name">Colors</span></a>
+                <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-type.html"><span class="kss-ref">4</span><span class="kss-name">Type</span></a>
+                <a href="section-styling.html"><span class="kss-ref">4</span><span class="kss-name">Styling</span></a>
                               </li>
                         <li><button class="kss-menu-full-width js-full-width" title="Remove navigation and padding to show what a component looks like at full page width.">Remove Navigation</button></li>
           </ul>
@@ -90,8 +84,12 @@
 classes for different colors, sizes, etc. The <code>.buttons</code>
 wrapper is used to display multiple buttons next to each
 other, and includes modifiers for different alignments.</p>
-<p> A11y tip: A button doesn&#39;t need anything special to work! ARIA&#39;s role=&quot;button&quot; is already assigned natively.</p>
-
+<p><b>A11y pro tips</b>:</p>
+<ul>
+ <li>A <code>&lt;button&gt;</code> doesn&#39;t need anything special to work. ARIA&#39;s role=&quot;button&quot; is already assigned natively.</li>
+ <li>If you are using a link as a button, add the <code>role=&quot;button&quot;</code> attribute.</li>
+ <li>Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
+</ul>
                 </div>
               
                           </div>
@@ -102,8 +100,9 @@ other, and includes modifiers for different alignments.</p>
                   <div class="kss-modifier-example">
                     <div class="buttons ">
   <form action="" method="post">
-    <button type="submit" href="#" class="button">Simple A11Y Button</button>
-    <button type="submit" href="#" class="button button--outline">Simple A11Y Button</button>
+    <button type="submit" href="#" class="button">Button</button>
+    <button type="submit" href="#" class="button button--outline">Button Outline</button>
+    <a href="#" class="button" role="button">Read More<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
   </form>
 </div>
 
@@ -120,8 +119,9 @@ other, and includes modifiers for different alignments.</p>
                   <div class="kss-modifier-example">
                     <div class="buttons buttons--center">
   <form action="" method="post">
-    <button type="submit" href="#" class="button">Simple A11Y Button</button>
-    <button type="submit" href="#" class="button button--outline">Simple A11Y Button</button>
+    <button type="submit" href="#" class="button">Button</button>
+    <button type="submit" href="#" class="button button--outline">Button Outline</button>
+    <a href="#" class="button" role="button">Read More<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
   </form>
 </div>
 
@@ -137,8 +137,9 @@ other, and includes modifiers for different alignments.</p>
                   <div class="kss-modifier-example">
                     <div class="buttons buttons--right">
   <form action="" method="post">
-    <button type="submit" href="#" class="button">Simple A11Y Button</button>
-    <button type="submit" href="#" class="button button--outline">Simple A11Y Button</button>
+    <button type="submit" href="#" class="button">Button</button>
+    <button type="submit" href="#" class="button button--outline">Button Outline</button>
+    <a href="#" class="button" role="button">Read More<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
   </form>
 </div>
 
@@ -149,8 +150,9 @@ other, and includes modifiers for different alignments.</p>
                   <template>
                     <pre><code data-language="html">&lt;div class=&quot;buttons {{modifier_class}}&quot;&gt;
   &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
-    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Simple A11Y Button&lt;/button&gt;
-    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Simple A11Y Button&lt;/button&gt;
+    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Button&lt;/button&gt;
+    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Button Outline&lt;/button&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Read More&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
   &lt;/form&gt;
 &lt;/div&gt;
 </code></pre>
@@ -179,20 +181,33 @@ other, and includes modifiers for different alignments.</p>
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<section class="sample-list">
-  <h2 class="sample-list__heading">Sample List component</h2>
-    <article class="sample-list__item">
+<section class="list">
+  <h2 id="sample-list1" class="sample-list__heading">Sample List component</h2>
+    <article aria-labelledby="sample-list1" class="sample-list__item">
     <h3>This is the first title</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </article>
-    <article class="sample-list__item">
+    <article aria-labelledby="sample-list1" class="sample-list__item">
     <h3>This is the second title</h3>
     <p>Donec tristique varius tortor, a rutrum mauris rhoncus venenatis.</p>
   </article>
-    <article class="sample-list__item">
+    <article aria-labelledby="sample-list1" class="sample-list__item">
     <h3>This is the third title</h3>
     <p>Etiam ac mauris vitae ante vulputate convallis non eu orci.</p>
   </article>
+  </section>
+<hr>
+<section class="list">
+  <h2 id="sample-list2" class="sample-list__heading">Sample List component</h2>
+    <ul aria-labelledby="sample-list2" class="sample-list__item">
+    <li>This is the first title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+  </ul>
+    <ul aria-labelledby="sample-list2" class="sample-list__item">
+    <li>This is the second title: Donec tristique varius tortor, a rutrum mauris rhoncus venenatis.</li>
+  </ul>
+    <ul aria-labelledby="sample-list2" class="sample-list__item">
+    <li>This is the third title: Etiam ac mauris vitae ante vulputate convallis non eu orci.</li>
+  </ul>
   </section>
 
                   </div>
@@ -201,55 +216,24 @@ other, and includes modifiers for different alignments.</p>
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/sample-list&#039;) }}
-&lt;section class=&quot;sample-list&quot;&gt;
-  &lt;h2 class=&quot;sample-list__heading&quot;&gt;{{ heading }}&lt;/h2&gt;
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/list&#039;) }}
+&lt;section class=&quot;list&quot;&gt;
+  &lt;h2 id=&quot;sample-list1&quot; class=&quot;sample-list__heading&quot;&gt;{{ heading }}&lt;/h2&gt;
   {% for item in items %}
-  &lt;article class=&quot;sample-list__item&quot;&gt;
+  &lt;article aria-labelledby=&quot;sample-list1&quot; class=&quot;sample-list__item&quot;&gt;
     &lt;h3&gt;{{ item.title }}&lt;/h3&gt;
     &lt;p&gt;{{ item.desc }}&lt;/p&gt;
   &lt;/article&gt;
   {% endfor %}
 &lt;/section&gt;
-</code></pre>
-                  </template>
-                </div>
-                              </div>
-
-                                    </section>
-                            <section id="kssref-components-misc" class="kss-section kss-depth-2">
-            <div class="kss-style">
-                            <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-components-misc">
-                  Misc Styling
-                </a>
-              </h2>
-
-                              <div class="kss-description">
-                  <p>This is the Misc styling component for small changes that do not need a full component</p>
-
-                </div>
-              
-                          </div>
-
-                          <div class="kss-modifier-block">
-
-                <div class="kss-modifier kss-modifier-original">
-                  <div class="kss-modifier-example">
-                    
-<section>
-  <hr>
-</section>
-
-                  </div>
-                </div>
-
-                                                <div class="kss-markup">
-                  <button class="js-show-markup">Show Markup Example</button>
-                  <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/misc&#039;) }}
-&lt;section&gt;
-  &lt;hr&gt;
+&lt;hr&gt;
+&lt;section class=&quot;list&quot;&gt;
+  &lt;h2 id=&quot;sample-list2&quot; class=&quot;sample-list__heading&quot;&gt;{{ heading }}&lt;/h2&gt;
+  {% for item in items %}
+  &lt;ul aria-labelledby=&quot;sample-list2&quot; class=&quot;sample-list__item&quot;&gt;
+    &lt;li&gt;{{ item.title }}: {{ item.desc }}&lt;/li&gt;
+  &lt;/ul&gt;
+  {% endfor %}
 &lt;/section&gt;
 </code></pre>
                   </template>

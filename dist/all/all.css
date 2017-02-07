@@ -194,7 +194,8 @@ img {
  * Hide the overflow in IE.
  */
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 1px; }
 
 /* Forms
    ========================================================================== */
@@ -487,12 +488,24 @@ hr {
   margin: 2rem 0;
   border: 1px solid rgba(136, 139, 141, 0.25); }
 
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
 #kss-node .kss-section {
   margin-bottom: 3rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(136, 139, 141, 0.25); }
   #kss-node .kss-section:first-child, #kss-node .kss-section:last-child {
-    border-bottom: 0; }
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 1rem; }
 
 #kss-node .kss-modifier {
   border-top: 0; }
@@ -533,7 +546,8 @@ hr {
   margin-bottom: 0;
   color: #ec1c24;
   text-transform: uppercase;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: 100; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
   #kss-node h2 > a:hover,
   #kss-node h2 > a:focus,
@@ -566,7 +580,8 @@ hr {
 
 #kss-node .kss-depth-1 .kss-title,
 #kss-node .kss-overview > h1:first-child {
-  border-bottom: 2px solid rgba(136, 139, 141, 0.5); }
+  border-bottom: 2px solid rgba(136, 139, 141, 0.5);
+  font-weight: 100; }
 
 #kss-node .kss-header {
   background: transparent; }
@@ -575,9 +590,11 @@ hr {
   height: 100% !important;
   background: #eeeeee;
   padding: 2rem;
-  width: 300px;
+  width: 275px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  float: left; }
+  float: left;
+  position: fixed;
+  z-index: 1; }
   #kss-node .kss-sidebar.kss-fixed .kss-nav {
     padding-right: 0;
     margin: 1rem -0.5rem; }
@@ -587,8 +604,10 @@ hr {
     text-decoration: none; }
 
 #kss-node .kss-content {
-  margin-left: 350px;
+  margin-left: 325px;
   padding-left: 0.5rem; }
+  #kss-node .kss-content li {
+    list-style: disc; }
 
 #kss-node .kss-menu,
 #kss-node .kss-menu-child,
@@ -614,3 +633,4 @@ hr {
 
 #kss-node .kss-menu > .kss-menu-item {
   margin: 0.5rem; }
+

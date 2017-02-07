@@ -17,6 +17,8 @@
     &:first-child,
     &:last-child {
       border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: $padding-sm;
     }
   }
 
@@ -44,6 +46,7 @@
     color: $color-cherry;
     text-transform: uppercase;
     text-decoration: none;
+    font-weight: 100;
 
     &:hover,
     &:focus,
@@ -72,19 +75,22 @@
   .kss-depth-1 .kss-title,
   .kss-overview > h1:first-child {
     border-bottom: $border-regular;
+    font-weight: 100;
   }
 
   .kss-header {
     background: transparent;
   }
 
-  .kss-sidebar.kss-fixed { // add mobile breakpoint changes
+  .kss-sidebar.kss-fixed {
     height: 100% !important;
     background: $color-gallery;
     padding: $padding-md;
-    width: 300px;
+    width: 275px;
     box-shadow: $shadow-sm;
     float: left;
+    position: fixed;
+    z-index: 1;
 
     .kss-nav {
       padding-right: 0;
@@ -99,8 +105,12 @@
   }
 
   .kss-content {
-    margin-left: 350px;
+    margin-left: 325px;
     padding-left: $padding-xxsm;
+
+    li {
+      list-style: disc;
+    }
   }
 
   .kss-menu,

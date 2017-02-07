@@ -19,15 +19,15 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-babel": "^6.1.2",
-    "gulp-concat": "^2.6.1",
+    "gulp-concat": "https://registry.npmjs.org/gulp-concat/-/gulp-concat-2.6.1.tgz",
     "gulp-eslint": "^3.0.1",
     "gulp-imagemin": "^3.1.1",
-    "gulp-order": "^1.1.1",
+    "gulp-order": "https://registry.npmjs.org/gulp-order/-/gulp-order-1.1.1.tgz",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-sass-lint": "^1.3.2",
     "gulp-sourcemaps": "^1.9.1",
-    "kss": "^3.0.0-beta.17",
+    "kss": "https://registry.npmjs.org/kss/-/kss-3.0.0-beta.17.tgz",
     "run-sequence": "^1.2.2"
   }
 }
