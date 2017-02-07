@@ -85,7 +85,7 @@ classes for different colors, sizes, etc. The <code>.buttons</code>
 wrapper is used to display multiple buttons next to each
 other, and includes modifiers for different alignments.</p>
 <p><b>A11y pro tip</b>:</p>
-<p>A button doesn&#39;t need anything special to work! ARIA&#39;s role=&quot;button&quot; is already assigned natively.</p>
+<p>A <code>&lt;button&gt;</code> doesn&#39;t need anything special to work. ARIA&#39;s role=&quot;button&quot; is already assigned natively. If you are using a link as a button, add the <code>role=&quot;button&quot;</code> attribute.</p>
 
                 </div>
               
@@ -97,8 +97,9 @@ other, and includes modifiers for different alignments.</p>
                   <div class="kss-modifier-example">
                     <div class="buttons ">
   <form action="" method="post">
-    <button type="submit" href="#" class="button" role="button">Simple A11Y Button</button>
-    <button type="submit" href="#" class="button button--outline" role="button">Simple A11Y Button</button>
+    <button type="submit" href="#" class="button">Button</button>
+    <button type="submit" href="#" class="button button--outline">Button Outline</button>
+    <a href="#" class="button" role="button">Link styled as button</a>
   </form>
 </div>
 
@@ -115,8 +116,9 @@ other, and includes modifiers for different alignments.</p>
                   <div class="kss-modifier-example">
                     <div class="buttons buttons--center">
   <form action="" method="post">
-    <button type="submit" href="#" class="button" role="button">Simple A11Y Button</button>
-    <button type="submit" href="#" class="button button--outline" role="button">Simple A11Y Button</button>
+    <button type="submit" href="#" class="button">Button</button>
+    <button type="submit" href="#" class="button button--outline">Button Outline</button>
+    <a href="#" class="button" role="button">Link styled as button</a>
   </form>
 </div>
 
@@ -132,8 +134,9 @@ other, and includes modifiers for different alignments.</p>
                   <div class="kss-modifier-example">
                     <div class="buttons buttons--right">
   <form action="" method="post">
-    <button type="submit" href="#" class="button" role="button">Simple A11Y Button</button>
-    <button type="submit" href="#" class="button button--outline" role="button">Simple A11Y Button</button>
+    <button type="submit" href="#" class="button">Button</button>
+    <button type="submit" href="#" class="button button--outline">Button Outline</button>
+    <a href="#" class="button" role="button">Link styled as button</a>
   </form>
 </div>
 
@@ -144,8 +147,9 @@ other, and includes modifiers for different alignments.</p>
                   <template>
                     <pre><code data-language="html">&lt;div class=&quot;buttons {{modifier_class}}&quot;&gt;
   &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
-    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Simple A11Y Button&lt;/button&gt;
-    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot; role=&quot;button&quot;&gt;Simple A11Y Button&lt;/button&gt;
+    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Button&lt;/button&gt;
+    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Button Outline&lt;/button&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Link styled as button&lt;/a&gt;
   &lt;/form&gt;
 &lt;/div&gt;
 </code></pre>

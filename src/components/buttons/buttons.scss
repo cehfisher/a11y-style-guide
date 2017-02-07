@@ -7,7 +7,7 @@
 //
 // <b>A11y pro tip</b>:
 //
-// A button doesn't need anything special to work! ARIA's role="button" is already assigned natively.
+// A `<button>` doesn't need anything special to work. ARIA's role="button" is already assigned natively. If you are using a link as a button, add the `role="button"` attribute.
 //
 // .buttons--center - modifier for centered buttons
 // .buttons--right - modifier for right aligned buttons
