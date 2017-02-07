@@ -46,6 +46,7 @@
     color: $color-cherry;
     text-transform: uppercase;
     text-decoration: none;
+    font-weight: 100;
 
     &:hover,
     &:focus,
@@ -74,6 +75,7 @@
   .kss-depth-1 .kss-title,
   .kss-overview > h1:first-child {
     border-bottom: $border-regular;
+    font-weight: 100;
   }
 
   .kss-header {
@@ -105,6 +107,10 @@
   .kss-content {
     margin-left: 325px;
     padding-left: $padding-xxsm;
+
+    li {
+      list-style: disc;
+    }
   }
 
   .kss-menu,

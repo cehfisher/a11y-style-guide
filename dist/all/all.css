@@ -194,7 +194,8 @@ img {
  * Hide the overflow in IE.
  */
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 1px; }
 
 /* Forms
    ========================================================================== */
@@ -535,7 +536,8 @@ hr {
   margin-bottom: 0;
   color: #ec1c24;
   text-transform: uppercase;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: 100; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
   #kss-node h2 > a:hover,
   #kss-node h2 > a:focus,
@@ -568,7 +570,8 @@ hr {
 
 #kss-node .kss-depth-1 .kss-title,
 #kss-node .kss-overview > h1:first-child {
-  border-bottom: 2px solid rgba(136, 139, 141, 0.5); }
+  border-bottom: 2px solid rgba(136, 139, 141, 0.5);
+  font-weight: 100; }
 
 #kss-node .kss-header {
   background: transparent; }
@@ -593,6 +596,8 @@ hr {
 #kss-node .kss-content {
   margin-left: 325px;
   padding-left: 0.5rem; }
+  #kss-node .kss-content li {
+    list-style: disc; }
 
 #kss-node .kss-menu,
 #kss-node .kss-menu-child,

@@ -194,7 +194,8 @@ img {
  * Hide the overflow in IE.
  */
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 1px; }
 
 /* Forms
    ========================================================================== */
