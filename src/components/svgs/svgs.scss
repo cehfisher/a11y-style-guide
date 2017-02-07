@@ -1,0 +1,16 @@
+// SVGs
+//
+// SVGs are scale-vector graphics and can be made used for icons, images, logos, etc.
+//
+// <b>A11y tip</b>:
+// SVG 1.1 supports DOM 2, so information about the SVG can be programmatically examined and manipulated.
+//
+// To put it simply, the `<title>` element provides an alternative text description of the SVG content. Think of it in the same way you would the alt attribute on the HTML `<img>` element.
+//
+// Markup: svgs.twig
+//
+// Style guide: Media.svgs
+
+// Import site utilities.
+@import '../../global/utils/init';
+

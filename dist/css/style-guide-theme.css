@@ -3,7 +3,9 @@
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(136, 139, 141, 0.25); }
   #kss-node .kss-section:first-child, #kss-node .kss-section:last-child {
-    border-bottom: 0; }
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 1rem; }
 
 #kss-node .kss-modifier {
   border-top: 0; }
@@ -86,9 +88,11 @@
   height: 100% !important;
   background: #eeeeee;
   padding: 2rem;
-  width: 300px;
+  width: 275px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  float: left; }
+  float: left;
+  position: fixed;
+  z-index: 1; }
   #kss-node .kss-sidebar.kss-fixed .kss-nav {
     padding-right: 0;
     margin: 1rem -0.5rem; }
@@ -98,7 +102,7 @@
     text-decoration: none; }
 
 #kss-node .kss-content {
-  margin-left: 350px;
+  margin-left: 325px;
   padding-left: 0.5rem; }
 
 #kss-node .kss-menu,
