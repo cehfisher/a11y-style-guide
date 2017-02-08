@@ -82,7 +82,8 @@
     background: transparent;
   }
 
-  .kss-sidebar.kss-fixed {
+  .kss-sidebar.kss-fixed,
+  .kss-sidebar {
     height: 100% !important;
     background: $color-gallery;
     padding: $padding-md;
