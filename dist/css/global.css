@@ -101,7 +101,12 @@ a {
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
-  /* 2 */ }
+  /* 2 */
+  color: #e00000;
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    color: #a51323;
+    text-decoration: underline; }
 
 p {
   margin: 0; }
@@ -399,9 +404,9 @@ ul,
 ol,
 dl {
   margin: 0;
-  padding: 0; }
+  padding: 0 0 0 1.2rem; }
 
 li {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: disc; }

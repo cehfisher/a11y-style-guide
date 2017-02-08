@@ -101,7 +101,12 @@ a {
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
-  /* 2 */ }
+  /* 2 */
+  color: #e00000;
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    color: #a51323;
+    text-decoration: underline; }
 
 p {
   margin: 0; }
@@ -399,24 +404,24 @@ ul,
 ol,
 dl {
   margin: 0;
-  padding: 0; }
+  padding: 0 0 0 1.2rem; }
 
 li {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: disc; }
 
 button,
 .button {
   display: inline-block;
-  background-color: #ec1c24;
+  background-color: #e00000;
   color: #ffffff;
   padding: 0.8rem 1rem;
   text-align: center;
   text-decoration: none;
   line-height: 1;
   min-height: 2rem;
-  border: 3px solid #ec1c24;
+  border: 3px solid #e00000;
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
@@ -435,22 +440,22 @@ button,
 
 .button--outline {
   display: inline-block;
-  background-color: #ec1c24;
+  background-color: #e00000;
   color: #ffffff;
   padding: 0.8rem 1rem;
   text-align: center;
   text-decoration: none;
   line-height: 1;
   min-height: 2rem;
-  border: 3px solid #ec1c24;
+  border: 3px solid #e00000;
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
   font-size: 1rem;
   margin: 5px;
-  color: #ec1c24;
+  color: #e00000;
   background-color: transparent;
-  border: 3px solid #ec1c24;
+  border: 3px solid #e00000;
   position: relative;
   margin-top: 1rem; }
   .button--outline:hover, .button--outline:focus {
@@ -498,6 +503,78 @@ hr {
   position: absolute;
   width: 1px; }
 
+button,
+.button {
+  display: inline-block;
+  background-color: #e00000;
+  color: #ffffff;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  min-height: 2rem;
+  border: 3px solid #e00000;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 5px;
+  position: relative;
+  margin-top: 1rem; }
+  button:hover, button:focus,
+  .button:hover,
+  .button:focus {
+    background-color: #a51323;
+    color: #ffffff;
+    border: 3px solid #a51323;
+    text-decoration: underline;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+
+.button--outline {
+  display: inline-block;
+  background-color: #e00000;
+  color: #ffffff;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  min-height: 2rem;
+  border: 3px solid #e00000;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 5px;
+  color: #e00000;
+  background-color: transparent;
+  border: 3px solid #e00000;
+  position: relative;
+  margin-top: 1rem; }
+  .button--outline:hover, .button--outline:focus {
+    background-color: #a51323;
+    color: #ffffff;
+    border: 3px solid #a51323;
+    text-decoration: underline;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+  .button--outline:hover, .button--outline:focus {
+    background-color: transparent;
+    color: #a51323;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+
+.buttons--center {
+  text-align: center;
+  clear: both;
+  position: relative;
+  margin-top: 1rem; }
+
+.buttons--right {
+  text-align: right;
+  clear: both; }
+
+.buttons--left {
+  text-align: left;
+  clear: both; }
+
 
 #kss-node .kss-section {
   margin-bottom: 3rem;
@@ -511,81 +588,25 @@ hr {
 #kss-node .kss-modifier {
   border-top: 0; }
 
-#kss-node .kss-menu-full-width {
-  display: inline-block;
-  background-color: #ec1c24;
-  color: #ffffff;
-  padding: 0.8rem 1rem;
-  text-align: center;
-  text-decoration: none;
-  line-height: 1;
-  min-height: 2rem;
-  border: 3px solid #ec1c24;
-  border-radius: 4px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  text-transform: uppercase;
-  font-size: 1rem;
-  margin: 5px;
-  margin-top: 2rem; }
-  #kss-node .kss-menu-full-width:hover, #kss-node .kss-menu-full-width:focus {
-    background-color: #a51323;
-    color: #ffffff;
-    border: 3px solid #a51323;
-    text-decoration: underline;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
-
 #kss-node .kss-wrapper {
   padding-left: 0;
   margin-left: 0; }
 
-#kss-node h1 > a,
-#kss-node h2 > a,
-#kss-node h3 > a,
-#kss-node .kss-menu > .kss-menu-item > a > .kss-ref,
-#kss-node .kss-menu-child > .kss-menu-item > a > .kss-ref {
-  text-align: left;
-  margin-bottom: 0;
-  color: #ec1c24;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 100; }
-  #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
-  #kss-node h2 > a:hover,
-  #kss-node h2 > a:focus,
-  #kss-node h2 > a:active,
-  #kss-node h3 > a:hover,
-  #kss-node h3 > a:focus,
-  #kss-node h3 > a:active,
-  #kss-node .kss-menu > .kss-menu-item > a > .kss-ref:hover,
-  #kss-node .kss-menu > .kss-menu-item > a > .kss-ref:focus,
-  #kss-node .kss-menu > .kss-menu-item > a > .kss-ref:active,
-  #kss-node .kss-menu-child > .kss-menu-item > a > .kss-ref:hover,
-  #kss-node .kss-menu-child > .kss-menu-item > a > .kss-ref:focus,
-  #kss-node .kss-menu-child > .kss-menu-item > a > .kss-ref:active {
-    color: #a51323;
-    text-decoration: underline; }
+#kss-node .kss-content {
+  margin-left: 325px;
+  padding-left: 0.5rem; }
+  #kss-node .kss-content li {
+    padding-bottom: 0.5rem; }
 
-#kss-node .kss-doc-title,
-#kss-node h1,
-#kss-node h2 {
-  text-align: left;
-  margin-bottom: 0;
-  color: #ec1c24;
-  text-transform: uppercase;
-  text-decoration: none; }
+#kss-node .kss-modifier-original .kss-modifier-example {
+  padding: 1rem 0; }
 
-#kss-node h2,
-#kss-node h3 {
-  text-transform: uppercase;
-  color: #464646; }
-
-#kss-node .kss-depth-1 .kss-title,
-#kss-node .kss-overview > h1:first-child {
-  border-bottom: 2px solid rgba(136, 139, 141, 0.5);
-  font-weight: 100; }
-
-#kss-node .kss-header {
-  background: transparent; }
+#kss-node .kss-overview code,
+#kss-node .kss-description code,
+#kss-node .kss-description pre {
+  padding: 2px 6px;
+  background: #eeeeee;
+  border-radius: 4px; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -604,24 +625,48 @@ hr {
   #kss-node .kss-sidebar.kss-fixed .kss-sidebar-inner,
   #kss-node .kss-sidebar .kss-sidebar-inner {
     padding-top: 2rem;
-    text-transform: uppercase;
     text-decoration: none; }
 
-#kss-node .kss-content {
-  margin-left: 325px;
-  padding-left: 0.5rem; }
-  #kss-node .kss-content li {
-    list-style: disc; }
+#kss-node .kss-menu > .kss-menu-item {
+  margin: 0.5rem; }
+
+#kss-node .kss-menu-full-width {
+  display: inline-block;
+  background-color: #e00000;
+  color: #ffffff;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  min-height: 2rem;
+  border: 3px solid #e00000;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 5px;
+  margin-top: 2rem; }
+  #kss-node .kss-menu-full-width:hover, #kss-node .kss-menu-full-width:focus {
+    background-color: #a51323;
+    color: #ffffff;
+    border: 3px solid #a51323;
+    text-decoration: underline;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
 
 #kss-node .kss-menu,
 #kss-node .kss-menu-child,
 #kss-node .kss-menu > .kss-menu-item > a {
   border-bottom: 0; }
+  #kss-node .kss-menu li,
+  #kss-node .kss-menu-child li,
+  #kss-node .kss-menu > .kss-menu-item > a li {
+    list-style: none; }
   #kss-node .kss-menu > .kss-menu-item > a > .kss-name,
   #kss-node .kss-menu-child > .kss-menu-item > a > .kss-name,
   #kss-node .kss-menu > .kss-menu-item > a > .kss-menu-item > a > .kss-name {
     text-align: left;
-    color: #464646; }
+    color: #464646;
+    font-weight: 100; }
     #kss-node .kss-menu > .kss-menu-item > a > .kss-name:hover, #kss-node .kss-menu > .kss-menu-item > a > .kss-name:focus, #kss-node .kss-menu > .kss-menu-item > a > .kss-name:active,
     #kss-node .kss-menu-child > .kss-menu-item > a > .kss-name:hover,
     #kss-node .kss-menu-child > .kss-menu-item > a > .kss-name:focus,
@@ -629,12 +674,74 @@ hr {
     #kss-node .kss-menu > .kss-menu-item > a > .kss-menu-item > a > .kss-name:hover,
     #kss-node .kss-menu > .kss-menu-item > a > .kss-menu-item > a > .kss-name:focus,
     #kss-node .kss-menu > .kss-menu-item > a > .kss-menu-item > a > .kss-name:active {
-      color: #888b8d;
+      color: #464646;
       text-decoration: underline; }
 
 #kss-node .kss-menu-child {
   padding: 0; }
 
-#kss-node .kss-menu > .kss-menu-item {
-  margin: 0.5rem; }
+#kss-node h1 > a,
+#kss-node h2 > a,
+#kss-node h3 > a,
+#kss-node .kss-menu > .kss-menu-item > a > .kss-ref,
+#kss-node .kss-menu-child > .kss-menu-item > a > .kss-ref,
+#kss-node .kss-overview a {
+  text-align: left;
+  margin-bottom: 0;
+  color: #e00000;
+  text-decoration: none;
+  font-weight: 100; }
+  #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
+  #kss-node h2 > a:hover,
+  #kss-node h2 > a:focus,
+  #kss-node h2 > a:active,
+  #kss-node h3 > a:hover,
+  #kss-node h3 > a:focus,
+  #kss-node h3 > a:active,
+  #kss-node .kss-menu > .kss-menu-item > a > .kss-ref:hover,
+  #kss-node .kss-menu > .kss-menu-item > a > .kss-ref:focus,
+  #kss-node .kss-menu > .kss-menu-item > a > .kss-ref:active,
+  #kss-node .kss-menu-child > .kss-menu-item > a > .kss-ref:hover,
+  #kss-node .kss-menu-child > .kss-menu-item > a > .kss-ref:focus,
+  #kss-node .kss-menu-child > .kss-menu-item > a > .kss-ref:active,
+  #kss-node .kss-overview a:hover,
+  #kss-node .kss-overview a:focus,
+  #kss-node .kss-overview a:active {
+    color: #a51323;
+    text-decoration: underline; }
+
+#kss-node .kss-doc-title,
+#kss-node h1 {
+  text-align: left;
+  color: #e00000;
+  text-decoration: none;
+  margin: 0 0 1.5rem; }
+
+#kss-node h2,
+#kss-node h3 {
+  text-align: left;
+  color: #464646;
+  text-decoration: none; }
+
+#kss-node .kss-depth-1 .kss-title,
+#kss-node .kss-overview > h1:first-child {
+  border-bottom: 2px solid rgba(136, 139, 141, 0.5);
+  font-weight: 100; }
+
+#kss-node .kss-header {
+  background: transparent; }
+
+#kss-node .kss-overview h1,
+#kss-node .kss-overview h2,
+#kss-node .kss-overview h3,
+#kss-node .kss-overview h4,
+#kss-node .kss-overview h5,
+#kss-node .kss-overview h6,
+#kss-node h1,
+#kss-node h2,
+#kss-node h3,
+#kss-node h4,
+#kss-node h5,
+#kss-node h6 {
+  font-weight: 100; }
 

@@ -38,6 +38,12 @@
                             ><span class="kss-name">List</span>
                         </a>
                       </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-components-read-more">
+                          <span class="kss-ref ">1.3</span
+                            ><span class="kss-name">Read More</span>
+                        </a>
+                      </li>
                                       </ul>
                               </li>
                           <li class="kss-menu-item">
@@ -50,7 +56,7 @@
                 <a href="section-styling.html"><span class="kss-ref">4</span><span class="kss-name">Styling</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-referenceslist.html"><span class="kss-ref">5</span><span class="kss-name">References</span></a>
+                <a href="section-references.html"><span class="kss-ref">5</span><span class="kss-name">References</span></a>
                               </li>
                         <li><button class="kss-menu-full-width js-full-width" title="Remove navigation and padding to show what a component looks like at full page width.">Remove Navigation</button></li>
           </ul>
@@ -103,9 +109,9 @@ other, and includes modifiers for different alignments.</p>
                   <div class="kss-modifier-example">
                     <div class="buttons ">
   <form action="" method="post">
-    <button type="submit" href="#" class="button">Button</button>
-    <button type="submit" href="#" class="button button--outline">Button Outline</button>
-    <a href="#" class="button" role="button">Read More<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+    <button type="submit" href="#" class="button">Regular Button</button>
+    <button type="submit" href="#" class="button button--outline">Outline Button</button>
+    <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
   </form>
 </div>
 
@@ -122,9 +128,9 @@ other, and includes modifiers for different alignments.</p>
                   <div class="kss-modifier-example">
                     <div class="buttons buttons--center">
   <form action="" method="post">
-    <button type="submit" href="#" class="button">Button</button>
-    <button type="submit" href="#" class="button button--outline">Button Outline</button>
-    <a href="#" class="button" role="button">Read More<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+    <button type="submit" href="#" class="button">Regular Button</button>
+    <button type="submit" href="#" class="button button--outline">Outline Button</button>
+    <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
   </form>
 </div>
 
@@ -140,9 +146,9 @@ other, and includes modifiers for different alignments.</p>
                   <div class="kss-modifier-example">
                     <div class="buttons buttons--right">
   <form action="" method="post">
-    <button type="submit" href="#" class="button">Button</button>
-    <button type="submit" href="#" class="button button--outline">Button Outline</button>
-    <a href="#" class="button" role="button">Read More<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+    <button type="submit" href="#" class="button">Regular Button</button>
+    <button type="submit" href="#" class="button button--outline">Outline Button</button>
+    <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
   </form>
 </div>
 
@@ -153,9 +159,9 @@ other, and includes modifiers for different alignments.</p>
                   <template>
                     <pre><code data-language="html">&lt;div class=&quot;buttons {{modifier_class}}&quot;&gt;
   &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
-    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Button&lt;/button&gt;
-    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Button Outline&lt;/button&gt;
-    &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Read More&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
+    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Regular Button&lt;/button&gt;
+    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Outline Button&lt;/button&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Link Button&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
   &lt;/form&gt;
 &lt;/div&gt;
 </code></pre>
@@ -238,6 +244,58 @@ other, and includes modifiers for different alignments.</p>
   &lt;/ul&gt;
   {% endfor %}
 &lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-components-read-more" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-components-read-more">
+                  Read More
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <p>Default button elements, along with various modifier
+classes for different colors, sizes, etc. The <code>.buttons</code>
+wrapper is used to display multiple buttons next to each
+other, and includes modifiers for different alignments.</p>
+<p><b>A11y pro tips</b>:</p>
+<ul>
+ <li>A <code>&lt;button&gt;</code> doesn&#39;t need anything special to work. ARIA&#39;s role=&quot;button&quot; is already assigned natively.</li>
+ <li>If you are using a link as a button, add the <code>role=&quot;button&quot;</code> attribute.</li>
+ <li>Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
+</ul>
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+  <form action="" method="post">
+    <button type="submit" href="#" class="button">Button</button>
+    <button type="submit" href="#" class="button button--outline">Button Outline</button>
+    <a href="#" class="button" role="button">Read More<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+  </form>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">
+  &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
+    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Button&lt;/button&gt;
+    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Button Outline&lt;/button&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Read More&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
+  &lt;/form&gt;
 </code></pre>
                   </template>
                 </div>

@@ -120,6 +120,15 @@ pre {
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
+  color: $color-cherry;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-ruby;
+    text-decoration: underline;
+  }
 }
 
 p {
@@ -433,11 +442,11 @@ ul,
 ol,
 dl {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 1.2rem;
 }
 
 li {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: disc;
 }

@@ -48,14 +48,26 @@
       <article role="main" class="kss-article">
       
         
-                            <div id="kssref-fonts-typography" class="kss-section kss-depth-2">
+                            <div id="kssref-components-read-more" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-fonts-typography">
-                  Typography
+                <a class="kss-title__permalink" href="#kssref-components-read-more">
+                  Read More
                 </a>
               </h2>
 
+                              <div class="kss-description">
+                  <p>Default button elements, along with various modifier
+classes for different colors, sizes, etc. The <code>.buttons</code>
+wrapper is used to display multiple buttons next to each
+other, and includes modifiers for different alignments.</p>
+<p><b>A11y pro tips</b>:</p>
+<ul>
+ <li>A <code>&lt;button&gt;</code> doesn&#39;t need anything special to work. ARIA&#39;s role=&quot;button&quot; is already assigned natively.</li>
+ <li>If you are using a link as a button, add the <code>role=&quot;button&quot;</code> attribute.</li>
+ <li>Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
+</ul>
+                </div>
               
                           </div>
 
@@ -63,48 +75,26 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <h3>Base</h3>
-<div style="font: 20px/2 'Verdana'"> Verdana Medium </div>
-<div style="font: italic 20px/2 'Verdana'"> Verdana Italic </div>
-<div style="font: bold 20px/2 'Verdana'"> Verdana Bold </div>
-<div style="font: bold italic 20px/2 'Verdana'"> Verdana Bold Italic </div>
-<hr>
-<h3>Secondary</h3>
-<div style="font: 20px/2 'Tahoma'"> Tahoma Light </div>
-<div style="font: italic 20px/2 'Tahoma'"> Tahoma Light Italic </div>
-<div style="font: 500 20px/2 'Tahoma'"> Tahoma Roman </div>
-<div style="font: bold 20px/2 'Tahoma'"> Tahoma Italic </div>
-<div style="font: bold italic 20px/2 'Tahoma'"> Tahoma Medium </div>
-<hr>
-<h3>Tertiary</h3>
-<div style="font: 20px/2 'Georgia'"> Georgia Bold </div>
-<div style="font: italic 20px/2 'Georgia'"> Georgia Bold Italic </div>
-<div style="font: bold 20px/2 'Georgia'"> Georgia Italic </div>
-<div style="font: bold italic 20px/2 'Georgia'"> Georgia Regular </div>
+                    
+  <form action="" method="post">
+    <button type="submit" href="#" class="button">Button</button>
+    <button type="submit" href="#" class="button button--outline">Button Outline</button>
+    <a href="#" class="button" role="button">Read More<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+  </form>
+
                   </div>
                 </div>
 
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">&lt;h3&gt;Base&lt;/h3&gt;
-&lt;div style=&quot;font: 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Medium &lt;/div&gt;
-&lt;div style=&quot;font: italic 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Italic &lt;/div&gt;
-&lt;div style=&quot;font: bold 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Bold &lt;/div&gt;
-&lt;div style=&quot;font: bold italic 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Bold Italic &lt;/div&gt;
-&lt;hr&gt;
-&lt;h3&gt;Secondary&lt;/h3&gt;
-&lt;div style=&quot;font: 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Light &lt;/div&gt;
-&lt;div style=&quot;font: italic 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Light Italic &lt;/div&gt;
-&lt;div style=&quot;font: 500 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Roman &lt;/div&gt;
-&lt;div style=&quot;font: bold 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Italic &lt;/div&gt;
-&lt;div style=&quot;font: bold italic 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Medium &lt;/div&gt;
-&lt;hr&gt;
-&lt;h3&gt;Tertiary&lt;/h3&gt;
-&lt;div style=&quot;font: 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Bold &lt;/div&gt;
-&lt;div style=&quot;font: italic 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Bold Italic &lt;/div&gt;
-&lt;div style=&quot;font: bold 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Italic &lt;/div&gt;
-&lt;div style=&quot;font: bold italic 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Regular &lt;/div&gt;</code></pre>
+                    <pre><code data-language="html">
+  &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
+    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Button&lt;/button&gt;
+    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Button Outline&lt;/button&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Read More&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
+  &lt;/form&gt;
+</code></pre>
                   </template>
                 </div>
                               </div>
