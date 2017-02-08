@@ -498,6 +498,7 @@ hr {
   position: absolute;
   width: 1px; }
 
+
 #kss-node .kss-section {
   margin-bottom: 3rem;
   padding-bottom: 2rem;
@@ -586,7 +587,8 @@ hr {
 #kss-node .kss-header {
   background: transparent; }
 
-#kss-node .kss-sidebar.kss-fixed {
+#kss-node .kss-sidebar.kss-fixed,
+#kss-node .kss-sidebar {
   height: 100% !important;
   background: #eeeeee;
   padding: 2rem;
@@ -595,10 +597,12 @@ hr {
   float: left;
   position: fixed;
   z-index: 1; }
-  #kss-node .kss-sidebar.kss-fixed .kss-nav {
+  #kss-node .kss-sidebar.kss-fixed .kss-nav,
+  #kss-node .kss-sidebar .kss-nav {
     padding-right: 0;
     margin: 1rem -0.5rem; }
-  #kss-node .kss-sidebar.kss-fixed .kss-sidebar-inner {
+  #kss-node .kss-sidebar.kss-fixed .kss-sidebar-inner,
+  #kss-node .kss-sidebar .kss-sidebar-inner {
     padding-top: 2rem;
     text-transform: uppercase;
     text-decoration: none; }
