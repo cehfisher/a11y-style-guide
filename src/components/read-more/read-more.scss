@@ -7,9 +7,9 @@
 //
 // <b>A11y pro tips</b>:
 // <ul>
-//  <li>A `<button>` doesn't need anything special to work. ARIA's role="button" is already assigned natively.</li>
-//  <li>If you are using a link as a button, add the `role="button"` attribute.</li>
-//  <li>Add `class="visuallyhidden"` with descriptive text to give more context to the button's purpose.</li>
+//  <li>Add id selectors to titles and use `aria-labelledby=""` to link to the title text (example #1).</li>
+//  <li>Add decriptive text with `aria-label=""` directly in the link (example #2).</li>
+//  <li>Turn read more links into buttons, when you can.</li>
 // </ul>
 //
 // Markup: read-more.twig
