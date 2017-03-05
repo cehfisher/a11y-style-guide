@@ -33,9 +33,9 @@
   }
 
   .kss-content {
-    margin-left: 325px;
     padding-left: $padding-xxsm;
     transition: all 0.5s ease-in-out;
+    margin: 0 $padding-sm 0 325px;
 
     li {
       padding-bottom: $padding-xxsm;
@@ -43,8 +43,8 @@
   }
 
   .kss-sidebar-collapsed + .kss-content {
-    margin-left: $padding-md-lg;
     transition: all 0.5s ease-in-out;
+    margin: 0 $padding-sm 0 5rem;
   }
 
   .kss-modifier-original .kss-modifier-example {
@@ -200,7 +200,7 @@
   height: 30px;
   background: url('/themes/custom/a11y/src/assets/chevron_left_round_red.png') no-repeat;
   right: 10px;
-  top: 8px;
+  top: 0;
   background-size: 32px;
   border: 0;
   box-shadow: none;
@@ -216,13 +216,17 @@
 }
 
 .kss-sidebar-collapsed {
-  transform: translateX(-100%);
+  transform: translateX(-82%);
+
+  .kss-menu > .kss-menu-item {
+    border-bottom: 0 !important;
+  }
 }
 
 .kss-sidebar-collapsed .toggle {
   transform: translateX(100%);
   background: url('/themes/custom/a11y/src/assets/chevron_right_round_red.png') no-repeat;
-  right: -10px;
-  top: 8px;
   background-size: 32px;
+  right: 35px;
+  top: 0;
 }

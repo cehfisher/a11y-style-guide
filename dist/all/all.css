@@ -30,7 +30,7 @@ html {
 body {
   margin: 0;
   font-size: 100%;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.02em; }
 
 /**
@@ -612,75 +612,10 @@ body {
   position: absolute;
   width: 1px; }
 
-button,
-.button {
+.read-more::after {
+  content: " > ";
   display: inline-block;
-  background-color: #e00000;
-  color: #ffffff;
-  padding: 0.8rem 1rem;
-  text-align: center;
-  text-decoration: none;
-  line-height: 1;
-  min-height: 2rem;
-  border: 3px solid #e00000;
-  border-radius: 4px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  font-size: 1rem;
-  margin: 5px;
-  position: relative;
-  margin-top: 1rem; }
-  button:hover, button:focus,
-  .button:hover,
-  .button:focus {
-    background-color: #a51323;
-    color: #ffffff;
-    border: 3px solid #a51323;
-    text-decoration: underline;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
-
-.button--outline {
-  display: inline-block;
-  background-color: #e00000;
-  color: #ffffff;
-  padding: 0.8rem 1rem;
-  text-align: center;
-  text-decoration: none;
-  line-height: 1;
-  min-height: 2rem;
-  border: 3px solid #e00000;
-  border-radius: 4px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  font-size: 1rem;
-  margin: 5px;
-  color: #e00000;
-  background-color: transparent;
-  border: 3px solid #e00000;
-  position: relative;
-  margin-top: 1rem; }
-  .button--outline:hover, .button--outline:focus {
-    background-color: #a51323;
-    color: #ffffff;
-    border: 3px solid #a51323;
-    text-decoration: underline;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
-  .button--outline:hover, .button--outline:focus {
-    background-color: transparent;
-    color: #a51323;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
-
-.buttons--center {
-  text-align: center;
-  clear: both;
-  position: relative;
-  margin-top: 1rem; }
-
-.buttons--right {
-  text-align: right;
-  clear: both; }
-
-.buttons--left {
-  text-align: left;
-  clear: both; }
+  padding-left: 5px; }
 
 
 #kss-node .kss-section {
@@ -700,15 +635,15 @@ button,
   margin-left: 0; }
 
 #kss-node .kss-content {
-  margin-left: 325px;
   padding-left: 0.5rem;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+  margin: 0 1rem 0 325px; }
   #kss-node .kss-content li {
     padding-bottom: 0.5rem; }
 
 #kss-node .kss-sidebar-collapsed + .kss-content {
-  margin-left: 3rem;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+  margin: 0 1rem 0 5rem; }
 
 #kss-node .kss-modifier-original .kss-modifier-example {
   padding: 1rem 0; }
@@ -854,7 +789,7 @@ button,
   height: 30px;
   background: url("/themes/custom/a11y/src/assets/chevron_left_round_red.png") no-repeat;
   right: 10px;
-  top: 8px;
+  top: 0;
   background-size: 32px;
   border: 0;
   box-shadow: none;
@@ -865,12 +800,14 @@ button,
     background-color: transparent; }
 
 .kss-sidebar-collapsed {
-  transform: translateX(-100%); }
+  transform: translateX(-82%); }
+  .kss-sidebar-collapsed .kss-menu > .kss-menu-item {
+    border-bottom: 0 !important; }
 
 .kss-sidebar-collapsed .toggle {
   transform: translateX(100%);
   background: url("/themes/custom/a11y/src/assets/chevron_right_round_red.png") no-repeat;
-  right: -10px;
-  top: 8px;
-  background-size: 32px; }
+  background-size: 32px;
+  right: 35px;
+  top: 0; }
 
