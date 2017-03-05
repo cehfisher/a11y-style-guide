@@ -132,8 +132,7 @@
     color: #a51323;
     text-decoration: underline; }
 
-#kss-node .kss-doc-title,
-#kss-node h1 {
+#kss-node .kss-doc-title {
   text-align: left;
   color: #e00000;
   text-decoration: none;
