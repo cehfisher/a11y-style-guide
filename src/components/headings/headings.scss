@@ -1,0 +1,18 @@
+// Headings
+//
+// Heading tags were developed to provide information on the structural hierarchy of a document, with `<h1>` having the highest rank, followed by `<h2>`, `<h3>`, `<h4>`, `<h5>`, <`h6>`. Navigating through the <h1> and <h2> give a user an overview of a page and how its content is structured. The <h3> through <h6> elements provide a quick understanding of the details in each section.
+//
+// <b>A11y pro tips</b>:
+// <ul>
+//  <li>Heading tags should be in order. That means an `<h1>` is followed by an `<h2>`, an `<h2>` is followed by a `<h2>` or `<h3>` and so on. It *is* ok to skip heading levels when going up in order (ex. `<h4>` to `<h1>`).</li>
+//  <li>Keep heading tags consistent. Inconsistently implementing headings can create confusion and frustration for users using assistive technologies.</li>
+//  <li>Do not style text to give the visual appearance of headings - use actual heading tags.</li>
+// </ul>
+//
+// Markup: headings.twig
+//
+// Style guide: Structure.headings
+
+// Import site utilities.
+@import '../../global/utils/init';
+
