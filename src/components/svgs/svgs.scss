@@ -2,7 +2,6 @@
 //
 // SVGs are scalable vector graphics and can be made used for icons, images, logos, etc. SVG content is scalable and scales without any reduction in visual quality.
 //
-// <b>A11y pro tips</b>:
 // <ul>
 //  <li>The best way to make SVGs accessible to Assistive Technologies (AT) like screen readers and speech recognition tools is to put it directly into your HTML using the `<svg>` tag</li>
 //  <li>Avoid using `<embed>`, `<object>`, or `<img>` elements as they are not as supported by browsers as inline SVG</li>
@@ -11,6 +10,10 @@
 //  <li>Give your SVGs a job with the `role=""` attribute</li>
 //  <li>To “hide” elements from a screen reader in an SVG add `role="presentation"`</li>
 // </ul>
+//
+// <blockquote><a href="https://www.w3.org/TR/WCAG20/#text-equiv" target="_blank">1.1.1. Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for [some exceptions]. (Level A)</blockquote>
+//
+//
 //
 // Markup: svgs.twig
 //

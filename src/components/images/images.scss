@@ -1,14 +1,12 @@
 // Images
 //
-// <b>A11y pro tips</b>:
 // <ul>
-//  <li>A `<button>` doesn't need anything special to work. ARIA's role="button" is already assigned natively.</li>
-//  <li>If you are using a link as a button, add the `role="button"` attribute.</li>
-//  <li>Add `class="visuallyhidden"` with descriptive text to give more context to the button's purpose.</li>
+//  <li>List of bullets</li>
 // </ul>
 //
-// .buttons--center - modifier for centered buttons
-// .buttons--right - modifier for right aligned buttons
+// <blockquote><a href="https://www.w3.org/TR/WCAG20/#text-equiv" target="_blank">1.1.1. Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for [some exceptions]. (Level A)</blockquote>
+//
+//
 //
 // Markup: images.twig
 //

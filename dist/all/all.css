@@ -647,7 +647,8 @@ body {
 #kss-node h3 > a,
 #kss-node .kss-menu > .kss-menu-item > a > .kss-ref,
 #kss-node .kss-menu-child > .kss-menu-item > a > .kss-ref,
-#kss-node .kss-overview a {
+#kss-node .kss-overview a,
+#kss-node .kss-description a {
   text-align: left;
   margin-bottom: 0;
   color: #e00000;
@@ -668,7 +669,10 @@ body {
   #kss-node .kss-menu-child > .kss-menu-item > a > .kss-ref:active,
   #kss-node .kss-overview a:hover,
   #kss-node .kss-overview a:focus,
-  #kss-node .kss-overview a:active {
+  #kss-node .kss-overview a:active,
+  #kss-node .kss-description a:hover,
+  #kss-node .kss-description a:focus,
+  #kss-node .kss-description a:active {
     color: #a51323;
     text-decoration: underline; }
 
@@ -705,6 +709,9 @@ body {
 #kss-node h5,
 #kss-node h6 {
   font-weight: 100; }
+
+#kss-node blockquote {
+  font-style: italic; }
 
 .kss-sidebar,
 .toggle {

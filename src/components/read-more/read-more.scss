@@ -1,11 +1,14 @@
 // Read More
 //
-// <b>A11y pro tips</b>:
 // <ul>
 //  <li>Add id selectors to titles and use `aria-labelledby=""` to link to the title text (example #1).</li>
 //  <li>Add decriptive text with `aria-label=""` directly in the link (example #2).</li>
 //  <li>Turn read more links into buttons, when you can.</li>
 // </ul>
+//
+// <blockquote><a href="https://www.w3.org/TR/WCAG20/#text-equiv" target="_blank">1.1.1. Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for [some exceptions]. (Level A)</blockquote>
+//
+//
 //
 // Markup: read-more.twig
 //
