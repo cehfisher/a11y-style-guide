@@ -139,8 +139,11 @@
 
 #kss-node .kss-depth-1 .kss-title,
 #kss-node .kss-overview > h1:first-child {
-  border-bottom: 1px solid #bbbbbb;
-  font-weight: 100; }
+  font-weight: 100;
+  background: url("../assets/hr.png") repeat-x 0 100%;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 0; }
 
 #kss-node .kss-header {
   background: transparent; }
@@ -178,7 +181,7 @@
   position: absolute;
   width: 30px;
   height: 30px;
-  background: url("/themes/custom/a11y/src/assets/chevron_left_round_red.png") no-repeat;
+  background: url("../assets/chevron_left_round_red.png") no-repeat;
   right: 10px;
   top: 5px;
   background-size: 32px;
@@ -199,7 +202,7 @@
 
 .kss-sidebar-collapsed .toggle {
   transform: translateX(100%);
-  background: url("/themes/custom/a11y/src/assets/chevron_right_round_red.png") no-repeat;
+  background: url("../assets/chevron_right_round_red.png") no-repeat;
   background-size: 32px;
   right: 35px;
   top: 5px; }

@@ -4,6 +4,10 @@
 // This makes it easy to figure out what a variable
 // is for later.
 //
+// <blockquote><a href="https://www.w3.org/TR/WCAG20/#text-equiv" target="_blank">1.1.1. Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for [some exceptions]. (Level A)</blockquote>
+//
+//
+//
 // Markup:
 // <h3>Primary</h3>
 // <div class="kss-swatch" style="background-color: #e00000">
@@ -27,7 +31,7 @@
 // <div class="kss-swatch" style="background-color: #550055">
 //   <div class="kss-swatch__hex">$color-eggplant<br>#550055</div>
 // </div>
-// <hr>
+// <div class="break"></div>
 // <h3>Black, White, Grays</h3>
 // <div class="kss-swatch" style="background-color: #000000">
 //   <div class="kss-swatch__hex">$color-black<br>#000000</div>

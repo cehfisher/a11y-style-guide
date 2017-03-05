@@ -159,8 +159,11 @@
 
   .kss-depth-1 .kss-title,
   .kss-overview > h1:first-child {
-    border-bottom: 1px solid $color-silver;
     font-weight: 100;
+    background: url('#{$asset-path}/hr.png') repeat-x 0 100%;
+    padding-bottom: $padding-sm;
+    margin-bottom: $padding-sm;
+    border-bottom: 0;
   }
 
   .kss-header {
@@ -206,7 +209,7 @@
   position: absolute;
   width: 30px;
   height: 30px;
-  background: url('/themes/custom/a11y/src/assets/chevron_left_round_red.png') no-repeat;
+  background: url('#{$asset-path}/chevron_left_round_red.png') no-repeat;
   right: 10px;
   top: 5px;
   background-size: 32px;
@@ -237,7 +240,7 @@
 
 .kss-sidebar-collapsed .toggle {
   transform: translateX(100%);
-  background: url('/themes/custom/a11y/src/assets/chevron_right_round_red.png') no-repeat;
+  background: url('#{$asset-path}/chevron_right_round_red.png') no-repeat;
   background-size: 32px;
   right: 35px;
   top: 5px;
