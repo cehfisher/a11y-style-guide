@@ -74,8 +74,59 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 1.25rem;
   margin: 0 0 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.85rem;
+}
+
+h6 {
+  font-size: 0.65rem;
+}
+
+// Headers
+h1 > a,
+h2 > a,
+h3 > a,
+a {
+  text-align: left;
+  margin-bottom: 0;
+  color: $color-cherry;
+  text-decoration: none;
+  font-weight: 100;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-ruby;
+    text-decoration: underline;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
 }
 
 /* Grouping content
