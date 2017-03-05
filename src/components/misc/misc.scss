@@ -11,9 +11,9 @@ body {
   color: $color-midnight;
 }
 
-hr {
+.break {
   margin: $padding-md 0;
-  border: $border-thin;
+  border-bottom: 1px solid $color-silver;
 }
 
 .visuallyhidden {

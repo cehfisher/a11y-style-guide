@@ -13,7 +13,7 @@
   .kss-section {
     margin-bottom: $padding-md-lg;
     padding-bottom: $padding-md;
-    border-bottom: $border-thin;
+    border-bottom: 1px solid $color-silver;
 
     &:first-child,
     &:last-child {

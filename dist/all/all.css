@@ -464,7 +464,6 @@ button,
   border: 3px solid #e00000;
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  text-transform: uppercase;
   font-size: 1rem;
   margin: 5px;
   position: relative;
@@ -490,7 +489,6 @@ button,
   border: 3px solid #e00000;
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  text-transform: uppercase;
   font-size: 1rem;
   margin: 5px;
   color: #e00000;
@@ -538,7 +536,6 @@ button,
   border: 3px solid #e00000;
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  text-transform: uppercase;
   font-size: 1rem;
   margin: 5px;
   position: relative;
@@ -564,7 +561,6 @@ button,
   border: 3px solid #e00000;
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  text-transform: uppercase;
   font-size: 1rem;
   margin: 5px;
   color: #e00000;
@@ -602,9 +598,9 @@ body {
   font-family: 'Verdana', 'Arial', sans-serif;
   color: #464646; }
 
-hr {
+.break {
   margin: 2rem 0;
-  border: 1px solid rgba(136, 139, 141, 0.25); }
+  border-bottom: 1px solid #bbbbbb; }
 
 .visuallyhidden {
   border: 0;
@@ -629,7 +625,6 @@ button,
   border: 3px solid #e00000;
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  text-transform: uppercase;
   font-size: 1rem;
   margin: 5px;
   position: relative;
@@ -655,7 +650,6 @@ button,
   border: 3px solid #e00000;
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  text-transform: uppercase;
   font-size: 1rem;
   margin: 5px;
   color: #e00000;
@@ -692,7 +686,7 @@ button,
 #kss-node .kss-section {
   margin-bottom: 3rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(136, 139, 141, 0.25); }
+  border-bottom: 1px solid #bbbbbb; }
   #kss-node .kss-section:first-child, #kss-node .kss-section:last-child {
     border-bottom: 0;
     margin-bottom: 0;
