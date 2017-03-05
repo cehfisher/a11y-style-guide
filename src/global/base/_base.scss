@@ -75,6 +75,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 1rem;
+  font-weight: 100;
 }
 
 h1 {
@@ -118,15 +119,6 @@ a {
     color: $color-ruby;
     text-decoration: underline;
   }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 100;
 }
 
 /* Grouping content

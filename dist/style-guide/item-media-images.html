@@ -51,18 +51,21 @@
       <article role="main" class="kss-article">
       
         
-                            <div id="kssref-references" class="kss-section kss-depth-1">
+                            <div id="kssref-media-images" class="kss-section kss-depth-2">
             <div class="kss-style">
-                            <h1 class="kss-title kss-title--level-1">
-                <a class="kss-title__permalink" href="#kssref-references">
-                  References
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-media-images">
+                  Images
                 </a>
-              </h1>
+              </h2>
 
                               <div class="kss-description">
-                  <p>Many people, groups, articles, books, etc. have been referenced in this styleguide.
-For additional info on any of the subjects, see the links below.</p>
-
+                  <p><b>A11y pro tips</b>:</p>
+<ul>
+ <li>A <code>&lt;button&gt;</code> doesn&#39;t need anything special to work. ARIA&#39;s role=&quot;button&quot; is already assigned natively.</li>
+ <li>If you are using a link as a button, add the <code>role=&quot;button&quot;</code> attribute.</li>
+ <li>Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
+</ul>
                 </div>
               
                           </div>
@@ -71,41 +74,63 @@ For additional info on any of the subjects, see the links below.</p>
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    
-<section>
-  <h2>ARIA Labels</h2>
-  <ul>
-    <li><a href="http://www.last-child.com/aria-labelledby-on-lists/">ARIA Labelledby on Lists</a></li>
-    <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/ARIA8#ARIA8-examples">Describing the purpose of a link in HTML using aria-label</a></li>
-  </ul>
-  <hr>
-  <h2>Scalable vector graphics (SVGs)</h2>
-  <ul>
-    <li><a href="https://www.sitepoint.com/tips-accessible-svg">Tips for Creating Accessible SVG</a></li>
-    <li><a href="https://css-tricks.com/accessible-svgs">Accessible SVGs</li>
-  </ul>
-</section>
+                    <div class="buttons ">
+  <form action="" method="post">
+    <button type="submit" href="#" class="button">Regular Button</button>
+    <button type="submit" href="#" class="button button--outline">Outline Button</button>
+    <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+  </form>
+</div>
 
                   </div>
                 </div>
 
+                                <div class="kss-modifier">
+                  <div class="kss-modifier-head">
+                    <div class="kss-modifier-name">.buttons--center</div>
+                    <div class="kss-modifier-description">
+                      modifier for centered buttons
+                    </div>
+                  </div>
+                  <div class="kss-modifier-example">
+                    <div class="buttons buttons--center">
+  <form action="" method="post">
+    <button type="submit" href="#" class="button">Regular Button</button>
+    <button type="submit" href="#" class="button button--outline">Outline Button</button>
+    <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+  </form>
+</div>
+
+                  </div>
+                </div>
+                                <div class="kss-modifier">
+                  <div class="kss-modifier-head">
+                    <div class="kss-modifier-name">.buttons--right</div>
+                    <div class="kss-modifier-description">
+                      modifier for right aligned buttons
+                    </div>
+                  </div>
+                  <div class="kss-modifier-example">
+                    <div class="buttons buttons--right">
+  <form action="" method="post">
+    <button type="submit" href="#" class="button">Regular Button</button>
+    <button type="submit" href="#" class="button button--outline">Outline Button</button>
+    <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+  </form>
+</div>
+
+                  </div>
+                </div>
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/sreferences&#039;) }}
-&lt;section&gt;
-  &lt;h2&gt;ARIA Labels&lt;/h2&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&quot;http://www.last-child.com/aria-labelledby-on-lists/&quot;&gt;ARIA Labelledby on Lists&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/ARIA8#ARIA8-examples&quot;&gt;Describing the purpose of a link in HTML using aria-label&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;hr&gt;
-  &lt;h2&gt;Scalable vector graphics (SVGs)&lt;/h2&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&quot;https://www.sitepoint.com/tips-accessible-svg&quot;&gt;Tips for Creating Accessible SVG&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;https://css-tricks.com/accessible-svgs&quot;&gt;Accessible SVGs&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;
+                    <pre><code data-language="html">&lt;div class=&quot;buttons {{modifier_class}}&quot;&gt;
+  &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
+    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Regular Button&lt;/button&gt;
+    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Outline Button&lt;/button&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Link Button&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
 </code></pre>
                   </template>
                 </div>

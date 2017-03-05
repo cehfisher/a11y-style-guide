@@ -16,18 +16,19 @@
   <div class="kss-wrapper">
 
     <div class="kss-sidebar">
+    <button class="toggle"></button>
       <div class="kss-sidebar-inner">
         <header class="kss-header">
-          <h1 class="kss-doc-title">Style Guide</h1>
+          <h1 class="kss-doc-title">A11Y Style Guide</h1>
         </header>
         <nav class="kss-nav">
           <ul class="kss-menu">
             <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
                           <li class="kss-menu-item">
-                <a href="section-components.html"><span class="kss-ref">1</span><span class="kss-name">Components</span></a>
+                <a href="section-fonts.html"><span class="kss-ref">1</span><span class="kss-name">Fonts</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-fonts.html"><span class="kss-ref">2</span><span class="kss-name">Fonts</span></a>
+                <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
                               </li>
                           <li class="kss-menu-item">
                 <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
@@ -39,8 +40,14 @@
                         </a>
                       </li>
                                           <li class="kss-menu-item">
-                        <a href="#kssref-media-svgs">
+                        <a href="#kssref-media-images">
                           <span class="kss-ref ">3.2</span
+                            ><span class="kss-name">Images</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-media-svgs">
+                          <span class="kss-ref ">3.3</span
                             ><span class="kss-name">SVGs</span>
                         </a>
                       </li>
@@ -55,8 +62,7 @@
                           <li class="kss-menu-item">
                 <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
                               </li>
-                        <li><button class="kss-menu-full-width js-full-width" title="Remove navigation and padding to show what a component looks like at full page width.">Remove Navigation</button></li>
-          </ul>
+                      </ul>
         </nav>
       </div>
     </div>
@@ -143,6 +149,92 @@ passed as the second argument.</p>
     &lt;p class=&quot;kss-icons__name&quot;&gt;{{ item.icon }}&lt;/p&gt;
   &lt;/div&gt;
 {% endfor %}
+&lt;/div&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-media-images" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-media-images">
+                  Images
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <p><b>A11y pro tips</b>:</p>
+<ul>
+ <li>A <code>&lt;button&gt;</code> doesn&#39;t need anything special to work. ARIA&#39;s role=&quot;button&quot; is already assigned natively.</li>
+ <li>If you are using a link as a button, add the <code>role=&quot;button&quot;</code> attribute.</li>
+ <li>Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
+</ul>
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    <div class="buttons ">
+  <form action="" method="post">
+    <button type="submit" href="#" class="button">Regular Button</button>
+    <button type="submit" href="#" class="button button--outline">Outline Button</button>
+    <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+  </form>
+</div>
+
+                  </div>
+                </div>
+
+                                <div class="kss-modifier">
+                  <div class="kss-modifier-head">
+                    <div class="kss-modifier-name">.buttons--center</div>
+                    <div class="kss-modifier-description">
+                      modifier for centered buttons
+                    </div>
+                  </div>
+                  <div class="kss-modifier-example">
+                    <div class="buttons buttons--center">
+  <form action="" method="post">
+    <button type="submit" href="#" class="button">Regular Button</button>
+    <button type="submit" href="#" class="button button--outline">Outline Button</button>
+    <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+  </form>
+</div>
+
+                  </div>
+                </div>
+                                <div class="kss-modifier">
+                  <div class="kss-modifier-head">
+                    <div class="kss-modifier-name">.buttons--right</div>
+                    <div class="kss-modifier-description">
+                      modifier for right aligned buttons
+                    </div>
+                  </div>
+                  <div class="kss-modifier-example">
+                    <div class="buttons buttons--right">
+  <form action="" method="post">
+    <button type="submit" href="#" class="button">Regular Button</button>
+    <button type="submit" href="#" class="button button--outline">Outline Button</button>
+    <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+  </form>
+</div>
+
+                  </div>
+                </div>
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">&lt;div class=&quot;buttons {{modifier_class}}&quot;&gt;
+  &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
+    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Regular Button&lt;/button&gt;
+    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Outline Button&lt;/button&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Link Button&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
+  &lt;/form&gt;
 &lt;/div&gt;
 </code></pre>
                   </template>
@@ -244,6 +336,7 @@ passed as the second argument.</p>
 <script src="kss-assets/kss.js"></script>
 <script src="kss-assets/rainbow.min.js"></script>
 <script src="kss-assets/main.js"></script>
+<script src="/themes/custom/a11y/src/js/sidebar-slide.js"></script>
 
 
 <!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->

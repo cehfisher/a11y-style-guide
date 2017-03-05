@@ -35,10 +35,16 @@
   .kss-content {
     margin-left: 325px;
     padding-left: $padding-xxsm;
+    transition: all 0.5s ease-in-out;
 
     li {
       padding-bottom: $padding-xxsm;
     }
+  }
+
+  .kss-sidebar-collapsed + .kss-content {
+    margin-left: $padding-md-lg;
+    transition: all 0.5s ease-in-out;
   }
 
   .kss-modifier-original .kss-modifier-example {
@@ -66,8 +72,8 @@
     z-index: 1;
 
     .kss-nav {
-      padding-right: 0;
-      margin: $padding-sm (-$padding-xxsm);
+      padding: $padding-xxsm 0;
+      margin: $padding-xxsm (-$padding-xxsm);
     }
 
     .kss-sidebar-inner {
@@ -77,12 +83,12 @@
   }
 
   .kss-menu > .kss-menu-item {
-    margin: $padding-xxsm;
-  }
+    padding: $padding-xxsm;
+    border-bottom: 1px solid $color-silver;
 
-  .kss-menu-full-width {
-    @include button;
-    margin-top: $padding-md;
+    &:last-child {
+      border-bottom: 0;
+    }
   }
 
   .kss-menu,
@@ -135,9 +141,9 @@
 
   .kss-doc-title {
     text-align: left;
-    color: $color-cherry;
+    color: $color-midnight;
     text-decoration: none;
-    margin: 0 0 1.5rem;
+    margin: 0;
   }
 
   h2,
@@ -149,7 +155,7 @@
 
   .kss-depth-1 .kss-title,
   .kss-overview > h1:first-child {
-    border-bottom: $border-regular;
+    border-bottom: 1px solid $color-silver;
     font-weight: 100;
   }
 
@@ -171,4 +177,52 @@
   h6 {
     font-weight: 100;
   }
+}
+
+// Sidebar toggle settings
+.kss-sidebar,
+.toggle {
+  transition: all 0.5s ease-in-out;
+  overflow: visible !important; // needed to override default KSS node styling
+}
+
+.kss-sidebar {
+  width: 200px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.toggle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url('/themes/custom/a11y/src/assets/chevron_left_round_red.png') no-repeat;
+  right: 10px;
+  top: 8px;
+  background-size: 32px;
+  border: 0;
+  box-shadow: none;
+  background-color: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
+
+.kss-sidebar-collapsed {
+  transform: translateX(-100%);
+}
+
+.kss-sidebar-collapsed .toggle {
+  transform: translateX(100%);
+  background: url('/themes/custom/a11y/src/assets/chevron_right_round_red.png') no-repeat;
+  right: -10px;
+  top: 8px;
+  background-size: 32px;
 }
