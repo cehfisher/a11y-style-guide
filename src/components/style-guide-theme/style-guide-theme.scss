@@ -74,11 +74,15 @@
     .kss-nav {
       padding: $padding-xxsm 0;
       margin: $padding-xxsm (-$padding-xxsm);
+      max-height: calc( 125vh - 44px - 68px - 30px);
+      overflow-y: scroll;
     }
 
     .kss-sidebar-inner {
-      padding-top: $padding-md;
       text-decoration: none;
+      padding-top: 0;
+      text-decoration: none;
+      margin-top: -$padding-xxsm;
     }
   }
 
@@ -200,7 +204,7 @@
   height: 30px;
   background: url('/themes/custom/a11y/src/assets/chevron_left_round_red.png') no-repeat;
   right: 10px;
-  top: 0;
+  top: 5px;
   background-size: 32px;
   border: 0;
   box-shadow: none;
@@ -221,6 +225,10 @@
   .kss-menu > .kss-menu-item {
     border-bottom: 0 !important;
   }
+
+  .kss-nav {
+    overflow-y: hidden !important;
+  }
 }
 
 .kss-sidebar-collapsed .toggle {
@@ -228,5 +236,5 @@
   background: url('/themes/custom/a11y/src/assets/chevron_right_round_red.png') no-repeat;
   background-size: 32px;
   right: 35px;
-  top: 0;
+  top: 5px;
 }

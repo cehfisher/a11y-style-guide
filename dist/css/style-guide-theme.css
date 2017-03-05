@@ -48,11 +48,15 @@
   #kss-node .kss-sidebar.kss-fixed .kss-nav,
   #kss-node .kss-sidebar .kss-nav {
     padding: 0.5rem 0;
-    margin: 0.5rem -0.5rem; }
+    margin: 0.5rem -0.5rem;
+    max-height: calc( 125vh - 44px - 68px - 30px);
+    overflow-y: scroll; }
   #kss-node .kss-sidebar.kss-fixed .kss-sidebar-inner,
   #kss-node .kss-sidebar .kss-sidebar-inner {
-    padding-top: 2rem;
-    text-decoration: none; }
+    text-decoration: none;
+    padding-top: 0;
+    text-decoration: none;
+    margin-top: -0.5rem; }
 
 #kss-node .kss-menu > .kss-menu-item {
   padding: 0.5rem;
@@ -169,7 +173,7 @@
   height: 30px;
   background: url("/themes/custom/a11y/src/assets/chevron_left_round_red.png") no-repeat;
   right: 10px;
-  top: 0;
+  top: 5px;
   background-size: 32px;
   border: 0;
   box-shadow: none;
@@ -183,10 +187,12 @@
   transform: translateX(-82%); }
   .kss-sidebar-collapsed .kss-menu > .kss-menu-item {
     border-bottom: 0 !important; }
+  .kss-sidebar-collapsed .kss-nav {
+    overflow-y: hidden !important; }
 
 .kss-sidebar-collapsed .toggle {
   transform: translateX(100%);
   background: url("/themes/custom/a11y/src/assets/chevron_right_round_red.png") no-repeat;
   background-size: 32px;
   right: 35px;
-  top: 0; }
+  top: 5px; }
