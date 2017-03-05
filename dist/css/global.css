@@ -30,7 +30,7 @@ html {
 body {
   margin: 0;
   font-size: 100%;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.02em; }
 
 /**
@@ -54,7 +54,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 1rem; }
+  margin: 0 0 1rem;
+  font-weight: 100; }
 
 h1 {
   font-size: 2rem; }
@@ -95,14 +96,6 @@ a {
   a:active {
     color: #a51323;
     text-decoration: underline; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 100; }
 
 /* Grouping content
    ========================================================================== */

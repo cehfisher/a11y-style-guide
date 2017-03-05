@@ -9,37 +9,16 @@
 //
 // Markup: read-more.twig
 //
-// Style guide: Components.read-more
+// Style guide: General.read-more
 
 // Import site utilities.
 @import '../../global/utils/init';
 
-button,
-.button {
-  @include button;
-  position: relative;
-  margin-top: $padding-sm;
-}
+.read-more {
 
-.button--outline {
-  @include button-outline;
-  position: relative;
-  margin-top: $padding-sm;
-}
-
-.buttons--center {
-  text-align: center;
-  clear: both;
-  position: relative;
-  margin-top: $padding-sm;
-}
-
-.buttons--right {
-  text-align: right;
-  clear: both;
-}
-
-.buttons--left {
-  text-align: left;
-  clear: both;
+  &::after {
+    content: " > ";
+    display: inline-block;
+    padding-left: 5px;
+  }
 }

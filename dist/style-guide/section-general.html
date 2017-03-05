@@ -16,38 +16,39 @@
   <div class="kss-wrapper">
 
     <div class="kss-sidebar">
+    <button class="toggle"><span class="visuallyhidden">Button to collapse and expand the sidebar</span></button>
       <div class="kss-sidebar-inner">
         <header class="kss-header">
-          <h1 class="kss-doc-title">Style Guide</h1>
+          <h1 class="kss-doc-title">A11Y Style Guide</h1>
         </header>
         <nav class="kss-nav">
           <ul class="kss-menu">
             <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
                           <li class="kss-menu-item">
-                <a href="section-components.html"><span class="kss-ref">1</span><span class="kss-name">Components</span></a>
+                <a href="section-fonts.html"><span class="kss-ref">1</span><span class="kss-name">Fonts</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
                                   <ul class="kss-menu-child">
                                           <li class="kss-menu-item">
-                        <a href="#kssref-components-buttons">
-                          <span class="kss-ref ">1.1</span
+                        <a href="#kssref-general-buttons">
+                          <span class="kss-ref ">2.1</span
                             ><span class="kss-name">Buttons</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
-                        <a href="#kssref-components-list">
-                          <span class="kss-ref ">1.2</span
+                        <a href="#kssref-general-list">
+                          <span class="kss-ref ">2.2</span
                             ><span class="kss-name">List</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
-                        <a href="#kssref-components-read-more">
-                          <span class="kss-ref ">1.3</span
+                        <a href="#kssref-general-read-more">
+                          <span class="kss-ref ">2.3</span
                             ><span class="kss-name">Read More</span>
                         </a>
                       </li>
                                       </ul>
-                              </li>
-                          <li class="kss-menu-item">
-                <a href="section-fonts.html"><span class="kss-ref">2</span><span class="kss-name">Fonts</span></a>
                               </li>
                           <li class="kss-menu-item">
                 <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
@@ -61,8 +62,7 @@
                           <li class="kss-menu-item">
                 <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
                               </li>
-                        <li><button class="kss-menu-full-width js-full-width" title="Remove navigation and padding to show what a component looks like at full page width.">Remove Navigation</button></li>
-          </ul>
+                      </ul>
         </nav>
       </div>
     </div>
@@ -71,11 +71,11 @@
       <article role="main" class="kss-article">
       
         
-                            <div id="kssref-components" class="kss-section kss-depth-1">
+                            <div id="kssref-general" class="kss-section kss-depth-1">
             <div class="kss-style">
                             <h1 class="kss-title kss-title--level-1">
-                <a class="kss-title__permalink" href="#kssref-components">
-                  Components
+                <a class="kss-title__permalink" href="#kssref-general">
+                  General
                 </a>
               </h1>
 
@@ -83,10 +83,10 @@
                           </div>
 
                       </div>
-                            <section id="kssref-components-buttons" class="kss-section kss-depth-2">
+                            <section id="kssref-general-buttons" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-components-buttons">
+                <a class="kss-title__permalink" href="#kssref-general-buttons">
                   Buttons
                 </a>
               </h2>
@@ -169,10 +169,10 @@
                               </div>
 
                                     </section>
-                            <section id="kssref-components-list" class="kss-section kss-depth-2">
+                            <section id="kssref-general-list" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-components-list">
+                <a class="kss-title__permalink" href="#kssref-general-list">
                   List
                 </a>
               </h2>
@@ -204,7 +204,7 @@
     <p>Etiam ac mauris vitae ante vulputate convallis non eu orci.</p>
   </article>
   </section>
-<hr>
+<div class="break"></div>
 <section class="list">
   <h2 id="sample-list2" class="sample-list__heading">Sample List component</h2>
     <ul aria-labelledby="sample-list2" class="sample-list__item">
@@ -234,7 +234,7 @@
   &lt;/article&gt;
   {% endfor %}
 &lt;/section&gt;
-&lt;hr&gt;
+&lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
 &lt;section class=&quot;list&quot;&gt;
   &lt;h2 id=&quot;sample-list2&quot; class=&quot;sample-list__heading&quot;&gt;{{ heading }}&lt;/h2&gt;
   {% for item in items %}
@@ -249,10 +249,10 @@
                               </div>
 
                                     </section>
-                            <section id="kssref-components-read-more" class="kss-section kss-depth-2">
+                            <section id="kssref-general-read-more" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-components-read-more">
+                <a class="kss-title__permalink" href="#kssref-general-read-more">
                   Read More
                 </a>
               </h2>
@@ -276,11 +276,11 @@
 <form action="" method="post">
   <h2>Example #1</h2>
   <h3 id="headline">Storms Hit East Coast</h3>
-  <p>Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. <a href="news.html" aria-labelledby="headline">Read More</a></p>
-  <hr>
+  <p>Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. <a href="news.html" aria-labelledby="headline" class="read-more">Read More</a></p>
+  <div class="break"></div>
   <h2>Example #2</h2>
   <h3>Black Bears Trapped in Cars?</h3>
-  <p>Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. <a href="/news/black-bears-trapped-in-cars" aria-label="Learn more about trapped black bears">Read More</a></p>
+  <p>Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. <a href="/news/black-bears-trapped-in-cars" aria-label="Learn more about trapped black bears" class="read-more">Read More</a></p>
 </form>
 
                   </div>
@@ -293,11 +293,11 @@
 &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
   &lt;h2&gt;Example #1&lt;/h2&gt;
   &lt;h3 id=&quot;headline&quot;&gt;Storms Hit East Coast&lt;/h3&gt;
-  &lt;p&gt;Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. &lt;a href=&quot;news.html&quot; aria-labelledby=&quot;headline&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
-  &lt;hr&gt;
+  &lt;p&gt;Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. &lt;a href=&quot;news.html&quot; aria-labelledby=&quot;headline&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
   &lt;h2&gt;Example #2&lt;/h2&gt;
   &lt;h3&gt;Black Bears Trapped in Cars?&lt;/h3&gt;
-  &lt;p&gt;Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. &lt;a href=&quot;/news/black-bears-trapped-in-cars&quot; aria-label=&quot;Learn more about trapped black bears&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. &lt;a href=&quot;/news/black-bears-trapped-in-cars&quot; aria-label=&quot;Learn more about trapped black bears&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
 &lt;/form&gt;
 </code></pre>
                   </template>
@@ -323,6 +323,7 @@
 <script src="kss-assets/kss.js"></script>
 <script src="kss-assets/rainbow.min.js"></script>
 <script src="kss-assets/main.js"></script>
+<script src="/themes/custom/a11y/src/js/sidebar-slide.js"></script>
 
 
 <!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->

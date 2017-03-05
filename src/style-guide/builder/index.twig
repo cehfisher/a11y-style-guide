@@ -15,9 +15,10 @@
   <div class="kss-wrapper">
 
     <div class="kss-sidebar">
+    <button class="toggle"><span class="visuallyhidden">Button to collapse and expand the sidebar</span></button>
       <div class="kss-sidebar-inner">
         <header class="kss-header">
-          <h1 class="kss-doc-title">{{ options.title }}</h1>
+          <h1 class="kss-doc-title">A11Y Style Guide</h1>
         </header>
         <nav class="kss-nav">
           <ul class="kss-menu">
@@ -39,7 +40,6 @@
                 {% endif %}
               </li>
             {% endfor %}
-            <li><button class="kss-menu-full-width js-full-width" title="Remove navigation and padding to show what a component looks like at full page width.">Remove Navigation</button></li>
           </ul>
         </nav>
       </div>
@@ -157,6 +157,7 @@
 <script src="kss-assets/kss.js"></script>
 <script src="kss-assets/rainbow.min.js"></script>
 <script src="kss-assets/main.js"></script>
+<script src="/themes/custom/a11y/src/js/sidebar-slide.js"></script>
 {{ scripts|raw }}
 
 <!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
