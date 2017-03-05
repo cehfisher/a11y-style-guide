@@ -140,9 +140,8 @@
 #kss-node .kss-depth-1 .kss-title,
 #kss-node .kss-overview > h1:first-child {
   font-weight: 100;
-  background: url("../assets/hr.png") repeat-x 0 100%;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
   border-bottom: 0; }
 
 #kss-node .kss-header {

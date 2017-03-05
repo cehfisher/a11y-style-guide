@@ -160,9 +160,8 @@
   .kss-depth-1 .kss-title,
   .kss-overview > h1:first-child {
     font-weight: 100;
-    background: url('#{$asset-path}/hr.png') repeat-x 0 100%;
-    padding-bottom: $padding-sm;
-    margin-bottom: $padding-sm;
+    padding-bottom: 0;
+    margin-bottom: 0;
     border-bottom: 0;
   }
 
