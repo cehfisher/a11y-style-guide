@@ -106,13 +106,16 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <div class="buttons ">
-  <form action="" method="post">
-    <button type="submit" href="#" class="button">Regular Button</button>
-    <button type="submit" href="#" class="button button--outline">Outline Button</button>
-    <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
-  </form>
-</div>
+                    
+<section class="buttons">
+  <div class="buttons ">
+    <form action="" method="post">
+      <button type="submit" href="#" class="button">Regular Button</button>
+      <button type="submit" href="#" class="button button--outline">Outline Button</button>
+      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+    </form>
+  </div>
+</section>
 
                   </div>
                 </div>
@@ -125,13 +128,16 @@
                     </div>
                   </div>
                   <div class="kss-modifier-example">
-                    <div class="buttons buttons--center">
-  <form action="" method="post">
-    <button type="submit" href="#" class="button">Regular Button</button>
-    <button type="submit" href="#" class="button button--outline">Outline Button</button>
-    <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
-  </form>
-</div>
+                    
+<section class="buttons">
+  <div class="buttons buttons--center">
+    <form action="" method="post">
+      <button type="submit" href="#" class="button">Regular Button</button>
+      <button type="submit" href="#" class="button button--outline">Outline Button</button>
+      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+    </form>
+  </div>
+</section>
 
                   </div>
                 </div>
@@ -143,26 +149,32 @@
                     </div>
                   </div>
                   <div class="kss-modifier-example">
-                    <div class="buttons buttons--right">
-  <form action="" method="post">
-    <button type="submit" href="#" class="button">Regular Button</button>
-    <button type="submit" href="#" class="button button--outline">Outline Button</button>
-    <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
-  </form>
-</div>
+                    
+<section class="buttons">
+  <div class="buttons buttons--right">
+    <form action="" method="post">
+      <button type="submit" href="#" class="button">Regular Button</button>
+      <button type="submit" href="#" class="button button--outline">Outline Button</button>
+      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+    </form>
+  </div>
+</section>
 
                   </div>
                 </div>
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">&lt;div class=&quot;buttons {{modifier_class}}&quot;&gt;
-  &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
-    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Regular Button&lt;/button&gt;
-    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Outline Button&lt;/button&gt;
-    &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Link Button&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
-  &lt;/form&gt;
-&lt;/div&gt;
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/buttons&#039;) }}
+&lt;section class=&quot;buttons&quot;&gt;
+  &lt;div class=&quot;buttons {{modifier_class}}&quot;&gt;
+    &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
+      &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Regular Button&lt;/button&gt;
+      &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Outline Button&lt;/button&gt;
+      &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Link Button&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 </code></pre>
                   </template>
                 </div>
@@ -273,15 +285,17 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<form action="" method="post">
-  <h2>Example #1</h2>
-  <h3 id="headline">Storms Hit East Coast</h3>
-  <p>Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. <a href="news.html" aria-labelledby="headline" class="read-more">Read More</a></p>
-  <div class="break"></div>
-  <h2>Example #2</h2>
-  <h3>Black Bears Trapped in Cars?</h3>
-  <p>Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. <a href="/news/black-bears-trapped-in-cars" aria-label="Learn more about trapped black bears" class="read-more">Read More</a></p>
-</form>
+<section class="read-more">
+  <form action="" method="post">
+    <h2>Example #1</h2>
+    <h3 id="headline">Storms Hit East Coast</h3>
+    <p>Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. <a href="news.html" aria-labelledby="headline" class="read-more">Read More</a></p>
+    <div class="break"></div>
+    <h2>Example #2</h2>
+    <h3>Black Bears Trapped in Cars?</h3>
+    <p>Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. <a href="/news/black-bears-trapped-in-cars" aria-label="Learn more about trapped black bears" class="read-more">Read More</a></p>
+  </form>
+</section>
 
                   </div>
                 </div>
@@ -290,15 +304,17 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/read-more&#039;) }}
-&lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
-  &lt;h2&gt;Example #1&lt;/h2&gt;
-  &lt;h3 id=&quot;headline&quot;&gt;Storms Hit East Coast&lt;/h3&gt;
-  &lt;p&gt;Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. &lt;a href=&quot;news.html&quot; aria-labelledby=&quot;headline&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
-  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-  &lt;h2&gt;Example #2&lt;/h2&gt;
-  &lt;h3&gt;Black Bears Trapped in Cars?&lt;/h3&gt;
-  &lt;p&gt;Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. &lt;a href=&quot;/news/black-bears-trapped-in-cars&quot; aria-label=&quot;Learn more about trapped black bears&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
-&lt;/form&gt;
+&lt;section class=&quot;read-more&quot;&gt;
+  &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
+    &lt;h2&gt;Example #1&lt;/h2&gt;
+    &lt;h3 id=&quot;headline&quot;&gt;Storms Hit East Coast&lt;/h3&gt;
+    &lt;p&gt;Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. &lt;a href=&quot;news.html&quot; aria-labelledby=&quot;headline&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
+    &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+    &lt;h2&gt;Example #2&lt;/h2&gt;
+    &lt;h3&gt;Black Bears Trapped in Cars?&lt;/h3&gt;
+    &lt;p&gt;Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. &lt;a href=&quot;/news/black-bears-trapped-in-cars&quot; aria-label=&quot;Learn more about trapped black bears&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
+  &lt;/form&gt;
+&lt;/section&gt;
 </code></pre>
                   </template>
                 </div>

@@ -17,32 +17,6 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
-button,
-.button {
-  @include button;
-  position: relative;
-  margin-top: $padding-sm;
-}
-
-.button--outline {
-  @include button-outline;
-  position: relative;
-  margin-top: $padding-sm;
-}
-
-.buttons--center {
-  text-align: center;
-  clear: both;
-  position: relative;
-  margin-top: $padding-sm;
-}
-
-.buttons--right {
-  text-align: right;
-  clear: both;
-}
-
-.buttons--left {
-  text-align: left;
-  clear: both;
+.images {
+  //to-do
 }

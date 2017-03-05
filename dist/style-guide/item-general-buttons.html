@@ -74,13 +74,16 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <div class="buttons ">
-  <form action="" method="post">
-    <button type="submit" href="#" class="button">Regular Button</button>
-    <button type="submit" href="#" class="button button--outline">Outline Button</button>
-    <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
-  </form>
-</div>
+                    
+<section class="buttons">
+  <div class="buttons ">
+    <form action="" method="post">
+      <button type="submit" href="#" class="button">Regular Button</button>
+      <button type="submit" href="#" class="button button--outline">Outline Button</button>
+      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+    </form>
+  </div>
+</section>
 
                   </div>
                 </div>
@@ -93,13 +96,16 @@
                     </div>
                   </div>
                   <div class="kss-modifier-example">
-                    <div class="buttons buttons--center">
-  <form action="" method="post">
-    <button type="submit" href="#" class="button">Regular Button</button>
-    <button type="submit" href="#" class="button button--outline">Outline Button</button>
-    <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
-  </form>
-</div>
+                    
+<section class="buttons">
+  <div class="buttons buttons--center">
+    <form action="" method="post">
+      <button type="submit" href="#" class="button">Regular Button</button>
+      <button type="submit" href="#" class="button button--outline">Outline Button</button>
+      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+    </form>
+  </div>
+</section>
 
                   </div>
                 </div>
@@ -111,26 +117,32 @@
                     </div>
                   </div>
                   <div class="kss-modifier-example">
-                    <div class="buttons buttons--right">
-  <form action="" method="post">
-    <button type="submit" href="#" class="button">Regular Button</button>
-    <button type="submit" href="#" class="button button--outline">Outline Button</button>
-    <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
-  </form>
-</div>
+                    
+<section class="buttons">
+  <div class="buttons buttons--right">
+    <form action="" method="post">
+      <button type="submit" href="#" class="button">Regular Button</button>
+      <button type="submit" href="#" class="button button--outline">Outline Button</button>
+      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+    </form>
+  </div>
+</section>
 
                   </div>
                 </div>
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">&lt;div class=&quot;buttons {{modifier_class}}&quot;&gt;
-  &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
-    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Regular Button&lt;/button&gt;
-    &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Outline Button&lt;/button&gt;
-    &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Link Button&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
-  &lt;/form&gt;
-&lt;/div&gt;
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/buttons&#039;) }}
+&lt;section class=&quot;buttons&quot;&gt;
+  &lt;div class=&quot;buttons {{modifier_class}}&quot;&gt;
+    &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
+      &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Regular Button&lt;/button&gt;
+      &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Outline Button&lt;/button&gt;
+      &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Link Button&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 </code></pre>
                   </template>
                 </div>
