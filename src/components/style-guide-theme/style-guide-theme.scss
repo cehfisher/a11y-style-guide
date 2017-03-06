@@ -122,13 +122,13 @@
     padding: 0;
   }
 
-  // Headers
   h1 > a,
   h2 > a,
   h3 > a,
   .kss-menu > .kss-menu-item > a > .kss-ref,
   .kss-menu-child > .kss-menu-item > a > .kss-ref,
-  .kss-overview a {
+  .kss-overview a,
+  .kss-description a {
     text-align: left;
     margin-bottom: 0;
     color: $color-cherry;
@@ -159,8 +159,10 @@
 
   .kss-depth-1 .kss-title,
   .kss-overview > h1:first-child {
-    border-bottom: 1px solid $color-silver;
     font-weight: 100;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
   }
 
   .kss-header {
@@ -180,6 +182,10 @@
   h5,
   h6 {
     font-weight: 100;
+  }
+
+  blockquote {
+    font-style: italic;
   }
 }
 
@@ -202,7 +208,7 @@
   position: absolute;
   width: 30px;
   height: 30px;
-  background: url('/themes/custom/a11y/src/assets/chevron_left_round_red.png') no-repeat;
+  background: url('#{$asset-path}/chevron_left_round_red.png') no-repeat;
   right: 10px;
   top: 5px;
   background-size: 32px;
@@ -233,7 +239,7 @@
 
 .kss-sidebar-collapsed .toggle {
   transform: translateX(100%);
-  background: url('/themes/custom/a11y/src/assets/chevron_right_round_red.png') no-repeat;
+  background: url('#{$asset-path}/chevron_right_round_red.png') no-repeat;
   background-size: 32px;
   right: 35px;
   top: 5px;
