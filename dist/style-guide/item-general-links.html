@@ -61,7 +61,9 @@
 
                               <div class="kss-description">
                   <ul>
- <li>List of bullets</li>
+ <li>Add id selectors to titles and use <code>aria-labelledby=&quot;&quot;</code> to link to the title text (example #1).</li>
+ <li>Add decriptive text with <code>aria-label=&quot;&quot;</code> directly in the link (example #2).</li>
+ <li>Turn read more links into buttons, when you can.</li>
 </ul>
 
 <p><blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">2.4.4 Link Purpose (In Context)</a> - The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general. (Level A)</blockquote><hr></p>
@@ -76,8 +78,15 @@
                   <div class="kss-modifier-example">
                     
 <section class="links-section">
-  <div class="links">
-  </div>
+  <form action="" method="post">
+    <h2>Example #1</h2>
+    <h3 id="headline">Storms Hit East Coast</h3>
+    <p>Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. <a href="news.html" aria-labelledby="headline" class="links">Read More</a></p>
+    <div class="break"></div>
+    <h2>Example #2</h2>
+    <h3>Black Bears Trapped in Cars?</h3>
+    <p>Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. <a href="/news/black-bears-trapped-in-cars" aria-label="Learn more about trapped black bears" class="links">Read More</a></p>
+  </form>
 </section>
 
                   </div>
@@ -88,8 +97,15 @@
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/links&#039;) }}
 &lt;section class=&quot;links-section&quot;&gt;
-  &lt;div class=&quot;links&quot;&gt;
-  &lt;/div&gt;
+  &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
+    &lt;h2&gt;Example #1&lt;/h2&gt;
+    &lt;h3 id=&quot;headline&quot;&gt;Storms Hit East Coast&lt;/h3&gt;
+    &lt;p&gt;Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. &lt;a href=&quot;news.html&quot; aria-labelledby=&quot;headline&quot; class=&quot;links&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
+    &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+    &lt;h2&gt;Example #2&lt;/h2&gt;
+    &lt;h3&gt;Black Bears Trapped in Cars?&lt;/h3&gt;
+    &lt;p&gt;Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. &lt;a href=&quot;/news/black-bears-trapped-in-cars&quot; aria-label=&quot;Learn more about trapped black bears&quot; class=&quot;links&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
+  &lt;/form&gt;
 &lt;/section&gt;
 </code></pre>
                   </template>

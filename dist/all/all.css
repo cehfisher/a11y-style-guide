@@ -526,6 +526,11 @@ button,
 
 
 
+.links::after {
+  content: ' > ';
+  display: inline-block;
+  padding-left: 5px; }
+
 
 body {
   font-family: 'Verdana', 'Arial', sans-serif;
@@ -551,10 +556,7 @@ hr {
   position: absolute;
   width: 1px; }
 
-.read-more::after {
-  content: ' > ';
-  display: inline-block;
-  padding-left: 5px; }
+
 
 
 #kss-node .kss-section {
@@ -764,4 +766,5 @@ hr {
   background-size: 32px;
   right: 35px;
   top: 5px; }
+
 

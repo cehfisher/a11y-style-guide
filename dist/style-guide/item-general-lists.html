@@ -51,20 +51,17 @@
       <article role="main" class="kss-article">
       
         
-                            <div id="kssref-general-link-focus" class="kss-section kss-depth-2">
+                            <div id="kssref-general-lists" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-general-link-focus">
-                  Link Focus
+                <a class="kss-title__permalink" href="#kssref-general-lists">
+                  Lists
                 </a>
               </h2>
 
                               <div class="kss-description">
-                  <ul>
- <li>List of bullets</li>
-</ul>
-
-<p><blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">2.4.7 Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. (Level AA)</blockquote><hr></p>
+                  <p>This is a list component.</p>
+<p><blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">1.3.1 Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)</blockquote><hr></p>
 
                 </div>
               
@@ -75,10 +72,34 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<section class="link-focus-section">
-  <div class="link-focus">
-  </div>
-</section>
+<section class="lists-section">
+  <h2 id="sample-lists1" class="sample-lists__heading">Sample List component</h2>
+    <article aria-labelledby="sample-lists1" class="sample-lists__item">
+    <h3>This is the first title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </article>
+    <article aria-labelledby="sample-lists1" class="sample-lists__item">
+    <h3>This is the second title</h3>
+    <p>Donec tristique varius tortor, a rutrum mauris rhoncus venenatis.</p>
+  </article>
+    <article aria-labelledby="sample-lists1" class="sample-lists__item">
+    <h3>This is the third title</h3>
+    <p>Etiam ac mauris vitae ante vulputate convallis non eu orci.</p>
+  </article>
+  </section>
+<div class="break"></div>
+<section class="lists">
+  <h2 id="sample-lists2" class="sample-lists__heading">Sample List component</h2>
+    <ul aria-labelledby="sample-lists2" class="sample-lists__item">
+    <li>This is the first title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+  </ul>
+    <ul aria-labelledby="sample-lists2" class="sample-lists__item">
+    <li>This is the second title: Donec tristique varius tortor, a rutrum mauris rhoncus venenatis.</li>
+  </ul>
+    <ul aria-labelledby="sample-lists2" class="sample-lists__item">
+    <li>This is the third title: Etiam ac mauris vitae ante vulputate convallis non eu orci.</li>
+  </ul>
+  </section>
 
                   </div>
                 </div>
@@ -86,10 +107,24 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/link-focus&#039;) }}
-&lt;section class=&quot;link-focus-section&quot;&gt;
-  &lt;div class=&quot;link-focus&quot;&gt;
-  &lt;/div&gt;
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/lists&#039;) }}
+&lt;section class=&quot;lists-section&quot;&gt;
+  &lt;h2 id=&quot;sample-lists1&quot; class=&quot;sample-lists__heading&quot;&gt;{{ heading }}&lt;/h2&gt;
+  {% for item in items %}
+  &lt;article aria-labelledby=&quot;sample-lists1&quot; class=&quot;sample-lists__item&quot;&gt;
+    &lt;h3&gt;{{ item.title }}&lt;/h3&gt;
+    &lt;p&gt;{{ item.desc }}&lt;/p&gt;
+  &lt;/article&gt;
+  {% endfor %}
+&lt;/section&gt;
+&lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+&lt;section class=&quot;lists&quot;&gt;
+  &lt;h2 id=&quot;sample-lists2&quot; class=&quot;sample-lists__heading&quot;&gt;{{ heading }}&lt;/h2&gt;
+  {% for item in items %}
+  &lt;ul aria-labelledby=&quot;sample-lists2&quot; class=&quot;sample-lists__item&quot;&gt;
+    &lt;li&gt;{{ item.title }}: {{ item.desc }}&lt;/li&gt;
+  &lt;/ul&gt;
+  {% endfor %}
 &lt;/section&gt;
 </code></pre>
                   </template>
