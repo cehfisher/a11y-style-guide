@@ -552,6 +552,7 @@ hr {
   position: absolute;
   width: 1px; }
 
+
 .read-more::after {
   content: ' > ';
   display: inline-block;
