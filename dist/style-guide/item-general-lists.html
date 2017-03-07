@@ -51,11 +51,11 @@
       <article role="main" class="kss-article">
       
         
-                            <div id="kssref-general-list" class="kss-section kss-depth-2">
+                            <div id="kssref-general-lists" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-general-list">
-                  List
+                <a class="kss-title__permalink" href="#kssref-general-lists">
+                  Lists
                 </a>
               </h2>
 
@@ -72,31 +72,31 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<section class="list-section">
-  <h2 id="sample-list1" class="sample-list__heading">Sample List component</h2>
-    <article aria-labelledby="sample-list1" class="sample-list__item">
+<section class="lists-section">
+  <h2 id="sample-lists1" class="sample-lists__heading">Sample List component</h2>
+    <article aria-labelledby="sample-lists1" class="sample-lists__item">
     <h3>This is the first title</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
   </article>
-    <article aria-labelledby="sample-list1" class="sample-list__item">
+    <article aria-labelledby="sample-lists1" class="sample-lists__item">
     <h3>This is the second title</h3>
     <p>Donec tristique varius tortor, a rutrum mauris rhoncus venenatis.</p>
   </article>
-    <article aria-labelledby="sample-list1" class="sample-list__item">
+    <article aria-labelledby="sample-lists1" class="sample-lists__item">
     <h3>This is the third title</h3>
     <p>Etiam ac mauris vitae ante vulputate convallis non eu orci.</p>
   </article>
   </section>
 <div class="break"></div>
-<section class="list">
-  <h2 id="sample-list2" class="sample-list__heading">Sample List component</h2>
-    <ul aria-labelledby="sample-list2" class="sample-list__item">
+<section class="lists">
+  <h2 id="sample-lists2" class="sample-lists__heading">Sample List component</h2>
+    <ul aria-labelledby="sample-lists2" class="sample-lists__item">
     <li>This is the first title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
   </ul>
-    <ul aria-labelledby="sample-list2" class="sample-list__item">
+    <ul aria-labelledby="sample-lists2" class="sample-lists__item">
     <li>This is the second title: Donec tristique varius tortor, a rutrum mauris rhoncus venenatis.</li>
   </ul>
-    <ul aria-labelledby="sample-list2" class="sample-list__item">
+    <ul aria-labelledby="sample-lists2" class="sample-lists__item">
     <li>This is the third title: Etiam ac mauris vitae ante vulputate convallis non eu orci.</li>
   </ul>
   </section>
@@ -107,21 +107,21 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/list&#039;) }}
-&lt;section class=&quot;list-section&quot;&gt;
-  &lt;h2 id=&quot;sample-list1&quot; class=&quot;sample-list__heading&quot;&gt;{{ heading }}&lt;/h2&gt;
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/lists&#039;) }}
+&lt;section class=&quot;lists-section&quot;&gt;
+  &lt;h2 id=&quot;sample-lists1&quot; class=&quot;sample-lists__heading&quot;&gt;{{ heading }}&lt;/h2&gt;
   {% for item in items %}
-  &lt;article aria-labelledby=&quot;sample-list1&quot; class=&quot;sample-list__item&quot;&gt;
+  &lt;article aria-labelledby=&quot;sample-lists1&quot; class=&quot;sample-lists__item&quot;&gt;
     &lt;h3&gt;{{ item.title }}&lt;/h3&gt;
     &lt;p&gt;{{ item.desc }}&lt;/p&gt;
   &lt;/article&gt;
   {% endfor %}
 &lt;/section&gt;
 &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-&lt;section class=&quot;list&quot;&gt;
-  &lt;h2 id=&quot;sample-list2&quot; class=&quot;sample-list__heading&quot;&gt;{{ heading }}&lt;/h2&gt;
+&lt;section class=&quot;lists&quot;&gt;
+  &lt;h2 id=&quot;sample-lists2&quot; class=&quot;sample-lists__heading&quot;&gt;{{ heading }}&lt;/h2&gt;
   {% for item in items %}
-  &lt;ul aria-labelledby=&quot;sample-list2&quot; class=&quot;sample-list__item&quot;&gt;
+  &lt;ul aria-labelledby=&quot;sample-lists2&quot; class=&quot;sample-lists__item&quot;&gt;
     &lt;li&gt;{{ item.title }}: {{ item.desc }}&lt;/li&gt;
   &lt;/ul&gt;
   {% endfor %}
