@@ -34,33 +34,33 @@
                 <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
                                   <ul class="kss-menu-child">
                                           <li class="kss-menu-item">
-                        <a href="#kssref-media-icons">
+                        <a href="#kssref-media-audio">
                           <span class="kss-ref ">3.1</span
+                            ><span class="kss-name">Audio</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-media-icons">
+                          <span class="kss-ref ">3.2</span
                             ><span class="kss-name">Icons</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
                         <a href="#kssref-media-images">
-                          <span class="kss-ref ">3.2</span
-                            ><span class="kss-name">Video</span>
-                        </a>
-                      </li>
-                                          <li class="kss-menu-item">
-                        <a href="#kssref-media-images">
-                          <span class="kss-ref ">3.2</span
-                            ><span class="kss-name">Audio</span>
-                        </a>
-                      </li>
-                                          <li class="kss-menu-item">
-                        <a href="#kssref-media-images">
-                          <span class="kss-ref ">3.2</span
+                          <span class="kss-ref ">3.3</span
                             ><span class="kss-name">Images</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
                         <a href="#kssref-media-svgs">
-                          <span class="kss-ref ">3.3</span
+                          <span class="kss-ref ">3.4</span
                             ><span class="kss-name">SVGs</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-media-video">
+                          <span class="kss-ref ">3.5</span
+                            ><span class="kss-name">Video</span>
                         </a>
                       </li>
                                       </ul>
@@ -95,6 +95,59 @@
                           </div>
 
                       </div>
+                            <section id="kssref-media-audio" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-media-audio">
+                  Audio
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>words</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#text-equiv" target="_blank">Text Alternatives</a> - Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.<br><br>If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</blockquote>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="video-section">
+  <div class="video">
+    <audio src="../dist/assets/test.mp3" controls>
+      <p>Your user agent does not support the HTML5 Audio element.</p>
+    </audio>
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/video&#039;) }}
+&lt;section class=&quot;video-section&quot;&gt;
+  &lt;div class=&quot;video&quot;&gt;
+    &lt;audio src=&quot;../dist/assets/test.mp3&quot; controls&gt;
+      &lt;p&gt;Your user agent does not support the HTML5 Audio element.&lt;/p&gt;
+    &lt;/audio&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
                             <section id="kssref-media-icons" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
@@ -162,100 +215,6 @@ passed as the second argument.</p>
   &lt;/div&gt;
 {% endfor %}
 &lt;/div&gt;
-</code></pre>
-                  </template>
-                </div>
-                              </div>
-
-                                    </section>
-                            <section id="kssref-media-images" class="kss-section kss-depth-2">
-            <div class="kss-style">
-                            <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-media-images">
-                  Video
-                </a>
-              </h2>
-
-                              <div class="kss-description">
-                  <ul>
- <li>words</li>
-</ul>
-
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#text-equiv" target="_blank">Text Alternatives</a> - Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.<br><br>If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</blockquote>
-
-
-                </div>
-              
-                          </div>
-
-                          <div class="kss-modifier-block">
-
-                <div class="kss-modifier kss-modifier-original">
-                  <div class="kss-modifier-example">
-                    
-<section class="images-section">
-  <div class="images">
-  </div>
-</section>
-
-                  </div>
-                </div>
-
-                                                <div class="kss-markup">
-                  <button class="js-show-markup">Show Markup Example</button>
-                  <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/images&#039;) }}
-&lt;section class=&quot;images-section&quot;&gt;
-  &lt;div class=&quot;images&quot;&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-</code></pre>
-                  </template>
-                </div>
-                              </div>
-
-                                    </section>
-                            <section id="kssref-media-images" class="kss-section kss-depth-2">
-            <div class="kss-style">
-                            <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-media-images">
-                  Audio
-                </a>
-              </h2>
-
-                              <div class="kss-description">
-                  <ul>
- <li>words</li>
-</ul>
-
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#text-equiv" target="_blank">Text Alternatives</a> - Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.<br><br>If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</blockquote>
-
-
-                </div>
-              
-                          </div>
-
-                          <div class="kss-modifier-block">
-
-                <div class="kss-modifier kss-modifier-original">
-                  <div class="kss-modifier-example">
-                    
-<section class="images-section">
-  <div class="images">
-  </div>
-</section>
-
-                  </div>
-                </div>
-
-                                                <div class="kss-markup">
-                  <button class="js-show-markup">Show Markup Example</button>
-                  <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/images&#039;) }}
-&lt;section class=&quot;images-section&quot;&gt;
-  &lt;div class=&quot;images&quot;&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
 </code></pre>
                   </template>
                 </div>
@@ -390,6 +349,77 @@ passed as the second argument.</p>
       &lt;text x=&quot;50&quot; y=&quot;30&quot; font-size=&quot;1rem&quot; text-anchor=&quot;middle&quot; fill=&quot;#ffffff&quot;&gt;Google&lt;/text&gt;
       &lt;/a&gt;
     &lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-media-video" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-media-video">
+                  Video
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>words</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#text-equiv" target="_blank">Text Alternatives</a> - Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.<br><br>If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</blockquote>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="video-section">
+  <div class="video">
+    <video controls="controls" poster="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" width="100%" height="auto">
+      <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
+      <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" type="video/webm" />
+      <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type="video/ogg" />
+      <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="640" height="360">
+        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+        <param name="allowFullScreen" value="true" />
+        <param name="wmode" value="transparent" />
+        <param name="flashVars" value="config={'playlist':['http%3A%2F%2Fsandbox.thewikies.com%2Fvfe-generator%2Fimages%2Fbig-buck-bunny_poster.jpg',{'url':'http%3A%2F%2Fclips.vorwaerts-gmbh.de%2Fbig_buck_bunny.mp4','autoPlay':false}]}" />
+        <img alt="Big Buck Bunny" src="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" width="640" height="360" title="No video playback capabilities, please download the video below" />
+      </object>
+    </video>
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/video&#039;) }}
+&lt;section class=&quot;video-section&quot;&gt;
+  &lt;div class=&quot;video&quot;&gt;
+    &lt;video controls=&quot;controls&quot; poster=&quot;http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg&quot; width=&quot;100%&quot; height=&quot;auto&quot;&gt;
+      &lt;source src=&quot;http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+      &lt;source src=&quot;http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm&quot; type=&quot;video/webm&quot; /&gt;
+      &lt;source src=&quot;http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv&quot; type=&quot;video/ogg&quot; /&gt;
+      &lt;object type=&quot;application/x-shockwave-flash&quot; data=&quot;http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf&quot; width=&quot;640&quot; height=&quot;360&quot;&gt;
+        &lt;param name=&quot;movie&quot; value=&quot;http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf&quot; /&gt;
+        &lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;
+        &lt;param name=&quot;wmode&quot; value=&quot;transparent&quot; /&gt;
+        &lt;param name=&quot;flashVars&quot; value=&quot;config={&#039;playlist&#039;:[&#039;http%3A%2F%2Fsandbox.thewikies.com%2Fvfe-generator%2Fimages%2Fbig-buck-bunny_poster.jpg&#039;,{&#039;url&#039;:&#039;http%3A%2F%2Fclips.vorwaerts-gmbh.de%2Fbig_buck_bunny.mp4&#039;,&#039;autoPlay&#039;:false}]}&quot; /&gt;
+        &lt;img alt=&quot;Big Buck Bunny&quot; src=&quot;http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg&quot; width=&quot;640&quot; height=&quot;360&quot; title=&quot;No video playback capabilities, please download the video below&quot; /&gt;
+      &lt;/object&gt;
+    &lt;/video&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>
