@@ -1,0 +1,16 @@
+// Breadcrumbs
+//
+// <ul>
+//   <li>Place the breadcrumb in a nav element with role="navigation". The nav element is also marked-up with aria-label="Breadcrumbs" to describe the type of navigation.</li>
+// </ul>
+//
+// <blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</blockquote>
+//
+//
+//
+// Markup: breadcrumbs.twig
+//
+// Style guide: Navigation.breadcrumbs
+
+// Import site utilities.
+@import '../../global/utils/init';

@@ -451,6 +451,8 @@ li {
   padding: 0;
   list-style: disc; }
 
+
+
 button,
 .button {
   display: inline-block;
@@ -526,10 +528,14 @@ button,
 
 
 
+
+
+
 .links::after {
   content: ' > ';
   display: inline-block;
   padding-left: 5px; }
+
 
 
 body {
@@ -537,14 +543,8 @@ body {
   color: #464646; }
 
 .break {
-  margin: 2rem 0;
-  border-bottom: 1px solid #bbbbbb; }
-
-hr {
-  margin: 2rem 0;
-  height: 6px;
-  background: url("../assets/hr.png") repeat-x 0 0;
-  border: 0; }
+  margin: 3rem 0;
+  border-bottom: 1px solid #eeeeee; }
 
 .visuallyhidden {
   border: 0;
@@ -555,6 +555,18 @@ hr {
   padding: 0;
   position: absolute;
   width: 1px; }
+
+fieldset {
+  margin: 2px;
+  padding: 1rem 1.5rem;
+  border: 1px solid #eeeeee;
+  border-radius: 3px; }
+
+legend {
+  font-weight: bold; }
+
+
+
 
 
 
@@ -567,6 +579,11 @@ hr {
     border-bottom: 0;
     margin-bottom: 0;
     padding-bottom: 1rem; }
+
+#kss-node .kss-depth-2 {
+  margin: 0;
+  background: url("../assets/hr.png") repeat-x 0 0;
+  border: 0; }
 
 #kss-node .kss-modifier {
   border-top: 0; }
@@ -595,6 +612,15 @@ hr {
   padding: 2px 6px;
   background: #eeeeee;
   border-radius: 4px; }
+
+#kss-node .kss-description blockquote::before {
+  content: '';
+  display: block;
+  background: url("../assets/w3c.png") no-repeat;
+  width: 45px;
+  height: 20px;
+  background-size: 40px;
+  float: left; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -766,5 +792,9 @@ hr {
   background-size: 32px;
   right: 35px;
   top: 5px; }
+
+
+
+
 
 

@@ -12,15 +12,8 @@ body {
 }
 
 .break {
-  margin: $padding-md 0;
-  border-bottom: 1px solid $color-silver;
-}
-
-hr {
-  margin: $padding-md 0;
-  height: 6px;
-  background: url('#{$asset-path}/hr.png') repeat-x 0 0;
-  border: 0;
+  margin: $padding-md-lg 0;
+  border-bottom: 1px solid $color-gallery;
 }
 
 .visuallyhidden {
@@ -32,4 +25,15 @@ hr {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+fieldset {
+  margin: 2px;
+  padding: $padding-sm 1.5rem;
+  border: 1px solid $color-gallery;
+  border-radius: 3px;
+}
+
+legend {
+  font-weight: bold;
 }

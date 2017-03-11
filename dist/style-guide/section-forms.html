@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="../all/all.css">
+
+</head>
+<body id="kss-node">
+  <div class="kss-wrapper">
+
+    <div class="kss-sidebar">
+    <button class="toggle"><span class="visuallyhidden">Button to collapse and expand the sidebar</span></button>
+      <div class="kss-sidebar-inner">
+        <header class="kss-header">
+          <h1 class="kss-doc-title">A11Y Style Guide</h1>
+        </header>
+        <nav class="kss-nav">
+          <ul class="kss-menu">
+            <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+                          <li class="kss-menu-item">
+                <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
+                                  <ul class="kss-menu-child">
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-forms-checkboxes">
+                          <span class="kss-ref ">1.1</span
+                            ><span class="kss-name">Checkboxes</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-forms-fields">
+                          <span class="kss-ref ">1.2</span
+                            ><span class="kss-name">Fields</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-forms-radio-buttons">
+                          <span class="kss-ref ">1.3</span
+                            ><span class="kss-name">Radio Buttons</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-forms-search">
+                          <span class="kss-ref ">1.4</span
+                            ><span class="kss-name">Search</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-forms-select-lists">
+                          <span class="kss-ref ">1.5</span
+                            ><span class="kss-name">Select Lists</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-forms-text-area">
+                          <span class="kss-ref ">1.6</span
+                            ><span class="kss-name">Text Area</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-forms-text-fields">
+                          <span class="kss-ref ">1.7</span
+                            ><span class="kss-name">Text Fields</span>
+                        </a>
+                      </li>
+                                      </ul>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-navigation.html"><span class="kss-ref">4</span><span class="kss-name">Navigation</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
+                              </li>
+                      </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="kss-content">
+      <article role="main" class="kss-article">
+      
+        
+                            <div id="kssref-forms" class="kss-section kss-depth-1">
+            <div class="kss-style">
+                            <h1 class="kss-title kss-title--level-1">
+                <a class="kss-title__permalink" href="#kssref-forms">
+                  Forms
+                </a>
+              </h1>
+
+              
+                          </div>
+
+                      </div>
+                            <section id="kssref-forms-checkboxes" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-forms-checkboxes">
+                  Checkboxes
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>Groups of checkboxes should be marked up using the fieldset and legend element. This helps someone using assistive technology to understand the question they&#39;re answering with the group of checkboxes. The fieldset is placed around the whole group and the legend contains the question.</li>
+ <li>Custom checkboxes are created by applying the <code>.checkbox</code> class to a <code>&lt;label&gt;</code> element. To remain accessible, place <code>&lt;input&gt;</code> with <code>type=&quot;checkbox&quot;</code> inside the <code>&lt;label&gt;</code> element. The <code>&lt;input&gt;</code> is then visually hidden, and the styling is placed on a span with the <code>.checkbox--faux</code> class. The styling of the span changes based on whether the checkbox is selected or focused by using a pseudo-element. A second span with <code>.form-element__label</code> contains the label text.</li>
+ <li>When a single checkbox is required, <code>&lt;div class=&quot;checkbox&quot;&gt;</code> should get <code>&lt;abbr class=&quot;required&quot; title=&quot;required&quot;&gt;*&lt;/abbr&gt;</code> added to the DOM, directly before the <code>&lt;input type=&quot;checkbox&quot; /&gt;</code>for visual indication that the checkbox is required.</li>
+ <li>When a checkbox group is required, the <code>&lt;fieldset&gt;</code> should receive the class <code>.is-required</code>. The <code>&lt;legend&gt;</code> should then get <code>&lt;abbr class=&quot;required&quot; title=&quot;required&quot;&gt;*&lt;/abbr&gt;</code> added to the DOM for visual indication that the checkbox group is required.</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="checkboxes-section">
+  <fieldset class="checkboxes form-element">
+    <legend class="form-element__legend form-element__label">Checkbox Group Label</legend>
+    <div class="form-element__control">
+      <span class="checkbox">
+        <input type="checkbox" id="checkbox-25" name="options" checked="" />
+        <label class="checkbox__label" for="checkbox-25">
+          <span class="checkbox--faux"></span>
+          <span class="form-element__label">Checkbox Label One</span>
+        </label>
+      </span>
+      <span class="checkbox">
+        <input type="checkbox" id="checkbox-26" name="options" />
+        <label class="checkbox__label" for="checkbox-26">
+          <span class="checkbox--faux"></span>
+          <span class="form-element__label">Checkbox Label Two</span>
+        </label>
+      </span>
+    </div>
+  </fieldset>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/checkboxes&#039;) }}
+&lt;section class=&quot;checkboxes-section&quot;&gt;
+  &lt;fieldset class=&quot;checkboxes form-element&quot;&gt;
+    &lt;legend class=&quot;form-element__legend form-element__label&quot;&gt;Checkbox Group Label&lt;/legend&gt;
+    &lt;div class=&quot;form-element__control&quot;&gt;
+      &lt;span class=&quot;checkbox&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-25&quot; name=&quot;options&quot; checked=&quot;&quot; /&gt;
+        &lt;label class=&quot;checkbox__label&quot; for=&quot;checkbox-25&quot;&gt;
+          &lt;span class=&quot;checkbox--faux&quot;&gt;&lt;/span&gt;
+          &lt;span class=&quot;form-element__label&quot;&gt;Checkbox Label One&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/span&gt;
+      &lt;span class=&quot;checkbox&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-26&quot; name=&quot;options&quot; /&gt;
+        &lt;label class=&quot;checkbox__label&quot; for=&quot;checkbox-26&quot;&gt;
+          &lt;span class=&quot;checkbox--faux&quot;&gt;&lt;/span&gt;
+          &lt;span class=&quot;form-element__label&quot;&gt;Checkbox Label Two&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-forms-fields" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-forms-fields">
+                  Fields
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>words</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="fields-section">
+  <div class="fields">
+  	<label for="field-id" class="c-field__label">label</label>
+  	<input id="field-id" type="text" placeholder="Placeholder" value="" />
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/fields&#039;) }}
+&lt;section class=&quot;fields-section&quot;&gt;
+  &lt;div class=&quot;fields&quot;&gt;
+  	&lt;label for=&quot;field-id&quot; class=&quot;c-field__label&quot;&gt;label&lt;/label&gt;
+  	&lt;input id=&quot;field-id&quot; type=&quot;text&quot; placeholder=&quot;Placeholder&quot; value=&quot;&quot; /&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-forms-radio-buttons" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-forms-radio-buttons">
+                  Radio Buttons
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>Groups of radio buttons should be marked up using the fieldset and legend element. This helps someone using assistive technology to understand the question they&#39;re answering with the group of radio buttons. The fieldset is placed around the whole group and the legend contains the question.</li>
+ <li>Custom radio buttons are created by applying the .radio class to a <code>&lt;label&gt;</code> element. To remain accessible, place an <code>&lt;input&gt;</code> with type=&quot;radio&quot; inside the <label> element. The <code>&lt;input&gt;</code> is then visually hidden, and the styling is placed on a span with the <code>.radio--faux class</code>. The styling of the span changes based on whether the radio button is selected or focused by using a pseudo-element. A second span with <code>.form-element__label</code> contains the label text.</li>
+ <li>When a radio group is required, the <code>&lt;fieldset&gt;</code> should receive the class <code>.is-required</code>. The <code>&lt;legend&gt;</code> should then get <code>&lt;abbr class=&quot;required&quot; title=&quot;required&quot;&gt;*&lt;/abbr&gt;</code>added to the DOM for visual indication that the radio group is required.</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="radio-buttons-section">
+  <fieldset class="radio-buttons form-element">
+    <legend class="form-element__legend form-element__label">Radio Group Label</legend>
+    <div class="form-element__control">
+      <span class="radio">
+        <input type="radio" id="radio-25" name="options" checked="" />
+        <label class="radio__label" for="radio-25">
+          <span class="radio--faux"></span>
+          <span class="form-element__label">Radio Label One</span>
+        </label>
+      </span>
+      <span class="radio">
+        <input type="radio" id="radio-26" name="options" />
+        <label class="radio__label" for="radio-26">
+          <span class="radio--faux"></span>
+          <span class="form-element__label">Radio Label Two</span>
+        </label>
+      </span>
+    </div>
+  </fieldset>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/radio-buttons&#039;) }}
+&lt;section class=&quot;radio-buttons-section&quot;&gt;
+  &lt;fieldset class=&quot;radio-buttons form-element&quot;&gt;
+    &lt;legend class=&quot;form-element__legend form-element__label&quot;&gt;Radio Group Label&lt;/legend&gt;
+    &lt;div class=&quot;form-element__control&quot;&gt;
+      &lt;span class=&quot;radio&quot;&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;radio-25&quot; name=&quot;options&quot; checked=&quot;&quot; /&gt;
+        &lt;label class=&quot;radio__label&quot; for=&quot;radio-25&quot;&gt;
+          &lt;span class=&quot;radio--faux&quot;&gt;&lt;/span&gt;
+          &lt;span class=&quot;form-element__label&quot;&gt;Radio Label One&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/span&gt;
+      &lt;span class=&quot;radio&quot;&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;radio-26&quot; name=&quot;options&quot; /&gt;
+        &lt;label class=&quot;radio__label&quot; for=&quot;radio-26&quot;&gt;
+          &lt;span class=&quot;radio--faux&quot;&gt;&lt;/span&gt;
+          &lt;span class=&quot;form-element__label&quot;&gt;Radio Label Two&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-forms-search" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-forms-search">
+                  Search
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>words</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="search-section">
+  <div class="search">
+  	<form method="post" class="search-form">
+    	<label for="search" class="search-form__label is-vishidden">Search the site</label>
+    	<input type="search" id="search" class="search-form__input" placeholder="Search the site" />
+    </form>
+    Search the site
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/search&#039;) }}
+&lt;section class=&quot;search-section&quot;&gt;
+  &lt;div class=&quot;search&quot;&gt;
+  	&lt;form method=&quot;post&quot; class=&quot;search-form&quot;&gt;
+    	&lt;label for=&quot;search&quot; class=&quot;search-form__label is-vishidden&quot;&gt;Search the site&lt;/label&gt;
+    	&lt;input type=&quot;search&quot; id=&quot;search&quot; class=&quot;search-form__input&quot; placeholder=&quot;Search the site&quot; /&gt;
+    &lt;/form&gt;
+    Search the site
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-forms-select-lists" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-forms-select-lists">
+                  Select Lists
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>words</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="select-lists-section">
+  <div class="select-lists">
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/select-lists&#039;) }}
+&lt;section class=&quot;select-lists-section&quot;&gt;
+  &lt;div class=&quot;select-lists&quot;&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-forms-text-area" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-forms-text-area">
+                  Text Area
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>Inputs with errors should have <code>aria-describedby</code> to insure that the associated field level error message is read by assistive technology. If the error message has an <code>id=&quot;my-error-message&quot;</code>, then the input should have <code>aria-describedby=&quot;my-error-message&quot;</code>.</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</blockquote><br>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Headings and Labels</a> - Headings and labels describe topic or purpose.</blockquote><br>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#minimize-error" target="_blank">Labels or Instructions</a> - Labels or instructions are provided when content requires user input.</blockquote>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="text-area-section">
+  <div class="text-area">
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/text-area&#039;) }}
+&lt;section class=&quot;text-area-section&quot;&gt;
+  &lt;div class=&quot;text-area&quot;&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-forms-text-fields" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-forms-text-fields">
+                  Text Fields
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>Inputs with errors should have <code>aria-describedby</code> to insure that the associated field level error message is read by assistive technology. If the error message has an <code>id=&quot;my-error-message&quot;</code>, then the input should have <code>aria-describedby=&quot;my-error-message&quot;</code>.</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</blockquote><br>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Headings and Labels</a> - Headings and labels describe topic or purpose.</blockquote><br>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#minimize-error" target="_blank">Labels or Instructions</a> - Labels or instructions are provided when content requires user input.</blockquote>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="text-fields-section">
+  <div class="text-fields">
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/text-fields&#039;) }}
+&lt;section class=&quot;text-fields-section&quot;&gt;
+  &lt;div class=&quot;text-fields&quot;&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                    </article>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<!-- Fake drupalSettings -->
+<script type="application/json" data-drupal-selector="drupal-settings-json">
+  {}
+</script>
+<!-- / Fake drupalSettings -->
+<script src="/core/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/core/assets/vendor/jquery-once/jquery.once.min.js"></script>
+<script src="/core/assets/vendor/domready/ready.min.js"></script>
+<script src="/core/misc/drupalSettingsLoader.js"></script>
+<script src="/core/misc/drupal.js"></script>
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/rainbow.min.js"></script>
+<script src="kss-assets/main.js"></script>
+<script src="/themes/custom/a11y/src/js/sidebar-slide.js"></script>
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

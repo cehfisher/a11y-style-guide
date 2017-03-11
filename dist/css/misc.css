@@ -3,14 +3,8 @@ body {
   color: #464646; }
 
 .break {
-  margin: 2rem 0;
-  border-bottom: 1px solid #bbbbbb; }
-
-hr {
-  margin: 2rem 0;
-  height: 6px;
-  background: url("../assets/hr.png") repeat-x 0 0;
-  border: 0; }
+  margin: 3rem 0;
+  border-bottom: 1px solid #eeeeee; }
 
 .visuallyhidden {
   border: 0;
@@ -21,3 +15,12 @@ hr {
   padding: 0;
   position: absolute;
   width: 1px; }
+
+fieldset {
+  margin: 2px;
+  padding: 1rem 1.5rem;
+  border: 1px solid #eeeeee;
+  border-radius: 3px; }
+
+legend {
+  font-weight: bold; }

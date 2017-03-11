@@ -1,6 +1,6 @@
 {{ attach_library('theme_name/lists') }}
 <section class="lists-section">
-  <h2 id="sample-lists1" class="sample-lists__heading">{{ heading }}</h2>
+  <h2>Example #1</h2>
   {% for item in items %}
   <article aria-labelledby="sample-lists1" class="sample-lists__item">
     <h3>{{ item.title }}</h3>
@@ -10,7 +10,7 @@
 </section>
 <div class="break"></div>
 <section class="lists">
-  <h2 id="sample-lists2" class="sample-lists__heading">{{ heading }}</h2>
+  <h2>Example #2</h2>
   {% for item in items %}
   <ul aria-labelledby="sample-lists2" class="sample-lists__item">
     <li>{{ item.title }}: {{ item.desc }}</li>

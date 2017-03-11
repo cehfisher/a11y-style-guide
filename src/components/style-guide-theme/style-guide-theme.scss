@@ -23,6 +23,12 @@
     }
   }
 
+  .kss-depth-2 {
+    margin: 0;
+    background: url('#{$asset-path}/hr.png') repeat-x 0 0;
+    border: 0;
+  }
+
   .kss-modifier {
     border-top: 0;
   }
@@ -57,6 +63,19 @@
     padding: 2px 6px;
     background: $color-gallery;
     border-radius: $border-rd-sm;
+  }
+
+  .kss-description blockquote {
+
+    &::before {
+      content: '';
+      display: block;
+      background: url('#{$asset-path}/w3c.png') no-repeat;
+      width: 45px;
+      height: 20px;
+      background-size: 40px;
+      float: left;
+    }
   }
 
   // Sidebar
