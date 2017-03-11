@@ -37,15 +37,39 @@
                         </a>
                       </li>
                                           <li class="kss-menu-item">
-                        <a href="#kssref-general-links">
+                        <a href="#kssref-general-colors">
                           <span class="kss-ref ">2.2</span
+                            ><span class="kss-name">Colors</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-general-link-focus">
+                          <span class="kss-ref ">2.3</span
+                            ><span class="kss-name">Link Focus</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-general-links">
+                          <span class="kss-ref ">2.4</span
                             ><span class="kss-name">Links</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
                         <a href="#kssref-general-lists">
-                          <span class="kss-ref ">2.3</span
+                          <span class="kss-ref ">2.5</span
                             ><span class="kss-name">Lists</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-general-skip-links">
+                          <span class="kss-ref ">2.6</span
+                            ><span class="kss-name">Skip Links</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-general-typography">
+                          <span class="kss-ref ">2.7</span
+                            ><span class="kss-name">Typography</span>
                         </a>
                       </li>
                                       </ul>
@@ -60,10 +84,7 @@
                 <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-styling.html"><span class="kss-ref">6</span><span class="kss-name">Styling</span></a>
-                              </li>
-                          <li class="kss-menu-item">
-                <a href="section-references.html"><span class="kss-ref">7</span><span class="kss-name">References</span></a>
+                <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
                               </li>
                       </ul>
         </nav>
@@ -177,6 +198,185 @@
       &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Outline Button&lt;/button&gt;
       &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Link Button&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
     &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-general-colors" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-general-colors">
+                  Colors
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <p>All color variables should be prefixed with <code>$color-</code>.
+This makes it easy to figure out what a variable
+is for later.</p>
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast" target="_blank">1.4.1. Use of Color</a> - Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)</blockquote><br>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for [exceptions]. (Level AA)</blockquote>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    <h3>Primary</h3>
+<div class="kss-swatch" style="background-color: #e00000">
+  <div class="kss-swatch__hex">$color-cherry<br>#e00000</div>
+</div>
+<div class="kss-swatch" style="background-color: #a51323">
+  <div class="kss-swatch__hex">$color-ruby<br>#a51323</div>
+</div>
+<div class="kss-swatch" style="background-color: #7fffd4">
+  <div class="kss-swatch__hex">$color-sea-glass<br>#7fffd4</div>
+</div>
+<div class="kss-swatch" style="background-color: #3cf73c">
+  <div class="kss-swatch__hex">$color-grass<br>#3cf73c</div>
+</div>
+<div class="kss-swatch" style="background-color: #4083ae">
+  <div class="kss-swatch__hex">$color-cornflower<br>#4083ae</div>
+</div>
+<div class="kss-swatch" style="background-color: #0a3055">
+  <div class="kss-swatch__hex">$color-navy<br>#0a3055</div>
+</div>
+<div class="kss-swatch" style="background-color: #550055">
+  <div class="kss-swatch__hex">$color-eggplant<br>#550055</div>
+</div>
+<div class="break"></div>
+<h3>Black, White, Grays</h3>
+<div class="kss-swatch" style="background-color: #000000">
+  <div class="kss-swatch__hex">$color-black<br>#000000</div>
+</div>
+<div class="kss-swatch" style="background-color: #464646">
+  <div class="kss-swatch__hex">$color-midnight<br>#464646</div>
+</div>
+<div class="kss-swatch" style="background-color: #888b8d">
+  <div class="kss-swatch__hex">$color-manatee<br>#888b8d</div>
+</div>
+<div class="kss-swatch" style="background-color: #bbbbbb">
+  <div class="kss-swatch__hex">$color-silver<br>#bbbbbb</div>
+</div>
+<div class="kss-swatch" style="background-color: #dddddd">
+  <div class="kss-swatch__hex">$color-alto<br>#dddddd</div>
+</div>
+<div class="kss-swatch" style="background-color: #eeeeee">
+  <div class="kss-swatch__hex">$color-gallery<br>#eeeeee</div>
+</div>
+<div class="kss-swatch" style="background-color: #f7f7f7">
+  <div class="kss-swatch__hex">$color-alabaster<br>#f7f7f7</div>
+</div>
+<div class="kss-swatch" style="background-color: #ffffff">
+  <div class="kss-swatch__hex">$color-white<br>#ffffff</div>
+</div>
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">&lt;h3&gt;Primary&lt;/h3&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #e00000&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-cherry&lt;br&gt;#e00000&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #a51323&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-ruby&lt;br&gt;#a51323&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #7fffd4&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-sea-glass&lt;br&gt;#7fffd4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #3cf73c&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-grass&lt;br&gt;#3cf73c&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #4083ae&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-cornflower&lt;br&gt;#4083ae&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #0a3055&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-navy&lt;br&gt;#0a3055&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #550055&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-eggplant&lt;br&gt;#550055&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+&lt;h3&gt;Black, White, Grays&lt;/h3&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #000000&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-black&lt;br&gt;#000000&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #464646&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-midnight&lt;br&gt;#464646&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #888b8d&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-manatee&lt;br&gt;#888b8d&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #bbbbbb&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-silver&lt;br&gt;#bbbbbb&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #dddddd&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-alto&lt;br&gt;#dddddd&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #eeeeee&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-gallery&lt;br&gt;#eeeeee&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #f7f7f7&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-alabaster&lt;br&gt;#f7f7f7&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #ffffff&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-white&lt;br&gt;#ffffff&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-general-link-focus" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-general-link-focus">
+                  Link Focus
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>List of bullets</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="link-focus-section">
+  <div class="link-focus">
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/link-focus&#039;) }}
+&lt;section class=&quot;link-focus-section&quot;&gt;
+  &lt;div class=&quot;link-focus&quot;&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>
@@ -304,6 +504,115 @@
   {% endfor %}
 &lt;/section&gt;
 </code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-general-skip-links" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-general-skip-links">
+                  Skip Links
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>List of bullets</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Bypass Blocks</a> - A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.</blockquote>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="skip-links-section">
+  <div class="skip-links">
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/skip-links&#039;) }}
+&lt;section class=&quot;skip-links-section&quot;&gt;
+  &lt;div class=&quot;skip-links&quot;&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-general-typography" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-general-typography">
+                  Typography
+                </a>
+              </h2>
+
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    <h3>Base</h3>
+<div style="font: 20px/2 'Verdana'"> Verdana Medium </div>
+<div style="font: italic 20px/2 'Verdana'"> Verdana Italic </div>
+<div style="font: bold 20px/2 'Verdana'"> Verdana Bold </div>
+<div style="font: bold italic 20px/2 'Verdana'"> Verdana Bold Italic </div>
+<div class="break"></div>
+<h3>Secondary</h3>
+<div style="font: 20px/2 'Tahoma'"> Tahoma Light </div>
+<div style="font: italic 20px/2 'Tahoma'"> Tahoma Light Italic </div>
+<div style="font: 500 20px/2 'Tahoma'"> Tahoma Roman </div>
+<div style="font: bold 20px/2 'Tahoma'"> Tahoma Italic </div>
+<div style="font: bold italic 20px/2 'Tahoma'"> Tahoma Medium </div>
+<div class="break"></div>
+<h3>Tertiary</h3>
+<div style="font: 20px/2 'Georgia'"> Georgia Bold </div>
+<div style="font: italic 20px/2 'Georgia'"> Georgia Bold Italic </div>
+<div style="font: bold 20px/2 'Georgia'"> Georgia Italic </div>
+<div style="font: bold italic 20px/2 'Georgia'"> Georgia Regular </div>
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">&lt;h3&gt;Base&lt;/h3&gt;
+&lt;div style=&quot;font: 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Medium &lt;/div&gt;
+&lt;div style=&quot;font: italic 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Italic &lt;/div&gt;
+&lt;div style=&quot;font: bold 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Bold &lt;/div&gt;
+&lt;div style=&quot;font: bold italic 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Bold Italic &lt;/div&gt;
+&lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+&lt;h3&gt;Secondary&lt;/h3&gt;
+&lt;div style=&quot;font: 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Light &lt;/div&gt;
+&lt;div style=&quot;font: italic 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Light Italic &lt;/div&gt;
+&lt;div style=&quot;font: 500 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Roman &lt;/div&gt;
+&lt;div style=&quot;font: bold 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Italic &lt;/div&gt;
+&lt;div style=&quot;font: bold italic 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Medium &lt;/div&gt;
+&lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+&lt;h3&gt;Tertiary&lt;/h3&gt;
+&lt;div style=&quot;font: 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Bold &lt;/div&gt;
+&lt;div style=&quot;font: italic 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Bold Italic &lt;/div&gt;
+&lt;div style=&quot;font: bold 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Italic &lt;/div&gt;
+&lt;div style=&quot;font: bold italic 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Regular &lt;/div&gt;</code></pre>
                   </template>
                 </div>
                               </div>

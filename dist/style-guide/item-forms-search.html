@@ -40,10 +40,7 @@
                 <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-styling.html"><span class="kss-ref">6</span><span class="kss-name">Styling</span></a>
-                              </li>
-                          <li class="kss-menu-item">
-                <a href="section-references.html"><span class="kss-ref">7</span><span class="kss-name">References</span></a>
+                <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
                               </li>
                       </ul>
         </nav>
@@ -54,20 +51,20 @@
       <article role="main" class="kss-article">
       
         
-                            <div id="kssref-structure-skip-links" class="kss-section kss-depth-2">
+                            <div id="kssref-forms-search" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-structure-skip-links">
-                  Skip Links
+                <a class="kss-title__permalink" href="#kssref-forms-search">
+                  Search
                 </a>
               </h2>
 
                               <div class="kss-description">
                   <ul>
- <li>List of bullets</li>
+ <li>words</li>
 </ul>
 
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Bypass Blocks</a> - A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.</blockquote>
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
 
 
                 </div>
@@ -79,8 +76,13 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<section class="skip-links-section">
-  <div class="skip-links">
+<section class="search-section">
+  <div class="search">
+  	<form method="post" class="search-form">
+    	<label for="search" class="search-form__label is-vishidden">Search the site</label>
+    	<input type="search" id="search" class="search-form__input" placeholder="Search the site" />
+    </form>
+    Search the site
   </div>
 </section>
 
@@ -90,9 +92,14 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/skip-links&#039;) }}
-&lt;section class=&quot;skip-links-section&quot;&gt;
-  &lt;div class=&quot;skip-links&quot;&gt;
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/search&#039;) }}
+&lt;section class=&quot;search-section&quot;&gt;
+  &lt;div class=&quot;search&quot;&gt;
+  	&lt;form method=&quot;post&quot; class=&quot;search-form&quot;&gt;
+    	&lt;label for=&quot;search&quot; class=&quot;search-form__label is-vishidden&quot;&gt;Search the site&lt;/label&gt;
+    	&lt;input type=&quot;search&quot; id=&quot;search&quot; class=&quot;search-form__input&quot; placeholder=&quot;Search the site&quot; /&gt;
+    &lt;/form&gt;
+    Search the site
   &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>

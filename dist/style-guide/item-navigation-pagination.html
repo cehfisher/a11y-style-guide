@@ -40,10 +40,7 @@
                 <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-styling.html"><span class="kss-ref">6</span><span class="kss-name">Styling</span></a>
-                              </li>
-                          <li class="kss-menu-item">
-                <a href="section-references.html"><span class="kss-ref">7</span><span class="kss-name">References</span></a>
+                <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
                               </li>
                       </ul>
         </nav>
@@ -54,14 +51,23 @@
       <article role="main" class="kss-article">
       
         
-                            <div id="kssref-styling-typography" class="kss-section kss-depth-2">
+                            <div id="kssref-navigation-pagination" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-styling-typography">
-                  Typography
+                <a class="kss-title__permalink" href="#kssref-navigation-pagination">
+                  Pagination
                 </a>
               </h2>
 
+                              <div class="kss-description">
+                  <ul>
+  <li>word</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</blockquote>
+
+
+                </div>
               
                           </div>
 
@@ -69,48 +75,42 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <h3>Base</h3>
-<div style="font: 20px/2 'Verdana'"> Verdana Medium </div>
-<div style="font: italic 20px/2 'Verdana'"> Verdana Italic </div>
-<div style="font: bold 20px/2 'Verdana'"> Verdana Bold </div>
-<div style="font: bold italic 20px/2 'Verdana'"> Verdana Bold Italic </div>
-<div class="break"></div>
-<h3>Secondary</h3>
-<div style="font: 20px/2 'Tahoma'"> Tahoma Light </div>
-<div style="font: italic 20px/2 'Tahoma'"> Tahoma Light Italic </div>
-<div style="font: 500 20px/2 'Tahoma'"> Tahoma Roman </div>
-<div style="font: bold 20px/2 'Tahoma'"> Tahoma Italic </div>
-<div style="font: bold italic 20px/2 'Tahoma'"> Tahoma Medium </div>
-<div class="break"></div>
-<h3>Tertiary</h3>
-<div style="font: 20px/2 'Georgia'"> Georgia Bold </div>
-<div style="font: italic 20px/2 'Georgia'"> Georgia Bold Italic </div>
-<div style="font: bold 20px/2 'Georgia'"> Georgia Italic </div>
-<div style="font: bold italic 20px/2 'Georgia'"> Georgia Regular </div>
+                    
+<section class="pagination-section">
+  <nav role="navigation" aria-label="pagination">
+    <ol class="pagination">
+    	<li class="current"><a href="">1</a></li>
+    	<li><a href="">2</a></li>
+    	<li><a href="">3</a></li>
+    	<li><a href="">4</a></li>
+    	<li><a href="">5</a></li>
+    	<li><a href="">6</a></li>
+    	<li><a href="">7</a></li>
+    </ol>
+  </nav>
+</section>
+
                   </div>
                 </div>
 
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">&lt;h3&gt;Base&lt;/h3&gt;
-&lt;div style=&quot;font: 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Medium &lt;/div&gt;
-&lt;div style=&quot;font: italic 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Italic &lt;/div&gt;
-&lt;div style=&quot;font: bold 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Bold &lt;/div&gt;
-&lt;div style=&quot;font: bold italic 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Bold Italic &lt;/div&gt;
-&lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-&lt;h3&gt;Secondary&lt;/h3&gt;
-&lt;div style=&quot;font: 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Light &lt;/div&gt;
-&lt;div style=&quot;font: italic 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Light Italic &lt;/div&gt;
-&lt;div style=&quot;font: 500 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Roman &lt;/div&gt;
-&lt;div style=&quot;font: bold 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Italic &lt;/div&gt;
-&lt;div style=&quot;font: bold italic 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Medium &lt;/div&gt;
-&lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-&lt;h3&gt;Tertiary&lt;/h3&gt;
-&lt;div style=&quot;font: 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Bold &lt;/div&gt;
-&lt;div style=&quot;font: italic 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Bold Italic &lt;/div&gt;
-&lt;div style=&quot;font: bold 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Italic &lt;/div&gt;
-&lt;div style=&quot;font: bold italic 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Regular &lt;/div&gt;</code></pre>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/pagination&#039;) }}
+&lt;section class=&quot;pagination-section&quot;&gt;
+  &lt;nav role=&quot;navigation&quot; aria-label=&quot;pagination&quot;&gt;
+    &lt;ol class=&quot;pagination&quot;&gt;
+    	&lt;li class=&quot;current&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+    	&lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+    	&lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+    	&lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+    	&lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+    	&lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;6&lt;/a&gt;&lt;/li&gt;
+    	&lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;7&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/nav&gt;
+&lt;/section&gt;
+</code></pre>
                   </template>
                 </div>
                               </div>

@@ -46,9 +46,27 @@
                         </a>
                       </li>
                                           <li class="kss-menu-item">
-                        <a href="#kssref-forms-select-lists">
+                        <a href="#kssref-forms-search">
                           <span class="kss-ref ">1.4</span
+                            ><span class="kss-name">Search</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-forms-select-lists">
+                          <span class="kss-ref ">1.5</span
                             ><span class="kss-name">Select Lists</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-forms-text-area">
+                          <span class="kss-ref ">1.6</span
+                            ><span class="kss-name">Text Area</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-forms-text-fields">
+                          <span class="kss-ref ">1.7</span
+                            ><span class="kss-name">Text Fields</span>
                         </a>
                       </li>
                                       </ul>
@@ -66,10 +84,7 @@
                 <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-styling.html"><span class="kss-ref">6</span><span class="kss-name">Styling</span></a>
-                              </li>
-                          <li class="kss-menu-item">
-                <a href="section-references.html"><span class="kss-ref">7</span><span class="kss-name">References</span></a>
+                <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
                               </li>
                       </ul>
         </nav>
@@ -186,14 +201,10 @@
 
                               <div class="kss-description">
                   <ul>
- <li>Inputs with errors should have <code>aria-describedby</code> to insure that the associated field level error message is read by assistive technology. If the error message has an <code>id=&quot;my-error-message&quot;</code>, then the input should have <code>aria-describedby=&quot;my-error-message&quot;</code>.</li>
+ <li>words</li>
 </ul>
 
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</blockquote><br>
-
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Headings and Labels</a> - Headings and labels describe topic or purpose.</blockquote><br>
-
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#minimize-error" target="_blank">Labels or Instructions</a> - Labels or instructions are provided when content requires user input.</blockquote>
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
 
 
                 </div>
@@ -205,8 +216,10 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<section class="forms-section">
-  <div class="forms">
+<section class="fields-section">
+  <div class="fields">
+  	<label for="field-id" class="c-field__label">label</label>
+  	<input id="field-id" type="text" placeholder="Placeholder" value="" />
   </div>
 </section>
 
@@ -216,9 +229,11 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/forms&#039;) }}
-&lt;section class=&quot;forms-section&quot;&gt;
-  &lt;div class=&quot;forms&quot;&gt;
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/fields&#039;) }}
+&lt;section class=&quot;fields-section&quot;&gt;
+  &lt;div class=&quot;fields&quot;&gt;
+  	&lt;label for=&quot;field-id&quot; class=&quot;c-field__label&quot;&gt;label&lt;/label&gt;
+  	&lt;input id=&quot;field-id&quot; type=&quot;text&quot; placeholder=&quot;Placeholder&quot; value=&quot;&quot; /&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>
@@ -310,6 +325,63 @@
                               </div>
 
                                     </section>
+                            <section id="kssref-forms-search" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-forms-search">
+                  Search
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>words</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="search-section">
+  <div class="search">
+  	<form method="post" class="search-form">
+    	<label for="search" class="search-form__label is-vishidden">Search the site</label>
+    	<input type="search" id="search" class="search-form__input" placeholder="Search the site" />
+    </form>
+    Search the site
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/search&#039;) }}
+&lt;section class=&quot;search-section&quot;&gt;
+  &lt;div class=&quot;search&quot;&gt;
+  	&lt;form method=&quot;post&quot; class=&quot;search-form&quot;&gt;
+    	&lt;label for=&quot;search&quot; class=&quot;search-form__label is-vishidden&quot;&gt;Search the site&lt;/label&gt;
+    	&lt;input type=&quot;search&quot; id=&quot;search&quot; class=&quot;search-form__input&quot; placeholder=&quot;Search the site&quot; /&gt;
+    &lt;/form&gt;
+    Search the site
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
                             <section id="kssref-forms-select-lists" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
@@ -349,6 +421,108 @@
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/select-lists&#039;) }}
 &lt;section class=&quot;select-lists-section&quot;&gt;
   &lt;div class=&quot;select-lists&quot;&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-forms-text-area" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-forms-text-area">
+                  Text Area
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>Inputs with errors should have <code>aria-describedby</code> to insure that the associated field level error message is read by assistive technology. If the error message has an <code>id=&quot;my-error-message&quot;</code>, then the input should have <code>aria-describedby=&quot;my-error-message&quot;</code>.</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</blockquote><br>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Headings and Labels</a> - Headings and labels describe topic or purpose.</blockquote><br>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#minimize-error" target="_blank">Labels or Instructions</a> - Labels or instructions are provided when content requires user input.</blockquote>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="text-area-section">
+  <div class="text-area">
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/text-area&#039;) }}
+&lt;section class=&quot;text-area-section&quot;&gt;
+  &lt;div class=&quot;text-area&quot;&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-forms-text-fields" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-forms-text-fields">
+                  Text Fields
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>Inputs with errors should have <code>aria-describedby</code> to insure that the associated field level error message is read by assistive technology. If the error message has an <code>id=&quot;my-error-message&quot;</code>, then the input should have <code>aria-describedby=&quot;my-error-message&quot;</code>.</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</blockquote><br>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Headings and Labels</a> - Headings and labels describe topic or purpose.</blockquote><br>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#minimize-error" target="_blank">Labels or Instructions</a> - Labels or instructions are provided when content requires user input.</blockquote>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="text-fields-section">
+  <div class="text-fields">
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/text-fields&#039;) }}
+&lt;section class=&quot;text-fields-section&quot;&gt;
+  &lt;div class=&quot;text-fields&quot;&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>
