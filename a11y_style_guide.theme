@@ -2,13 +2,13 @@
 
 /**
  * @file
- * Functions to support theming in the a11y theme.
+ * Functions to support theming in the a11y_style_guide theme.
  */
 
 /**
  * Implements hook_preprocess_HOOK() for html.html.twig.
  */
-function a11y_preprocess_html(array &$variables) {
+function a11y_style_guide_preprocess_html(array &$variables) {
   /* Add class to html tag */
   //$variables['html_attributes']->addClass('no-js');
 
@@ -24,7 +24,7 @@ function a11y_preprocess_html(array &$variables) {
 /**
  * Implements hook_page_attachments_alter().
  */
-function a11y_page_attachments_alter(array &$page) {
+function a11y_style_guide_page_attachments_alter(array &$page) {
   // Tell IE to use latest rendering engine (not to use compatibility mode).
   /*$ie_edge = [
     '#type' => 'html_tag',
@@ -40,21 +40,21 @@ function a11y_page_attachments_alter(array &$page) {
 /**
  * Implements hook_preprocess_page() for page.html.twig.
  */
-function a11y_preprocess_page(array &$variables) {
+function a11y_style_guide_preprocess_page(array &$variables) {
 
 }
 
 /**
  * Implements hook_theme_suggestions_page_alter().
  */
-function a11y_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+function a11y_style_guide_theme_suggestions_page_alter(array &$suggestions, array $variables) {
 
 }
 
 /**
  * Implements hook_theme_suggestions_node_alter().
  */
-function a11y_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+function a11y_style_guide_theme_suggestions_node_alter(array &$suggestions, array $variables) {
   /*$node = $variables['elements']['#node'];
 
   if ($variables['elements']['#view_mode'] == "full") {
@@ -65,14 +65,14 @@ function a11y_theme_suggestions_node_alter(array &$suggestions, array $variables
 /**
  * Implements hook_preprocess_HOOK().
  */
-function a11y_preprocess_block(array &$variables) {
+function a11y_style_guide_preprocess_block(array &$variables) {
 
 }
 
 /**
  * Implements hook_theme_suggestions_field_alter().
  */
-function a11y_theme_suggestions_field_alter(array &$suggestions, array $variables) {
+function a11y_style_guide_theme_suggestions_field_alter(array &$suggestions, array $variables) {
   /*$element = $variables['element'];
   $suggestions[] = 'field__' . $element['#view_mode'];
   $suggestions[] = 'field__' . $element['#view_mode'] . '__' . $element['#field_name'];*/
@@ -81,7 +81,7 @@ function a11y_theme_suggestions_field_alter(array &$suggestions, array $variable
 /**
  * Implements hook_theme_suggestions_field_alter().
  */
-function a11y_theme_suggestions_fieldset_alter(array &$suggestions, array $variables) {
+function a11y_style_guide_theme_suggestions_fieldset_alter(array &$suggestions, array $variables) {
   /*$element = $variables['element'];
   if (isset($element['#attributes']['class'])
     && in_array('form-composite', $element['#attributes']['class'])) {
@@ -92,7 +92,7 @@ function a11y_theme_suggestions_fieldset_alter(array &$suggestions, array $varia
 /**
  * Implements hook_preprocess_node().
  */
-function a11y_preprocess_node(array &$variables) {
+function a11y_style_guide_preprocess_node(array &$variables) {
   // Default to turning off byline/submitted.
   //$variables['display_submitted'] = FALSE;
 }
@@ -100,28 +100,28 @@ function a11y_preprocess_node(array &$variables) {
 /**
  * Implements hook_theme_suggestions_views_view_alter().
  */
-function a11y_theme_suggestions_views_view_alter(array &$suggestions, array $variables) {
+function a11y_style_guide_theme_suggestions_views_view_alter(array &$suggestions, array $variables) {
 
 }
 
 /**
  * Implements hook_preprocess_form().
  */
-function a11y_preprocess_form(array &$variables) {
+function a11y_style_guide_preprocess_form(array &$variables) {
   //$variables['attributes']['novalidate'] = 'novalidate';
 }
 
 /**
  * Implements hook_preprocess_select().
  */
-function a11y_preprocess_select(array &$variables) {
+function a11y_style_guide_preprocess_select(array &$variables) {
   //$variables['attributes']['class'][] = 'select-chosen';
 }
 
 /**
  * Implements hook_preprocess_field().
  */
-function a11y_preprocess_field(array &$variables, $hook) {
+function a11y_style_guide_preprocess_field(array &$variables, $hook) {
   /*switch ($variables['element']['#field_name']) {
   }*/
 }
@@ -129,7 +129,7 @@ function a11y_preprocess_field(array &$variables, $hook) {
 /**
  * Implements hook_preprocess_details().
  */
-function a11y_preprocess_details(array &$variables) {
+function a11y_style_guide_preprocess_details(array &$variables) {
   /*$variables['attributes']['class'][] = 'details';
   $variables['summary_attributes']['class'] = 'summary';*/
 }
@@ -137,6 +137,6 @@ function a11y_preprocess_details(array &$variables) {
 /**
  * Implements hook_theme_suggestions_details_alter().
  */
-function a11y_theme_suggestions_details_alter(array &$suggestions, array $variables) {
+function a11y_style_guide_theme_suggestions_details_alter(array &$suggestions, array $variables) {
 
 }
