@@ -1,0 +1,22 @@
+// Radio Buttons
+//
+// <ul>
+//  <li>Groups of radio buttons should be marked up using the fieldset and legend element. This helps someone using assistive technology to understand the question they're answering with the group of radio buttons. The fieldset is placed around the whole group and the legend contains the question.</li>
+//  <li>Custom radio buttons are created by applying the .radio class to a `<label>` element. To remain accessible, place an `<input>` with type="radio" inside the <label> element. The `<input>` is then visually hidden, and the styling is placed on a span with the `.radio--faux class`. The styling of the span changes based on whether the radio button is selected or focused by using a pseudo-element. A second span with `.form-element__label` contains the label text.</li>
+//  <li>When a radio group is required, the `<fieldset>` should receive the class `.is-required`. The `<legend>` should then get `<abbr class="required" title="required">*</abbr> `added to the DOM for visual indication that the radio group is required.</li>
+// </ul>
+//
+// <blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+//
+//
+//
+// Markup: radio-buttons.twig
+//
+// Style guide: Forms.radio-buttons
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.radio-buttons {
+  //to-do
+}

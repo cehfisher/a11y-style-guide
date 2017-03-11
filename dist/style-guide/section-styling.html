@@ -25,7 +25,7 @@
           <ul class="kss-menu">
             <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
                           <li class="kss-menu-item">
-                <a href="section-fonts.html"><span class="kss-ref">1</span><span class="kss-name">Fonts</span></a>
+                <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
                               </li>
                           <li class="kss-menu-item">
                 <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
@@ -34,21 +34,30 @@
                 <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-structure.html"><span class="kss-ref">4</span><span class="kss-name">Structure</span></a>
+                <a href="section-navigation.html"><span class="kss-ref">4</span><span class="kss-name">Navigation</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-styling.html"><span class="kss-ref">5</span><span class="kss-name">Styling</span></a>
+                <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-styling.html"><span class="kss-ref">6</span><span class="kss-name">Styling</span></a>
                                   <ul class="kss-menu-child">
                                           <li class="kss-menu-item">
                         <a href="#kssref-styling-colors">
-                          <span class="kss-ref ">5.1</span
+                          <span class="kss-ref ">6.1</span
                             ><span class="kss-name">Colors</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-styling-typography">
+                          <span class="kss-ref ">6.2</span
+                            ><span class="kss-name">Typography</span>
                         </a>
                       </li>
                                       </ul>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
+                <a href="section-references.html"><span class="kss-ref">7</span><span class="kss-name">References</span></a>
                               </li>
                       </ul>
         </nav>
@@ -83,9 +92,10 @@
                   <p>All color variables should be prefixed with <code>$color-</code>.
 This makes it easy to figure out what a variable
 is for later.</p>
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast" target="_blank">1.4.1. Use of Color</a> - Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)</blockquote>
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast" target="_blank">1.4.1. Use of Color</a> - Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)</blockquote><br>
 
-<p><blockquote><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for [exceptions]. (Level AA)</blockquote><hr></p>
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for [exceptions]. (Level AA)</blockquote>
+
 
                 </div>
               
@@ -197,6 +207,68 @@ is for later.</p>
 &lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #ffffff&quot;&gt;
   &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-white&lt;br&gt;#ffffff&lt;/div&gt;
 &lt;/div&gt;</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-styling-typography" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-styling-typography">
+                  Typography
+                </a>
+              </h2>
+
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    <h3>Base</h3>
+<div style="font: 20px/2 'Verdana'"> Verdana Medium </div>
+<div style="font: italic 20px/2 'Verdana'"> Verdana Italic </div>
+<div style="font: bold 20px/2 'Verdana'"> Verdana Bold </div>
+<div style="font: bold italic 20px/2 'Verdana'"> Verdana Bold Italic </div>
+<div class="break"></div>
+<h3>Secondary</h3>
+<div style="font: 20px/2 'Tahoma'"> Tahoma Light </div>
+<div style="font: italic 20px/2 'Tahoma'"> Tahoma Light Italic </div>
+<div style="font: 500 20px/2 'Tahoma'"> Tahoma Roman </div>
+<div style="font: bold 20px/2 'Tahoma'"> Tahoma Italic </div>
+<div style="font: bold italic 20px/2 'Tahoma'"> Tahoma Medium </div>
+<div class="break"></div>
+<h3>Tertiary</h3>
+<div style="font: 20px/2 'Georgia'"> Georgia Bold </div>
+<div style="font: italic 20px/2 'Georgia'"> Georgia Bold Italic </div>
+<div style="font: bold 20px/2 'Georgia'"> Georgia Italic </div>
+<div style="font: bold italic 20px/2 'Georgia'"> Georgia Regular </div>
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">&lt;h3&gt;Base&lt;/h3&gt;
+&lt;div style=&quot;font: 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Medium &lt;/div&gt;
+&lt;div style=&quot;font: italic 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Italic &lt;/div&gt;
+&lt;div style=&quot;font: bold 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Bold &lt;/div&gt;
+&lt;div style=&quot;font: bold italic 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Bold Italic &lt;/div&gt;
+&lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+&lt;h3&gt;Secondary&lt;/h3&gt;
+&lt;div style=&quot;font: 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Light &lt;/div&gt;
+&lt;div style=&quot;font: italic 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Light Italic &lt;/div&gt;
+&lt;div style=&quot;font: 500 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Roman &lt;/div&gt;
+&lt;div style=&quot;font: bold 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Italic &lt;/div&gt;
+&lt;div style=&quot;font: bold italic 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Medium &lt;/div&gt;
+&lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+&lt;h3&gt;Tertiary&lt;/h3&gt;
+&lt;div style=&quot;font: 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Bold &lt;/div&gt;
+&lt;div style=&quot;font: italic 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Bold Italic &lt;/div&gt;
+&lt;div style=&quot;font: bold 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Italic &lt;/div&gt;
+&lt;div style=&quot;font: bold italic 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Regular &lt;/div&gt;</code></pre>
                   </template>
                 </div>
                               </div>

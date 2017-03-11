@@ -1,0 +1,23 @@
+// Landmark Roles
+//
+// <ul>
+//  <li>Add id selectors to titles and use `aria-labelledby=""` to link to the title text (example #1).</li>
+//  <li>Add decriptive text with `aria-label=""` directly in the link (example #2).</li>
+//  <li>Turn read more links into buttons, when you can.</li>
+// </ul>
+//
+// <blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Link Purpose</a> - The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.</blockquote>
+//
+//
+//
+// Markup: landmark-roles.twig
+//
+// Style guide: Structure.landmark-roles
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.landmark-roles {
+  // to-do
+}
+

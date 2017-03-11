@@ -25,7 +25,7 @@
           <ul class="kss-menu">
             <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
                           <li class="kss-menu-item">
-                <a href="section-fonts.html"><span class="kss-ref">1</span><span class="kss-name">Fonts</span></a>
+                <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
                               </li>
                           <li class="kss-menu-item">
                 <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
@@ -34,13 +34,16 @@
                 <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-structure.html"><span class="kss-ref">4</span><span class="kss-name">Structure</span></a>
+                <a href="section-navigation.html"><span class="kss-ref">4</span><span class="kss-name">Navigation</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-styling.html"><span class="kss-ref">5</span><span class="kss-name">Styling</span></a>
+                <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
+                <a href="section-styling.html"><span class="kss-ref">6</span><span class="kss-name">Styling</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-references.html"><span class="kss-ref">7</span><span class="kss-name">References</span></a>
                               </li>
                       </ul>
         </nav>
@@ -51,20 +54,25 @@
       <article role="main" class="kss-article">
       
         
-                            <div id="kssref-structure-navigation" class="kss-section kss-depth-2">
+                            <div id="kssref-forms-fields" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-structure-navigation">
-                  Navigation
+                <a class="kss-title__permalink" href="#kssref-forms-fields">
+                  Fields
                 </a>
               </h2>
 
                               <div class="kss-description">
                   <ul>
- <li>List of bullets</li>
+ <li>Inputs with errors should have <code>aria-describedby</code> to insure that the associated field level error message is read by assistive technology. If the error message has an <code>id=&quot;my-error-message&quot;</code>, then the input should have <code>aria-describedby=&quot;my-error-message&quot;</code>.</li>
 </ul>
 
-<p><blockquote><a href="https://www.w3.org/TR/WCAG20/#consistent-behavior" target="_blank">3.2.3 Consistent Navigation</a> - Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user. (Level AA)</blockquote><hr></p>
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</blockquote><br>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Headings and Labels</a> - Headings and labels describe topic or purpose.</blockquote><br>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#minimize-error" target="_blank">Labels or Instructions</a> - Labels or instructions are provided when content requires user input.</blockquote>
+
 
                 </div>
               
@@ -75,8 +83,8 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<section class="navigation-section">
-  <div class="navigation">
+<section class="forms-section">
+  <div class="forms">
   </div>
 </section>
 
@@ -86,9 +94,9 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/navigation&#039;) }}
-&lt;section class=&quot;navigation-section&quot;&gt;
-  &lt;div class=&quot;navigation&quot;&gt;
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/forms&#039;) }}
+&lt;section class=&quot;forms-section&quot;&gt;
+  &lt;div class=&quot;forms&quot;&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="../all/all.css">
+
+</head>
+<body id="kss-node">
+  <div class="kss-wrapper">
+
+    <div class="kss-sidebar">
+    <button class="toggle"><span class="visuallyhidden">Button to collapse and expand the sidebar</span></button>
+      <div class="kss-sidebar-inner">
+        <header class="kss-header">
+          <h1 class="kss-doc-title">A11Y Style Guide</h1>
+        </header>
+        <nav class="kss-nav">
+          <ul class="kss-menu">
+            <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+                          <li class="kss-menu-item">
+                <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-navigation.html"><span class="kss-ref">4</span><span class="kss-name">Navigation</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-styling.html"><span class="kss-ref">6</span><span class="kss-name">Styling</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-references.html"><span class="kss-ref">7</span><span class="kss-name">References</span></a>
+                              </li>
+                      </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="kss-content">
+      <article role="main" class="kss-article">
+      
+        
+                            <div id="kssref-forms-radio-buttons" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-forms-radio-buttons">
+                  Radio Buttons
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>Groups of radio buttons should be marked up using the fieldset and legend element. This helps someone using assistive technology to understand the question they&#39;re answering with the group of radio buttons. The fieldset is placed around the whole group and the legend contains the question.</li>
+ <li>Custom radio buttons are created by applying the .radio class to a <code>&lt;label&gt;</code> element. To remain accessible, place an <code>&lt;input&gt;</code> with type=&quot;radio&quot; inside the <label> element. The <code>&lt;input&gt;</code> is then visually hidden, and the styling is placed on a span with the <code>.radio--faux class</code>. The styling of the span changes based on whether the radio button is selected or focused by using a pseudo-element. A second span with <code>.form-element__label</code> contains the label text.</li>
+ <li>When a radio group is required, the <code>&lt;fieldset&gt;</code> should receive the class <code>.is-required</code>. The <code>&lt;legend&gt;</code> should then get <code>&lt;abbr class=&quot;required&quot; title=&quot;required&quot;&gt;*&lt;/abbr&gt;</code>added to the DOM for visual indication that the radio group is required.</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="radio-buttons-section">
+  <fieldset class="radio-buttons form-element">
+    <legend class="form-element__legend form-element__label">Radio Group Label</legend>
+    <div class="form-element__control">
+      <span class="radio">
+        <input type="radio" id="radio-25" name="options" checked="" />
+        <label class="radio__label" for="radio-25">
+          <span class="radio--faux"></span>
+          <span class="form-element__label">Radio Label One</span>
+        </label>
+      </span>
+      <span class="radio">
+        <input type="radio" id="radio-26" name="options" />
+        <label class="radio__label" for="radio-26">
+          <span class="radio--faux"></span>
+          <span class="form-element__label">Radio Label Two</span>
+        </label>
+      </span>
+    </div>
+  </fieldset>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/radio-buttons&#039;) }}
+&lt;section class=&quot;radio-buttons-section&quot;&gt;
+  &lt;fieldset class=&quot;radio-buttons form-element&quot;&gt;
+    &lt;legend class=&quot;form-element__legend form-element__label&quot;&gt;Radio Group Label&lt;/legend&gt;
+    &lt;div class=&quot;form-element__control&quot;&gt;
+      &lt;span class=&quot;radio&quot;&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;radio-25&quot; name=&quot;options&quot; checked=&quot;&quot; /&gt;
+        &lt;label class=&quot;radio__label&quot; for=&quot;radio-25&quot;&gt;
+          &lt;span class=&quot;radio--faux&quot;&gt;&lt;/span&gt;
+          &lt;span class=&quot;form-element__label&quot;&gt;Radio Label One&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/span&gt;
+      &lt;span class=&quot;radio&quot;&gt;
+        &lt;input type=&quot;radio&quot; id=&quot;radio-26&quot; name=&quot;options&quot; /&gt;
+        &lt;label class=&quot;radio__label&quot; for=&quot;radio-26&quot;&gt;
+          &lt;span class=&quot;radio--faux&quot;&gt;&lt;/span&gt;
+          &lt;span class=&quot;form-element__label&quot;&gt;Radio Label Two&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/fieldset&gt;
+&lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </div>
+                    </article>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<!-- Fake drupalSettings -->
+<script type="application/json" data-drupal-selector="drupal-settings-json">
+  {}
+</script>
+<!-- / Fake drupalSettings -->
+<script src="/core/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/core/assets/vendor/jquery-once/jquery.once.min.js"></script>
+<script src="/core/assets/vendor/domready/ready.min.js"></script>
+<script src="/core/misc/drupalSettingsLoader.js"></script>
+<script src="/core/misc/drupal.js"></script>
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/rainbow.min.js"></script>
+<script src="kss-assets/main.js"></script>
+<script src="/themes/custom/a11y/src/js/sidebar-slide.js"></script>
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

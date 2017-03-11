@@ -25,7 +25,7 @@
           <ul class="kss-menu">
             <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
                           <li class="kss-menu-item">
-                <a href="section-fonts.html"><span class="kss-ref">1</span><span class="kss-name">Fonts</span></a>
+                <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
                               </li>
                           <li class="kss-menu-item">
                 <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
@@ -34,13 +34,16 @@
                 <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-structure.html"><span class="kss-ref">4</span><span class="kss-name">Structure</span></a>
+                <a href="section-navigation.html"><span class="kss-ref">4</span><span class="kss-name">Navigation</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-styling.html"><span class="kss-ref">5</span><span class="kss-name">Styling</span></a>
+                <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
+                <a href="section-styling.html"><span class="kss-ref">6</span><span class="kss-name">Styling</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-references.html"><span class="kss-ref">7</span><span class="kss-name">References</span></a>
                               </li>
                       </ul>
         </nav>
@@ -51,14 +54,25 @@
       <article role="main" class="kss-article">
       
         
-                            <div id="kssref-fonts-typography" class="kss-section kss-depth-2">
+                            <div id="kssref-structure-landmark-roles" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-fonts-typography">
-                  Typography
+                <a class="kss-title__permalink" href="#kssref-structure-landmark-roles">
+                  Landmark Roles
                 </a>
               </h2>
 
+                              <div class="kss-description">
+                  <ul>
+ <li>Add id selectors to titles and use <code>aria-labelledby=&quot;&quot;</code> to link to the title text (example #1).</li>
+ <li>Add decriptive text with <code>aria-label=&quot;&quot;</code> directly in the link (example #2).</li>
+ <li>Turn read more links into buttons, when you can.</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Link Purpose</a> - The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.</blockquote>
+
+
+                </div>
               
                           </div>
 
@@ -66,48 +80,41 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <h3>Base</h3>
-<div style="font: 20px/2 'Verdana'"> Verdana Medium </div>
-<div style="font: italic 20px/2 'Verdana'"> Verdana Italic </div>
-<div style="font: bold 20px/2 'Verdana'"> Verdana Bold </div>
-<div style="font: bold italic 20px/2 'Verdana'"> Verdana Bold Italic </div>
+                    
+<section class="landmark-roles-section">
+  <h2>Example #1</h2>
+  </section>
 <div class="break"></div>
-<h3>Secondary</h3>
-<div style="font: 20px/2 'Tahoma'"> Tahoma Light </div>
-<div style="font: italic 20px/2 'Tahoma'"> Tahoma Light Italic </div>
-<div style="font: 500 20px/2 'Tahoma'"> Tahoma Roman </div>
-<div style="font: bold 20px/2 'Tahoma'"> Tahoma Italic </div>
-<div style="font: bold italic 20px/2 'Tahoma'"> Tahoma Medium </div>
-<div class="break"></div>
-<h3>Tertiary</h3>
-<div style="font: 20px/2 'Georgia'"> Georgia Bold </div>
-<div style="font: italic 20px/2 'Georgia'"> Georgia Bold Italic </div>
-<div style="font: bold 20px/2 'Georgia'"> Georgia Italic </div>
-<div style="font: bold italic 20px/2 'Georgia'"> Georgia Regular </div>
+<section class="landmark-roles">
+  <h2>Example #2</h2>
+  </section>
+
                   </div>
                 </div>
 
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">&lt;h3&gt;Base&lt;/h3&gt;
-&lt;div style=&quot;font: 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Medium &lt;/div&gt;
-&lt;div style=&quot;font: italic 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Italic &lt;/div&gt;
-&lt;div style=&quot;font: bold 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Bold &lt;/div&gt;
-&lt;div style=&quot;font: bold italic 20px/2 &#039;Verdana&#039;&quot;&gt; Verdana Bold Italic &lt;/div&gt;
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/landmark-roles&#039;) }}
+&lt;section class=&quot;landmark-roles-section&quot;&gt;
+  &lt;h2&gt;Example #1&lt;/h2&gt;
+  {% for item in items %}
+  &lt;article aria-labelledby=&quot;sample-landmark-roles1&quot; class=&quot;sample-landmark-roles__item&quot;&gt;
+    &lt;h3&gt;{{ item.title }}&lt;/h3&gt;
+    &lt;p&gt;{{ item.desc }}&lt;/p&gt;
+  &lt;/article&gt;
+  {% endfor %}
+&lt;/section&gt;
 &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-&lt;h3&gt;Secondary&lt;/h3&gt;
-&lt;div style=&quot;font: 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Light &lt;/div&gt;
-&lt;div style=&quot;font: italic 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Light Italic &lt;/div&gt;
-&lt;div style=&quot;font: 500 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Roman &lt;/div&gt;
-&lt;div style=&quot;font: bold 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Italic &lt;/div&gt;
-&lt;div style=&quot;font: bold italic 20px/2 &#039;Tahoma&#039;&quot;&gt; Tahoma Medium &lt;/div&gt;
-&lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-&lt;h3&gt;Tertiary&lt;/h3&gt;
-&lt;div style=&quot;font: 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Bold &lt;/div&gt;
-&lt;div style=&quot;font: italic 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Bold Italic &lt;/div&gt;
-&lt;div style=&quot;font: bold 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Italic &lt;/div&gt;
-&lt;div style=&quot;font: bold italic 20px/2 &#039;Georgia&#039;&quot;&gt; Georgia Regular &lt;/div&gt;</code></pre>
+&lt;section class=&quot;landmark-roles&quot;&gt;
+  &lt;h2&gt;Example #2&lt;/h2&gt;
+  {% for item in items %}
+  &lt;ul aria-labelledby=&quot;sample-landmark-roles2&quot; class=&quot;sample-landmark-roles__item&quot;&gt;
+    &lt;li&gt;{{ item.title }}: {{ item.desc }}&lt;/li&gt;
+  &lt;/ul&gt;
+  {% endfor %}
+&lt;/section&gt;
+</code></pre>
                   </template>
                 </div>
                               </div>

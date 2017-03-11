@@ -25,7 +25,7 @@
           <ul class="kss-menu">
             <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
                           <li class="kss-menu-item">
-                <a href="section-fonts.html"><span class="kss-ref">1</span><span class="kss-name">Fonts</span></a>
+                <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
                               </li>
                           <li class="kss-menu-item">
                 <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
@@ -34,13 +34,16 @@
                 <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-structure.html"><span class="kss-ref">4</span><span class="kss-name">Structure</span></a>
+                <a href="section-navigation.html"><span class="kss-ref">4</span><span class="kss-name">Navigation</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-styling.html"><span class="kss-ref">5</span><span class="kss-name">Styling</span></a>
+                <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
+                <a href="section-styling.html"><span class="kss-ref">6</span><span class="kss-name">Styling</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-references.html"><span class="kss-ref">7</span><span class="kss-name">References</span></a>
                               </li>
                       </ul>
         </nav>
@@ -61,7 +64,8 @@
 
                               <div class="kss-description">
                   <p>This is a list component.</p>
-<p><blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">1.3.1 Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)</blockquote><hr></p>
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</blockquote>
+
 
                 </div>
               
@@ -73,32 +77,11 @@
                   <div class="kss-modifier-example">
                     
 <section class="lists-section">
-  <h2 id="sample-lists1" class="sample-lists__heading">Sample List component</h2>
-    <article aria-labelledby="sample-lists1" class="sample-lists__item">
-    <h3>This is the first title</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  </article>
-    <article aria-labelledby="sample-lists1" class="sample-lists__item">
-    <h3>This is the second title</h3>
-    <p>Donec tristique varius tortor, a rutrum mauris rhoncus venenatis.</p>
-  </article>
-    <article aria-labelledby="sample-lists1" class="sample-lists__item">
-    <h3>This is the third title</h3>
-    <p>Etiam ac mauris vitae ante vulputate convallis non eu orci.</p>
-  </article>
+  <h2>Example #1</h2>
   </section>
 <div class="break"></div>
 <section class="lists">
-  <h2 id="sample-lists2" class="sample-lists__heading">Sample List component</h2>
-    <ul aria-labelledby="sample-lists2" class="sample-lists__item">
-    <li>This is the first title: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-  </ul>
-    <ul aria-labelledby="sample-lists2" class="sample-lists__item">
-    <li>This is the second title: Donec tristique varius tortor, a rutrum mauris rhoncus venenatis.</li>
-  </ul>
-    <ul aria-labelledby="sample-lists2" class="sample-lists__item">
-    <li>This is the third title: Etiam ac mauris vitae ante vulputate convallis non eu orci.</li>
-  </ul>
+  <h2>Example #2</h2>
   </section>
 
                   </div>
@@ -109,7 +92,7 @@
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/lists&#039;) }}
 &lt;section class=&quot;lists-section&quot;&gt;
-  &lt;h2 id=&quot;sample-lists1&quot; class=&quot;sample-lists__heading&quot;&gt;{{ heading }}&lt;/h2&gt;
+  &lt;h2&gt;Example #1&lt;/h2&gt;
   {% for item in items %}
   &lt;article aria-labelledby=&quot;sample-lists1&quot; class=&quot;sample-lists__item&quot;&gt;
     &lt;h3&gt;{{ item.title }}&lt;/h3&gt;
@@ -119,7 +102,7 @@
 &lt;/section&gt;
 &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
 &lt;section class=&quot;lists&quot;&gt;
-  &lt;h2 id=&quot;sample-lists2&quot; class=&quot;sample-lists__heading&quot;&gt;{{ heading }}&lt;/h2&gt;
+  &lt;h2&gt;Example #2&lt;/h2&gt;
   {% for item in items %}
   &lt;ul aria-labelledby=&quot;sample-lists2&quot; class=&quot;sample-lists__item&quot;&gt;
     &lt;li&gt;{{ item.title }}: {{ item.desc }}&lt;/li&gt;
