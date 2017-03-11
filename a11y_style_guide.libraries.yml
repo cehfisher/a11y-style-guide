@@ -1,4 +1,4 @@
-# These lines define the a11y/global library.
+# These lines define the a11y_style_guide/global library.
 global:
   css:
     # The SMACSS category, "base", is loaded before other categories. Drupal 8
@@ -27,5 +27,5 @@ global:
 #     js/script.js: {}
 #   # If this library had dependencies on other libraries, you could specify it like this:
 #   dependencies:
-#     - a11y/clearfix
-#     - a11y/visually-hidden
+#     - a11y_style_guide/clearfix
+#     - a11y_style_guide/visually-hidden

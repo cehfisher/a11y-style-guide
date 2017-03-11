@@ -12,7 +12,7 @@
 //
 // **Example:**
 // ```
-// {% import '@a11y_styleguide/icons/icons.twig' as icons %}
+// {% import '@a11y_style_guide/icons/icons.twig' as icons %}
 // {{ icons.get('facebook', 'icon icon--facebook') }}
 // ```
 // This will render the svg inline with whatever class or classes are

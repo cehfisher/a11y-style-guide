@@ -11,18 +11,18 @@
 # `admin/config/media/responsive-image-style`.
 # More information: https://chromatichq.com/blog/responsive-images-drupal-8-using-srcset
 
-# a11y.srcset.16_9:
+# a11y_style_guide.srcset.16_9:
 #   label: 16:9
 #   mediaQuery: ''
 #   weight: 0
 #   multipliers:
 #     - 1x
-#   group: A11y Theme Srcset
+#   group: Accessibility Style Guide Srcset
 
-# a11y.srcset.2_1:
+# a11y_style_guide.srcset.2_1:
 #   label: 2:1
 #   mediaQuery: ''
 #   weight: 1
 #   multipliers:
 #     - 1x
-#   group: A11y Theme Srcset
+#   group: Accessibility Style Guide Srcset
