@@ -512,12 +512,13 @@
 
                               <div class="kss-description">
                   <ul>
- <li>Use labels and make the <code>for=&quot;&quot;</code> and <code>id=&quot;&quot;</code> values match. IDs must be unique on each page, only one label can be associated to each unique form element.</li>
  <li>Keep it simple - screen readers do not support multiple labels that are linked to the same form element.</li>
- <li>Inputs with errors should have <code>aria-describedby</code> to insure that the associated field level error message is read by assistive technology. If the error message has an <code>id=&quot;my-error-message&quot;</code>, then the input should have <code>aria-describedby=&quot;my-error-message&quot;</code>.</li>
+ <li>Use labels for every input and make the <code>for=&quot;&quot;</code> and <code>id=&quot;&quot;</code> values match. IDs must be unique on each page, only one label can be associated to each unique form element.</li>
+ <li>Make required fields obvious by using an indicator - border color change, asterisk, description text, etc.</li>
+ <li>Inputs with error validation should have <code>aria-describedby</code> to insure that the associated field level error message is read by assistive technology. If the error message has an <code>id=&quot;my-error-message&quot;</code>, then the input should have <code>aria-describedby=&quot;my-error-message&quot;</code>.</li>
 </ul>
 
-<blockquote><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#consistent-behavior-unpredictable-change" target="_blank">Guideline 3.2.2 - On Input</a> - Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.</blockquote>
+<blockquote><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#consistent-behavior" target="_blank">Guideline 3.2 - Predictable</a> - Make Web pages appear and operate in predictable ways.</blockquote>
 
 
 
@@ -534,8 +535,13 @@
                   <div class="kss-modifier-example">
                     
 <div class="text-inputs">
-  <label for="first-name">First Name:</label>
-  <input id="first-name" type="text" name="textfield">
+  <form>
+    <label for="first-name">First Name:</label>
+    <input id="first-name" type="text" name="textfield">
+    <label for="last-name">Last Name:</label>
+    <input id="last-name" type="text" name="textfield" aria-describedby="my-error-message" required>
+    <input type="submit" value="Submit">
+  </form>
 </div>
 
                   </div>
@@ -546,8 +552,13 @@
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/text-inputs&#039;) }}
 &lt;div class=&quot;text-inputs&quot;&gt;
-  &lt;label for=&quot;first-name&quot;&gt;First Name:&lt;/label&gt;
-  &lt;input id=&quot;first-name&quot; type=&quot;text&quot; name=&quot;textfield&quot;&gt;
+  &lt;form&gt;
+    &lt;label for=&quot;first-name&quot;&gt;First Name:&lt;/label&gt;
+    &lt;input id=&quot;first-name&quot; type=&quot;text&quot; name=&quot;textfield&quot;&gt;
+    &lt;label for=&quot;last-name&quot;&gt;Last Name:&lt;/label&gt;
+    &lt;input id=&quot;last-name&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;my-error-message&quot; required&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+  &lt;/form&gt;
 &lt;/div&gt;
 </code></pre>
                   </template>
