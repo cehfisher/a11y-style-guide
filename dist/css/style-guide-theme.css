@@ -63,8 +63,8 @@
   #kss-node .kss-sidebar .kss-nav {
     padding: 0.5rem 0;
     margin: 0.5rem -0.5rem;
-    max-height: calc( 125vh - 44px - 68px - 30px);
-    overflow-y: scroll; }
+    max-height: calc(125vh - 44px - 68px - 30px);
+    overflow-y: auto; }
   #kss-node .kss-sidebar.kss-fixed .kss-sidebar-inner,
   #kss-node .kss-sidebar .kss-sidebar-inner {
     text-decoration: none;

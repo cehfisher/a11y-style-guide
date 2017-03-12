@@ -26,14 +26,3 @@ body {
   position: absolute;
   width: 1px;
 }
-
-fieldset {
-  margin: 2px;
-  padding: $padding-sm 1.5rem;
-  border: 1px solid $color-gallery;
-  border-radius: 3px;
-}
-
-legend {
-  font-weight: bold;
-}

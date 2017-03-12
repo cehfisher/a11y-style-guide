@@ -15,12 +15,3 @@ body {
   padding: 0;
   position: absolute;
   width: 1px; }
-
-fieldset {
-  margin: 2px;
-  padding: 1rem 1.5rem;
-  border: 1px solid #eeeeee;
-  border-radius: 3px; }
-
-legend {
-  font-weight: bold; }

@@ -93,8 +93,8 @@
     .kss-nav {
       padding: $padding-xxsm 0;
       margin: $padding-xxsm (-$padding-xxsm);
-      max-height: calc( 125vh - 44px - 68px - 30px);
-      overflow-y: scroll;
+      max-height: calc(125vh - 44px - 68px - 30px);
+      overflow-y: auto;
     }
 
     .kss-sidebar-inner {

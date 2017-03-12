@@ -7,12 +7,11 @@ button,
   text-align: center;
   text-decoration: none;
   line-height: 1;
-  min-height: 2rem;
   border: 3px solid #e00000;
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
-  margin: 5px;
+  margin: 5px 0;
   position: relative;
   margin-top: 1rem; }
   button:hover, button:focus,
@@ -32,12 +31,11 @@ button,
   text-align: center;
   text-decoration: none;
   line-height: 1;
-  min-height: 2rem;
   border: 3px solid #e00000;
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
-  margin: 5px;
+  margin: 5px 0;
   color: #e00000;
   background-color: transparent;
   border: 3px solid #e00000;

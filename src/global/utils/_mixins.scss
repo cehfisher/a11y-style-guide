@@ -57,12 +57,11 @@
   text-align: center;
   text-decoration: none;
   line-height: 1;
-  min-height: $button-min-height;
   border: 3px solid $background;
   border-radius: $border-rd-sm;
   box-shadow: $shadow-sm;
   font-size: $padding-sm;
-  margin: 5px;
+  margin: 5px 0;
 
   &:hover,
   &:focus {
