@@ -55,7 +55,7 @@
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
                 <a class="kss-title__permalink" href="#kssref-forms-text-inputs">
-                  Text Inputs
+                  Text Inputs &amp; Textarea
                 </a>
               </h2>
 
@@ -83,15 +83,15 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<div class="text-inputs">
-  <form>
-    <label for="first-name">First Name:</label>
-    <input id="first-name" type="text" name="textfield">
-    <label for="last-name">Last Name:</label>
-    <input id="last-name" type="text" name="textfield" aria-describedby="my-error-message" required>
-    <input type="submit" value="Submit">
-  </form>
-</div>
+<form>
+  <label for="first-name">First Name:</label>
+  <input id="first-name" type="text" name="textfield">
+  <label for="last-name">Last Name:</label>
+  <input id="last-name" type="text" name="textfield" aria-describedby="my-error-message" required>
+  <label for="address">Enter your address:</label>
+  <textarea id="address" name="addresstext"></textarea>
+  <input type="submit" value="Submit">
+</form>
 
                   </div>
                 </div>
@@ -100,15 +100,15 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/text-inputs&#039;) }}
-&lt;div class=&quot;text-inputs&quot;&gt;
-  &lt;form&gt;
-    &lt;label for=&quot;first-name&quot;&gt;First Name:&lt;/label&gt;
-    &lt;input id=&quot;first-name&quot; type=&quot;text&quot; name=&quot;textfield&quot;&gt;
-    &lt;label for=&quot;last-name&quot;&gt;Last Name:&lt;/label&gt;
-    &lt;input id=&quot;last-name&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;my-error-message&quot; required&gt;
-    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-  &lt;/form&gt;
-&lt;/div&gt;
+&lt;form&gt;
+  &lt;label for=&quot;first-name&quot;&gt;First Name:&lt;/label&gt;
+  &lt;input id=&quot;first-name&quot; type=&quot;text&quot; name=&quot;textfield&quot;&gt;
+  &lt;label for=&quot;last-name&quot;&gt;Last Name:&lt;/label&gt;
+  &lt;input id=&quot;last-name&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;my-error-message&quot; required&gt;
+  &lt;label for=&quot;address&quot;&gt;Enter your address:&lt;/label&gt;
+  &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&lt;/form&gt;
 </code></pre>
                   </template>
                 </div>

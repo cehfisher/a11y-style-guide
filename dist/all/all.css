@@ -804,10 +804,11 @@ body {
 
 
 
-
-[type='text'] {
+[type='text'],
+textarea {
   width: 100%;
-  padding: 1rem;
+  max-width: 100%;
+  padding: 0.75rem;
   margin: 8px -2px;
   box-sizing: border-box;
   border-radius: 4px;
@@ -837,7 +838,4 @@ body {
 input:required,
 textarea:required {
   border-color: #e00000; }
-
-input:required + label {
-  color: #e00000; }
 

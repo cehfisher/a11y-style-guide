@@ -1,4 +1,4 @@
-// Text Inputs
+// Text Inputs & Textarea
 //
 // <ul>
 //  <li>Keep it simple - screen readers do not support multiple labels that are linked to the same form element.</li>
@@ -22,9 +22,11 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
-[type='text'] {
+[type='text'],
+textarea {
   width: 100%;
-  padding: $padding-sm;
+  max-width: 100%;
+  padding: 0.75rem;
   margin: 8px -2px;
   box-sizing: border-box;
   border-radius: $border-rd-sm;
@@ -39,8 +41,4 @@
 input:required,
 textarea:required {
   border-color: $color-cherry;
-}
-
-input:required + label {
-  color: $color-cherry;
 }

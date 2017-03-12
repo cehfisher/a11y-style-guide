@@ -58,15 +58,9 @@
                         </a>
                       </li>
                                           <li class="kss-menu-item">
-                        <a href="#kssref-forms-text-area">
-                          <span class="kss-ref ">1.6</span
-                            ><span class="kss-name">Text Area</span>
-                        </a>
-                      </li>
-                                          <li class="kss-menu-item">
                         <a href="#kssref-forms-text-inputs">
-                          <span class="kss-ref ">1.7</span
-                            ><span class="kss-name">Text Inputs</span>
+                          <span class="kss-ref ">1.6</span
+                            ><span class="kss-name">Text Inputs &amp; Textarea</span>
                         </a>
                       </li>
                                       </ul>
@@ -451,62 +445,11 @@
                               </div>
 
                                     </section>
-                            <section id="kssref-forms-text-area" class="kss-section kss-depth-2">
-            <div class="kss-style">
-                            <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-forms-text-area">
-                  Text Area
-                </a>
-              </h2>
-
-                              <div class="kss-description">
-                  <ul>
- <li>Inputs with errors should have <code>aria-describedby</code> to insure that the associated field level error message is read by assistive technology. If the error message has an <code>id=&quot;my-error-message&quot;</code>, then the input should have <code>aria-describedby=&quot;my-error-message&quot;</code>.</li>
-</ul>
-
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</blockquote><br>
-
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Headings and Labels</a> - Headings and labels describe topic or purpose.</blockquote><br>
-
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#minimize-error" target="_blank">Labels or Instructions</a> - Labels or instructions are provided when content requires user input.</blockquote>
-
-
-                </div>
-              
-                          </div>
-
-                          <div class="kss-modifier-block">
-
-                <div class="kss-modifier kss-modifier-original">
-                  <div class="kss-modifier-example">
-                    
-<section class="text-area-section">
-  <div class="text-area">
-  </div>
-</section>
-
-                  </div>
-                </div>
-
-                                                <div class="kss-markup">
-                  <button class="js-show-markup">Show Markup Example</button>
-                  <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/text-area&#039;) }}
-&lt;section class=&quot;text-area-section&quot;&gt;
-  &lt;div class=&quot;text-area&quot;&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-</code></pre>
-                  </template>
-                </div>
-                              </div>
-
-                                    </section>
                             <section id="kssref-forms-text-inputs" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
                 <a class="kss-title__permalink" href="#kssref-forms-text-inputs">
-                  Text Inputs
+                  Text Inputs &amp; Textarea
                 </a>
               </h2>
 
@@ -534,15 +477,15 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<div class="text-inputs">
-  <form>
-    <label for="first-name">First Name:</label>
-    <input id="first-name" type="text" name="textfield">
-    <label for="last-name">Last Name:</label>
-    <input id="last-name" type="text" name="textfield" aria-describedby="my-error-message" required>
-    <input type="submit" value="Submit">
-  </form>
-</div>
+<form>
+  <label for="first-name">First Name:</label>
+  <input id="first-name" type="text" name="textfield">
+  <label for="last-name">Last Name:</label>
+  <input id="last-name" type="text" name="textfield" aria-describedby="my-error-message" required>
+  <label for="address">Enter your address:</label>
+  <textarea id="address" name="addresstext"></textarea>
+  <input type="submit" value="Submit">
+</form>
 
                   </div>
                 </div>
@@ -551,15 +494,15 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/text-inputs&#039;) }}
-&lt;div class=&quot;text-inputs&quot;&gt;
-  &lt;form&gt;
-    &lt;label for=&quot;first-name&quot;&gt;First Name:&lt;/label&gt;
-    &lt;input id=&quot;first-name&quot; type=&quot;text&quot; name=&quot;textfield&quot;&gt;
-    &lt;label for=&quot;last-name&quot;&gt;Last Name:&lt;/label&gt;
-    &lt;input id=&quot;last-name&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;my-error-message&quot; required&gt;
-    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-  &lt;/form&gt;
-&lt;/div&gt;
+&lt;form&gt;
+  &lt;label for=&quot;first-name&quot;&gt;First Name:&lt;/label&gt;
+  &lt;input id=&quot;first-name&quot; type=&quot;text&quot; name=&quot;textfield&quot;&gt;
+  &lt;label for=&quot;last-name&quot;&gt;Last Name:&lt;/label&gt;
+  &lt;input id=&quot;last-name&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;my-error-message&quot; required&gt;
+  &lt;label for=&quot;address&quot;&gt;Enter your address:&lt;/label&gt;
+  &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&lt;/form&gt;
 </code></pre>
                   </template>
                 </div>
