@@ -524,6 +524,14 @@ button,
   clear: both; }
 
 
+.field-sets fieldset {
+  margin: 2px;
+  padding: 1rem 1.5rem;
+  border: 1px solid #eeeeee;
+  border-radius: 3px; }
+
+.field-sets legend {
+  font-weight: bold; }
 
 
 
@@ -556,18 +564,18 @@ body {
   position: absolute;
   width: 1px; }
 
-fieldset {
-  margin: 2px;
-  padding: 1rem 1.5rem;
-  border: 1px solid #eeeeee;
-  border-radius: 3px; }
-
-legend {
-  font-weight: bold; }
 
 
 
-
+.search input[type=text] {
+  background-color: #ffffff;
+  background-image: url("../assets/searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  transition: width 0.4s ease-in-out; }
+  .search input[type=text]:focus {
+    width: 100%; }
 
 
 
@@ -636,8 +644,8 @@ legend {
   #kss-node .kss-sidebar .kss-nav {
     padding: 0.5rem 0;
     margin: 0.5rem -0.5rem;
-    max-height: calc( 125vh - 44px - 68px - 30px);
-    overflow-y: scroll; }
+    max-height: calc(125vh - 44px - 68px - 30px);
+    overflow-y: auto; }
   #kss-node .kss-sidebar.kss-fixed .kss-sidebar-inner,
   #kss-node .kss-sidebar .kss-sidebar-inner {
     text-decoration: none;
@@ -797,4 +805,11 @@ legend {
 
 
 
+.text-inputs input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px -2px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #bbbbbb; }
 

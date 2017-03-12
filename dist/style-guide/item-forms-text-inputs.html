@@ -51,20 +51,26 @@
       <article role="main" class="kss-article">
       
         
-                            <div id="kssref-forms-fields" class="kss-section kss-depth-2">
+                            <div id="kssref-forms-text-inputs" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-forms-fields">
-                  Fields
+                <a class="kss-title__permalink" href="#kssref-forms-text-inputs">
+                  Text Inputs
                 </a>
               </h2>
 
                               <div class="kss-description">
                   <ul>
- <li>words</li>
+ <li>Use labels and make the <code>for=&quot;&quot;</code> and <code>id=&quot;&quot;</code> values match. IDs must be unique on each page, only one label can be associated to each unique form element.</li>
+ <li>Keep it simple - screen readers do not support multiple labels that are linked to the same form element.</li>
+ <li>Inputs with errors should have <code>aria-describedby</code> to insure that the associated field level error message is read by assistive technology. If the error message has an <code>id=&quot;my-error-message&quot;</code>, then the input should have <code>aria-describedby=&quot;my-error-message&quot;</code>.</li>
 </ul>
 
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+<blockquote><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#consistent-behavior-unpredictable-change" target="_blank">Guideline 3.2.2 - On Input</a> - Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.</blockquote>
+
+
+
+<blockquote><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a> - Help users avoid and correct mistakes.</blockquote>
 
 
                 </div>
@@ -76,12 +82,10 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<section class="fields-section">
-  <div class="fields">
-  	<label for="field-id" class="c-field__label">label</label>
-  	<input id="field-id" type="text" placeholder="Placeholder" value="" />
-  </div>
-</section>
+<div class="text-inputs">
+  <label for="first-name">First Name:</label>
+  <input id="first-name" type="text" name="textfield">
+</div>
 
                   </div>
                 </div>
@@ -89,13 +93,11 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/fields&#039;) }}
-&lt;section class=&quot;fields-section&quot;&gt;
-  &lt;div class=&quot;fields&quot;&gt;
-  	&lt;label for=&quot;field-id&quot; class=&quot;c-field__label&quot;&gt;label&lt;/label&gt;
-  	&lt;input id=&quot;field-id&quot; type=&quot;text&quot; placeholder=&quot;Placeholder&quot; value=&quot;&quot; /&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/text-inputs&#039;) }}
+&lt;div class=&quot;text-inputs&quot;&gt;
+  &lt;label for=&quot;first-name&quot;&gt;First Name:&lt;/label&gt;
+  &lt;input id=&quot;first-name&quot; type=&quot;text&quot; name=&quot;textfield&quot;&gt;
+&lt;/div&gt;
 </code></pre>
                   </template>
                 </div>

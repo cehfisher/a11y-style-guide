@@ -1,0 +1,9 @@
+.search input[type=text] {
+  background-color: #ffffff;
+  background-image: url("../assets/searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  transition: width 0.4s ease-in-out; }
+  .search input[type=text]:focus {
+    width: 100%; }

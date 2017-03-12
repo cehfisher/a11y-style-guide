@@ -16,5 +16,17 @@
 @import '../../global/utils/init';
 
 .search {
-  //to-do
+
+  input[type=text] {
+    background-color: $color-white;
+    background-image: url('#{$asset-path}/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    transition: width 0.4s ease-in-out;
+
+    &:focus {
+      width: 100%;
+    }
+  }
 }

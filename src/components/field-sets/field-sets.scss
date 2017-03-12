@@ -1,4 +1,4 @@
-// Fields
+// Field Sets
 //
 // <ul>
 //  <li>words</li>
@@ -8,13 +8,23 @@
 //
 //
 //
-// Markup: fields.twig
+// Markup: field-sets.twig
 //
-// Style guide: Forms.fields
+// Style guide: Forms.field-sets
 
 // Import site utilities.
 @import '../../global/utils/init';
 
-.fields {
-  //to-do
+.field-sets {
+
+  fieldset {
+    margin: 2px;
+    padding: $padding-sm 1.5rem;
+    border: 1px solid $color-gallery;
+    border-radius: 3px;
+  }
+
+  legend {
+    font-weight: bold;
+  }
 }

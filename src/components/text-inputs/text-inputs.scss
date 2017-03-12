@@ -1,0 +1,34 @@
+// Text Inputs
+//
+// <ul>
+//  <li>Use labels and make the `for=""` and `id=""` values match. IDs must be unique on each page, only one label can be associated to each unique form element.</li>
+//  <li>Keep it simple - screen readers do not support multiple labels that are linked to the same form element.</li>
+//  <li>Inputs with errors should have `aria-describedby` to insure that the associated field level error message is read by assistive technology. If the error message has an `id="my-error-message"`, then the input should have `aria-describedby="my-error-message"`.</li>
+// </ul>
+//
+// <blockquote><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#consistent-behavior-unpredictable-change" target="_blank">Guideline 3.2.2 - On Input</a> - Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.</blockquote>
+//
+//
+//
+// <blockquote><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a> - Help users avoid and correct mistakes.</blockquote>
+//
+//
+//
+// Markup: text-inputs.twig
+//
+// Style guide: Forms.text-inputs
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.text-inputs {
+
+  input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px -2px;
+    box-sizing: border-box;
+    border-radius: $border-rd-sm;
+    border: 1px solid $color-silver;
+  }
+}

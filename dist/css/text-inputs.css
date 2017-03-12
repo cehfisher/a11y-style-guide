@@ -1,0 +1,7 @@
+.text-inputs input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px -2px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #bbbbbb; }
