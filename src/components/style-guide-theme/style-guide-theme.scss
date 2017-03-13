@@ -65,16 +65,25 @@
     border-radius: $border-rd-sm;
   }
 
-  .kss-description blockquote {
+  .kss-description {
 
-    &::before {
-      content: '';
-      display: block;
-      background: url('#{$asset-path}/w3c.png') no-repeat;
-      width: 45px;
-      height: 20px;
-      background-size: 40px;
-      float: left;
+    h3 {
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    blockquote {
+      border-left: 2px solid $color-gallery;
+
+      &::before {
+        content: '';
+        display: block;
+        background: url('#{$asset-path}/w3c.png') no-repeat;
+        width: 55px;
+        height: 25px;
+        background-size: 50px;
+        float: left;
+      }
     }
   }
 
@@ -152,7 +161,7 @@
     margin-bottom: 0;
     color: $color-cherry;
     text-decoration: none;
-    font-weight: 100;
+    font-weight: normal;
 
     &:hover,
     &:focus,
@@ -174,6 +183,7 @@
     text-align: left;
     color: $color-midnight;
     text-decoration: none;
+    font-weight: normal;
   }
 
   .kss-depth-1 .kss-title,
@@ -200,7 +210,7 @@
   h4,
   h5,
   h6 {
-    font-weight: 100;
+    font-weight: normal;
   }
 
   blockquote {

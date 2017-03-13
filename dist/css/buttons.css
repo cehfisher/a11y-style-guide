@@ -1,5 +1,24 @@
-button,
-.button {
+[type='submit'] {
+  display: inline-block;
+  background-color: #e00000;
+  color: #ffffff;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  border: 3px solid #e00000;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  margin: 5px 0; }
+  [type='submit']:hover, [type='submit']:focus {
+    background-color: #a51323;
+    color: #ffffff;
+    border: 3px solid #a51323;
+    text-decoration: underline;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+
+button {
   display: inline-block;
   background-color: #e00000;
   color: #ffffff;
@@ -14,9 +33,30 @@ button,
   margin: 5px 0;
   position: relative;
   margin-top: 1rem; }
-  button:hover, button:focus,
-  .button:hover,
-  .button:focus {
+  button:hover, button:focus {
+    background-color: #a51323;
+    color: #ffffff;
+    border: 3px solid #a51323;
+    text-decoration: underline;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+
+.button {
+  display: inline-block;
+  background-color: #e00000;
+  color: #ffffff;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  border: 3px solid #e00000;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  margin: 5px 0;
+  position: relative;
+  margin-top: 1rem;
+  padding-top: 0.7rem; }
+  .button:hover, .button:focus {
     background-color: #a51323;
     color: #ffffff;
     border: 3px solid #a51323;

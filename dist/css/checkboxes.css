@@ -1,0 +1,11 @@
+.control--checkbox .control__indicator:after {
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 11px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg); }
+
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #e00000; }

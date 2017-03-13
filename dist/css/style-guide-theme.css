@@ -40,14 +40,20 @@
   background: #eeeeee;
   border-radius: 4px; }
 
-#kss-node .kss-description blockquote::before {
-  content: '';
-  display: block;
-  background: url("../assets/w3c.png") no-repeat;
-  width: 45px;
-  height: 20px;
-  background-size: 40px;
-  float: left; }
+#kss-node .kss-description h3 {
+  font-weight: normal;
+  font-style: normal; }
+
+#kss-node .kss-description blockquote {
+  border-left: 2px solid #eeeeee; }
+  #kss-node .kss-description blockquote::before {
+    content: '';
+    display: block;
+    background: url("../assets/w3c.png") no-repeat;
+    width: 55px;
+    height: 25px;
+    background-size: 50px;
+    float: left; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -116,7 +122,7 @@
   margin-bottom: 0;
   color: #e00000;
   text-decoration: none;
-  font-weight: 100; }
+  font-weight: normal; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
   #kss-node h2 > a:hover,
   #kss-node h2 > a:focus,
@@ -149,7 +155,8 @@
 #kss-node h3 {
   text-align: left;
   color: #464646;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: normal; }
 
 #kss-node .kss-depth-1 .kss-title,
 #kss-node .kss-overview > h1:first-child {
@@ -173,7 +180,7 @@
 #kss-node h4,
 #kss-node h5,
 #kss-node h6 {
-  font-weight: 100; }
+  font-weight: normal; }
 
 #kss-node blockquote {
   font-style: italic; }

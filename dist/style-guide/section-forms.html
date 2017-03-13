@@ -28,15 +28,15 @@
                 <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
                                   <ul class="kss-menu-child">
                                           <li class="kss-menu-item">
-                        <a href="#kssref-forms-checkboxes">
+                        <a href="#kssref-forms-buttons">
                           <span class="kss-ref ">1.1</span
-                            ><span class="kss-name">Checkboxes</span>
+                            ><span class="kss-name">Buttons</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
-                        <a href="#kssref-forms-field-sets">
+                        <a href="#kssref-forms-checkboxes">
                           <span class="kss-ref ">1.2</span
-                            ><span class="kss-name">Field Sets</span>
+                            ><span class="kss-name">Checkboxes</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
@@ -58,7 +58,7 @@
                         </a>
                       </li>
                                           <li class="kss-menu-item">
-                        <a href="#kssref-forms-text-inputs">
+                        <a href="#kssref-forms-text-fields">
                           <span class="kss-ref ">1.6</span
                             ><span class="kss-name">Text Inputs &amp; Textarea</span>
                         </a>
@@ -101,6 +101,105 @@
                           </div>
 
                       </div>
+                            <section id="kssref-forms-buttons" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-forms-buttons">
+                  Buttons
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>A <code>&lt;button&gt;</code> doesn&#39;t need anything special to work. ARIA&#39;s role=&quot;button&quot; is already assigned natively.</li>
+ <li>If you are using a link as a button, add the <code>role=&quot;button&quot;</code> attribute.</li>
+ <li>Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
+</ul>
+
+<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv" target="_blank">Guideline 1.1 - Text Alternatives</a>: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.<br><br>If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</blockquote>
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="buttons-section">
+  <div class="buttons ">
+    <form action="" method="post">
+      <button type="submit" href="#" class="button">Regular Button</button>
+      <button type="submit" href="#" class="button button--outline">Outline Button</button>
+      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+    </form>
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                <div class="kss-modifier">
+                  <div class="kss-modifier-head">
+                    <div class="kss-modifier-name">.buttons--center</div>
+                    <div class="kss-modifier-description">
+                      modifier for centered buttons
+                    </div>
+                  </div>
+                  <div class="kss-modifier-example">
+                    
+<section class="buttons-section">
+  <div class="buttons buttons--center">
+    <form action="" method="post">
+      <button type="submit" href="#" class="button">Regular Button</button>
+      <button type="submit" href="#" class="button button--outline">Outline Button</button>
+      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+    </form>
+  </div>
+</section>
+
+                  </div>
+                </div>
+                                <div class="kss-modifier">
+                  <div class="kss-modifier-head">
+                    <div class="kss-modifier-name">.buttons--right</div>
+                    <div class="kss-modifier-description">
+                      modifier for right aligned buttons
+                    </div>
+                  </div>
+                  <div class="kss-modifier-example">
+                    
+<section class="buttons-section">
+  <div class="buttons buttons--right">
+    <form action="" method="post">
+      <button type="submit" href="#" class="button">Regular Button</button>
+      <button type="submit" href="#" class="button button--outline">Outline Button</button>
+      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+    </form>
+  </div>
+</section>
+
+                  </div>
+                </div>
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/buttons&#039;) }}
+&lt;section class=&quot;buttons-section&quot;&gt;
+  &lt;div class=&quot;buttons {{modifier_class}}&quot;&gt;
+    &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
+      &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Regular Button&lt;/button&gt;
+      &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Outline Button&lt;/button&gt;
+      &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Link Button&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
                             <section id="kssref-forms-checkboxes" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
@@ -111,13 +210,11 @@
 
                               <div class="kss-description">
                   <ul>
- <li>Groups of checkboxes should be marked up using the fieldset and legend element. This helps someone using assistive technology to understand the question they&#39;re answering with the group of checkboxes. The fieldset is placed around the whole group and the legend contains the question.</li>
- <li>Custom checkboxes are created by applying the <code>.checkbox</code> class to a <code>&lt;label&gt;</code> element. To remain accessible, place <code>&lt;input&gt;</code> with <code>type=&quot;checkbox&quot;</code> inside the <code>&lt;label&gt;</code> element. The <code>&lt;input&gt;</code> is then visually hidden, and the styling is placed on a span with the <code>.checkbox--faux</code> class. The styling of the span changes based on whether the checkbox is selected or focused by using a pseudo-element. A second span with <code>.form-element__label</code> contains the label text.</li>
- <li>When a single checkbox is required, <code>&lt;div class=&quot;checkbox&quot;&gt;</code> should get <code>&lt;abbr class=&quot;required&quot; title=&quot;required&quot;&gt;*&lt;/abbr&gt;</code> added to the DOM, directly before the <code>&lt;input type=&quot;checkbox&quot; /&gt;</code>for visual indication that the checkbox is required.</li>
- <li>When a checkbox group is required, the <code>&lt;fieldset&gt;</code> should receive the class <code>.is-required</code>. The <code>&lt;legend&gt;</code> should then get <code>&lt;abbr class=&quot;required&quot; title=&quot;required&quot;&gt;*&lt;/abbr&gt;</code> added to the DOM for visual indication that the checkbox group is required.</li>
+ <li>The <code>&lt;fieldset&gt;</code> surrounds the entire grouping of checkboxes or radio buttons. The <code>&lt;legend&gt;</code> provides a description for the grouping.</li>
+ <li>Some assistive technology reads the legend text for each fieldset, so it should be brief and descriptive. This helps someone using assistive technology to understand the question they are answering with the group of checkboxes.</li>
 </ul>
 
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#time-limits" target="_blank">Guideline 2.2 - Enough Time</a>: Provide users enough time to read and use content.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a>: Help users avoid and correct mistakes.</blockquote>
 
 
                 </div>
@@ -129,27 +226,33 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<section class="checkboxes-section">
-  <fieldset class="checkboxes form-element">
-    <legend class="form-element__legend form-element__label">Checkbox Group Label</legend>
-    <div class="form-element__control">
-      <span class="checkbox">
-        <input type="checkbox" id="checkbox-25" name="options" checked="" />
-        <label class="checkbox__label" for="checkbox-25">
-          <span class="checkbox--faux"></span>
-          <span class="form-element__label">Checkbox Label One</span>
-        </label>
-      </span>
-      <span class="checkbox">
-        <input type="checkbox" id="checkbox-26" name="options" />
-        <label class="checkbox__label" for="checkbox-26">
-          <span class="checkbox--faux"></span>
-          <span class="form-element__label">Checkbox Label Two</span>
-        </label>
-      </span>
-    </div>
-  </fieldset>
-</section>
+<fieldset>
+  <legend>Who is your favorite 19th century scientist</legend>
+  <label class="control control--checkbox" for="bell">Alexander Graham Bell
+    <input id="bell" type="checkbox" value="1" name="scientist" value="bell"/>
+    <div class="control__indicator"></div>
+  </label>
+  <label class="control control--checkbox" for="edison">Thomas Edison
+    <input id="edison" type="checkbox" name="scientist" value="edison"/>
+    <div class="control__indicator"></div>
+  </label>
+  <label class="control control--checkbox" for="morse">Samuel Morse
+    <input id="morse" type="checkbox" value="1" name="scientist" value="morse"/>
+    <div class="control__indicator"></div>
+  </label>
+  <label class="control control--checkbox" for="nobel">Alfred Nobel
+    <input id="nobel" type="checkbox" value="1" name="scientist" value="nobel"/>
+    <div class="control__indicator"></div>
+  </label>
+  <label class="control control--checkbox" for="pasteur">Louis Pasteur
+    <input id="pasteur" type="checkbox" value="1" name="scientist" value="pasteur"/>
+    <div class="control__indicator"></div>
+  </label>
+  <label class="control control--checkbox" for="tesla">Nikola Tesla
+    <input id="tesla" type="checkbox" value="1" name="scientist" value="tesla"/>
+    <div class="control__indicator"></div>
+  </label>
+</fieldset>
 
                   </div>
                 </div>
@@ -158,100 +261,33 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/checkboxes&#039;) }}
-&lt;section class=&quot;checkboxes-section&quot;&gt;
-  &lt;fieldset class=&quot;checkboxes form-element&quot;&gt;
-    &lt;legend class=&quot;form-element__legend form-element__label&quot;&gt;Checkbox Group Label&lt;/legend&gt;
-    &lt;div class=&quot;form-element__control&quot;&gt;
-      &lt;span class=&quot;checkbox&quot;&gt;
-        &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-25&quot; name=&quot;options&quot; checked=&quot;&quot; /&gt;
-        &lt;label class=&quot;checkbox__label&quot; for=&quot;checkbox-25&quot;&gt;
-          &lt;span class=&quot;checkbox--faux&quot;&gt;&lt;/span&gt;
-          &lt;span class=&quot;form-element__label&quot;&gt;Checkbox Label One&lt;/span&gt;
-        &lt;/label&gt;
-      &lt;/span&gt;
-      &lt;span class=&quot;checkbox&quot;&gt;
-        &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-26&quot; name=&quot;options&quot; /&gt;
-        &lt;label class=&quot;checkbox__label&quot; for=&quot;checkbox-26&quot;&gt;
-          &lt;span class=&quot;checkbox--faux&quot;&gt;&lt;/span&gt;
-          &lt;span class=&quot;form-element__label&quot;&gt;Checkbox Label Two&lt;/span&gt;
-        &lt;/label&gt;
-      &lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/fieldset&gt;
-&lt;/section&gt;
-</code></pre>
-                  </template>
-                </div>
-                              </div>
-
-                                    </section>
-                            <section id="kssref-forms-field-sets" class="kss-section kss-depth-2">
-            <div class="kss-style">
-                            <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-forms-field-sets">
-                  Field Sets
-                </a>
-              </h2>
-
-                              <div class="kss-description">
-                  <ul>
- <li>words</li>
-</ul>
-
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
-
-
-                </div>
-              
-                          </div>
-
-                          <div class="kss-modifier-block">
-
-                <div class="kss-modifier kss-modifier-original">
-                  <div class="kss-modifier-example">
-                    
-<div class="field-sets">
-	<field>
-   <legend>What is your favorite color?</legend>
-   <div>
-   <input type="radio" name="color" value="Red" id="color_red">
-   <label for="color_red">Red</label>
-   </div>
-   <div>
-       <input type="radio" name="color" value="Green" id="color_green">
-       <label for="color_green">Green</label>
-     </div>
-     <div>
-       <input type="radio" name="color" value="Blue" id="color_blue">
-       <label for="color_blue">Blue</label>
-   </div>
- </field>
-</div>
-
-                  </div>
-                </div>
-
-                                                <div class="kss-markup">
-                  <button class="js-show-markup">Show Markup Example</button>
-                  <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/field-sets&#039;) }}
-&lt;div class=&quot;field-sets&quot;&gt;
-	&lt;field&gt;
-   &lt;legend&gt;What is your favorite color?&lt;/legend&gt;
-   &lt;div&gt;
-   &lt;input type=&quot;radio&quot; name=&quot;color&quot; value=&quot;Red&quot; id=&quot;color_red&quot;&gt;
-   &lt;label for=&quot;color_red&quot;&gt;Red&lt;/label&gt;
-   &lt;/div&gt;
-   &lt;div&gt;
-       &lt;input type=&quot;radio&quot; name=&quot;color&quot; value=&quot;Green&quot; id=&quot;color_green&quot;&gt;
-       &lt;label for=&quot;color_green&quot;&gt;Green&lt;/label&gt;
-     &lt;/div&gt;
-     &lt;div&gt;
-       &lt;input type=&quot;radio&quot; name=&quot;color&quot; value=&quot;Blue&quot; id=&quot;color_blue&quot;&gt;
-       &lt;label for=&quot;color_blue&quot;&gt;Blue&lt;/label&gt;
-   &lt;/div&gt;
- &lt;/field&gt;
-&lt;/div&gt;
+&lt;fieldset&gt;
+  &lt;legend&gt;Who is your favorite 19th century scientist&lt;/legend&gt;
+  &lt;label class=&quot;control control--checkbox&quot; for=&quot;bell&quot;&gt;Alexander Graham Bell
+    &lt;input id=&quot;bell&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;bell&quot;/&gt;
+    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;control control--checkbox&quot; for=&quot;edison&quot;&gt;Thomas Edison
+    &lt;input id=&quot;edison&quot; type=&quot;checkbox&quot; name=&quot;scientist&quot; value=&quot;edison&quot;/&gt;
+    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;control control--checkbox&quot; for=&quot;morse&quot;&gt;Samuel Morse
+    &lt;input id=&quot;morse&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;morse&quot;/&gt;
+    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;control control--checkbox&quot; for=&quot;nobel&quot;&gt;Alfred Nobel
+    &lt;input id=&quot;nobel&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;nobel&quot;/&gt;
+    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;control control--checkbox&quot; for=&quot;pasteur&quot;&gt;Louis Pasteur
+    &lt;input id=&quot;pasteur&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;pasteur&quot;/&gt;
+    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;control control--checkbox&quot; for=&quot;tesla&quot;&gt;Nikola Tesla
+    &lt;input id=&quot;tesla&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;tesla&quot;/&gt;
+    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+  &lt;/label&gt;
+&lt;/fieldset&gt;
 </code></pre>
                   </template>
                 </div>
@@ -268,12 +304,11 @@
 
                               <div class="kss-description">
                   <ul>
- <li>Groups of radio buttons should be marked up using the fieldset and legend element. This helps someone using assistive technology to understand the question they&#39;re answering with the group of radio buttons. The fieldset is placed around the whole group and the legend contains the question.</li>
- <li>Custom radio buttons are created by applying the .radio class to a <code>&lt;label&gt;</code> element. To remain accessible, place an <code>&lt;input&gt;</code> with type=&quot;radio&quot; inside the <label> element. The <code>&lt;input&gt;</code> is then visually hidden, and the styling is placed on a span with the <code>.radio--faux class</code>. The styling of the span changes based on whether the radio button is selected or focused by using a pseudo-element. A second span with <code>.form-element__label</code> contains the label text.</li>
- <li>When a radio group is required, the <code>&lt;fieldset&gt;</code> should receive the class <code>.is-required</code>. The <code>&lt;legend&gt;</code> should then get <code>&lt;abbr class=&quot;required&quot; title=&quot;required&quot;&gt;*&lt;/abbr&gt;</code>added to the DOM for visual indication that the radio group is required.</li>
+ <li>The <code>&lt;fieldset&gt;</code> surrounds the entire grouping of checkboxes or radio buttons. The <code>&lt;legend&gt;</code> provides a description for the grouping.</li>
+ <li>Some assistive technology reads the legend text for each fieldset, so it should be brief and descriptive. This helps someone using assistive technology to understand the question they are answering with the group of radio buttons.</li>
 </ul>
 
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#time-limits" target="_blank">Guideline 2.2 - Enough Time</a>: Provide users enough time to read and use content.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a>: Help users avoid and correct mistakes.</blockquote>
 
 
                 </div>
@@ -285,27 +320,16 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<section class="radio-buttons-section">
-  <fieldset class="radio-buttons form-element">
-    <legend class="form-element__legend form-element__label">Radio Group Label</legend>
-    <div class="form-element__control">
-      <span class="radio">
-        <input type="radio" id="radio-25" name="options" checked="" />
-        <label class="radio__label" for="radio-25">
-          <span class="radio--faux"></span>
-          <span class="form-element__label">Radio Label One</span>
-        </label>
-      </span>
-      <span class="radio">
-        <input type="radio" id="radio-26" name="options" />
-        <label class="radio__label" for="radio-26">
-          <span class="radio--faux"></span>
-          <span class="form-element__label">Radio Label Two</span>
-        </label>
-      </span>
-    </div>
-  </fieldset>
-</section>
+<fieldset>
+  <label class="control control--radio">First radio
+    <input type="radio" name="radio"/>
+    <div class="control__indicator"></div>
+  </label>
+  <label class="control control--radio">Second radio
+    <input type="radio" name="radio"/>
+    <div class="control__indicator"></div>
+  </label>
+</fieldset>
 
                   </div>
                 </div>
@@ -314,27 +338,16 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/radio-buttons&#039;) }}
-&lt;section class=&quot;radio-buttons-section&quot;&gt;
-  &lt;fieldset class=&quot;radio-buttons form-element&quot;&gt;
-    &lt;legend class=&quot;form-element__legend form-element__label&quot;&gt;Radio Group Label&lt;/legend&gt;
-    &lt;div class=&quot;form-element__control&quot;&gt;
-      &lt;span class=&quot;radio&quot;&gt;
-        &lt;input type=&quot;radio&quot; id=&quot;radio-25&quot; name=&quot;options&quot; checked=&quot;&quot; /&gt;
-        &lt;label class=&quot;radio__label&quot; for=&quot;radio-25&quot;&gt;
-          &lt;span class=&quot;radio--faux&quot;&gt;&lt;/span&gt;
-          &lt;span class=&quot;form-element__label&quot;&gt;Radio Label One&lt;/span&gt;
-        &lt;/label&gt;
-      &lt;/span&gt;
-      &lt;span class=&quot;radio&quot;&gt;
-        &lt;input type=&quot;radio&quot; id=&quot;radio-26&quot; name=&quot;options&quot; /&gt;
-        &lt;label class=&quot;radio__label&quot; for=&quot;radio-26&quot;&gt;
-          &lt;span class=&quot;radio--faux&quot;&gt;&lt;/span&gt;
-          &lt;span class=&quot;form-element__label&quot;&gt;Radio Label Two&lt;/span&gt;
-        &lt;/label&gt;
-      &lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/fieldset&gt;
-&lt;/section&gt;
+&lt;fieldset&gt;
+  &lt;label class=&quot;control control--radio&quot;&gt;First radio
+    &lt;input type=&quot;radio&quot; name=&quot;radio&quot;/&gt;
+    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;control control--radio&quot;&gt;Second radio
+    &lt;input type=&quot;radio&quot; name=&quot;radio&quot;/&gt;
+    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+  &lt;/label&gt;
+&lt;/fieldset&gt;
 </code></pre>
                   </template>
                 </div>
@@ -408,10 +421,11 @@
 
                               <div class="kss-description">
                   <ul>
- <li>words</li>
+ <li>The <code>&lt;fieldset&gt;</code> surrounds the entire grouping of checkboxes or radio buttons. The <code>&lt;legend&gt;</code> provides a description for the grouping.</li>
+ <li>Some assistive technology reads the legend text for each fieldset, so it should be brief and descriptive. This helps someone using assistive technology to understand the question they are answering with the group of radio buttons.</li>
 </ul>
 
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#time-limits" target="_blank">Guideline 2.2 - Enough Time</a>: Provide users enough time to read and use content.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a>: Help users avoid and correct mistakes.</blockquote>
 
 
                 </div>
@@ -423,10 +437,24 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<section class="select-lists-section">
-  <div class="select-lists">
+<form>
+  <div class="select">
+    <select>
+      <option>First select</option>
+      <option>Option</option>
+      <option>Option</option>
+    </select>
+    <div class="select__arrow"></div>
   </div>
-</section>
+  <div class="select">
+    <select>
+      <option>Second select</option>
+      <option>Option</option>
+      <option>Option</option>
+    </select>
+    <div class="select__arrow"></div>
+  </div>
+</form>
 
                   </div>
                 </div>
@@ -435,20 +463,34 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/select-lists&#039;) }}
-&lt;section class=&quot;select-lists-section&quot;&gt;
-  &lt;div class=&quot;select-lists&quot;&gt;
+&lt;form&gt;
+  &lt;div class=&quot;select&quot;&gt;
+    &lt;select&gt;
+      &lt;option&gt;First select&lt;/option&gt;
+      &lt;option&gt;Option&lt;/option&gt;
+      &lt;option&gt;Option&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;div class=&quot;select__arrow&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
-&lt;/section&gt;
+  &lt;div class=&quot;select&quot;&gt;
+    &lt;select&gt;
+      &lt;option&gt;Second select&lt;/option&gt;
+      &lt;option&gt;Option&lt;/option&gt;
+      &lt;option&gt;Option&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;div class=&quot;select__arrow&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
 </code></pre>
                   </template>
                 </div>
                               </div>
 
                                     </section>
-                            <section id="kssref-forms-text-inputs" class="kss-section kss-depth-2">
+                            <section id="kssref-forms-text-fields" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-forms-text-inputs">
+                <a class="kss-title__permalink" href="#kssref-forms-text-fields">
                   Text Inputs &amp; Textarea
                 </a>
               </h2>
@@ -458,14 +500,10 @@
  <li>Keep it simple - screen readers do not support multiple labels that are linked to the same form element.</li>
  <li>Use labels for every input and make the <code>for=&quot;&quot;</code> and <code>id=&quot;&quot;</code> values match. IDs must be unique on each page, only one label can be associated to each unique form element.</li>
  <li>Make required fields obvious by using an indicator - border color change, asterisk, description text, etc.</li>
- <li>Inputs with error validation should have <code>aria-describedby</code> to insure that the associated field level error message is read by assistive technology. If the error message has an <code>id=&quot;my-error-message&quot;</code>, then the input should have <code>aria-describedby=&quot;my-error-message&quot;</code>.</li>
+ <li>Fields with error validation should have <code>aria-describedby</code> to insure that the associated field level error message is read by assistive technology. If the error message has an <code>id=&quot;my-error-message&quot;</code>, then the input should have <code>aria-describedby=&quot;my-error-message&quot;</code>.</li>
 </ul>
 
-<blockquote><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#consistent-behavior" target="_blank">Guideline 3.2 - Predictable</a> - Make Web pages appear and operate in predictable ways.</blockquote>
-
-
-
-<blockquote><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a> - Help users avoid and correct mistakes.</blockquote>
+<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#consistent-behavior" target="_blank">Guideline 3.2 - Predictable</a>: Make Web pages appear and operate in predictable ways.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a>: Help users avoid and correct mistakes.</blockquote>
 
 
                 </div>
@@ -482,7 +520,7 @@
   <input id="first-name" type="text" name="textfield">
   <label for="last-name">Last Name:</label>
   <input id="last-name" type="text" name="textfield" aria-describedby="my-error-message" required>
-  <label for="address">Enter your address:</label>
+  <label for="address">Enter your street address:</label>
   <textarea id="address" name="addresstext"></textarea>
   <input type="submit" value="Submit">
 </form>
@@ -499,7 +537,7 @@
   &lt;input id=&quot;first-name&quot; type=&quot;text&quot; name=&quot;textfield&quot;&gt;
   &lt;label for=&quot;last-name&quot;&gt;Last Name:&lt;/label&gt;
   &lt;input id=&quot;last-name&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;my-error-message&quot; required&gt;
-  &lt;label for=&quot;address&quot;&gt;Enter your address:&lt;/label&gt;
+  &lt;label for=&quot;address&quot;&gt;Enter your street address:&lt;/label&gt;
   &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;
   &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
 &lt;/form&gt;

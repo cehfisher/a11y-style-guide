@@ -1,0 +1,22 @@
+[type='text'],
+textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.75rem;
+  margin: 8px -2px 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 2px solid #eeeeee;
+  font-size: 1rem; }
+
+input:required,
+textarea:required {
+  border-color: #e00000; }
+
+fieldset {
+  padding: 1.75rem 1.5rem 1rem;
+  border: 2px solid #eeeeee;
+  border-radius: 4px; }
+
+legend {
+  font-weight: bold; }
