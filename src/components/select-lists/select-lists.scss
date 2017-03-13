@@ -1,10 +1,11 @@
 // Select Lists
 //
 // <ul>
-//  <li>words</li>
+//  <li>The `<fieldset>` surrounds the entire grouping of checkboxes or radio buttons. The `<legend>` provides a description for the grouping.</li>
+//  <li>Some assistive technology reads the legend text for each fieldset, so it should be brief and descriptive. This helps someone using assistive technology to understand the question they are answering with the group of radio buttons.</li>
 // </ul>
 //
-// <blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+// <blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#time-limits" target="_blank">Guideline 2.2 - Enough Time</a> - Provide users enough time to read and use content.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a> - Help users avoid and correct mistakes.</blockquote>
 //
 //
 //
@@ -15,6 +16,59 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
-.select-lists {
-  //to-do
+.select {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
+  margin-left: -2px;
+}
+
+.select select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 0;
+  background: $color-gallery;
+  color: $color-cherry;
+  appearance: none;
+  font-size: $padding-sm;
+}
+
+.select select::-ms-expand {
+  display: none;
+}
+
+.select select:hover,
+.select select:focus {
+  color: $color-midnight;
+  background: $color-gallery;
+}
+
+.select select:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.select__arrow {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: $color-cherry transparent transparent transparent;
+}
+
+.select select:hover ~ .select__arrow,
+.select select:focus ~ .select__arrow {
+  border-top-color: $color-midnight;
+}
+
+.select select:disabled ~ .select__arrow {
+  border-top-color: $color-gallery;
 }

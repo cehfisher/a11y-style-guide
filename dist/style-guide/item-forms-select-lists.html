@@ -61,10 +61,11 @@
 
                               <div class="kss-description">
                   <ul>
- <li>words</li>
+ <li>The <code>&lt;fieldset&gt;</code> surrounds the entire grouping of checkboxes or radio buttons. The <code>&lt;legend&gt;</code> provides a description for the grouping.</li>
+ <li>Some assistive technology reads the legend text for each fieldset, so it should be brief and descriptive. This helps someone using assistive technology to understand the question they are answering with the group of radio buttons.</li>
 </ul>
 
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#time-limits" target="_blank">Guideline 2.2 - Enough Time</a> - Provide users enough time to read and use content.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a> - Help users avoid and correct mistakes.</blockquote>
 
 
                 </div>
@@ -76,10 +77,24 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<section class="select-lists-section">
-  <div class="select-lists">
+<form>
+  <div class="select">
+    <select>
+      <option>First select</option>
+      <option>Option</option>
+      <option>Option</option>
+    </select>
+    <div class="select__arrow"></div>
   </div>
-</section>
+  <div class="select">
+    <select>
+      <option>Second select</option>
+      <option>Option</option>
+      <option>Option</option>
+    </select>
+    <div class="select__arrow"></div>
+  </div>
+</form>
 
                   </div>
                 </div>
@@ -88,10 +103,24 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/select-lists&#039;) }}
-&lt;section class=&quot;select-lists-section&quot;&gt;
-  &lt;div class=&quot;select-lists&quot;&gt;
+&lt;form&gt;
+  &lt;div class=&quot;select&quot;&gt;
+    &lt;select&gt;
+      &lt;option&gt;First select&lt;/option&gt;
+      &lt;option&gt;Option&lt;/option&gt;
+      &lt;option&gt;Option&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;div class=&quot;select__arrow&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
-&lt;/section&gt;
+  &lt;div class=&quot;select&quot;&gt;
+    &lt;select&gt;
+      &lt;option&gt;Second select&lt;/option&gt;
+      &lt;option&gt;Option&lt;/option&gt;
+      &lt;option&gt;Option&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;div class=&quot;select__arrow&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
 </code></pre>
                   </template>
                 </div>

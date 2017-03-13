@@ -16,16 +16,19 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
-.control--checkbox .control__indicator:after {
-  left: 7px;
-  top: 3px;
-  width: 6px;
-  height: 11px;
-  border: solid $color-white;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-}
+.control--checkbox {
 
-.control--checkbox input:disabled ~ .control__indicator:after {
-  border-color: $color-cherry;
+  .control__indicator:after {
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 11px;
+    border: solid $color-white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  input:disabled ~ .control__indicator:after {
+    border-color: $color-cherry;
+  }
 }

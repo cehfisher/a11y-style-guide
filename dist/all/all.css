@@ -635,25 +635,37 @@ body {
 .control--radio input:disabled ~ .control__indicator:after {
   background: #e00000; }
 
+
+.search input[type=text] {
+  background-color: #ffffff;
+  background-image: url("../assets/searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  transition: width 0.4s ease-in-out; }
+  .search input[type=text]:focus {
+    width: 100%; }
+
 .select {
   position: relative;
   display: inline-block;
   margin-bottom: 15px;
-  width: 100%; }
+  width: 100%;
+  margin-left: -2px; }
 
 .select select {
   display: inline-block;
   width: 100%;
   cursor: pointer;
   padding: 10px 15px;
-  outline: 0;
   border: 0;
   border-radius: 0;
   background: #eeeeee;
   color: #e00000;
-  appearance: none;
   -webkit-appearance: none;
-  -moz-appearance: none; }
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 1rem; }
 
 .select select::-ms-expand {
   display: none; }
@@ -684,18 +696,6 @@ body {
 
 .select select:disabled ~ .select__arrow {
   border-top-color: #eeeeee; }
-
-
-.search input[type=text] {
-  background-color: #ffffff;
-  background-image: url("../assets/searchicon.png");
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding-left: 40px;
-  transition: width 0.4s ease-in-out; }
-  .search input[type=text]:focus {
-    width: 100%; }
-
 
 
 #kss-node .kss-section {
