@@ -51,20 +51,23 @@
       <article role="main" class="kss-article">
       
         
-                            <div id="kssref-forms-field-sets" class="kss-section kss-depth-2">
+                            <div id="kssref-forms-text-fields" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-forms-field-sets">
-                  Field Sets
+                <a class="kss-title__permalink" href="#kssref-forms-text-fields">
+                  Text Inputs &amp; Textarea
                 </a>
               </h2>
 
                               <div class="kss-description">
                   <ul>
- <li>words</li>
+ <li>Keep it simple - screen readers do not support multiple labels that are linked to the same form element.</li>
+ <li>Use labels for every input and make the <code>for=&quot;&quot;</code> and <code>id=&quot;&quot;</code> values match. IDs must be unique on each page, only one label can be associated to each unique form element.</li>
+ <li>Make required fields obvious by using an indicator - border color change, asterisk, description text, etc.</li>
+ <li>Fields with error validation should have <code>aria-describedby</code> to insure that the associated field level error message is read by assistive technology. If the error message has an <code>id=&quot;my-error-message&quot;</code>, then the input should have <code>aria-describedby=&quot;my-error-message&quot;</code>.</li>
 </ul>
 
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#consistent-behavior" target="_blank">Guideline 3.2 - Predictable</a> - Make Web pages appear and operate in predictable ways.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a> - Help users avoid and correct mistakes.</blockquote>
 
 
                 </div>
@@ -76,23 +79,15 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<div class="field-sets">
-	<field>
-   <legend>What is your favorite color?</legend>
-   <div>
-   <input type="radio" name="color" value="Red" id="color_red">
-   <label for="color_red">Red</label>
-   </div>
-   <div>
-       <input type="radio" name="color" value="Green" id="color_green">
-       <label for="color_green">Green</label>
-     </div>
-     <div>
-       <input type="radio" name="color" value="Blue" id="color_blue">
-       <label for="color_blue">Blue</label>
-   </div>
- </field>
-</div>
+<form>
+  <label for="first-name">First Name:</label>
+  <input id="first-name" type="text" name="textfield">
+  <label for="last-name">Last Name:</label>
+  <input id="last-name" type="text" name="textfield" aria-describedby="my-error-message" required>
+  <label for="address">Enter your street address:</label>
+  <textarea id="address" name="addresstext"></textarea>
+  <input type="submit" value="Submit">
+</form>
 
                   </div>
                 </div>
@@ -100,24 +95,16 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/field-sets&#039;) }}
-&lt;div class=&quot;field-sets&quot;&gt;
-	&lt;field&gt;
-   &lt;legend&gt;What is your favorite color?&lt;/legend&gt;
-   &lt;div&gt;
-   &lt;input type=&quot;radio&quot; name=&quot;color&quot; value=&quot;Red&quot; id=&quot;color_red&quot;&gt;
-   &lt;label for=&quot;color_red&quot;&gt;Red&lt;/label&gt;
-   &lt;/div&gt;
-   &lt;div&gt;
-       &lt;input type=&quot;radio&quot; name=&quot;color&quot; value=&quot;Green&quot; id=&quot;color_green&quot;&gt;
-       &lt;label for=&quot;color_green&quot;&gt;Green&lt;/label&gt;
-     &lt;/div&gt;
-     &lt;div&gt;
-       &lt;input type=&quot;radio&quot; name=&quot;color&quot; value=&quot;Blue&quot; id=&quot;color_blue&quot;&gt;
-       &lt;label for=&quot;color_blue&quot;&gt;Blue&lt;/label&gt;
-   &lt;/div&gt;
- &lt;/field&gt;
-&lt;/div&gt;
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/text-inputs&#039;) }}
+&lt;form&gt;
+  &lt;label for=&quot;first-name&quot;&gt;First Name:&lt;/label&gt;
+  &lt;input id=&quot;first-name&quot; type=&quot;text&quot; name=&quot;textfield&quot;&gt;
+  &lt;label for=&quot;last-name&quot;&gt;Last Name:&lt;/label&gt;
+  &lt;input id=&quot;last-name&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;my-error-message&quot; required&gt;
+  &lt;label for=&quot;address&quot;&gt;Enter your street address:&lt;/label&gt;
+  &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&lt;/form&gt;
 </code></pre>
                   </template>
                 </div>

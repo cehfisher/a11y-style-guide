@@ -1,22 +1,16 @@
 {{ attach_library('theme_name/checkboxes') }}
-<section class="checkboxes-section">
-  <fieldset class="checkboxes form-element">
-    <legend class="form-element__legend form-element__label">Checkbox Group Label</legend>
-    <div class="form-element__control">
-      <span class="checkbox">
-        <input type="checkbox" id="checkbox-25" name="options" checked="" />
-        <label class="checkbox__label" for="checkbox-25">
-          <span class="checkbox--faux"></span>
-          <span class="form-element__label">Checkbox Label One</span>
-        </label>
-      </span>
-      <span class="checkbox">
-        <input type="checkbox" id="checkbox-26" name="options" />
-        <label class="checkbox__label" for="checkbox-26">
-          <span class="checkbox--faux"></span>
-          <span class="form-element__label">Checkbox Label Two</span>
-        </label>
-      </span>
-    </div>
-  </fieldset>
-</section>
+<fieldset>
+  <legend>Who is your favorite 19th century scientist</legend>
+  <input id="bell" type="checkbox" value="1" name="scientist" value="bell">
+  <label for="bell">Alexander Graham Bell</label><br>
+  <input id="edison" type="checkbox" name="scientist" value="edison">
+  <label for="edison">Thomas Edison</label><br>
+  <input id="morse" type="checkbox" value="1" name="scientist" value="morse">
+  <label for="morse">Samuel Morse</label><br>
+  <input id="nobel" type="checkbox" value="1" name="scientist" value="nobel">
+  <label for="nobel">Alfred Nobel</label><br>
+  <input id="pasteur" type="checkbox" value="1" name="scientist" value="pasteur">
+  <label for="pasteur">Louis Pasteur</label><br>
+  <input id="tesla" type="checkbox" value="1" name="scientist" value="tesla">
+  <label for="tesla">Nikola Tesla</label>
+</fieldset>

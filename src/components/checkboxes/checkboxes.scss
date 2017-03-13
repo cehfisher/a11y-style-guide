@@ -1,13 +1,11 @@
 // Checkboxes
 //
 // <ul>
-//  <li>Groups of checkboxes should be marked up using the fieldset and legend element. This helps someone using assistive technology to understand the question they're answering with the group of checkboxes. The fieldset is placed around the whole group and the legend contains the question.</li>
-//  <li>Custom checkboxes are created by applying the `.checkbox` class to a `<label>` element. To remain accessible, place `<input>` with `type="checkbox"` inside the `<label>` element. The `<input>` is then visually hidden, and the styling is placed on a span with the `.checkbox--faux` class. The styling of the span changes based on whether the checkbox is selected or focused by using a pseudo-element. A second span with `.form-element__label` contains the label text.</li>
-//  <li>When a single checkbox is required, `<div class="checkbox">` should get `<abbr class="required" title="required">*</abbr>` added to the DOM, directly before the `<input type="checkbox" /> `for visual indication that the checkbox is required.</li>
-//  <li>When a checkbox group is required, the `<fieldset>` should receive the class `.is-required`. The `<legend>` should then get `<abbr class="required" title="required">*</abbr>` added to the DOM for visual indication that the checkbox group is required.</li>
+//  <li>The `<fieldset>` surrounds the entire grouping of checkboxes or radio buttons. The `<legend>` provides a description for the grouping.</li>
+//  <li>Some assistive technology reads the legend text for each fieldset, so it should be brief and descriptive. This helps someone using assistive technology to understand the question they are answering with the group of checkboxes.</li>
 // </ul>
 //
-// <blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+// <blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#time-limits" target="_blank">Guideline 2.2 - Enough Time</a> - Provide users enough time to read and use content.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a> - Help users avoid and correct mistakes.</blockquote>
 //
 //
 //
@@ -18,6 +16,32 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
-.checkboxes {
-  //to-do
+input[type=checkbox] {
+  width: 14px;
+  height: 14px;
+  margin-right: 22px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  visibility: hidden;
+  transform: scale(1.5);
+
+  &:after {
+    content: '';
+    background-color: $color-white;
+    display: inline-block;
+    margin-left: 10px;
+    padding-bottom: 5px;
+    color: $color-cherry;
+    width: 14px;
+    height: 14px;
+    visibility: visible;
+    border: 1px solid $color-cherry;
+    border-radius: 2px;
+    padding-left: 1px;
+  }
+
+  &:checked:after {
+    content: "\2714";
+    font-weight: bold;
+  }
 }

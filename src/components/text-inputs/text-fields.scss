@@ -1,0 +1,50 @@
+// Text Inputs & Textarea
+//
+// <ul>
+//  <li>Keep it simple - screen readers do not support multiple labels that are linked to the same form element.</li>
+//  <li>Use labels for every input and make the `for=""` and `id=""` values match. IDs must be unique on each page, only one label can be associated to each unique form element.</li>
+//  <li>Make required fields obvious by using an indicator - border color change, asterisk, description text, etc.</li>
+//  <li>Fields with error validation should have `aria-describedby` to insure that the associated field level error message is read by assistive technology. If the error message has an `id="my-error-message"`, then the input should have `aria-describedby="my-error-message"`.</li>
+// </ul>
+//
+// <blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#consistent-behavior" target="_blank">Guideline 3.2 - Predictable</a> - Make Web pages appear and operate in predictable ways.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a> - Help users avoid and correct mistakes.</blockquote>
+//
+//
+//
+// Markup: text-fields.twig
+//
+// Style guide: Forms.text-fields
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+[type='text'],
+textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.75rem;
+  margin: 8px -2px 20px;
+  box-sizing: border-box;
+  border-radius: $border-rd-sm;
+  border: 2px solid $color-gallery;
+  font-size: $padding-sm;
+}
+
+[type='submit'] {
+  @include button;
+}
+
+input:required,
+textarea:required {
+  border-color: $color-cherry;
+}
+
+fieldset {
+  padding: $padding-sm 1.5rem;
+  border: 2px solid $color-gallery;
+  border-radius: $border-rd-sm;
+}
+
+legend {
+  font-weight: bold;
+}
