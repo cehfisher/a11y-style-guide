@@ -79,18 +79,30 @@
                     
 <fieldset>
   <legend>Who is your favorite 19th century scientist</legend>
-  <input id="bell" type="checkbox" value="1" name="scientist" value="bell">
-  <label for="bell">Alexander Graham Bell</label><br>
-  <input id="edison" type="checkbox" name="scientist" value="edison">
-  <label for="edison">Thomas Edison</label><br>
-  <input id="morse" type="checkbox" value="1" name="scientist" value="morse">
-  <label for="morse">Samuel Morse</label><br>
-  <input id="nobel" type="checkbox" value="1" name="scientist" value="nobel">
-  <label for="nobel">Alfred Nobel</label><br>
-  <input id="pasteur" type="checkbox" value="1" name="scientist" value="pasteur">
-  <label for="pasteur">Louis Pasteur</label><br>
-  <input id="tesla" type="checkbox" value="1" name="scientist" value="tesla">
-  <label for="tesla">Nikola Tesla</label>
+  <label class="control control--checkbox" for="bell">Alexander Graham Bell
+    <input id="bell" type="checkbox" value="1" name="scientist" value="bell"/>
+    <div class="control__indicator"></div>
+  </label>
+  <label class="control control--checkbox" for="edison">Thomas Edison
+    <input id="edison" type="checkbox" name="scientist" value="edison"/>
+    <div class="control__indicator"></div>
+  </label>
+  <label class="control control--checkbox" for="morse">Samuel Morse
+    <input id="morse" type="checkbox" value="1" name="scientist" value="morse"/>
+    <div class="control__indicator"></div>
+  </label>
+  <label class="control control--checkbox" for="nobel">Alfred Nobel
+    <input id="nobel" type="checkbox" value="1" name="scientist" value="nobel"/>
+    <div class="control__indicator"></div>
+  </label>
+  <label class="control control--checkbox" for="pasteur">Louis Pasteur
+    <input id="pasteur" type="checkbox" value="1" name="scientist" value="pasteur"/>
+    <div class="control__indicator"></div>
+  </label>
+  <label class="control control--checkbox" for="tesla">Nikola Tesla
+    <input id="tesla" type="checkbox" value="1" name="scientist" value="tesla"/>
+    <div class="control__indicator"></div>
+  </label>
 </fieldset>
 
                   </div>
@@ -102,18 +114,30 @@
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/checkboxes&#039;) }}
 &lt;fieldset&gt;
   &lt;legend&gt;Who is your favorite 19th century scientist&lt;/legend&gt;
-  &lt;input id=&quot;bell&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;bell&quot;&gt;
-  &lt;label for=&quot;bell&quot;&gt;Alexander Graham Bell&lt;/label&gt;&lt;br&gt;
-  &lt;input id=&quot;edison&quot; type=&quot;checkbox&quot; name=&quot;scientist&quot; value=&quot;edison&quot;&gt;
-  &lt;label for=&quot;edison&quot;&gt;Thomas Edison&lt;/label&gt;&lt;br&gt;
-  &lt;input id=&quot;morse&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;morse&quot;&gt;
-  &lt;label for=&quot;morse&quot;&gt;Samuel Morse&lt;/label&gt;&lt;br&gt;
-  &lt;input id=&quot;nobel&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;nobel&quot;&gt;
-  &lt;label for=&quot;nobel&quot;&gt;Alfred Nobel&lt;/label&gt;&lt;br&gt;
-  &lt;input id=&quot;pasteur&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;pasteur&quot;&gt;
-  &lt;label for=&quot;pasteur&quot;&gt;Louis Pasteur&lt;/label&gt;&lt;br&gt;
-  &lt;input id=&quot;tesla&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;tesla&quot;&gt;
-  &lt;label for=&quot;tesla&quot;&gt;Nikola Tesla&lt;/label&gt;
+  &lt;label class=&quot;control control--checkbox&quot; for=&quot;bell&quot;&gt;Alexander Graham Bell
+    &lt;input id=&quot;bell&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;bell&quot;/&gt;
+    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;control control--checkbox&quot; for=&quot;edison&quot;&gt;Thomas Edison
+    &lt;input id=&quot;edison&quot; type=&quot;checkbox&quot; name=&quot;scientist&quot; value=&quot;edison&quot;/&gt;
+    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;control control--checkbox&quot; for=&quot;morse&quot;&gt;Samuel Morse
+    &lt;input id=&quot;morse&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;morse&quot;/&gt;
+    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;control control--checkbox&quot; for=&quot;nobel&quot;&gt;Alfred Nobel
+    &lt;input id=&quot;nobel&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;nobel&quot;/&gt;
+    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;control control--checkbox&quot; for=&quot;pasteur&quot;&gt;Louis Pasteur
+    &lt;input id=&quot;pasteur&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;pasteur&quot;/&gt;
+    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+  &lt;/label&gt;
+  &lt;label class=&quot;control control--checkbox&quot; for=&quot;tesla&quot;&gt;Nikola Tesla
+    &lt;input id=&quot;tesla&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;tesla&quot;/&gt;
+    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+  &lt;/label&gt;
 &lt;/fieldset&gt;
 </code></pre>
                   </template>

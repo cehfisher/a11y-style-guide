@@ -16,32 +16,16 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
-input[type=checkbox] {
-  width: 14px;
-  height: 14px;
-  margin-right: 22px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  visibility: hidden;
-  transform: scale(1.5);
+.control--checkbox .control__indicator:after {
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 11px;
+  border: solid $color-white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
 
-  &:after {
-    content: '';
-    background-color: $color-white;
-    display: inline-block;
-    margin-left: 10px;
-    padding-bottom: 5px;
-    color: $color-cherry;
-    width: 14px;
-    height: 14px;
-    visibility: visible;
-    border: 1px solid $color-cherry;
-    border-radius: 2px;
-    padding-left: 1px;
-  }
-
-  &:checked:after {
-    content: "\2714";
-    font-weight: bold;
-  }
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: $color-cherry;
 }

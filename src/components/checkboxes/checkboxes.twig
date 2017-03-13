@@ -1,16 +1,28 @@
 {{ attach_library('theme_name/checkboxes') }}
 <fieldset>
   <legend>Who is your favorite 19th century scientist</legend>
-  <input id="bell" type="checkbox" value="1" name="scientist" value="bell">
-  <label for="bell">Alexander Graham Bell</label><br>
-  <input id="edison" type="checkbox" name="scientist" value="edison">
-  <label for="edison">Thomas Edison</label><br>
-  <input id="morse" type="checkbox" value="1" name="scientist" value="morse">
-  <label for="morse">Samuel Morse</label><br>
-  <input id="nobel" type="checkbox" value="1" name="scientist" value="nobel">
-  <label for="nobel">Alfred Nobel</label><br>
-  <input id="pasteur" type="checkbox" value="1" name="scientist" value="pasteur">
-  <label for="pasteur">Louis Pasteur</label><br>
-  <input id="tesla" type="checkbox" value="1" name="scientist" value="tesla">
-  <label for="tesla">Nikola Tesla</label>
+  <label class="control control--checkbox" for="bell">Alexander Graham Bell
+    <input id="bell" type="checkbox" value="1" name="scientist" value="bell"/>
+    <div class="control__indicator"></div>
+  </label>
+  <label class="control control--checkbox" for="edison">Thomas Edison
+    <input id="edison" type="checkbox" name="scientist" value="edison"/>
+    <div class="control__indicator"></div>
+  </label>
+  <label class="control control--checkbox" for="morse">Samuel Morse
+    <input id="morse" type="checkbox" value="1" name="scientist" value="morse"/>
+    <div class="control__indicator"></div>
+  </label>
+  <label class="control control--checkbox" for="nobel">Alfred Nobel
+    <input id="nobel" type="checkbox" value="1" name="scientist" value="nobel"/>
+    <div class="control__indicator"></div>
+  </label>
+  <label class="control control--checkbox" for="pasteur">Louis Pasteur
+    <input id="pasteur" type="checkbox" value="1" name="scientist" value="pasteur"/>
+    <div class="control__indicator"></div>
+  </label>
+  <label class="control control--checkbox" for="tesla">Nikola Tesla
+    <input id="tesla" type="checkbox" value="1" name="scientist" value="tesla"/>
+    <div class="control__indicator"></div>
+  </label>
 </fieldset>

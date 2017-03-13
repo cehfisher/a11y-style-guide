@@ -1,22 +1,11 @@
 {{ attach_library('theme_name/radio-buttons') }}
-<section class="radio-buttons-section">
-  <fieldset class="radio-buttons form-element">
-    <legend class="form-element__legend form-element__label">Radio Group Label</legend>
-    <div class="form-element__control">
-      <span class="radio">
-        <input type="radio" id="radio-25" name="options" checked="" />
-        <label class="radio__label" for="radio-25">
-          <span class="radio--faux"></span>
-          <span class="form-element__label">Radio Label One</span>
-        </label>
-      </span>
-      <span class="radio">
-        <input type="radio" id="radio-26" name="options" />
-        <label class="radio__label" for="radio-26">
-          <span class="radio--faux"></span>
-          <span class="form-element__label">Radio Label Two</span>
-        </label>
-      </span>
-    </div>
-  </fieldset>
-</section>
+<fieldset>
+  <label class="control control--radio">First radio
+    <input type="radio" name="radio"/>
+    <div class="control__indicator"></div>
+  </label>
+  <label class="control control--radio">Second radio
+    <input type="radio" name="radio"/>
+    <div class="control__indicator"></div>
+  </label>
+</fieldset>

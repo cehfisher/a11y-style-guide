@@ -1,24 +1,11 @@
-input[type=checkbox] {
-  width: 14px;
-  height: 14px;
-  margin-right: 22px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  visibility: hidden;
-  transform: scale(1.5); }
-  input[type=checkbox]:after {
-    content: '';
-    background-color: #ffffff;
-    display: inline-block;
-    margin-left: 10px;
-    padding-bottom: 5px;
-    color: #e00000;
-    width: 14px;
-    height: 14px;
-    visibility: visible;
-    border: 1px solid #e00000;
-    border-radius: 2px;
-    padding-left: 1px; }
-  input[type=checkbox]:checked:after {
-    content: "\2714";
-    font-weight: bold; }
+.control--checkbox .control__indicator:after {
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 11px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg); }
+
+.control--checkbox input:disabled ~ .control__indicator:after {
+  border-color: #e00000; }
