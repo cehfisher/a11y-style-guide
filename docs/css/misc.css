@@ -1,0 +1,23 @@
+body {
+  font-family: 'Verdana', 'Arial', sans-serif;
+  color: #464646; }
+
+.break {
+  margin: 2rem 0;
+  border-bottom: 1px solid #bbbbbb; }
+
+hr {
+  margin: 2rem 0;
+  height: 6px;
+  background: url("../assets/hr.png") repeat-x 0 0;
+  border: 0; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
