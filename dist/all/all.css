@@ -563,7 +563,7 @@ button {
   text-align: left;
   clear: both; }
 
-.control--checkbox .control__indicator:after {
+.control--checkbox .control__indicator::after {
   left: 7px;
   top: 3px;
   width: 6px;
@@ -572,7 +572,7 @@ button {
   border-width: 0 2px 2px 0;
   transform: rotate(45deg); }
 
-.control--checkbox input:disabled ~ .control__indicator:after {
+.control--checkbox input:disabled ~ .control__indicator::after {
   border-color: #e00000; }
 
 
@@ -656,15 +656,15 @@ body {
   opacity: 0.6;
   pointer-events: none; }
 
-.control__indicator:after {
+.control__indicator::after {
   content: '';
   position: absolute;
   display: none; }
 
-.control input:checked ~ .control__indicator:after {
+.control input:checked ~ .control__indicator::after {
   display: block; }
 
-.control--radio .control__indicator:after {
+.control--radio .control__indicator::after {
   left: 7px;
   top: 7px;
   height: 6px;
@@ -672,19 +672,23 @@ body {
   border-radius: 50%;
   background: #ffffff; }
 
-.control--radio input:disabled ~ .control__indicator:after {
+.control--radio input:disabled ~ .control__indicator::after {
   background: #e00000; }
 
 
-.search input[type=text] {
+input[type='search'] {
   background-color: #ffffff;
   background-image: url("../assets/searchicon.png");
-  background-position: 10px 10px;
+  background-position: 98% 49%;
   background-repeat: no-repeat;
-  padding-left: 40px;
-  transition: width 0.4s ease-in-out; }
-  .search input[type=text]:focus {
-    width: 100%; }
+  width: 100%;
+  max-width: 100%;
+  padding: 0.75rem;
+  margin: 8px -2px 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 2px solid #eeeeee;
+  font-size: 1rem; }
 
 .select {
   position: relative;
@@ -697,45 +701,37 @@ body {
   display: inline-block;
   width: 100%;
   cursor: pointer;
-  padding: 10px 15px;
+  padding: 15px;
   border: 0;
-  border-radius: 0;
   background: #eeeeee;
   color: #e00000;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font-size: 1rem; }
-
-.select select::-ms-expand {
-  display: none; }
-
-.select select:hover,
-.select select:focus {
-  color: #464646;
-  background: #eeeeee; }
-
-.select select:disabled {
-  opacity: 0.5;
-  pointer-events: none; }
+  font-size: 1rem;
+  border-radius: 4px; }
+  .select select:hover, .select select:focus {
+    color: #464646;
+    background: #eeeeee; }
+  .select select:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+  .select select:hover ~ .select__arrow,
+  .select select:focus ~ .select__arrow {
+    border-top-color: #464646; }
+  .select select:disabled ~ .select__arrow {
+    border-top-color: #eeeeee; }
 
 .select__arrow {
   position: absolute;
-  top: 16px;
+  top: 20px;
   right: 15px;
   width: 0;
   height: 0;
   pointer-events: none;
   border-style: solid;
-  border-width: 8px 5px 0 5px;
-  border-color: #e00000 transparent transparent transparent; }
-
-.select select:hover ~ .select__arrow,
-.select select:focus ~ .select__arrow {
-  border-top-color: #464646; }
-
-.select select:disabled ~ .select__arrow {
-  border-top-color: #eeeeee; }
+  border-width: 10px 8px 0;
+  border-color: #e00000 transparent transparent; }
 
 
 #kss-node .kss-section {
@@ -964,7 +960,7 @@ body {
   transform: translateX(100%);
   background: url("../assets/chevron_right_round_red.png") no-repeat;
   background-size: 32px;
-  right: 35px;
+  right: 40px;
   top: 5px; }
 
 
@@ -992,4 +988,9 @@ fieldset {
 
 legend {
   font-weight: bold; }
+
+.required-field::after {
+  content: '*';
+  color: #e00000;
+  display: inline-block; }
 

@@ -20,3 +20,8 @@ fieldset {
 
 legend {
   font-weight: bold; }
+
+.required-field::after {
+  content: '*';
+  color: #e00000;
+  display: inline-block; }

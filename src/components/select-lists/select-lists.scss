@@ -28,47 +28,43 @@
   display: inline-block;
   width: 100%;
   cursor: pointer;
-  padding: 10px 15px;
+  padding: 15px;
   border: 0;
-  border-radius: 0;
   background: $color-gallery;
   color: $color-cherry;
   appearance: none;
   font-size: $padding-sm;
-}
+  border-radius: $border-rd-sm;
 
-.select select::-ms-expand {
-  display: none;
-}
+  &:hover,
+  &:focus {
+    color: $color-midnight;
+    background: $color-gallery;
+  }
 
-.select select:hover,
-.select select:focus {
-  color: $color-midnight;
-  background: $color-gallery;
-}
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 
-.select select:disabled {
-  opacity: 0.5;
-  pointer-events: none;
+  &:hover ~ .select__arrow,
+  &:focus ~ .select__arrow {
+    border-top-color: $color-midnight;
+  }
+
+  &:disabled ~ .select__arrow {
+    border-top-color: $color-gallery;
+  }
 }
 
 .select__arrow {
   position: absolute;
-  top: 16px;
+  top: 20px;
   right: 15px;
   width: 0;
   height: 0;
   pointer-events: none;
   border-style: solid;
-  border-width: 8px 5px 0 5px;
-  border-color: $color-cherry transparent transparent transparent;
-}
-
-.select select:hover ~ .select__arrow,
-.select select:focus ~ .select__arrow {
-  border-top-color: $color-midnight;
-}
-
-.select select:disabled ~ .select__arrow {
-  border-top-color: $color-gallery;
+  border-width: 10px 8px 0;
+  border-color: $color-cherry transparent transparent;
 }

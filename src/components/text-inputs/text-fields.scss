@@ -44,3 +44,12 @@ fieldset {
 legend {
   font-weight: bold;
 }
+
+.required-field {
+
+  &::after {
+    content: '*';
+    color: $color-cherry;
+    display: inline-block;
+  }
+}

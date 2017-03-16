@@ -15,18 +15,17 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
-.search {
-
-  input[type=text] {
-    background-color: $color-white;
-    background-image: url('#{$asset-path}/searchicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding-left: 40px;
-    transition: width 0.4s ease-in-out;
-
-    &:focus {
-      width: 100%;
-    }
-  }
+input[type='search'] {
+  background-color: $color-white;
+  background-image: url('#{$asset-path}/searchicon.png');
+  background-position: 98% 49%;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.75rem;
+  margin: 8px -2px 20px;
+  box-sizing: border-box;
+  border-radius: $border-rd-sm;
+  border: 2px solid $color-gallery;
+  font-size: $padding-sm;
 }

@@ -9,42 +9,34 @@
   display: inline-block;
   width: 100%;
   cursor: pointer;
-  padding: 10px 15px;
+  padding: 15px;
   border: 0;
-  border-radius: 0;
   background: #eeeeee;
   color: #e00000;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font-size: 1rem; }
-
-.select select::-ms-expand {
-  display: none; }
-
-.select select:hover,
-.select select:focus {
-  color: #464646;
-  background: #eeeeee; }
-
-.select select:disabled {
-  opacity: 0.5;
-  pointer-events: none; }
+  font-size: 1rem;
+  border-radius: 4px; }
+  .select select:hover, .select select:focus {
+    color: #464646;
+    background: #eeeeee; }
+  .select select:disabled {
+    opacity: 0.5;
+    pointer-events: none; }
+  .select select:hover ~ .select__arrow,
+  .select select:focus ~ .select__arrow {
+    border-top-color: #464646; }
+  .select select:disabled ~ .select__arrow {
+    border-top-color: #eeeeee; }
 
 .select__arrow {
   position: absolute;
-  top: 16px;
+  top: 20px;
   right: 15px;
   width: 0;
   height: 0;
   pointer-events: none;
   border-style: solid;
-  border-width: 8px 5px 0 5px;
-  border-color: #e00000 transparent transparent transparent; }
-
-.select select:hover ~ .select__arrow,
-.select select:focus ~ .select__arrow {
-  border-top-color: #464646; }
-
-.select select:disabled ~ .select__arrow {
-  border-top-color: #eeeeee; }
+  border-width: 10px 8px 0;
+  border-color: #e00000 transparent transparent; }

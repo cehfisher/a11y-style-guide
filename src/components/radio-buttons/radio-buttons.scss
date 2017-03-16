@@ -21,7 +21,7 @@
   vertical-align: top;
   background: #fff;
   text-align: left;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   padding: 30px;
   width: 200px;
   height: 210px;
@@ -75,17 +75,17 @@
   pointer-events: none;
 }
 
-.control__indicator:after {
+.control__indicator::after {
   content: '';
   position: absolute;
   display: none;
 }
 
-.control input:checked ~ .control__indicator:after {
+.control input:checked ~ .control__indicator::after {
   display: block;
 }
 
-.control--radio .control__indicator:after {
+.control--radio .control__indicator::after {
   left: 7px;
   top: 7px;
   height: 6px;
@@ -94,6 +94,6 @@
   background: $color-white;
 }
 
-.control--radio input:disabled ~ .control__indicator:after {
+.control--radio input:disabled ~ .control__indicator::after {
   background: $color-cherry;
 }
