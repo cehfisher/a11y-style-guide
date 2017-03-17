@@ -1,21 +1,35 @@
 {{ attach_library('theme_name/select-lists') }}
 <section class="select-section">
-  <form>
-    <div class="select">
-      <select>
-        <option>First select</option>
-        <option>Option 1.1</option>
-        <option>Option 1.2</option>
-      </select>
-      <div class="select__arrow"></div>
-    </div>
-    <div class="select">
-      <select>
-        <option>Second select</option>
-        <option>Option 2.1</option>
-        <option>Option 2.2</option>
-      </select>
-      <div class="select__arrow"></div>
-    </div>
-  </form>
+  <h2>Option #1: Select with no grouping</h2>
+  <div class="select">
+    <select>
+      <option>First select</option>
+      <option>Option 1.1</option>
+      <option>Option 1.2</option>
+    </select>
+    <div class="select__arrow"></div>
+  </div>
+  <div class="select">
+    <select>
+      <option>Second select</option>
+      <option>Option 2.1</option>
+      <option>Option 2.2</option>
+    </select>
+    <div class="select__arrow"></div>
+  </div>
+  <div class="break"></div>
+  <h2>Option #2: Select with grouping</h2>
+  <div class="select">
+    <select>
+    	<optgroup label="1.01 The History of the World: Part I">
+    		<option value="1.01.1">Lecture 01: In the Beginning</option>
+    		<option value="1.01.2">Lecture 02: Stuck in the Middle</option>
+    		<option value="1.01.3">Lecture 03: At the End</option>
+    	</optgroup>
+    	<optgroup label="1.02 The History of the World: Part II">
+    		<option value="1.02.1">Lecture 01: Wait! There's More</option>
+    	</optgroup>
+    </select>
+    <div class="select__arrow"></div>
+  </div>
 </section>

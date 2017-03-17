@@ -51,7 +51,6 @@
 // Mixin for standard buttons
 @mixin button($hover-color: $color-ruby, $background: $color-cherry, $color: $color-white, $padding: 0.8rem $padding-sm, $corners: $border-rd-md) {
   display: inline-block;
-  float: left;
   background-color: $background;
   color: $color;
   padding: $padding;

@@ -61,10 +61,11 @@
 
                               <div class="kss-description">
                   <ul>
- <li>words</li>
+ <li>Whenever possible, use the <code>label</code> element to explicitly associate text with form elements. The <code>for</code> attribute of the label must exactly match the <code>id</code> of the form control.</li>
+ <li>Some form fields do not need explicit <code>label</code> elements, when next to a button with descriptive text. Ex. search field next to a button labeled search. In these cases you should still have a <code>label</code> in the markup, but you can hide it visually.
 </ul>
 
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/#content-structure-separation" target="_blank">Guideline 1.3 – Adaptable</a>: Create content that can be presented in different ways (for example simpler layout) without losing information or structure.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/#navigation-mechanisms" target="_blank">Guideline 2.4 – Navigable</a>: Provide ways to help users navigate, find content, and determine where they are.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/#minimize-error" target="_blank">Guideline 3.3 – Input Assistance</a>: Help users avoid and correct mistakes.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/#ensure-compat" target="_blank">Guideline 4.1 – Compatible</a>: Maximize compatibility with current and future user agents, including assistive technologies.</blockquote>
 
 
                 </div>
@@ -77,10 +78,18 @@
                   <div class="kss-modifier-example">
                     
 <section class="search-section">
-  <form method="post" class="search-form">
-  	<label for="search" class="search-form__label is-vishidden">Search the site</label>
-  	<input type="search" id="search" class="search-form__input" placeholder="Search the site" />
-  </form>
+  <h2>Option #1: Hide the label element</h2>
+	<label for="search" class="visuallyhidden">Search the site</label>
+	<input type="search" name="search" id="search" class="search-form__input" placeholder="Search the site" />
+	<button type="submit">Search</button>
+  <div class="break"></div>
+  <h2>Option #2: Use aria-label</h2>
+  <input type="search" name="search" aria-label="Search">
+  <button type="submit">Search</button>
+  <div class="break"></div>
+  <h2>Option #3: Use the title attribute</h2>
+  <input title="Search" type="search" name="search">
+  <button type="submit">Search</button>
 </section>
 
                   </div>
@@ -91,10 +100,18 @@
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/search&#039;) }}
 &lt;section class=&quot;search-section&quot;&gt;
-  &lt;form method=&quot;post&quot; class=&quot;search-form&quot;&gt;
-  	&lt;label for=&quot;search&quot; class=&quot;search-form__label is-vishidden&quot;&gt;Search the site&lt;/label&gt;
-  	&lt;input type=&quot;search&quot; id=&quot;search&quot; class=&quot;search-form__input&quot; placeholder=&quot;Search the site&quot; /&gt;
-  &lt;/form&gt;
+  &lt;h2&gt;Option #1: Hide the label element&lt;/h2&gt;
+	&lt;label for=&quot;search&quot; class=&quot;visuallyhidden&quot;&gt;Search the site&lt;/label&gt;
+	&lt;input type=&quot;search&quot; name=&quot;search&quot; id=&quot;search&quot; class=&quot;search-form__input&quot; placeholder=&quot;Search the site&quot; /&gt;
+	&lt;button type=&quot;submit&quot;&gt;Search&lt;/button&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h2&gt;Option #2: Use aria-label&lt;/h2&gt;
+  &lt;input type=&quot;search&quot; name=&quot;search&quot; aria-label=&quot;Search&quot;&gt;
+  &lt;button type=&quot;submit&quot;&gt;Search&lt;/button&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h2&gt;Option #3: Use the title attribute&lt;/h2&gt;
+  &lt;input title=&quot;Search&quot; type=&quot;search&quot; name=&quot;search&quot;&gt;
+  &lt;button type=&quot;submit&quot;&gt;Search&lt;/button&gt;
 &lt;/section&gt;
 </code></pre>
                   </template>

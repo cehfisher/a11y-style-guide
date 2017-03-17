@@ -28,7 +28,7 @@ button {
   @include button-outline;
 }
 
-a.button {
+.button {
   @include button;
   line-height: 0.9;
 }
