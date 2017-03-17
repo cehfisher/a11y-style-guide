@@ -27,6 +27,7 @@
     margin: 0;
     background: url('#{$asset-path}/hr.png') repeat-x 0 0;
     border: 0;
+    float: left;
   }
 
   .kss-modifier {
@@ -39,12 +40,12 @@
   }
 
   .kss-content {
-    padding-left: $padding-xxsm;
+    padding-left: $padding-xsm;
     transition: all 0.5s ease-in-out;
     margin: 0 $padding-sm 0 325px;
 
     li {
-      padding-bottom: $padding-xxsm;
+      padding-bottom: $padding-xsm;
     }
   }
 
@@ -100,8 +101,8 @@
     z-index: 1;
 
     .kss-nav {
-      padding: $padding-xxsm 0;
-      margin: $padding-xxsm (-$padding-xxsm);
+      padding: $padding-xsm 0;
+      margin: $padding-xsm (-$padding-xsm);
       max-height: calc(125vh - 44px - 68px - 30px);
       overflow-y: auto;
     }
@@ -110,12 +111,12 @@
       text-decoration: none;
       padding-top: 0;
       text-decoration: none;
-      margin-top: -$padding-xxsm;
+      margin-top: -$padding-xsm;
     }
   }
 
   .kss-menu > .kss-menu-item {
-    padding: $padding-xxsm;
+    padding: $padding-xsm;
     border-bottom: 1px solid $color-silver;
 
     &:last-child {

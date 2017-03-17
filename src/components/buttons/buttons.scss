@@ -20,13 +20,17 @@
 @import '../../global/utils/init';
 
 [type='submit'],
-.button,
 button {
   @include button;
 }
 
 .button--outline {
   @include button-outline;
+}
+
+a.button {
+  @include button;
+  line-height: 0.9;
 }
 
 .buttons--center {
@@ -46,7 +50,8 @@ button {
 
 .button-icon {
   @include button;
-  padding: 0.8rem $padding-md 0.8rem ($padding-md + $padding-xxsm);
+  line-height: 0.9;
+  padding: 0.8rem $padding-md 0.8rem ($padding-md + $padding-xsm);
 
   &::before {
     float: left;
@@ -62,6 +67,19 @@ button {
 
     &::before {
       content: '\2764';
+      color: $color-ballet-slipper;
+    }
+
+    &:hover::before {
+      color: $color-sea-glass;
+    }
+  }
+
+  &.wheelchair {
+
+    &::before {
+      content: '\267F';
+      color: $color-midnight;
     }
   }
 }

@@ -1,7 +1,7 @@
 [type='submit'],
-.button,
 button {
   display: inline-block;
+  float: left;
   background-color: #e00000;
   color: #ffffff;
   padding: 0.8rem 1rem;
@@ -14,10 +14,8 @@ button {
   font-size: 1rem;
   height: 48px;
   position: relative;
-  margin-top: 1rem; }
+  margin: 0.5rem; }
   [type='submit']:hover, [type='submit']:focus,
-  .button:hover,
-  .button:focus,
   button:hover,
   button:focus {
     background-color: #a51323;
@@ -28,6 +26,7 @@ button {
 
 .button--outline {
   display: inline-block;
+  float: left;
   background-color: #e00000;
   color: #ffffff;
   padding: 0.8rem 1rem;
@@ -40,7 +39,7 @@ button {
   font-size: 1rem;
   height: 48px;
   position: relative;
-  margin-top: 1rem;
+  margin: 0.5rem;
   color: #e00000;
   background-color: transparent;
   border: 3px solid #e00000; }
@@ -53,6 +52,30 @@ button {
   .button--outline:hover, .button--outline:focus {
     background-color: transparent;
     color: #a51323;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+
+a.button {
+  display: inline-block;
+  float: left;
+  background-color: #e00000;
+  color: #ffffff;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  border: 3px solid #e00000;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  height: 48px;
+  position: relative;
+  margin: 0.5rem;
+  line-height: 0.9; }
+  a.button:hover, a.button:focus {
+    background-color: #a51323;
+    color: #ffffff;
+    border: 3px solid #a51323;
+    text-decoration: underline;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
 
 .buttons--center {
@@ -69,6 +92,7 @@ button {
 
 .button-icon {
   display: inline-block;
+  float: left;
   background-color: #e00000;
   color: #ffffff;
   padding: 0.8rem 1rem;
@@ -81,7 +105,8 @@ button {
   font-size: 1rem;
   height: 48px;
   position: relative;
-  margin-top: 1rem;
+  margin: 0.5rem;
+  line-height: 0.9;
   padding: 0.8rem 2rem 0.8rem 2.5rem; }
   .button-icon:hover, .button-icon:focus {
     background-color: #a51323;
@@ -98,4 +123,10 @@ button {
     padding: 0 0.2rem;
     pointer-events: none; }
   .button-icon.heart::before {
-    content: '\2764'; }
+    content: '\2764';
+    color: #ffa0e5; }
+  .button-icon.heart:hover::before {
+    color: #7fffd4; }
+  .button-icon.wheelchair::before {
+    content: '\267F';
+    color: #464646; }

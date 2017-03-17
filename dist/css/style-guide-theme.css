@@ -10,7 +10,8 @@
 #kss-node .kss-depth-2 {
   margin: 0;
   background: url("../assets/hr.png") repeat-x 0 0;
-  border: 0; }
+  border: 0;
+  float: left; }
 
 #kss-node .kss-modifier {
   border-top: 0; }
