@@ -1,28 +1,58 @@
 {{ attach_library('theme_name/checkboxes') }}
-<fieldset>
-  <legend>Who is your favorite 19th century scientist</legend>
-  <label class="control control--checkbox" for="bell">Alexander Graham Bell
-    <input id="bell" type="checkbox" value="1" name="scientist" value="bell"/>
-    <div class="control__indicator"></div>
-  </label>
-  <label class="control control--checkbox" for="edison">Thomas Edison
-    <input id="edison" type="checkbox" name="scientist" value="edison"/>
-    <div class="control__indicator"></div>
-  </label>
-  <label class="control control--checkbox" for="morse">Samuel Morse
-    <input id="morse" type="checkbox" value="1" name="scientist" value="morse"/>
-    <div class="control__indicator"></div>
-  </label>
-  <label class="control control--checkbox" for="nobel">Alfred Nobel
-    <input id="nobel" type="checkbox" value="1" name="scientist" value="nobel"/>
-    <div class="control__indicator"></div>
-  </label>
-  <label class="control control--checkbox" for="pasteur">Louis Pasteur
-    <input id="pasteur" type="checkbox" value="1" name="scientist" value="pasteur"/>
-    <div class="control__indicator"></div>
-  </label>
-  <label class="control control--checkbox" for="tesla">Nikola Tesla
-    <input id="tesla" type="checkbox" value="1" name="scientist" value="tesla"/>
-    <div class="control__indicator"></div>
-  </label>
-</fieldset>
+<section class="checkboxes-section">
+  <h2>Option #1: Use fieldsets to group options</h2>
+  <fieldset>
+    <legend>Who is your favorite 19th century scientist</legend>
+    <label class="control control--checkbox" for="bell">Alexander Graham Bell
+      <input id="bell" type="checkbox" value="1" name="scientist" value="bell"/>
+      <div class="control__indicator"></div>
+    </label>
+    <label class="control control--checkbox" for="edison">Thomas Edison
+      <input id="edison" type="checkbox" name="scientist" value="edison"/>
+      <div class="control__indicator"></div>
+    </label>
+    <label class="control control--checkbox" for="morse">Samuel Morse
+      <input id="morse" type="checkbox" value="1" name="scientist" value="morse"/>
+      <div class="control__indicator"></div>
+    </label>
+    <label class="control control--checkbox" for="nobel">Alfred Nobel
+      <input id="nobel" type="checkbox" value="1" name="scientist" value="nobel"/>
+      <div class="control__indicator"></div>
+    </label>
+    <label class="control control--checkbox" for="pasteur">Louis Pasteur
+      <input id="pasteur" type="checkbox" value="1" name="scientist" value="pasteur"/>
+      <div class="control__indicator"></div>
+    </label>
+    <label class="control control--checkbox" for="tesla">Nikola Tesla
+      <input id="tesla" type="checkbox" value="1" name="scientist" value="tesla"/>
+      <div class="control__indicator"></div>
+    </label>
+  </fieldset>
+  <div class="break"></div>
+  <h2>Option #2: Use WAI-ARIA to group options</h2>
+  <div role="group" aria-labelledby="beatle_head">
+  	<h3 id="beatle_head">Who is the best Beatle?</h3>
+  	<div>
+  		<label class="control control--checkbox" for="beatle_john">
+  		  <input id="beatle_john" type="checkbox" value="1" name="beatle" value="beatle_john"/>
+  		  <div class="control__indicator"></div>
+        <span class="visuallyhidden">The second best Beatle is </span>John Lennon
+      </label>
+  		<label class="control control--checkbox" for="beatle_paul">
+  		  <input id="beatle_paul" type="checkbox" value="1" name="beatle" value="beatle_paul"/>
+  		  <div class="control__indicator"></div>
+        <span class="visuallyhidden">The third best Beatle is </span>Paul McCartney
+      </label>
+      <label class="control control--checkbox" for="beatle_george">
+        <input id="beatle_george" type="checkbox" value="1" name="beatle" value="beatle_george"/>
+  		  <div class="control__indicator"></div>
+        <span class="visuallyhidden">The very best Beatle is </span>George Harrison
+      </label>
+      <label class="control control--checkbox" for="beatle_ringo">
+        <input id="beatle_ringo" type="checkbox" value="1" name="beatle" value="beatle_ringo"/>
+  		  <div class="control__indicator"></div>
+        <span class="visuallyhidden">The forth best Beatle is </span>Ringo Starr
+      </label>
+  	</div>
+  </div>
+</section>

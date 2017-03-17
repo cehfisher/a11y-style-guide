@@ -31,38 +31,44 @@
                 <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
                                   <ul class="kss-menu-child">
                                           <li class="kss-menu-item">
-                        <a href="#kssref-general-colors">
+                        <a href="#kssref-general-buttons">
                           <span class="kss-ref ">2.1</span
+                            ><span class="kss-name">Buttons</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-general-colors">
+                          <span class="kss-ref ">2.2</span
                             ><span class="kss-name">Colors</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
                         <a href="#kssref-general-link-focus">
-                          <span class="kss-ref ">2.2</span
+                          <span class="kss-ref ">2.3</span
                             ><span class="kss-name">Link Focus</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
                         <a href="#kssref-general-links">
-                          <span class="kss-ref ">2.3</span
+                          <span class="kss-ref ">2.4</span
                             ><span class="kss-name">Links</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
                         <a href="#kssref-general-lists">
-                          <span class="kss-ref ">2.4</span
+                          <span class="kss-ref ">2.5</span
                             ><span class="kss-name">Lists</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
                         <a href="#kssref-general-skip-links">
-                          <span class="kss-ref ">2.5</span
+                          <span class="kss-ref ">2.6</span
                             ><span class="kss-name">Skip Links</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
                         <a href="#kssref-general-typography">
-                          <span class="kss-ref ">2.6</span
+                          <span class="kss-ref ">2.7</span
                             ><span class="kss-name">Typography</span>
                         </a>
                       </li>
@@ -101,6 +107,114 @@
                           </div>
 
                       </div>
+                            <section id="kssref-general-buttons" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-general-buttons">
+                  Buttons
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>A <code>&lt;button&gt;</code> doesn&#39;t need anything special to work. ARIA&#39;s role=&quot;button&quot; is already assigned natively.</li>
+ <li>If you are using a link as a button, add the <code>role=&quot;button&quot;</code> attribute.</li>
+ <li>Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
+ <li>If your button is created entirely with an image/icon, you must include <code>alt=&quot;&quot;</code> descriptions. If your button includes an image/icon that is decorative, you do not need an <code>alt=&quot;&quot;</code> description.
+</ul>
+
+<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv" target="_blank">Guideline 1.1 - Text Alternatives</a>: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language. <strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</blockquote>
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="buttons-section">
+  <div class="buttons ">
+    <form action="" method="post">
+      <button type="submit" href="#" class="button">Regular Button</button>
+      <button type="submit" href="#" class="button button--outline">Outline Button</button>
+      <a href="#" class="button" role="button">Read More<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+      <a href="#" class="button-icon heart button--outline" role="button">Like<span class="visuallyhidden">the topic this button follows.</span></a>
+      <a href="#" class="button-icon wheelchair" role="button">A11Y<span class="visuallyhidden">all the things.</span></a>
+    </form>
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                <div class="kss-modifier">
+                  <div class="kss-modifier-head">
+                    <div class="kss-modifier-name">.buttons--center</div>
+                    <div class="kss-modifier-description">
+                      modifier for centered buttons
+                    </div>
+                  </div>
+                  <div class="kss-modifier-example">
+                    
+<section class="buttons-section">
+  <div class="buttons buttons--center">
+    <form action="" method="post">
+      <button type="submit" href="#" class="button">Regular Button</button>
+      <button type="submit" href="#" class="button button--outline">Outline Button</button>
+      <a href="#" class="button" role="button">Read More<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+      <a href="#" class="button-icon heart button--outline" role="button">Like<span class="visuallyhidden">the topic this button follows.</span></a>
+      <a href="#" class="button-icon wheelchair" role="button">A11Y<span class="visuallyhidden">all the things.</span></a>
+    </form>
+  </div>
+</section>
+
+                  </div>
+                </div>
+                                <div class="kss-modifier">
+                  <div class="kss-modifier-head">
+                    <div class="kss-modifier-name">.buttons--right</div>
+                    <div class="kss-modifier-description">
+                      modifier for right aligned buttons
+                    </div>
+                  </div>
+                  <div class="kss-modifier-example">
+                    
+<section class="buttons-section">
+  <div class="buttons buttons--right">
+    <form action="" method="post">
+      <button type="submit" href="#" class="button">Regular Button</button>
+      <button type="submit" href="#" class="button button--outline">Outline Button</button>
+      <a href="#" class="button" role="button">Read More<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+      <a href="#" class="button-icon heart button--outline" role="button">Like<span class="visuallyhidden">the topic this button follows.</span></a>
+      <a href="#" class="button-icon wheelchair" role="button">A11Y<span class="visuallyhidden">all the things.</span></a>
+    </form>
+  </div>
+</section>
+
+                  </div>
+                </div>
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/buttons&#039;) }}
+&lt;section class=&quot;buttons-section&quot;&gt;
+  &lt;div class=&quot;buttons {{modifier_class}}&quot;&gt;
+    &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
+      &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Regular Button&lt;/button&gt;
+      &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Outline Button&lt;/button&gt;
+      &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Read More&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;button-icon heart button--outline&quot; role=&quot;button&quot;&gt;Like&lt;span class=&quot;visuallyhidden&quot;&gt;the topic this button follows.&lt;/span&gt;&lt;/a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;button-icon wheelchair&quot; role=&quot;button&quot;&gt;A11Y&lt;span class=&quot;visuallyhidden&quot;&gt;all the things.&lt;/span&gt;&lt;/a&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
                             <section id="kssref-general-colors" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
@@ -144,6 +258,9 @@ is for later.</p>
 </div>
 <div class="kss-swatch" style="background-color: #0a3055">
   <div class="kss-swatch__hex">$color-navy<br>#0a3055</div>
+</div>
+<div class="kss-swatch" style="background-color: #ffa0e5">
+  <div class="kss-swatch__hex">$color-ballet-slipper<br>#ffa0e5</div>
 </div>
 <div class="kss-swatch" style="background-color: #550055">
   <div class="kss-swatch__hex">$color-eggplant<br>#550055</div>
@@ -198,6 +315,9 @@ is for later.</p>
 &lt;/div&gt;
 &lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #0a3055&quot;&gt;
   &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-navy&lt;br&gt;#0a3055&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #ffa0e5&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-ballet-slipper&lt;br&gt;#ffa0e5&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #550055&quot;&gt;
   &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-eggplant&lt;br&gt;#550055&lt;/div&gt;
@@ -315,7 +435,7 @@ is for later.</p>
     <div class="break"></div>
     <h2>Example #2</h2>
     <h3>Black Bears Trapped in Cars?</h3>
-    <p>Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. <a href="/news/black-bears-trapped-in-cars" aria-label="Learn more about trapped black bears" class="links">Read More</a></p>
+    <p>Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. <a href="/news/black-bears-trapped-in-cars" aria-label="Learn more about trapped black bears" class="read-more">Read More</a></p>
   </form>
 </section>
 
@@ -334,7 +454,7 @@ is for later.</p>
     &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
     &lt;h2&gt;Example #2&lt;/h2&gt;
     &lt;h3&gt;Black Bears Trapped in Cars?&lt;/h3&gt;
-    &lt;p&gt;Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. &lt;a href=&quot;/news/black-bears-trapped-in-cars&quot; aria-label=&quot;Learn more about trapped black bears&quot; class=&quot;links&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. &lt;a href=&quot;/news/black-bears-trapped-in-cars&quot; aria-label=&quot;Learn more about trapped black bears&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
   &lt;/form&gt;
 &lt;/section&gt;
 </code></pre>

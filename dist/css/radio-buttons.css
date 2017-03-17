@@ -47,15 +47,15 @@
   opacity: 0.6;
   pointer-events: none; }
 
-.control__indicator:after {
+.control__indicator::after {
   content: '';
   position: absolute;
   display: none; }
 
-.control input:checked ~ .control__indicator:after {
+.control input:checked ~ .control__indicator::after {
   display: block; }
 
-.control--radio .control__indicator:after {
+.control--radio .control__indicator::after {
   left: 7px;
   top: 7px;
   height: 6px;
@@ -63,5 +63,5 @@
   border-radius: 50%;
   background: #ffffff; }
 
-.control--radio input:disabled ~ .control__indicator:after {
+.control--radio input:disabled ~ .control__indicator::after {
   background: #e00000; }

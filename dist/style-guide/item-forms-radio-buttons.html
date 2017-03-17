@@ -63,9 +63,10 @@
                   <ul>
  <li>The <code>&lt;fieldset&gt;</code> surrounds the entire grouping of checkboxes or radio buttons. The <code>&lt;legend&gt;</code> provides a description for the grouping.</li>
  <li>Some assistive technology reads the legend text for each fieldset, so it should be brief and descriptive. This helps someone using assistive technology to understand the question they are answering with the group of radio buttons.</li>
+ <li>WAI-ARIA provides a grouping role that functions similarly to <code>fieldset</code> and <code>legend</code>. In option #2 the <code>div</code> element has <code>role=group</code> to indicate that the contained elements are members of a group and the <code>aria-labelledby</code> attribute references the id for text that will serve as the label for the group.</li>
 </ul>
 
-<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#time-limits" target="_blank">Guideline 2.2 - Enough Time</a>: Provide users enough time to read and use content.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a>: Help users avoid and correct mistakes.</blockquote>
+<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#consistent-behavior" target="_blank">Guideline 3.2 - Predictable</a>: Make Web pages appear and operate in predictable ways.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a>: Help users avoid and correct mistakes.</blockquote>
 
 
                 </div>
@@ -77,16 +78,46 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<fieldset>
-  <label class="control control--radio">First radio
-    <input type="radio" name="radio"/>
-    <div class="control__indicator"></div>
-  </label>
-  <label class="control control--radio">Second radio
-    <input type="radio" name="radio"/>
-    <div class="control__indicator"></div>
-  </label>
-</fieldset>
+<section class="radio-buttons-section">
+  <fieldset>
+    <legend>What time of the day is best?</legend>
+    <label class="control control--radio">Morning
+      <input type="radio" name="radio"/>
+      <div class="control__indicator"></div>
+    </label>
+    <label class="control control--radio">Night
+      <input type="radio" name="radio"/>
+      <div class="control__indicator"></div>
+    </label>
+  </fieldset>
+  <div class="break"></div>
+  <h2>Option #2: Use WAI-ARIA to group options</h2>
+  <div role="group" aria-labelledby="zeppelin_head">
+  	<h3 id="zeppelin_head">Who is the best member of Led Zeppelin?</h3>
+  	<div>
+  		<label class="control control--radio" for="zeppelin_jimmy">
+  		  <input id="zeppelin_jimmy" type="radio" value="1" name="zeppelin" value="zeppelin_jimmy"/>
+  		  <div class="control__indicator"></div>
+        <span class="visuallyhidden">The second best Led Zeppelin member is </span>Jimmy Page
+      </label>
+  		<label class="control control--radio" for="zeppelin_john_paul">
+  		  <input id="zeppelin_john_paul" type="radio" value="1" name="zeppelin" value="zeppelin_john_paul"/>
+  		  <div class="control__indicator"></div>
+        <span class="visuallyhidden">The third best Led Zeppelin member is </span>John Paul Jones
+      </label>
+      <label class="control control--radio" for="zeppelin_robert">
+        <input id="zeppelin_robert" type="radio" value="1" name="zeppelin" value="zeppelin_robert"/>
+  		  <div class="control__indicator"></div>
+        <span class="visuallyhidden">The very best Led Zeppelin member is </span>Robert Plant
+      </label>
+      <label class="control control--radio" for="zeppelin_john">
+        <input id="zeppelin_john" type="radio" value="1" name="zeppelin" value="zeppelin_john"/>
+  		  <div class="control__indicator"></div>
+        <span class="visuallyhidden">The forth best Led Zeppelin member is </span>John Bonham
+      </label>
+  	</div>
+  </div>
+</section>
 
                   </div>
                 </div>
@@ -95,16 +126,46 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/radio-buttons&#039;) }}
-&lt;fieldset&gt;
-  &lt;label class=&quot;control control--radio&quot;&gt;First radio
-    &lt;input type=&quot;radio&quot; name=&quot;radio&quot;/&gt;
-    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;control control--radio&quot;&gt;Second radio
-    &lt;input type=&quot;radio&quot; name=&quot;radio&quot;/&gt;
-    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
-  &lt;/label&gt;
-&lt;/fieldset&gt;
+&lt;section class=&quot;radio-buttons-section&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;What time of the day is best?&lt;/legend&gt;
+    &lt;label class=&quot;control control--radio&quot;&gt;Morning
+      &lt;input type=&quot;radio&quot; name=&quot;radio&quot;/&gt;
+      &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;control control--radio&quot;&gt;Night
+      &lt;input type=&quot;radio&quot; name=&quot;radio&quot;/&gt;
+      &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+    &lt;/label&gt;
+  &lt;/fieldset&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h2&gt;Option #2: Use WAI-ARIA to group options&lt;/h2&gt;
+  &lt;div role=&quot;group&quot; aria-labelledby=&quot;zeppelin_head&quot;&gt;
+  	&lt;h3 id=&quot;zeppelin_head&quot;&gt;Who is the best member of Led Zeppelin?&lt;/h3&gt;
+  	&lt;div&gt;
+  		&lt;label class=&quot;control control--radio&quot; for=&quot;zeppelin_jimmy&quot;&gt;
+  		  &lt;input id=&quot;zeppelin_jimmy&quot; type=&quot;radio&quot; value=&quot;1&quot; name=&quot;zeppelin&quot; value=&quot;zeppelin_jimmy&quot;/&gt;
+  		  &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+        &lt;span class=&quot;visuallyhidden&quot;&gt;The second best Led Zeppelin member is &lt;/span&gt;Jimmy Page
+      &lt;/label&gt;
+  		&lt;label class=&quot;control control--radio&quot; for=&quot;zeppelin_john_paul&quot;&gt;
+  		  &lt;input id=&quot;zeppelin_john_paul&quot; type=&quot;radio&quot; value=&quot;1&quot; name=&quot;zeppelin&quot; value=&quot;zeppelin_john_paul&quot;/&gt;
+  		  &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+        &lt;span class=&quot;visuallyhidden&quot;&gt;The third best Led Zeppelin member is &lt;/span&gt;John Paul Jones
+      &lt;/label&gt;
+      &lt;label class=&quot;control control--radio&quot; for=&quot;zeppelin_robert&quot;&gt;
+        &lt;input id=&quot;zeppelin_robert&quot; type=&quot;radio&quot; value=&quot;1&quot; name=&quot;zeppelin&quot; value=&quot;zeppelin_robert&quot;/&gt;
+  		  &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+        &lt;span class=&quot;visuallyhidden&quot;&gt;The very best Led Zeppelin member is &lt;/span&gt;Robert Plant
+      &lt;/label&gt;
+      &lt;label class=&quot;control control--radio&quot; for=&quot;zeppelin_john&quot;&gt;
+        &lt;input id=&quot;zeppelin_john&quot; type=&quot;radio&quot; value=&quot;1&quot; name=&quot;zeppelin&quot; value=&quot;zeppelin_john&quot;/&gt;
+  		  &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+        &lt;span class=&quot;visuallyhidden&quot;&gt;The forth best Led Zeppelin member is &lt;/span&gt;John Bonham
+      &lt;/label&gt;
+  	&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
 </code></pre>
                   </template>
                 </div>

@@ -1,10 +1,15 @@
 {{ attach_library('theme_name/search') }}
 <section class="search-section">
-  <div class="search">
-  	<form method="post" class="search-form">
-    	<label for="search" class="search-form__label is-vishidden">Search the site</label>
-    	<input type="search" id="search" class="search-form__input" placeholder="Search the site" />
-    </form>
-    Search the site
-  </div>
+  <h2>Option #1: Hide the label element</h2>
+	<label for="search" class="visuallyhidden">Search the site</label>
+	<input type="search" name="search" id="search" class="search-form__input" placeholder="Search the site" />
+	<button type="submit">Search</button>
+  <div class="break"></div>
+  <h2>Option #2: Use aria-label</h2>
+  <input type="search" name="search" aria-label="Search">
+  <button type="submit">Search</button>
+  <div class="break"></div>
+  <h2>Option #3: Use the title attribute</h2>
+  <input title="Search" type="search" name="search">
+  <button type="submit">Search</button>
 </section>

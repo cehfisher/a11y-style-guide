@@ -79,15 +79,17 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<form>
-  <label for="first-name">First Name:</label>
-  <input id="first-name" type="text" name="textfield">
-  <label for="last-name">Last Name:</label>
-  <input id="last-name" type="text" name="textfield" aria-describedby="my-error-message" required>
-  <label for="address">Enter your street address:</label>
-  <textarea id="address" name="addresstext"></textarea>
-  <input type="submit" value="Submit">
-</form>
+<section class="text-inputs-section">
+  <form>
+    <label for="first-name">First Name</label>
+    <input id="first-name" type="text" name="textfield">
+    <label for="last-name" class="required-field">Last Name</label>
+    <input id="last-name" type="text" name="textfield" aria-describedby="my-error-message" required>
+    <label for="address">Enter your street address</label>
+    <textarea id="address" name="addresstext"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</section>
 
                   </div>
                 </div>
@@ -96,15 +98,17 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/text-inputs&#039;) }}
-&lt;form&gt;
-  &lt;label for=&quot;first-name&quot;&gt;First Name:&lt;/label&gt;
-  &lt;input id=&quot;first-name&quot; type=&quot;text&quot; name=&quot;textfield&quot;&gt;
-  &lt;label for=&quot;last-name&quot;&gt;Last Name:&lt;/label&gt;
-  &lt;input id=&quot;last-name&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;my-error-message&quot; required&gt;
-  &lt;label for=&quot;address&quot;&gt;Enter your street address:&lt;/label&gt;
-  &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;
-  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-&lt;/form&gt;
+&lt;section class=&quot;text-inputs-section&quot;&gt;
+  &lt;form&gt;
+    &lt;label for=&quot;first-name&quot;&gt;First Name&lt;/label&gt;
+    &lt;input id=&quot;first-name&quot; type=&quot;text&quot; name=&quot;textfield&quot;&gt;
+    &lt;label for=&quot;last-name&quot; class=&quot;required-field&quot;&gt;Last Name&lt;/label&gt;
+    &lt;input id=&quot;last-name&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;my-error-message&quot; required&gt;
+    &lt;label for=&quot;address&quot;&gt;Enter your street address&lt;/label&gt;
+    &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+  &lt;/form&gt;
+&lt;/section&gt;
 </code></pre>
                   </template>
                 </div>

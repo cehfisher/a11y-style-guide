@@ -1,10 +1,11 @@
 // Search
 //
 // <ul>
-//  <li>words</li>
+//  <li>Whenever possible, use the `label` element to explicitly associate text with form elements. The `for` attribute of the label must exactly match the `id` of the form control.</li>
+//  <li>Some form fields do not need explicit `label` elements, when next to a button with descriptive text. Ex. search field next to a button labeled search. In these cases you should still have a `label` in the markup, but you can hide it visually.
 // </ul>
 //
-// <blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</blockquote>
+// <blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/#content-structure-separation" target="_blank">Guideline 1.3 – Adaptable</a>: Create content that can be presented in different ways (for example simpler layout) without losing information or structure.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/#navigation-mechanisms" target="_blank">Guideline 2.4 – Navigable</a>: Provide ways to help users navigate, find content, and determine where they are.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/#minimize-error" target="_blank">Guideline 3.3 – Input Assistance</a>: Help users avoid and correct mistakes.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/#ensure-compat" target="_blank">Guideline 4.1 – Compatible</a>: Maximize compatibility with current and future user agents, including assistive technologies.</blockquote>
 //
 //
 //
@@ -15,18 +16,15 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
-.search {
-
-  input[type=text] {
-    background-color: $color-white;
-    background-image: url('#{$asset-path}/searchicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding-left: 40px;
-    transition: width 0.4s ease-in-out;
-
-    &:focus {
-      width: 100%;
-    }
-  }
+input[type='search'] {
+  background-color: $color-white;
+  width: 25%;
+  max-width: 100%;
+  padding: 0.75rem;
+  margin: 8px -2px 20px;
+  box-sizing: border-box;
+  border-radius: $border-rd-sm;
+  border: 2px solid $color-gallery;
+  font-size: $padding-sm;
+  min-height: 49px;
 }

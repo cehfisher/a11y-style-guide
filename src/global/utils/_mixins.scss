@@ -61,7 +61,9 @@
   border-radius: $border-rd-sm;
   box-shadow: $shadow-sm;
   font-size: $padding-sm;
-  margin: 5px 0;
+  height: 48px;
+  position: relative;
+  margin: $padding-xsm;
 
   &:hover,
   &:focus {

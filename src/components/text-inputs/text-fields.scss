@@ -28,11 +28,19 @@ textarea {
   border-radius: $border-rd-sm;
   border: 2px solid $color-gallery;
   font-size: $padding-sm;
+  min-height: 49px;
 }
 
 input:required,
 textarea:required {
-  border-color: $color-cherry;
+
+  &:focus {
+    outline: auto 5px $color-cherry;
+  }
+}
+
+textarea {
+  min-height: $padding-xxl;
 }
 
 fieldset {
@@ -43,4 +51,13 @@ fieldset {
 
 legend {
   font-weight: bold;
+}
+
+.required-field {
+
+  &::after {
+    content: '*';
+    color: $color-cherry;
+    display: inline-block;
+  }
 }

@@ -10,7 +10,8 @@
 #kss-node .kss-depth-2 {
   margin: 0;
   background: url("../assets/hr.png") repeat-x 0 0;
-  border: 0; }
+  border: 0;
+  float: left; }
 
 #kss-node .kss-modifier {
   border-top: 0; }
@@ -224,5 +225,5 @@
   transform: translateX(100%);
   background: url("../assets/chevron_right_round_red.png") no-repeat;
   background-size: 32px;
-  right: 35px;
+  right: 40px;
   top: 5px; }
