@@ -23,6 +23,29 @@ button {
     text-decoration: underline;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
 
+.button {
+  display: inline-block;
+  background-color: #e00000;
+  color: #ffffff;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  border: 3px solid #e00000;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  height: 48px;
+  position: relative;
+  margin: 0.5rem;
+  line-height: 0.9; }
+  .button:hover, .button:focus {
+    background-color: #a51323;
+    color: #ffffff;
+    border: 3px solid #a51323;
+    text-decoration: underline;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+
 .button--outline {
   display: inline-block;
   background-color: #e00000;
@@ -50,29 +73,6 @@ button {
   .button--outline:hover, .button--outline:focus {
     background-color: transparent;
     color: #a51323;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
-
-.button {
-  display: inline-block;
-  background-color: #e00000;
-  color: #ffffff;
-  padding: 0.8rem 1rem;
-  text-align: center;
-  text-decoration: none;
-  line-height: 1;
-  border: 3px solid #e00000;
-  border-radius: 4px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  font-size: 1rem;
-  height: 48px;
-  position: relative;
-  margin: 0.5rem;
-  line-height: 0.9; }
-  .button:hover, .button:focus {
-    background-color: #a51323;
-    color: #ffffff;
-    border: 3px solid #a51323;
-    text-decoration: underline;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
 
 .buttons--center {
@@ -112,12 +112,41 @@ button {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
   .button-icon::before {
     float: left;
-    width: 1rem;
     text-align: center;
     font-size: 1.5rem;
-    margin: -0.25rem 1rem 0 -1rem;
+    margin: -0.25rem 0.5rem 0.5rem -1rem;
     padding: 0 0.2rem;
     pointer-events: none; }
+  .button-icon.button--outline {
+    display: inline-block;
+    background-color: #e00000;
+    color: #ffffff;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1;
+    border: 3px solid #e00000;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    height: 48px;
+    position: relative;
+    margin: 0.5rem;
+    color: #e00000;
+    background-color: transparent;
+    border: 3px solid #e00000;
+    line-height: 0.9;
+    padding: 0.8rem 2rem 0.8rem 2.5rem; }
+    .button-icon.button--outline:hover, .button-icon.button--outline:focus {
+      background-color: #a51323;
+      color: #ffffff;
+      border: 3px solid #a51323;
+      text-decoration: underline;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+    .button-icon.button--outline:hover, .button-icon.button--outline:focus {
+      background-color: transparent;
+      color: #a51323;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
   .button-icon.heart::before {
     content: '\2764';
     color: #ffa0e5; }

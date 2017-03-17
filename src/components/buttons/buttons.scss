@@ -24,13 +24,13 @@ button {
   @include button;
 }
 
-.button--outline {
-  @include button-outline;
-}
-
 .button {
   @include button;
   line-height: 0.9;
+}
+
+.button--outline {
+  @include button-outline;
 }
 
 .buttons--center {
@@ -55,12 +55,17 @@ button {
 
   &::before {
     float: left;
-    width: $padding-sm;
     text-align: center;
     font-size: 1.5rem;
-    margin: -0.25rem $padding-sm 0 (-$padding-sm);
+    margin: -0.25rem $padding-xsm $padding-xsm (-$padding-sm);
     padding: 0 0.2rem;
     pointer-events: none;
+  }
+
+  &.button--outline {
+    @include button-outline;
+    line-height: 0.9;
+    padding: 0.8rem $padding-md 0.8rem ($padding-md + $padding-xsm);
   }
 
   &.heart {
