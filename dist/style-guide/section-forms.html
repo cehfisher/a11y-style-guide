@@ -109,7 +109,7 @@
  <li>Some assistive technology reads the legend text for each fieldset, so it should be brief and descriptive. This helps someone using assistive technology to understand the question they are answering with the group of checkboxes.</li>
 </ul>
 
-<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#time-limits" target="_blank">Guideline 2.2 - Enough Time</a>: Provide users enough time to read and use content.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a>: Help users avoid and correct mistakes.</blockquote>
+<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#consistent-behavior" target="_blank">Guideline 3.2 - Predictable</a>: Make Web pages appear and operate in predictable ways.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a>: Help users avoid and correct mistakes.</blockquote>
 
 
                 </div>
@@ -122,6 +122,7 @@
                   <div class="kss-modifier-example">
                     
 <section class="checkboxes-section">
+  <h2>Option #1: Use fieldsets to group options</h2>
   <fieldset>
     <legend>Who is your favorite 19th century scientist</legend>
     <label class="control control--checkbox" for="bell">Alexander Graham Bell
@@ -149,6 +150,33 @@
       <div class="control__indicator"></div>
     </label>
   </fieldset>
+  <div class="break"></div>
+  <h2>Option #2: Use WAI-ARIA to group options</h2>
+  <div role="group" aria-labelledby="beatle_head">
+  	<h3 id="beatle_head">Who is the best Beatle?</h3>
+  	<div>
+  		<label class="control control--checkbox" for="beatle_john">
+  		  <input id="beatle_john" type="checkbox" value="1" name="beatle" value="beatle_john"/>
+  		  <div class="control__indicator"></div>
+        <span class="visuallyhidden">The second best Beatle is </span>John Lennon
+      </label>
+  		<label class="control control--checkbox" for="beatle_paul">
+  		  <input id="beatle_paul" type="checkbox" value="1" name="beatle" value="beatle_paul"/>
+  		  <div class="control__indicator"></div>
+        <span class="visuallyhidden">The third best Beatle is </span>Paul McCartney
+      </label>
+      <label class="control control--checkbox" for="beatle_george">
+        <input id="beatle_george" type="checkbox" value="1" name="beatle" value="beatle_george"/>
+  		  <div class="control__indicator"></div>
+        <span class="visuallyhidden">The very best Beatle is </span>George Harrison
+      </label>
+      <label class="control control--checkbox" for="beatle_ringo">
+        <input id="beatle_ringo" type="checkbox" value="1" name="beatle" value="beatle_ringo"/>
+  		  <div class="control__indicator"></div>
+        <span class="visuallyhidden">The forth best Beatle is </span>Ringo Starr
+      </label>
+  	</div>
+  </div>
 </section>
 
                   </div>
@@ -159,6 +187,7 @@
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/checkboxes&#039;) }}
 &lt;section class=&quot;checkboxes-section&quot;&gt;
+  &lt;h2&gt;Option #1: Use fieldsets to group options&lt;/h2&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;Who is your favorite 19th century scientist&lt;/legend&gt;
     &lt;label class=&quot;control control--checkbox&quot; for=&quot;bell&quot;&gt;Alexander Graham Bell
@@ -186,6 +215,33 @@
       &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
     &lt;/label&gt;
   &lt;/fieldset&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h2&gt;Option #2: Use WAI-ARIA to group options&lt;/h2&gt;
+  &lt;div role=&quot;group&quot; aria-labelledby=&quot;beatle_head&quot;&gt;
+  	&lt;h3 id=&quot;beatle_head&quot;&gt;Who is the best Beatle?&lt;/h3&gt;
+  	&lt;div&gt;
+  		&lt;label class=&quot;control control--checkbox&quot; for=&quot;beatle_john&quot;&gt;
+  		  &lt;input id=&quot;beatle_john&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;beatle&quot; value=&quot;beatle_john&quot;/&gt;
+  		  &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+        &lt;span class=&quot;visuallyhidden&quot;&gt;The second best Beatle is &lt;/span&gt;John Lennon
+      &lt;/label&gt;
+  		&lt;label class=&quot;control control--checkbox&quot; for=&quot;beatle_paul&quot;&gt;
+  		  &lt;input id=&quot;beatle_paul&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;beatle&quot; value=&quot;beatle_paul&quot;/&gt;
+  		  &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+        &lt;span class=&quot;visuallyhidden&quot;&gt;The third best Beatle is &lt;/span&gt;Paul McCartney
+      &lt;/label&gt;
+      &lt;label class=&quot;control control--checkbox&quot; for=&quot;beatle_george&quot;&gt;
+        &lt;input id=&quot;beatle_george&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;beatle&quot; value=&quot;beatle_george&quot;/&gt;
+  		  &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+        &lt;span class=&quot;visuallyhidden&quot;&gt;The very best Beatle is &lt;/span&gt;George Harrison
+      &lt;/label&gt;
+      &lt;label class=&quot;control control--checkbox&quot; for=&quot;beatle_ringo&quot;&gt;
+        &lt;input id=&quot;beatle_ringo&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;beatle&quot; value=&quot;beatle_ringo&quot;/&gt;
+  		  &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+        &lt;span class=&quot;visuallyhidden&quot;&gt;The forth best Beatle is &lt;/span&gt;Ringo Starr
+      &lt;/label&gt;
+  	&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>
                   </template>
@@ -207,7 +263,7 @@
  <li>Some assistive technology reads the legend text for each fieldset, so it should be brief and descriptive. This helps someone using assistive technology to understand the question they are answering with the group of radio buttons.</li>
 </ul>
 
-<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#time-limits" target="_blank">Guideline 2.2 - Enough Time</a>: Provide users enough time to read and use content.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a>: Help users avoid and correct mistakes.</blockquote>
+<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#consistent-behavior" target="_blank">Guideline 3.2 - Predictable</a>: Make Web pages appear and operate in predictable ways.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a>: Help users avoid and correct mistakes.</blockquote>
 
 
                 </div>
