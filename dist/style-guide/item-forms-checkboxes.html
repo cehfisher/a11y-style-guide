@@ -63,6 +63,7 @@
                   <ul>
  <li>The <code>&lt;fieldset&gt;</code> surrounds the entire grouping of checkboxes or radio buttons. The <code>&lt;legend&gt;</code> provides a description for the grouping.</li>
  <li>Some assistive technology reads the legend text for each fieldset, so it should be brief and descriptive. This helps someone using assistive technology to understand the question they are answering with the group of checkboxes.</li>
+ <li>WAI-ARIA provides a grouping role that functions similarly to <code>fieldset</code> and <code>legend</code>. In option #2 the <code>div</code> element has <code>role=group</code> to indicate that the contained elements are members of a group and the <code>aria-labelledby</code> attribute references the id for text that will serve as the label for the group.</li>
 </ul>
 
 <blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#consistent-behavior" target="_blank">Guideline 3.2 - Predictable</a>: Make Web pages appear and operate in predictable ways.<br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#minimize-error" target="_blank">Guideline 3.3 - Input Assistance</a>: Help users avoid and correct mistakes.</blockquote>

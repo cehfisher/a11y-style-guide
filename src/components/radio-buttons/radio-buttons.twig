@@ -10,4 +10,31 @@
       <div class="control__indicator"></div>
     </label>
   </fieldset>
+  <div class="break"></div>
+  <h2>Option #2: Use WAI-ARIA to group options</h2>
+  <div role="group" aria-labelledby="zeppelin_head">
+  	<h3 id="zeppelin_head">Who is the best member of Led Zeppelin?</h3>
+  	<div>
+  		<label class="control control--radio" for="zeppelin_jimmy">
+  		  <input id="zeppelin_jimmy" type="radio" value="1" name="zeppelin" value="zeppelin_jimmy"/>
+  		  <div class="control__indicator"></div>
+        <span class="visuallyhidden">The second best Led Zeppelin member is </span>Jimmy Page
+      </label>
+  		<label class="control control--radio" for="zeppelin_john_paul">
+  		  <input id="zeppelin_john_paul" type="radio" value="1" name="zeppelin" value="zeppelin_john_paul"/>
+  		  <div class="control__indicator"></div>
+        <span class="visuallyhidden">The third best Led Zeppelin member is </span>John Paul Jones
+      </label>
+      <label class="control control--radio" for="zeppelin_robert">
+        <input id="zeppelin_robert" type="radio" value="1" name="zeppelin" value="zeppelin_robert"/>
+  		  <div class="control__indicator"></div>
+        <span class="visuallyhidden">The very best Led Zeppelin member is </span>Robert Plant
+      </label>
+      <label class="control control--radio" for="zeppelin_john">
+        <input id="zeppelin_john" type="radio" value="1" name="zeppelin" value="zeppelin_john"/>
+  		  <div class="control__indicator"></div>
+        <span class="visuallyhidden">The forth best Led Zeppelin member is </span>John Bonham
+      </label>
+  	</div>
+  </div>
 </section>
