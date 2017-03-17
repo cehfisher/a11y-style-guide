@@ -1,23 +1,5 @@
-[type='submit'] {
-  display: inline-block;
-  background-color: #e00000;
-  color: #ffffff;
-  padding: 0.8rem 1rem;
-  text-align: center;
-  text-decoration: none;
-  line-height: 1;
-  border: 3px solid #e00000;
-  border-radius: 4px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  font-size: 1rem;
-  margin: 5px 0; }
-  [type='submit']:hover, [type='submit']:focus {
-    background-color: #a51323;
-    color: #ffffff;
-    border: 3px solid #a51323;
-    text-decoration: underline;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
-
+[type='submit'],
+.button,
 button {
   display: inline-block;
   background-color: #e00000;
@@ -30,33 +12,14 @@ button {
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
-  margin: 5px 0;
+  height: 48px;
   position: relative;
   margin-top: 1rem; }
-  button:hover, button:focus {
-    background-color: #a51323;
-    color: #ffffff;
-    border: 3px solid #a51323;
-    text-decoration: underline;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
-
-.button {
-  display: inline-block;
-  background-color: #e00000;
-  color: #ffffff;
-  padding: 0.8rem 1rem;
-  text-align: center;
-  text-decoration: none;
-  line-height: 1;
-  border: 3px solid #e00000;
-  border-radius: 4px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  font-size: 1rem;
-  margin: 5px 0;
-  position: relative;
-  margin-top: 1rem;
-  padding-top: 0.7rem; }
-  .button:hover, .button:focus {
+  [type='submit']:hover, [type='submit']:focus,
+  .button:hover,
+  .button:focus,
+  button:hover,
+  button:focus {
     background-color: #a51323;
     color: #ffffff;
     border: 3px solid #a51323;
@@ -75,12 +38,12 @@ button {
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
-  margin: 5px 0;
+  height: 48px;
+  position: relative;
+  margin-top: 1rem;
   color: #e00000;
   background-color: transparent;
-  border: 3px solid #e00000;
-  position: relative;
-  margin-top: 1rem; }
+  border: 3px solid #e00000; }
   .button--outline:hover, .button--outline:focus {
     background-color: #a51323;
     color: #ffffff;
@@ -94,9 +57,7 @@ button {
 
 .buttons--center {
   text-align: center;
-  clear: both;
-  position: relative;
-  margin-top: 1rem; }
+  clear: both; }
 
 .buttons--right {
   text-align: right;
@@ -105,3 +66,36 @@ button {
 .buttons--left {
   text-align: left;
   clear: both; }
+
+.button-icon {
+  display: inline-block;
+  background-color: #e00000;
+  color: #ffffff;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  border: 3px solid #e00000;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  height: 48px;
+  position: relative;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem 0.8rem 2.5rem; }
+  .button-icon:hover, .button-icon:focus {
+    background-color: #a51323;
+    color: #ffffff;
+    border: 3px solid #a51323;
+    text-decoration: underline;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+  .button-icon::before {
+    float: left;
+    width: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: -0.25rem 1rem 0 -1rem;
+    padding: 0 0.2rem;
+    pointer-events: none; }
+  .button-icon.heart::before {
+    content: '\2764'; }

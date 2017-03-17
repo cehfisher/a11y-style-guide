@@ -120,9 +120,10 @@
  <li>A <code>&lt;button&gt;</code> doesn&#39;t need anything special to work. ARIA&#39;s role=&quot;button&quot; is already assigned natively.</li>
  <li>If you are using a link as a button, add the <code>role=&quot;button&quot;</code> attribute.</li>
  <li>Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
+ <li>If your button is created entirely with an image/icon, you must include <code>alt=&quot;&quot;</code> descriptions. If your button includes an image/icon that is decorative, you do not need an <code>alt=&quot;&quot;</code> description.
 </ul>
 
-<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv" target="_blank">Guideline 1.1 - Text Alternatives</a>: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.<br><br>If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</blockquote>
+<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv" target="_blank">Guideline 1.1 - Text Alternatives</a>: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language. <strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</blockquote>
                 </div>
               
                           </div>
@@ -137,7 +138,8 @@
     <form action="" method="post">
       <button type="submit" href="#" class="button">Regular Button</button>
       <button type="submit" href="#" class="button button--outline">Outline Button</button>
-      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+      <a href="#" class="button" role="button">Read More<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+      <a href="#" class="button-icon heart" role="button">Like<span class="visuallyhidden">the topic this button follows.</span></a>
     </form>
   </div>
 </section>
@@ -159,7 +161,8 @@
     <form action="" method="post">
       <button type="submit" href="#" class="button">Regular Button</button>
       <button type="submit" href="#" class="button button--outline">Outline Button</button>
-      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+      <a href="#" class="button" role="button">Read More<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+      <a href="#" class="button-icon heart" role="button">Like<span class="visuallyhidden">the topic this button follows.</span></a>
     </form>
   </div>
 </section>
@@ -180,7 +183,8 @@
     <form action="" method="post">
       <button type="submit" href="#" class="button">Regular Button</button>
       <button type="submit" href="#" class="button button--outline">Outline Button</button>
-      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+      <a href="#" class="button" role="button">Read More<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+      <a href="#" class="button-icon heart" role="button">Like<span class="visuallyhidden">the topic this button follows.</span></a>
     </form>
   </div>
 </section>
@@ -196,7 +200,8 @@
     &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
       &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Regular Button&lt;/button&gt;
       &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Outline Button&lt;/button&gt;
-      &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Link Button&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Read More&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
+      &lt;a href=&quot;#&quot; class=&quot;button-icon heart&quot; role=&quot;button&quot;&gt;Like&lt;span class=&quot;visuallyhidden&quot;&gt;the topic this button follows.&lt;/span&gt;&lt;/a&gt;
     &lt;/form&gt;
   &lt;/div&gt;
 &lt;/section&gt;
