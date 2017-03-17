@@ -32,7 +32,14 @@ textarea {
 
 input:required,
 textarea:required {
-  border-color: $color-cherry;
+
+  &:focus {
+    outline: auto 5px $color-cherry;
+  }
+}
+
+textarea {
+  min-height: $padding-xxl;
 }
 
 fieldset {

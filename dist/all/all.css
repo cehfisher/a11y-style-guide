@@ -581,7 +581,7 @@ button {
 
 
 
-.links::after {
+.read-more::after {
   content: ' > ';
   display: inline-block;
   padding-left: 5px; }
@@ -977,9 +977,12 @@ textarea {
   border: 2px solid #eeeeee;
   font-size: 1rem; }
 
-input:required,
-textarea:required {
-  border-color: #e00000; }
+input:required:focus,
+textarea:required:focus {
+  outline: auto 5px #e00000; }
+
+textarea {
+  min-height: 8rem; }
 
 fieldset {
   padding: 1.75rem 1.5rem 1rem;

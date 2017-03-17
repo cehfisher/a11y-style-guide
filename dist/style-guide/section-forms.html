@@ -28,38 +28,32 @@
                 <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
                                   <ul class="kss-menu-child">
                                           <li class="kss-menu-item">
-                        <a href="#kssref-forms-buttons">
-                          <span class="kss-ref ">1.1</span
-                            ><span class="kss-name">Buttons</span>
-                        </a>
-                      </li>
-                                          <li class="kss-menu-item">
                         <a href="#kssref-forms-checkboxes">
-                          <span class="kss-ref ">1.2</span
+                          <span class="kss-ref ">1.1</span
                             ><span class="kss-name">Checkboxes</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
                         <a href="#kssref-forms-radio-buttons">
-                          <span class="kss-ref ">1.3</span
+                          <span class="kss-ref ">1.2</span
                             ><span class="kss-name">Radio Buttons</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
                         <a href="#kssref-forms-search">
-                          <span class="kss-ref ">1.4</span
+                          <span class="kss-ref ">1.3</span
                             ><span class="kss-name">Search</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
                         <a href="#kssref-forms-select-lists">
-                          <span class="kss-ref ">1.5</span
+                          <span class="kss-ref ">1.4</span
                             ><span class="kss-name">Select Lists</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
                         <a href="#kssref-forms-text-fields">
-                          <span class="kss-ref ">1.6</span
+                          <span class="kss-ref ">1.5</span
                             ><span class="kss-name">Text Inputs &amp; Textarea</span>
                         </a>
                       </li>
@@ -101,105 +95,6 @@
                           </div>
 
                       </div>
-                            <section id="kssref-forms-buttons" class="kss-section kss-depth-2">
-            <div class="kss-style">
-                            <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-forms-buttons">
-                  Buttons
-                </a>
-              </h2>
-
-                              <div class="kss-description">
-                  <ul>
- <li>A <code>&lt;button&gt;</code> doesn&#39;t need anything special to work. ARIA&#39;s role=&quot;button&quot; is already assigned natively.</li>
- <li>If you are using a link as a button, add the <code>role=&quot;button&quot;</code> attribute.</li>
- <li>Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
-</ul>
-
-<blockquote><h3>Guidelines</h3><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv" target="_blank">Guideline 1.1 - Text Alternatives</a>: Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.<br><br>If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</blockquote>
-                </div>
-              
-                          </div>
-
-                          <div class="kss-modifier-block">
-
-                <div class="kss-modifier kss-modifier-original">
-                  <div class="kss-modifier-example">
-                    
-<section class="buttons-section">
-  <div class="buttons ">
-    <form action="" method="post">
-      <button type="submit" href="#" class="button">Regular Button</button>
-      <button type="submit" href="#" class="button button--outline">Outline Button</button>
-      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
-    </form>
-  </div>
-</section>
-
-                  </div>
-                </div>
-
-                                <div class="kss-modifier">
-                  <div class="kss-modifier-head">
-                    <div class="kss-modifier-name">.buttons--center</div>
-                    <div class="kss-modifier-description">
-                      modifier for centered buttons
-                    </div>
-                  </div>
-                  <div class="kss-modifier-example">
-                    
-<section class="buttons-section">
-  <div class="buttons buttons--center">
-    <form action="" method="post">
-      <button type="submit" href="#" class="button">Regular Button</button>
-      <button type="submit" href="#" class="button button--outline">Outline Button</button>
-      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
-    </form>
-  </div>
-</section>
-
-                  </div>
-                </div>
-                                <div class="kss-modifier">
-                  <div class="kss-modifier-head">
-                    <div class="kss-modifier-name">.buttons--right</div>
-                    <div class="kss-modifier-description">
-                      modifier for right aligned buttons
-                    </div>
-                  </div>
-                  <div class="kss-modifier-example">
-                    
-<section class="buttons-section">
-  <div class="buttons buttons--right">
-    <form action="" method="post">
-      <button type="submit" href="#" class="button">Regular Button</button>
-      <button type="submit" href="#" class="button button--outline">Outline Button</button>
-      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
-    </form>
-  </div>
-</section>
-
-                  </div>
-                </div>
-                                                <div class="kss-markup">
-                  <button class="js-show-markup">Show Markup Example</button>
-                  <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/buttons&#039;) }}
-&lt;section class=&quot;buttons-section&quot;&gt;
-  &lt;div class=&quot;buttons {{modifier_class}}&quot;&gt;
-    &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
-      &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Regular Button&lt;/button&gt;
-      &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Outline Button&lt;/button&gt;
-      &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Link Button&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
-    &lt;/form&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-</code></pre>
-                  </template>
-                </div>
-                              </div>
-
-                                    </section>
                             <section id="kssref-forms-checkboxes" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
@@ -226,33 +121,35 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<fieldset>
-  <legend>Who is your favorite 19th century scientist</legend>
-  <label class="control control--checkbox" for="bell">Alexander Graham Bell
-    <input id="bell" type="checkbox" value="1" name="scientist" value="bell"/>
-    <div class="control__indicator"></div>
-  </label>
-  <label class="control control--checkbox" for="edison">Thomas Edison
-    <input id="edison" type="checkbox" name="scientist" value="edison"/>
-    <div class="control__indicator"></div>
-  </label>
-  <label class="control control--checkbox" for="morse">Samuel Morse
-    <input id="morse" type="checkbox" value="1" name="scientist" value="morse"/>
-    <div class="control__indicator"></div>
-  </label>
-  <label class="control control--checkbox" for="nobel">Alfred Nobel
-    <input id="nobel" type="checkbox" value="1" name="scientist" value="nobel"/>
-    <div class="control__indicator"></div>
-  </label>
-  <label class="control control--checkbox" for="pasteur">Louis Pasteur
-    <input id="pasteur" type="checkbox" value="1" name="scientist" value="pasteur"/>
-    <div class="control__indicator"></div>
-  </label>
-  <label class="control control--checkbox" for="tesla">Nikola Tesla
-    <input id="tesla" type="checkbox" value="1" name="scientist" value="tesla"/>
-    <div class="control__indicator"></div>
-  </label>
-</fieldset>
+<section class="checkboxes-section">
+  <fieldset>
+    <legend>Who is your favorite 19th century scientist</legend>
+    <label class="control control--checkbox" for="bell">Alexander Graham Bell
+      <input id="bell" type="checkbox" value="1" name="scientist" value="bell"/>
+      <div class="control__indicator"></div>
+    </label>
+    <label class="control control--checkbox" for="edison">Thomas Edison
+      <input id="edison" type="checkbox" name="scientist" value="edison"/>
+      <div class="control__indicator"></div>
+    </label>
+    <label class="control control--checkbox" for="morse">Samuel Morse
+      <input id="morse" type="checkbox" value="1" name="scientist" value="morse"/>
+      <div class="control__indicator"></div>
+    </label>
+    <label class="control control--checkbox" for="nobel">Alfred Nobel
+      <input id="nobel" type="checkbox" value="1" name="scientist" value="nobel"/>
+      <div class="control__indicator"></div>
+    </label>
+    <label class="control control--checkbox" for="pasteur">Louis Pasteur
+      <input id="pasteur" type="checkbox" value="1" name="scientist" value="pasteur"/>
+      <div class="control__indicator"></div>
+    </label>
+    <label class="control control--checkbox" for="tesla">Nikola Tesla
+      <input id="tesla" type="checkbox" value="1" name="scientist" value="tesla"/>
+      <div class="control__indicator"></div>
+    </label>
+  </fieldset>
+</section>
 
                   </div>
                 </div>
@@ -261,33 +158,35 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/checkboxes&#039;) }}
-&lt;fieldset&gt;
-  &lt;legend&gt;Who is your favorite 19th century scientist&lt;/legend&gt;
-  &lt;label class=&quot;control control--checkbox&quot; for=&quot;bell&quot;&gt;Alexander Graham Bell
-    &lt;input id=&quot;bell&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;bell&quot;/&gt;
-    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;control control--checkbox&quot; for=&quot;edison&quot;&gt;Thomas Edison
-    &lt;input id=&quot;edison&quot; type=&quot;checkbox&quot; name=&quot;scientist&quot; value=&quot;edison&quot;/&gt;
-    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;control control--checkbox&quot; for=&quot;morse&quot;&gt;Samuel Morse
-    &lt;input id=&quot;morse&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;morse&quot;/&gt;
-    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;control control--checkbox&quot; for=&quot;nobel&quot;&gt;Alfred Nobel
-    &lt;input id=&quot;nobel&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;nobel&quot;/&gt;
-    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;control control--checkbox&quot; for=&quot;pasteur&quot;&gt;Louis Pasteur
-    &lt;input id=&quot;pasteur&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;pasteur&quot;/&gt;
-    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;control control--checkbox&quot; for=&quot;tesla&quot;&gt;Nikola Tesla
-    &lt;input id=&quot;tesla&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;tesla&quot;/&gt;
-    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
-  &lt;/label&gt;
-&lt;/fieldset&gt;
+&lt;section class=&quot;checkboxes-section&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Who is your favorite 19th century scientist&lt;/legend&gt;
+    &lt;label class=&quot;control control--checkbox&quot; for=&quot;bell&quot;&gt;Alexander Graham Bell
+      &lt;input id=&quot;bell&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;bell&quot;/&gt;
+      &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;control control--checkbox&quot; for=&quot;edison&quot;&gt;Thomas Edison
+      &lt;input id=&quot;edison&quot; type=&quot;checkbox&quot; name=&quot;scientist&quot; value=&quot;edison&quot;/&gt;
+      &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;control control--checkbox&quot; for=&quot;morse&quot;&gt;Samuel Morse
+      &lt;input id=&quot;morse&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;morse&quot;/&gt;
+      &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;control control--checkbox&quot; for=&quot;nobel&quot;&gt;Alfred Nobel
+      &lt;input id=&quot;nobel&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;nobel&quot;/&gt;
+      &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;control control--checkbox&quot; for=&quot;pasteur&quot;&gt;Louis Pasteur
+      &lt;input id=&quot;pasteur&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;pasteur&quot;/&gt;
+      &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;control control--checkbox&quot; for=&quot;tesla&quot;&gt;Nikola Tesla
+      &lt;input id=&quot;tesla&quot; type=&quot;checkbox&quot; value=&quot;1&quot; name=&quot;scientist&quot; value=&quot;tesla&quot;/&gt;
+      &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+    &lt;/label&gt;
+  &lt;/fieldset&gt;
+&lt;/section&gt;
 </code></pre>
                   </template>
                 </div>
@@ -320,16 +219,18 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<fieldset>
-  <label class="control control--radio">First radio
-    <input type="radio" name="radio"/>
-    <div class="control__indicator"></div>
-  </label>
-  <label class="control control--radio">Second radio
-    <input type="radio" name="radio"/>
-    <div class="control__indicator"></div>
-  </label>
-</fieldset>
+<section class="radio-buttons-section">
+  <fieldset>
+    <label class="control control--radio">First radio
+      <input type="radio" name="radio"/>
+      <div class="control__indicator"></div>
+    </label>
+    <label class="control control--radio">Second radio
+      <input type="radio" name="radio"/>
+      <div class="control__indicator"></div>
+    </label>
+  </fieldset>
+</section>
 
                   </div>
                 </div>
@@ -338,16 +239,18 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/radio-buttons&#039;) }}
-&lt;fieldset&gt;
-  &lt;label class=&quot;control control--radio&quot;&gt;First radio
-    &lt;input type=&quot;radio&quot; name=&quot;radio&quot;/&gt;
-    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
-  &lt;/label&gt;
-  &lt;label class=&quot;control control--radio&quot;&gt;Second radio
-    &lt;input type=&quot;radio&quot; name=&quot;radio&quot;/&gt;
-    &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
-  &lt;/label&gt;
-&lt;/fieldset&gt;
+&lt;section class=&quot;radio-buttons-section&quot;&gt;
+  &lt;fieldset&gt;
+    &lt;label class=&quot;control control--radio&quot;&gt;First radio
+      &lt;input type=&quot;radio&quot; name=&quot;radio&quot;/&gt;
+      &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;control control--radio&quot;&gt;Second radio
+      &lt;input type=&quot;radio&quot; name=&quot;radio&quot;/&gt;
+      &lt;div class=&quot;control__indicator&quot;&gt;&lt;/div&gt;
+    &lt;/label&gt;
+  &lt;/fieldset&gt;
+&lt;/section&gt;
 </code></pre>
                   </template>
                 </div>
@@ -379,10 +282,12 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<form method="post" class="search-form">
-	<label for="search" class="search-form__label is-vishidden">Search the site</label>
-	<input type="search" id="search" class="search-form__input" placeholder="Search the site" />
-</form>
+<section class="search-section">
+  <form method="post" class="search-form">
+  	<label for="search" class="search-form__label is-vishidden">Search the site</label>
+  	<input type="search" id="search" class="search-form__input" placeholder="Search the site" />
+  </form>
+</section>
 
                   </div>
                 </div>
@@ -391,10 +296,12 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/search&#039;) }}
-&lt;form method=&quot;post&quot; class=&quot;search-form&quot;&gt;
-	&lt;label for=&quot;search&quot; class=&quot;search-form__label is-vishidden&quot;&gt;Search the site&lt;/label&gt;
-	&lt;input type=&quot;search&quot; id=&quot;search&quot; class=&quot;search-form__input&quot; placeholder=&quot;Search the site&quot; /&gt;
-&lt;/form&gt;
+&lt;section class=&quot;search-section&quot;&gt;
+  &lt;form method=&quot;post&quot; class=&quot;search-form&quot;&gt;
+  	&lt;label for=&quot;search&quot; class=&quot;search-form__label is-vishidden&quot;&gt;Search the site&lt;/label&gt;
+  	&lt;input type=&quot;search&quot; id=&quot;search&quot; class=&quot;search-form__input&quot; placeholder=&quot;Search the site&quot; /&gt;
+  &lt;/form&gt;
+&lt;/section&gt;
 </code></pre>
                   </template>
                 </div>
@@ -427,24 +334,26 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<form>
-  <div class="select">
-    <select>
-      <option>First select</option>
-      <option>Option</option>
-      <option>Option</option>
-    </select>
-    <div class="select__arrow"></div>
-  </div>
-  <div class="select">
-    <select>
-      <option>Second select</option>
-      <option>Option</option>
-      <option>Option</option>
-    </select>
-    <div class="select__arrow"></div>
-  </div>
-</form>
+<section class="select-section">
+  <form>
+    <div class="select">
+      <select>
+        <option>First select</option>
+        <option>Option 1.1</option>
+        <option>Option 1.2</option>
+      </select>
+      <div class="select__arrow"></div>
+    </div>
+    <div class="select">
+      <select>
+        <option>Second select</option>
+        <option>Option 2.1</option>
+        <option>Option 2.2</option>
+      </select>
+      <div class="select__arrow"></div>
+    </div>
+  </form>
+</section>
 
                   </div>
                 </div>
@@ -453,24 +362,26 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/select-lists&#039;) }}
-&lt;form&gt;
-  &lt;div class=&quot;select&quot;&gt;
-    &lt;select&gt;
-      &lt;option&gt;First select&lt;/option&gt;
-      &lt;option&gt;Option&lt;/option&gt;
-      &lt;option&gt;Option&lt;/option&gt;
-    &lt;/select&gt;
-    &lt;div class=&quot;select__arrow&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;select&quot;&gt;
-    &lt;select&gt;
-      &lt;option&gt;Second select&lt;/option&gt;
-      &lt;option&gt;Option&lt;/option&gt;
-      &lt;option&gt;Option&lt;/option&gt;
-    &lt;/select&gt;
-    &lt;div class=&quot;select__arrow&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/form&gt;
+&lt;section class=&quot;select-section&quot;&gt;
+  &lt;form&gt;
+    &lt;div class=&quot;select&quot;&gt;
+      &lt;select&gt;
+        &lt;option&gt;First select&lt;/option&gt;
+        &lt;option&gt;Option 1.1&lt;/option&gt;
+        &lt;option&gt;Option 1.2&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;div class=&quot;select__arrow&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;select&quot;&gt;
+      &lt;select&gt;
+        &lt;option&gt;Second select&lt;/option&gt;
+        &lt;option&gt;Option 2.1&lt;/option&gt;
+        &lt;option&gt;Option 2.2&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;div class=&quot;select__arrow&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/section&gt;
 </code></pre>
                   </template>
                 </div>
@@ -505,15 +416,17 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     
-<form>
-  <label for="first-name">First Name</label>
-  <input id="first-name" type="text" name="textfield">
-  <label for="last-name" class="required-field">Last Name</label>
-  <input id="last-name" type="text" name="textfield" aria-describedby="my-error-message" required>
-  <label for="address">Enter your street address</label>
-  <textarea id="address" name="addresstext"></textarea>
-  <input type="submit" value="Submit">
-</form>
+<section class="text-inputs-section">
+  <form>
+    <label for="first-name">First Name</label>
+    <input id="first-name" type="text" name="textfield">
+    <label for="last-name" class="required-field">Last Name</label>
+    <input id="last-name" type="text" name="textfield" aria-describedby="my-error-message" required>
+    <label for="address">Enter your street address</label>
+    <textarea id="address" name="addresstext"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</section>
 
                   </div>
                 </div>
@@ -522,15 +435,17 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code data-language="html">{{ attach_library(&#039;theme_name/text-inputs&#039;) }}
-&lt;form&gt;
-  &lt;label for=&quot;first-name&quot;&gt;First Name&lt;/label&gt;
-  &lt;input id=&quot;first-name&quot; type=&quot;text&quot; name=&quot;textfield&quot;&gt;
-  &lt;label for=&quot;last-name&quot; class=&quot;required-field&quot;&gt;Last Name&lt;/label&gt;
-  &lt;input id=&quot;last-name&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;my-error-message&quot; required&gt;
-  &lt;label for=&quot;address&quot;&gt;Enter your street address&lt;/label&gt;
-  &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;
-  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-&lt;/form&gt;
+&lt;section class=&quot;text-inputs-section&quot;&gt;
+  &lt;form&gt;
+    &lt;label for=&quot;first-name&quot;&gt;First Name&lt;/label&gt;
+    &lt;input id=&quot;first-name&quot; type=&quot;text&quot; name=&quot;textfield&quot;&gt;
+    &lt;label for=&quot;last-name&quot; class=&quot;required-field&quot;&gt;Last Name&lt;/label&gt;
+    &lt;input id=&quot;last-name&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;my-error-message&quot; required&gt;
+    &lt;label for=&quot;address&quot;&gt;Enter your street address&lt;/label&gt;
+    &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;
+    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+  &lt;/form&gt;
+&lt;/section&gt;
 </code></pre>
                   </template>
                 </div>
