@@ -26,3 +26,41 @@ body {
   position: absolute;
   width: 1px;
 }
+
+.more-info {
+  height: 0;
+  visibility: hidden;
+  position: relative;
+}
+
+.more-info-open {
+  height: auto;
+  visibility: visible;
+}
+
+.more {
+  position: absolute;
+  top: -52px;
+  visibility: visible;
+  left: 160px;
+  width: 30px;
+  height: 30px;
+  background: url('#{$asset-path}/chevron_left_round_red.png') no-repeat; // replace with plus
+  background-size: 32px;
+  border: 0;
+  box-shadow: none;
+  background-color: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
+
+.more-info-open .more {
+  background: url('#{$asset-path}/chevron_right_round_red.png') no-repeat; // replace with minus
+  background-size: 32px;
+}

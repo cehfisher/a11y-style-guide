@@ -15,3 +15,33 @@ body {
   padding: 0;
   position: absolute;
   width: 1px; }
+
+.more-info {
+  height: 0;
+  visibility: hidden;
+  position: relative; }
+
+.more-info-open {
+  height: auto;
+  visibility: visible; }
+
+.more {
+  position: absolute;
+  top: -52px;
+  visibility: visible;
+  left: 160px;
+  width: 30px;
+  height: 30px;
+  background: url("../assets/chevron_left_round_red.png") no-repeat;
+  background-size: 32px;
+  border: 0;
+  box-shadow: none;
+  background-color: transparent; }
+  .more:hover, .more:focus, .more:active {
+    border: 0;
+    box-shadow: none;
+    background-color: transparent; }
+
+.more-info-open .more {
+  background: url("../assets/chevron_right_round_red.png") no-repeat;
+  background-size: 32px; }
