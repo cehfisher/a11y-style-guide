@@ -1,5 +1,6 @@
 {{ attach_library('theme_name/radio-buttons') }}
 <section class="radio-buttons-section">
+  <h3>Option #1: Use fieldsets to group options</h3>
   <fieldset>
     <legend>What time of the day is best?</legend>
     <label class="control control--radio">Morning
@@ -12,9 +13,9 @@
     </label>
   </fieldset>
   <div class="break"></div>
-  <h2>Option #2: Use WAI-ARIA to group options</h2>
+  <h3>Option #2: Use WAI-ARIA to group options</h3>
   <div role="group" aria-labelledby="zeppelin_head">
-  	<h3 id="zeppelin_head">Who is the best member of Led Zeppelin?</h3>
+  	<h4 class="bold" id="zeppelin_head">Who is the best member of Led Zeppelin?</h4>
   	<div>
   		<label class="control control--radio" for="zeppelin_jimmy">
   		  <input id="zeppelin_jimmy" type="radio" value="1" name="zeppelin" value="zeppelin_jimmy"/>
