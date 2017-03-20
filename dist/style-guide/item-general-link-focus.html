@@ -61,10 +61,17 @@
 
                               <div class="kss-description">
                   <ul>
- <li>to-do</li>
+ <li>Do not set your site&#39;s link focus to <code>outline: none</code>. Never. Ever.</li>
+ <li>If you have multiple form fields on your site or you see the dreaded <code>outline: none</code> in your base code, you can reset the browser defaults by adding the code:
+ <pre>
+ a:focus {
+   outline: auto 2px Highlight; // for non-webkit browsers
+   outline: auto 5px -webkit-focus-ring-color; // for webkit browsers
+ }</pre></li>
+ <li>Of course you can create your own focus styles to match your theme or to make the default browser styles more prominent, just make sure they are visible by tabbing and obvious to your users.</li>
 </ul>
 
-<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</div></div><div class="markup"></div>
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-focus-visible" target="_blank">2.4.7 Focus Visible</a>: Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. (Level AA)</div></div><div class="markup"></div>
 
 
                 </div>
@@ -76,8 +83,7 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     <section class="link-focus-section">
-  <div class="link-focus">
-  </div>
+  <a href="#">Hey! I'm a cool, focusable link</a>
 </section>
 
                   </div>
@@ -87,8 +93,7 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;link-focus-section&quot;&gt;
-  &lt;div class=&quot;link-focus&quot;&gt;
-  &lt;/div&gt;
+  &lt;a href=&quot;#&quot;&gt;Hey! I&#039;m a cool, focusable link&lt;/a&gt;
 &lt;/section&gt;
 </code></pre>
                     <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
