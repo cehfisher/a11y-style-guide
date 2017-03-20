@@ -116,15 +116,14 @@
               </h2>
 
                               <div class="kss-description">
-                  <p><h3>Accessibility Tips</h3></p>
-<ul>
+                  <ul>
  <li>A <code>&lt;button&gt;</code> doesn&#39;t need anything special to work. ARIA&#39;s role=&quot;button&quot; is already assigned natively.</li>
  <li>If you are using a link as a button, add the <code>role=&quot;button&quot;</code> attribute.</li>
  <li>Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
  <li>If your button is created entirely with an image/icon, you must include <code>alt=&quot;&quot;</code> descriptions. If your button includes an image/icon that is decorative, you do not need an <code>alt=&quot;&quot;</code> description.
 </ul>
 
-<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions).<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives. (Level A)</div></div>
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</div></div>
                 </div>
               
                           </div>
@@ -226,8 +225,7 @@
               </h2>
 
                               <div class="kss-description">
-                  <p><h3>Accessibility Tips</h3></p>
-<ul>
+                  <ul>
  <li>Avoid using color <em>only</em> to communicate information. In the case of links, use another identifier such as bold or underline to indicate a link verses using color alone.</li>
  <li>Some users have difficulty reading text if there is too little contrast between foreground and background. To meet Level AA, text must have a contrast ratio of at least 4.5:1 (or 3:1 for large text). In order to meet the guidelines at the stricter Level AAA, the contrast ratio must be at least 7:1 (or 4.5:1 for large text).</li>
 </ul>
@@ -236,7 +234,7 @@
 
 
 
-<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-without-color" target="_blank">1.4.1. Use of Color</a> - Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for some cases.</div></div>
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-without-color" target="_blank">1.4.1. Use of Color</a>: Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast" target="_blank">1.4.3 Contrast (Minimum)</a>: The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for some cases. (Level AA)</div></div>
 
 
                 </div>
@@ -438,12 +436,12 @@
                     
 <section class="links-section">
   <form action="" method="post">
-    <h2>Example #1</h2>
-    <h3 id="headline">Storms Hit East Coast</h3>
+    <h3>Example #1</h3>
+    <h4 id="headline" class="bold">Storms Hit East Coast</h4>
     <p>Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. <a href="news.html" aria-labelledby="headline" class="links">Read More</a></p>
     <div class="break"></div>
-    <h2>Example #2</h2>
-    <h3>Black Bears Trapped in Cars?</h3>
+    <h3>Example #2</h3>
+    <h4 class="bold">Black Bears Trapped in Cars?</h4>
     <p>Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. <a href="/news/black-bears-trapped-in-cars" aria-label="Learn more about trapped black bears" class="read-more">Read More</a></p>
   </form>
 </section>
@@ -457,12 +455,12 @@
                     <pre><code id="post-shortlink" data-language="html">{{ attach_library(&#039;theme_name/links&#039;) }}
 &lt;section class=&quot;links-section&quot;&gt;
   &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
-    &lt;h2&gt;Example #1&lt;/h2&gt;
-    &lt;h3 id=&quot;headline&quot;&gt;Storms Hit East Coast&lt;/h3&gt;
+    &lt;h3&gt;Example #1&lt;/h3&gt;
+    &lt;h4 id=&quot;headline&quot; class=&quot;bold&quot;&gt;Storms Hit East Coast&lt;/h4&gt;
     &lt;p&gt;Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. &lt;a href=&quot;news.html&quot; aria-labelledby=&quot;headline&quot; class=&quot;links&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
     &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-    &lt;h2&gt;Example #2&lt;/h2&gt;
-    &lt;h3&gt;Black Bears Trapped in Cars?&lt;/h3&gt;
+    &lt;h3&gt;Example #2&lt;/h3&gt;
+    &lt;h4 class=&quot;bold&quot;&gt;Black Bears Trapped in Cars?&lt;/h4&gt;
     &lt;p&gt;Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. &lt;a href=&quot;/news/black-bears-trapped-in-cars&quot; aria-label=&quot;Learn more about trapped black bears&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
   &lt;/form&gt;
 &lt;/section&gt;
@@ -496,11 +494,11 @@
                   <div class="kss-modifier-example">
                     
 <section class="lists-section">
-  <h2>Example #1</h2>
+  <h3>Example #1</h3>
   </section>
 <div class="break"></div>
 <section class="lists">
-  <h2>Example #2</h2>
+  <h3>Example #2</h3>
   </section>
 
                   </div>
@@ -511,7 +509,7 @@
                   <template>
                     <pre><code id="post-shortlink" data-language="html">{{ attach_library(&#039;theme_name/lists&#039;) }}
 &lt;section class=&quot;lists-section&quot;&gt;
-  &lt;h2&gt;Example #1&lt;/h2&gt;
+  &lt;h3&gt;Example #1&lt;/h3&gt;
   {% for item in items %}
   &lt;article aria-labelledby=&quot;sample-lists1&quot; class=&quot;sample-lists__item&quot;&gt;
     &lt;h3&gt;{{ item.title }}&lt;/h3&gt;
@@ -521,7 +519,7 @@
 &lt;/section&gt;
 &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
 &lt;section class=&quot;lists&quot;&gt;
-  &lt;h2&gt;Example #2&lt;/h2&gt;
+  &lt;h3&gt;Example #2&lt;/h3&gt;
   {% for item in items %}
   &lt;ul aria-labelledby=&quot;sample-lists2&quot; class=&quot;sample-lists__item&quot;&gt;
     &lt;li&gt;{{ item.title }}: {{ item.desc }}&lt;/li&gt;

@@ -1,6 +1,6 @@
 {{ attach_library('theme_name/checkboxes') }}
 <section class="checkboxes-section">
-  <h2>Option #1: Use fieldsets to group options</h2>
+  <h3>Option #1: Use fieldsets to group options</h3>
   <fieldset>
     <legend>Who is your favorite 19th century scientist</legend>
     <label class="control control--checkbox" for="bell">Alexander Graham Bell
@@ -29,9 +29,9 @@
     </label>
   </fieldset>
   <div class="break"></div>
-  <h2>Option #2: Use WAI-ARIA to group options</h2>
+  <h3>Option #2: Use WAI-ARIA to group options</h3>
   <div role="group" aria-labelledby="beatle_head">
-  	<h3 id="beatle_head">Who is the best Beatle?</h3>
+  	<h4 id="beatle_head" class="bold">Who is the best Beatle?</h3>
   	<div>
   		<label class="control control--checkbox" for="beatle_john">
   		  <input id="beatle_john" type="checkbox" value="1" name="beatle" value="beatle_john"/>

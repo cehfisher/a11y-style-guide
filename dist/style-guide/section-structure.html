@@ -92,8 +92,7 @@
               </h2>
 
                               <div class="kss-description">
-                  <p>Heading tags were developed to provide information on the structural hierarchy of a document, with <code>&lt;h1&gt;</code> having the highest rank, followed by <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code>.</p>
-<ul>
+                  <ul>
  <li>Navigating through the <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code> give a user an overview of a page and how its content is structured. The <code>&lt;h3&gt;</code> through <code>&lt;h6&gt;</code> elements provide a quick understanding of the details in each section.</li>
  <li>Heading tags should be in order. That means an <code>&lt;h1&gt;</code> is followed by an <code>&lt;h2&gt;</code>, an <code>&lt;h2&gt;</code> is followed by a <code>&lt;h2&gt;</code> or <code>&lt;h3&gt;</code> and so on. It <em>is</em> ok to skip heading levels when going up in order (ex. <code>&lt;h4&gt;</code> to <code>&lt;h1&gt;</code>).</li>
  <li>Keep heading tags consistent. Inconsistently implementing headings can create confusion and frustration for users using assistive technologies.</li>
@@ -177,11 +176,11 @@
                   <div class="kss-modifier-example">
                     
 <section class="landmark-roles-section">
-  <h2>Example #1</h2>
+  <h3>Example #1</h3>
   </section>
 <div class="break"></div>
 <section class="landmark-roles">
-  <h2>Example #2</h2>
+  <h3>Example #2</h3>
   </section>
 
                   </div>
@@ -192,7 +191,7 @@
                   <template>
                     <pre><code id="post-shortlink" data-language="html">{{ attach_library(&#039;theme_name/landmark-roles&#039;) }}
 &lt;section class=&quot;landmark-roles-section&quot;&gt;
-  &lt;h2&gt;Example #1&lt;/h2&gt;
+  &lt;h3&gt;Example #1&lt;/h3&gt;
   {% for item in items %}
   &lt;article aria-labelledby=&quot;sample-landmark-roles1&quot; class=&quot;sample-landmark-roles__item&quot;&gt;
     &lt;h3&gt;{{ item.title }}&lt;/h3&gt;
@@ -202,7 +201,7 @@
 &lt;/section&gt;
 &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
 &lt;section class=&quot;landmark-roles&quot;&gt;
-  &lt;h2&gt;Example #2&lt;/h2&gt;
+  &lt;h3&gt;Example #2&lt;/h3&gt;
   {% for item in items %}
   &lt;ul aria-labelledby=&quot;sample-landmark-roles2&quot; class=&quot;sample-landmark-roles__item&quot;&gt;
     &lt;li&gt;{{ item.title }}: {{ item.desc }}&lt;/li&gt;

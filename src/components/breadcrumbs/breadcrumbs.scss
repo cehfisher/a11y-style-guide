@@ -4,7 +4,7 @@
 //   <li>Place the breadcrumb in a nav element with role="navigation". The nav element is also marked-up with aria-label="Breadcrumbs" to describe the type of navigation.</li>
 // </ul>
 //
-// <blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</blockquote>
+// <div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location" target="_blank">2.4.8 Location</a>: Information about the user's location within a set of Web pages is available. (Level AAA)</div></div>
 //
 //
 //
@@ -14,3 +14,28 @@
 
 // Import site utilities.
 @import '../../global/utils/init';
+
+.breadcrumb {
+  padding: $padding-sm;
+  margin-bottom: $padding-sm;
+  clear: both;
+  list-style: none;
+
+  .breadcrumb-item {
+    float: left;
+    list-style: none;
+
+    &::after {
+      display: inline-block;
+      padding-right: $padding-xsm;
+      padding-left: $padding-xsm;
+      color: $color-midnight;
+      font-weight: normal;
+      content: ' / ';
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+}

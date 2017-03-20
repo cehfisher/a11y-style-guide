@@ -55,14 +55,20 @@
                         </a>
                       </li>
                                           <li class="kss-menu-item">
-                        <a href="#kssref-navigation-pagination">
+                        <a href="#kssref-navigation-nav-bar">
                           <span class="kss-ref ">4.4</span
+                            ><span class="kss-name">Nav Bar</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-navigation-pagination">
+                          <span class="kss-ref ">4.5</span
                             ><span class="kss-name">Pagination</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
                         <a href="#kssref-navigation-tabs">
-                          <span class="kss-ref ">4.5</span
+                          <span class="kss-ref ">4.6</span
                             ><span class="kss-name">Tabs</span>
                         </a>
                       </li>
@@ -108,7 +114,7 @@
   <li>Place the breadcrumb in a nav element with role=&quot;navigation&quot;. The nav element is also marked-up with aria-label=&quot;Breadcrumbs&quot; to describe the type of navigation.</li>
 </ul>
 
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</blockquote>
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location" target="_blank">2.4.8 Location</a>: Information about the user&#39;s location within a set of Web pages is available. (Level AAA)</div></div>
 
 
                 </div>
@@ -121,12 +127,27 @@
                   <div class="kss-modifier-example">
                     
 <section class="breadcrumbs-section">
+  <h3>Option #1: List styling</h3>
   <nav role="navigation" aria-label="breadcrumbs">
     <ol class="breadcrumb">
-      <li class="breadcrumb__item"><a href="#">Grandparent page</a></li>
-      <li class="breadcrumb__item"><a href="#">Parent page</a></li>
-      <li class="breadcrumb__item">Current page</li>
+      <li class="breadcrumb-item active">Home</li>
     </ol>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active">Parent</li>
+    </ol>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Parent</a></li>
+      <li class="breadcrumb-item active">Child</li>
+    </ol>
+  </nav>
+  <div class="break"></div>
+  <h3>Option #2: No list styling</h3>
+  <nav role="navigation" aria-label="breadcrumbs" class="breadcrumb">
+    <a class="breadcrumb-item" href="#">Home</a>
+    <a class="breadcrumb-item" href="#">Parent</a>
+    <span class="breadcrumb-item active">Child</span>
   </nav>
 </section>
 
@@ -138,12 +159,27 @@
                   <template>
                     <pre><code id="post-shortlink" data-language="html">{{ attach_library(&#039;theme_name/breadcrumbs&#039;) }}
 &lt;section class=&quot;breadcrumbs-section&quot;&gt;
+  &lt;h3&gt;Option #1: List styling&lt;/h3&gt;
   &lt;nav role=&quot;navigation&quot; aria-label=&quot;breadcrumbs&quot;&gt;
     &lt;ol class=&quot;breadcrumb&quot;&gt;
-      &lt;li class=&quot;breadcrumb__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Grandparent page&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;breadcrumb__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Parent page&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;breadcrumb__item&quot;&gt;Current page&lt;/li&gt;
+      &lt;li class=&quot;breadcrumb-item active&quot;&gt;Home&lt;/li&gt;
     &lt;/ol&gt;
+    &lt;ol class=&quot;breadcrumb&quot;&gt;
+      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;breadcrumb-item active&quot;&gt;Parent&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;ol class=&quot;breadcrumb&quot;&gt;
+      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Parent&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;breadcrumb-item active&quot;&gt;Child&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/nav&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Option #2: No list styling&lt;/h3&gt;
+  &lt;nav role=&quot;navigation&quot; aria-label=&quot;breadcrumbs&quot; class=&quot;breadcrumb&quot;&gt;
+    &lt;a class=&quot;breadcrumb-item&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+    &lt;a class=&quot;breadcrumb-item&quot; href=&quot;#&quot;&gt;Parent&lt;/a&gt;
+    &lt;span class=&quot;breadcrumb-item active&quot;&gt;Child&lt;/span&gt;
   &lt;/nav&gt;
 &lt;/section&gt;
 </code></pre>
@@ -240,6 +276,104 @@
                     <pre><code id="post-shortlink" data-language="html">{{ attach_library(&#039;theme_name/main-menu&#039;) }}
 &lt;section class=&quot;main-menu-section&quot;&gt;
   &lt;nav role=&quot;navigation&quot; aria-label=&quot;main-menu&quot;&gt;
+  &lt;/nav&gt;
+&lt;/section&gt;
+</code></pre>
+                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-navigation-nav-bar" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-navigation-nav-bar">
+                  Nav Bar
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+  <li>word</li>
+</ul>
+
+<blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</blockquote>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    
+<section class="nav-bar-section">
+  <h3>Option #1: List styling</h3>
+  <nav class="nav-bar">
+    <ul class="nav nav-bar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">More Information</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="break"></div>
+  <h3>Option #2: No list styling</h3>
+  <nav class="nav-bar">
+    <div class="nav nav-bar-nav">
+      <a class="nav-item nav-link active" href="#">Home</a>
+      <a class="nav-item nav-link" href="#">About Us</a>
+      <a class="nav-item nav-link" href="#">More Information</a>
+      <a class="nav-item nav-link" href="#">Contact Us</a>
+    </div>
+  </nav>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code id="post-shortlink" data-language="html">{{ attach_library(&#039;theme_name/nav-bar&#039;) }}
+&lt;section class=&quot;nav-bar-section&quot;&gt;
+  &lt;h3&gt;Option #1: List styling&lt;/h3&gt;
+  &lt;nav class=&quot;nav-bar&quot;&gt;
+    &lt;ul class=&quot;nav nav-bar-nav&quot;&gt;
+      &lt;li class=&quot;nav-item active&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;About Us&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;More Information&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Option #2: No list styling&lt;/h3&gt;
+  &lt;nav class=&quot;nav-bar&quot;&gt;
+    &lt;div class=&quot;nav nav-bar-nav&quot;&gt;
+      &lt;a class=&quot;nav-item nav-link active&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;#&quot;&gt;About Us&lt;/a&gt;
+      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;#&quot;&gt;More Information&lt;/a&gt;
+      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
+    &lt;/div&gt;
   &lt;/nav&gt;
 &lt;/section&gt;
 </code></pre>
