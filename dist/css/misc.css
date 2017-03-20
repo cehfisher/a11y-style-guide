@@ -6,6 +6,10 @@ body {
   margin: 3rem 0;
   border-bottom: 1px solid #eeeeee; }
 
+.markup {
+  margin: 1.5rem 0;
+  border-bottom: 1px solid #eeeeee; }
+
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -66,3 +70,6 @@ body {
 
 .bold {
   font-weight: bold !important; }
+
+.js-show-markup {
+  margin: 0.5rem 0; }

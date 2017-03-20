@@ -1,19 +1,2 @@
-{{ attach_library('theme_name/lists') }}
 <section class="lists-section">
-  <h3>Example #1</h3>
-  {% for item in items %}
-  <article aria-labelledby="sample-lists1" class="sample-lists__item">
-    <h3>{{ item.title }}</h3>
-    <p>{{ item.desc }}</p>
-  </article>
-  {% endfor %}
-</section>
-<div class="break"></div>
-<section class="lists">
-  <h3>Example #2</h3>
-  {% for item in items %}
-  <ul aria-labelledby="sample-lists2" class="sample-lists__item">
-    <li>{{ item.title }}: {{ item.desc }}</li>
-  </ul>
-  {% endfor %}
 </section>

@@ -1,14 +1,23 @@
-{{ attach_library('theme_name/pagination') }}
 <section class="pagination-section">
-  <nav role="navigation" aria-label="pagination">
-    <ol class="pagination">
-    	<li class="current"><a href="{{ url }}">1</a></li>
-    	<li><a href="{{ url }}">2</a></li>
-    	<li><a href="{{ url }}">3</a></li>
-    	<li><a href="{{ url }}">4</a></li>
-    	<li><a href="{{ url }}">5</a></li>
-    	<li><a href="{{ url }}">6</a></li>
-    	<li><a href="{{ url }}">7</a></li>
-    </ol>
+  <nav aria-label="page navigation">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span>Previous</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item active"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item ml-0_5">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span>Next</span>
+        </a>
+      </li>
+    </ul>
   </nav>
 </section>

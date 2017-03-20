@@ -55,9 +55,9 @@
     list-style: none; }
 
 #kss-node .kss-markup pre {
-  border-radius: 4px;
+  border-radius: 0 4px 4px 0;
   border: 2px solid #eeeeee;
-  border-left: 2px solid #e00000; }
+  border-left: 5px solid #e00000; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {

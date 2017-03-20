@@ -66,7 +66,7 @@
  <li>Turn read more links into buttons, when you can.</li>
 </ul>
 
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">Link Purpose</a> - The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.</blockquote>
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</div></div><div class="markup"></div>
 
 
                 </div>
@@ -77,14 +77,9 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    
-<section class="landmark-roles-section">
-  <h3>Example #1</h3>
-  </section>
-<div class="break"></div>
-<section class="landmark-roles">
-  <h3>Example #2</h3>
-  </section>
+                    <section class="landmark-roles-section">
+
+</section>
 
                   </div>
                 </div>
@@ -92,24 +87,8 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code id="post-shortlink" data-language="html">{{ attach_library(&#039;theme_name/landmark-roles&#039;) }}
-&lt;section class=&quot;landmark-roles-section&quot;&gt;
-  &lt;h3&gt;Example #1&lt;/h3&gt;
-  {% for item in items %}
-  &lt;article aria-labelledby=&quot;sample-landmark-roles1&quot; class=&quot;sample-landmark-roles__item&quot;&gt;
-    &lt;h3&gt;{{ item.title }}&lt;/h3&gt;
-    &lt;p&gt;{{ item.desc }}&lt;/p&gt;
-  &lt;/article&gt;
-  {% endfor %}
-&lt;/section&gt;
-&lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-&lt;section class=&quot;landmark-roles&quot;&gt;
-  &lt;h3&gt;Example #2&lt;/h3&gt;
-  {% for item in items %}
-  &lt;ul aria-labelledby=&quot;sample-landmark-roles2&quot; class=&quot;sample-landmark-roles__item&quot;&gt;
-    &lt;li&gt;{{ item.title }}: {{ item.desc }}&lt;/li&gt;
-  &lt;/ul&gt;
-  {% endfor %}
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;landmark-roles-section&quot;&gt;
+
 &lt;/section&gt;
 </code></pre>
                     <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>

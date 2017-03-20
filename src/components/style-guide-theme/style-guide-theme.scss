@@ -87,9 +87,9 @@
   }
 
   .kss-markup pre {
-    border-radius: $border-rd-sm;
+    border-radius: 0 $border-rd-sm $border-rd-sm 0;
     border: 2px solid $color-gallery;
-    border-left: 2px solid $color-cherry;
+    border-left: 5px solid $color-cherry;
   }
 
   // Sidebar
