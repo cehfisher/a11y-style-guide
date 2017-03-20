@@ -73,20 +73,12 @@
     h3 {
       font-weight: normal;
       font-style: normal;
+      margin: 20px 0 0;
     }
 
     blockquote {
-      border-left: 2px solid $color-gallery;
-
-      &::before {
-        content: '';
-        display: block;
-        background: url('#{$asset-path}/w3c.png') no-repeat;
-        width: 55px;
-        height: 25px;
-        background-size: 50px;
-        float: left;
-      }
+      border-left: 0;
+      padding: 0;
 
       li {
         list-style: none;

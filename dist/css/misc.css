@@ -16,32 +16,57 @@ body {
   position: absolute;
   width: 1px; }
 
-.more-info {
+.more {
   height: 0;
   visibility: hidden;
   position: relative; }
 
-.more-info-open {
+.more-open .more {
   height: auto;
-  visibility: visible; }
-
-.more {
-  position: absolute;
-  top: -52px;
   visibility: visible;
-  left: 160px;
-  width: 30px;
-  height: 30px;
-  background: url("../assets/chevron_left_round_red.png") no-repeat;
-  background-size: 32px;
-  border: 0;
-  box-shadow: none;
-  background-color: transparent; }
-  .more:hover, .more:focus, .more:active {
+  padding: 0;
+  margin-bottom: 30px; }
+
+.more-open .guidelines {
+  border-left: 2px solid #eeeeee;
+  margin-left: 60px;
+  padding: 0 0 0 14px; }
+  .more-open .guidelines::before {
+    content: '';
+    display: block;
+    background: url("../assets/w3c.png") no-repeat;
+    background-size: 50px;
+    float: left;
+    clear: both;
+    width: 50px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: auto;
+    left: -60px;
+    text-align: left; }
+
+.more-toggle {
+  position: relative; }
+  .more-toggle h3 {
+    margin: 0 0 20px !important;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 40px;
+    display: inline-block !important;
+    background-image: url("../assets/chevron_left_round_red.png");
+    background-size: 32px;
     border: 0;
     box-shadow: none;
     background-color: transparent; }
-
-.more-info-open .more {
-  background: url("../assets/chevron_right_round_red.png") no-repeat;
-  background-size: 32px; }
+  .more-toggle.more-open h3 {
+    content: '';
+    background: url("../assets/chevron_right_round_red.png");
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: right; }
+  .more-toggle:hover, .more-toggle:focus, .more-toggle:active {
+    border: 0;
+    box-shadow: none;
+    background-color: transparent; }

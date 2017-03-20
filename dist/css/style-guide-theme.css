@@ -45,18 +45,12 @@
 
 #kss-node .kss-description h3 {
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  margin: 20px 0 0; }
 
 #kss-node .kss-description blockquote {
-  border-left: 2px solid #eeeeee; }
-  #kss-node .kss-description blockquote::before {
-    content: '';
-    display: block;
-    background: url("../assets/w3c.png") no-repeat;
-    width: 55px;
-    height: 25px;
-    background-size: 50px;
-    float: left; }
+  border-left: 0;
+  padding: 0; }
   #kss-node .kss-description blockquote li {
     list-style: none; }
 
