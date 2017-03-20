@@ -109,7 +109,7 @@ passed as the second argument.</p>
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{% import &quot;icons.twig&quot; as icons %}
+                    <pre><code id="post-shortlink" data-language="html">{% import &quot;icons.twig&quot; as icons %}
 &lt;div class=&quot;kss-icons&quot;&gt;
 {% for item in items %}
   &lt;div class=&quot;kss-icons__item&quot;&gt;
@@ -119,6 +119,7 @@ passed as the second argument.</p>
 {% endfor %}
 &lt;/div&gt;
 </code></pre>
+                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
                   </template>
                 </div>
                               </div>
@@ -142,6 +143,8 @@ passed as the second argument.</p>
 <script src="kss-assets/kss.js"></script>
 <script src="kss-assets/rainbow.min.js"></script>
 <script src="kss-assets/main.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/clipboard.min.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/copy-button.js"></script>
 <script src="/themes/custom/a11y_style_guide/src/js/more-slide.js"></script>
 <script src="/themes/custom/a11y_style_guide/src/js/sidebar-slide.js"></script>
 
