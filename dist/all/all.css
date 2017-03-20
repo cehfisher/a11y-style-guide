@@ -695,14 +695,14 @@ body {
     background-position: right;
     padding-right: 40px;
     display: inline-block !important;
-    background-image: url("../assets/chevron_left_round_red.png");
+    background-image: url("../assets/plus_round_red.png");
     background-size: 32px;
     border: 0;
     box-shadow: none;
     background-color: transparent; }
   .more-toggle.more-open h3 {
     content: '';
-    background: url("../assets/chevron_right_round_red.png");
+    background: url("../assets/minus_round_red.png");
     background-size: 32px;
     background-repeat: no-repeat;
     background-position: right; }
