@@ -86,6 +86,12 @@
     }
   }
 
+  .kss-markup pre {
+    border-radius: $border-rd-sm;
+    border: 2px solid $color-gallery;
+    border-left: 2px solid $color-cherry;
+  }
+
   // Sidebar
   .kss-sidebar.kss-fixed,
   .kss-sidebar {

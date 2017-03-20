@@ -2,33 +2,37 @@
 <section class="select-section">
   <h2>Option #1: Select with no grouping</h2>
   <div class="select">
-    <select>
-      <option>First select</option>
-      <option>Option 1.1</option>
-      <option>Option 1.2</option>
+    <label for="section1" class="visuallyhidden">Label for section 1</label>
+    <select id="section1" name="section1">
+      <option label="First select" disabled selected>First select</option>
+      <option label="Option 1.1">Option 1.1</option>
+      <option label="Option 1.2">Option 1.2</option>
     </select>
     <div class="select__arrow"></div>
   </div>
   <div class="select">
-    <select>
-      <option>Second select</option>
-      <option>Option 2.1</option>
-      <option>Option 2.2</option>
+    <label for="section2" class="visuallyhidden">Label for section 2</label>
+    <select id="section2" name="section2">
+      <option label="Second select" disabled selected>Second select</option>
+      <option label="Option 2.1">Option 2.1</option>
+      <option label="Option 2.2">Option 2.2</option>
     </select>
     <div class="select__arrow"></div>
   </div>
   <div class="break"></div>
   <h2>Option #2: Select with grouping</h2>
   <div class="select">
-    <select>
-    	<optgroup label="1.01 The History of the World: Part I">
-    		<option value="1.01.1">Lecture 01: In the Beginning</option>
-    		<option value="1.01.2">Lecture 02: Stuck in the Middle</option>
-    		<option value="1.01.3">Lecture 03: At the End</option>
-    	</optgroup>
-    	<optgroup label="1.02 The History of the World: Part II">
-    		<option value="1.02.1">Lecture 01: Wait! There's More</option>
-    	</optgroup>
+    <label for="lecture" class="visuallyhidden">Choose a Lecture</label>
+    <select id="lecture" name="lecture">
+      <option label="Choose a Lecture" disabled selected>Choose a Lecture</option>
+      <optgroup label="1.0 The History of the World: Part I">
+        <option label="Lecture 1.1" value="1.1">Lecture 1.1: In the Beginning</option>
+        <option label="Lecture 1.2" value="1.2">Lecture 1.2: Stuck in the Middle</option>
+        <option label="Lecture 1.3" value="1.3">Lecture 1.3: At the End</option>
+      </optgroup>
+      <optgroup label="2.0 The History of the World: Part II">
+        <option label="Lecture 2.2" value="2.1">Lecture 2.1: Wait! There's More</option>
+      </optgroup>
     </select>
     <div class="select__arrow"></div>
   </div>

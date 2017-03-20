@@ -54,6 +54,11 @@
   #kss-node .kss-description blockquote li {
     list-style: none; }
 
+#kss-node .kss-markup pre {
+  border-radius: 4px;
+  border: 2px solid #eeeeee;
+  border-left: 2px solid #e00000; }
+
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
   height: 100% !important;
