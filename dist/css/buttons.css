@@ -13,7 +13,7 @@ button {
   font-size: 1rem;
   height: 48px;
   position: relative;
-  margin: 0.5rem; }
+  margin: 0.5rem 0; }
   [type='submit']:hover, [type='submit']:focus,
   button:hover,
   button:focus {
@@ -37,7 +37,7 @@ button {
   font-size: 1rem;
   height: 48px;
   position: relative;
-  margin: 0.5rem;
+  margin: 0.5rem 0;
   line-height: 0.9; }
   .button:hover, .button:focus {
     background-color: #a51323;
@@ -60,7 +60,7 @@ button {
   font-size: 1rem;
   height: 48px;
   position: relative;
-  margin: 0.5rem;
+  margin: 0.5rem 0;
   color: #e00000;
   background-color: transparent;
   border: 3px solid #e00000; }
@@ -101,7 +101,7 @@ button {
   font-size: 1rem;
   height: 48px;
   position: relative;
-  margin: 0.5rem;
+  margin: 0.5rem 0;
   line-height: 0.9;
   padding: 0.8rem 2rem 0.8rem 2.5rem; }
   .button-icon:hover, .button-icon:focus {
@@ -131,7 +131,7 @@ button {
     font-size: 1rem;
     height: 48px;
     position: relative;
-    margin: 0.5rem;
+    margin: 0.5rem 0;
     color: #e00000;
     background-color: transparent;
     border: 3px solid #e00000;

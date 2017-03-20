@@ -60,8 +60,11 @@
               </h2>
 
                               <div class="kss-description">
-                  <p>This is a list component.</p>
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</blockquote>
+                  <ul>
+ <li>to-do</li>
+</ul>
+
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</div></div><div class="markup"></div>
 
 
                 </div>
@@ -72,14 +75,8 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    
-<section class="lists-section">
-  <h3>Example #1</h3>
-  </section>
-<div class="break"></div>
-<section class="lists">
-  <h3>Example #2</h3>
-  </section>
+                    <section class="lists-section">
+</section>
 
                   </div>
                 </div>
@@ -87,24 +84,7 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code id="post-shortlink" data-language="html">{{ attach_library(&#039;theme_name/lists&#039;) }}
-&lt;section class=&quot;lists-section&quot;&gt;
-  &lt;h3&gt;Example #1&lt;/h3&gt;
-  {% for item in items %}
-  &lt;article aria-labelledby=&quot;sample-lists1&quot; class=&quot;sample-lists__item&quot;&gt;
-    &lt;h3&gt;{{ item.title }}&lt;/h3&gt;
-    &lt;p&gt;{{ item.desc }}&lt;/p&gt;
-  &lt;/article&gt;
-  {% endfor %}
-&lt;/section&gt;
-&lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-&lt;section class=&quot;lists&quot;&gt;
-  &lt;h3&gt;Example #2&lt;/h3&gt;
-  {% for item in items %}
-  &lt;ul aria-labelledby=&quot;sample-lists2&quot; class=&quot;sample-lists__item&quot;&gt;
-    &lt;li&gt;{{ item.title }}: {{ item.desc }}&lt;/li&gt;
-  &lt;/ul&gt;
-  {% endfor %}
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;lists-section&quot;&gt;
 &lt;/section&gt;
 </code></pre>
                     <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>

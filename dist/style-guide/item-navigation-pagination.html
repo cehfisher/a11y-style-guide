@@ -64,7 +64,7 @@
   <li>word</li>
 </ul>
 
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</blockquote>
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</div></div><div class="markup"></div>
 
 
                 </div>
@@ -75,18 +75,27 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    
-<section class="pagination-section">
-  <nav role="navigation" aria-label="pagination">
-    <ol class="pagination">
-    	<li class="current"><a href="">1</a></li>
-    	<li><a href="">2</a></li>
-    	<li><a href="">3</a></li>
-    	<li><a href="">4</a></li>
-    	<li><a href="">5</a></li>
-    	<li><a href="">6</a></li>
-    	<li><a href="">7</a></li>
-    </ol>
+                    <section class="pagination-section">
+  <nav aria-label="page navigation">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span>Previous</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item active"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item ml-0_5">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span>Next</span>
+        </a>
+      </li>
+    </ul>
   </nav>
 </section>
 
@@ -96,18 +105,27 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code id="post-shortlink" data-language="html">{{ attach_library(&#039;theme_name/pagination&#039;) }}
-&lt;section class=&quot;pagination-section&quot;&gt;
-  &lt;nav role=&quot;navigation&quot; aria-label=&quot;pagination&quot;&gt;
-    &lt;ol class=&quot;pagination&quot;&gt;
-    	&lt;li class=&quot;current&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-    	&lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-    	&lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-    	&lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
-    	&lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
-    	&lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;6&lt;/a&gt;&lt;/li&gt;
-    	&lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;7&lt;/a&gt;&lt;/li&gt;
-    &lt;/ol&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;pagination-section&quot;&gt;
+  &lt;nav aria-label=&quot;page navigation&quot;&gt;
+    &lt;ul class=&quot;pagination&quot;&gt;
+      &lt;li class=&quot;page-item&quot;&gt;
+        &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;previous&quot;&gt;
+          &lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt;
+          &lt;span&gt;Previous&lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;page-item active&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;page-item ml-0_5&quot;&gt;
+        &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;
+          &lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt;
+          &lt;span&gt;Next&lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/nav&gt;
 &lt;/section&gt;
 </code></pre>

@@ -16,6 +16,11 @@ body {
   border-bottom: 1px solid $color-gallery;
 }
 
+.markup {
+  margin: 1.5rem 0;
+  border-bottom: 1px solid $color-gallery;
+}
+
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -90,4 +95,8 @@ body {
 
 .bold {
   font-weight: bold !important;
+}
+
+.js-show-markup {
+  margin: $padding-xsm 0;
 }
