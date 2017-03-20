@@ -15,3 +15,51 @@ body {
   padding: 0;
   position: absolute;
   width: 1px; }
+
+.guidelines {
+  border-left: 2px solid #eeeeee;
+  margin-left: 60px;
+  padding: 0 0 0 14px;
+  position: relative; }
+  .guidelines::before {
+    content: '';
+    background: url("../assets/w3c.png") no-repeat;
+    background-size: 50px;
+    float: left;
+    clear: both;
+    width: 50px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: auto;
+    left: -60px;
+    text-align: left; }
+
+.more-content {
+  display: none;
+  margin-bottom: 2rem; }
+
+.more-toggle {
+  position: relative; }
+  .more-toggle h3 {
+    margin: 0 0 20px !important;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 40px;
+    display: inline-block !important;
+    background-image: url("../assets/plus_round_red.png");
+    background-size: 32px;
+    border: 0;
+    box-shadow: none;
+    background-color: transparent; }
+  .more-toggle.more-open h3 {
+    content: '';
+    background: url("../assets/minus_round_red.png");
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: right; }
+  .more-toggle:hover, .more-toggle:focus, .more-toggle:active {
+    border: 0;
+    box-shadow: none;
+    background-color: transparent; }

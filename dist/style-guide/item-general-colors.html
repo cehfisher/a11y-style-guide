@@ -60,12 +60,17 @@
               </h2>
 
                               <div class="kss-description">
-                  <p>All color variables should be prefixed with <code>$color-</code>.
-This makes it easy to figure out what a variable
-is for later.</p>
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast" target="_blank">1.4.1. Use of Color</a> - Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)</blockquote><br>
+                  <p><h3>Accessibility Tips</h3></p>
+<ul>
+ <li>Avoid using color <em>only</em> to communicate information. In the case of links, use another identifier such as bold or underline to indicate a link verses using color alone.</li>
+ <li>Some users have difficulty reading text if there is too little contrast between foreground and background. To meet Level AA, text must have a contrast ratio of at least 4.5:1 (or 3:1 for large text). In order to meet the guidelines at the stricter Level AAA, the contrast ratio must be at least 7:1 (or 4.5:1 for large text).</li>
+</ul>
 
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for [exceptions]. (Level AA)</blockquote>
+<div class="more-wrap"><div class="more-toggle"><h3>Accessibility Tools</h3></div><div class="more-content"><a href="http://colorsafe.co/" target="_blank">Color Safe</a><br><br><a href="http://contrastchecker.com/" target="_blank">Contrast Checker</a><br><br><a href="http://www.color-blindness.com/coblis-color-blindness-simulator/" target="_blank">Color Blindness Simulator</a></div></div>
+
+
+
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-without-color" target="_blank">1.4.1. Use of Color</a> - Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for some cases.</div></div>
 
 
                 </div>
@@ -207,6 +212,7 @@ is for later.</p>
 <script src="kss-assets/kss.js"></script>
 <script src="kss-assets/rainbow.min.js"></script>
 <script src="kss-assets/main.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/more-slide.js"></script>
 <script src="/themes/custom/a11y_style_guide/src/js/sidebar-slide.js"></script>
 
 

@@ -11,7 +11,9 @@
   margin: 0;
   background: url("../assets/hr.png") repeat-x 0 0;
   border: 0;
-  float: left; }
+  float: left;
+  clear: both;
+  width: 100%; }
 
 #kss-node .kss-modifier {
   border-top: 0; }
@@ -43,18 +45,14 @@
 
 #kss-node .kss-description h3 {
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  margin: 20px 0 0; }
 
 #kss-node .kss-description blockquote {
-  border-left: 2px solid #eeeeee; }
-  #kss-node .kss-description blockquote::before {
-    content: '';
-    display: block;
-    background: url("../assets/w3c.png") no-repeat;
-    width: 55px;
-    height: 25px;
-    background-size: 50px;
-    float: left; }
+  border-left: 0;
+  padding: 0; }
+  #kss-node .kss-description blockquote li {
+    list-style: none; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -77,7 +75,7 @@
     text-decoration: none;
     padding-top: 0;
     text-decoration: none;
-    margin-top: -0.5rem; }
+    margin-top: -1rem; }
 
 #kss-node .kss-menu > .kss-menu-item {
   padding: 0.5rem;
@@ -123,7 +121,7 @@
   margin-bottom: 0;
   color: #e00000;
   text-decoration: none;
-  font-weight: normal; }
+  font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
   #kss-node h2 > a:hover,
   #kss-node h2 > a:focus,
@@ -225,5 +223,5 @@
   transform: translateX(100%);
   background: url("../assets/chevron_right_round_red.png") no-repeat;
   background-size: 32px;
-  right: 40px;
+  right: 11.5%;
   top: 5px; }
