@@ -64,7 +64,7 @@
   <li>Place the breadcrumb in a nav element with role=&quot;navigation&quot;. The nav element is also marked-up with aria-label=&quot;Breadcrumbs&quot; to describe the type of navigation.</li>
 </ul>
 
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</blockquote>
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location" target="_blank">2.4.8 Location</a>: Information about the user&#39;s location within a set of Web pages is available. (Level AAA)</div></div>
 
 
                 </div>
@@ -77,12 +77,27 @@
                   <div class="kss-modifier-example">
                     
 <section class="breadcrumbs-section">
+  <h2>Option #1: List styling</h2>
   <nav role="navigation" aria-label="breadcrumbs">
     <ol class="breadcrumb">
-      <li class="breadcrumb__item"><a href="#">Grandparent page</a></li>
-      <li class="breadcrumb__item"><a href="#">Parent page</a></li>
-      <li class="breadcrumb__item">Current page</li>
+      <li class="breadcrumb-item active">Home</li>
     </ol>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active">Parent</li>
+    </ol>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Parent</a></li>
+      <li class="breadcrumb-item active">Child</li>
+    </ol>
+  </nav>
+  <div class="break"></div>
+  <h2>Option #2: No list styling</h2>
+  <nav role="navigation" aria-label="breadcrumbs" class="breadcrumb">
+    <a class="breadcrumb-item" href="#">Home</a>
+    <a class="breadcrumb-item" href="#">Parent</a>
+    <span class="breadcrumb-item active">Child</span>
   </nav>
 </section>
 
@@ -94,12 +109,27 @@
                   <template>
                     <pre><code id="post-shortlink" data-language="html">{{ attach_library(&#039;theme_name/breadcrumbs&#039;) }}
 &lt;section class=&quot;breadcrumbs-section&quot;&gt;
+  &lt;h2&gt;Option #1: List styling&lt;/h2&gt;
   &lt;nav role=&quot;navigation&quot; aria-label=&quot;breadcrumbs&quot;&gt;
     &lt;ol class=&quot;breadcrumb&quot;&gt;
-      &lt;li class=&quot;breadcrumb__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Grandparent page&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;breadcrumb__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Parent page&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;breadcrumb__item&quot;&gt;Current page&lt;/li&gt;
+      &lt;li class=&quot;breadcrumb-item active&quot;&gt;Home&lt;/li&gt;
     &lt;/ol&gt;
+    &lt;ol class=&quot;breadcrumb&quot;&gt;
+      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;breadcrumb-item active&quot;&gt;Parent&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;ol class=&quot;breadcrumb&quot;&gt;
+      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Parent&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;breadcrumb-item active&quot;&gt;Child&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/nav&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h2&gt;Option #2: No list styling&lt;/h2&gt;
+  &lt;nav role=&quot;navigation&quot; aria-label=&quot;breadcrumbs&quot; class=&quot;breadcrumb&quot;&gt;
+    &lt;a class=&quot;breadcrumb-item&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+    &lt;a class=&quot;breadcrumb-item&quot; href=&quot;#&quot;&gt;Parent&lt;/a&gt;
+    &lt;span class=&quot;breadcrumb-item active&quot;&gt;Child&lt;/span&gt;
   &lt;/nav&gt;
 &lt;/section&gt;
 </code></pre>

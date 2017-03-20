@@ -85,7 +85,7 @@ a {
   margin-bottom: 0;
   color: #e00000;
   text-decoration: none;
-  font-weight: 100; }
+  font-weight: bold; }
   h1 > a:hover, h1 > a:focus, h1 > a:active,
   h2 > a:hover,
   h2 > a:focus,
@@ -454,6 +454,23 @@ li {
   list-style: disc; }
 
 
+.breadcrumb {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  clear: both;
+  list-style: none; }
+  .breadcrumb .breadcrumb-item {
+    float: left;
+    list-style: none; }
+    .breadcrumb .breadcrumb-item::after {
+      display: inline-block;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      color: #464646;
+      font-weight: bold;
+      content: ' / '; }
+    .breadcrumb .breadcrumb-item:last-child::after {
+      display: none; }
 
 [type='submit'],
 button {
@@ -624,7 +641,6 @@ button {
 
 .control--checkbox input:disabled ~ .control__indicator::after {
   border-color: #e00000; }
-
 
 
 
