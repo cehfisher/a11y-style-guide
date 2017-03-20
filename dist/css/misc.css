@@ -16,24 +16,13 @@ body {
   position: absolute;
   width: 1px; }
 
-.more {
-  height: 0;
-  visibility: hidden;
-  position: relative; }
-
-.more-open .more {
-  height: auto;
-  visibility: visible;
-  padding: 0;
-  margin-bottom: 30px; }
-
-.more-open .guidelines {
+.guidelines {
   border-left: 2px solid #eeeeee;
   margin-left: 60px;
-  padding: 0 0 0 14px; }
-  .more-open .guidelines::before {
+  padding: 0 0 0 14px;
+  position: relative; }
+  .guidelines::before {
     content: '';
-    display: block;
     background: url("../assets/w3c.png") no-repeat;
     background-size: 50px;
     float: left;
@@ -46,6 +35,10 @@ body {
     right: auto;
     left: -60px;
     text-align: left; }
+
+.more-content {
+  display: none;
+  margin-bottom: 2rem; }
 
 .more-toggle {
   position: relative; }

@@ -1,5 +1,4 @@
 !((document, $) => {
-  'use strict';
 
   // Toggle on click.
   $('.more-toggle').on('click', function() {
@@ -10,5 +9,11 @@
 
     // Cancel the click event.
     return false;
+  });
+
+  $('.more-toggle').on('click', function() {
+  	$parent_box = $(this).closest('.more-wrap');
+  	$parent_box.siblings().find('.more-content').slideUp();
+  	$parent_box.find('.more-content').slideToggle(1000, 'swing');
   });
 })(document, jQuery);

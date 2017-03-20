@@ -27,27 +27,14 @@ body {
   width: 1px;
 }
 
-.more {
-  height: 0;
-  visibility: hidden;
-  position: relative;
-}
-
-.more-open .more {
-  height: auto;
-  visibility: visible;
-  padding: 0;
-  margin-bottom: 30px;
-}
-
-.more-open .guidelines {
+.guidelines {
   border-left: 2px solid $color-gallery;
   margin-left: 60px;
   padding: 0 0 0 14px;
+  position: relative;
 
   &::before {
     content: '';
-    display: block;
     background: url('#{$asset-path}/w3c.png') no-repeat;
     background-size: 50px;
     float: left;
@@ -61,6 +48,11 @@ body {
     left: -60px;
     text-align: left;
   }
+}
+
+.more-content {
+  display: none;
+  margin-bottom: $padding-md;
 }
 
 .more-toggle {
