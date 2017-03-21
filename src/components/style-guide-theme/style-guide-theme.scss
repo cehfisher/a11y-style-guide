@@ -23,6 +23,15 @@
     }
   }
 
+  .kss-depth-2 {
+    margin: 0;
+    background: url('#{$asset-path}/hr.png') repeat-x 0 0;
+    border: 0;
+    float: left;
+    clear: both;
+    width: 100%;
+  }
+
   .kss-modifier {
     border-top: 0;
   }
@@ -33,12 +42,12 @@
   }
 
   .kss-content {
-    padding-left: $padding-xxsm;
+    padding-left: $padding-xsm;
     transition: all 0.5s ease-in-out;
     margin: 0 $padding-sm 0 325px;
 
     li {
-      padding-bottom: $padding-xxsm;
+      padding-bottom: $padding-xsm;
     }
   }
 
@@ -59,6 +68,30 @@
     border-radius: $border-rd-sm;
   }
 
+  .kss-description {
+
+    h3 {
+      font-weight: normal;
+      font-style: normal;
+      margin: 20px 0 0;
+    }
+
+    blockquote {
+      border-left: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+      }
+    }
+  }
+
+  .kss-markup pre {
+    border-radius: 0 $border-rd-sm $border-rd-sm 0;
+    border: 2px solid $color-gallery;
+    border-left: 5px solid $color-cherry;
+  }
+
   // Sidebar
   .kss-sidebar.kss-fixed,
   .kss-sidebar {
@@ -72,22 +105,22 @@
     z-index: 1;
 
     .kss-nav {
-      padding: $padding-xxsm 0;
-      margin: $padding-xxsm (-$padding-xxsm);
-      max-height: calc( 125vh - 44px - 68px - 30px);
-      overflow-y: scroll;
+      padding: $padding-xsm 0;
+      margin: $padding-xsm (-$padding-xsm);
+      max-height: calc(125vh - 44px - 68px - 30px);
+      overflow-y: auto;
     }
 
     .kss-sidebar-inner {
       text-decoration: none;
       padding-top: 0;
       text-decoration: none;
-      margin-top: -$padding-xxsm;
+      margin-top: -$padding-sm;
     }
   }
 
   .kss-menu > .kss-menu-item {
-    padding: $padding-xxsm;
+    padding: $padding-xsm;
     border-bottom: 1px solid $color-silver;
 
     &:last-child {
@@ -133,7 +166,7 @@
     margin-bottom: 0;
     color: $color-cherry;
     text-decoration: none;
-    font-weight: 100;
+    font-weight: bold;
 
     &:hover,
     &:focus,
@@ -155,6 +188,7 @@
     text-align: left;
     color: $color-midnight;
     text-decoration: none;
+    font-weight: normal;
   }
 
   .kss-depth-1 .kss-title,
@@ -181,7 +215,7 @@
   h4,
   h5,
   h6 {
-    font-weight: 100;
+    font-weight: normal;
   }
 
   blockquote {
@@ -241,6 +275,6 @@
   transform: translateX(100%);
   background: url('#{$asset-path}/chevron_right_round_red.png') no-repeat;
   background-size: 32px;
-  right: 35px;
+  right: 11.5%;
   top: 5px;
 }

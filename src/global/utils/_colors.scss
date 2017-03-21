@@ -1,12 +1,15 @@
 // Colors
 //
-// All color variables should be prefixed with `$color-`.
-// This makes it easy to figure out what a variable
-// is for later.
+// <ul>
+//  <li>Avoid using color *only* to communicate information. In the case of links, use another identifier such as bold or underline to indicate a link verses using color alone.</li>
+//  <li>Some users have difficulty reading text if there is too little contrast between foreground and background. To meet Level AA, text must have a contrast ratio of at least 4.5:1 (or 3:1 for large text). In order to meet the guidelines at the stricter Level AAA, the contrast ratio must be at least 7:1 (or 4.5:1 for large text).</li>
+// </ul>
 //
-// <blockquote><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast" target="_blank">1.4.1. Use of Color</a> - Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)</blockquote>
+// <div class="more-wrap"><div class="more-toggle"><h3>Accessibility Tools</h3></div><div class="more-content"><a href="http://colorsafe.co/" target="_blank">Color Safe</a> - accessible color palettes based on WCAG Guidelines<br><br><a href="http://contrastchecker.com/" target="_blank">Contrast Checker</a> - test color contrast combinations based on WCAG Guidelines<br><br><a href="http://www.color-blindness.com/coblis-color-blindness-simulator/" target="_blank">Color Blindness Simulator</a> - see how your site looks to a person with one of the various forms of color blindness</div></div>
 //
-// <blockquote><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for [exceptions]. (Level AA)</blockquote><hr>
+//
+//
+// <div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-without-color" target="_blank">1.4.1. Use of Color</a>: Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast" target="_blank">1.4.3 Contrast (Minimum)</a>: The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for some cases. (Level AA)</div></div>
 //
 //
 //
@@ -29,6 +32,9 @@
 // </div>
 // <div class="kss-swatch" style="background-color: #0a3055">
 //   <div class="kss-swatch__hex">$color-navy<br>#0a3055</div>
+// </div>
+// <div class="kss-swatch" style="background-color: #ffa0e5">
+//   <div class="kss-swatch__hex">$color-ballet-slipper<br>#ffa0e5</div>
 // </div>
 // <div class="kss-swatch" style="background-color: #550055">
 //   <div class="kss-swatch__hex">$color-eggplant<br>#550055</div>
@@ -60,7 +66,7 @@
 //   <div class="kss-swatch__hex">$color-white<br>#ffffff</div>
 // </div>
 //
-// Style guide: Styling.colors
+// Style guide: General.colors
 
 // Primary
 $color-cherry: #e00000;
@@ -69,6 +75,7 @@ $color-sea-glass: #7fffd4;
 $color-grass: #3cf73c;
 $color-cornflower: #4083ae;
 $color-navy: #0a3055;
+$color-ballet-slipper: #ffa0e5;
 $color-eggplant: #550055;
 
 // Grays

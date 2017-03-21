@@ -1,0 +1,14 @@
+<section class="search-section">
+  <h3>Option #1: Hide the label element</h3>
+	<label for="search" class="visuallyhidden">Search the site</label>
+	<input type="search" name="search" id="search" class="search-form__input" placeholder="Search the site" />
+	<button type="submit">Search</button>
+  <div class="break"></div>
+  <h3>Option #2: Use aria-label</h3>
+  <input type="search" name="search" aria-label="Search">
+  <button type="submit">Search</button>
+  <div class="break"></div>
+  <h3>Option #3: Use the title attribute</h3>
+  <input title="Search" type="search" name="search">
+  <button type="submit">Search</button>
+</section>

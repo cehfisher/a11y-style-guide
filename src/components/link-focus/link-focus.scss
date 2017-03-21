@@ -1,20 +1,23 @@
 // Link Focus
 //
 // <ul>
-//  <li>List of bullets</li>
+//  <li>Do not set your site's link focus to `outline: none`. Never. Ever.</li>
+//  <li>If you have multiple form fields on your site or you see the dreaded `outline: none` in your base code, you can reset the browser defaults by adding the code:
+//  <pre>
+//  a:focus {
+//    outline: auto 2px Highlight; // for non-webkit browsers
+//    outline: auto 5px -webkit-focus-ring-color; // for webkit browsers
+//  }</pre></li>
+//  <li>Of course you can create your own focus styles to match your theme or to make the default browser styles more prominent, just make sure they are visible by tabbing and obvious to your users.</li>
 // </ul>
 //
-// <blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">2.4.7 Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. (Level AA)</blockquote><hr>
+// <div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-focus-visible" target="_blank">2.4.7 Focus Visible</a>: Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. (Level AA)</div></div><div class="markup"></div>
 //
 //
 //
 // Markup: link-focus.twig
 //
-// Style guide: Structure.link-focus
+// Style guide: General.link-focus
 
 // Import site utilities.
 @import '../../global/utils/init';
-
-.links {
-  //to-do
-}

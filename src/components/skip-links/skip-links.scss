@@ -1,20 +1,21 @@
 // Skip Links
 //
 // <ul>
-//  <li>List of bullets</li>
+//  <li>Provide ways for users to skip to important sections of your website. This will help users using screenreaders navigate your site easier and more efficiently.</li>
+//  <li>There is no real theming rule when it comes to styling your skip links, as such a lot of websites tend to hide them with `class="visuallyhidden"`. For skip links, it is more important to include the markup in the first place.</li>
+//  <li>Examples of the different types of "skip" links include:
+//  <pre>Skip to content<br>Skip to search<br>Skip to bottom nav<br>Skip to top navbar<br>Skip to main menu<br>Skip to anything, really</pre></li>
 // </ul>
 //
-// <blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">2.4.1 Bypass Blocks</a> - A mechanism is available to bypass blocks of content that are repeated on multiple Web pages. (Level A)</blockquote><hr>
+// <div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-skip" target="_blank">2.4.1 Bypass Blocks</a>: A mechanism is available to bypass blocks of content that are repeated on multiple Web pages. (Level A)</div></div><div class="markup"></div>
 //
 //
 //
 // Markup: skip-links.twig
 //
-// Style guide: Structure.skip-links
+// Style guide: General.skip-links
 
 // Import site utilities.
 @import '../../global/utils/init';
 
-.links {
-  //to-do
-}
+// to-do

@@ -25,7 +25,7 @@
           <ul class="kss-menu">
             <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
                           <li class="kss-menu-item">
-                <a href="section-fonts.html"><span class="kss-ref">1</span><span class="kss-name">Fonts</span></a>
+                <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
                               </li>
                           <li class="kss-menu-item">
                 <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
@@ -34,10 +34,10 @@
                 <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-structure.html"><span class="kss-ref">4</span><span class="kss-name">Structure</span></a>
+                <a href="section-navigation.html"><span class="kss-ref">4</span><span class="kss-name">Navigation</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-styling.html"><span class="kss-ref">5</span><span class="kss-name">Styling</span></a>
+                <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
                               </li>
                           <li class="kss-menu-item">
                 <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
@@ -70,7 +70,8 @@
  <li>To “hide” elements from a screen reader in an SVG add <code>role=&quot;presentation&quot;</code></li>
 </ul>
 
-<p><blockquote><a href="https://www.w3.org/TR/WCAG20/#text-equiv" target="_blank">1.1.1. Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for [some exceptions]. (Level A)</blockquote><hr></p>
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</div></div><div class="markup"></div>
+
 
                 </div>
               
@@ -80,10 +81,9 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    
-<section class="svgs-section">
+                    <section class="svgs-section">
   <div class="svgs">
-    <h3>SVG with image role</h3>
+    <h3>Example #1: SVG with image role</h3>
     <svg version="1.1" width="32" height="32" viewBox="0 0 32 32" aria-labelledby="title" aria-describedby="description" role="img">
       <title id="title">Thumbs Up</title>
       <desc id="description">A hand with a thumb pointed upwards in approval. Call it the approval thumb.</desc>
@@ -92,7 +92,7 @@
       </g>
     </svg>
     <div class="break"></div>
-    <h3>SVG with link role</h3>
+    <h3>Example #2: SVG with link role</h3>
     <svg version="1.1" width="300" height="60" aria-labelledby="title desc">
       <title id="title">Blue rectangle</title>
       <desc id="desc">A dark blue rectangle with rounded corners and a dark gray border.</desc>
@@ -110,10 +110,9 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/svgs&#039;) }}
-&lt;section class=&quot;svgs-section&quot;&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;svgs-section&quot;&gt;
   &lt;div class=&quot;svgs&quot;&gt;
-    &lt;h3&gt;SVG with image role&lt;/h3&gt;
+    &lt;h3&gt;Example #1: SVG with image role&lt;/h3&gt;
     &lt;svg version=&quot;1.1&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 32 32&quot; aria-labelledby=&quot;title&quot; aria-describedby=&quot;description&quot; role=&quot;img&quot;&gt;
       &lt;title id=&quot;title&quot;&gt;Thumbs Up&lt;/title&gt;
       &lt;desc id=&quot;description&quot;&gt;A hand with a thumb pointed upwards in approval. Call it the approval thumb.&lt;/desc&gt;
@@ -122,7 +121,7 @@
       &lt;/g&gt;
     &lt;/svg&gt;
     &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-    &lt;h3&gt;SVG with link role&lt;/h3&gt;
+    &lt;h3&gt;Example #2: SVG with link role&lt;/h3&gt;
     &lt;svg version=&quot;1.1&quot; width=&quot;300&quot; height=&quot;60&quot; aria-labelledby=&quot;title desc&quot;&gt;
       &lt;title id=&quot;title&quot;&gt;Blue rectangle&lt;/title&gt;
       &lt;desc id=&quot;desc&quot;&gt;A dark blue rectangle with rounded corners and a dark gray border.&lt;/desc&gt;
@@ -134,6 +133,7 @@
   &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>
+                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
                   </template>
                 </div>
                               </div>
@@ -157,7 +157,10 @@
 <script src="kss-assets/kss.js"></script>
 <script src="kss-assets/rainbow.min.js"></script>
 <script src="kss-assets/main.js"></script>
-<script src="/themes/custom/a11y/src/js/sidebar-slide.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/clipboard.min.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/copy-button.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/more-slide.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/sidebar-slide.js"></script>
 
 
 <!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
