@@ -1,9 +1,11 @@
 // Buttons
 //
 // <ul>
-//  <li>A `<button>` doesn't need anything special to work. ARIA's role="button" is already assigned natively.</li>
-//  <li>If you are using a link as a button, add the `role="button"` attribute.</li>
+//  <li>A `<button>` doesn't need anything special to work. ARIA's role="button" is already assigned natively. So if you need a button, use a true `<button>` element.</li>
 //  <li>Add `class="visuallyhidden"` with descriptive text to give more context to the button's purpose.</li>
+//  <li>Do not style regular links to look like buttons. If something navigates to a different URL, it is a link, not a button.</li>
+//  <li>It is nice if your visual semantics (does it look like a button) and ARIA semantics (does it have the `role="button"`) match up, but not necessary.</li>
+//  <li>Remember that `<button>` defaults to type="submit", so you may want to add `type="button"` in order to avoid accidentally submitting forms.</li>
 //  <li>If your button is created entirely with an image/icon, you must include `alt=""` descriptions. If your button includes an image/icon that is decorative, you do not need an `alt=""` description.
 // </ul>
 //
