@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="../all/all.css">
+
+</head>
+<body id="kss-node">
+  <div class="kss-wrapper">
+
+    <div class="kss-sidebar">
+    <button class="toggle"><span class="visuallyhidden">Button to collapse and expand the sidebar</span></button>
+      <div class="kss-sidebar-inner">
+        <header class="kss-header">
+          <h1 class="kss-doc-title">A11Y Style Guide</h1>
+        </header>
+        <nav class="kss-nav">
+          <ul class="kss-menu">
+            <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+                          <li class="kss-menu-item">
+                <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-navigation.html"><span class="kss-ref">4</span><span class="kss-name">Navigation</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
+                              </li>
+                      </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="kss-content">
+      <article role="main" class="kss-article">
+      
+        
+                            <div id="kssref-forms-radio-buttons" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-forms-radio-buttons">
+                  Radio Buttons
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>The <code>&lt;fieldset&gt;</code> surrounds the entire grouping of checkboxes or radio buttons. The <code>&lt;legend&gt;</code> provides a description for the grouping.</li>
+ <li>Some assistive technology reads the legend text for each fieldset, so it should be brief and descriptive. This helps someone using assistive technology to understand the question they are answering with the group of radio buttons.</li>
+ <li>WAI-ARIA provides a grouping role that functions similarly to <code>fieldset</code> and <code>legend</code>. In option #2 the <code>div</code> element has <code>role=group</code> to indicate that the contained elements are members of a group and the <code>aria-labelledby</code> attribute references the id for text that will serve as the label for the group. <strong>Note: </strong>This method is not supported by all browser/AT devices.</li>
+</ul>
+
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/#text-equiv-all" target="_blank">1.1.1 Non-text Content:</a> All non-text content that is presented to the user has a text alternative that serves the equivalent purpose. (Level A)<br><br><a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Info and Relationships:</a> Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)<br><br><a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-descriptive" target="_blank">2.4.6 Headings and Labels:</a> Headings and labels describe topic or purpose. (Level AA)<br><br><a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues">3.3.2 Labels or Instructions:</a> Labels or instructions are provided when content requires user input. (Level A)<br><br><a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv" target="_blank">4.1.2 Name, Role, Value:</a> For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. (Level A)</div></div><div class="markup"></div>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    <section class="radio-buttons-section">
+  <h3>Option #1: Use fieldsets to group options</h3>
+  <fieldset>
+    <legend>What time of the day is best?</legend>
+    <label class="control control--radio">Morning
+      <input type="radio" name="radio"/>
+      <span class="control__indicator"></span>
+    </label>
+    <label class="control control--radio">Night
+      <input type="radio" name="radio"/>
+      <span class="control__indicator"></span>
+    </label>
+  </fieldset>
+  <div class="break"></div>
+  <h3>Option #2: Use WAI-ARIA to group options</h3>
+  <div role="group" aria-labelledby="zeppelin_head">
+    <h4 class="bold" id="zeppelin_head">Who is the best member of Led Zeppelin?</h4>
+    <div>
+      <label class="control control--radio" for="zeppelin_jimmy">
+        <input id="zeppelin_jimmy" type="radio" value="1" name="zeppelin" value="zeppelin_jimmy"/>
+        <span class="control__indicator"></span>
+        <span class="visuallyhidden">The second best Led Zeppelin member is </span>Jimmy Page
+      </label>
+      <label class="control control--radio" for="zeppelin_john_paul">
+        <input id="zeppelin_john_paul" type="radio" value="1" name="zeppelin" value="zeppelin_john_paul"/>
+        <span class="control__indicator"></span>
+        <span class="visuallyhidden">The third best Led Zeppelin member is </span>John Paul Jones
+      </label>
+      <label class="control control--radio" for="zeppelin_robert">
+        <input id="zeppelin_robert" type="radio" value="1" name="zeppelin" value="zeppelin_robert"/>
+        <span class="control__indicator"></span>
+        <span class="visuallyhidden">The very best Led Zeppelin member is </span>Robert Plant
+      </label>
+      <label class="control control--radio" for="zeppelin_john">
+        <input id="zeppelin_john" type="radio" value="1" name="zeppelin" value="zeppelin_john"/>
+        <span class="control__indicator"></span>
+        <span class="visuallyhidden">The forth best Led Zeppelin member is </span>John Bonham
+      </label>
+    </div>
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;radio-buttons-section&quot;&gt;
+  &lt;h3&gt;Option #1: Use fieldsets to group options&lt;/h3&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;What time of the day is best?&lt;/legend&gt;
+    &lt;label class=&quot;control control--radio&quot;&gt;Morning
+      &lt;input type=&quot;radio&quot; name=&quot;radio&quot;/&gt;
+      &lt;span class=&quot;control__indicator&quot;&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;control control--radio&quot;&gt;Night
+      &lt;input type=&quot;radio&quot; name=&quot;radio&quot;/&gt;
+      &lt;span class=&quot;control__indicator&quot;&gt;&lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/fieldset&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Option #2: Use WAI-ARIA to group options&lt;/h3&gt;
+  &lt;div role=&quot;group&quot; aria-labelledby=&quot;zeppelin_head&quot;&gt;
+    &lt;h4 class=&quot;bold&quot; id=&quot;zeppelin_head&quot;&gt;Who is the best member of Led Zeppelin?&lt;/h4&gt;
+    &lt;div&gt;
+      &lt;label class=&quot;control control--radio&quot; for=&quot;zeppelin_jimmy&quot;&gt;
+        &lt;input id=&quot;zeppelin_jimmy&quot; type=&quot;radio&quot; value=&quot;1&quot; name=&quot;zeppelin&quot; value=&quot;zeppelin_jimmy&quot;/&gt;
+        &lt;span class=&quot;control__indicator&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;visuallyhidden&quot;&gt;The second best Led Zeppelin member is &lt;/span&gt;Jimmy Page
+      &lt;/label&gt;
+      &lt;label class=&quot;control control--radio&quot; for=&quot;zeppelin_john_paul&quot;&gt;
+        &lt;input id=&quot;zeppelin_john_paul&quot; type=&quot;radio&quot; value=&quot;1&quot; name=&quot;zeppelin&quot; value=&quot;zeppelin_john_paul&quot;/&gt;
+        &lt;span class=&quot;control__indicator&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;visuallyhidden&quot;&gt;The third best Led Zeppelin member is &lt;/span&gt;John Paul Jones
+      &lt;/label&gt;
+      &lt;label class=&quot;control control--radio&quot; for=&quot;zeppelin_robert&quot;&gt;
+        &lt;input id=&quot;zeppelin_robert&quot; type=&quot;radio&quot; value=&quot;1&quot; name=&quot;zeppelin&quot; value=&quot;zeppelin_robert&quot;/&gt;
+        &lt;span class=&quot;control__indicator&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;visuallyhidden&quot;&gt;The very best Led Zeppelin member is &lt;/span&gt;Robert Plant
+      &lt;/label&gt;
+      &lt;label class=&quot;control control--radio&quot; for=&quot;zeppelin_john&quot;&gt;
+        &lt;input id=&quot;zeppelin_john&quot; type=&quot;radio&quot; value=&quot;1&quot; name=&quot;zeppelin&quot; value=&quot;zeppelin_john&quot;/&gt;
+        &lt;span class=&quot;control__indicator&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;visuallyhidden&quot;&gt;The forth best Led Zeppelin member is &lt;/span&gt;John Bonham
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
+                  </template>
+                </div>
+                              </div>
+
+                                    </div>
+                    </article>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<!-- Fake drupalSettings -->
+<script type="application/json" data-drupal-selector="drupal-settings-json">
+  {}
+</script>
+<!-- / Fake drupalSettings -->
+<script src="/core/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/core/assets/vendor/jquery-once/jquery.once.min.js"></script>
+<script src="/core/assets/vendor/domready/ready.min.js"></script>
+<script src="/core/misc/drupalSettingsLoader.js"></script>
+<script src="/core/misc/drupal.js"></script>
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/rainbow.min.js"></script>
+<script src="kss-assets/main.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/clipboard.min.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/copy-button.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/more-slide.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/sidebar-slide.js"></script>
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

@@ -51,20 +51,20 @@
       <article role="main" class="kss-article">
       
         
-                            <div id="kssref-structure-tables" class="kss-section kss-depth-2">
+                            <div id="kssref-navigation-navbar" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-structure-tables">
-                  Tables
+                <a class="kss-title__permalink" href="#kssref-navigation-navbar">
+                  Navbar
                 </a>
               </h2>
 
                               <div class="kss-description">
                   <ul>
- <li>To create an accessible table, the top row of column headers (th) are placed in a thead. Each one receives the scope=&quot;col&quot; attribute. The first non-actionable (meaning that doesn&#39;t contain a checkbox or menu) column in each row should be marked as a th with a scope=&quot;row&quot; attribute.</li>
+  <li>to-do</li>
 </ul>
 
-<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.<br><br><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.<br><br><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Meaningful Sequence</a> - When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.</div></div><div class="markup"></div>
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</div></div><div class="markup"></div>
 
 
                 </div>
@@ -75,9 +75,34 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <section class="tables-section">
-  <div class="tables">
-  </div>
+                    <section class="navbar-section">
+  <h3>Option #1: List styling</h3>
+  <nav class="navbar">
+    <ul class="nav navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">More Information</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="break"></div>
+  <h3>Option #2: No list styling</h3>
+  <nav class="navbar">
+    <div class="nav navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home</a>
+      <a class="nav-item nav-link" href="#">About Us</a>
+      <a class="nav-item nav-link" href="#">More Information</a>
+      <a class="nav-item nav-link" href="#">Contact Us</a>
+    </div>
+  </nav>
 </section>
 
                   </div>
@@ -86,9 +111,34 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;tables-section&quot;&gt;
-  &lt;div class=&quot;tables&quot;&gt;
-  &lt;/div&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;navbar-section&quot;&gt;
+  &lt;h3&gt;Option #1: List styling&lt;/h3&gt;
+  &lt;nav class=&quot;navbar&quot;&gt;
+    &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+      &lt;li class=&quot;nav-item active&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;About Us&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;More Information&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Option #2: No list styling&lt;/h3&gt;
+  &lt;nav class=&quot;navbar&quot;&gt;
+    &lt;div class=&quot;nav navbar-nav&quot;&gt;
+      &lt;a class=&quot;nav-item nav-link active&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;#&quot;&gt;About Us&lt;/a&gt;
+      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;#&quot;&gt;More Information&lt;/a&gt;
+      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
 &lt;/section&gt;
 </code></pre>
                     <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>

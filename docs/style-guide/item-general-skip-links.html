@@ -51,20 +51,23 @@
       <article role="main" class="kss-article">
       
         
-                            <div id="kssref-structure-tables" class="kss-section kss-depth-2">
+                            <div id="kssref-general-skip-links" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-structure-tables">
-                  Tables
+                <a class="kss-title__permalink" href="#kssref-general-skip-links">
+                  Skip Links
                 </a>
               </h2>
 
                               <div class="kss-description">
                   <ul>
- <li>To create an accessible table, the top row of column headers (th) are placed in a thead. Each one receives the scope=&quot;col&quot; attribute. The first non-actionable (meaning that doesn&#39;t contain a checkbox or menu) column in each row should be marked as a th with a scope=&quot;row&quot; attribute.</li>
+ <li>Provide ways for users to skip to important sections of your website. This will help users using screenreaders navigate your site easier and more efficiently.</li>
+ <li>There is no real theming rule when it comes to styling your skip links, as such a lot of websites tend to hide them with <code>class=&quot;visuallyhidden&quot;</code>. For skip links, it is more important to include the markup in the first place.</li>
+ <li>Examples of the different types of &quot;skip&quot; links include:
+ <pre>Skip to content<br>Skip to search<br>Skip to bottom nav<br>Skip to top navbar<br>Skip to main menu<br>Skip to anything, really</pre></li>
 </ul>
 
-<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.<br><br><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.<br><br><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Meaningful Sequence</a> - When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.</div></div><div class="markup"></div>
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-skip" target="_blank">2.4.1 Bypass Blocks</a>: A mechanism is available to bypass blocks of content that are repeated on multiple Web pages. (Level A)</div></div><div class="markup"></div>
 
 
                 </div>
@@ -75,8 +78,12 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <section class="tables-section">
-  <div class="tables">
+                    <section class="skip-links-section">
+  <div class="skip-links">
+    <a href="#maincontent">Skip to main content</a>
+    <div class="hodor">Hodor hodor; hodor hodor; hodor hodor?! Hodor. Hodor hodor, hodor. Hodor HODOR hodor, hodor hodor... Hodor hodor hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor hodor - hodor, hodor. Hodor hodor? Hodor! Hodor hodor, hodor hodor hodor... Hodor hodor hodor?!</div>
+    <h1><a name="maincontent" id="maincontent"></a> Heading</h1>
+    <p>This is the first real paragraph. All that other stuff was just plain hodor.</p>
   </div>
 </section>
 
@@ -86,8 +93,12 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;tables-section&quot;&gt;
-  &lt;div class=&quot;tables&quot;&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;skip-links-section&quot;&gt;
+  &lt;div class=&quot;skip-links&quot;&gt;
+    &lt;a href=&quot;#maincontent&quot;&gt;Skip to main content&lt;/a&gt;
+    &lt;div class=&quot;hodor&quot;&gt;Hodor hodor; hodor hodor; hodor hodor?! Hodor. Hodor hodor, hodor. Hodor HODOR hodor, hodor hodor... Hodor hodor hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor hodor - hodor, hodor. Hodor hodor? Hodor! Hodor hodor, hodor hodor hodor... Hodor hodor hodor?!&lt;/div&gt;
+    &lt;h1&gt;&lt;a name=&quot;maincontent&quot; id=&quot;maincontent&quot;&gt;&lt;/a&gt; Heading&lt;/h1&gt;
+    &lt;p&gt;This is the first real paragraph. All that other stuff was just plain hodor.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>

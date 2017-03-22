@@ -25,7 +25,7 @@
           <ul class="kss-menu">
             <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
                           <li class="kss-menu-item">
-                <a href="section-fonts.html"><span class="kss-ref">1</span><span class="kss-name">Fonts</span></a>
+                <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
                               </li>
                           <li class="kss-menu-item">
                 <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
@@ -34,48 +34,36 @@
                 <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-structure.html"><span class="kss-ref">4</span><span class="kss-name">Structure</span></a>
+                <a href="section-navigation.html"><span class="kss-ref">4</span><span class="kss-name">Navigation</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
                                   <ul class="kss-menu-child">
                                           <li class="kss-menu-item">
-                        <a href="#kssref-structure-forms">
-                          <span class="kss-ref ">4.1</span
-                            ><span class="kss-name">Forms</span>
-                        </a>
-                      </li>
-                                          <li class="kss-menu-item">
                         <a href="#kssref-structure-headings">
-                          <span class="kss-ref ">4.2</span
+                          <span class="kss-ref ">5.1</span
                             ><span class="kss-name">Headings</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
-                        <a href="#kssref-structure-link-focus">
-                          <span class="kss-ref ">4.3</span
-                            ><span class="kss-name">Link Focus</span>
+                        <a href="#kssref-structure-landmark-roles">
+                          <span class="kss-ref ">5.2</span
+                            ><span class="kss-name">Landmark Roles</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
-                        <a href="#kssref-structure-navigation">
-                          <span class="kss-ref ">4.4</span
-                            ><span class="kss-name">Navigation</span>
-                        </a>
-                      </li>
-                                          <li class="kss-menu-item">
-                        <a href="#kssref-structure-skip-links">
-                          <span class="kss-ref ">4.5</span
-                            ><span class="kss-name">Skip Links</span>
+                        <a href="#kssref-structure-lists">
+                          <span class="kss-ref ">5.3</span
+                            ><span class="kss-name">Lists</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
                         <a href="#kssref-structure-tables">
-                          <span class="kss-ref ">4.6</span
+                          <span class="kss-ref ">5.4</span
                             ><span class="kss-name">Tables</span>
                         </a>
                       </li>
                                       </ul>
-                              </li>
-                          <li class="kss-menu-item">
-                <a href="section-styling.html"><span class="kss-ref">5</span><span class="kss-name">Styling</span></a>
                               </li>
                           <li class="kss-menu-item">
                 <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
@@ -101,56 +89,6 @@
                           </div>
 
                       </div>
-                            <section id="kssref-structure-forms" class="kss-section kss-depth-2">
-            <div class="kss-style">
-                            <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-structure-forms">
-                  Forms
-                </a>
-              </h2>
-
-                              <div class="kss-description">
-                  <ul>
- <li>List of bullets</li>
-</ul>
-
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">1.3.1 Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)</blockquote>
-
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">2.4.6 Headings and Labels</a> - Headings and labels describe topic or purpose. (Level AA)</blockquote>
-
-<p><blockquote><a href="https://www.w3.org/TR/WCAG20/#minimize-error" target="_blank">3.3.2 Labels or Instructions</a> - Labels or instructions are provided when content requires user input. (Level A)</blockquote><hr></p>
-
-                </div>
-              
-                          </div>
-
-                          <div class="kss-modifier-block">
-
-                <div class="kss-modifier kss-modifier-original">
-                  <div class="kss-modifier-example">
-                    
-<section class="forms-section">
-  <div class="forms">
-  </div>
-</section>
-
-                  </div>
-                </div>
-
-                                                <div class="kss-markup">
-                  <button class="js-show-markup">Show Markup Example</button>
-                  <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/forms&#039;) }}
-&lt;section class=&quot;forms-section&quot;&gt;
-  &lt;div class=&quot;forms&quot;&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-</code></pre>
-                  </template>
-                </div>
-                              </div>
-
-                                    </section>
                             <section id="kssref-structure-headings" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
@@ -160,71 +98,15 @@
               </h2>
 
                               <div class="kss-description">
-                  <p>Heading tags were developed to provide information on the structural hierarchy of a document, with <code>&lt;h1&gt;</code> having the highest rank, followed by <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code>.</p>
-<ul>
+                  <ul>
  <li>Navigating through the <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code> give a user an overview of a page and how its content is structured. The <code>&lt;h3&gt;</code> through <code>&lt;h6&gt;</code> elements provide a quick understanding of the details in each section.</li>
  <li>Heading tags should be in order. That means an <code>&lt;h1&gt;</code> is followed by an <code>&lt;h2&gt;</code>, an <code>&lt;h2&gt;</code> is followed by a <code>&lt;h2&gt;</code> or <code>&lt;h3&gt;</code> and so on. It <em>is</em> ok to skip heading levels when going up in order (ex. <code>&lt;h4&gt;</code> to <code>&lt;h1&gt;</code>).</li>
  <li>Keep heading tags consistent. Inconsistently implementing headings can create confusion and frustration for users using assistive technologies.</li>
  <li>Do not style text to give the visual appearance of headings - use actual heading tags.</li>
 </ul>
 
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">1.3.1 Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)</blockquote>
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</div></div><div class="markup"></div>
 
-<p><blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">2.4.6 Headings and Labels</a> - Headings and labels describe topic or purpose. (Level AA)</blockquote><hr></p>
-
-                </div>
-              
-                          </div>
-
-                          <div class="kss-modifier-block">
-
-                <div class="kss-modifier kss-modifier-original">
-                  <div class="kss-modifier-example">
-                    
-<section class="headings-section">
-  <h1>I’m writing the code,</h1>
-  <h2>but I do not realize,</h2>
-  <h3>hours have gone by.</h3>
-  <h4>My eyes are bloodshot,</h4>
-  <h5>My fingertips are bleeding,</h5>
-  <h6>but I carry on.</h6>
-</section>
-
-                  </div>
-                </div>
-
-                                                <div class="kss-markup">
-                  <button class="js-show-markup">Show Markup Example</button>
-                  <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/headings&#039;) }}
-&lt;section class=&quot;headings-section&quot;&gt;
-  &lt;h1&gt;I’m writing the code,&lt;/h1&gt;
-  &lt;h2&gt;but I do not realize,&lt;/h2&gt;
-  &lt;h3&gt;hours have gone by.&lt;/h3&gt;
-  &lt;h4&gt;My eyes are bloodshot,&lt;/h4&gt;
-  &lt;h5&gt;My fingertips are bleeding,&lt;/h5&gt;
-  &lt;h6&gt;but I carry on.&lt;/h6&gt;
-&lt;/section&gt;
-</code></pre>
-                  </template>
-                </div>
-                              </div>
-
-                                    </section>
-                            <section id="kssref-structure-link-focus" class="kss-section kss-depth-2">
-            <div class="kss-style">
-                            <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-structure-link-focus">
-                  Link Focus
-                </a>
-              </h2>
-
-                              <div class="kss-description">
-                  <ul>
- <li>List of bullets</li>
-</ul>
-
-<p><blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">2.4.7 Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. (Level AA)</blockquote><hr></p>
 
                 </div>
               
@@ -234,9 +116,14 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    
-<section class="link-focus-section">
-  <div class="link-focus">
+                    <section class="headings-section">
+  <div>
+    <h1>Heading Level 1</h1>
+    <h2>Heading Level 2</h2>
+    <h3>Heading Level 3</h3>
+    <h4>Heading Level 4</h4>
+    <h5>Heading Level 5</h5>
+    <h6>Heading Level 6</h6>
   </div>
 </section>
 
@@ -246,31 +133,40 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/link-focus&#039;) }}
-&lt;section class=&quot;link-focus-section&quot;&gt;
-  &lt;div class=&quot;link-focus&quot;&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;headings-section&quot;&gt;
+  &lt;div&gt;
+    &lt;h1&gt;Heading Level 1&lt;/h1&gt;
+    &lt;h2&gt;Heading Level 2&lt;/h2&gt;
+    &lt;h3&gt;Heading Level 3&lt;/h3&gt;
+    &lt;h4&gt;Heading Level 4&lt;/h4&gt;
+    &lt;h5&gt;Heading Level 5&lt;/h5&gt;
+    &lt;h6&gt;Heading Level 6&lt;/h6&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>
+                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
                   </template>
                 </div>
                               </div>
 
                                     </section>
-                            <section id="kssref-structure-navigation" class="kss-section kss-depth-2">
+                            <section id="kssref-structure-landmark-roles" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-structure-navigation">
-                  Navigation
+                <a class="kss-title__permalink" href="#kssref-structure-landmark-roles">
+                  Landmark Roles
                 </a>
               </h2>
 
                               <div class="kss-description">
                   <ul>
- <li>List of bullets</li>
+ <li>Add id selectors to titles and use <code>aria-labelledby=&quot;&quot;</code> to link to the title text (example #1).</li>
+ <li>Add decriptive text with <code>aria-label=&quot;&quot;</code> directly in the link (example #2).</li>
+ <li>Turn read more links into buttons, when you can.</li>
 </ul>
 
-<p><blockquote><a href="https://www.w3.org/TR/WCAG20/#consistent-behavior" target="_blank">3.2.3 Consistent Navigation</a> - Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user. (Level AA)</blockquote><hr></p>
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</div></div><div class="markup"></div>
+
 
                 </div>
               
@@ -280,10 +176,8 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    
-<section class="navigation-section">
-  <div class="navigation">
-  </div>
+                    <section class="landmark-roles-section">
+
 </section>
 
                   </div>
@@ -292,31 +186,31 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/navigation&#039;) }}
-&lt;section class=&quot;navigation-section&quot;&gt;
-  &lt;div class=&quot;navigation&quot;&gt;
-  &lt;/div&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;landmark-roles-section&quot;&gt;
+
 &lt;/section&gt;
 </code></pre>
+                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
                   </template>
                 </div>
                               </div>
 
                                     </section>
-                            <section id="kssref-structure-skip-links" class="kss-section kss-depth-2">
+                            <section id="kssref-structure-lists" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-structure-skip-links">
-                  Skip Links
+                <a class="kss-title__permalink" href="#kssref-structure-lists">
+                  Lists
                 </a>
               </h2>
 
                               <div class="kss-description">
                   <ul>
- <li>List of bullets</li>
+ <li>to-do</li>
 </ul>
 
-<p><blockquote><a href="https://www.w3.org/TR/WCAG20/#navigation-mechanisms" target="_blank">2.4.1 Bypass Blocks</a> - A mechanism is available to bypass blocks of content that are repeated on multiple Web pages. (Level A)</blockquote><hr></p>
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</div></div><div class="markup"></div>
+
 
                 </div>
               
@@ -326,10 +220,7 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    
-<section class="skip-links-section">
-  <div class="skip-links">
-  </div>
+                    <section class="lists-section">
 </section>
 
                   </div>
@@ -338,12 +229,10 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/skip-links&#039;) }}
-&lt;section class=&quot;skip-links-section&quot;&gt;
-  &lt;div class=&quot;skip-links&quot;&gt;
-  &lt;/div&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;lists-section&quot;&gt;
 &lt;/section&gt;
 </code></pre>
+                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
                   </template>
                 </div>
                               </div>
@@ -359,12 +248,11 @@
 
                               <div class="kss-description">
                   <ul>
- <li>List of bullets</li>
+ <li>To create an accessible table, the top row of column headers (th) are placed in a thead. Each one receives the scope=&quot;col&quot; attribute. The first non-actionable (meaning that doesn&#39;t contain a checkbox or menu) column in each row should be marked as a th with a scope=&quot;row&quot; attribute.</li>
 </ul>
 
-<blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">1.3.1 Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)</blockquote>
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.<br><br><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.<br><br><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">Meaningful Sequence</a> - When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.</div></div><div class="markup"></div>
 
-<p><blockquote><a href="https://www.w3.org/TR/WCAG20/#content-structure-separation" target="_blank">1.3.2 Meaningful Sequence</a> - When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined. (Level A)</blockquote><hr></p>
 
                 </div>
               
@@ -374,9 +262,8 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    
-<section class="forms-section">
-  <div class="forms">
+                    <section class="tables-section">
+  <div class="tables">
   </div>
 </section>
 
@@ -386,12 +273,12 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/forms&#039;) }}
-&lt;section class=&quot;forms-section&quot;&gt;
-  &lt;div class=&quot;forms&quot;&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;tables-section&quot;&gt;
+  &lt;div class=&quot;tables&quot;&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>
+                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
                   </template>
                 </div>
                               </div>
@@ -415,7 +302,10 @@
 <script src="kss-assets/kss.js"></script>
 <script src="kss-assets/rainbow.min.js"></script>
 <script src="kss-assets/main.js"></script>
-<script src="/themes/custom/a11y/src/js/sidebar-slide.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/clipboard.min.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/copy-button.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/more-slide.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/sidebar-slide.js"></script>
 
 
 <!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->

@@ -25,7 +25,7 @@
           <ul class="kss-menu">
             <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
                           <li class="kss-menu-item">
-                <a href="section-fonts.html"><span class="kss-ref">1</span><span class="kss-name">Fonts</span></a>
+                <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
                               </li>
                           <li class="kss-menu-item">
                 <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
@@ -34,10 +34,10 @@
                 <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-structure.html"><span class="kss-ref">4</span><span class="kss-name">Structure</span></a>
+                <a href="section-navigation.html"><span class="kss-ref">4</span><span class="kss-name">Navigation</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-styling.html"><span class="kss-ref">5</span><span class="kss-name">Styling</span></a>
+                <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
                               </li>
                           <li class="kss-menu-item">
                 <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
@@ -71,13 +71,17 @@ For additional info on any of the subjects, see the links below.</p>
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    
-<section class="references-section">
+                    <section class="references-section">
   <div class="references">
     <h2>ARIA Labels</h2>
     <ul>
       <li><a href="http://www.last-child.com/aria-labelledby-on-lists/">ARIA Labelledby on Lists</a></li>
       <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/ARIA8#ARIA8-examples">Describing the purpose of a link in HTML using aria-label</a></li>
+    </ul>
+    <div class="break"></div>
+    <h2>ARIA Landmark Rules</h2>
+    <ul>
+      <li><a href="http://www.washington.edu/accessibility/web/landmarks/">Washington U Landmark Rules</a></li>
     </ul>
     <div class="break"></div>
     <h2>Scalable vector graphics (SVGs)</h2>
@@ -86,6 +90,7 @@ For additional info on any of the subjects, see the links below.</p>
       <li><a href="https://css-tricks.com/accessible-svgs">Accessible SVGs</li>
     </ul>
   </div>
+  <p>To-do: add dyslexic font, color contrast option, back to top, open new window icon</p>
 </section>
 
                   </div>
@@ -94,13 +99,17 @@ For additional info on any of the subjects, see the links below.</p>
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/references&#039;) }}
-&lt;section class=&quot;references-section&quot;&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;references-section&quot;&gt;
   &lt;div class=&quot;references&quot;&gt;
     &lt;h2&gt;ARIA Labels&lt;/h2&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;http://www.last-child.com/aria-labelledby-on-lists/&quot;&gt;ARIA Labelledby on Lists&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/ARIA8#ARIA8-examples&quot;&gt;Describing the purpose of a link in HTML using aria-label&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+    &lt;h2&gt;ARIA Landmark Rules&lt;/h2&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.washington.edu/accessibility/web/landmarks/&quot;&gt;Washington U Landmark Rules&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
     &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
     &lt;h2&gt;Scalable vector graphics (SVGs)&lt;/h2&gt;
@@ -109,8 +118,10 @@ For additional info on any of the subjects, see the links below.</p>
       &lt;li&gt;&lt;a href=&quot;https://css-tricks.com/accessible-svgs&quot;&gt;Accessible SVGs&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/div&gt;
+  &lt;p&gt;To-do: add dyslexic font, color contrast option, back to top, open new window icon&lt;/p&gt;
 &lt;/section&gt;
 </code></pre>
+                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
                   </template>
                 </div>
                               </div>
@@ -134,7 +145,10 @@ For additional info on any of the subjects, see the links below.</p>
 <script src="kss-assets/kss.js"></script>
 <script src="kss-assets/rainbow.min.js"></script>
 <script src="kss-assets/main.js"></script>
-<script src="/themes/custom/a11y/src/js/sidebar-slide.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/clipboard.min.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/copy-button.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/more-slide.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/sidebar-slide.js"></script>
 
 
 <!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->

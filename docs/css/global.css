@@ -66,7 +66,9 @@ h2 {
 h3 {
   font-size: 1.15rem; }
 
-h4 {
+h4,
+body,
+p {
   font-size: 1rem; }
 
 h5 {
@@ -83,7 +85,7 @@ a {
   margin-bottom: 0;
   color: #e00000;
   text-decoration: none;
-  font-weight: 100; }
+  font-weight: normal; }
   h1 > a:hover, h1 > a:focus, h1 > a:active,
   h2 > a:hover,
   h2 > a:focus,

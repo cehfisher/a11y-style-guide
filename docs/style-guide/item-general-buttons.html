@@ -25,7 +25,7 @@
           <ul class="kss-menu">
             <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
                           <li class="kss-menu-item">
-                <a href="section-fonts.html"><span class="kss-ref">1</span><span class="kss-name">Fonts</span></a>
+                <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
                               </li>
                           <li class="kss-menu-item">
                 <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
@@ -34,10 +34,10 @@
                 <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-structure.html"><span class="kss-ref">4</span><span class="kss-name">Structure</span></a>
+                <a href="section-navigation.html"><span class="kss-ref">4</span><span class="kss-name">Navigation</span></a>
                               </li>
                           <li class="kss-menu-item">
-                <a href="section-styling.html"><span class="kss-ref">5</span><span class="kss-name">Styling</span></a>
+                <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
                               </li>
                           <li class="kss-menu-item">
                 <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
@@ -61,13 +61,15 @@
 
                               <div class="kss-description">
                   <ul>
- <li>A <code>&lt;button&gt;</code> doesn&#39;t need anything special to work. ARIA&#39;s role=&quot;button&quot; is already assigned natively.</li>
- <li>If you are using a link as a button, add the <code>role=&quot;button&quot;</code> attribute.</li>
+ <li>A <code>&lt;button&gt;</code> doesn&#39;t need anything special to work. ARIA&#39;s role=&quot;button&quot; is already assigned natively. So if you need a button, use a true <code>&lt;button&gt;</code> element.</li>
  <li>Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
+ <li>Do not style regular links to look like buttons. If something navigates to a different URL, it is a link, not a button.</li>
+ <li>It is nice if your visual semantics (does it look like a button) and ARIA semantics (does it have the <code>role=&quot;button&quot;</code>) match up, but not necessary.</li>
+ <li>Remember that <code>&lt;button&gt;</code> defaults to type=&quot;submit&quot;, so you may want to add <code>type=&quot;button&quot;</code> in order to avoid accidentally submitting forms.</li>
+ <li>If your button is created entirely with an image/icon, you must include <code>alt=&quot;&quot;</code> descriptions. If your button includes an image/icon that is decorative, you do not need an <code>alt=&quot;&quot;</code> description.
 </ul>
 
-<p><blockquote><a href="https://www.w3.org/TR/WCAG20/#text-equiv" target="_blank">1.1.1. Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for [some exceptions]. (Level A)</blockquote><hr></p>
-
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</div></div><div class="markup"></div>
                 </div>
               
                           </div>
@@ -76,13 +78,13 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    
-<section class="buttons-section">
+                    <section class="buttons-section">
   <div class="buttons ">
     <form action="" method="post">
-      <button type="submit" href="#" class="button">Regular Button</button>
-      <button type="submit" href="#" class="button button--outline">Outline Button</button>
-      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+      <button type="button" href="#" class="button">Regular Button</button>
+      <button type="button" href="#" class="button button--outline">Outline Button</button>
+      <button type="button" href="#" class="button-icon wheelchair">A11Y<span class="visuallyhidden">all the things.</span></button>
+      <button type="button" href="#" class="button-icon heart button--outline">Like<span class="visuallyhidden">the topic this button follows.</span></button>
     </form>
   </div>
 </section>
@@ -98,13 +100,13 @@
                     </div>
                   </div>
                   <div class="kss-modifier-example">
-                    
-<section class="buttons-section">
+                    <section class="buttons-section">
   <div class="buttons buttons--center">
     <form action="" method="post">
-      <button type="submit" href="#" class="button">Regular Button</button>
-      <button type="submit" href="#" class="button button--outline">Outline Button</button>
-      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+      <button type="button" href="#" class="button">Regular Button</button>
+      <button type="button" href="#" class="button button--outline">Outline Button</button>
+      <button type="button" href="#" class="button-icon wheelchair">A11Y<span class="visuallyhidden">all the things.</span></button>
+      <button type="button" href="#" class="button-icon heart button--outline">Like<span class="visuallyhidden">the topic this button follows.</span></button>
     </form>
   </div>
 </section>
@@ -119,13 +121,13 @@
                     </div>
                   </div>
                   <div class="kss-modifier-example">
-                    
-<section class="buttons-section">
+                    <section class="buttons-section">
   <div class="buttons buttons--right">
     <form action="" method="post">
-      <button type="submit" href="#" class="button">Regular Button</button>
-      <button type="submit" href="#" class="button button--outline">Outline Button</button>
-      <a href="#" class="button" role="button">Link Button<span class="visuallyhidden">about the topic this article is pertaining to.</span></a>
+      <button type="button" href="#" class="button">Regular Button</button>
+      <button type="button" href="#" class="button button--outline">Outline Button</button>
+      <button type="button" href="#" class="button-icon wheelchair">A11Y<span class="visuallyhidden">all the things.</span></button>
+      <button type="button" href="#" class="button-icon heart button--outline">Like<span class="visuallyhidden">the topic this button follows.</span></button>
     </form>
   </div>
 </section>
@@ -135,17 +137,18 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code data-language="html">{{ attach_library(&#039;theme_name/buttons&#039;) }}
-&lt;section class=&quot;buttons-section&quot;&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;buttons-section&quot;&gt;
   &lt;div class=&quot;buttons {{modifier_class}}&quot;&gt;
     &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
-      &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Regular Button&lt;/button&gt;
-      &lt;button type=&quot;submit&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Outline Button&lt;/button&gt;
-      &lt;a href=&quot;#&quot; class=&quot;button&quot; role=&quot;button&quot;&gt;Link Button&lt;span class=&quot;visuallyhidden&quot;&gt;about the topic this article is pertaining to.&lt;/span&gt;&lt;/a&gt;
+      &lt;button type=&quot;button&quot; href=&quot;#&quot; class=&quot;button&quot;&gt;Regular Button&lt;/button&gt;
+      &lt;button type=&quot;button&quot; href=&quot;#&quot; class=&quot;button button--outline&quot;&gt;Outline Button&lt;/button&gt;
+      &lt;button type=&quot;button&quot; href=&quot;#&quot; class=&quot;button-icon wheelchair&quot;&gt;A11Y&lt;span class=&quot;visuallyhidden&quot;&gt;all the things.&lt;/span&gt;&lt;/button&gt;
+      &lt;button type=&quot;button&quot; href=&quot;#&quot; class=&quot;button-icon heart button--outline&quot;&gt;Like&lt;span class=&quot;visuallyhidden&quot;&gt;the topic this button follows.&lt;/span&gt;&lt;/button&gt;
     &lt;/form&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>
+                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
                   </template>
                 </div>
                               </div>
@@ -169,7 +172,10 @@
 <script src="kss-assets/kss.js"></script>
 <script src="kss-assets/rainbow.min.js"></script>
 <script src="kss-assets/main.js"></script>
-<script src="/themes/custom/a11y/src/js/sidebar-slide.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/clipboard.min.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/copy-button.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/more-slide.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/sidebar-slide.js"></script>
 
 
 <!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
