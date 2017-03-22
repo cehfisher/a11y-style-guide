@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="../all/all.css">
+
+</head>
+<body id="kss-node">
+  <div class="kss-wrapper">
+
+    <div class="kss-sidebar">
+    <button class="toggle"><span class="visuallyhidden">Button to collapse and expand the sidebar</span></button>
+      <div class="kss-sidebar-inner">
+        <header class="kss-header">
+          <h1 class="kss-doc-title">A11Y Style Guide</h1>
+        </header>
+        <nav class="kss-nav">
+          <ul class="kss-menu">
+            <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+                          <li class="kss-menu-item">
+                <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-navigation.html"><span class="kss-ref">4</span><span class="kss-name">Navigation</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
+                              </li>
+                      </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="kss-content">
+      <article role="main" class="kss-article">
+      
+        
+                            <div id="kssref-general-skip-links" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-general-skip-links">
+                  Skip Links
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>Provide ways for users to skip to important sections of your website. This will help users using screenreaders navigate your site easier and more efficiently.</li>
+ <li>There is no real theming rule when it comes to styling your skip links, as such a lot of websites tend to hide them with <code>class=&quot;visuallyhidden&quot;</code>. For skip links, it is more important to include the markup in the first place.</li>
+ <li>Examples of the different types of &quot;skip&quot; links include:
+ <pre>Skip to content<br>Skip to search<br>Skip to bottom nav<br>Skip to top navbar<br>Skip to main menu<br>Skip to anything, really</pre></li>
+</ul>
+
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-skip" target="_blank">2.4.1 Bypass Blocks</a>: A mechanism is available to bypass blocks of content that are repeated on multiple Web pages. (Level A)</div></div><div class="markup"></div>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    <section class="skip-links-section">
+  <div class="skip-links">
+    <a href="#maincontent">Skip to main content</a>
+    <div class="hodor">Hodor hodor; hodor hodor; hodor hodor?! Hodor. Hodor hodor, hodor. Hodor HODOR hodor, hodor hodor... Hodor hodor hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor hodor - hodor, hodor. Hodor hodor? Hodor! Hodor hodor, hodor hodor hodor... Hodor hodor hodor?!</div>
+    <h1><a name="maincontent" id="maincontent"></a> Heading</h1>
+    <p>This is the first real paragraph. All that other stuff was just plain hodor.</p>
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;skip-links-section&quot;&gt;
+  &lt;div class=&quot;skip-links&quot;&gt;
+    &lt;a href=&quot;#maincontent&quot;&gt;Skip to main content&lt;/a&gt;
+    &lt;div class=&quot;hodor&quot;&gt;Hodor hodor; hodor hodor; hodor hodor?! Hodor. Hodor hodor, hodor. Hodor HODOR hodor, hodor hodor... Hodor hodor hodor... Hodor hodor hodor, hodor, hodor hodor. Hodor hodor; hodor hodor; hodor hodor hodor! Hodor hodor hodor - hodor, hodor. Hodor hodor? Hodor! Hodor hodor, hodor hodor hodor... Hodor hodor hodor?!&lt;/div&gt;
+    &lt;h1&gt;&lt;a name=&quot;maincontent&quot; id=&quot;maincontent&quot;&gt;&lt;/a&gt; Heading&lt;/h1&gt;
+    &lt;p&gt;This is the first real paragraph. All that other stuff was just plain hodor.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
+                  </template>
+                </div>
+                              </div>
+
+                                    </div>
+                    </article>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<!-- Fake drupalSettings -->
+<script type="application/json" data-drupal-selector="drupal-settings-json">
+  {}
+</script>
+<!-- / Fake drupalSettings -->
+<script src="/core/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/core/assets/vendor/jquery-once/jquery.once.min.js"></script>
+<script src="/core/assets/vendor/domready/ready.min.js"></script>
+<script src="/core/misc/drupalSettingsLoader.js"></script>
+<script src="/core/misc/drupal.js"></script>
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/rainbow.min.js"></script>
+<script src="kss-assets/main.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/clipboard.min.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/copy-button.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/more-slide.js"></script>
+<script src="/themes/custom/a11y_style_guide/src/js/sidebar-slide.js"></script>
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>
