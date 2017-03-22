@@ -1,6 +1,6 @@
 <h1>A11Y Style Guide</h1>
 
-This application is a living style guide, generated from KSS documented styles...with an accessibility twist.
+This application is a living style guide, generated from KSS documented styles...with an accessibility twist. See https://cehfisher.github.io/a11y-style-guide/style-guide for a live demo of the style guide.
 
 <h2>How this all got started</h2>
 <p>We wear a lot of hats as front-end developers. Depending on the client or company you work for, you may be the designer, UX/UI specialist, site-builder, QA tester, and developer all rolled into one. How can we possibly add the accessibility hat on top of all that? What accessible pieces should we even include? Which pieces are easy wins vs. impossible juggernauts? How do we implement inclusive design and development when a project does not have a lot of time or budget to include that piece?</p>
