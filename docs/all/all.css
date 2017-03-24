@@ -648,21 +648,64 @@ button, html [type='button'],
     content: '\267F';
     color: #464646; }
 
-.control--checkbox .control__indicator::after {
+.checkbox.row label {
+  display: block;
+  float: left; }
+
+.checkbox.column {
+  margin-top: -1.5rem;
+  padding: 0 1rem 1rem; }
+  .checkbox.column label {
+    display: block; }
+
+.checkbox input[type="checkbox"] {
+  opacity: 0; }
+
+.checkbox label {
+  position: relative;
+  padding: 0 3rem 0 2rem; }
+
+.checkbox label::before,
+.checkbox label::after {
+  position: absolute;
+  content: '';
+  display: inline-block; }
+
+.checkbox label::before {
+  height: 22px;
+  width: 22px;
+  left: 0;
+  top: 1px;
+  background: #eeeeee; }
+
+.checkbox label::after {
   left: 7px;
   top: 3px;
-  width: 6px;
-  height: 11px;
+  width: 8px;
+  height: 14px;
   border: solid #ffffff;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg); }
 
-.control--checkbox input:disabled ~ .control__indicator::after {
-  border-color: #e00000; }
+.checkbox input[type="checkbox"] + label::after {
+  content: none; }
+
+.checkbox input[type="checkbox"]:checked + label::after {
+  content: ''; }
+
+.checkbox input[type="checkbox"]:checked + label::before {
+  background: #e00000; }
+
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: auto 2px Highlight;
+  outline: auto 5px -webkit-focus-ring-color; }
 
 
 
 
+a:focus {
+  outline: auto 2px Highlight;
+  outline: auto 5px -webkit-focus-ring-color; }
 
 
 
@@ -805,72 +848,54 @@ abbr[title] {
     padding: 8px 16px;
     text-decoration: none; }
 
-.control-group {
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  width: 200px;
-  height: 210px;
-  margin: 10px; }
-
-.control {
+.radio.row label {
   display: block;
+  float: left; }
+
+.radio.column {
+  margin-top: -1.5rem;
+  padding: 0 1rem 1rem; }
+  .radio.column label {
+    display: block; }
+
+.radio input[type="radio"] {
+  opacity: 0; }
+
+.radio label {
   position: relative;
-  padding-left: 30px;
-  margin-bottom: 15px;
-  cursor: pointer; }
-  .control input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0; }
+  padding: 0 3rem 0 2rem; }
 
-.control__indicator {
+.radio label::before,
+.radio label::after {
   position: absolute;
-  top: 2px;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background: #eeeeee; }
+  content: '';
+  display: inline-block; }
 
-.control--radio .control__indicator {
+.radio label::before {
+  height: 22px;
+  width: 22px;
+  left: 0;
+  top: 1px;
+  background: #eeeeee;
   border-radius: 50%; }
 
-.control:hover input ~ .control__indicator,
-.control input:focus ~ .control__indicator {
-  background: #eeeeee; }
+.radio label::after {
+  left: 4px;
+  top: 5px;
+  width: 13px;
+  height: 13px;
+  border: 7px solid #e00000;
+  border-radius: 50%; }
 
-.control input:checked ~ .control__indicator {
-  background: #e00000; }
+.radio input[type="radio"] + label::after {
+  content: none; }
 
-.control:hover input:not([disabled]):checked ~ .control__indicator,
-.control input:checked:focus ~ .control__indicator {
-  background: #e00000; }
+.radio input[type="radio"]:checked + label::after {
+  content: ''; }
 
-.control input:disabled ~ .control__indicator {
-  background: #eeeeee;
-  opacity: 0.6;
-  pointer-events: none; }
-
-.control__indicator::after {
-  content: '';
-  position: absolute;
-  display: none; }
-
-.control input:checked ~ .control__indicator::after {
-  display: block; }
-
-.control--radio .control__indicator::after {
-  left: 7px;
-  top: 7px;
-  height: 6px;
-  width: 6px;
-  border-radius: 50%;
-  background: #ffffff; }
-
-.control--radio input:disabled ~ .control__indicator::after {
-  background: #e00000; }
+.radio input[type="radio"]:focus + label::before {
+  outline: auto 2px Highlight;
+  outline: auto 5px -webkit-focus-ring-color; }
 
 .read-more::after {
   content: ' > ';
@@ -982,12 +1007,6 @@ input[type='search'] {
   font-weight: normal;
   font-style: normal;
   margin: 20px 0 0; }
-
-#kss-node .kss-description blockquote {
-  border-left: 0;
-  padding: 0; }
-  #kss-node .kss-description blockquote li {
-    list-style: none; }
 
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
@@ -1221,7 +1240,7 @@ textarea {
   min-height: 8rem; }
 
 fieldset {
-  padding: 1.75rem 1.5rem 1rem;
+  padding: 1.75rem 1.5rem;
   border: 2px solid #eeeeee;
   border-radius: 4px; }
 

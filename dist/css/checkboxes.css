@@ -1,10 +1,19 @@
+.checkbox.row label {
+  display: block;
+  float: left; }
+
+.checkbox.column {
+  margin-top: -1.5rem;
+  padding: 0 1rem 1rem; }
+  .checkbox.column label {
+    display: block; }
+
 .checkbox input[type="checkbox"] {
   opacity: 0; }
 
 .checkbox label {
   position: relative;
-  display: inline-block;
-  padding: 0 22px; }
+  padding: 0 3rem 0 2rem; }
 
 .checkbox label::before,
 .checkbox label::after {
@@ -12,16 +21,15 @@
   content: '';
   display: inline-block; }
 
-/*Outer box of the fake checkbox*/
 .checkbox label::before {
   height: 22px;
   width: 22px;
-  left: -10px;
+  left: 0;
   top: 1px;
   background: #eeeeee; }
 
 .checkbox label::after {
-  left: -2px;
+  left: 7px;
   top: 3px;
   width: 8px;
   height: 14px;
@@ -39,4 +47,5 @@
   background: #e00000; }
 
 .checkbox input[type="checkbox"]:focus + label::before {
-  outline: #3b99fc auto 5px; }
+  outline: auto 2px Highlight;
+  outline: auto 5px -webkit-focus-ring-color; }
