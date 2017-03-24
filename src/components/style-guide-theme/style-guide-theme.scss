@@ -217,6 +217,11 @@
     font-weight: normal;
   }
 
+  .kss-overview h1 {
+    margin: 0 0 30px;
+    padding-bottom: 10px;
+  }
+
   blockquote {
     font-style: italic;
   }
@@ -264,7 +269,7 @@
 
 .kss-menu {
   opacity: 1;
-  transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
   visibility: visible;
 }
 
@@ -298,12 +303,12 @@
   left: 0;
   list-style: none;
   opacity: 1;
-  padding: .8rem;
+  padding: 0.8rem;
   pointer-events: none;
   position: fixed;
   text-decoration: underline;
   top: -100px;
-  transition: top .3s ease-in-out;
+  transition: top 0.3s ease-in-out;
   z-index: 99;
 
   &:focus,
