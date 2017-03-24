@@ -101,3 +101,7 @@ body {
 .js-show-markup {
   margin: $padding-xsm 0;
 }
+
+abbr[title] {
+  text-decoration: none;
+}

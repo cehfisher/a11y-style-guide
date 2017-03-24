@@ -741,6 +741,9 @@ body {
 .js-show-markup {
   margin: 0.5rem 0; }
 
+abbr[title] {
+  text-decoration: none; }
+
 .navbar {
   background-color: #f7f7f7;
   position: relative;
