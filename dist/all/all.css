@@ -473,6 +473,7 @@ li {
       display: none; }
 
 [type='submit'],
+[role='button'],
 button {
   display: inline-block;
   background-color: #e00000;
@@ -487,8 +488,11 @@ button {
   font-size: 1rem;
   height: 48px;
   position: relative;
-  margin: 0.5rem 0; }
+  margin: 0.5rem 0;
+  -webkit-appearance: inherit; }
   [type='submit']:hover, [type='submit']:focus,
+  [role='button']:hover,
+  [role='button']:focus,
   button:hover,
   button:focus {
     background-color: #a51323;
@@ -496,6 +500,16 @@ button {
     border: 3px solid #a51323;
     text-decoration: underline;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+  [type='submit'] [role="button"][aria-pressed="true"],
+  [role='button'] [role="button"][aria-pressed="true"],
+  button [role="button"][aria-pressed="true"] {
+    color: #fff;
+    background: #333; }
+
+button, html [type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: inherit; }
 
 .button {
   display: inline-block;
@@ -994,7 +1008,6 @@ input[type='search'] {
   #kss-node .kss-sidebar .kss-sidebar-inner {
     text-decoration: none;
     padding-top: 0;
-    text-decoration: none;
     margin-top: -1rem; }
 
 #kss-node .kss-menu > .kss-menu-item {
