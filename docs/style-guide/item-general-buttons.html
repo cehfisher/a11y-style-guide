@@ -75,11 +75,12 @@
 
                               <div class="kss-description">
                   <ul>
- <li>A <code>&lt;button&gt;</code> doesn&#39;t need anything special to work. ARIA&#39;s role=&quot;button&quot; is already assigned natively. So if you need a button, use a true <code>&lt;button&gt;</code> element.</li>
- <li>Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
- <li>It is nice if your visual semantics (does it look like a button) and ARIA semantics (does it have the <code>role=&quot;button&quot;</code>) match up, but not necessary.</li>
- <li>Remember that <code>&lt;button&gt;</code> defaults to type=&quot;submit&quot;, so you may want to add <code>type=&quot;button&quot;</code> in order to avoid accidentally submitting forms.</li>
- <li>If your button is created entirely with an image/icon, you must include <code>alt=&quot;&quot;</code> descriptions. If your button includes an image/icon that is decorative, you do not need an <code>alt=&quot;&quot;</code> description.
+ <li>It is important to know when to use a link and when to use a button. A button does something while a link takes you to another URL. Note that a link can still look like a button and vice versa, but that is not related to ARIA.</li>
+ <li>A <code>&lt;button&gt;</code> element doesn&#39;t need anything special to work. ARIA&#39;s <code>role=&quot;button&quot;</code> is already assigned implicitly. So if you need a button, use a true <code>&lt;button&gt;</code> element.</li>
+ <li>It is possible (though discouraged) to use other elements, e.g. <code>&lt;a role=&quot;button&quot;&gt;</code>. In that case, you need to implement all relevant behavior with JavaScript, especially activating the button with the space bar.</li>
+ <li>Remember that <code>&lt;button&gt;</code> defaults to <code>type=&quot;submit&quot;</code>, so you may want to add <code>type=&quot;button&quot;</code> in order to avoid accidentally submitting forms.</li>
+ <li>Your button needs a descriptive name. Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
+ <li>If the button only contains an <code>&lt;img&gt;</code> element, make sure to set its alt attribute. If it only contains an icon (e.g. font awesome) use <code>aria-label</code>.</li>
 </ul>
 
 <div class="more-wrap"><div class="more-toggle"><h3>References</h3></div><div class="more-content"><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank">Using the button role</a><br><br><a href="https://www.deque.com/blog/accessible-aria-buttons" target="_blank">Building Accessible Buttons with ARIA</a><br><br><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/button/button.html" target="_blank">W3C Button Examples</a></div></div>
@@ -98,10 +99,10 @@
                     <section class="buttons-section">
   <div class="buttons ">
     <button type="button" class="button">Regular Button</button>
-    <a href="#" class="button-icon heart button--outline" tabindex="0" role="button" id="toggle" aria-pressed="false">Like</span></a>
-    <a href="#" class="button-icon wheelchair" type="button" role="button" tabindex="0" id="toggle" aria-pressed="false">A11Y<span class="visuallyhidden">all the things.</span></a>
-    <div class="button--outline" role="button" type="button" role="button" tabindex="0" id="print" aria-pressed="false">Print Page</div>
-    <a href="#" class="button" type="button" role="button" tabindex="0" id="alert1" aria-pressed="false">Tell me something nice</a>
+    <button type="button" class="button-icon heart button--outline">Like</button>
+    <a href="#" class="button-icon wheelchair" type="button" role="button" id="toggle" aria-pressed="false">A11Y<span class="visuallyhidden">all the things.</span></a>
+    <div class="button--outline" role="button" type="button" role="button" id="print" aria-pressed="false">Print Page</div>
+    <a href="#" class="button" type="button" role="button" id="alert1" aria-pressed="false">Tell me something nice</a>
   </div>
 </section>
 
@@ -119,10 +120,10 @@
                     <section class="buttons-section">
   <div class="buttons buttons--center">
     <button type="button" class="button">Regular Button</button>
-    <a href="#" class="button-icon heart button--outline" tabindex="0" role="button" id="toggle" aria-pressed="false">Like</span></a>
-    <a href="#" class="button-icon wheelchair" type="button" role="button" tabindex="0" id="toggle" aria-pressed="false">A11Y<span class="visuallyhidden">all the things.</span></a>
-    <div class="button--outline" role="button" type="button" role="button" tabindex="0" id="print" aria-pressed="false">Print Page</div>
-    <a href="#" class="button" type="button" role="button" tabindex="0" id="alert1" aria-pressed="false">Tell me something nice</a>
+    <button type="button" class="button-icon heart button--outline">Like</button>
+    <a href="#" class="button-icon wheelchair" type="button" role="button" id="toggle" aria-pressed="false">A11Y<span class="visuallyhidden">all the things.</span></a>
+    <div class="button--outline" role="button" type="button" role="button" id="print" aria-pressed="false">Print Page</div>
+    <a href="#" class="button" type="button" role="button" id="alert1" aria-pressed="false">Tell me something nice</a>
   </div>
 </section>
 
@@ -139,10 +140,10 @@
                     <section class="buttons-section">
   <div class="buttons buttons--right">
     <button type="button" class="button">Regular Button</button>
-    <a href="#" class="button-icon heart button--outline" tabindex="0" role="button" id="toggle" aria-pressed="false">Like</span></a>
-    <a href="#" class="button-icon wheelchair" type="button" role="button" tabindex="0" id="toggle" aria-pressed="false">A11Y<span class="visuallyhidden">all the things.</span></a>
-    <div class="button--outline" role="button" type="button" role="button" tabindex="0" id="print" aria-pressed="false">Print Page</div>
-    <a href="#" class="button" type="button" role="button" tabindex="0" id="alert1" aria-pressed="false">Tell me something nice</a>
+    <button type="button" class="button-icon heart button--outline">Like</button>
+    <a href="#" class="button-icon wheelchair" type="button" role="button" id="toggle" aria-pressed="false">A11Y<span class="visuallyhidden">all the things.</span></a>
+    <div class="button--outline" role="button" type="button" role="button" id="print" aria-pressed="false">Print Page</div>
+    <a href="#" class="button" type="button" role="button" id="alert1" aria-pressed="false">Tell me something nice</a>
   </div>
 </section>
 
@@ -154,10 +155,10 @@
                     <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;buttons-section&quot;&gt;
   &lt;div class=&quot;buttons {{modifier_class}}&quot;&gt;
     &lt;button type=&quot;button&quot; class=&quot;button&quot;&gt;Regular Button&lt;/button&gt;
-    &lt;a href=&quot;#&quot; class=&quot;button-icon heart button--outline&quot; tabindex=&quot;0&quot; role=&quot;button&quot; id=&quot;toggle&quot; aria-pressed=&quot;false&quot;&gt;Like&lt;/span&gt;&lt;/a&gt;
-    &lt;a href=&quot;#&quot; class=&quot;button-icon wheelchair&quot; type=&quot;button&quot; role=&quot;button&quot; tabindex=&quot;0&quot; id=&quot;toggle&quot; aria-pressed=&quot;false&quot;&gt;A11Y&lt;span class=&quot;visuallyhidden&quot;&gt;all the things.&lt;/span&gt;&lt;/a&gt;
-    &lt;div class=&quot;button--outline&quot; role=&quot;button&quot; type=&quot;button&quot; role=&quot;button&quot; tabindex=&quot;0&quot; id=&quot;print&quot; aria-pressed=&quot;false&quot;&gt;Print Page&lt;/div&gt;
-    &lt;a href=&quot;#&quot; class=&quot;button&quot; type=&quot;button&quot; role=&quot;button&quot; tabindex=&quot;0&quot; id=&quot;alert1&quot; aria-pressed=&quot;false&quot;&gt;Tell me something nice&lt;/a&gt;
+    &lt;button type=&quot;button&quot; class=&quot;button-icon heart button--outline&quot;&gt;Like&lt;/button&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button-icon wheelchair&quot; type=&quot;button&quot; role=&quot;button&quot; id=&quot;toggle&quot; aria-pressed=&quot;false&quot;&gt;A11Y&lt;span class=&quot;visuallyhidden&quot;&gt;all the things.&lt;/span&gt;&lt;/a&gt;
+    &lt;div class=&quot;button--outline&quot; role=&quot;button&quot; type=&quot;button&quot; role=&quot;button&quot; id=&quot;print&quot; aria-pressed=&quot;false&quot;&gt;Print Page&lt;/div&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button&quot; type=&quot;button&quot; role=&quot;button&quot; id=&quot;alert1&quot; aria-pressed=&quot;false&quot;&gt;Tell me something nice&lt;/a&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>
