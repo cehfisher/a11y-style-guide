@@ -1,11 +1,12 @@
 // Buttons
 //
 // <ul>
-//  <li>A `<button>` doesn't need anything special to work. ARIA's role="button" is already assigned natively. So if you need a button, use a true `<button>` element.</li>
-//  <li>Add `class="visuallyhidden"` with descriptive text to give more context to the button's purpose.</li>
-//  <li>It is nice if your visual semantics (does it look like a button) and ARIA semantics (does it have the `role="button"`) match up, but not necessary.</li>
-//  <li>Remember that `<button>` defaults to type="submit", so you may want to add `type="button"` in order to avoid accidentally submitting forms.</li>
-//  <li>If your button is created entirely with an image/icon, you must include `alt=""` descriptions. If your button includes an image/icon that is decorative, you do not need an `alt=""` description.
+//  <li>It is important to know when to use a link and when to use a button. A button does something while a link takes you to another URL. Note that a link can still look like a button and vice versa, but that is not related to ARIA.</li>
+//  <li>A `<button>` element doesn't need anything special to work. ARIA's `role="button"` is already assigned implicitly. So if you need a button, use a true `<button>` element.</li>
+//  <li>It is possible (though discouraged) to use other elements, e.g. `<a role="button">`. In that case, you need to implement all relevant behavior with JavaScript, especially activating the button with the space bar.</li>
+//  <li>Remember that `<button>` defaults to `type="submit"`, so you may want to add `type="button"` in order to avoid accidentally submitting forms.</li>
+//  <li>Your button needs a descriptive name. Add `class="visuallyhidden"` with descriptive text to give more context to the button's purpose.</li>
+//  <li>If the button only contains an `<img>` element, make sure to set its alt attribute. If it only contains an icon (e.g. font awesome) use `aria-label`.</li>
 // </ul>
 //
 // <div class="more-wrap"><div class="more-toggle"><h3>References</h3></div><div class="more-content"><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank">Using the button role</a><br><br><a href="https://www.deque.com/blog/accessible-aria-buttons" target="_blank">Building Accessible Buttons with ARIA</a><br><br><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/button/button.html" target="_blank">W3C Button Examples</a></div></div>
@@ -82,7 +83,7 @@ button, html [type='button'],
 
   &.button--outline {
     @include button-outline;
-    line-height: 0.9;
+    line-height: 1.3;
     padding: 0.8rem $padding-md 0.8rem ($padding-md + $padding-xsm);
   }
 
