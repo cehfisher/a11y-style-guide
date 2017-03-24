@@ -1023,12 +1023,6 @@ input[type='search'] {
   font-style: normal;
   margin: 20px 0 0; }
 
-#kss-node .kss-description blockquote {
-  border-left: 0;
-  padding: 0; }
-  #kss-node .kss-description blockquote li {
-    list-style: none; }
-
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #eeeeee;
