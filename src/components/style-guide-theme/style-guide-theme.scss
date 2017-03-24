@@ -288,3 +288,28 @@
   right: 40px;
   top: 5px;
 }
+
+
+.kss-skip-link {
+  background: $color-ruby;
+  border: 3px solid $hover-color;
+  color: $color-white;
+  display: inline-block;
+  left: 0;
+  list-style: none;
+  opacity: 1;
+  padding: .8rem;
+  pointer-events: none;
+  position: fixed;
+  text-decoration: underline;
+  top: -100px;
+  transition: top .3s ease-in-out;
+  z-index: 99;
+
+  &:focus,
+  &:active {
+    color: $color-white;
+    opacity: 1;
+    top: 0px;
+  }
+}
