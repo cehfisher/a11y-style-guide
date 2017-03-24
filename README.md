@@ -1,16 +1,9 @@
 <h1>A11Y Style Guide</h1>
 
-This application is a living style guide, generated from KSS documented styles...with an accessibility twist. See https://cehfisher.github.io/a11y-style-guide/style-guide for a live demo of the style guide.
+<p>This application is a living style guide, generated from KSS documented styles...with an accessibility twist. See a <a href="https://cehfisher.github.io/a11y-style-guide/style-guide" target="_blank">live demo</a> of the style guide.</p>
 
 <h2>How this all got started</h2>
 <p>We wear a lot of hats as front-end developers. Depending on the client or company you work for, you may be the designer, UX/UI specialist, site-builder, QA tester, and developer all rolled into one. How can we possibly add the accessibility hat on top of all that? What accessible pieces should we even include? Which pieces are easy wins vs. impossible juggernauts? How do we implement inclusive design and development when a project does not have a lot of time or budget to include that piece?</p>
-
-<p>Maybe you have been in the middle of a project and wondered:
-<blockquote>Now how do I write that button markup?<br>
-What color combinations are going to give enough visible contrast?<br>
-I know I did this once in an accessible way...what was that way again?<br>
-What was the name of that awesome A11Y tool I used?</blockquote></p>
-<p>...or one of the many accessibility questions you may (or should) ask yourself when developing or theming or designing a site?</p>
 
 <p>One way we can tackle these issues is by using an accessible component driven approach. By thinking about inclusiveness from the start, we can get a head start on accessibility while still building the required site components.</p>
 
@@ -18,7 +11,7 @@ What was the name of that awesome A11Y tool I used?</blockquote></p>
 
 <div class="break"></div>
 <h2>How do I use this tool?</h2>
-<p><ul>
+<ul>
 <li>Use it as a reference.</li>
 <li>Use it as inspiration.</li>
 <li>Use it as a base style guide.</li>
@@ -26,24 +19,25 @@ What was the name of that awesome A11Y tool I used?</blockquote></p>
 <li>Use it as a base for an accessible theme.</li>
 <li>Contribute to the tool and make it better.</li>
 <li>Fork it and give your own spin to it.</li>
-</ul></p>
+</ul>
 <p>Really? What can't you do with it is an easier question?</p>
 
 <div class="break"></div>
 <h2>Where to begin?</h2>
-<p>This has a KSS node base, so learn a bit about how that works by going here: https://github.com/kss-node/kss-node/wiki/Quick-Start-Guide</p>
-<p>To make local changes to components, do the following:
+<p>This has a KSS node base, so learn a bit about <a href="https://github.com/kss-node/kss-node/wiki/Quick-Start-Guide" target="_blank">how KSS node works</a></p>
+<p>To make local changes to components, do the following:</p>
 <ul><li>Navigate to: <code>themes/custom/a11y_style_guide</code></li>
 <li><code>nvm install stable</code> (only need to do once)</li>
 <li><code>nvm use</code></li>
 <li><code>nvm install</code> (only need to do once)</li>
 <li>Change/add some code</li>
 <li><code>nvm run gulp</code></li>
-</ul><p>This will run all the gulp commands including the style guide update. If you want to contribute back, please do so! This is a great Git resource if you need to brush-up on your skills (all levels): https://www.atlassian.com/git</p></p>
+</ul>
+<p>This will run all the gulp commands including the style guide update. If you want to contribute back, please do so! This is a great <a href="https://www.atlassian.com/git" target="_blank">Git resource</a> if you need to brush-up on your skills (all levels)</p></p>
 
 <div class="break"></div>
 <h2>Wait how did I get here?</h2>
-<p>Maybe you are a total beginner and wondering where to start? That's cool too...welcome! Learning accessibility can feel a bit like drinking out of a firehose, so here are some tips to follow on your journey toward accessibility:
+<p>Maybe you are a total beginner and wondering where to start? That's cool too...welcome! Learning accessibility can feel a bit like drinking out of a firehose, so here are some tips to follow on your journey toward accessibility:</p>
 <ul>
 <li>Tip #1: Don’t Freak Out. There is a ton of information out there about website accessibility. No one expects you to know everything about everything. It’s ok to say you don’t know something. Which brings me to my next rule…</li>
 
@@ -54,4 +48,4 @@ What was the name of that awesome A11Y tool I used?</blockquote></p>
 <li>Tip #4: Use the Right Tools. There are lots of accessibility tools that wonderful people spent lots of time creating, so use them. Use tools during the build process (ex. using Color Safe to check color combos) and after the site is finished (ex. using WAVE to evaluate accessibility errors and alerts, etc)</li>
 
 <li>Tip #5:  Try, Try Again. Keep in mind that even adding one or two accessible pieces to a website is moving in the right direction. The next site might have four or five pieces. “Rome wasn’t built in a day” and neither are accessible websites.</li>
-</ul></p>
+</ul>

@@ -1,16 +1,9 @@
 <h1>A11Y Style Guide</h1>
 
-<p>This application is a living style guide, generated from KSS documented styles...with an accessibility twist.</p>
+<p>This application is a living style guide, generated from KSS documented styles...with an accessibility twist. No matter your level of development or accessibility expertise, there are ways to <a href="https://github.com/cehfisher/a11y-style-guide" target="_blank">help contribute</a>.</p>
 
 <h2>How this all got started</h2>
 <p>We wear a lot of hats as front-end developers. Depending on the client or company you work for, you may be the designer, UX/UI specialist, site-builder, QA tester, and developer all rolled into one. How can we possibly add the accessibility hat on top of all that? What accessible pieces should we even include? Which pieces are easy wins vs. impossible juggernauts? How do we implement inclusive design and development when a project does not have a lot of time or budget to include that piece?</p>
-
-<p>Maybe you have been in the middle of a project and wondered:</p>
-<blockquote>Now how do I write that button markup?<br>
-What color combinations are going to give enough visible contrast?<br>
-I know I did this once in an accessible way...what was that way again?<br>
-What was the name of that awesome A11Y tool I used?</blockquote>
-<p>...or one of the many accessibility questions you may (or should) ask yourself when developing or theming or designing a site?</p>
 
 <p>One way we can tackle these issues is by using an accessible component driven approach. By thinking about inclusiveness from the start, we can get a head start on accessibility while still building the required site components.</p>
 
@@ -31,7 +24,7 @@ What was the name of that awesome A11Y tool I used?</blockquote>
 
 <div class="break"></div>
 <h2>Where to begin?</h2>
-<p>This has a KSS node base, so learn a bit about how that works by going here: https://github.com/kss-node/kss-node/wiki/Quick-Start-Guide</p>
+<p>This has a KSS node base, so learn a bit about <a href="https://github.com/kss-node/kss-node/wiki/Quick-Start-Guide" target="_blank">how KSS node works</a></p>
 <p>To make local changes to components, do the following:</p>
 <ul><li>Navigate to: <code>themes/custom/a11y_style_guide</code></li>
 <li><code>nvm install stable</code> (only need to do once)</li>
@@ -40,7 +33,7 @@ What was the name of that awesome A11Y tool I used?</blockquote>
 <li>Change/add some code</li>
 <li><code>nvm run gulp</code></li>
 </ul>
-<p>This will run all the gulp commands including the style guide update. If you want to contribute back, please do so! This is a great Git resource if you need to brush-up on your skills (all levels): https://www.atlassian.com/git</p></p>
+<p>This will run all the gulp commands including the style guide update. If you want to contribute back, please do so! This is a great <a href="https://www.atlassian.com/git" target="_blank">Git resource</a> if you need to brush-up on your skills (all levels)</p></p>
 
 <div class="break"></div>
 <h2>Wait how did I get here?</h2>
