@@ -708,7 +708,8 @@ body {
 
 .more-content {
   display: none;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem; }
 
 .more-toggle {
   position: relative; }
