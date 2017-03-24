@@ -189,7 +189,7 @@
   font-style: italic; }
 
 .kss-sidebar,
-.toggle {
+.nav-btn {
   transition: all 0.5s ease-in-out;
   overflow: visible !important; }
 
@@ -200,7 +200,10 @@
   top: 0;
   left: 0; }
 
-.toggle {
+.no-js .nav-btn {
+  display: none; }
+
+.nav-btn {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -211,21 +214,47 @@
   border: 0;
   box-shadow: none;
   background-color: transparent; }
-  .toggle:hover, .toggle:focus, .toggle:active {
+  .nav-btn:hover, .nav-btn:focus, .nav-btn:active {
     border: 0;
     box-shadow: none;
     background-color: transparent; }
 
+.kss-menu {
+  opacity: 1;
+  transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+  visibility: visible; }
+
 .kss-sidebar-collapsed {
   transform: translateX(-82%); }
-  .kss-sidebar-collapsed .kss-menu > .kss-menu-item {
-    border-bottom: 0 !important; }
+  .kss-sidebar-collapsed .kss-menu {
+    opacity: 0;
+    visibility: hidden; }
   .kss-sidebar-collapsed .kss-nav {
     overflow-y: hidden !important; }
 
-.kss-sidebar-collapsed .toggle {
+.kss-sidebar-collapsed .nav-btn {
   transform: translateX(100%);
   background: url("../assets/chevron_right_round_red.png") no-repeat;
   background-size: 32px;
   right: 40px;
   top: 5px; }
+
+.kss-skip-link {
+  background: #e00000;
+  border: 3px solid #a51323;
+  color: #ffffff;
+  display: inline-block;
+  left: 0;
+  list-style: none;
+  opacity: 1;
+  padding: .8rem;
+  pointer-events: none;
+  position: fixed;
+  text-decoration: underline;
+  top: -100px;
+  transition: top .3s ease-in-out;
+  z-index: 99; }
+  .kss-skip-link:focus, .kss-skip-link:active {
+    color: #ffffff;
+    opacity: 1;
+    top: 0px; }
