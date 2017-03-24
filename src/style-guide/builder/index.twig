@@ -48,8 +48,8 @@
                     {% for menu_child in menu_item.children %}
                       <li class="kss-menu-item">
                         <a href="#kssref-{{ menu_child.referenceURI }}">
-                          <span class="kss-ref {% if menu_child.isGrandChild %}kss-nav__ref-child{% endif %}">{{ menu_child.referenceNumber }}</span
-                            ><span class="kss-name">{{ menu_child.header }}</span>
+                          <span class="kss-ref {% if menu_child.isGrandChild %}kss-nav__ref-child{% endif %}">{{ menu_child.referenceNumber }}</span>
+                          <span class="kss-name">{{ menu_child.header }}</span>
                         </a>
                       </li>
                     {% endfor %}

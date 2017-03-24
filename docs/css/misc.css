@@ -74,3 +74,6 @@ body {
 
 .js-show-markup {
   margin: 0.5rem 0; }
+
+abbr[title] {
+  text-decoration: none; }

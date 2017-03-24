@@ -7,22 +7,39 @@
   <meta name="description" content="">
   <meta name="generator" content="kss-node">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
+  <script>
+    // remove no-js and add 'js' to the HTML
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
   <link rel="stylesheet" href="kss-assets/kss.css">
   <link rel="stylesheet" href="../all/all.css">
 
 </head>
 <body id="kss-node">
+
+  <a href="#kss-main-content" class="kss-skip-link">
+    Jump to main content
+  </a>
+
   <div class="kss-wrapper">
 
     <div class="kss-sidebar">
-    <button class="toggle"><span class="visuallyhidden">Button to collapse and expand the sidebar</span></button>
+
       <div class="kss-sidebar-inner">
         <header class="kss-header">
-          <h1 class="kss-doc-title">A11Y Style Guide</h1>
+          <h1 class="kss-doc-title">
+            <abbr title="accessibility">A11Y</abbr> Style Guide
+          </h1>
         </header>
+
         <nav class="kss-nav">
-          <ul class="kss-menu">
+          <button type="button" class="nav-btn">
+            <span class="visuallyhidden">
+              Navigation Toggle
+            </span>
+          </button>
+
+          <ul id="kss-nav-list" class="kss-menu">
             <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
                           <li class="kss-menu-item">
                 <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
@@ -44,7 +61,7 @@
       </div>
     </div>
 
-    <div class="kss-content">
+    <main id="kss-main-content" class="kss-content" aria-label="content">
       <article role="main" class="kss-article">
       
         
@@ -141,7 +158,7 @@
 
                                     </div>
                     </article>
-    </div>
+    </main>
 </div>
 
 <!-- SCRIPTS -->
