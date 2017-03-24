@@ -31,27 +31,15 @@
   <h3>Option #2: Use WAI-ARIA to group options</h3>
   <div role="group" aria-labelledby="beatle_head">
   	<h4 id="beatle_head" class="bold">Who is the best Beatle?</h4>
-  	<div>
-      <label class="control control--checkbox" for="beatle_john">
-        <input id="beatle_john" type="checkbox" name="beatle" value="beatle_john"/>
-        <span class="control__indicator"></span>
-        <span class="visuallyhidden">The second best Beatle is </span>John Lennon
-      </label>
-      <label class="control control--checkbox" for="beatle_paul">
-        <input id="beatle_paul" type="checkbox" name="beatle" value="beatle_paul"/>
-        <span class="control__indicator"></span>
-        <span class="visuallyhidden">The third best Beatle is </span>Paul McCartney
-      </label>
-      <label class="control control--checkbox" for="beatle_george">
-        <input id="beatle_george" type="checkbox" name="beatle" value="beatle_george"/>
-        <span class="control__indicator"></span>
-        <span class="visuallyhidden">The very best Beatle is </span>George Harrison
-      </label>
-      <label class="control control--checkbox" for="beatle_ringo">
-        <input id="beatle_ringo" type="checkbox" name="beatle" value="beatle_ringo"/>
-        <span class="control__indicator"></span>
-        <span class="visuallyhidden">The forth best Beatle is </span>Ringo Starr
-      </label>
+  	<div class="checkbox">
+  	  <input id="beatle_john" type="checkbox" name="beatle" value="beatle_john"/>
+      <label class="control control--checkbox" for="beatle_john"><span class="visuallyhidden">This answer is incorrect</span>John Lennon</label>
+      <input id="beatle_paul" type="checkbox" name="beatle" value="beatle_paul"/>
+      <label class="control control--checkbox" for="beatle_paul"><span class="visuallyhidden">This answer is incorrect</span>Paul McCartney</label>
+      <input id="beatle_george" type="checkbox" name="beatle" value="beatle_george"/>
+      <label class="control control--checkbox" for="beatle_george"><span class="visuallyhidden">This answer is correct</span>George Harrison</label>
+      <input id="beatle_ringo" type="checkbox" name="beatle" value="beatle_ringo"/>
+      <label class="control control--checkbox" for="beatle_ringo"><span class="visuallyhidden">This answer is incorrect</span>Ringo Starr</label>
   	</div>
   </div>
 </section>

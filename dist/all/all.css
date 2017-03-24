@@ -648,17 +648,48 @@ button, html [type='button'],
     content: '\267F';
     color: #464646; }
 
-.control--checkbox .control__indicator::after {
-  left: 7px;
+.checkbox input[type="checkbox"] {
+  opacity: 0; }
+
+.checkbox label {
+  position: relative;
+  display: inline-block;
+  padding: 0 22px; }
+
+.checkbox label::before,
+.checkbox label::after {
+  position: absolute;
+  content: '';
+  display: inline-block; }
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before {
+  height: 22px;
+  width: 22px;
+  left: -10px;
+  top: 1px;
+  background: #eeeeee; }
+
+.checkbox label::after {
+  left: -2px;
   top: 3px;
-  width: 6px;
-  height: 11px;
+  width: 8px;
+  height: 14px;
   border: solid #ffffff;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg); }
 
-.control--checkbox input:disabled ~ .control__indicator::after {
-  border-color: #e00000; }
+.checkbox input[type="checkbox"] + label::after {
+  content: none; }
+
+.checkbox input[type="checkbox"]:checked + label::after {
+  content: ''; }
+
+.checkbox input[type="checkbox"]:checked + label::before {
+  background: #e00000; }
+
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: #3b99fc auto 5px; }
 
 
 
