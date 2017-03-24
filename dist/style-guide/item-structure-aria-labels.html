@@ -39,9 +39,6 @@
                           <li class="kss-menu-item">
                 <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
                               </li>
-                          <li class="kss-menu-item">
-                <a href="section-references.html"><span class="kss-ref">6</span><span class="kss-name">References</span></a>
-                              </li>
                       </ul>
         </nav>
       </div>
@@ -51,17 +48,27 @@
       <article role="main" class="kss-article">
       
         
-                            <div id="kssref-references" class="kss-section kss-depth-1">
+                            <div id="kssref-structure-aria-labels" class="kss-section kss-depth-2">
             <div class="kss-style">
-                            <h1 class="kss-title kss-title--level-1">
-                <a class="kss-title__permalink" href="#kssref-references">
-                  References
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-structure-aria-labels">
+                  ARIA Labels (draft)
                 </a>
-              </h1>
+              </h2>
 
                               <div class="kss-description">
-                  <p>Many people, groups, articles, books, etc. have been referenced in this styleguide.
-For additional info on any of the subjects, see the links below.</p>
+                  <ul>
+ <li>Add id selectors to titles and use <code>aria-labelledby=&quot;&quot;</code> to link to the title text (example #1).</li>
+ <li>Add decriptive text with <code>aria-label=&quot;&quot;</code> directly in the link (example #2).</li>
+ <li>Turn read more links into buttons, when you can.</li>
+</ul>
+
+<div class="more-wrap"><div class="more-toggle"><h3>References</h3></div><div class="more-content"><a href="http://www.last-child.com/aria-labelledby-on-lists/" target="_blank">ARIA Labelledby on Lists</a></div><br><br><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/ARIA8#ARIA8-examples" target="_blank">Describing the purpose of a link in HTML using aria-label</a></div></div>
+
+
+
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</div></div><div class="markup"></div>
+
 
                 </div>
               
@@ -71,26 +78,8 @@ For additional info on any of the subjects, see the links below.</p>
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <section class="references-section">
-  <div class="references">
-    <h2>ARIA Labels</h2>
-    <ul>
-      <li><a href="http://www.last-child.com/aria-labelledby-on-lists/">ARIA Labelledby on Lists</a></li>
-      <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/ARIA8#ARIA8-examples">Describing the purpose of a link in HTML using aria-label</a></li>
-    </ul>
-    <div class="break"></div>
-    <h2>ARIA Landmark Rules</h2>
-    <ul>
-      <li><a href="http://www.washington.edu/accessibility/web/landmarks/">Washington U Landmark Rules</a></li>
-    </ul>
-    <div class="break"></div>
-    <h2>Scalable vector graphics (SVGs)</h2>
-    <ul>
-      <li><a href="https://www.sitepoint.com/tips-accessible-svg">Tips for Creating Accessible SVG</a></li>
-      <li><a href="https://css-tricks.com/accessible-svgs">Accessible SVGs</a></li>
-    </ul>
-  </div>
-  <p>To-do: add dyslexic font, color contrast option, back to top, open new window icon</p>
+                    <section class="aria-labels-section">
+
 </section>
 
                   </div>
@@ -99,26 +88,8 @@ For additional info on any of the subjects, see the links below.</p>
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;references-section&quot;&gt;
-  &lt;div class=&quot;references&quot;&gt;
-    &lt;h2&gt;ARIA Labels&lt;/h2&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://www.last-child.com/aria-labelledby-on-lists/&quot;&gt;ARIA Labelledby on Lists&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/ARIA8#ARIA8-examples&quot;&gt;Describing the purpose of a link in HTML using aria-label&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-    &lt;h2&gt;ARIA Landmark Rules&lt;/h2&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;http://www.washington.edu/accessibility/web/landmarks/&quot;&gt;Washington U Landmark Rules&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-    &lt;h2&gt;Scalable vector graphics (SVGs)&lt;/h2&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.sitepoint.com/tips-accessible-svg&quot;&gt;Tips for Creating Accessible SVG&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://css-tricks.com/accessible-svgs&quot;&gt;Accessible SVGs&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-  &lt;p&gt;To-do: add dyslexic font, color contrast option, back to top, open new window icon&lt;/p&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;aria-labels-section&quot;&gt;
+
 &lt;/section&gt;
 </code></pre>
                     <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
