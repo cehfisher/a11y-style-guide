@@ -51,7 +51,6 @@
   display: inline-block;
 }
 
-/*Outer box of the fake checkbox*/
 .checkbox label::before {
   height: 22px;
   width: 22px;
@@ -83,6 +82,6 @@
 }
 
 .checkbox input[type="checkbox"]:focus + label::before {
-  outline: rgb(59, 153, 252) auto 5px;
+  outline: auto 2px Highlight; // for non-webkit browsers
+  outline: auto 5px -webkit-focus-ring-color; // for webkit browsers
 }
-

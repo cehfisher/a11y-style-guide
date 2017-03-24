@@ -21,7 +21,6 @@
   content: '';
   display: inline-block; }
 
-/*Outer box of the fake checkbox*/
 .checkbox label::before {
   height: 22px;
   width: 22px;
@@ -48,4 +47,5 @@
   background: #e00000; }
 
 .checkbox input[type="checkbox"]:focus + label::before {
-  outline: #3b99fc auto 5px; }
+  outline: auto 2px Highlight;
+  outline: auto 5px -webkit-focus-ring-color; }

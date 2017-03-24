@@ -21,3 +21,8 @@
 
 // Import site utilities.
 @import '../../global/utils/init';
+
+a:focus {
+  outline: auto 2px Highlight; // for non-webkit browsers
+  outline: auto 5px -webkit-focus-ring-color; // for webkit browsers
+}
