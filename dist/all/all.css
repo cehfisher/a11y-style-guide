@@ -551,6 +551,7 @@ button, html [type='button'],
   height: 48px;
   position: relative;
   margin: 0.5rem 0;
+  height: 50px;
   color: #e00000;
   background-color: transparent;
   border: 3px solid #e00000; }
@@ -622,10 +623,11 @@ button, html [type='button'],
     height: 48px;
     position: relative;
     margin: 0.5rem 0;
+    height: 50px;
     color: #e00000;
     background-color: transparent;
     border: 3px solid #e00000;
-    line-height: 0.9;
+    line-height: 1.3;
     padding: 0.8rem 2rem 0.8rem 2.5rem; }
     .button-icon.button--outline:hover, .button-icon.button--outline:focus {
       background-color: #a51323;
