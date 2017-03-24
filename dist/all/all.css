@@ -1118,6 +1118,10 @@ input[type='search'] {
 #kss-node h6 {
   font-weight: normal; }
 
+#kss-node .kss-overview h1 {
+  margin: 0 0 30px;
+  padding-bottom: 10px; }
+
 #kss-node blockquote {
   font-style: italic; }
 
@@ -1154,7 +1158,7 @@ input[type='search'] {
 
 .kss-menu {
   opacity: 1;
-  transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
   visibility: visible; }
 
 .kss-sidebar-collapsed {
@@ -1180,12 +1184,12 @@ input[type='search'] {
   left: 0;
   list-style: none;
   opacity: 1;
-  padding: .8rem;
+  padding: 0.8rem;
   pointer-events: none;
   position: fixed;
   text-decoration: underline;
   top: -100px;
-  transition: top .3s ease-in-out;
+  transition: top 0.3s ease-in-out;
   z-index: 99; }
   .kss-skip-link:focus, .kss-skip-link:active {
     color: #ffffff;
