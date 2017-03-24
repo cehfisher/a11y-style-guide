@@ -3,11 +3,14 @@
 // <ul>
 //  <li>A `<button>` doesn't need anything special to work. ARIA's role="button" is already assigned natively. So if you need a button, use a true `<button>` element.</li>
 //  <li>Add `class="visuallyhidden"` with descriptive text to give more context to the button's purpose.</li>
-//  <li>Do not style regular links to look like buttons. If something navigates to a different URL, it is a link, not a button.</li>
 //  <li>It is nice if your visual semantics (does it look like a button) and ARIA semantics (does it have the `role="button"`) match up, but not necessary.</li>
 //  <li>Remember that `<button>` defaults to type="submit", so you may want to add `type="button"` in order to avoid accidentally submitting forms.</li>
 //  <li>If your button is created entirely with an image/icon, you must include `alt=""` descriptions. If your button includes an image/icon that is decorative, you do not need an `alt=""` description.
 // </ul>
+//
+// <div class="more-wrap"><div class="more-toggle"><h3>References</h3></div><div class="more-content"><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank">Using the button role</a><br><br><a href="https://www.deque.com/blog/accessible-aria-buttons" target="_blank">Building Accessible Buttons with ARIA</a><br><br><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/button/button.html" target="_blank">W3C Button Examples</a></div></div>
+//
+//
 //
 // <div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</div></div><div class="markup"></div>
 //
@@ -22,8 +25,21 @@
 @import '../../global/utils/init';
 
 [type='submit'],
+[role='button'],
 button {
   @include button;
+  -webkit-appearance: inherit;
+
+  [role="button"][aria-pressed="true"] {
+    color: #fff;
+    background: #333;
+  }
+}
+
+button, html [type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: inherit;
 }
 
 .button {

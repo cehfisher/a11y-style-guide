@@ -1,0 +1,24 @@
+// ARIA Labels (draft)
+//
+// <ul>
+//  <li>Add id selectors to titles and use `aria-labelledby=""` to link to the title text (example #1).</li>
+//  <li>Add decriptive text with `aria-label=""` directly in the link (example #2).</li>
+//  <li>Turn read more links into buttons, when you can.</li>
+// </ul>
+//
+// <div class="more-wrap"><div class="more-toggle"><h3>References</h3></div><div class="more-content"><a href="http://www.last-child.com/aria-labelledby-on-lists/" target="_blank">ARIA Labelledby on Lists</a></div><br><br><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/ARIA8#ARIA8-examples" target="_blank">Describing the purpose of a link in HTML using aria-label</a></div></div>
+//
+//
+//
+// <div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</div></div><div class="markup"></div>
+//
+//
+//
+// Markup: aria-labels.twig
+//
+// Style guide: Structure.aria-labels
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+// to-do
