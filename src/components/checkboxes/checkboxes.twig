@@ -2,44 +2,34 @@
   <h3>Option #1: Use fieldsets to group options</h3>
   <fieldset>
     <legend>Who is your favorite 19th century scientist</legend>
-    <label class="control control--checkbox" for="bell">Alexander Graham Bell
+    <div class="checkbox column">
       <input id="bell" type="checkbox" name="scientist" value="bell"/>
-      <span class="control__indicator"></span>
-    </label>
-    <label class="control control--checkbox" for="edison">Thomas Edison
+      <label for="bell">Alexander Graham Bell</label>
       <input id="edison" type="checkbox" name="scientist" value="edison"/>
-      <span class="control__indicator"></span>
-    </label>
-    <label class="control control--checkbox" for="morse">Samuel Morse
+      <label for="edison">Thomas Edison</label>
       <input id="morse" type="checkbox" name="scientist" value="morse"/>
-      <span class="control__indicator"></span>
-    </label>
-    <label class="control control--checkbox" for="nobel">Alfred Nobel
+      <label for="morse">Samuel Morse</label>
       <input id="nobel" type="checkbox" name="scientist" value="nobel"/>
-      <span class="control__indicator"></span>
-    </label>
-    <label class="control control--checkbox" for="pasteur">Louis Pasteur
+      <label for="nobel">Alfred Nobel</label>
       <input id="pasteur" type="checkbox" name="scientist" value="pasteur"/>
-      <span class="control__indicator"></span>
-    </label>
-    <label class="control control--checkbox" for="tesla">Nikola Tesla
+      <label for="pasteur">Louis Pasteur</label>
       <input id="tesla" type="checkbox" name="scientist" value="tesla"/>
-      <span class="control__indicator"></span>
-    </label>
+      <label for="tesla">Nikola Tesla</label>
+    </div>
   </fieldset>
   <div class="break"></div>
   <h3>Option #2: Use WAI-ARIA to group options</h3>
   <div role="group" aria-labelledby="beatle_head">
-  	<h4 id="beatle_head" class="bold">Who is the best Beatle?</h4>
-  	<div class="checkbox">
-  	  <input id="beatle_john" type="checkbox" name="beatle" value="beatle_john"/>
-      <label class="control control--checkbox" for="beatle_john"><span class="visuallyhidden">This answer is incorrect</span>John Lennon</label>
+  <h4 id="beatle_head" class="bold">Who is the best Beatle?</h4>
+    <div class="checkbox row">
+      <input id="beatle_john" type="checkbox" name="beatle" value="beatle_john"/>
+      <label for="beatle_john"><span class="visuallyhidden">This answer is incorrect</span>John Lennon</label>
       <input id="beatle_paul" type="checkbox" name="beatle" value="beatle_paul"/>
-      <label class="control control--checkbox" for="beatle_paul"><span class="visuallyhidden">This answer is incorrect</span>Paul McCartney</label>
+      <label for="beatle_paul"><span class="visuallyhidden">This answer is incorrect</span>Paul McCartney</label>
       <input id="beatle_george" type="checkbox" name="beatle" value="beatle_george"/>
-      <label class="control control--checkbox" for="beatle_george"><span class="visuallyhidden">This answer is correct</span>George Harrison</label>
+      <label for="beatle_george"><span class="visuallyhidden">This answer is correct</span>George Harrison</label>
       <input id="beatle_ringo" type="checkbox" name="beatle" value="beatle_ringo"/>
-      <label class="control control--checkbox" for="beatle_ringo"><span class="visuallyhidden">This answer is incorrect</span>Ringo Starr</label>
-  	</div>
+      <label for="beatle_ringo"><span class="visuallyhidden">This answer is incorrect</span>Ringo Starr</label>
+    </div>
   </div>
 </section>

@@ -18,14 +18,30 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
+.checkbox {
+
+  &.row label {
+    display: block;
+    float: left;
+  }
+
+  &.column {
+    margin-top: -1.5rem;
+    padding: 0 $padding-sm $padding-sm;
+
+    label {
+      display: block;
+    }
+  }
+}
+
 .checkbox input[type="checkbox"] {
   opacity: 0;
 }
 
 .checkbox label {
   position: relative;
-  display: inline-block;
-  padding: 0 22px;
+  padding: 0 $padding-md-lg 0 $padding-md;
 }
 
 .checkbox label::before,
@@ -39,13 +55,13 @@
 .checkbox label::before {
   height: 22px;
   width: 22px;
-  left: -10px;
+  left: 0;
   top: 1px;
   background: $color-gallery;
 }
 
 .checkbox label::after {
-  left: -2px;
+  left: 7px;
   top: 3px;
   width: 8px;
   height: 14px;
