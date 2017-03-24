@@ -789,6 +789,10 @@ body {
 abbr[title] {
   text-decoration: none; }
 
+.copied {
+  color: #3cf73c;
+  display: none; }
+
 .navbar {
   background-color: #f7f7f7;
   position: relative;
