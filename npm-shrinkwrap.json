@@ -969,7 +969,7 @@
     },
     "concat-stream": {
       "version": "1.6.0",
-      "from": "concat-stream@>=1.5.2 <2.0.0",
+      "from": "concat-stream@>=1.4.6 <2.0.0",
       "resolved": "https://registry.npmjs.org/concat-stream/-/concat-stream-1.6.0.tgz",
       "dev": true
     },
@@ -1838,7 +1838,7 @@
     },
     "espree": {
       "version": "3.4.0",
-      "from": "espree@>=3.4.0 <4.0.0",
+      "from": "espree@>=3.3.1 <4.0.0",
       "resolved": "https://registry.npmjs.org/espree/-/espree-3.4.0.tgz",
       "dev": true,
       "dependencies": {
@@ -3314,7 +3314,7 @@
     },
     "gulp-concat": {
       "version": "2.6.1",
-      "from": "gulp-concat@latest",
+      "from": "https://registry.npmjs.org/gulp-concat/-/gulp-concat-2.6.1.tgz",
       "resolved": "https://registry.npmjs.org/gulp-concat/-/gulp-concat-2.6.1.tgz",
       "dev": true,
       "dependencies": {
@@ -3358,7 +3358,7 @@
     },
     "gulp-order": {
       "version": "1.1.1",
-      "from": "gulp-order@latest",
+      "from": "https://registry.npmjs.org/gulp-order/-/gulp-order-1.1.1.tgz",
       "resolved": "https://registry.npmjs.org/gulp-order/-/gulp-order-1.1.1.tgz",
       "dev": true,
       "dependencies": {
