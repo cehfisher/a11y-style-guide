@@ -26,13 +26,14 @@ button {
     border: 3px solid #a51323;
     text-decoration: underline;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
-  [type='submit'] [role="button"][aria-pressed="true"],
-  [role='button'] [role="button"][aria-pressed="true"],
-  button [role="button"][aria-pressed="true"] {
-    color: #fff;
-    background: #333; }
+  [type='submit'] [role='button'][aria-pressed='true'],
+  [role='button'] [role='button'][aria-pressed='true'],
+  button [role='button'][aria-pressed='true'] {
+    color: #ffffff;
+    background: #888b8d; }
 
-button, html [type='button'],
+button,
+html [type='button'],
 [type='reset'],
 [type='submit'] {
   -webkit-appearance: inherit; }

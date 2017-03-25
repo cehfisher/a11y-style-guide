@@ -35,7 +35,7 @@
   }
 }
 
-.radio input[type="radio"] {
+.radio input[type='radio'] {
   opacity: 0;
 }
 
@@ -69,15 +69,15 @@
   border-radius: 50%;
 }
 
-.radio input[type="radio"] + label::after {
+.radio input[type='radio'] + label::after {
   content: none;
 }
 
-.radio input[type="radio"]:checked + label::after {
+.radio input[type='radio']:checked + label::after {
   content: '';
 }
 
-.radio input[type="radio"]:focus + label::before {
+.radio input[type='radio']:focus + label::before {
   outline: auto 2px Highlight; // for non-webkit browsers
   outline: auto 5px -webkit-focus-ring-color; // for webkit browsers
 }

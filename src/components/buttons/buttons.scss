@@ -31,13 +31,14 @@ button {
   @include button;
   -webkit-appearance: inherit;
 
-  [role="button"][aria-pressed="true"] {
-    color: #fff;
-    background: #333;
+  [role='button'][aria-pressed='true'] {
+    color: $color-white;
+    background: $color-manatee;
   }
 }
 
-button, html [type='button'],
+button,
+html [type='button'],
 [type='reset'],
 [type='submit'] {
   -webkit-appearance: inherit;
