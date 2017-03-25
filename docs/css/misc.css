@@ -77,3 +77,7 @@ body {
 
 abbr[title] {
   text-decoration: none; }
+
+.copied {
+  color: #3cf73c;
+  display: none; }

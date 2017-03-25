@@ -74,18 +74,24 @@
                                           <li class="kss-menu-item">
                         <a href="#kssref-navigation-navbar">
                           <span class="kss-ref ">4.4</span>
-                          <span class="kss-name">Navbar (draft)</span>
+                          <span class="kss-name">Basic Navbar</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-navigation-navbar-mobile-icon">
+                          <span class="kss-ref ">4.5</span>
+                          <span class="kss-name">Navbar Mobile Icon</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
                         <a href="#kssref-navigation-pagination">
-                          <span class="kss-ref ">4.5</span>
+                          <span class="kss-ref ">4.6</span>
                           <span class="kss-name">Pagination (draft)</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
                         <a href="#kssref-navigation-tabs">
-                          <span class="kss-ref ">4.6</span>
+                          <span class="kss-ref ">4.7</span>
                           <span class="kss-name">Tabs (draft)</span>
                         </a>
                       </li>
@@ -195,7 +201,8 @@
   &lt;/nav&gt;
 &lt;/section&gt;
 </code></pre>
-                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
+                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
                   </template>
                 </div>
                               </div>
@@ -241,7 +248,8 @@
   &lt;/nav&gt;
 &lt;/section&gt;
 </code></pre>
-                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
+                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
                   </template>
                 </div>
                               </div>
@@ -287,7 +295,8 @@
   &lt;/nav&gt;
 &lt;/section&gt;
 </code></pre>
-                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
+                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
                   </template>
                 </div>
                               </div>
@@ -297,16 +306,18 @@
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
                 <a class="kss-title__permalink" href="#kssref-navigation-navbar">
-                  Navbar (draft)
+                  Basic Navbar
                 </a>
               </h2>
 
                               <div class="kss-description">
                   <ul>
-  <li>to-do</li>
+ <li>All navigation elements should have a <code>&lt;nav&gt;</code> tag.</li>
+ <li>If you have to use a more generic element such as a <code>&lt;div&gt;</code>, add <code>role=&quot;navigation&quot;</code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</li>
+ <li>Menus should be labeled according to their individual function. Use can use <code>class=&quot;visuallyhidden&quot;&gt;</code>, <code>aria-label=&quot;&quot;</code>, or <code>aria-labelledby=&quot;&quot;</code> to easily add context to the different menus on your site.</li>
 </ul>
 
-<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</div></div><div class="markup"></div>
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.mobile-menu.org/WAI/WCAG20/quickref/#ensure-compat-rsv" target="_blank">4.1.2 Name, Role, Value</a>: For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. (Level A)</div></div><div class="markup"></div>
 
 
                 </div>
@@ -318,10 +329,11 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     <section class="navbar-section">
-  <h3>Option #1: List styling</h3>
-  <nav class="navbar">
-    <ul class="nav navbar-nav">
-      <li class="nav-item active">
+  <h3>Option #1: List styling with visuallyhidden class</h3>
+  <nav class="navbar" role="navigation">
+  	<h2 class="visuallyhidden">Main Menu</h2>
+  	<ul class="nav navbar-nav">
+      <li class="nav-item">
         <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
@@ -336,13 +348,33 @@
     </ul>
   </nav>
   <div class="break"></div>
-  <h3>Option #2: No list styling</h3>
-  <nav class="navbar">
-    <div class="nav navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home</a>
-      <a class="nav-item nav-link" href="#">About Us</a>
-      <a class="nav-item nav-link" href="#">More Information</a>
-      <a class="nav-item nav-link" href="#">Contact Us</a>
+  <h3>Option #2: List styling with ARIA label</h3>
+  <nav class="navbar" role="navigation" aria-label="Main Menu">
+    <h2 class="visuallyhidden">Main Menu</h2>
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">More Information</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="break"></div>
+  <h3>Option #3: No list styling with ARIA labelledby</h3>
+  <nav class="navbar" role="navigation" aria-labelledby="mainmenulabel">
+	  <h2 class="visuallyhidden" id="mainmenulabel">Main Menu</h2>
+    <div class="nav navbar-nav" role="navigation">
+      <a class="nav-item nav-link2" href="#">Home</a>
+      <a class="nav-item nav-link2" href="#">About Us</a>
+      <a class="nav-item nav-link2" href="#">More Information</a>
+      <a class="nav-item nav-link2" href="#">Contact Us</a>
     </div>
   </nav>
 </section>
@@ -354,10 +386,11 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;navbar-section&quot;&gt;
-  &lt;h3&gt;Option #1: List styling&lt;/h3&gt;
-  &lt;nav class=&quot;navbar&quot;&gt;
-    &lt;ul class=&quot;nav navbar-nav&quot;&gt;
-      &lt;li class=&quot;nav-item active&quot;&gt;
+  &lt;h3&gt;Option #1: List styling with visuallyhidden class&lt;/h3&gt;
+  &lt;nav class=&quot;navbar&quot; role=&quot;navigation&quot;&gt;
+  	&lt;h2 class=&quot;visuallyhidden&quot;&gt;Main Menu&lt;/h2&gt;
+  	&lt;ul class=&quot;nav navbar-nav&quot;&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
         &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
       &lt;/li&gt;
       &lt;li class=&quot;nav-item&quot;&gt;
@@ -372,18 +405,104 @@
     &lt;/ul&gt;
   &lt;/nav&gt;
   &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-  &lt;h3&gt;Option #2: No list styling&lt;/h3&gt;
-  &lt;nav class=&quot;navbar&quot;&gt;
-    &lt;div class=&quot;nav navbar-nav&quot;&gt;
-      &lt;a class=&quot;nav-item nav-link active&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
-      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;#&quot;&gt;About Us&lt;/a&gt;
-      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;#&quot;&gt;More Information&lt;/a&gt;
-      &lt;a class=&quot;nav-item nav-link&quot; href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
+  &lt;h3&gt;Option #2: List styling with ARIA label&lt;/h3&gt;
+  &lt;nav class=&quot;navbar&quot; role=&quot;navigation&quot; aria-label=&quot;Main Menu&quot;&gt;
+    &lt;h2 class=&quot;visuallyhidden&quot;&gt;Main Menu&lt;/h2&gt;
+    &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;About Us&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;More Information&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Option #3: No list styling with ARIA labelledby&lt;/h3&gt;
+  &lt;nav class=&quot;navbar&quot; role=&quot;navigation&quot; aria-labelledby=&quot;mainmenulabel&quot;&gt;
+	  &lt;h2 class=&quot;visuallyhidden&quot; id=&quot;mainmenulabel&quot;&gt;Main Menu&lt;/h2&gt;
+    &lt;div class=&quot;nav navbar-nav&quot; role=&quot;navigation&quot;&gt;
+      &lt;a class=&quot;nav-item nav-link2&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+      &lt;a class=&quot;nav-item nav-link2&quot; href=&quot;#&quot;&gt;About Us&lt;/a&gt;
+      &lt;a class=&quot;nav-item nav-link2&quot; href=&quot;#&quot;&gt;More Information&lt;/a&gt;
+      &lt;a class=&quot;nav-item nav-link2&quot; href=&quot;#&quot;&gt;Contact Us&lt;/a&gt;
     &lt;/div&gt;
   &lt;/nav&gt;
 &lt;/section&gt;
 </code></pre>
-                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
+                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
+                            <section id="kssref-navigation-navbar-mobile-icon" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-navigation-navbar-mobile-icon">
+                  Navbar Mobile Icon
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>to-do</li>
+</ul>
+
+<div class="more-wrap"><div class="more-toggle"><h3>References</h3></div><div class="more-content"><a href="http://codepen.io/samikeijonen/pen/jqvxdL" target="_blank">Simple and accessible SVG menu hamburger animation</a></div></div>
+
+
+
+<div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</div></div><div class="markup"></div>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    <section class="navbar-mobile-icon">
+  <button class="menu-toggle" id="menu-toggle" aria-expanded="false"><span class="screen-reader-text">Menu</span>
+    <svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
+      <g class="svg-menu-toggle">
+      <path class="line line-1" d="M5 13h90v14H5z"/>
+      <path class="line line-2" d="M5 43h90v14H5z"/>
+      <path class="line line-3" d="M5 73h90v14H5z"/>
+      </g>
+    </svg>
+  </button>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;navbar-mobile-icon&quot;&gt;
+  &lt;button class=&quot;menu-toggle&quot; id=&quot;menu-toggle&quot; aria-expanded=&quot;false&quot;&gt;&lt;span class=&quot;screen-reader-text&quot;&gt;Menu&lt;/span&gt;
+    &lt;svg class=&quot;icon icon-menu-toggle&quot; aria-hidden=&quot;true&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+      &lt;g class=&quot;svg-menu-toggle&quot;&gt;
+      &lt;path class=&quot;line line-1&quot; d=&quot;M5 13h90v14H5z&quot;/&gt;
+      &lt;path class=&quot;line line-2&quot; d=&quot;M5 43h90v14H5z&quot;/&gt;
+      &lt;path class=&quot;line line-3&quot; d=&quot;M5 73h90v14H5z&quot;/&gt;
+      &lt;/g&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
+&lt;/section&gt;
+</code></pre>
+                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
                   </template>
                 </div>
                               </div>
@@ -467,7 +586,8 @@
   &lt;/nav&gt;
 &lt;/section&gt;
 </code></pre>
-                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
+                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
                   </template>
                 </div>
                               </div>
@@ -513,7 +633,8 @@
   &lt;/nav&gt;
 &lt;/section&gt;
 </code></pre>
-                    <button class="button" id="copy-button" data-clipboard-target="#post-shortlink">Copy</button>
+                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
                   </template>
                 </div>
                               </div>
@@ -532,6 +653,7 @@
 <script src="../js/button.js"></script>
 <script src="../js/clipboard.min.js"></script>
 <script src="../js/copy-button.js"></script>
+<script src="../js/mobile-menu-icon.js"></script>
 <script src="../js/more-slide.js"></script>
 <script src="../js/sidebar-slide.js"></script>
 
