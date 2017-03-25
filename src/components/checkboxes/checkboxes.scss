@@ -35,7 +35,7 @@
   }
 }
 
-.checkbox input[type="checkbox"] {
+.checkbox input[type='checkbox'] {
   opacity: 0;
 }
 
@@ -69,19 +69,19 @@
   transform: rotate(45deg);
 }
 
-.checkbox input[type="checkbox"] + label::after {
+.checkbox input[type='checkbox'] + label::after {
   content: none;
 }
 
-.checkbox input[type="checkbox"]:checked + label::after {
+.checkbox input[type='checkbox']:checked + label::after {
   content: '';
 }
 
-.checkbox input[type="checkbox"]:checked + label::before {
+.checkbox input[type='checkbox']:checked + label::before {
   background: $color-cherry;
 }
 
-.checkbox input[type="checkbox"]:focus + label::before {
+.checkbox input[type='checkbox']:focus + label::before {
   outline: auto 2px Highlight; // for non-webkit browsers
   outline: auto 5px -webkit-focus-ring-color; // for webkit browsers
 }

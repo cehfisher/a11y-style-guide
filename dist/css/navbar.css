@@ -16,3 +16,9 @@
     padding-left: 0.5rem;
     color: #464646;
     font-weight: normal; }
+  .navbar .nav-link {
+    padding: 18px 18px 19px;
+    margin-left: -21px; }
+    .navbar .nav-link:hover, .navbar .nav-link:active {
+      background: #e00000;
+      color: #ffffff; }
