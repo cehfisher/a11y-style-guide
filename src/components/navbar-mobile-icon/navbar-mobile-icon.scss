@@ -1,0 +1,93 @@
+// Navbar Mobile Icon
+//
+// <ul>
+//  <li>to-do</li>
+// </ul>
+//
+// <div class="more-wrap"><div class="more-toggle"><h3>WCAG 2.0 Guidelines</h3></div><div class="more-content guidelines"><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</div></div><div class="markup"></div>
+//
+//
+//
+// Markup: navbar-mobile-icon.twig
+//
+// Style guide: Navigation.navbar-mobile-icon
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.navbar-mobile-icon {
+
+  button,
+  input[type='button'] {
+  	border: none;
+  	border-radius: 0;
+  	background: $color-midnight;
+  	color: $color-white;
+    cursor: pointer;
+  	display: inline-block;
+  	padding: 1em 1.5em;
+  	text-transform: uppercase;
+  	transition: all 0.25s ease-in-out;
+  }
+
+  .menu-toggle {
+    font-size: 0.875em;
+  	padding: 1em;
+
+    &:focus {
+    	outline: thin dotted;
+      outline-offset: -2px;
+    }
+  }
+
+  .icon {
+  	display: inline-block;
+  	fill: currentColor;
+  	height: 1em;
+  	width: 1em;
+  	vertical-align: middle;
+  	position: relative;
+  	top: -0.0625em;
+  }
+
+  /* Menu toggle styles. */
+
+  .icon-menu-toggle {
+  	width: 2em;
+  	height: 2em;
+    top: -3px;
+  }
+
+  /* Animate menu icon (lines). */
+  .svg-menu-toggle .line {
+    opacity: 1;
+    transform: rotate(0) translateY(0) translateX(0);
+    transform-origin: 1em 1em;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  .svg-menu-toggle .line-1 {
+    transform-origin: 1em 2.2rem;
+  }
+  .svg-menu-toggle .line-3 {
+    transform-origin: 1em 4.2rem;
+  }
+
+  .menu-toggle.opened .svg-menu-toggle .line-1 {
+    transform: rotate(45deg) translateY(0) translateX(0);
+  }
+  .menu-toggle.opened .svg-menu-toggle .line-2 {
+    opacity: 0;
+  }
+  .menu-toggle.opened .svg-menu-toggle .line-3 {
+    transform: rotate(-45deg) translateY(0em) translateX(0em);
+  }
+
+  /* Text meant only for screen readers. */
+  .screen-reader-text {
+  	clip: rect(1px, 1px, 1px, 1px);
+  	position: absolute !important;
+  	height: 1px;
+  	width: 1px;
+  	overflow: hidden;
+  }
+}

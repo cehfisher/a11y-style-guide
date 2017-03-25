@@ -1,0 +1,54 @@
+.navbar-mobile-icon {
+  /* Menu toggle styles. */
+  /* Animate menu icon (lines). */
+  /* Text meant only for screen readers. */ }
+  .navbar-mobile-icon button,
+  .navbar-mobile-icon input[type='button'] {
+    border: none;
+    border-radius: 0;
+    background: #464646;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+    transition: all 0.25s ease-in-out; }
+  .navbar-mobile-icon .menu-toggle {
+    font-size: 0.875em;
+    padding: 1em; }
+    .navbar-mobile-icon .menu-toggle:focus {
+      outline: thin dotted;
+      outline-offset: -2px; }
+  .navbar-mobile-icon .icon {
+    display: inline-block;
+    fill: currentColor;
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+    position: relative;
+    top: -0.0625em; }
+  .navbar-mobile-icon .icon-menu-toggle {
+    width: 2em;
+    height: 2em;
+    top: -3px; }
+  .navbar-mobile-icon .svg-menu-toggle .line {
+    opacity: 1;
+    transform: rotate(0) translateY(0) translateX(0);
+    transform-origin: 1em 1em;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out; }
+  .navbar-mobile-icon .svg-menu-toggle .line-1 {
+    transform-origin: 1em 2.2rem; }
+  .navbar-mobile-icon .svg-menu-toggle .line-3 {
+    transform-origin: 1em 4.2rem; }
+  .navbar-mobile-icon .menu-toggle.opened .svg-menu-toggle .line-1 {
+    transform: rotate(45deg) translateY(0) translateX(0); }
+  .navbar-mobile-icon .menu-toggle.opened .svg-menu-toggle .line-2 {
+    opacity: 0; }
+  .navbar-mobile-icon .menu-toggle.opened .svg-menu-toggle .line-3 {
+    transform: rotate(-45deg) translateY(0em) translateX(0em); }
+  .navbar-mobile-icon .screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden; }
