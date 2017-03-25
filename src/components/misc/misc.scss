@@ -105,3 +105,8 @@ body {
 abbr[title] {
   text-decoration: none;
 }
+
+.copied {
+	color: $color-grass;
+	display: none;
+}
