@@ -87,7 +87,7 @@ gulp.task('concat', function () {
 //=======================================================
 // Clean all directories.
 //=======================================================
-gulp.task('clean', ['clean:css', 'clean:styleguide']);
+gulp.task('clean', ['clean:css', 'clean:js', 'clean:styleguide']);
 
 // Clean style guide files.
 gulp.task('clean:styleguide', function () {
@@ -97,6 +97,11 @@ gulp.task('clean:styleguide', function () {
 // Clean CSS files.
 gulp.task('clean:css', function () {
   return taskClean.css();
+});
+
+// Clean JS files.
+gulp.task('clean:js', function () {
+  return taskClean.js();
 });
 
 //=======================================================

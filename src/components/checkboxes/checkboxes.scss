@@ -23,6 +23,8 @@
   &.row label {
     display: block;
     float: left;
+    padding-bottom: $padding-sm;
+    clear: none;
   }
 
   &.column {

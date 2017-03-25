@@ -652,7 +652,9 @@ html [type='button'],
 
 .checkbox.row label {
   display: block;
-  float: left; }
+  float: left;
+  padding-bottom: 1rem;
+  clear: none; }
 
 .checkbox.column {
   margin-top: -1.5rem;
