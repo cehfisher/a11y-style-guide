@@ -706,6 +706,14 @@ html [type='button'],
 
 
 
+.images {
+  position: relative;
+  margin: 0 auto;
+  max-width: 650px;
+  max-height: 500px;
+  background-size: contain; }
+  .images img {
+    border-radius: 4px; }
 
 a:focus {
   outline: auto 2px Highlight;
