@@ -29,16 +29,11 @@ var taskStyleGuide  = require('./gulp-tasks/styleguide.js');var taskConcat      
 // We also move some files if they don't need
 // to be compiled.
 //=======================================================
-gulp.task('compile', ['compile:sass', 'compile:js', 'move:js']);
+gulp.task('compile', ['compile:sass', 'move:js']);
 
 // Compile Sass
 gulp.task('compile:sass', function() {
   return taskCompile.sass();
-});
-
-// Compile JavaScript ES2015 to ES5.
-gulp.task('compile:js', function() {
-  return taskCompile.js();
 });
 
 // If some JS components aren't es6 we want to simply move them
@@ -51,16 +46,11 @@ gulp.task('move:js', function() {
 //=======================================================
 // Lint Sass and JavaScript
 //=======================================================
-gulp.task('lint', ['lint:sass', 'lint:js']);
+gulp.task('lint', ['lint:sass']);
 
 // Lint Sass based on .sass-lint.yml config.
 gulp.task('lint:sass', function () {
   return taskLint.sass();
-});
-
-// Lint JavaScript based on .eslintrc config.
-gulp.task('lint:js', function () {
-  return taskLint.js();
 });
 
 //=======================================================

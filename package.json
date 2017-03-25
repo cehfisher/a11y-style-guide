@@ -1,5 +1,5 @@
 {
-  "name": "a11y_style_guide",
+  "name": "d",
   "version": "1.0.0",
   "scripts": {
     "build": "gulp",
@@ -14,20 +14,22 @@
   "devDependencies": {
     "babel-plugin-transform-remove-strict-mode": "0.0.2",
     "babel-preset-es2015": "^6.18.0",
+    "breakpoint-sass": "^2.7.1",
     "browser-sync": "^2.18.2",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-babel": "^6.1.2",
-    "gulp-concat": "https://registry.npmjs.org/gulp-concat/-/gulp-concat-2.6.1.tgz",
+    "gulp-concat": "^2.6.1",
     "gulp-eslint": "^3.0.1",
     "gulp-imagemin": "^3.1.1",
-    "gulp-order": "https://registry.npmjs.org/gulp-order/-/gulp-order-1.1.1.tgz",
+    "gulp-order": "^1.1.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-sass-lint": "^1.3.2",
     "gulp-sourcemaps": "^1.9.1",
-    "kss": "https://registry.npmjs.org/kss/-/kss-3.0.0-beta.17.tgz",
-    "run-sequence": "^1.2.2"
+    "kss": "^3.0.0-beta.18",
+    "run-sequence": "^1.2.2",
+    "singularitygs": "^1.7.1"
   }
 }

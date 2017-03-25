@@ -17,12 +17,15 @@
 
 // Import site utilities.
 @import '../../global/utils/init';
+@import '../../global/utils/breakpoints.scss';
 
 .checkbox {
 
   &.row label {
     display: block;
     float: left;
+    padding-bottom: $padding-sm;
+    clear: none;
   }
 
   &.column {

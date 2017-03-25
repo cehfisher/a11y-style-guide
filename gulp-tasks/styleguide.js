@@ -26,7 +26,7 @@ module.exports = {
       ],
       destination: dirname + '/dist/style-guide',
       builder: dirname + '/src/style-guide/builder',
-      namespace: 'a11y_style_guide:' + dirname + '/src/components/',
+      namespace: 'd:' + dirname + '/src/components/',
       'extend-drupal8': true,
       // The css and js paths are URLs, like '/misc/jquery.js'.
       // The following paths are relative to the generated style guide.
