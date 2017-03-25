@@ -42,7 +42,7 @@ module.exports = {
   // Compile JavaScript.
   js: function() {
     return gulp.src([
-      './src/{global,layout,components}/**/*.js'
+      './src/{global,layout,components}/**/*.es6.js'
     ], { base: './' })
       .pipe(sourcemaps.init())
       .pipe(babel())
@@ -54,6 +54,7 @@ module.exports = {
         // foo.bundle.js file. In that case the bundle name should
         // reflect the components directory name.
         path.dirname = '';
+        path.basename = path.basename.replace(/\.es6/, '');
         return path;
       }))
       .pipe(sourcemaps.write('./'))

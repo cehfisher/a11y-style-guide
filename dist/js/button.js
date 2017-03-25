@@ -1,5 +1,5 @@
-!function (document, $) {
-  function handleBtnClick(event) {
+!((document, $) => {
+function handleBtnClick(event) {
     toggleButton(event.target);
   }
 
@@ -14,9 +14,8 @@
 
   function toggleButton(element) {
     // Check to see if the button is pressed
-    var pressed = element.getAttribute("aria-pressed") === "true";
+    var pressed = (element.getAttribute("aria-pressed") === "true");
     // Change aria-pressed to the opposite state
     element.setAttribute("aria-pressed", !pressed);
   }
-}(document, jQuery);
-//# sourceMappingURL=button.js.map
+})(document, jQuery);
