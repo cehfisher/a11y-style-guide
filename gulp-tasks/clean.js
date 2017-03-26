@@ -33,7 +33,11 @@ module.exports = {
 
   docs: function() {
     return del([
-      './docs/*'
+      './docs/style-guide/',
+      './docs/css/',
+      './docs/assets/',
+      './docs/all/',
+      './docs/js/'
     ], {force: true});
   }
 };
