@@ -29,5 +29,11 @@ module.exports = {
     return del([
       './dist/js/*'
     ], {force: true});
+  },
+
+  docs: function() {
+    return del([
+      './docs/*'
+    ], {force: true});
   }
 };
