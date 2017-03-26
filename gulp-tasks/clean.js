@@ -29,5 +29,15 @@ module.exports = {
     return del([
       './dist/js/*'
     ], {force: true});
+  },
+
+  docs: function() {
+    return del([
+      './docs/style-guide/',
+      './docs/css/',
+      './docs/assets/',
+      './docs/all/',
+      './docs/js/'
+    ], {force: true});
   }
 };
