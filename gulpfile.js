@@ -48,10 +48,10 @@ gulp.task('move:js', function() {
   return taskMove.js();
 });
 
-// For working styleguide to work with Github Pages, we need   
-// to copy the /dist folder into the /docs folder.   
-gulp.task('move:docs', function() {    
-  return taskMove.docs();    
+// For working styleguide to work with Github Pages, we need
+// to copy the /dist folder into the /docs folder.
+gulp.task('move:docs', function() {
+  return taskMove.docs();
 })
 
 //=======================================================
@@ -105,12 +105,12 @@ gulp.task('clean:css', function () {
   return taskClean.css();
 });
 
-// Clean JS files.   
+// Clean JS files.
 gulp.task('clean:js', function () {
-  return taskClean.js();   
+  return taskClean.js();
 });
 
-// Clean Docs folder for new fresh documents.    
+// Clean Docs folder for new fresh documents.
 gulp.task('clean:docs', function() {
   return taskClean.docs();
 })
@@ -131,19 +131,6 @@ gulp.task('watch:sass', function(callback) {
 
 // Main watch task.
 gulp.task('watch', function() {
-
-  // BrowserSync proxy setup
-  // Uncomment this and swap proxy with your local env url.
-  // NOTE: for this to work in Drupal, you must install and enable
-  // https://www.drupal.org/project/link_css. This module should
-  // NOT be committed to the repo OR enabled on production.
-  //
-  // This should work out of the box for work within the style guide.
-  //
-  // sync.init({
-  //   open: false,
-  //   proxy: 'http://test.mcdev'
-  // });
 
   // Watch all my sass files and compile sass if a file changes.
   gulp.watch(
