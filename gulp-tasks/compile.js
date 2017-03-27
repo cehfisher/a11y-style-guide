@@ -21,7 +21,7 @@ module.exports = {
 
   // Compile Sass.
   sass: function() {
-    return gulp.src('./src/{global,layout,components}/**/*.scss')
+    return gulp.src('./src/{global,components}/**/*.scss')
       .pipe(sass({ outputStyle: 'nested' })
         .on('error', sass.logError))
       .pipe(prefix({
@@ -42,7 +42,7 @@ module.exports = {
   // Compile JavaScript.
   js: function() {
     return gulp.src([
-      './src/{global,layout,components}/**/*.es6.js'
+      './src/{global,components}/**/*.es6.js'
     ], { base: './' })
       .pipe(sourcemaps.init())
       .pipe(babel())

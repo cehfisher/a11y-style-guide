@@ -21,8 +21,7 @@ module.exports = {
     return kss({
       source: [
         dirname + '/src/global',
-        dirname + '/src/components',
-        dirname + '/src/layout'
+        dirname + '/src/components'
       ],
       destination: dirname + '/dist/style-guide',
       builder: dirname + '/src/style-guide/builder',

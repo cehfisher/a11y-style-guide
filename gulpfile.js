@@ -48,10 +48,10 @@ gulp.task('move:js', function() {
   return taskMove.js();
 });
 
-// For working styleguide to work with Github Pages, we need
-// to copy the /dist folder into the /docs folder.
-gulp.task('move:docs', function() {
-  return taskMove.docs();
+// For working styleguide to work with Github Pages, we need   
+// to copy the /dist folder into the /docs folder.   
+gulp.task('move:docs', function() {    
+  return taskMove.docs();    
 })
 
 //=======================================================
@@ -105,12 +105,12 @@ gulp.task('clean:css', function () {
   return taskClean.css();
 });
 
-// Clean JS files.
+// Clean JS files.   
 gulp.task('clean:js', function () {
-  return taskClean.js();
+  return taskClean.js();   
 });
 
-// Clean Docs folder for new fresh documents.
+// Clean Docs folder for new fresh documents.    
 gulp.task('clean:docs', function() {
   return taskClean.docs();
 })
@@ -147,18 +147,18 @@ gulp.task('watch', function() {
 
   // Watch all my sass files and compile sass if a file changes.
   gulp.watch(
-    './src/{global,layout,components}/**/*.scss',
+    './src/{global,components}/**/*.scss',
     ['watch:sass']
   );
 
   // Watch all my JS files and compile if a file changes.
   gulp.watch([
-    './src/{global,layout,components}/**/*.js'
+    './src/{global,components}/**/*.js'
   ], ['lint:js', 'compile:js']);
 
   // Watch all my twig files and rebuild the style guide if a file changes.
   gulp.watch(
-    './src/{layout,components}/**/*.twig',
+    './src/{components}/**/*.twig',
     ['watch:styleguide']
   );
 
