@@ -48,6 +48,12 @@ gulp.task('move:js', function() {
   return taskMove.js();
 });
 
+// For working styleguide to work with Github Pages, we need   
+// to copy the /dist folder into the /docs folder.   
+gulp.task('move:docs', function() {    
+  return taskMove.docs();    
+})
+
 //=======================================================
 // Lint Sass and JavaScript
 //=======================================================
@@ -87,7 +93,7 @@ gulp.task('concat', function () {
 //=======================================================
 // Clean all directories.
 //=======================================================
-gulp.task('clean', ['clean:css', 'clean:styleguide']);
+gulp.task('clean', ['clean:css', 'clean:js', 'clean:styleguide']);
 
 // Clean style guide files.
 gulp.task('clean:styleguide', function () {
@@ -98,6 +104,16 @@ gulp.task('clean:styleguide', function () {
 gulp.task('clean:css', function () {
   return taskClean.css();
 });
+
+// Clean JS files.   
+gulp.task('clean:js', function () {
+  return taskClean.js();   
+});
+
+// Clean Docs folder for new fresh documents.    
+gulp.task('clean:docs', function() {
+  return taskClean.docs();
+})
 
 //=======================================================
 // Watch and recompile sass.
