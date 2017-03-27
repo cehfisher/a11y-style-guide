@@ -21,7 +21,7 @@ module.exports = {
 
   // Compile Sass.
   sass: function() {
-    return gulp.src('./src/{global,components}/**/*.scss')
+    return gulp.src('./src/{global,layout,components}/**/*.scss')
       .pipe(sass({ outputStyle: 'nested' })
         .on('error', sass.logError))
       .pipe(prefix({
