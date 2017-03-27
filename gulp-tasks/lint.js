@@ -18,7 +18,7 @@ module.exports = {
   // Lint Sass based on .sass-lint.yml config.
   sass: function() {
     return gulp.src([
-      './src/{global,layout,components}/**/*.scss',
+      './src/{global,components}/**/*.scss',
       '!./src/global/utils/*'
     ])
       .pipe(sassLint())
