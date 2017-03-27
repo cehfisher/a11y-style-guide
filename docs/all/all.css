@@ -1077,6 +1077,9 @@ input[type='search'] {
   background: #eeeeee;
   border-radius: 4px; }
 
+#kss-node .kss-description blockquote {
+  margin-bottom: 2rem; }
+
 #kss-node .kss-description h3 {
   font-weight: normal;
   font-style: normal;
