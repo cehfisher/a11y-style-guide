@@ -1,6 +1,9 @@
 //=======================================================
 // Utilities: Import Sass mixins, variables, modules etc.
 //=======================================================
+// Import breakpoint plugin
+// http://breakpoint-sass.com/
+@import '../../../node_modules/breakpoint-sass/stylesheets/breakpoint';
 
 // Import variables
 @import 'variables';
