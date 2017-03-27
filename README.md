@@ -32,7 +32,7 @@
 <li><code>nvm use</code></li>
 <li><code>npm install</code> (only need to do once)</li>
 <li>Change/add some code</li>
-<li><code>npm run gulp</code></li>
+<li><code>npm run gulp</code> (this will run all the gulp commands)</li>
 </ul>
 <p>This will run all the gulp commands including the style guide update. If you want to contribute back, please do so! This is a great <a href="https://www.atlassian.com/git" target="_blank">Git resource</a> if you need to brush-up on your skills (all levels)</p></div>
 
