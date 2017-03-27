@@ -27,12 +27,12 @@
 <div><h2>Where to begin?</h2>
 <p>This has a KSS node base, so learn a bit about <a href="https://github.com/kss-node/kss-node/wiki/Quick-Start-Guide" target="_blank">how KSS node works</a></p>
 <p>To make local changes to components, do the following:</p>
-<ul><li>Navigate to: <code>themes/custom/a11y_style_guide</code></li>
+<ul><li>Navigate to the project root</li>
 <li><code>nvm install stable</code> (only need to do once)</li>
 <li><code>nvm use</code></li>
-<li><code>nvm install</code> (only need to do once)</li>
+<li><code>npm install</code> (only need to do once)</li>
 <li>Change/add some code</li>
-<li><code>nvm run gulp</code></li>
+<li><code>npm run gulp</code></li>
 </ul>
 <p>This will run all the gulp commands including the style guide update. If you want to contribute back, please do so! This is a great <a href="https://www.atlassian.com/git" target="_blank">Git resource</a> if you need to brush-up on your skills (all levels)</p></div>
 
