@@ -28,7 +28,7 @@ module.exports = {
   // Lint JavaScript based on .eslintrc config.
   js: function() {
     return gulp.src([
-      './src/{global,layout,components}/**/*.js',
+      './src/{global,components}/**/*.js',
       '!./src/components/**/vendors/*'
     ])
       .pipe(eslint())
