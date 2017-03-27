@@ -307,6 +307,53 @@
                   <ul>
  <li>To-do</li>
 </ul>
+
+<div class="more-wrap">
+<div class="more-toggle">
+<h3>WCAG 2.0 Guidelines</h3>
+</div>
+<div class="more-content guidelines">
+<a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a>
+: All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions).
+(Level A)
+<br><br><strong>Note:</strong>
+If non-text content is pure decoration, is used only for visual formatting,
+or is not presented to users, then it does not need text alternatives.
+<br><br>
+<a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.2.1 Video-only (Prerecorded) 1.2.3 Video-alternative (Prerecorded)</a>
+: Information presented in different ways including animation,
+text or graphics, the setting and background of the piece as well as
+the actions and expressions of people.
+To present the same information in accessible form a document serves
+as a long description for the content and includes all of the important
+information as well as descriptions of scenery, actions, expressions, etc. that are part of the presentation.
+(Level A)
+<br><br>
+<a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.2.2 Captions (Prerecorded)</a>
+: Provide a way for people who are deaf or hearing impaired
+to be able to view the material.
+All of the dialogue and important sounds are embedded as text in the video track.
+This should not require the user to enable closed captions.
+(Level A)
+<br><br>
+<a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.2.5 Audio Description (Prerecorded)</a>
+: Provide an audio (spoken) version of information that is provided visually so that it is possible for people who cannot see to be able to understand audio-visual material.
+(Level AA)
+<br><br>
+<a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.2.6 Sign Language (Prerecorded)</a>
+: It is important to provide sign language presentation of the audio information for people who are not able to rapidly read text in captions.
+(Level AAA)
+<br><br>
+<a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.2.8 Media Alternative (Prerecorded)</a>
+: As with 1.2.5, a different version of the video is provided. Used where there needs to be significant audio descriptions that would
+be disruptive to users who do not require it.
+(Level AAA)
+<br><br>
+</div>
+</div>
+<div class="markup"></div>
+
+
                 </div>
               
                           </div>
@@ -330,6 +377,12 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/U9t-slLl30E" frameborder="0" allowfullscreen></iframe>
       </object>
     </video>
+    <div class="videos__transcript">
+      <a href="http://www.example.com/location/of_transcript.htm">Get Transcript</a>
+    </div>
+    <div class="videos__alt-audio">
+      <a href="http://www.example.com/location/of_audiotrack.mp4">Alternative Audio Track</a>
+    </div>
   </div>
 </section>
 
@@ -354,6 +407,12 @@
         &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/U9t-slLl30E&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
       &lt;/object&gt;
     &lt;/video&gt;
+    &lt;div class=&quot;videos__transcript&quot;&gt;
+      &lt;a href=&quot;http://www.example.com/location/of_transcript.htm&quot;&gt;Get Transcript&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;videos__alt-audio&quot;&gt;
+      &lt;a href=&quot;http://www.example.com/location/of_audiotrack.mp4&quot;&gt;Alternative Audio Track&lt;/a&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>
