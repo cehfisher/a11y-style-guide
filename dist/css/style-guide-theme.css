@@ -320,7 +320,7 @@ abbr[title] {
   max-height: 0vh;
   visibility: hidden; }
 
-.atblock__title + .atblock__panel[aria-hidden="false"],
+.atblock__title + .atblock__panel[aria-hidden='false'],
 .no-js .atblock__title + .atblock__panel:target {
   max-height: 100%;
   visibility: visible;
@@ -344,7 +344,7 @@ abbr[title] {
   height: 30px;
   line-height: 1.4;
   margin: 0.5rem 0; }
-  .atblock__title__trigger[aria-expanded="true"] {
+  .atblock__title__trigger[aria-expanded='true'] {
     content: '';
     background: url("../assets/minus_round_red.png");
     background-size: 32px;

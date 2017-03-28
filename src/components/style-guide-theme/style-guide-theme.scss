@@ -395,7 +395,7 @@ abbr[title] {
   visibility: hidden;
 }
 
-.atblock__title + .atblock__panel[aria-hidden="false"],
+.atblock__title + .atblock__panel[aria-hidden='false'],
 .no-js .atblock__title + .atblock__panel:target {
   max-height: 100%;
   visibility: visible;
@@ -421,7 +421,7 @@ abbr[title] {
   line-height: 1.4;
   margin: $padding-xsm 0;
 
-  &[aria-expanded="true"] {
+  &[aria-expanded='true'] {
     content: '';
     background: url('#{$asset-path}/minus_round_red.png'); // replace with minus
     background-size: 32px;
