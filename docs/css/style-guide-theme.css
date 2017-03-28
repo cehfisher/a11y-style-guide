@@ -119,7 +119,6 @@
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  margin-bottom: 0;
   color: #e00000;
   text-decoration: none;
   font-weight: bold; }
@@ -259,3 +258,118 @@
     color: #ffffff;
     opacity: 1;
     top: 0; }
+
+body {
+  font-family: 'Verdana', 'Arial', sans-serif;
+  color: #464646; }
+
+.break {
+  margin: 3rem 0;
+  border-bottom: 1px solid #eeeeee; }
+
+.markup {
+  margin: 1.5rem 0;
+  border-bottom: 1px solid #eeeeee; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.bold {
+  font-weight: bold !important; }
+
+.js-show-markup {
+  margin: 0.5rem 0; }
+
+abbr[title] {
+  text-decoration: none; }
+
+.copied {
+  color: #3cf73c;
+  display: none; }
+
+.atblock {
+  position: relative; }
+
+.atblock__title,
+.atblock__panel {
+  overflow: hidden;
+  position: relative;
+  padding: 0 0.5rem;
+  margin: 0 !important; }
+  .atblock__title p,
+  .atblock__panel p {
+    margin: 10px 0 15px !important; }
+  .atblock__title ul,
+  .atblock__panel ul {
+    margin: 0 !important; }
+  .atblock__title.guidelines p,
+  .atblock__panel.guidelines p {
+    margin: 10px 10px 15px 55px !important;
+    border-left: 2px solid #eeeeee;
+    padding-left: 15px;
+    position: relative; }
+
+.atblock__title + .atblock__panel {
+  max-height: 0;
+  visibility: hidden; }
+
+.atblock__title + .atblock__panel[aria-hidden='false'],
+.no-js .atblock__title + .atblock__panel:target {
+  max-height: 100%;
+  visibility: visible;
+  padding-bottom: 1rem;
+  padding-left: 1rem; }
+
+.atblock__title__trigger {
+  font-size: 20px;
+  font-weight: normal !important;
+  padding: 0;
+  background-repeat: no-repeat;
+  padding-right: 40px;
+  display: inline-block !important;
+  background-image: url("../assets/plus_round_red.png");
+  background-size: 32px;
+  background-position: 100% 50%;
+  border: 0;
+  box-shadow: none;
+  background-color: transparent;
+  font-family: 'Verdana', 'Arial', sans-serif;
+  height: 30px;
+  line-height: 1.4;
+  margin: 0.5rem 0; }
+  .atblock__title__trigger[aria-expanded='true'] {
+    content: '';
+    background: url("../assets/minus_round_red.png");
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: 100% 50%; }
+  .atblock__title__trigger:hover, .atblock__title__trigger:focus, .atblock__title__trigger:active {
+    border: 0;
+    box-shadow: none;
+    background-color: transparent; }
+
+.guidelines {
+  margin-left: 10px;
+  position: relative; }
+  .guidelines::before {
+    content: '';
+    background: url("../assets/w3c.png");
+    background-size: 50px;
+    float: left;
+    clear: both;
+    width: 50px;
+    margin: auto;
+    position: absolute;
+    top: 12px;
+    bottom: 0;
+    left: 10px;
+    right: auto;
+    text-align: left;
+    background-repeat: no-repeat; }
