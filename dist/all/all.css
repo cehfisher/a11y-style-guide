@@ -1267,7 +1267,7 @@ abbr[title] {
     position: relative; }
 
 .atblock__title + .atblock__panel {
-  max-height: 0vh;
+  max-height: 0;
   visibility: hidden; }
 
 .atblock__title + .atblock__panel[aria-hidden='false'],

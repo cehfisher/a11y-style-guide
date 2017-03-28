@@ -391,7 +391,7 @@ abbr[title] {
 
 // these need to be siblings. so as to ensure that content isn't hidden if a title doesn't exist
 .atblock__title + .atblock__panel {
-  max-height: 0vh;
+  max-height: 0;
   visibility: hidden;
 }
 
