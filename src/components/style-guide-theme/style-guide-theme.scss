@@ -7,6 +7,7 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
+// KSS node changes
 #kss-node {
 
   // Main content
@@ -157,7 +158,6 @@
   .kss-overview a,
   .kss-description a {
     text-align: left;
-    margin-bottom: 0;
     color: $color-cherry;
     text-decoration: none;
     font-weight: bold;
@@ -311,5 +311,151 @@
     color: $color-white;
     opacity: 1;
     top: 0;
+  }
+}
+
+// Misc changes
+body {
+  @include font-stack-base;
+  color: $color-midnight;
+}
+
+.break {
+  margin: $padding-md-lg 0;
+  border-bottom: 1px solid $color-gallery;
+}
+
+.markup {
+  margin: 1.5rem 0;
+  border-bottom: 1px solid $color-gallery;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.js-show-markup {
+  margin: $padding-xsm 0;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+.copied {
+	color: $color-grass;
+	display: none;
+}
+
+// ARIA toggle theme
+.atblock {
+  position: relative;
+}
+
+.atblock__title,
+.atblock__panel {
+  overflow: hidden;
+  position: relative;
+  padding: 0 $padding-xsm;
+  margin: 0 !important;
+
+  p {
+    margin: 10px 0 15px !important;
+  }
+
+  ul {
+    margin: 0 !important;
+  }
+
+  &.guidelines {
+
+    p {
+      margin: 10px 10px 15px 55px !important;
+      border-left: 2px solid $color-gallery;
+      padding-left: 15px;
+      position: relative;
+    }
+  }
+}
+
+// these need to be siblings. so as to ensure that content isn't hidden if a title doesn't exist
+.atblock__title + .atblock__panel {
+  max-height: 0;
+  visibility: hidden;
+}
+
+.atblock__title + .atblock__panel[aria-hidden='false'],
+.no-js .atblock__title + .atblock__panel:target {
+  max-height: 100%;
+  visibility: visible;
+  padding-bottom: $padding-sm;
+  padding-left: $padding-sm;
+}
+
+.atblock__title__trigger {
+  font-size: 20px;
+  font-weight: normal !important;
+  padding: 0;
+  background-repeat: no-repeat;
+  padding-right: 40px;
+  display: inline-block !important;
+  background-image: url('#{$asset-path}/plus_round_red.png'); // replace with plus
+  background-size: 32px;
+  background-position: 100% 50%;
+  border: 0;
+  box-shadow: none;
+  background-color: transparent;
+  font-family: 'Verdana', 'Arial', sans-serif;
+  height: 30px;
+  line-height: 1.4;
+  margin: $padding-xsm 0;
+
+  &[aria-expanded='true'] {
+    content: '';
+    background: url('#{$asset-path}/minus_round_red.png'); // replace with minus
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
+
+.guidelines {
+  margin-left: 10px;
+  position: relative;
+
+  &::before {
+    content: '';
+    background: url('#{$asset-path}/w3c.png');
+    background-size: 50px;
+    float: left;
+    clear: both;
+    width: 50px;
+    margin: auto;
+    position: absolute;
+    top: 12px;
+    bottom: 0;
+    left: 10px;
+    right: auto;
+    text-align: left;
+    background-repeat: no-repeat;
   }
 }

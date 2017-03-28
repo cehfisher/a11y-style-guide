@@ -6,7 +6,7 @@
 //  <li>Turn read more links into buttons, when you can.</li>
 // </ul>
 //
-// <div class="more-wrap"><div class="more-toggle"><h3>References</h3></div><div class="more-content"><a href="http://www.last-child.com/aria-labelledby-on-lists/" target="_blank">ARIA Labelledby on Lists</a><br><br><a href="https://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/ARIA8#ARIA8-examples" target="_blank">Describing the purpose of a link in HTML using aria-label</a></div></div>
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#label_res">Resources</a></h3><div id="label_res" class="atblock__panel"><ul><li><a href="http://www.last-child.com/aria-labelledby-on-lists/" target="_blank">ARIA Labelledby on Lists</a></li><li><a href="https://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/ARIA8#ARIA8-examples" target="_blank">Describing the purpose of a link in HTML using aria-label</a></li></ul></div><div class="markup"></div></section>
 //
 //
 //
