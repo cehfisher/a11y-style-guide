@@ -93,7 +93,7 @@
   .kss-sidebar {
     height: 100% !important;
     background: $color-gallery;
-    padding: $padding-md;
+    padding: ($padding-md + $padding-xsm) $padding-md;
     width: 275px;
     box-shadow: $shadow-sm;
     float: left;
@@ -247,7 +247,7 @@
   height: 30px;
   background: url('#{$asset-path}/chevron_left_round_red.png') no-repeat;
   right: 10px;
-  top: 5px;
+  top: 13px;
   background-size: 32px;
   border: 0;
   box-shadow: none;
@@ -286,7 +286,7 @@
   background: url('#{$asset-path}/chevron_right_round_red.png') no-repeat;
   background-size: 32px;
   right: 40px;
-  top: 5px;
+  top: 13px;
 }
 
 

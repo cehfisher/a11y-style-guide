@@ -60,7 +60,7 @@
 #kss-node .kss-sidebar {
   height: 100% !important;
   background: #eeeeee;
-  padding: 2rem;
+  padding: 2.5rem 2rem;
   width: 275px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   float: left;
@@ -209,7 +209,7 @@
   height: 30px;
   background: url("../assets/chevron_left_round_red.png") no-repeat;
   right: 10px;
-  top: 5px;
+  top: 13px;
   background-size: 32px;
   border: 0;
   box-shadow: none;
@@ -237,7 +237,7 @@
   background: url("../assets/chevron_right_round_red.png") no-repeat;
   background-size: 32px;
   right: 40px;
-  top: 5px; }
+  top: 13px; }
 
 .kss-skip-link {
   background: #e00000;
