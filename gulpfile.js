@@ -57,7 +57,7 @@ gulp.task('move:docs', function() {
 //=======================================================
 // Lint Sass and JavaScript
 //=======================================================
-gulp.task('lint', ['lint:sass', 'lint:js']);
+gulp.task('lint', ['lint:sass']);
 
 // Lint Sass based on .sass-lint.yml config.
 gulp.task('lint:sass', function () {
