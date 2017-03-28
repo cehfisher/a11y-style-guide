@@ -311,9 +311,9 @@ abbr[title] {
     margin: 0 !important; }
   .atblock__title.guidelines p,
   .atblock__panel.guidelines p {
-    margin: 10px 10px 15px 3rem !important;
+    margin: 10px 10px 15px 55px !important;
     border-left: 2px solid #eeeeee;
-    padding-left: 1rem;
+    padding-left: 15px;
     position: relative; }
 
 .atblock__title + .atblock__panel {
