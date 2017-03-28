@@ -1249,31 +1249,33 @@ abbr[title] {
 
 .atblock__title,
 .atblock__panel {
-  margin: 0;
   overflow: hidden;
   position: relative;
-  margin: 0 !important;
-  padding: 0 0.5rem; }
+  padding: 0 0.5rem;
+  margin: 0 !important; }
   .atblock__title p,
   .atblock__panel p {
     margin: 10px 0 15px !important; }
+  .atblock__title ul,
+  .atblock__panel ul {
+    margin: 0 !important; }
   .atblock__title.guidelines p,
   .atblock__panel.guidelines p {
-    margin: 10px 10px 15px !important;
+    margin: 10px 10px 15px 3rem !important;
     border-left: 2px solid #eeeeee;
-    padding-left: 60px !important;
+    padding-left: 1rem;
     position: relative; }
 
 .atblock__title + .atblock__panel {
   max-height: 0vh;
-  transition: padding 0.2s ease-in-out, max-height 0.2s ease-in-out, visibility 0.2s ease-in-out;
   visibility: hidden; }
 
 .atblock__title + .atblock__panel[aria-hidden="false"],
 .no-js .atblock__title + .atblock__panel:target {
-  max-height: 40vh;
+  max-height: 100%;
   visibility: visible;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  padding-left: 1rem; }
 
 .atblock__title__trigger {
   font-size: 20px;
@@ -1304,7 +1306,7 @@ abbr[title] {
     background-color: transparent; }
 
 .guidelines {
-  margin-left: 60px !important;
+  margin-left: 10px;
   position: relative; }
   .guidelines::before {
     content: '';
@@ -1317,8 +1319,8 @@ abbr[title] {
     position: absolute;
     top: 12px;
     bottom: 0;
+    left: 8px;
     right: auto;
-    margin-left: -52px;
     text-align: left;
     background-repeat: no-repeat; }
 

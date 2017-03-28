@@ -365,22 +365,25 @@ abbr[title] {
 
 .atblock__title,
 .atblock__panel {
-  margin: 0;
   overflow: hidden;
   position: relative;
-  margin: 0 !important;
   padding: 0 $padding-xsm;
+  margin: 0 !important;
 
   p {
     margin: 10px 0 15px !important;
   }
 
+  ul {
+    margin: 0 !important;
+  }
+
   &.guidelines {
 
     p {
-      margin: 10px 10px 15px !important;
+      margin: 10px 10px 15px 3rem !important;
       border-left: 2px solid $color-gallery;;
-      padding-left: 60px !important;
+      padding-left: $padding-sm;
       position: relative;
     }
   }
@@ -389,18 +392,15 @@ abbr[title] {
 // these need to be siblings. so as to ensure that content isn't hidden if a title doesn't exist
 .atblock__title + .atblock__panel {
   max-height: 0vh;
-  transition:
-    padding 0.2s ease-in-out,
-    max-height 0.2s ease-in-out,
-    visibility 0.2s ease-in-out;
   visibility: hidden;
 }
 
 .atblock__title + .atblock__panel[aria-hidden="false"],
 .no-js .atblock__title + .atblock__panel:target {
-  max-height: 40vh;
+  max-height: 100%;
   visibility: visible;
   padding-bottom: $padding-sm;
+  padding-left: $padding-sm;
 }
 
 .atblock__title__trigger {
@@ -439,7 +439,7 @@ abbr[title] {
 }
 
 .guidelines {
-  margin-left: 60px !important;
+  margin-left: 10px;
   position: relative;
 
   &::before {
@@ -453,8 +453,8 @@ abbr[title] {
     position: absolute;
     top: 12px;
     bottom: 0;
+    left: 8px;
     right: auto;
-    margin-left: -52px;
     text-align: left;
     background-repeat: no-repeat;
   }
