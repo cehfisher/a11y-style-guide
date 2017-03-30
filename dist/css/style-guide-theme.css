@@ -398,7 +398,7 @@ a[target="_blank"]::after {
   background: url("../assets/icon_new-tab.png");
   background-size: 15px;
   background-repeat: no-repeat;
-  margin: 0 3px -2px 5px;
+  margin: 0 0 -2px 5px;
   width: 15px;
   height: 15px;
   display: inline-block; }
