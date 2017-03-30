@@ -1324,25 +1324,6 @@ abbr[title] {
     text-align: left;
     background-repeat: no-repeat; }
 
-.social-link-twitter {
-  content: '';
-  background: url("../assets/icon_twitter.png");
-  background-size: 32px;
-  background-repeat: no-repeat;
-  padding: 1rem 1.5rem; }
-
-.social-link-github {
-  content: '';
-  background: url("../assets/icon_github.png");
-  background-size: 32px;
-  background-repeat: no-repeat;
-  padding: 1rem 1.5rem; }
-
-.social-link-out {
-  position: absolute;
-  right: 2rem;
-  top: 2rem; }
-
 a[target="_blank"]::after {
   content: '';
   background: url("../assets/icon_new-tab.png");
@@ -1352,6 +1333,29 @@ a[target="_blank"]::after {
   width: 15px;
   height: 15px;
   display: inline-block; }
+
+.social-link-twitter {
+  content: '';
+  background: url("../assets/icon_twitter.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 1rem 1.5rem; }
+  .social-link-twitter[target="_blank"]::after {
+    display: none; }
+
+.social-link-github {
+  content: '';
+  background: url("../assets/icon_github.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 1rem 1.5rem; }
+  .social-link-github[target="_blank"]::after {
+    display: none; }
+
+.social-link-out {
+  position: absolute;
+  right: 2rem;
+  top: 2rem; }
 
 .back-to-top {
   background-color: #e00000;
