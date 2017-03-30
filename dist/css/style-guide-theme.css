@@ -405,7 +405,7 @@ abbr[title] {
   background-image: url("../assets/chevron_up_round_red.png");
   background-repeat: no-repeat;
   background-size: 32px;
-  border-radius: 4px 0 0 0;
+  border-top-left-radius: 4px;
   background-position: 50%; }
   .back-to-top:hover {
     background-color: #a51323; }

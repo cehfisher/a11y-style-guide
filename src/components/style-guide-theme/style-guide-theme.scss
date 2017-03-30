@@ -495,7 +495,7 @@ abbr[title] {
   background-image: url('#{$asset-path}/chevron_up_round_red.png');
   background-repeat: no-repeat;
   background-size: 32px;
-  border-radius: $border-rd-sm 0 0 0;
+  border-top-left-radius: $border-rd-sm;
   background-position: 50%;
 
   &:hover {
