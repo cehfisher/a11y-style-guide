@@ -32,10 +32,10 @@
 
 
   $('.back-to-top').on('click', function () {
-    var $targetNode = $(this).attr('href').split('#')[1];
-    $('#' + $targetNode).attr('tabindex', '-1');
+    var $targetNode = $(this).attr('href').split('h1')[1];
+    $('h1' + $targetNode).attr('tabindex', '-1');
     $html.removeClass('show-back-to-top');
-    $('#' + $targetNode).focus();
+    $('h1' + $targetNode).focus();
   });
 
 })( jQuery, this.document );

@@ -45,7 +45,7 @@
   .kss-content {
     padding-left: $padding-xsm;
     transition: all 0.5s ease-in-out;
-    margin: 0 $padding-sm 0 325px;
+    margin: 0 $padding-md 0 325px;
 
     li {
       padding-bottom: $padding-xsm;
@@ -54,7 +54,7 @@
 
   .kss-sidebar-collapsed + .kss-content {
     transition: all 0.5s ease-in-out;
-    margin: 0 $padding-sm 0 5rem;
+    margin: 0 $padding-md 0 5rem;
   }
 
   .kss-modifier-original .kss-modifier-example {
@@ -480,4 +480,29 @@ abbr[title] {
   position: absolute;
   right: $padding-md;
   top: $padding-md;
+}
+
+// back to top styling
+.back-to-top {
+  background-color: $color-cherry;
+  bottom: -1px;
+  height: 40px;
+  position: fixed;
+  right: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
+  width: 40px;
+  background-image: url('#{$asset-path}/chevron_up_round_red.png');
+  background-repeat: no-repeat;
+  background-size: 32px;
+  border-radius: $border-rd-sm 0 0 0;
+  background-position: 50%;
+
+  &:hover {
+    background-color: $color-ruby;
+  }
+}
+
+.show-back-to-top .back-to-top {
+  transform: translateY(0%);
 }

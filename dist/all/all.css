@@ -975,13 +975,13 @@ input[type='search'] {
 #kss-node .kss-content {
   padding-left: 0.5rem;
   transition: all 0.5s ease-in-out;
-  margin: 0 1rem 0 325px; }
+  margin: 0 2rem 0 325px; }
   #kss-node .kss-content li {
     padding-bottom: 0.5rem; }
 
 #kss-node .kss-sidebar-collapsed + .kss-content {
   transition: all 0.5s ease-in-out;
-  margin: 0 1rem 0 5rem; }
+  margin: 0 2rem 0 5rem; }
 
 #kss-node .kss-modifier-original .kss-modifier-example {
   padding: 1rem 0; }
@@ -1342,6 +1342,26 @@ abbr[title] {
   position: absolute;
   right: 2rem;
   top: 2rem; }
+
+.back-to-top {
+  background-color: #e00000;
+  bottom: -1px;
+  height: 40px;
+  position: fixed;
+  right: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
+  width: 40px;
+  background-image: url("../assets/chevron_up_round_red.png");
+  background-repeat: no-repeat;
+  background-size: 32px;
+  border-radius: 4px 0 0 0;
+  background-position: 50%; }
+  .back-to-top:hover {
+    background-color: #a51323; }
+
+.show-back-to-top .back-to-top {
+  transform: translateY(0%); }
 
 
 
