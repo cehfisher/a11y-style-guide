@@ -482,6 +482,17 @@ abbr[title] {
   top: $padding-md;
 }
 
+a[target="_blank"]::after {
+  content: '';
+  background: url('#{$asset-path}/icon_new-tab.png'); // Outside link icon
+  background-size: 15px;
+    background-repeat: no-repeat;
+    margin: 0 3px -2px 5px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+
 // back to top styling
 .back-to-top {
   background-color: $color-cherry;

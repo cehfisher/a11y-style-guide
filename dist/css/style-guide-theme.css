@@ -393,6 +393,16 @@ abbr[title] {
   right: 2rem;
   top: 2rem; }
 
+a[target="_blank"]::after {
+  content: '';
+  background: url("../assets/icon_new-tab.png");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  margin: 0 3px -2px 5px;
+  width: 15px;
+  height: 15px;
+  display: inline-block; }
+
 .back-to-top {
   background-color: #e00000;
   bottom: -1px;
