@@ -1,5 +1,5 @@
-<div><h1>A11Y Style Guide</h1>
-<p>This application is a living style guide, generated from KSS documented styles...with an accessibility twist. No matter your level of development or accessibility expertise, there are ways to <a href="https://github.com/cehfisher/a11y-style-guide" target="_blank">help contribute</a>.</p></div>
+<div><h1>A11Y Style Guide</h1><div class="social-link-out"><a href="https://twitter.com/cariefisher" target="_blank" class="social-link-twitter" aria-label="Twitter account link"><span class="visuallyhidden">Twitter account link</span></a><a href="https://github.com/cehfisher" target="_blank" class="social-link-github" aria-label="GitHub account link"><span class="visuallyhidden">GitHub account link</span></a></div>
+<p>This application is a living style guide, generated from KSS documented styles...with an accessibility twist. No matter your level of development or accessibility expertise, there are ways to <a href="https://github.com/cehfisher/a11y-style-guide" target="_blank" aria-label="Accessibility style GitHub repo">help contribute</a>.</p></div>
 
 <div class="break"></div>
 <div><h2>How this all got started</h2>
