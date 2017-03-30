@@ -459,3 +459,25 @@ abbr[title] {
     background-repeat: no-repeat;
   }
 }
+
+.social-link-twitter {
+  content: '';
+  background: url('#{$asset-path}/icon_twitter.png'); // Twitter icon
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: $padding-sm 1.5rem;
+}
+
+.social-link-github {
+  content: '';
+  background: url('#{$asset-path}/icon_github.png'); // GitHub icon
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: $padding-sm 1.5rem;
+}
+
+.social-link-out {
+  position: absolute;
+  right: $padding-md;
+  top: $padding-md;
+}

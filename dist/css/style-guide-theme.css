@@ -373,3 +373,22 @@ abbr[title] {
     right: auto;
     text-align: left;
     background-repeat: no-repeat; }
+
+.social-link-twitter {
+  content: '';
+  background: url("../assets/icon_twitter.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 1rem 1.5rem; }
+
+.social-link-github {
+  content: '';
+  background: url("../assets/icon_github.png");
+  background-size: 32px;
+  background-repeat: no-repeat;
+  padding: 1rem 1.5rem; }
+
+.social-link-out {
+  position: absolute;
+  right: 2rem;
+  top: 2rem; }
