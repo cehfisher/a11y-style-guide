@@ -1,4 +1,5 @@
-<div><h1>A11Y Style Guide</h1><div class="social-link-out"><a href="https://twitter.com/cariefisher" target="_blank" class="social-link-twitter" aria-label="Twitter account link"><span class="visuallyhidden">Twitter account link</span></a><a href="https://github.com/cehfisher" target="_blank" class="social-link-github" aria-label="GitHub account link"><span class="visuallyhidden">GitHub account link</span></a></div><p>This application is a living style guide, generated from KSS documented styles...with an accessibility twist. See a <a href="https://cehfisher.github.io/a11y-style-guide/style-guide" target="_blank" aria-label="Accessibility style guide demo">live demo</a> of the style guide.</p></div>
+<div><h1>A11Y Style Guide</h1>
+<p>This application is a living style guide, generated from KSS documented styles...with an accessibility twist. See a <a href="https://cehfisher.github.io/a11y-style-guide/style-guide" target="_blank" aria-label="Accessibility style guide demo">live demo</a> of the style guide.</p><p><div class="social-link-out"><a href="https://twitter.com/cariefisher" target="_blank" class="social-link-twitter" aria-label="Twitter account link">Follow me on Twitter</a></div></p></div>
 
 <div class="break"></div>
 <div><h2>How this all got started</h2>
