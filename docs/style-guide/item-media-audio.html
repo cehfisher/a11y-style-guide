@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>A11Y Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script>
+    // remove no-js and add 'js' to the HTML
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="../all/all.css">
+
+</head>
+<body id="kss-node">
+
+  <a href="#kss-main-content" class="kss-skip-link">
+    Jump to main content
+  </a>
+
+  <div class="kss-wrapper">
+
+    <div class="kss-sidebar">
+
+      <div class="kss-sidebar-inner">
+        <header class="kss-header">
+          <h1 class="kss-doc-title">
+            <abbr title="accessibility">A11Y</abbr> Style Guide
+          </h1>
+        </header>
+
+        <nav class="kss-nav">
+          <button type="button" class="nav-btn">
+            <span class="visuallyhidden">
+              Navigation Toggle
+            </span>
+          </button>
+
+          <ul id="kss-nav-list" class="kss-menu">
+            <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+                          <li class="kss-menu-item">
+                <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-navigation.html"><span class="kss-ref">4</span><span class="kss-name">Navigation</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
+                              </li>
+                      </ul>
+        </nav>
+      </div>
+
+    </div>
+
+    <main id="kss-main-content" class="kss-content" aria-label="content">
+      <article role="main" class="kss-article">
+      
+        
+                            <div id="kssref-media-audio" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-media-audio">
+                  Audio (draft)
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>Build your media with accessibility in mind! It is much easier to work accessibility into the beginning than trying to tack it on later. This is true of all components, but especially for media components.</li>
+ <li>Make sure your player is accessible and includes control elements to pause, stop, and play your media.</li>
+ <li>Do not auto-play your media. This can cause confusion as well as annoyance.</li>
+ <li>Make sure your media has alternative methods to get to the content. For example, add captions to your videos and/or provide a transcript for your users to read.</li>
+</ul>
+
+<blockquote>There are a ton of WCAG Guidelines for media on websites for a reason...there are a lot of factors to consider. Don&#39;t let that scare you though, there are also some easy wins. Just including some alternatives to the media you present (ex. transcript for a video) is half the battle.</blockquote>
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#audio_res">Resources</a></h3><div id="audio_res" class="atblock__panel"><ul><li><a href="https://www.w3.org/2008/06/video-notes" target="_blank">Multimedia Accessibility FAQ</a></li></ul></div></section>
+
+
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#audio_guide">WCAG 2.0 Guidelines</a></h3><div id="audio_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-av-only-alt" target="_blank">1.2.1 Audio-only and Video-only (Prerecorded)</a> - Prerecorded Video-only: Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-captions" target="_blank">1.2.2 Captions (Prerecorded)</a> - Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-audio-desc" target="_blank">1.2.3 Audio Description or Media Alternative (Prerecorded)</a> - An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-sign" target="_blank">1.2.6 Sign Language (Prerecorded)</a> - Sign language interpretation is provided for all prerecorded audio content in synchronized media. (Level AAA)</p></div><div class="markup"></div></section>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    <section class="audio-section">
+  <div class="audio">
+    <audio src="../assets/test.mp3" controls>
+      <p>Your user agent does not support the HTML5 Audio element.</p>
+    </audio>
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;audio-section&quot;&gt;
+  &lt;div class=&quot;audio&quot;&gt;
+    &lt;audio src=&quot;../assets/test.mp3&quot; controls&gt;
+      &lt;p&gt;Your user agent does not support the HTML5 Audio element.&lt;/p&gt;
+    &lt;/audio&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                  </template>
+                </div>
+                              </div>
+
+                                    </div>
+                    </article>
+    </main>
+
+    <a href="#kss-main-content" class="back-to-top">
+      <span class="visuallyhidden">
+        Back to top
+      </span>
+    </a>
+
+  </div>
+
+<!-- SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-once/2.1.2/jquery.once.min.js"></script>
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/rainbow.min.js"></script>
+<script src="kss-assets/main.js"></script>
+<script src="../js/aria-toggle.js"></script>
+<script src="../js/back-to-top.js"></script>
+<script src="../js/button.js"></script>
+<script src="../js/button-alert.js"></script>
+<script src="../js/clipboard.min.js"></script>
+<script src="../js/copy-button.js"></script>
+<script src="../js/mobile-menu-icon.js"></script>
+<script src="../js/sidebar-slide.js"></script>
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

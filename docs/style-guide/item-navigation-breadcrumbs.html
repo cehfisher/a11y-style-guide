@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>A11Y Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script>
+    // remove no-js and add 'js' to the HTML
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="../all/all.css">
+
+</head>
+<body id="kss-node">
+
+  <a href="#kss-main-content" class="kss-skip-link">
+    Jump to main content
+  </a>
+
+  <div class="kss-wrapper">
+
+    <div class="kss-sidebar">
+
+      <div class="kss-sidebar-inner">
+        <header class="kss-header">
+          <h1 class="kss-doc-title">
+            <abbr title="accessibility">A11Y</abbr> Style Guide
+          </h1>
+        </header>
+
+        <nav class="kss-nav">
+          <button type="button" class="nav-btn">
+            <span class="visuallyhidden">
+              Navigation Toggle
+            </span>
+          </button>
+
+          <ul id="kss-nav-list" class="kss-menu">
+            <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+                          <li class="kss-menu-item">
+                <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-navigation.html"><span class="kss-ref">4</span><span class="kss-name">Navigation</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
+                              </li>
+                      </ul>
+        </nav>
+      </div>
+
+    </div>
+
+    <main id="kss-main-content" class="kss-content" aria-label="content">
+      <article role="main" class="kss-article">
+      
+        
+                            <div id="kssref-navigation-breadcrumbs" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-navigation-breadcrumbs">
+                  Breadcrumbs
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+  <li>Place the breadcrumb in a nav element with role=&quot;navigation&quot;. The nav element is also marked-up with aria-label=&quot;Breadcrumbs&quot; to describe the type of navigation.</li>
+</ul>
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#breadcrumbs_guide">WCAG 2.0 Guidelines</a></h3><div id="breadcrumbs_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location" target="_blank">2.4.8 Location</a> - Information about the user&#39;s location within a set of Web pages is available. (Level AAA)</p></div><div class="markup"></div></section>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    <section class="breadcrumbs-section">
+  <h3>Option #1: List styling</h3>
+  <nav role="navigation" aria-label="breadcrumbs">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active">Home</li>
+    </ol>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active">Parent</li>
+    </ol>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Parent</a></li>
+      <li class="breadcrumb-item active">Child</li>
+    </ol>
+  </nav>
+  <div class="break"></div>
+  <h3>Option #2: No list styling</h3>
+  <nav role="navigation" aria-label="breadcrumbs" class="breadcrumb">
+    <a class="breadcrumb-item" href="#">Home</a>
+    <a class="breadcrumb-item" href="#">Parent</a>
+    <span class="breadcrumb-item active">Child</span>
+  </nav>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;breadcrumbs-section&quot;&gt;
+  &lt;h3&gt;Option #1: List styling&lt;/h3&gt;
+  &lt;nav role=&quot;navigation&quot; aria-label=&quot;breadcrumbs&quot;&gt;
+    &lt;ol class=&quot;breadcrumb&quot;&gt;
+      &lt;li class=&quot;breadcrumb-item active&quot;&gt;Home&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;ol class=&quot;breadcrumb&quot;&gt;
+      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;breadcrumb-item active&quot;&gt;Parent&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;ol class=&quot;breadcrumb&quot;&gt;
+      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Parent&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;breadcrumb-item active&quot;&gt;Child&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/nav&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Option #2: No list styling&lt;/h3&gt;
+  &lt;nav role=&quot;navigation&quot; aria-label=&quot;breadcrumbs&quot; class=&quot;breadcrumb&quot;&gt;
+    &lt;a class=&quot;breadcrumb-item&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
+    &lt;a class=&quot;breadcrumb-item&quot; href=&quot;#&quot;&gt;Parent&lt;/a&gt;
+    &lt;span class=&quot;breadcrumb-item active&quot;&gt;Child&lt;/span&gt;
+  &lt;/nav&gt;
+&lt;/section&gt;
+</code></pre>
+                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                  </template>
+                </div>
+                              </div>
+
+                                    </div>
+                    </article>
+    </main>
+
+    <a href="#kss-main-content" class="back-to-top">
+      <span class="visuallyhidden">
+        Back to top
+      </span>
+    </a>
+
+  </div>
+
+<!-- SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-once/2.1.2/jquery.once.min.js"></script>
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/rainbow.min.js"></script>
+<script src="kss-assets/main.js"></script>
+<script src="../js/aria-toggle.js"></script>
+<script src="../js/back-to-top.js"></script>
+<script src="../js/button.js"></script>
+<script src="../js/button-alert.js"></script>
+<script src="../js/clipboard.min.js"></script>
+<script src="../js/copy-button.js"></script>
+<script src="../js/mobile-menu-icon.js"></script>
+<script src="../js/sidebar-slide.js"></script>
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

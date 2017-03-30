@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>A11Y Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script>
+    // remove no-js and add 'js' to the HTML
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="../all/all.css">
+
+</head>
+<body id="kss-node">
+
+  <a href="#kss-main-content" class="kss-skip-link">
+    Jump to main content
+  </a>
+
+  <div class="kss-wrapper">
+
+    <div class="kss-sidebar">
+
+      <div class="kss-sidebar-inner">
+        <header class="kss-header">
+          <h1 class="kss-doc-title">
+            <abbr title="accessibility">A11Y</abbr> Style Guide
+          </h1>
+        </header>
+
+        <nav class="kss-nav">
+          <button type="button" class="nav-btn">
+            <span class="visuallyhidden">
+              Navigation Toggle
+            </span>
+          </button>
+
+          <ul id="kss-nav-list" class="kss-menu">
+            <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+                          <li class="kss-menu-item">
+                <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-navigation.html"><span class="kss-ref">4</span><span class="kss-name">Navigation</span></a>
+                              </li>
+                          <li class="kss-menu-item">
+                <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
+                              </li>
+                      </ul>
+        </nav>
+      </div>
+
+    </div>
+
+    <main id="kss-main-content" class="kss-content" aria-label="content">
+      <article role="main" class="kss-article">
+      
+        
+                            <div id="kssref-media-videos" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-media-videos">
+                  Videos
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>Build your media with accessibility in mind! It is much easier to work accessibility into the beginning than trying to tack it on later. This is true of all components, but especially for media components.</li>
+ <li>Make sure your player is accessible and includes control elements to pause, stop, and play your media.</li>
+ <li>Do not auto-play your media. This can cause confusion as well as annoyance.</li>
+ <li>Make sure your media has alternative methods to get to the content. For example, add captions to your videos and/or provide a transcript for your users to read.</li>
+ <li>Make sure your media does not cause seizures! Use the Photosensitive Epilepsy Analysis Tool (PEAT) to check your media before you add it to your website.</li>
+</ul>
+
+<blockquote>There are a ton of WCAG Guidelines for media on websites for a reason...there are a lot of factors to consider. Don&#39;t let that scare you though, there are also some easy wins. Just including some alternatives to the media you present (ex. transcript for a video) is half the battle.</blockquote>
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#video_res">Resources</a></h3><div id="video_res" class="atblock__panel"><ul><li><a href="https://www.sitepoint.com/accessible-video" target="_blank">8 Steps to Creating Accessible Video</a></li><li><a href="https://www.w3.org/2008/06/video-notes" target="_blank">Multimedia Accessibility FAQ</a></li><li><a href="http://trace.umd.edu/peat" target="_blank">Photosensitive Epilepsy Analysis Tool</a> - tests your visual media to see if it will trigger seizures or other light disorder issues in viewers</a></li></ul></div></section>
+
+
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#video_guide">WCAG 2.0 Guidelines</a></h3><div id="video_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-av-only-alt" target="_blank">1.2.1 Audio-only and Video-only (Prerecorded)</a> - Prerecorded Video-only: Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-captions" target="_blank">1.2.2 Captions (Prerecorded)</a> - Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-audio-desc" target="_blank">1.2.3 Audio Description or Media Alternative (Prerecorded)</a> - An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-audio-desc-only" target="_blank">1.2.5 Audio Description (Prerecorded)</a> - Provide an audio (spoken) version of information that is provided visually so that it is possible for people who cannot see to be able to understand audio-visual material. (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-sign" target="_blank">1.2.6 Sign Language (Prerecorded)</a> - Sign language interpretation is provided for all prerecorded audio content in synchronized media. (Level AAA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-text-doc" target="_blank">1.2.8 Media Alternative (Prerecorded)</a> - An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media. (Level AAA)</p></div><div class="markup"></div></section>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    <section class="videos-section">
+  <div class="videos">
+    <video controls="controls" poster="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" width="100%" height="auto">
+      <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
+      <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" type="video/webm" />
+      <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type="video/ogg" />
+      <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="640" height="360">
+        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+        <param name="allowFullScreen" value="true" />
+        <param name="wmode" value="transparent" />
+        <param name="flashVars" value="config={'playlist':['http%3A%2F%2Fsandbox.thewikies.com%2Fvfe-generator%2Fimages%2Fbig-buck-bunny_poster.jpg',{'url':'http%3A%2F%2Fclips.vorwaerts-gmbh.de%2Fbig_buck_bunny.mp4','autoPlay':false}]}" />
+        <img alt="Big Buck Bunny" src="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" width="640" height="360" title="No video playback capabilities, please download the video below" />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/U9t-slLl30E" frameborder="0" allowfullscreen></iframe>
+      </object>
+    </video>
+    <div class="videos__transcript">
+      <a href="http://www.example.com/location/of_transcript.htm">Get Transcript</a>
+    </div>
+    <div class="videos__alt-audio">
+      <a href="http://www.example.com/location/of_audiotrack.mp4">Alternative Audio Track</a>
+    </div>
+  </div>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;videos-section&quot;&gt;
+  &lt;div class=&quot;videos&quot;&gt;
+    &lt;video controls=&quot;controls&quot; poster=&quot;http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg&quot; width=&quot;100%&quot; height=&quot;auto&quot;&gt;
+      &lt;source src=&quot;http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+      &lt;source src=&quot;http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm&quot; type=&quot;video/webm&quot; /&gt;
+      &lt;source src=&quot;http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv&quot; type=&quot;video/ogg&quot; /&gt;
+      &lt;object type=&quot;application/x-shockwave-flash&quot; data=&quot;http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf&quot; width=&quot;640&quot; height=&quot;360&quot;&gt;
+        &lt;param name=&quot;movie&quot; value=&quot;http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf&quot; /&gt;
+        &lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;
+        &lt;param name=&quot;wmode&quot; value=&quot;transparent&quot; /&gt;
+        &lt;param name=&quot;flashVars&quot; value=&quot;config={&#039;playlist&#039;:[&#039;http%3A%2F%2Fsandbox.thewikies.com%2Fvfe-generator%2Fimages%2Fbig-buck-bunny_poster.jpg&#039;,{&#039;url&#039;:&#039;http%3A%2F%2Fclips.vorwaerts-gmbh.de%2Fbig_buck_bunny.mp4&#039;,&#039;autoPlay&#039;:false}]}&quot; /&gt;
+        &lt;img alt=&quot;Big Buck Bunny&quot; src=&quot;http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg&quot; width=&quot;640&quot; height=&quot;360&quot; title=&quot;No video playback capabilities, please download the video below&quot; /&gt;
+        &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/U9t-slLl30E&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+      &lt;/object&gt;
+    &lt;/video&gt;
+    &lt;div class=&quot;videos__transcript&quot;&gt;
+      &lt;a href=&quot;http://www.example.com/location/of_transcript.htm&quot;&gt;Get Transcript&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;videos__alt-audio&quot;&gt;
+      &lt;a href=&quot;http://www.example.com/location/of_audiotrack.mp4&quot;&gt;Alternative Audio Track&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                  </template>
+                </div>
+                              </div>
+
+                                    </div>
+                    </article>
+    </main>
+
+    <a href="#kss-main-content" class="back-to-top">
+      <span class="visuallyhidden">
+        Back to top
+      </span>
+    </a>
+
+  </div>
+
+<!-- SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-once/2.1.2/jquery.once.min.js"></script>
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/rainbow.min.js"></script>
+<script src="kss-assets/main.js"></script>
+<script src="../js/aria-toggle.js"></script>
+<script src="../js/back-to-top.js"></script>
+<script src="../js/button.js"></script>
+<script src="../js/button-alert.js"></script>
+<script src="../js/clipboard.min.js"></script>
+<script src="../js/copy-button.js"></script>
+<script src="../js/mobile-menu-icon.js"></script>
+<script src="../js/sidebar-slide.js"></script>
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>
