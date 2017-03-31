@@ -40,6 +40,7 @@
   .kss-wrapper {
     padding-left: 0;
     margin-left: 0;
+    position: relative;
   }
 
   .kss-content {
@@ -507,7 +508,7 @@ a[target="_blank"]::after {
   bottom: -1px;
   height: 40px;
   position: fixed;
-  right: 0;
+  right: 18px;
   transform: translateY(100%);
   transition: transform 0.5s ease-in-out;
   width: 40px;
@@ -515,6 +516,7 @@ a[target="_blank"]::after {
   background-repeat: no-repeat;
   background-size: 32px;
   border-top-left-radius: $border-rd-sm;
+  border-top-right-radius: $border-rd-sm;
   background-position: 50%;
 
   &:hover {
