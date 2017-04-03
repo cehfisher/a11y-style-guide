@@ -1,7 +1,9 @@
 // Breadcrumbs
 //
 // <ul>
-//   <li>Place the breadcrumb in a nav element with role="navigation". The nav element is also marked-up with aria-label="Breadcrumbs" to describe the type of navigation.</li>
+//  <li>Place the breadcrumb in a `<nav>` element when you can.</li>
+//  <li>If you do not use a `<nav>` element, you need to add `role="navigation"` to the markup. <strong>Note:</strong> this role is implied when you use the `<nav>` element so it is a bit redundant to use both at the same time.</li>
+//  <li>The markup includes an `aria-label="breadcrumbs"` to describe the type of navigation.</li>
 // </ul>
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#breadcrumbs_guide">WCAG 2.0 Guidelines</a></h3><div id="breadcrumbs_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location" target="_blank">2.4.8 Location</a> - Information about the user's location within a set of Web pages is available. (Level AAA)</p></div><div class="markup"></div></section>

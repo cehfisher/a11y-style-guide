@@ -74,13 +74,7 @@
                                           <li class="kss-menu-item">
                         <a href="#kssref-navigation-pagination">
                           <span class="kss-ref ">4.4</span>
-                          <span class="kss-name">Pagination (draft)</span>
-                        </a>
-                      </li>
-                                          <li class="kss-menu-item">
-                        <a href="#kssref-navigation-tabs">
-                          <span class="kss-ref ">4.5</span>
-                          <span class="kss-name">Tabs (draft)</span>
+                          <span class="kss-name">Pagination</span>
                         </a>
                       </li>
                                       </ul>
@@ -120,7 +114,9 @@
 
                               <div class="kss-description">
                   <ul>
-  <li>Place the breadcrumb in a nav element with role=&quot;navigation&quot;. The nav element is also marked-up with aria-label=&quot;Breadcrumbs&quot; to describe the type of navigation.</li>
+ <li>Place the breadcrumb in a <code>&lt;nav&gt;</code> element when you can.</li>
+ <li>If you do not use a <code>&lt;nav&gt;</code> element, you need to add <code>role=&quot;navigation&quot;</code> to the markup. <strong>Note:</strong> this role is implied when you use the <code>&lt;nav&gt;</code> element so it is a bit redundant to use both at the same time.</li>
+ <li>The markup includes an <code>aria-label=&quot;breadcrumbs&quot;</code> to describe the type of navigation.</li>
 </ul>
 
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#breadcrumbs_guide">WCAG 2.0 Guidelines</a></h3><div id="breadcrumbs_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location" target="_blank">2.4.8 Location</a> - Information about the user&#39;s location within a set of Web pages is available. (Level AAA)</p></div><div class="markup"></div></section>
@@ -135,8 +131,8 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     <section class="breadcrumbs-section">
-  <h3>Option #1: List styling</h3>
-  <nav role="navigation" aria-label="breadcrumbs">
+  <h3>Option #1: List styling with nav element</h3>
+  <nav aria-label="breadcrumbs">
     <ol class="breadcrumb">
       <li class="breadcrumb-item active">Home</li>
     </ol>
@@ -151,12 +147,12 @@
     </ol>
   </nav>
   <div class="break"></div>
-  <h3>Option #2: No list styling</h3>
-  <nav role="navigation" aria-label="breadcrumbs" class="breadcrumb">
+  <h3>Option #2: Link styling with no nav element</h3>
+  <div role="navigation" aria-label="breadcrumbs" class="breadcrumb">
     <a class="breadcrumb-item" href="#">Home</a>
     <a class="breadcrumb-item" href="#">Parent</a>
     <span class="breadcrumb-item active">Child</span>
-  </nav>
+  </div>
 </section>
 
                   </div>
@@ -166,8 +162,8 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;breadcrumbs-section&quot;&gt;
-  &lt;h3&gt;Option #1: List styling&lt;/h3&gt;
-  &lt;nav role=&quot;navigation&quot; aria-label=&quot;breadcrumbs&quot;&gt;
+  &lt;h3&gt;Option #1: List styling with nav element&lt;/h3&gt;
+  &lt;nav aria-label=&quot;breadcrumbs&quot;&gt;
     &lt;ol class=&quot;breadcrumb&quot;&gt;
       &lt;li class=&quot;breadcrumb-item active&quot;&gt;Home&lt;/li&gt;
     &lt;/ol&gt;
@@ -182,12 +178,12 @@
     &lt;/ol&gt;
   &lt;/nav&gt;
   &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-  &lt;h3&gt;Option #2: No list styling&lt;/h3&gt;
-  &lt;nav role=&quot;navigation&quot; aria-label=&quot;breadcrumbs&quot; class=&quot;breadcrumb&quot;&gt;
+  &lt;h3&gt;Option #2: Link styling with no nav element&lt;/h3&gt;
+  &lt;div role=&quot;navigation&quot; aria-label=&quot;breadcrumbs&quot; class=&quot;breadcrumb&quot;&gt;
     &lt;a class=&quot;breadcrumb-item&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
     &lt;a class=&quot;breadcrumb-item&quot; href=&quot;#&quot;&gt;Parent&lt;/a&gt;
     &lt;span class=&quot;breadcrumb-item active&quot;&gt;Child&lt;/span&gt;
-  &lt;/nav&gt;
+  &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>
                     <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
@@ -408,14 +404,20 @@
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
                 <a class="kss-title__permalink" href="#kssref-navigation-pagination">
-                  Pagination (draft)
+                  Pagination
                 </a>
               </h2>
 
                               <div class="kss-description">
                   <ul>
-  <li>to-do</li>
+ <li>Place the pager in a <code>&lt;nav&gt;</code> element when you can.</li>
+ <li>If you do not use a <code>&lt;nav&gt;</code> element, you need to add <code>role=&quot;navigation&quot;</code> to the markup. <strong>Note:</strong> this role is implied when you use the <code>&lt;nav&gt;</code> element so it is a bit redundant to use both at the same time.</li>
+ <li>The markup includes an <code>aria-label=&quot;pagination&quot;</code> to describe the type of navigation.</li>
 </ul>
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#pagination_guide">WCAG 2.0 Guidelines</a></h3><div id="pagination_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location" target="_blank">2.4.8 Location</a> - Information about the user&#39;s location within a set of Web pages is available. (Level AAA)</p></div><div class="markup"></div></section>
+
+
                 </div>
               
                           </div>
@@ -425,23 +427,23 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     <section class="pagination-section">
-  <nav aria-label="page navigation">
+  <nav aria-label="pagination">
     <ul class="pagination">
       <li class="page-item">
         <a class="page-link" href="#" aria-label="previous">
-          <span aria-hidden="true">&laquo;</span>
-          <span>Previous</span>
+          <span class="visuallyhidden">Previous set of pages</span>
+          <span aria-hidden="true" role="presentation">Previous</span>
         </a>
       </li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item active"><a class="page-link" href="#">3</a></li>
-      <li class="page-item"><a class="page-link" href="#">4</a></li>
-      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>1</a></li>
+      <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>2</a></li>
+      <li class="page-item active"><a class="page-link" href="#"><span class="visuallyhidden">page</span>3</a></li>
+      <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>4</a></li>
+      <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>5</a></li>
       <li class="page-item ml-0_5">
         <a class="page-link" href="#" aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-          <span>Next</span>
+          <span class="visuallyhidden">Next set of pages</span>
+          <span aria-hidden="true" role="presentation">Next</span>
         </a>
       </li>
     </ul>
@@ -455,69 +457,26 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;pagination-section&quot;&gt;
-  &lt;nav aria-label=&quot;page navigation&quot;&gt;
+  &lt;nav aria-label=&quot;pagination&quot;&gt;
     &lt;ul class=&quot;pagination&quot;&gt;
       &lt;li class=&quot;page-item&quot;&gt;
         &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;previous&quot;&gt;
-          &lt;span aria-hidden=&quot;true&quot;&gt;&amp;laquo;&lt;/span&gt;
-          &lt;span&gt;Previous&lt;/span&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;Previous set of pages&lt;/span&gt;
+          &lt;span aria-hidden=&quot;true&quot; role=&quot;presentation&quot;&gt;Previous&lt;/span&gt;
         &lt;/a&gt;
       &lt;/li&gt;
-      &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;page-item active&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;1&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;2&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;page-item active&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page&lt;/span&gt;3&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;4&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;5&lt;/a&gt;&lt;/li&gt;
       &lt;li class=&quot;page-item ml-0_5&quot;&gt;
         &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;
-          &lt;span aria-hidden=&quot;true&quot;&gt;&amp;raquo;&lt;/span&gt;
-          &lt;span&gt;Next&lt;/span&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;Next set of pages&lt;/span&gt;
+          &lt;span aria-hidden=&quot;true&quot; role=&quot;presentation&quot;&gt;Next&lt;/span&gt;
         &lt;/a&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
-  &lt;/nav&gt;
-&lt;/section&gt;
-</code></pre>
-                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
-                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
-                  </template>
-                </div>
-                              </div>
-
-                                    </section>
-                            <section id="kssref-navigation-tabs" class="kss-section kss-depth-2">
-            <div class="kss-style">
-                            <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-navigation-tabs">
-                  Tabs (draft)
-                </a>
-              </h2>
-
-                              <div class="kss-description">
-                  <ul>
-  <li>to-do</li>
-</ul>
-                </div>
-              
-                          </div>
-
-                          <div class="kss-modifier-block">
-
-                <div class="kss-modifier kss-modifier-original">
-                  <div class="kss-modifier-example">
-                    <section class="tabs-section">
-  <nav role="navigation" aria-label="tabs">
-  </nav>
-</section>
-
-                  </div>
-                </div>
-
-                                                <div class="kss-markup">
-                  <button class="js-show-markup">Show Markup Example</button>
-                  <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;tabs-section&quot;&gt;
-  &lt;nav role=&quot;navigation&quot; aria-label=&quot;tabs&quot;&gt;
   &lt;/nav&gt;
 &lt;/section&gt;
 </code></pre>
