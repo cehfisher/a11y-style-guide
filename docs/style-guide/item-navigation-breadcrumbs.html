@@ -76,7 +76,9 @@
 
                               <div class="kss-description">
                   <ul>
-  <li>Place the breadcrumb in a nav element with role=&quot;navigation&quot;. The nav element is also marked-up with aria-label=&quot;Breadcrumbs&quot; to describe the type of navigation.</li>
+ <li>Place the breadcrumb in a <code>&lt;nav&gt;</code> element when you can.</li>
+ <li>If you do not use a <code>&lt;nav&gt;</code> element, you need to add <code>role=&quot;navigation&quot;</code> to the markup. <strong>Note:</strong> this role is implied when you use the <code>&lt;nav&gt;</code> element so it is a bit redundant to use both at the same time.</li>
+ <li>The markup includes an <code>aria-label=&quot;breadcrumbs&quot;</code> to describe the type of navigation.</li>
 </ul>
 
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#breadcrumbs_guide">WCAG 2.0 Guidelines</a></h3><div id="breadcrumbs_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location" target="_blank">2.4.8 Location</a> - Information about the user&#39;s location within a set of Web pages is available. (Level AAA)</p></div><div class="markup"></div></section>
@@ -91,8 +93,8 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     <section class="breadcrumbs-section">
-  <h3>Option #1: List styling</h3>
-  <nav role="navigation" aria-label="breadcrumbs">
+  <h3>Option #1: List styling with nav element</h3>
+  <nav aria-label="breadcrumbs">
     <ol class="breadcrumb">
       <li class="breadcrumb-item active">Home</li>
     </ol>
@@ -107,12 +109,12 @@
     </ol>
   </nav>
   <div class="break"></div>
-  <h3>Option #2: No list styling</h3>
-  <nav role="navigation" aria-label="breadcrumbs" class="breadcrumb">
+  <h3>Option #2: Link styling with no nav element</h3>
+  <div role="navigation" aria-label="breadcrumbs" class="breadcrumb">
     <a class="breadcrumb-item" href="#">Home</a>
     <a class="breadcrumb-item" href="#">Parent</a>
     <span class="breadcrumb-item active">Child</span>
-  </nav>
+  </div>
 </section>
 
                   </div>
@@ -122,8 +124,8 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;breadcrumbs-section&quot;&gt;
-  &lt;h3&gt;Option #1: List styling&lt;/h3&gt;
-  &lt;nav role=&quot;navigation&quot; aria-label=&quot;breadcrumbs&quot;&gt;
+  &lt;h3&gt;Option #1: List styling with nav element&lt;/h3&gt;
+  &lt;nav aria-label=&quot;breadcrumbs&quot;&gt;
     &lt;ol class=&quot;breadcrumb&quot;&gt;
       &lt;li class=&quot;breadcrumb-item active&quot;&gt;Home&lt;/li&gt;
     &lt;/ol&gt;
@@ -138,12 +140,12 @@
     &lt;/ol&gt;
   &lt;/nav&gt;
   &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-  &lt;h3&gt;Option #2: No list styling&lt;/h3&gt;
-  &lt;nav role=&quot;navigation&quot; aria-label=&quot;breadcrumbs&quot; class=&quot;breadcrumb&quot;&gt;
+  &lt;h3&gt;Option #2: Link styling with no nav element&lt;/h3&gt;
+  &lt;div role=&quot;navigation&quot; aria-label=&quot;breadcrumbs&quot; class=&quot;breadcrumb&quot;&gt;
     &lt;a class=&quot;breadcrumb-item&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
     &lt;a class=&quot;breadcrumb-item&quot; href=&quot;#&quot;&gt;Parent&lt;/a&gt;
     &lt;span class=&quot;breadcrumb-item active&quot;&gt;Child&lt;/span&gt;
-  &lt;/nav&gt;
+  &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>
                     <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
