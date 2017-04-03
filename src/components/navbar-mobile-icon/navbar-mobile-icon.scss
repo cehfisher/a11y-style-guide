@@ -1,7 +1,8 @@
-// Navbar Mobile Icon (draft)
+// Navbar Mobile Icon
 //
 // <ul>
-//  <li>to-do</li>
+//  <li>Use the `<button>` element for your mobile navigation icon.</li>
+//  <li>If you use an icon that is purely decoration, no `alt=""` information is needed. If the icon you are using *is* important to the functionality, then supply additional `alt=""` information.</li>
 // </ul>
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navbaricon_res">Resources</a></h3><div id="navbaricon_res" class="atblock__panel"><ul><li><a href="http://codepen.io/samikeijonen/pen/jqvxdL" target="_blank">Simple and accessible SVG menu hamburger animation</a></li></ul></div></section>
@@ -29,52 +30,52 @@
     color: $color-white;
     cursor: pointer;
     display: inline-block;
-    padding: 1em 1.5em;
+    padding: 1rem 1.5em;
     text-transform: uppercase;
     transition: all 0.25s ease-in-out;
+    border-radius: $border-rd-sm;
   }
 
   .menu-toggle {
-    font-size: 0.875em;
-    padding: 1em;
-
-    &:focus {
-      outline: thin dotted;
-      outline-offset: -2px;
-    }
+    padding: $padding-sm $padding-sm 0.65rem;
+    height: auto;
   }
 
   .icon {
     display: inline-block;
     fill: currentColor;
-    height: 1em;
-    width: 1em;
+    height: 1rem;
+    width: 1rem;
     vertical-align: middle;
     position: relative;
-    top: -0.0625em;
+    top: -0.0625rem;
   }
 
   /* Menu toggle styles. */
 
   .icon-menu-toggle {
-    width: 2em;
-    height: 2em;
+    width: 2rem;
+    height: 2rem;
     top: -3px;
   }
 
   .svg-menu-toggle .line {
     opacity: 1;
     transform: rotate(0) translateY(0) translateX(0);
-    transform-origin: 1em 1em;
+    transform-origin: 1rem 1em;
     transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
   }
 
   .svg-menu-toggle .line-1 {
-    transform-origin: 1em 2.2rem;
+    transform-origin: 1rem 2.5rem;
   }
 
   .svg-menu-toggle .line-3 {
-    transform-origin: 1em 4.2rem;
+    transform-origin: 1rem 4rem;
+  }
+
+  .menu-toggle.opened svg {
+    left: -1px;
   }
 
   .menu-toggle.opened .svg-menu-toggle .line-1 {
