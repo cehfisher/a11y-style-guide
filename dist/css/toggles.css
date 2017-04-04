@@ -1,0 +1,90 @@
+[data-action='aria-switch'] {
+  background: #eeeeee;
+  border-radius: 32px;
+  display: inline-block;
+  position: relative;
+  transition: background 0.1s ease-in-out;
+  border: 0;
+  width: 75px;
+  height: 34px;
+  overflow: hidden;
+  clear: both;
+  float: left; }
+  [data-action='aria-switch']:hover {
+    background: #eeeeee; }
+  [data-action='aria-switch']:not([disabled]):hover, [data-action='aria-switch']:not([disabled]):focus {
+    border: 0;
+    background: #eeeeee; }
+  [data-action='aria-switch'] span {
+    border-radius: 32px;
+    display: inline-block;
+    font-weight: bold;
+    pointer-events: none;
+    text-transform: uppercase;
+    position: absolute; }
+  [data-action='aria-switch'][aria-checked='false'] span {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    top: 2px;
+    left: 2px;
+    transition: all 0.4s; }
+  [data-action='aria-switch'][aria-checked='true'] span {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    top: 2px;
+    left: 43px;
+    transition: all 0.4s; }
+  [data-action='aria-switch'][aria-checked='true'] {
+    background: #42dc42 !important; }
+  [data-action='aria-switch'].text[aria-checked='false'] span::after {
+    content: 'OFF';
+    display: block;
+    color: #464646;
+    position: absolute;
+    right: -36px;
+    top: 7px; }
+  [data-action='aria-switch'].text[aria-checked='true'] span::before {
+    content: 'ON';
+    display: block;
+    color: #464646;
+    position: absolute;
+    left: -32px;
+    top: 7px; }
+  [data-action='aria-switch'].reverse[aria-checked='false'] {
+    background: #ffffff; }
+    [data-action='aria-switch'].reverse[aria-checked='false'] span {
+      background: #dddddd;
+      border: 1px solid #dddddd;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      top: 2px;
+      left: 2px;
+      transition: all 0.4s; }
+  [data-action='aria-switch'].reverse[aria-checked='true'] {
+    background: #ffffff !important; }
+    [data-action='aria-switch'].reverse[aria-checked='true'] span {
+      background: #42dc42;
+      border: 1px solid #dddddd;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      top: 2px;
+      left: 43px;
+      transition: all 0.4s; }
+
+.no-js [data-action='aria-switch']:not([aria-checked]) span {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  top: 2px;
+  left: 43px;
+  transition: all 0.4s; }

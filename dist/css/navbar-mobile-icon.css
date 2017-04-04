@@ -3,8 +3,7 @@
   /* Text meant only for screen readers. */ }
   .navbar-mobile-icon button,
   .navbar-mobile-icon input[type='button'] {
-    border: none;
-    border-radius: 0;
+    border: 0;
     background: #464646;
     color: #ffffff;
     cursor: pointer;
@@ -44,7 +43,7 @@
   .navbar-mobile-icon .menu-toggle.opened .svg-menu-toggle .line-2 {
     opacity: 0; }
   .navbar-mobile-icon .menu-toggle.opened .svg-menu-toggle .line-3 {
-    transform: rotate(-45deg) translateY(0em) translateX(0em); }
+    transform: rotate(-45deg) translateY(0) translateX(0); }
   .navbar-mobile-icon .screen-reader-text {
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute !important;

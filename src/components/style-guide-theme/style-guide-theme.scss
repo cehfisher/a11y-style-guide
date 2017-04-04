@@ -355,8 +355,8 @@ abbr[title] {
 }
 
 .copied {
-	color: $color-grass;
-	display: none;
+  color: $color-grass;
+  display: none;
 }
 
 // ARIA toggle theme
@@ -461,7 +461,7 @@ abbr[title] {
   }
 }
 
-a[target="_blank"]::after {
+a[target='_blank']::after {
   content: '';
   background: url('#{$asset-path}/icon_new-tab.png'); // Outside link icon
   background-size: 15px;
@@ -479,7 +479,7 @@ a[target="_blank"]::after {
   background-repeat: no-repeat;
   padding: $padding-sm 1.5rem;
 
-  &[target="_blank"]::after {
+  &[target='_blank']::after {
     display: none;
   }
 }
@@ -491,7 +491,7 @@ a[target="_blank"]::after {
   background-repeat: no-repeat;
   padding: $padding-sm 1.5rem;
 
-  &[target="_blank"]::after {
+  &[target='_blank']::after {
     display: none;
   }
 }
