@@ -386,6 +386,7 @@
                   <ul>
  <li>Add id selectors to titles and use <code>aria-labelledby=&quot;&quot;</code> to link to the title text (Example #1).</li>
  <li>Add decriptive text with <code>aria-label=&quot;&quot;</code> directly in the link (Example #2).</li>
+ <li>Use the class <code>visuallyhidden</code> to visually hide more information about the link (Example #3).</li>
  <li>Turn read more links into buttons, when you can, since they allow for more labeling options.</li>
 </ul>
 
@@ -401,15 +402,22 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     <section class="read-more-section">
-  <form action="#" method="post">
-    <h3>Example #1: Using aria-labelledby</h3>
-    <h4 id="headline" class="bold">Storms Hit East Coast</h4>
-    <p>Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. <a href="#" aria-labelledby="headline" class="read-more">Read More</a></p>
-    <div class="break"></div>
-    <h3>Example #2: Using aria-label</h3>
-    <h4 class="bold">Black Bears Trapped in Cars?</h4>
-    <p>Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. <a href="#" aria-label="Learn more about trapped black bears" class="read-more">Read More</a></p>
-  </form>
+  <h3>Example #1: Using aria-labelledby</h3>
+  <h4 id="headline" class="bold">Storms Hit East Coast</h4>
+  <p>Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. <a href="#" aria-labelledby="headline" class="read-more">Read More</a></p>
+
+  <div class="break"></div>
+
+  <h3>Example #2: Using aria-label</h3>
+  <h4 class="bold">Black Bears Trapped in Cars?</h4>
+  <p>Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. <a href="#" aria-label="Learn more about trapped black bears" class="read-more">Read More</a></p>
+
+  <div class="break"></div>
+
+  <h3>Example #3: Using visually hidden text</h3>
+  <h4 class="bold">Mass Hysteria</h4>
+  <p>Fire and brimstone, coming down from the skies. Rivers and seas boiling... Human sacrifice, dogs and cats, living together...
+  <a href="#" class="read-more">Read More <span class="visuallyhidden">about mass hysteria</span></a></p>
 </section>
 
                   </div>
@@ -419,15 +427,22 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;read-more-section&quot;&gt;
-  &lt;form action=&quot;#&quot; method=&quot;post&quot;&gt;
-    &lt;h3&gt;Example #1: Using aria-labelledby&lt;/h3&gt;
-    &lt;h4 id=&quot;headline&quot; class=&quot;bold&quot;&gt;Storms Hit East Coast&lt;/h4&gt;
-    &lt;p&gt;Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. &lt;a href=&quot;#&quot; aria-labelledby=&quot;headline&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
-    &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-    &lt;h3&gt;Example #2: Using aria-label&lt;/h3&gt;
-    &lt;h4 class=&quot;bold&quot;&gt;Black Bears Trapped in Cars?&lt;/h4&gt;
-    &lt;p&gt;Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. &lt;a href=&quot;#&quot; aria-label=&quot;Learn more about trapped black bears&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
-  &lt;/form&gt;
+  &lt;h3&gt;Example #1: Using aria-labelledby&lt;/h3&gt;
+  &lt;h4 id=&quot;headline&quot; class=&quot;bold&quot;&gt;Storms Hit East Coast&lt;/h4&gt;
+  &lt;p&gt;Torrential rain and gale force winds have struck the east coast, causing flooding in many coastal towns. &lt;a href=&quot;#&quot; aria-labelledby=&quot;headline&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
+
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+
+  &lt;h3&gt;Example #2: Using aria-label&lt;/h3&gt;
+  &lt;h4 class=&quot;bold&quot;&gt;Black Bears Trapped in Cars?&lt;/h4&gt;
+  &lt;p&gt;Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. &lt;a href=&quot;#&quot; aria-label=&quot;Learn more about trapped black bears&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
+
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+
+  &lt;h3&gt;Example #3: Using visually hidden text&lt;/h3&gt;
+  &lt;h4 class=&quot;bold&quot;&gt;Mass Hysteria&lt;/h4&gt;
+  &lt;p&gt;Fire and brimstone, coming down from the skies. Rivers and seas boiling... Human sacrifice, dogs and cats, living together...
+  &lt;a href=&quot;#&quot; class=&quot;read-more&quot;&gt;Read More &lt;span class=&quot;visuallyhidden&quot;&gt;about mass hysteria&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/section&gt;
 </code></pre>
                     <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
