@@ -1,9 +1,9 @@
-// Toggle
+// Toggles
 //
 // <ul>
-//  <li>Use a `<button>` element, with `aria-pressed` or `role="switch"`.</li>
-//  <li>Make sure you include `aria-checked` for your toggles, with JavaScript changing the state on click from true to false (or the reverse).</li>
-//  <li>Make sure you check the contrast on toggle text with backgrounds.</li>
+//  <li>Use a `<button>` element, with `aria-pressed` or `role="switch"` for your toggles.</li>
+//  <li>Make sure you include `aria-checked` on toggles, with JavaScript changing the state on click from true to false (or the reverse).</li>
+//  <li>Make sure you check the contrast of the toggle text against the background (if used).</li>
 // </ul>
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#toggle_res">Resources</a></h3><div id="toggle_res" class="atblock__panel"><ul><li><a href="https://github.com/scottaohara/aria-switch-button" target="_blank">ARIA Switch Button</a></li><li><a href="https://inclusive-components.club/toggle-button" target="_blank">Inclusive Components - Toggle Buttons</a></li><li><a href="https://www.w3.org/TR/wai-aria-1.1/#switch" target="_blank">Switch Role (WAI-ARIA)</a></li></ul></div></section>
@@ -14,14 +14,14 @@
 //
 //
 //
-// Markup: toggle.twig
+// Markup: toggles.twig
 //
-// Style guide: General.toggle
+// Style guide: Forms.toggles
 
 // Import site utilities.
 @import '../../global/utils/init';
 
-[data-action="aria-switch"] {
+[data-action='aria-switch'] {
   background: $color-gallery;
   border-radius: $border-rd-lg;
   display: inline-block;
@@ -53,7 +53,7 @@
     position: absolute;
   }
 
-  &[aria-checked="false"] {
+  &[aria-checked='false'] {
 
     span {
       background: $color-white;
@@ -67,7 +67,7 @@
     }
   }
 
-  &[aria-checked="true"] span {
+  &[aria-checked='true'] span {
     background: $color-white;
     border: 1px solid $color-alto;
     border-radius: 50%;
@@ -75,15 +75,14 @@
     width: 30px;
     top: 2px;
     left: 43px;
-    border-radius: 52px;
     transition: all 0.4s;
   }
 
-  &[aria-checked="true"] {
+  &[aria-checked='true'] {
     background: $color-grass !important;
   }
 
-  &.text[aria-checked="false"] span::after {
+  &.text[aria-checked='false'] span::after {
     content: 'OFF';
     display: block;
     color: $color-midnight;
@@ -92,7 +91,7 @@
     top: 7px;
   }
 
-  &.text[aria-checked="true"] span::before {
+  &.text[aria-checked='true'] span::before {
     content: 'ON';
     display: block;
     color: $color-midnight;
@@ -101,7 +100,7 @@
     top: 7px;
   }
 
-  &.reverse[aria-checked="false"] {
+  &.reverse[aria-checked='false'] {
     background: $color-white;
 
     span {
@@ -116,7 +115,7 @@
     }
   }
 
-  &.reverse[aria-checked="true"] {
+  &.reverse[aria-checked='true'] {
     background: $color-white !important;
 
     span {
@@ -127,13 +126,12 @@
       width: 30px;
       top: 2px;
       left: 43px;
-      border-radius: 52px;
       transition: all 0.4s;
     }
   }
 }
 
-.no-js [data-action="aria-switch"]:not([aria-checked]) span {
+.no-js [data-action='aria-switch']:not([aria-checked]) span {
   background: $color-white;
   border: 1px solid $color-alto;
   border-radius: 50%;
@@ -141,6 +139,5 @@
   width: 30px;
   top: 2px;
   left: 43px;
-  border-radius: 52px;
   transition: all 0.4s;
 }

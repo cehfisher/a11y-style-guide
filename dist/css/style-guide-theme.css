@@ -375,7 +375,7 @@ abbr[title] {
     text-align: left;
     background-repeat: no-repeat; }
 
-a[target="_blank"]::after {
+a[target='_blank']::after {
   content: '';
   background: url("../assets/icon_new-tab.png");
   background-size: 15px;
@@ -391,7 +391,7 @@ a[target="_blank"]::after {
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 1rem 1.5rem; }
-  .social-link-twitter[target="_blank"]::after {
+  .social-link-twitter[target='_blank']::after {
     display: none; }
 
 .social-link-github {
@@ -400,7 +400,7 @@ a[target="_blank"]::after {
   background-size: 32px;
   background-repeat: no-repeat;
   padding: 1rem 1.5rem; }
-  .social-link-github[target="_blank"]::after {
+  .social-link-github[target='_blank']::after {
     display: none; }
 
 .social-link-out {

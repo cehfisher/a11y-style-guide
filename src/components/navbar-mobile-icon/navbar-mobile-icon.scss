@@ -24,8 +24,7 @@
 
   button,
   input[type='button'] {
-    border: none;
-    border-radius: 0;
+    border: 0;
     background: $color-midnight;
     color: $color-white;
     cursor: pointer;
@@ -87,7 +86,7 @@
   }
 
   .menu-toggle.opened .svg-menu-toggle .line-3 {
-    transform: rotate(-45deg) translateY(0em) translateX(0em);
+    transform: rotate(-45deg) translateY(0) translateX(0);
   }
 
   /* Text meant only for screen readers. */
