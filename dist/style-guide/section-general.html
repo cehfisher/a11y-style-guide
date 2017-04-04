@@ -78,8 +78,14 @@
                         </a>
                       </li>
                                           <li class="kss-menu-item">
-                        <a href="#kssref-general-typography">
+                        <a href="#kssref-general-toggle">
                           <span class="kss-ref ">2.6</span>
+                          <span class="kss-name">Toggle</span>
+                        </a>
+                      </li>
+                                          <li class="kss-menu-item">
+                        <a href="#kssref-general-typography">
+                          <span class="kss-ref ">2.7</span>
                           <span class="kss-name">Typography</span>
                         </a>
                       </li>
@@ -126,12 +132,12 @@
 
                               <div class="kss-description">
                   <ul>
- <li>It is important to know when to use a link and when to use a button. A button does something while a link takes you to another URL. Note that a link can still look like a button and vice versa, but that is not related to ARIA.</li>
- <li>A <code>&lt;button&gt;</code> element doesn&#39;t need anything special to work. ARIA&#39;s <code>role=&quot;button&quot;</code> is already assigned implicitly. So if you need a button, use a true <code>&lt;button&gt;</code> element.</li>
- <li>It is possible (though discouraged) to use other elements, e.g. <code>&lt;a role=&quot;button&quot;&gt;</code>. In that case, you need to implement all relevant behavior with JavaScript, especially activating the button with the space bar.</li>
- <li>Remember that <code>&lt;button&gt;</code> defaults to <code>type=&quot;submit&quot;</code>, so you may want to add <code>type=&quot;button&quot;</code> in order to avoid accidentally submitting forms.</li>
+ <li>It is important to know when to use a link and when to use a button. A button does an action while a link takes you to another URL.</li>
+ <li>A <code>&lt;button&gt;</code> element does not need anything special to work. ARIA&#39;s <code>role=&quot;button&quot;</code> is already assigned implicitly. So if you need a button, use a true <code>&lt;button&gt;</code> element.</li>
+ <li>Use <code>&lt;button&gt;</code> when you can, but it is possible to use other elements as long as you add <code>role=&quot;button&quot;</code> and add JavaScript to replicate the button functionality.</li>
+ <li>Remember that <code>&lt;button&gt;</code> defaults to <code>type=&quot;submit&quot;</code>, so adding <code>type=&quot;button&quot;</code> helps you avoid accidentally submitting forms.</li>
  <li>Your button needs a descriptive name. Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
- <li>If the button only contains an <code>&lt;img&gt;</code> element, make sure to set its alt attribute. If it only contains an icon (e.g. font awesome) use <code>aria-label</code>.</li>
+ <li>If the button only contains an <code>&lt;img&gt;</code> element, make sure to set its alt attribute. If it only contains an icon use <code>aria-label</code>.</li>
 </ul>
 
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#button_res">Resources</a></h3><div id="button_res" class="atblock__panel"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank">Using the button role</a></li><li><a href="https://www.deque.com/blog/accessible-aria-buttons" target="_blank">Building Accessible Buttons with ARIA</a></li><li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/button/button.html" target="_blank">W3C Button Examples</a></li></ul></div></section>
@@ -149,12 +155,12 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <section class="buttons-section">
-  <button type="button" class="button">Regular Button</button>
-  <button type="button" class="button-icon heart button--outline">Like</button>
-  <a href="#" class="button-icon wheelchair" type="button" role="button" id="toggle" aria-pressed="false">A11Y<span class="visuallyhidden">all the things.</span></a>
-  <a href="#" class="button--outline" role="button" type="button" role="button" id="print" aria-pressed="false">Print Page</a>
-  <a href="#" class="button" type="button" role="button" id="alert1" aria-pressed="false">Tell me something nice</a>
+                    <section class="toggle-section">
+  <toggle type="toggle" class="toggle">Regular toggle</toggle>
+  <toggle type="toggle" class="toggle-icon heart toggle--outline">Like</toggle>
+  <a href="#" class="toggle-icon wheelchair" type="toggle" role="toggle" id="toggle" aria-pressed="false">A11Y<span class="visuallyhidden">all the things.</span></a>
+  <a href="#" class="toggle--outline" role="toggle" type="toggle" role="toggle" id="print" aria-pressed="false">Print Page</a>
+  <a href="#" class="toggle" type="toggle" role="toggle" id="alert1" aria-pressed="false">Tell me something nice</a>
 </section>
 
                   </div>
@@ -163,12 +169,12 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;buttons-section&quot;&gt;
-  &lt;button type=&quot;button&quot; class=&quot;button&quot;&gt;Regular Button&lt;/button&gt;
-  &lt;button type=&quot;button&quot; class=&quot;button-icon heart button--outline&quot;&gt;Like&lt;/button&gt;
-  &lt;a href=&quot;#&quot; class=&quot;button-icon wheelchair&quot; type=&quot;button&quot; role=&quot;button&quot; id=&quot;toggle&quot; aria-pressed=&quot;false&quot;&gt;A11Y&lt;span class=&quot;visuallyhidden&quot;&gt;all the things.&lt;/span&gt;&lt;/a&gt;
-  &lt;a href=&quot;#&quot; class=&quot;button--outline&quot; role=&quot;button&quot; type=&quot;button&quot; role=&quot;button&quot; id=&quot;print&quot; aria-pressed=&quot;false&quot;&gt;Print Page&lt;/a&gt;
-  &lt;a href=&quot;#&quot; class=&quot;button&quot; type=&quot;button&quot; role=&quot;button&quot; id=&quot;alert1&quot; aria-pressed=&quot;false&quot;&gt;Tell me something nice&lt;/a&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;toggle-section&quot;&gt;
+  &lt;toggle type=&quot;toggle&quot; class=&quot;toggle&quot;&gt;Regular toggle&lt;/toggle&gt;
+  &lt;toggle type=&quot;toggle&quot; class=&quot;toggle-icon heart toggle--outline&quot;&gt;Like&lt;/toggle&gt;
+  &lt;a href=&quot;#&quot; class=&quot;toggle-icon wheelchair&quot; type=&quot;toggle&quot; role=&quot;toggle&quot; id=&quot;toggle&quot; aria-pressed=&quot;false&quot;&gt;A11Y&lt;span class=&quot;visuallyhidden&quot;&gt;all the things.&lt;/span&gt;&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;toggle--outline&quot; role=&quot;toggle&quot; type=&quot;toggle&quot; role=&quot;toggle&quot; id=&quot;print&quot; aria-pressed=&quot;false&quot;&gt;Print Page&lt;/a&gt;
+  &lt;a href=&quot;#&quot; class=&quot;toggle&quot; type=&quot;toggle&quot; role=&quot;toggle&quot; id=&quot;alert1&quot; aria-pressed=&quot;false&quot;&gt;Tell me something nice&lt;/a&gt;
 &lt;/section&gt;
 </code></pre>
                     <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
@@ -217,8 +223,8 @@
 <div class="kss-swatch" style="background-color: #7fffd4">
   <div class="kss-swatch__hex">$color-sea-glass<br>#7fffd4</div>
 </div>
-<div class="kss-swatch" style="background-color: #3cf73c">
-  <div class="kss-swatch__hex">$color-grass<br>#3cf73c</div>
+<div class="kss-swatch" style="background-color: #42dc42">
+  <div class="kss-swatch__hex">$color-grass<br>#42dc42</div>
 </div>
 <div class="kss-swatch" style="background-color: #4083ae">
   <div class="kss-swatch__hex">$color-cornflower<br>#4083ae</div>
@@ -274,8 +280,8 @@
 &lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #7fffd4&quot;&gt;
   &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-sea-glass&lt;br&gt;#7fffd4&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #3cf73c&quot;&gt;
-  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-grass&lt;br&gt;#3cf73c&lt;/div&gt;
+&lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #42dc42&quot;&gt;
+  &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-grass&lt;br&gt;#42dc42&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;kss-swatch&quot; style=&quot;background-color: #4083ae&quot;&gt;
   &lt;div class=&quot;kss-swatch__hex&quot;&gt;$color-cornflower&lt;br&gt;#4083ae&lt;/div&gt;
@@ -495,6 +501,79 @@
                               </div>
 
                                     </section>
+                            <section id="kssref-general-toggle" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-general-toggle">
+                  Toggle
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>Use a <code>&lt;button&gt;</code> element, with <code>aria-pressed</code> or <code>role=&quot;switch&quot;</code>.</li>
+ <li>Make sure you include <code>aria-checked</code> for your toggles, with JavaScript changing the state on click from true to false (or the reverse).</li>
+ <li>Make sure you check the contrast on toggle text with backgrounds.</li>
+</ul>
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#toggle_res">Resources</a></h3><div id="toggle_res" class="atblock__panel"><ul><li><a href="https://github.com/scottaohara/aria-switch-button" target="_blank">ARIA Switch Button</a></li><li><a href="https://inclusive-components.club/toggle-button" target="_blank">Inclusive Components - Toggle Buttons</a></li><li><a href="https://www.w3.org/TR/wai-aria-1.1/#switch" target="_blank">Switch Role (WAI-ARIA)</a></li></ul></div></section>
+
+
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#toggle_guide">WCAG 2.0 Guidelines</a></h3><div id="toggle_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv" target="_blank">4.1.2 Name, Role, Value</a> - For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. (Level A)</p></div><div class="markup"></div></section>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    <section class="toggle-section">
+  <button type="button" data-action="aria-switch" aria-label="Toggle" aria-checked="false" role="switch">
+    <span></span>
+  </button>
+  <button type="button" data-action="aria-switch" aria-label="Toggle Text" aria-checked="true" role="switch" class="text">
+    <span></span>
+  </button>
+  <button type="button" data-action="aria-switch" aria-label="Toggle Reverse" aria-checked="true" role="switch" class="reverse">
+    <span></span>
+  </button>
+  <button type="button" data-action="aria-switch" aria-label="Toggle Reverse" aria-checked="false" role="switch" class="reverse text">
+    <span></span>
+  </button>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;toggle-section&quot;&gt;
+  &lt;button type=&quot;button&quot; data-action=&quot;aria-switch&quot; aria-label=&quot;Toggle&quot; aria-checked=&quot;false&quot; role=&quot;switch&quot;&gt;
+    &lt;span&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; data-action=&quot;aria-switch&quot; aria-label=&quot;Toggle Text&quot; aria-checked=&quot;true&quot; role=&quot;switch&quot; class=&quot;text&quot;&gt;
+    &lt;span&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; data-action=&quot;aria-switch&quot; aria-label=&quot;Toggle Reverse&quot; aria-checked=&quot;true&quot; role=&quot;switch&quot; class=&quot;reverse&quot;&gt;
+    &lt;span&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;button type=&quot;button&quot; data-action=&quot;aria-switch&quot; aria-label=&quot;Toggle Reverse&quot; aria-checked=&quot;false&quot; role=&quot;switch&quot; class=&quot;reverse text&quot;&gt;
+    &lt;span&gt;&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/section&gt;
+</code></pre>
+                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
                             <section id="kssref-general-typography" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
@@ -590,6 +669,7 @@
 <script src="kss-assets/kss.js"></script>
 <script src="kss-assets/rainbow.min.js"></script>
 <script src="kss-assets/main.js"></script>
+<script src="../js/aria-switch.js"></script>
 <script src="../js/aria-toggle.js"></script>
 <script src="../js/back-to-top.js"></script>
 <script src="../js/button.js"></script>
