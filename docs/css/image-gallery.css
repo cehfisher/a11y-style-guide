@@ -1,0 +1,25 @@
+.image-gallery {
+  position: relative;
+  font-size: 0;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0; }
+  .image-gallery::after {
+    content: '';
+    display: table;
+    clear: both; }
+  @media (min-width: 55em) {
+    .image-gallery {
+      padding: 0.5vw; } }
+  .image-gallery .square {
+    -ms-flex: auto;
+    flex: auto;
+    width: 100px;
+    margin: 0.5vw;
+    text-align: center; }
+    .image-gallery .square img {
+      width: 100%;
+      max-width: 100%;
+      height: auto; }
