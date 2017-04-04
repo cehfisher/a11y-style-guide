@@ -1591,6 +1591,78 @@ legend {
       top: 2px;
       left: 43px;
       transition: all 0.4s; }
+  [data-action='aria-switch'].flip {
+    background: #eeeeee;
+    border-radius: 0;
+    display: inline-block;
+    position: relative;
+    transition: background 0.1s ease-in-out;
+    border: 0;
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    clear: both;
+    float: left;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    [data-action='aria-switch'].flip:hover {
+      background: #eeeeee; }
+  [data-action='aria-switch'].flip[aria-checked='false'] {
+    background: #ffffff; }
+    [data-action='aria-switch'].flip[aria-checked='false'] span {
+      background: #e00000;
+      border: 1px solid #dddddd;
+      border-radius: 0;
+      height: 100%;
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      transition: all 0.4s; }
+  [data-action='aria-switch'].flip[aria-checked='true'] {
+    background: #ffffff !important; }
+    [data-action='aria-switch'].flip[aria-checked='true'] span {
+      background: #42dc42;
+      border: 1px solid #dddddd;
+      border-radius: 0;
+      height: 100%;
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      transition: all 0.4s; }
+  [data-action='aria-switch'].flip[aria-checked='false'] span::after {
+    content: 'No way!';
+    display: block;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0.5rem; }
+  [data-action='aria-switch'].flip[aria-checked='true'] span::before {
+    content: 'Heck Yes!';
+    display: block;
+    color: #464646;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0.5rem; }
 
 .no-js [data-action='aria-switch']:not([aria-checked]) span {
   background: #ffffff;

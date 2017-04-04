@@ -129,6 +129,85 @@
       transition: all 0.4s;
     }
   }
+
+  &.flip {
+    background: $color-gallery;
+    border-radius: 0;
+    display: inline-block;
+    position: relative;
+    transition: background 0.1s ease-in-out;
+    border: 0;
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    clear: both;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background: $color-gallery;
+    }
+  }
+
+  &.flip[aria-checked='false'] {
+    background: $color-white;
+
+    span {
+      background: $color-cherry;
+      border: 1px solid $color-alto;
+      border-radius: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      transition: all 0.4s;
+    }
+  }
+
+  &.flip[aria-checked='true'] {
+    background: $color-white !important;
+
+    span {
+      background: $color-grass;
+      border: 1px solid $color-alto;
+      border-radius: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      transition: all 0.4s;
+    }
+  }
+
+  &.flip[aria-checked='false'] span::after {
+    content: 'No way!';
+    display: block;
+    color: $color-white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: $padding-xsm;
+  }
+
+  &.flip[aria-checked='true'] span::before {
+    content: 'Heck Yes!';
+    display: block;
+    color: $color-midnight;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: $padding-xsm;
+  }
 }
 
 .no-js [data-action='aria-switch']:not([aria-checked]) span {
