@@ -66,11 +66,11 @@
       <article role="main" class="kss-article">
       
         
-                            <div id="kssref-media-image-gallery" class="kss-section kss-depth-2">
+                            <div id="kssref-media-site-logo" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-media-image-gallery">
-                  Image Gallery
+                <a class="kss-title__permalink" href="#kssref-media-site-logo">
+                  Site Logo
                 </a>
               </h2>
 
@@ -78,11 +78,14 @@
                   <ul>
  <li>Every <code>&lt;img&gt;</code> you add to your site needs to have an alt attribute. If the image is informational, set the <code>alt</code> equal to a <em>descriptive</em> alternative for that image.</li>
  <li>Avoid using generic strings like photo, image, or icon as <code>alt</code> values, as they don’t communicate valuable content to the user. Be as descriptive as possible.</li>
+ <li>Make sure any text in images of text is at least 14 points and has good contrast with the background.</li>
 </ul>
 
-<blockquote>Note: we are using a randomly generated image filler so the <code>alt</code> text is not as descriptive as it could be...make your real images more descriptive!</blockquote>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#site-logo_res">Resources</a></h3><div id="site-logo_res" class="atblock__panel"><ul><li><a href="http://accessibleicon.org" target="_blank">The Accessible Icon Project</a></li></ul></div></section>
 
-<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#image-gallery_guide">WCAG 2.0 Guidelines</a></h3><div id="image-gallery_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</p></div><div class="markup"></div></section>
+
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#site-logo_guide">WCAG 2.0 Guidelines</a></h3><div id="site-logo_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1 (some exceptions). (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation" target="_blank">1.4.5 Images of Text</a> - If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)</p></div><div class="markup"></div></section>
 
 
                 </div>
@@ -93,20 +96,12 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <section class="image-gallery-section">
-  <div class="image-gallery">
-    <div class="square"><img src="http://placecage.com/300/300" alt="randomly generated image of the zany Nic Cage"></div>
-    <div class="square"><img src="http://fillmurray.com/300/300" alt="randomly generated image of the fabulous Bill Murray"></div>
-    <div class="square"><img src="http://placecage.com/300/300" alt="randomly generated image of the zany Nic Cage"></div>
-    <div class="square"><img src="http://fillmurray.com/300/300" alt="randomly generated image of the fabulous Bill Murray"></div>
-    <div class="square"><img src="http://placecage.com/300/300" alt="randomly generated image of the zany Nic Cage"></div>
-    <div class="square"><img src="http://fillmurray.com/300/300" alt="randomly generated image of the fabulous Bill Murray"></div>
-    <div class="square"><img src="http://placecage.com/300/300" alt="randomly generated image of the zany Nic Cage"></div>
-    <div class="square"><img src="http://fillmurray.com/300/300" alt="randomly generated image of the fabulous Bill Murray"></div>
-    <div class="square"><img src="http://placecage.com/300/300" alt="randomly generated image of the zany Nic Cage"></div>
-    <div class="square"><img src="http://fillmurray.com/300/300" alt="randomly generated image of the fabulous Bill Murray"></div>
-    <div class="square"><img src="http://placecage.com/300/300" alt="randomly generated image of the zany Nic Cage"></div>
-    <div class="square"><img src="http://fillmurray.com/300/300" alt="randomly generated image of the fabulous Bill Murray"></div>
+                    <section class="site-logo-section">
+  <div class="site-logo" title="accessible logo component">
+    <a href="#" title="accessible site logo component">
+      <img src="../assets/blueicon.jpg" alt="Accessible logo with dark blue background and white stencil of a person in a wheelchair traveling at high speeds"></img>
+      <h1>Awesome Site</h1>
+    </a>
   </div>
 </section>
 
@@ -116,20 +111,12 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;image-gallery-section&quot;&gt;
-  &lt;div class=&quot;image-gallery&quot;&gt;
-    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://placecage.com/300/300&quot; alt=&quot;randomly generated image of the zany Nic Cage&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://fillmurray.com/300/300&quot; alt=&quot;randomly generated image of the fabulous Bill Murray&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://placecage.com/300/300&quot; alt=&quot;randomly generated image of the zany Nic Cage&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://fillmurray.com/300/300&quot; alt=&quot;randomly generated image of the fabulous Bill Murray&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://placecage.com/300/300&quot; alt=&quot;randomly generated image of the zany Nic Cage&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://fillmurray.com/300/300&quot; alt=&quot;randomly generated image of the fabulous Bill Murray&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://placecage.com/300/300&quot; alt=&quot;randomly generated image of the zany Nic Cage&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://fillmurray.com/300/300&quot; alt=&quot;randomly generated image of the fabulous Bill Murray&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://placecage.com/300/300&quot; alt=&quot;randomly generated image of the zany Nic Cage&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://fillmurray.com/300/300&quot; alt=&quot;randomly generated image of the fabulous Bill Murray&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://placecage.com/300/300&quot; alt=&quot;randomly generated image of the zany Nic Cage&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://fillmurray.com/300/300&quot; alt=&quot;randomly generated image of the fabulous Bill Murray&quot;&gt;&lt;/div&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;site-logo-section&quot;&gt;
+  &lt;div class=&quot;site-logo&quot; title=&quot;accessible logo component&quot;&gt;
+    &lt;a href=&quot;#&quot; title=&quot;accessible site logo component&quot;&gt;
+      &lt;img src=&quot;../assets/blueicon.jpg&quot; alt=&quot;Accessible logo with dark blue background and white stencil of a person in a wheelchair traveling at high speeds&quot;&gt;&lt;/img&gt;
+      &lt;h1&gt;Awesome Site&lt;/h1&gt;
+    &lt;/a&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>

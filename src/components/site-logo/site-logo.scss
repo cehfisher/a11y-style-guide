@@ -1,0 +1,53 @@
+// Site Logo
+//
+// <ul>
+//  <li>Every `<img>` you add to your site needs to have an alt attribute. If the image is informational, set the `alt` equal to a *descriptive* alternative for that image.</li>
+//  <li>Avoid using generic strings like photo, image, or icon as `alt` values, as they don’t communicate valuable content to the user. Be as descriptive as possible.</li>
+//  <li>Make sure any text in images of text is at least 14 points and has good contrast with the background.</li>
+// </ul>
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#site-logo_res">Resources</a></h3><div id="site-logo_res" class="atblock__panel"><ul><li><a href="http://accessibleicon.org" target="_blank">The Accessible Icon Project</a></li></ul></div></section>
+//
+//
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#site-logo_guide">WCAG 2.0 Guidelines</a></h3><div id="site-logo_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1 (some exceptions). (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation" target="_blank">1.4.5 Images of Text</a> - If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: site-logo.twig
+//
+// Style guide: Media.site-logo
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.site-logo {
+  height: auto;
+  margin: 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  max-width: 100%;
+  margin-right: $padding-sm;
+
+  &:focus,
+  &:active,
+  &.active {
+    border-bottom: none;
+  }
+
+  img {
+    width: 20%;
+    height: auto;
+    float: left;
+    margin-right: 3%;
+    max-width: 70px;
+  }
+
+  h1 {
+    float: left;
+    margin-bottom: 0;
+    margin-top: 8px;
+  }
+}
