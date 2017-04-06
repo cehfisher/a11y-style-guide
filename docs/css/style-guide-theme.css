@@ -21,7 +21,8 @@
 #kss-node .kss-wrapper {
   padding-left: 0;
   margin-left: 0;
-  position: relative; }
+  position: relative;
+  max-width: 1440px; }
 
 #kss-node .kss-content {
   padding-left: 0.5rem;

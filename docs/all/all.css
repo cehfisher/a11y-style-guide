@@ -455,6 +455,67 @@ li {
   list-style: disc; }
 
 
+.tables-section {
+  overflow-x: auto; }
+
+.tables {
+  border-collapse: collapse;
+  width: 100%; }
+  .tables caption {
+    padding: 1rem 0;
+    font-size: 1.5rem; }
+  .tables tbody {
+    border-collapse: collapse;
+    width: 100%; }
+  .tables td,
+  .tables th {
+    border: 1px solid #dddddd;
+    padding: 12px 16px;
+    text-align: center; }
+  .tables tr:nth-child(even) {
+    background-color: #f7f7f7; }
+  .tables th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #e00000;
+    color: #ffffff; }
+  @media only screen and (max-width: 1000px) {
+    .tables table,
+    .tables thead,
+    .tables tbody,
+    .tables th,
+    .tables td,
+    .tables tr {
+      display: block; }
+    .tables thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px; }
+    .tables tr {
+      border-left: 1px solid #dddddd;
+      border-right: 1px solid #dddddd; }
+      .tables tr:first-child {
+        border-top: 1px solid #dddddd; }
+    .tables th {
+      border: 1px solid #e00000; }
+    .tables td {
+      border: 0;
+      border-bottom: 1px solid #dddddd;
+      position: relative;
+      padding-left: 50%;
+      white-space: normal;
+      text-align: left; }
+    .tables td::before {
+      position: absolute;
+      left: 1rem;
+      width: 45%;
+      padding-right: 0.5rem;
+      white-space: nowrap;
+      text-align: left;
+      font-weight: bold; }
+    .tables td::before {
+      content: attr(data-title); } }
+
 .breadcrumb {
   padding: 1rem;
   margin-bottom: 1rem;
@@ -1056,7 +1117,7 @@ input[type='search'] {
   max-width: 100%;
   margin-right: 1rem; }
   .site-logo:focus, .site-logo:active, .site-logo.active {
-    border-bottom: none; }
+    border-bottom: 0; }
   .site-logo img {
     width: 20%;
     height: auto;
@@ -1092,7 +1153,8 @@ input[type='search'] {
 #kss-node .kss-wrapper {
   padding-left: 0;
   margin-left: 0;
-  position: relative; }
+  position: relative;
+  max-width: 1440px; }
 
 #kss-node .kss-content {
   padding-left: 0.5rem;
