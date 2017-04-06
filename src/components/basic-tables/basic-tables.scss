@@ -61,27 +61,27 @@
 
   @media only screen and (max-width: 1000px) {
 
-  	table,
-  	thead,
-  	tbody,
-  	th,
-  	td,
-  	tr {
-  		display: block;
-  	}
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
 
-  	thead tr {
-  		position: absolute;
-  		top: -9999px;
-  		left: -9999px;
-  	}
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
 
-  	tr {
-    	border-left: 1px solid $color-alto;
-    	border-right: 1px solid $color-alto;
+    tr {
+      border-left: 1px solid $color-alto;
+      border-right: 1px solid $color-alto;
 
-    	&:first-child {
-    	  border-top: 1px solid $color-alto;
+      &:first-child {
+        border-top: 1px solid $color-alto;
       }
     }
 
@@ -89,27 +89,27 @@
       border: 1px solid $color-cherry;
     }
 
-  	td {
-  		border: none;
-  		border-bottom: 1px solid $color-alto;
-  		position: relative;
-  		padding-left: 50%;
-  		white-space: normal;
-  		text-align:left;
-  	}
+    td {
+      border: 0;
+      border-bottom: 1px solid $color-alto;
+      position: relative;
+      padding-left: 50%;
+      white-space: normal;
+      text-align:left;
+    }
 
-  	td::before {
-  		position: absolute;
-  		left: $padding-sm;
-  		width: 45%;
-  		padding-right: $padding-xsm;
-  		white-space: nowrap;
-  		text-align: left;
-  		font-weight: bold;
-  	}
+    td::before {
+      position: absolute;
+      left: $padding-sm;
+      width: 45%;
+      padding-right: $padding-xsm;
+      white-space: nowrap;
+      text-align: left;
+      font-weight: bold;
+    }
 
-  	td::before {
-    	content: attr(data-title);
+    td::before {
+      content: attr(data-title);
     }
   }
 }

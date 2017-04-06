@@ -42,7 +42,7 @@
     .tables th {
       border: 1px solid #e00000; }
     .tables td {
-      border: none;
+      border: 0;
       border-bottom: 1px solid #dddddd;
       position: relative;
       padding-left: 50%;
