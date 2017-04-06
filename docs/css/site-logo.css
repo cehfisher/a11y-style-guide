@@ -8,7 +8,7 @@
   max-width: 100%;
   margin-right: 1rem; }
   .site-logo:focus, .site-logo:active, .site-logo.active {
-    border-bottom: none; }
+    border-bottom: 0; }
   .site-logo img {
     width: 20%;
     height: auto;

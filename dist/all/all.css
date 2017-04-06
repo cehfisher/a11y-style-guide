@@ -499,7 +499,7 @@ li {
     .tables th {
       border: 1px solid #e00000; }
     .tables td {
-      border: none;
+      border: 0;
       border-bottom: 1px solid #dddddd;
       position: relative;
       padding-left: 50%;
@@ -1117,7 +1117,7 @@ input[type='search'] {
   max-width: 100%;
   margin-right: 1rem; }
   .site-logo:focus, .site-logo:active, .site-logo.active {
-    border-bottom: none; }
+    border-bottom: 0; }
   .site-logo img {
     width: 20%;
     height: auto;
