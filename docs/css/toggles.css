@@ -126,6 +126,10 @@
     content: 'Heck Yes!';
     color: #464646; }
 
+.optional-label {
+  display: inline-block;
+  padding: 12px 18px; }
+
 .no-js [data-action='aria-switch']:not([aria-checked]) span {
   background: #ffffff;
   border: 1px solid #dddddd;
