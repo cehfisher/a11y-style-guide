@@ -5,7 +5,8 @@
   border-collapse: collapse;
   width: 100%; }
   .tables caption {
-    padding: 1rem 0; }
+    padding: 1rem 0;
+    font-size: 1.5rem; }
   .tables tbody {
     border-collapse: collapse;
     width: 100%; }
@@ -20,8 +21,8 @@
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: #e00000;
-    color: white; }
-  @media only screen and (max-width: 900px) {
+    color: #ffffff; }
+  @media only screen and (max-width: 1000px) {
     .tables table,
     .tables thead,
     .tables tbody,
@@ -34,22 +35,26 @@
       top: -9999px;
       left: -9999px; }
     .tables tr {
-      border: 1px solid #ccc; }
+      border-left: 1px solid #dddddd;
+      border-right: 1px solid #dddddd; }
+      .tables tr:first-child {
+        border-top: 1px solid #dddddd; }
+    .tables th {
+      border: 1px solid #e00000; }
     .tables td {
       border: none;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid #dddddd;
       position: relative;
       padding-left: 50%;
       white-space: normal;
       text-align: left; }
-    .tables td:before {
+    .tables td::before {
       position: absolute;
-      top: 6px;
-      left: 6px;
+      left: 1rem;
       width: 45%;
-      padding-right: 10px;
+      padding-right: 0.5rem;
       white-space: nowrap;
       text-align: left;
       font-weight: bold; }
-    .tables td:before {
+    .tables td::before {
       content: attr(data-title); } }

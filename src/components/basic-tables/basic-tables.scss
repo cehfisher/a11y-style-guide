@@ -1,7 +1,11 @@
-// Tables
+// Basic Tables
 //
 // <ul>
-//  <li>To create an accessible table, the top row of column headers (th) are placed in a thead. Each one receives the scope="col" attribute. The first non-actionable (meaning that doesn't contain a checkbox or menu) column in each row should be marked as a th with a scope="row" attribute.</li>
+//  <li>Add `summary=""` information to the `<table>` element to give users more context on how the table is structured. This is especially useful when your table is complex.</li>
+//  <li>Add the `<caption>` element before the table content to give users more information on the table contents. Think of it as a headline for your table.</li>
+//  <li>Wrap your column headers (th elements) in `<thead>` to group them together. Each column header should also include a `scope="col"` attribute.</li>
+//  <li>If your table includes row headers, include a `scope="row"` attribute to the row header (th elements).</li>
+//  <li>The table content should be wrapped in a `<tbody>` element.</li>
 // </ul>
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tables_res">Resources</a></h3><div id="tables_res" class="atblock__panel"><ul><li><a href="https://css-tricks.com/responsive-data-table-roundup" target="_blank">Responsive Data Table Roundup</a></li><li><a href="https://www.w3.org/WAI/tutorials/tables" target="_blank">Web Accessibility Tutorials - Table Concepts</a></li></ul></div></section>
@@ -12,9 +16,9 @@
 //
 //
 //
-// Markup: tables.twig
+// Markup: basic-tables.twig
 //
-// Style guide: Structure.tables
+// Style guide: Structure.basic-tables
 
 // Import site utilities.
 @import '../../global/utils/init';
@@ -28,7 +32,8 @@
   width: 100%;
 
   caption {
-    padding: 1rem 0;
+    padding: $padding-sm 0;
+    font-size: 1.5rem;
   }
 
   tbody {
@@ -51,10 +56,10 @@
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: $color-cherry;
-    color: white;
+    color: $color-white;
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1000px) {
 
   	table,
   	thead,
@@ -72,30 +77,38 @@
   	}
 
   	tr {
-    	border: 1px solid #ccc;
+    	border-left: 1px solid $color-alto;
+    	border-right: 1px solid $color-alto;
+
+    	&:first-child {
+    	  border-top: 1px solid $color-alto;
+      }
+    }
+
+    th {
+      border: 1px solid $color-cherry;
     }
 
   	td {
   		border: none;
-  		border-bottom: 1px solid #eee;
+  		border-bottom: 1px solid $color-alto;
   		position: relative;
   		padding-left: 50%;
   		white-space: normal;
   		text-align:left;
   	}
 
-  	td:before {
+  	td::before {
   		position: absolute;
-  		top: 6px;
-  		left: 6px;
+  		left: $padding-sm;
   		width: 45%;
-  		padding-right: 10px;
+  		padding-right: $padding-xsm;
   		white-space: nowrap;
-  		text-align:left;
+  		text-align: left;
   		font-weight: bold;
   	}
 
-  	td:before {
+  	td::before {
     	content: attr(data-title);
     }
   }

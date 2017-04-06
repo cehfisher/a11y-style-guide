@@ -57,15 +57,15 @@
                 <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
                                   <ul class="kss-menu-child">
                                           <li class="kss-menu-item">
-                        <a href="#kssref-structure-headings">
+                        <a href="#kssref-structure-basic-tables">
                           <span class="kss-ref ">5.1</span>
-                          <span class="kss-name">Headings</span>
+                          <span class="kss-name">Basic Tables</span>
                         </a>
                       </li>
                                           <li class="kss-menu-item">
-                        <a href="#kssref-structure-tables">
+                        <a href="#kssref-structure-headings">
                           <span class="kss-ref ">5.2</span>
-                          <span class="kss-name">Tables</span>
+                          <span class="kss-name">Headings</span>
                         </a>
                       </li>
                                       </ul>
@@ -92,6 +92,221 @@
                           </div>
 
                       </div>
+                            <section id="kssref-structure-basic-tables" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-structure-basic-tables">
+                  Basic Tables
+                </a>
+              </h2>
+
+                              <div class="kss-description">
+                  <ul>
+ <li>Add <code>summary=&quot;&quot;</code> information to the <code>&lt;table&gt;</code> element to give users more context on how the table is structured. This is especially useful when your table is complex.</li>
+ <li>Add the <code>&lt;caption&gt;</code> element before the table content to give users more information on the table contents. Think of it as a headline for your table.</li>
+ <li>Wrap your column headers (th elements) in <code>&lt;thead&gt;</code> to group them together. Each column header should also include a <code>scope=&quot;col&quot;</code> attribute.</li>
+ <li>If your table includes row headers, include a <code>scope=&quot;row&quot;</code> attribute to the row header (th elements).</li>
+ <li>The table content should be wrapped in a <code>&lt;tbody&gt;</code> element.</li>
+</ul>
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tables_res">Resources</a></h3><div id="tables_res" class="atblock__panel"><ul><li><a href="https://css-tricks.com/responsive-data-table-roundup" target="_blank">Responsive Data Table Roundup</a></li><li><a href="https://www.w3.org/WAI/tutorials/tables" target="_blank">Web Accessibility Tutorials - Table Concepts</a></li></ul></div></section>
+
+
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tables_guide">WCAG 2.0 Guidelines</a></h3><div id="tables_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</p></div><div class="markup"></div></section>
+
+
+                </div>
+              
+                          </div>
+
+                          <div class="kss-modifier-block">
+
+                <div class="kss-modifier kss-modifier-original">
+                  <div class="kss-modifier-example">
+                    <section id="no-more-tables" class="basic-tables-section">
+  <h3>Option #1: Table with one header</h3>
+  <table class="tables" cellspacing="0" summary="Information for surprise party">
+    <thead>
+    	<tr>
+    		<th scope="col">Date</th>
+    		<th scope="col">Event</th>
+    		<th scope="col">Venue</th>
+    	</tr>
+  	</thead>
+    <tbody>
+    	<tr>
+    		<td data-title="Date">3 February</td>
+    		<td data-title="Event">Surprise Party</td>
+    		<td data-title="Venue">Party Town USA</td>
+    	</tr>
+    </tbody>
+  </table>
+  <div class="break"></div>
+  <h3>Option #2: Table with two headers and caption</h3>
+  <table class="tables" cellspacing="0" summary="Color names for red, orange, yellow, green, blue, purple in multiple languages">
+    <caption>Color Names in Multiple Languages</caption>
+    <thead>
+      <tr>
+        <th scope="col">Color</th>
+        <th scope="col">French</th>
+        <th scope="col">German</th>
+        <th scope="col">Italian</th>
+        <th scope="col">Portuguese</th>
+        <th scope="col">Spanish</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Red</th>
+        <td data-title="French">rouge</td>
+        <td data-title="German">rot</td>
+        <td data-title="Italian">rosso</td>
+        <td data-title="Portuguese">vermelho</td>
+        <td data-title="Spanish">rojo</td>
+      </tr>
+      <tr>
+        <th scope="row">Orange</th>
+        <td data-title="French">orange</td>
+        <td data-title="German">orange</td>
+        <td data-title="Italian">arancione</td>
+        <td data-title="Portuguese">laranja</td>
+        <td data-title="Spanish">anaranjado</td>
+      </tr>
+      <tr>
+        <th scope="row">Yellow</th>
+        <td data-title="French">jaune</td>
+        <td data-title="German">gelb</td>
+        <td data-title="Italian">giallo</td>
+        <td data-title="Portuguese">amarelo</td>
+        <td data-title="Spanish">amarillo</td>
+      </tr>
+      <tr>
+        <th scope="row">Green</th>
+        <td data-title="French">vert</td>
+        <td data-title="German">grün</td>
+        <td data-title="Italian">verde</td>
+        <td data-title="Portuguese">verde</td>
+        <td data-title="Spanish">verde</td>
+      </tr>
+      <tr>
+        <th scope="row">Blue</th>
+        <td data-title="French">bleu</td>
+        <td data-title="German">blau</td>
+        <td data-title="Italian">blu</td>
+        <td data-title="Portuguese">azul</td>
+        <td data-title="Spanish">azul</td>
+      </tr>
+      <tr>
+        <th scope="row">Purple</th>
+        <td data-title="French">pourpre</td>
+        <td data-title="German">lila</td>
+        <td data-title="Italian">porpora</td>
+        <td data-title="Portuguese">roxo</td>
+        <td data-title="Spanish">morado</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+                  </div>
+                </div>
+
+                                                <div class="kss-markup">
+                  <button class="js-show-markup">Show Markup Example</button>
+                  <template>
+                    <pre><code id="post-shortlink" data-language="html">&lt;section id=&quot;no-more-tables&quot; class=&quot;basic-tables-section&quot;&gt;
+  &lt;h3&gt;Option #1: Table with one header&lt;/h3&gt;
+  &lt;table class=&quot;tables&quot; cellspacing=&quot;0&quot; summary=&quot;Information for surprise party&quot;&gt;
+    &lt;thead&gt;
+    	&lt;tr&gt;
+    		&lt;th scope=&quot;col&quot;&gt;Date&lt;/th&gt;
+    		&lt;th scope=&quot;col&quot;&gt;Event&lt;/th&gt;
+    		&lt;th scope=&quot;col&quot;&gt;Venue&lt;/th&gt;
+    	&lt;/tr&gt;
+  	&lt;/thead&gt;
+    &lt;tbody&gt;
+    	&lt;tr&gt;
+    		&lt;td data-title=&quot;Date&quot;&gt;3 February&lt;/td&gt;
+    		&lt;td data-title=&quot;Event&quot;&gt;Surprise Party&lt;/td&gt;
+    		&lt;td data-title=&quot;Venue&quot;&gt;Party Town USA&lt;/td&gt;
+    	&lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Option #2: Table with two headers and caption&lt;/h3&gt;
+  &lt;table class=&quot;tables&quot; cellspacing=&quot;0&quot; summary=&quot;Color names for red, orange, yellow, green, blue, purple in multiple languages&quot;&gt;
+    &lt;caption&gt;Color Names in Multiple Languages&lt;/caption&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;col&quot;&gt;Color&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;French&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;German&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;Italian&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;Portuguese&lt;/th&gt;
+        &lt;th scope=&quot;col&quot;&gt;Spanish&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;Red&lt;/th&gt;
+        &lt;td data-title=&quot;French&quot;&gt;rouge&lt;/td&gt;
+        &lt;td data-title=&quot;German&quot;&gt;rot&lt;/td&gt;
+        &lt;td data-title=&quot;Italian&quot;&gt;rosso&lt;/td&gt;
+        &lt;td data-title=&quot;Portuguese&quot;&gt;vermelho&lt;/td&gt;
+        &lt;td data-title=&quot;Spanish&quot;&gt;rojo&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;Orange&lt;/th&gt;
+        &lt;td data-title=&quot;French&quot;&gt;orange&lt;/td&gt;
+        &lt;td data-title=&quot;German&quot;&gt;orange&lt;/td&gt;
+        &lt;td data-title=&quot;Italian&quot;&gt;arancione&lt;/td&gt;
+        &lt;td data-title=&quot;Portuguese&quot;&gt;laranja&lt;/td&gt;
+        &lt;td data-title=&quot;Spanish&quot;&gt;anaranjado&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;Yellow&lt;/th&gt;
+        &lt;td data-title=&quot;French&quot;&gt;jaune&lt;/td&gt;
+        &lt;td data-title=&quot;German&quot;&gt;gelb&lt;/td&gt;
+        &lt;td data-title=&quot;Italian&quot;&gt;giallo&lt;/td&gt;
+        &lt;td data-title=&quot;Portuguese&quot;&gt;amarelo&lt;/td&gt;
+        &lt;td data-title=&quot;Spanish&quot;&gt;amarillo&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;Green&lt;/th&gt;
+        &lt;td data-title=&quot;French&quot;&gt;vert&lt;/td&gt;
+        &lt;td data-title=&quot;German&quot;&gt;grün&lt;/td&gt;
+        &lt;td data-title=&quot;Italian&quot;&gt;verde&lt;/td&gt;
+        &lt;td data-title=&quot;Portuguese&quot;&gt;verde&lt;/td&gt;
+        &lt;td data-title=&quot;Spanish&quot;&gt;verde&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;Blue&lt;/th&gt;
+        &lt;td data-title=&quot;French&quot;&gt;bleu&lt;/td&gt;
+        &lt;td data-title=&quot;German&quot;&gt;blau&lt;/td&gt;
+        &lt;td data-title=&quot;Italian&quot;&gt;blu&lt;/td&gt;
+        &lt;td data-title=&quot;Portuguese&quot;&gt;azul&lt;/td&gt;
+        &lt;td data-title=&quot;Spanish&quot;&gt;azul&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;Purple&lt;/th&gt;
+        &lt;td data-title=&quot;French&quot;&gt;pourpre&lt;/td&gt;
+        &lt;td data-title=&quot;German&quot;&gt;lila&lt;/td&gt;
+        &lt;td data-title=&quot;Italian&quot;&gt;porpora&lt;/td&gt;
+        &lt;td data-title=&quot;Portuguese&quot;&gt;roxo&lt;/td&gt;
+        &lt;td data-title=&quot;Spanish&quot;&gt;morado&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/section&gt;
+</code></pre>
+                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                  </template>
+                </div>
+                              </div>
+
+                                    </section>
                             <section id="kssref-structure-headings" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
@@ -145,313 +360,6 @@
     &lt;h5&gt;My fingertips are bleeding,&lt;/h5&gt;
     &lt;h6&gt;but I carry on.&lt;/h6&gt;
   &lt;/div&gt;
-&lt;/section&gt;
-</code></pre>
-                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
-                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
-                  </template>
-                </div>
-                              </div>
-
-                                    </section>
-                            <section id="kssref-structure-tables" class="kss-section kss-depth-2">
-            <div class="kss-style">
-                            <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-structure-tables">
-                  Tables
-                </a>
-              </h2>
-
-                              <div class="kss-description">
-                  <ul>
- <li>To create an accessible table, the top row of column headers (th) are placed in a thead. Each one receives the scope=&quot;col&quot; attribute. The first non-actionable (meaning that doesn&#39;t contain a checkbox or menu) column in each row should be marked as a th with a scope=&quot;row&quot; attribute.</li>
-</ul>
-
-<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tables_res">Resources</a></h3><div id="tables_res" class="atblock__panel"><ul><li><a href="https://css-tricks.com/responsive-data-table-roundup" target="_blank">Responsive Data Table Roundup</a></li><li><a href="https://www.w3.org/WAI/tutorials/tables" target="_blank">Web Accessibility Tutorials - Table Concepts</a></li></ul></div></section>
-
-
-
-<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tables_guide">WCAG 2.0 Guidelines</a></h3><div id="tables_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</p></div><div class="markup"></div></section>
-
-
-                </div>
-              
-                          </div>
-
-                          <div class="kss-modifier-block">
-
-                <div class="kss-modifier kss-modifier-original">
-                  <div class="kss-modifier-example">
-                    <section id="no-more-tables" class="tables-section">
-  <h3>Option #1: Table with one header</h3>
-  <table class="tables" cellspacing="0" summary="Information for surprise party">
-    <thead>
-    	<tr>
-    		<th>Date</th>
-    		<th>Event</th>
-    		<th>Venue</th>
-    	</tr>
-  	</thead>
-    <tbody>
-    	<tr>
-    		<td data-title="Date">12 February</td>
-    		<td data-title="Event">Surprise Party</td>
-    		<td data-title="Venue">Party Town USA</td>
-    	</tr>
-    </tbody>
-  </table>
-  <div class="break"></div>
-  <h3>Option #2: Table with two headers and scrolling</h3>
-  <table class="tables" cellspacing="0" summary="Color names for red, orange, yellow, green, blue, purple in multiple languages">
-    <caption>Color Names in Multiple Languages</caption>
-    <thead>
-      <tr>
-        <th scope="col">Color</th>
-        <th scope="col">French</th>
-        <th scope="col">German</th>
-        <th scope="col">Italian</th>
-        <th scope="col">Portuguese</th>
-        <th scope="col">Spanish</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Red</th>
-        <td>rouge</td>
-        <td>rot</td>
-        <td>rosso</td>
-        <td>vermelho</td>
-        <td>rojo</td>
-      </tr>
-      <tr>
-        <th scope="row">Orange</th>
-        <td>orange</td>
-        <td>orange</td>
-        <td>arancione</td>
-        <td>laranja</td>
-        <td>anaranjado</td>
-      </tr>
-      <tr>
-        <th scope="row">Yellow</th>
-        <td>jaune</td>
-        <td>gelb</td>
-        <td>giallo</td>
-        <td>amarelo</td>
-        <td>amarillo</td>
-      </tr>
-      <tr>
-        <th scope="row">Green</th>
-        <td>vert</td>
-        <td>grün</td>
-        <td>verde</td>
-        <td>verde</td>
-        <td>verde</td>
-      </tr>
-      <tr>
-        <th scope="row">Blue</th>
-        <td>bleu</td>
-        <td>blau</td>
-        <td>blu</td>
-        <td>azul</td>
-        <td>azul</td>
-      </tr>
-      <tr>
-        <th scope="row">Purple</th>
-        <td>pourpre</td>
-        <td>lila</td>
-        <td>porpora</td>
-        <td>roxo</td>
-        <td>morado</td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="break"></div>
-  <h3>Option #3: Table with two headers</h3>
-  <table class="tables" cellspacing="0" summary="Animal taxonomy">
-  	<thead>
-  		<tr>
-  			<th>Kingdom</th>
-  			<th>Phylum</th>
-  			<th>Class</th>
-  			<th>Order</th>
-  			<th>Family</th>
-  			<th>Genus</th>
-  			<th>Species</th>
-  			<th>Common Name</th>
-  		</tr>
-  	</thead>
-  	<tbody>
-  		<tr>
-  			<td data-title="Kingdom">Animalia</td>
-  			<td data-title="Phylum">Chordata</td>
-  			<td data-title="Class">Mammalia</td>
-  			<td data-title="Order">Carnivora</td>
-  			<td data-title="Family">Felidae</td>
-  			<td data-title="Genus">Panthera</td>
-  			<td data-title="Species">Panthera tigris</td>
-  			<td data-title="Common Name">Tiger</td>
-  		</tr>
-  		<tr>
-  			<td data-title="Kingdom">Animalia</td>
-  			<td data-title="Phylum">Arthropoda</td>
-  			<td data-title="Class">Insecta</td>
-  			<td data-title="Order">Lepidoptera</td>
-  			<td data-title="Family">Danaidae</td>
-  			<td data-title="Genus">Dannaus</td>
-  			<td data-title="Species">Plexippus</td>
-  			<td data-title="Common Name">Monarch Butterfly</td>
-  		</tr>
-  		<tr>
-  			<td data-title="Kingdom">Animalia</td>
-  			<td data-title="Phylum">Echinodermata</td>
-  			<td data-title="Class">Asteroidea</td>
-  			<td data-title="Order">Forcipulatida</td>
-  			<td data-title="Family">Asteriidae</td>
-  			<td data-title="Genus">Asterias</td>
-  			<td data-title="Species">Asterias amurensis</td>
-  			<td data-title="Common Name">Northern Pacific seastar</td>
-  		</tr>
-  	</tbody>
-  </table>
-</section>
-
-                  </div>
-                </div>
-
-                                                <div class="kss-markup">
-                  <button class="js-show-markup">Show Markup Example</button>
-                  <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;section id=&quot;no-more-tables&quot; class=&quot;tables-section&quot;&gt;
-  &lt;h3&gt;Option #1: Table with one header&lt;/h3&gt;
-  &lt;table class=&quot;tables&quot; cellspacing=&quot;0&quot; summary=&quot;Information for surprise party&quot;&gt;
-    &lt;thead&gt;
-    	&lt;tr&gt;
-    		&lt;th&gt;Date&lt;/th&gt;
-    		&lt;th&gt;Event&lt;/th&gt;
-    		&lt;th&gt;Venue&lt;/th&gt;
-    	&lt;/tr&gt;
-  	&lt;/thead&gt;
-    &lt;tbody&gt;
-    	&lt;tr&gt;
-    		&lt;td data-title=&quot;Date&quot;&gt;12 February&lt;/td&gt;
-    		&lt;td data-title=&quot;Event&quot;&gt;Surprise Party&lt;/td&gt;
-    		&lt;td data-title=&quot;Venue&quot;&gt;Party Town USA&lt;/td&gt;
-    	&lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-  &lt;h3&gt;Option #2: Table with two headers and scrolling&lt;/h3&gt;
-  &lt;table class=&quot;tables&quot; cellspacing=&quot;0&quot; summary=&quot;Color names for red, orange, yellow, green, blue, purple in multiple languages&quot;&gt;
-    &lt;caption&gt;Color Names in Multiple Languages&lt;/caption&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;col&quot;&gt;Color&lt;/th&gt;
-        &lt;th scope=&quot;col&quot;&gt;French&lt;/th&gt;
-        &lt;th scope=&quot;col&quot;&gt;German&lt;/th&gt;
-        &lt;th scope=&quot;col&quot;&gt;Italian&lt;/th&gt;
-        &lt;th scope=&quot;col&quot;&gt;Portuguese&lt;/th&gt;
-        &lt;th scope=&quot;col&quot;&gt;Spanish&lt;/th&gt;
-      &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;Red&lt;/th&gt;
-        &lt;td&gt;rouge&lt;/td&gt;
-        &lt;td&gt;rot&lt;/td&gt;
-        &lt;td&gt;rosso&lt;/td&gt;
-        &lt;td&gt;vermelho&lt;/td&gt;
-        &lt;td&gt;rojo&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;Orange&lt;/th&gt;
-        &lt;td&gt;orange&lt;/td&gt;
-        &lt;td&gt;orange&lt;/td&gt;
-        &lt;td&gt;arancione&lt;/td&gt;
-        &lt;td&gt;laranja&lt;/td&gt;
-        &lt;td&gt;anaranjado&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;Yellow&lt;/th&gt;
-        &lt;td&gt;jaune&lt;/td&gt;
-        &lt;td&gt;gelb&lt;/td&gt;
-        &lt;td&gt;giallo&lt;/td&gt;
-        &lt;td&gt;amarelo&lt;/td&gt;
-        &lt;td&gt;amarillo&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;Green&lt;/th&gt;
-        &lt;td&gt;vert&lt;/td&gt;
-        &lt;td&gt;grün&lt;/td&gt;
-        &lt;td&gt;verde&lt;/td&gt;
-        &lt;td&gt;verde&lt;/td&gt;
-        &lt;td&gt;verde&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;Blue&lt;/th&gt;
-        &lt;td&gt;bleu&lt;/td&gt;
-        &lt;td&gt;blau&lt;/td&gt;
-        &lt;td&gt;blu&lt;/td&gt;
-        &lt;td&gt;azul&lt;/td&gt;
-        &lt;td&gt;azul&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;Purple&lt;/th&gt;
-        &lt;td&gt;pourpre&lt;/td&gt;
-        &lt;td&gt;lila&lt;/td&gt;
-        &lt;td&gt;porpora&lt;/td&gt;
-        &lt;td&gt;roxo&lt;/td&gt;
-        &lt;td&gt;morado&lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-  &lt;h3&gt;Option #3: Table with two headers&lt;/h3&gt;
-  &lt;table class=&quot;tables&quot; cellspacing=&quot;0&quot; summary=&quot;Animal taxonomy&quot;&gt;
-  	&lt;thead&gt;
-  		&lt;tr&gt;
-  			&lt;th&gt;Kingdom&lt;/th&gt;
-  			&lt;th&gt;Phylum&lt;/th&gt;
-  			&lt;th&gt;Class&lt;/th&gt;
-  			&lt;th&gt;Order&lt;/th&gt;
-  			&lt;th&gt;Family&lt;/th&gt;
-  			&lt;th&gt;Genus&lt;/th&gt;
-  			&lt;th&gt;Species&lt;/th&gt;
-  			&lt;th&gt;Common Name&lt;/th&gt;
-  		&lt;/tr&gt;
-  	&lt;/thead&gt;
-  	&lt;tbody&gt;
-  		&lt;tr&gt;
-  			&lt;td data-title=&quot;Kingdom&quot;&gt;Animalia&lt;/td&gt;
-  			&lt;td data-title=&quot;Phylum&quot;&gt;Chordata&lt;/td&gt;
-  			&lt;td data-title=&quot;Class&quot;&gt;Mammalia&lt;/td&gt;
-  			&lt;td data-title=&quot;Order&quot;&gt;Carnivora&lt;/td&gt;
-  			&lt;td data-title=&quot;Family&quot;&gt;Felidae&lt;/td&gt;
-  			&lt;td data-title=&quot;Genus&quot;&gt;Panthera&lt;/td&gt;
-  			&lt;td data-title=&quot;Species&quot;&gt;Panthera tigris&lt;/td&gt;
-  			&lt;td data-title=&quot;Common Name&quot;&gt;Tiger&lt;/td&gt;
-  		&lt;/tr&gt;
-  		&lt;tr&gt;
-  			&lt;td data-title=&quot;Kingdom&quot;&gt;Animalia&lt;/td&gt;
-  			&lt;td data-title=&quot;Phylum&quot;&gt;Arthropoda&lt;/td&gt;
-  			&lt;td data-title=&quot;Class&quot;&gt;Insecta&lt;/td&gt;
-  			&lt;td data-title=&quot;Order&quot;&gt;Lepidoptera&lt;/td&gt;
-  			&lt;td data-title=&quot;Family&quot;&gt;Danaidae&lt;/td&gt;
-  			&lt;td data-title=&quot;Genus&quot;&gt;Dannaus&lt;/td&gt;
-  			&lt;td data-title=&quot;Species&quot;&gt;Plexippus&lt;/td&gt;
-  			&lt;td data-title=&quot;Common Name&quot;&gt;Monarch Butterfly&lt;/td&gt;
-  		&lt;/tr&gt;
-  		&lt;tr&gt;
-  			&lt;td data-title=&quot;Kingdom&quot;&gt;Animalia&lt;/td&gt;
-  			&lt;td data-title=&quot;Phylum&quot;&gt;Echinodermata&lt;/td&gt;
-  			&lt;td data-title=&quot;Class&quot;&gt;Asteroidea&lt;/td&gt;
-  			&lt;td data-title=&quot;Order&quot;&gt;Forcipulatida&lt;/td&gt;
-  			&lt;td data-title=&quot;Family&quot;&gt;Asteriidae&lt;/td&gt;
-  			&lt;td data-title=&quot;Genus&quot;&gt;Asterias&lt;/td&gt;
-  			&lt;td data-title=&quot;Species&quot;&gt;Asterias amurensis&lt;/td&gt;
-  			&lt;td data-title=&quot;Common Name&quot;&gt;Northern Pacific seastar&lt;/td&gt;
-  		&lt;/tr&gt;
-  	&lt;/tbody&gt;
-  &lt;/table&gt;
 &lt;/section&gt;
 </code></pre>
                     <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
