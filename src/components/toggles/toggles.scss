@@ -2,6 +2,7 @@
 //
 // <ul>
 //  <li>When you can, use a `<button>` element and include `aria-pressed` or `role="switch"` for your toggles.</li>
+//  <li>You can add optional labels to your toggles, just make sure the label element includes an `id` and the toggle button includes an `aria-labelledby` tag that match.
 //  <li>Make sure you include `aria-checked` on toggles, with JavaScript changing the state on click from true to false (or the reverse).</li>
 //  <li>Make sure you check the contrast of the toggle text against the background (if text is used).</li>
 // </ul>
@@ -197,6 +198,11 @@
     content: 'Heck Yes!';
     color: $color-midnight;
   }
+}
+
+.optional-label {
+  display: inline-block;
+  padding: 12px 18px;
 }
 
 .no-js [data-action='aria-switch']:not([aria-checked]) span {
