@@ -1,0 +1,90 @@
+// Tables
+//
+// Markup: tables.twig
+//
+// Style guide: Structure.tables
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.tables-section {
+  overflow-x: auto;
+}
+
+.tables {
+  border-collapse: collapse;
+  width: 100%;
+
+  caption {
+    padding: 1rem 0;
+  }
+
+  tbody {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid $color-alto;
+    padding: 12px 16px;
+    text-align: center;
+  }
+
+  tr:nth-child(even) {
+    background-color: $color-alabaster;
+  }
+
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: $color-cherry;
+    color: white;
+  }
+
+  @media only screen and (max-width: 900px) {
+
+  	table,
+  	thead,
+  	tbody,
+  	th,
+  	td,
+  	tr {
+  		display: block;
+  	}
+
+  	thead tr {
+  		position: absolute;
+  		top: -9999px;
+  		left: -9999px;
+  	}
+
+  	tr {
+    	border: 1px solid #ccc;
+    }
+
+  	td {
+  		border: none;
+  		border-bottom: 1px solid #eee;
+  		position: relative;
+  		padding-left: 50%;
+  		white-space: normal;
+  		text-align:left;
+  	}
+
+  	td:before {
+  		position: absolute;
+  		top: 6px;
+  		left: 6px;
+  		width: 45%;
+  		padding-right: 10px;
+  		white-space: nowrap;
+  		text-align:left;
+  		font-weight: bold;
+  	}
+
+  	td:before {
+    	content: attr(data-title);
+    }
+  }
+}
