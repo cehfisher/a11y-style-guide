@@ -10,11 +10,12 @@
   overflow: hidden;
   clear: both;
   float: left; }
+  [data-action='aria-switch']:focus {
+    background: #eeeeee; }
   [data-action='aria-switch']:hover {
-    background: #eeeeee; }
+    background-color: #eeeeee; }
   [data-action='aria-switch']:not([disabled]):hover, [data-action='aria-switch']:not([disabled]):focus {
-    border: 0;
-    background: #eeeeee; }
+    border: 0; }
   [data-action='aria-switch'] span {
     border-radius: 32px;
     display: inline-block;
@@ -30,7 +31,7 @@
     width: 30px;
     top: 2px;
     left: 2px;
-    transition: all 0.4s; }
+    transition: 0.4s; }
   [data-action='aria-switch'][aria-checked='true'] span {
     background: #ffffff;
     border: 1px solid #dddddd;
@@ -39,9 +40,9 @@
     width: 30px;
     top: 2px;
     left: 43px;
-    transition: all 0.4s; }
+    transition: 0.4s; }
   [data-action='aria-switch'][aria-checked='true'] {
-    background: #42dc42 !important; }
+    background: #42dc42; }
   [data-action='aria-switch'].text[aria-checked='false'] span::after {
     content: 'OFF';
     display: block;
@@ -66,9 +67,9 @@
       width: 30px;
       top: 2px;
       left: 2px;
-      transition: all 0.4s; }
+      transition: 0.4s; }
   [data-action='aria-switch'].reverse[aria-checked='true'] {
-    background: #ffffff !important; }
+    background: #ffffff; }
     [data-action='aria-switch'].reverse[aria-checked='true'] span {
       background: #42dc42;
       border: 1px solid #dddddd;
@@ -77,7 +78,7 @@
       width: 30px;
       top: 2px;
       left: 43px;
-      transition: all 0.4s; }
+      transition: 0.4s; }
   [data-action='aria-switch'].flip {
     background: #eeeeee;
     border-radius: 0;
@@ -99,7 +100,7 @@
       width: 100%;
       top: 0;
       left: 0;
-      transition: all 0.4s; }
+      transition: 0.4s; }
       [data-action='aria-switch'].flip span::after, [data-action='aria-switch'].flip span::before {
         display: block;
         position: absolute;
@@ -115,7 +116,7 @@
       background: #e00000;
       border-color: #dddddd; }
   [data-action='aria-switch'].flip[aria-checked='true'] {
-    background: #ffffff !important; }
+    background: #ffffff; }
     [data-action='aria-switch'].flip[aria-checked='true'] span {
       background: #42dc42;
       border-color: #dddddd; }
@@ -138,4 +139,4 @@
   width: 30px;
   top: 2px;
   left: 43px;
-  transition: all 0.4s; }
+  transition: 0.4s; }

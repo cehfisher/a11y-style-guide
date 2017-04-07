@@ -512,8 +512,7 @@ li {
       padding-right: 0.5rem;
       white-space: nowrap;
       text-align: left;
-      font-weight: bold; }
-    .tables td::before {
+      font-weight: bold;
       content: attr(data-title); } }
 
 .breadcrumb {
@@ -815,7 +814,6 @@ a:focus {
     display: inline-block;
     padding: 1rem 1.5em;
     text-transform: uppercase;
-    transition: all 0.25s ease-in-out;
     border-radius: 4px; }
   .navbar-mobile-icon .menu-toggle {
     padding: 1rem 1rem 0.65rem;
@@ -851,7 +849,7 @@ a:focus {
     transform: rotate(-45deg) translateY(0) translateX(0); }
   .navbar-mobile-icon .screen-reader-text {
     clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
+    position: absolute;
     height: 1px;
     width: 1px;
     overflow: hidden; }
@@ -875,7 +873,7 @@ a:focus {
     padding: 0; }
     .navbar ul li {
       line-height: 4;
-      padding-bottom: 0 !important; }
+      padding-bottom: 0; }
   .navbar .nav-item {
     display: inline-block; }
 
@@ -885,7 +883,7 @@ a:focus {
   .pagination li {
     list-style: none;
     float: left;
-    padding-bottom: 0 !important;
+    padding-bottom: 0;
     background-color: #f7f7f7;
     border: 1px solid #bbbbbb; }
     .pagination li:first-child {
@@ -1119,15 +1117,17 @@ input[type='search'] {
   .site-logo:focus, .site-logo:active, .site-logo.active {
     border-bottom: 0; }
   .site-logo img {
-    width: 20%;
+    width: 100%;
     height: auto;
     float: left;
     margin-right: 3%;
-    max-width: 70px; }
+    max-width: 192px; }
   .site-logo h1 {
-    float: left;
-    margin-bottom: 0;
-    margin-top: 8px; }
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px); }
 
 
 #kss-node .kss-section {
@@ -1605,11 +1605,12 @@ legend {
   overflow: hidden;
   clear: both;
   float: left; }
+  [data-action='aria-switch']:focus {
+    background: #eeeeee; }
   [data-action='aria-switch']:hover {
-    background: #eeeeee; }
+    background-color: #eeeeee; }
   [data-action='aria-switch']:not([disabled]):hover, [data-action='aria-switch']:not([disabled]):focus {
-    border: 0;
-    background: #eeeeee; }
+    border: 0; }
   [data-action='aria-switch'] span {
     border-radius: 32px;
     display: inline-block;
@@ -1625,7 +1626,7 @@ legend {
     width: 30px;
     top: 2px;
     left: 2px;
-    transition: all 0.4s; }
+    transition: 0.4s; }
   [data-action='aria-switch'][aria-checked='true'] span {
     background: #ffffff;
     border: 1px solid #dddddd;
@@ -1634,9 +1635,9 @@ legend {
     width: 30px;
     top: 2px;
     left: 43px;
-    transition: all 0.4s; }
+    transition: 0.4s; }
   [data-action='aria-switch'][aria-checked='true'] {
-    background: #42dc42 !important; }
+    background: #42dc42; }
   [data-action='aria-switch'].text[aria-checked='false'] span::after {
     content: 'OFF';
     display: block;
@@ -1661,9 +1662,9 @@ legend {
       width: 30px;
       top: 2px;
       left: 2px;
-      transition: all 0.4s; }
+      transition: 0.4s; }
   [data-action='aria-switch'].reverse[aria-checked='true'] {
-    background: #ffffff !important; }
+    background: #ffffff; }
     [data-action='aria-switch'].reverse[aria-checked='true'] span {
       background: #42dc42;
       border: 1px solid #dddddd;
@@ -1672,7 +1673,7 @@ legend {
       width: 30px;
       top: 2px;
       left: 43px;
-      transition: all 0.4s; }
+      transition: 0.4s; }
   [data-action='aria-switch'].flip {
     background: #eeeeee;
     border-radius: 0;
@@ -1694,7 +1695,7 @@ legend {
       width: 100%;
       top: 0;
       left: 0;
-      transition: all 0.4s; }
+      transition: 0.4s; }
       [data-action='aria-switch'].flip span::after, [data-action='aria-switch'].flip span::before {
         display: block;
         position: absolute;
@@ -1710,7 +1711,7 @@ legend {
       background: #e00000;
       border-color: #dddddd; }
   [data-action='aria-switch'].flip[aria-checked='true'] {
-    background: #ffffff !important; }
+    background: #ffffff; }
     [data-action='aria-switch'].flip[aria-checked='true'] span {
       background: #42dc42;
       border-color: #dddddd; }
@@ -1733,5 +1734,5 @@ legend {
   width: 30px;
   top: 2px;
   left: 43px;
-  transition: all 0.4s; }
+  transition: 0.4s; }
 
