@@ -17,6 +17,6 @@
     padding: 0; }
     .navbar ul li {
       line-height: 4;
-      padding-bottom: 0 !important; }
+      padding-bottom: 0; }
   .navbar .nav-item {
     display: inline-block; }

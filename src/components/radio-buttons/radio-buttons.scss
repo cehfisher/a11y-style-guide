@@ -79,5 +79,5 @@
 
 .radio input[type='radio']:focus + label::before {
   outline: auto 2px Highlight; // for non-webkit browsers
-  outline: auto 5px -webkit-focus-ring-color; // for webkit browsers
+  outline: auto 5px -webkit-focus-ring-color; // sass-lint:disable-line no-vendor-prefixes no-duplicate-properties
 }

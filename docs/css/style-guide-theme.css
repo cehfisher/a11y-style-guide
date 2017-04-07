@@ -28,8 +28,6 @@
   padding-left: 0.5rem;
   transition: all 0.5s ease-in-out;
   margin: 0 2rem 0 325px; }
-  #kss-node .kss-content li {
-    padding-bottom: 0.5rem; }
 
 #kss-node .kss-sidebar-collapsed + .kss-content {
   transition: all 0.5s ease-in-out;

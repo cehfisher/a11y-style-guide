@@ -55,6 +55,5 @@
       padding-right: 0.5rem;
       white-space: nowrap;
       text-align: left;
-      font-weight: bold; }
-    .tables td::before {
+      font-weight: bold;
       content: attr(data-title); } }

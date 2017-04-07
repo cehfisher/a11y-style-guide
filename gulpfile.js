@@ -23,7 +23,8 @@ var taskMove        = require('./gulp-tasks/move.js');
 var taskLint        = require('./gulp-tasks/lint.js');
 var taskCompress    = require('./gulp-tasks/compress.js');
 var taskClean       = require('./gulp-tasks/clean.js');
-var taskStyleGuide  = require('./gulp-tasks/styleguide.js');var taskConcat      = require('./gulp-tasks/concat.js');
+var taskStyleGuide  = require('./gulp-tasks/styleguide.js');
+var taskConcat      = require('./gulp-tasks/concat.js');
 //=======================================================
 // Compile Our Sass and JS
 // We also move some files if they don't need
@@ -52,7 +53,7 @@ gulp.task('move:js', function() {
 // to copy the /dist folder into the /docs folder.
 gulp.task('move:docs', function() {
   return taskMove.docs();
-})
+});
 
 //=======================================================
 // Lint Sass and JavaScript
@@ -113,7 +114,7 @@ gulp.task('clean:js', function () {
 // Clean Docs folder for new fresh documents.
 gulp.task('clean:docs', function() {
   return taskClean.docs();
-})
+});
 
 //=======================================================
 // Watch and recompile sass.
@@ -158,13 +159,14 @@ gulp.task('watch:styleguide', ['styleguide'], sync.reload);
 // Default Task
 //
 // runSequence runs 'clean' first, and when that finishes
-// 'lint', 'compile', 'compress', 'styleguide' run
-// at the same time. 'concat' runs last.
+// 'lint', 'compile', 'compress' run
+// at the same time. Then 'styleguide', then'concat' runs last.
 //=======================================================
 gulp.task('default', function(callback) {
   runSequence(
     'clean',
-    ['lint', 'compile', 'compress', 'styleguide'],
+    ['lint', 'compile', 'compress'],
+    'styleguide',
     'concat',
     callback
   );

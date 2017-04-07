@@ -8,6 +8,7 @@
 @import '../../global/utils/init';
 
 // KSS node changes
+// sass-lint:disable-all
 #kss-node {
 
   // Main content
@@ -48,10 +49,6 @@
     padding-left: $padding-xsm;
     transition: all 0.5s ease-in-out;
     margin: 0 $padding-md 0 325px;
-
-    li {
-      padding-bottom: $padding-xsm;
-    }
   }
 
   .kss-sidebar-collapsed + .kss-content {
@@ -528,3 +525,4 @@ a[target='_blank']::after {
 .show-back-to-top .back-to-top {
   transform: translateY(0%);
 }
+// sass-lint:enable-all

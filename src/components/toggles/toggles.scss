@@ -35,14 +35,17 @@
   clear: both;
   float: left;
 
-  &:hover {
+  &:focus {
     background: $color-gallery;
+  }
+
+  &:hover {
+    background-color: $color-gallery;
   }
 
   &:not([disabled]):hover,
   &:not([disabled]):focus {
     border: 0;
-    background: $color-gallery;
   }
 
   span {
@@ -64,7 +67,7 @@
       width: 30px;
       top: 2px;
       left: 2px;
-      transition: all 0.4s;
+      transition: 0.4s;
     }
   }
 
@@ -76,11 +79,11 @@
     width: 30px;
     top: 2px;
     left: 43px;
-    transition: all 0.4s;
+    transition: 0.4s;
   }
 
   &[aria-checked='true'] {
-    background: $color-grass !important;
+    background: $color-grass;
   }
 
   &.text[aria-checked='false'] span::after {
@@ -112,12 +115,12 @@
       width: 30px;
       top: 2px;
       left: 2px;
-      transition: all 0.4s;
+      transition: 0.4s;
     }
   }
 
   &.reverse[aria-checked='true'] {
-    background: $color-white !important;
+    background: $color-white;
 
     span {
       background: $color-grass;
@@ -127,7 +130,7 @@
       width: 30px;
       top: 2px;
       left: 43px;
-      transition: all 0.4s;
+      transition: 0.4s;
     }
   }
 
@@ -155,7 +158,7 @@
       width: 100%;
       top: 0;
       left: 0;
-      transition: all 0.4s;
+      transition: 0.4s;
 
       &::after,
       &::before {
@@ -181,7 +184,7 @@
   }
 
   &.flip[aria-checked='true'] {
-    background: $color-white !important;
+    background: $color-white;
 
     span {
       background: $color-grass;
@@ -213,5 +216,5 @@
   width: 30px;
   top: 2px;
   left: 43px;
-  transition: all 0.4s;
+  transition: 0.4s;
 }
