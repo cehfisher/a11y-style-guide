@@ -28,7 +28,7 @@
 [role='button'],
 button {
   @include button;
-  -webkit-appearance: inherit;
+  -webkit-appearance: inherit; // sass-lint:disable-line no-vendor-prefixes
 
   [role='button'][aria-pressed='true'] {
     color: $color-white;
@@ -40,7 +40,7 @@ button,
 html [type='button'],
 [type='reset'],
 [type='submit'] {
-  -webkit-appearance: inherit;
+  -webkit-appearance: inherit; // sass-lint:disable-line no-vendor-prefixes
 }
 
 .button {

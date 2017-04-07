@@ -31,7 +31,6 @@
     display: inline-block;
     padding: 1rem 1.5em;
     text-transform: uppercase;
-    transition: all 0.25s ease-in-out;
     border-radius: $border-rd-sm;
   }
 
@@ -92,7 +91,7 @@
   /* Text meant only for screen readers. */
   .screen-reader-text {
     clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
+    position: absolute;
     height: 1px;
     width: 1px;
     overflow: hidden;
