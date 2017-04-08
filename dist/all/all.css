@@ -1113,7 +1113,10 @@ input[type='search'] {
   background-repeat: no-repeat;
   display: block;
   max-width: 100%;
-  margin-right: 1rem; }
+  margin-right: 1rem;
+  clear: both;
+  width: 100%;
+  float: left; }
   .site-logo:focus, .site-logo:active, .site-logo.active {
     border-bottom: 0; }
   .site-logo img {
@@ -1397,7 +1400,10 @@ body {
 
 .break {
   margin: 3rem 0;
-  border-bottom: 1px solid #eeeeee; }
+  border-bottom: 1px solid #eeeeee;
+  clear: both;
+  float: left;
+  width: 100%; }
 
 .markup {
   margin: 1.5rem 0;
