@@ -1,11 +1,23 @@
-{# To avoid the screenreader repeating the alt tag and the link text 
-  with the same information, the link text describes the destination.
+{# When using logos, or any image, as a link, one must consider how the alt text will be read back to users of assistive technology. The following examples showcase appropriate alt text for logos when used as a link, or as a stand alone image asset.
   #}
 <section class="site-logo-section">
-  <div class="site-logo" title="accessible logo component">
-    <a href="#" title="accessible site logo component">
-      <img src="../assets/site_logo.jpg" alt="Accessible logo with red icon displaying A11y above red text displaying style guide"></img>
-      <h1>Site Home</h1>
+  <h3>Example #1: Logo as a link</h3>
+  <div class="site-logo">
+    <a href="#">
+      <img src="../assets/site_logo.jpg" alt="A11Y Style Guide"></img>
     </a>
   </div>
+
+  <div class="break"></div>
+  <h3>Example #2: Logo as a link with visible link text</h3>
+  <div class="site-logo">
+    <a href="#">
+      <img src="../assets/site_logo.jpg" alt=""></img>
+      <h1>A11Y Style Guide - Home</h1>
+    </a>
+  </div>
+
+  <div class="break"></div>
+  <h3>Example #3: Logo as an image</h3>
+  <img src="../assets/site_logo.jpg" alt="Accessible Style Guide logo: Red badge reading 'A11Y' positioned above red text reading 'style guide'"></img>
 </section>
