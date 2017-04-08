@@ -322,6 +322,9 @@ body {
 .break {
   margin: $padding-md-lg 0;
   border-bottom: 1px solid $color-gallery;
+  clear: both;
+  float: left;
+  width: 100%;
 }
 
 .markup {

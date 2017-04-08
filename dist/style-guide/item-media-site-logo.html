@@ -79,32 +79,16 @@
  <li>Every <code>&lt;img&gt;</code> you add to your site needs to have an alt attribute. If the image is informational, set the <code>alt</code> equal to a <em>descriptive</em> alternative for that image.</li>
  <li>Avoid using generic strings like photo, image, or icon as <code>alt</code> values, as they don’t communicate valuable content to the user. Be as descriptive as possible.</li>
  <li>Make sure any text in images of text is at least 14 points and has good contrast with the background.</li>
+ <li>When using images as links, one must consider how the <code>alt</code> text will be read back to users of assistive technology. The following examples showcase appropriate <code>alt</code> text for logos when used as a link, or as a stand alone image asset.
 </ul>
 
-<section data-action="aria-toggle" class="atblock">
-<h3 class="atblock__title">
-<a href="#site-logo_res">Resources</a></h3><div id="site-logo_res" class="atblock__panel">
-<ul><li><a href="http://accessibleicon.org" target="_blank">The Accessible Icon Project</a></li>
-<li><a href="https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-" target="_blank">Hiding Content</a></li>
-</ul></div></section>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#site-logo_res">Resources</a></h3><div id="site-logo_res" class="atblock__panel"><ul><li><a href="http://accessibleicon.org" target="_blank">The Accessible Icon Project</a></li><li><a href="https://snook.ca/archives/html_and_css/hiding-content-for-accessibility" target="_blank">Hiding Content</a></li></ul></div></section>
 
-<p><section data-action="aria-toggle" class="atblock"></p>
-<p><h3 class="atblock__title">
-<a href="#site-logo_guide">WCAG 2.0 Guidelines</a>
-</h3><div id="site-logo_guide" class="atblock__panel guidelines"></p>
-<p>
-<a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)
-<br><br>
-<strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.
-<br><br>
-<a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1 (some exceptions). (Level AA)
-<br><br>
-<a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation" target="_blank">1.4.5 Images of Text</a> - If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)
-<br><br>
-<a href="https://www.w3.org/WAI/WCAG20/quickref/20160105/#navigation-mechanisms" target="_blank">2.4.4 Link Purpose (In Context)</a> - Often a logo is a link to the homepage. The purpose of the link can be determined from the link text alone. Even when hidden. (Level A)
-</div><div class="markup"></div></section>
-</p>
+
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#site-logo_guide">WCAG 2.0 Guidelines</a></h3><div id="site-logo_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1 (some exceptions). (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation" target="_blank">1.4.5 Images of Text</a> - If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-refs" target="_blank">2.4.4 Link Purpose (In Context)</a> - Often a logo is a link to the homepage. The purpose of the link can be determined from the link text alone. Even when hidden. (Level A)</p></div><div class="markup"></div></section>
+
+
                 </div>
               
                           </div>
@@ -113,14 +97,24 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    
-<section class="site-logo-section">
-  <div class="site-logo" title="accessible logo component">
-    <a href="#" title="accessible site logo component">
-      <img src="../assets/site_logo.jpg" alt="Accessible logo with red icon displaying A11y above red text displaying style guide"></img>
-      <h1>Site Home</h1>
+                    <section class="site-logo-section">
+  <h3>Example #1: Logo as a link</h3>
+  <div class="site-logo">
+    <a href="#">
+      <img src="../assets/blueicon.jpg" alt="Accessible Icon Project logo, blue background with white icon of a person in a wheelchair"></img>
     </a>
   </div>
+  <div class="break"></div>
+  <h3>Example #2: Logo as a link with visible link text</h3>
+  <div class="site-logo">
+    <a href="#">
+      <img src="../assets/blackicon.jpg" alt=""></img>
+      <h1>Accessible Icon Project</h1>
+    </a>
+  </div>
+  <div class="break"></div>
+  <h3>Example #3: Logo as an image</h3>
+  <img src="../assets/site_logo.jpg" alt="Accessible Style Guide logo: Red badge reading 'A11Y' positioned above red text reading 'style guide'"></img>
 </section>
 
                   </div>
@@ -129,16 +123,24 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code id="post-shortlink" data-language="html">{# To avoid the screenreader repeating the alt tag and the link text 
-  with the same information, the link text describes the destination.
-  #}
-&lt;section class=&quot;site-logo-section&quot;&gt;
-  &lt;div class=&quot;site-logo&quot; title=&quot;accessible logo component&quot;&gt;
-    &lt;a href=&quot;#&quot; title=&quot;accessible site logo component&quot;&gt;
-      &lt;img src=&quot;../assets/site_logo.jpg&quot; alt=&quot;Accessible logo with red icon displaying A11y above red text displaying style guide&quot;&gt;&lt;/img&gt;
-      &lt;h1&gt;Site Home&lt;/h1&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;site-logo-section&quot;&gt;
+  &lt;h3&gt;Example #1: Logo as a link&lt;/h3&gt;
+  &lt;div class=&quot;site-logo&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img src=&quot;../assets/blueicon.jpg&quot; alt=&quot;Accessible Icon Project logo, blue background with white icon of a person in a wheelchair&quot;&gt;&lt;/img&gt;
     &lt;/a&gt;
   &lt;/div&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Example #2: Logo as a link with visible link text&lt;/h3&gt;
+  &lt;div class=&quot;site-logo&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img src=&quot;../assets/blackicon.jpg&quot; alt=&quot;&quot;&gt;&lt;/img&gt;
+      &lt;h1&gt;Accessible Icon Project&lt;/h1&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Example #3: Logo as an image&lt;/h3&gt;
+  &lt;img src=&quot;../assets/site_logo.jpg&quot; alt=&quot;Accessible Style Guide logo: Red badge reading &#039;A11Y&#039; positioned above red text reading &#039;style guide&#039;&quot;&gt;&lt;/img&gt;
 &lt;/section&gt;
 </code></pre>
                     <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>

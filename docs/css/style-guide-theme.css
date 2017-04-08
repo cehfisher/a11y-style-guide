@@ -265,7 +265,10 @@ body {
 
 .break {
   margin: 3rem 0;
-  border-bottom: 1px solid #eeeeee; }
+  border-bottom: 1px solid #eeeeee;
+  clear: both;
+  float: left;
+  width: 100%; }
 
 .markup {
   margin: 1.5rem 0;
