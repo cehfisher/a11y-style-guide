@@ -85,7 +85,7 @@
 
 <blockquote>There are a ton of WCAG Guidelines for media on websites for a reason...there are a lot of factors to consider. Don&#39;t let that scare you though, there are also some easy wins. Just including some alternatives to the media you present (ex. transcript for a video) is half the battle.</blockquote>
 
-<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#video_res">Resources</a></h3><div id="video_res" class="atblock__panel"><ul><li><a href="https://www.sitepoint.com/accessible-video" target="_blank">8 Steps to Creating Accessible Video</a></li><li><a href="https://www.w3.org/2008/06/video-notes" target="_blank">Multimedia Accessibility FAQ</a></li><li><a href="http://trace.umd.edu/peat" target="_blank">Photosensitive Epilepsy Analysis Tool</a> - tests your visual media to see if it will trigger seizures or other light disorder issues in viewers</a></li></ul></div></section>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#video_res">Resources</a></h3><div id="video_res" class="atblock__panel"><ul><li><a href="https://www.sitepoint.com/accessible-video" target="_blank">8 Steps to Creating Accessible Video</a></li><li><a href="https://www.w3.org/2008/06/video-notes" target="_blank">Multimedia Accessibility FAQ</a></li><li><a href="http://trace.umd.edu/peat" target="_blank">Photosensitive Epilepsy Analysis Tool</a> - tests your visual media to see if it will trigger seizures or other light disorder issues in viewers</li></ul></div></section>
 
 
 
@@ -101,8 +101,8 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     <section class="videos-section">
-  <div class="videos">
-    <video controls="controls" poster="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" width="100%" height="auto">
+  <figure class="videos">
+    <video controls="controls" poster="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" style="width: 100%;">
       <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
       <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" type="video/webm" />
       <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type="video/ogg" />
@@ -112,16 +112,18 @@
         <param name="wmode" value="transparent" />
         <param name="flashVars" value="config={'playlist':['http%3A%2F%2Fsandbox.thewikies.com%2Fvfe-generator%2Fimages%2Fbig-buck-bunny_poster.jpg',{'url':'http%3A%2F%2Fclips.vorwaerts-gmbh.de%2Fbig_buck_bunny.mp4','autoPlay':false}]}" />
         <img alt="Big Buck Bunny" src="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" width="640" height="360" title="No video playback capabilities, please download the video below" />
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/U9t-slLl30E" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" title="Big Buck Bunny on youtube" src="https://www.youtube.com/embed/U9t-slLl30E" frameborder="0" allowfullscreen></iframe>
       </object>
     </video>
-    <div class="videos__transcript">
-      <a href="http://www.example.com/location/of_transcript.htm">Get Transcript</a>
-    </div>
-    <div class="videos__alt-audio">
-      <a href="http://www.example.com/location/of_audiotrack.mp4">Alternative Audio Track</a>
-    </div>
-  </div>
+    <figcaption>
+      <p class="videos__transcript">
+        <a href="http://www.example.com/location/of_transcript.htm">Get Transcript</a>
+      </p>
+      <p class="videos__alt-audio">
+        <a href="http://www.example.com/location/of_audiotrack.mp4">Alternative Audio Track</a>
+      </p>
+    </figcaption>
+  </figure>
 </section>
 
                   </div>
@@ -131,8 +133,8 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;videos-section&quot;&gt;
-  &lt;div class=&quot;videos&quot;&gt;
-    &lt;video controls=&quot;controls&quot; poster=&quot;http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg&quot; width=&quot;100%&quot; height=&quot;auto&quot;&gt;
+  &lt;figure class=&quot;videos&quot;&gt;
+    &lt;video controls=&quot;controls&quot; poster=&quot;http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg&quot; style=&quot;width: 100%;&quot;&gt;
       &lt;source src=&quot;http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4&quot; type=&quot;video/mp4&quot; /&gt;
       &lt;source src=&quot;http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm&quot; type=&quot;video/webm&quot; /&gt;
       &lt;source src=&quot;http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv&quot; type=&quot;video/ogg&quot; /&gt;
@@ -142,16 +144,18 @@
         &lt;param name=&quot;wmode&quot; value=&quot;transparent&quot; /&gt;
         &lt;param name=&quot;flashVars&quot; value=&quot;config={&#039;playlist&#039;:[&#039;http%3A%2F%2Fsandbox.thewikies.com%2Fvfe-generator%2Fimages%2Fbig-buck-bunny_poster.jpg&#039;,{&#039;url&#039;:&#039;http%3A%2F%2Fclips.vorwaerts-gmbh.de%2Fbig_buck_bunny.mp4&#039;,&#039;autoPlay&#039;:false}]}&quot; /&gt;
         &lt;img alt=&quot;Big Buck Bunny&quot; src=&quot;http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg&quot; width=&quot;640&quot; height=&quot;360&quot; title=&quot;No video playback capabilities, please download the video below&quot; /&gt;
-        &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/U9t-slLl30E&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+        &lt;iframe width=&quot;560&quot; height=&quot;315&quot; title=&quot;Big Buck Bunny on youtube&quot; src=&quot;https://www.youtube.com/embed/U9t-slLl30E&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
       &lt;/object&gt;
     &lt;/video&gt;
-    &lt;div class=&quot;videos__transcript&quot;&gt;
-      &lt;a href=&quot;http://www.example.com/location/of_transcript.htm&quot;&gt;Get Transcript&lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;videos__alt-audio&quot;&gt;
-      &lt;a href=&quot;http://www.example.com/location/of_audiotrack.mp4&quot;&gt;Alternative Audio Track&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+    &lt;figcaption&gt;
+      &lt;p class=&quot;videos__transcript&quot;&gt;
+        &lt;a href=&quot;http://www.example.com/location/of_transcript.htm&quot;&gt;Get Transcript&lt;/a&gt;
+      &lt;/p&gt;
+      &lt;p class=&quot;videos__alt-audio&quot;&gt;
+        &lt;a href=&quot;http://www.example.com/location/of_audiotrack.mp4&quot;&gt;Alternative Audio Track&lt;/a&gt;
+      &lt;/p&gt;
+    &lt;/figcaption&gt;
+  &lt;/figure&gt;
 &lt;/section&gt;
 </code></pre>
                     <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>

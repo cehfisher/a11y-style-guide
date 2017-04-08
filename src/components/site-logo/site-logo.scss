@@ -4,7 +4,7 @@
 //  <li>Every `<img>` you add to your site needs to have an alt attribute. If the image is informational, set the `alt` equal to a *descriptive* alternative for that image.</li>
 //  <li>Avoid using generic strings like photo, image, or icon as `alt` values, as they don’t communicate valuable content to the user. Be as descriptive as possible.</li>
 //  <li>Make sure any text in images of text is at least 14 points and has good contrast with the background.</li>
-//  <li>To avoid the screenreader repeating the same information when the `alt` tag and the link text are the same, have the link text describes the link destination instead.</li>
+//  <li>When using images as links, one must consider how the `alt` text will be read back to users of assistive technology. The following examples showcase appropriate `alt` text for logos when used as a link, or as a stand alone image asset.
 // </ul>
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#site-logo_res">Resources</a></h3><div id="site-logo_res" class="atblock__panel"><ul><li><a href="http://accessibleicon.org" target="_blank">The Accessible Icon Project</a></li><li><a href="https://snook.ca/archives/html_and_css/hiding-content-for-accessibility" target="_blank">Hiding Content</a></li></ul></div></section>
