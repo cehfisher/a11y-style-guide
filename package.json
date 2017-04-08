@@ -1,6 +1,11 @@
 {
   "name": "a11y_style_guide",
   "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cehfisher/a11y-style-guide.git"
+  },
   "scripts": {
     "build": "gulp",
     "compile": "gulp compile",
