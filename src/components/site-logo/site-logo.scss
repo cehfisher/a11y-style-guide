@@ -23,37 +23,26 @@
 @import '../../global/utils/init';
 
 .site-logo {
-  height: auto;
-  margin: 0;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: block;
-  max-width: 100%;
-  margin-right: $padding-sm;
-  clear: both;
-  width: 100%;
-  float: left;
 
-  &:focus,
-  &:active,
-  &.active {
-    border-bottom: 0;
+  a {
+    display: inline-block;
+    overflow: hidden;
+
+    &:hover,
+    &:focus {
+      outline: 2px solid #000;
+    }
   }
 
   img {
-    width: 100%;
-    height: auto;
-    float: left;
-    margin-right: 3%;
     max-width: 192px;
+    vertical-align: middle;
   }
 
   h1 {
-    position: absolute;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
+    color: #000;
+    display: inline-block;
+    margin: 0 0 0 .25em;
+    vertical-align: middle;
   }
 }
