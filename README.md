@@ -28,8 +28,8 @@
 <p>This has a KSS node base, so learn a bit about <a href="https://github.com/kss-node/kss-node/wiki/Quick-Start-Guide" target="_blank">how KSS node works</a></p>
 <p>To make local changes to components, do the following:</p>
 <ul><li>Navigate to the project root</li>
-<li><code>nvm install stable</code> (only need to do once)</li>
-<li><code>nvm use</code></li>
+<li><code>nvm install stable</code> (only need to do once - see the <a href="https://github.com/creationix/nvm" target="_blank">NVM project</a> for troubleshooting)</li>
+<li><code>nvm use stable</code></li>
 <li><code>npm install</code> (only need to do once)</li>
 <li>Change/add some code</li>
 <li><code>npm run gulp</code> (this will run all the gulp commands)</li>
