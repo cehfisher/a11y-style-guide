@@ -1,26 +1,13 @@
-.site-logo {
-  height: auto;
-  margin: 0;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: block;
-  max-width: 100%;
-  margin-right: 1rem;
-  clear: both;
-  width: 100%;
-  float: left; }
-  .site-logo:focus, .site-logo:active, .site-logo.active {
-    border-bottom: 0; }
-  .site-logo img {
-    width: 100%;
-    height: auto;
-    float: left;
-    margin-right: 3%;
-    max-width: 192px; }
-  .site-logo h1 {
-    position: absolute;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px); }
+.site-logo a {
+  display: inline-block;
+  overflow: hidden; }
+
+.site-logo img {
+  max-width: 192px;
+  vertical-align: middle; }
+
+.site-logo h1 {
+  color: #000000;
+  display: inline-block;
+  margin: 0 0 0 0.25em;
+  vertical-align: middle; }

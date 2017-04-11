@@ -27,11 +27,6 @@
   a {
     display: inline-block;
     overflow: hidden;
-
-    &:hover,
-    &:focus {
-      outline: 2px solid #000;
-    }
   }
 
   img {
@@ -40,9 +35,9 @@
   }
 
   h1 {
-    color: #000;
+    color: $color-black;
     display: inline-block;
-    margin: 0 0 0 .25em;
+    margin: 0 0 0 0.25em;
     vertical-align: middle;
   }
 }
