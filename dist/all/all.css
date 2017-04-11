@@ -1109,8 +1109,9 @@ input[type='search'] {
   display: inline-block;
   overflow: hidden; }
 
-.site-logo img {
-  max-width: 192px;
+.site-logo img,
+.site-logo svg {
+  max-width: 175px;
   vertical-align: middle; }
 
 .site-logo h1 {
@@ -1288,6 +1289,9 @@ input[type='search'] {
 
 #kss-node .kss-header {
   background: transparent; }
+  #kss-node .kss-header .site-logo {
+    margin: 0 auto;
+    width: 175px; }
 
 #kss-node .kss-overview h1,
 #kss-node .kss-overview h2,

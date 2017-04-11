@@ -166,6 +166,9 @@
 
 #kss-node .kss-header {
   background: transparent; }
+  #kss-node .kss-header .site-logo {
+    margin: 0 auto;
+    width: 175px; }
 
 #kss-node .kss-overview h1,
 #kss-node .kss-overview h2,

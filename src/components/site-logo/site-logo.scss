@@ -29,8 +29,9 @@
     overflow: hidden;
   }
 
-  img {
-    max-width: 192px;
+  img,
+  svg {
+    max-width: 175px;
     vertical-align: middle;
   }
 

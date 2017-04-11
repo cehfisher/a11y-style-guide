@@ -2,8 +2,9 @@
   display: inline-block;
   overflow: hidden; }
 
-.site-logo img {
-  max-width: 192px;
+.site-logo img,
+.site-logo svg {
+  max-width: 175px;
   vertical-align: middle; }
 
 .site-logo h1 {
