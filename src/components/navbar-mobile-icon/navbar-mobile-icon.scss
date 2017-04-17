@@ -3,6 +3,7 @@
 // <ul>
 //  <li>Use the `<button>` element for your mobile navigation icon.</li>
 //  <li>If you use an icon that is purely decoration, no `alt=""` information is needed. If the icon you are using *is* important to the functionality, then supply additional `alt=""` information.</li>
+//  <li>It is helpful to all users when you add descriptive text when displaying a mobile icon to give more context to the button's purpose.</li>
 // </ul>
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navbaricon_res">Resources</a></h3><div id="navbaricon_res" class="atblock__panel"><ul><li><a href="http://codepen.io/samikeijonen/pen/jqvxdL" target="_blank">Simple and accessible SVG menu hamburger animation</a></li></ul></div></section>
@@ -37,6 +38,7 @@
   .menu-toggle {
     padding: $padding-sm $padding-sm 0.65rem;
     height: auto;
+    text-decoration: none;
   }
 
   .icon {
