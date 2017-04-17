@@ -39,21 +39,32 @@
   }
 
   .kss-wrapper {
-    padding-left: 0;
     margin-left: 0;
     position: relative;
     max-width: 1440px;
+    padding: 0;
   }
 
   .kss-content {
-    padding-left: $padding-xsm;
-    transition: all 0.5s ease-in-out;
-    margin: 0 $padding-md 0 325px;
+    padding-left: 0;
+    margin: $padding-md-lg;
+    clear: both;
+
+    @include breakpoint($bp-xsm) {
+      padding-left: $padding-xsm;
+      transition: all 0.5s ease-in-out;
+      margin: 0 $padding-md 0 325px;
+      clear: none;
+    }
   }
 
   .kss-sidebar-collapsed + .kss-content {
-    transition: all 0.5s ease-in-out;
-    margin: 0 $padding-md 0 5rem;
+    margin: 0 $padding-md;
+
+    @include breakpoint($bp-xsm) {
+      transition: all 0.5s ease-in-out;
+      margin: 0 $padding-md 0 5rem;
+    }
   }
 
   .kss-modifier-original .kss-modifier-example {
@@ -90,26 +101,37 @@
   // Sidebar
   .kss-sidebar.kss-fixed,
   .kss-sidebar {
-    height: 100% !important;
     background: $color-gallery;
-    padding: ($padding-md + $padding-xsm) $padding-md;
-    width: 275px;
+    padding: 0 $padding-md;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 999;
     box-shadow: $shadow-sm;
     float: left;
-    position: fixed;
-    z-index: 1;
-
-    .kss-nav {
-      padding: $padding-xsm 0;
-      margin: $padding-xsm (-$padding-xsm);
-      max-height: calc(125vh - 44px - 68px - 30px);
-      overflow-y: auto;
-    }
 
     .kss-sidebar-inner {
       text-decoration: none;
       padding-top: 0;
       margin-top: -$padding-sm;
+    }
+
+    @include breakpoint($bp-xsm) {
+      height: 100% !important;
+      width: 275px;
+      position: fixed;
+      padding: ($padding-md + $padding-xsm) $padding-md;
+      overflow-y: auto !important; // needed as list grows, for wide but short screens
+
+      .kss-nav {
+        padding: $padding-xsm 0;
+        margin: $padding-xsm 0;
+        max-height: calc(125vh - 44px - 68px - 30px);
+        overflow-y: auto;
+        clear: both;
+        width: 100%;
+      }
     }
   }
 
@@ -196,8 +218,18 @@
     background: transparent;
 
     .site-logo {
-      margin: 0 auto;
-      width: 175px;
+      float: left;
+      margin-top: $padding-sm;
+      width: 100%;
+      max-width: 150px;
+      margin-top: 0;
+      margin-bottom: $padding-sm;
+
+      @include breakpoint($bp-xsm) {
+        max-width: 215px;
+        margin-top: $padding-sm;
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -246,23 +278,28 @@
 }
 
 .nav-btn {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background: url('#{$asset-path}/chevron_left_round_red.png') no-repeat;
-  right: 10px;
-  top: 13px;
-  background-size: 32px;
-  border: 0;
-  box-shadow: none;
-  background-color: transparent;
+  display: none;
 
-  &:hover,
-  &:focus,
-  &:active {
+  @include breakpoint($bp-xsm) {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url('#{$asset-path}/chevron_left_round_red.png') no-repeat;
+    right: 10px;
+    top: 2px;
+    background-size: 32px;
     border: 0;
     box-shadow: none;
     background-color: transparent;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 0;
+      box-shadow: none;
+      background-color: transparent;
+    }
   }
 }
 
@@ -273,14 +310,23 @@
 }
 
 .kss-sidebar-collapsed {
-  transform: translateX(-82%);
 
-  .kss-menu {
-    opacity: 0;
-    visibility: hidden;
+  @include breakpoint($bp-xsm) {
+    transform: translateX(-82%);
+    overflow-y: hidden !important;
+
+    .kss-menu,
+    .kss-header {
+      opacity: 0;
+      visibility: hidden;
+    }
   }
+}
 
-  .kss-nav {
+#kss-node .kss-sidebar.kss-fixed.kss-sidebar-collapsed,
+#kss-node .kss-sidebar-collapsed {
+
+  @include breakpoint($bp-xsm) {
     overflow-y: hidden !important;
   }
 }
@@ -290,7 +336,7 @@
   background: url('#{$asset-path}/chevron_right_round_red.png') no-repeat;
   background-size: 32px;
   right: 40px;
-  top: 13px;
+  top: 2px;
 }
 
 
@@ -516,12 +562,12 @@ a[target='_blank']::after {
 .back-to-top {
   background-color: $color-cherry;
   bottom: -1px;
-  height: 40px;
+  height: $padding-md-lg;
   position: fixed;
-  right: 18px;
+  right: 0;
   transform: translateY(100%);
   transition: transform 0.5s ease-in-out;
-  width: 40px;
+  width: $padding-md-lg;
   background-image: url('#{$asset-path}/chevron_up_round_red.png');
   background-repeat: no-repeat;
   background-size: 32px;
@@ -537,4 +583,56 @@ a[target='_blank']::after {
 .show-back-to-top .back-to-top {
   transform: translateY(0%);
 }
+
+// Mobile menu
+.kss-menu {
+  display: none;
+
+  li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  &.active {
+    display: block;
+    clear: both;
+  }
+
+  &.active li {
+    display: block;
+    clear: both;
+  }
+
+  @include breakpoint($bp-xsm) {
+    display: block;
+
+    #toggle-menu {
+      display: none;
+    }
+  }
+}
+
+.kss-nav {
+  margin-bottom: 0;
+
+  .menu-toggle {
+    float: right;
+    margin-top: 1.5rem;
+  }
+
+  .navbar-mobile-icon {
+    display: block;
+
+    @include breakpoint($bp-xsm) {
+      display: none;
+    }
+  }
+}
+
 // sass-lint:enable-all

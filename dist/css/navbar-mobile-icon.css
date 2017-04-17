@@ -13,7 +13,8 @@
     border-radius: 4px; }
   .navbar-mobile-icon .menu-toggle {
     padding: 1rem 1rem 0.65rem;
-    height: auto; }
+    height: auto;
+    text-decoration: none; }
   .navbar-mobile-icon .icon {
     display: inline-block;
     fill: currentColor;
