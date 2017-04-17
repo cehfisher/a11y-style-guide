@@ -354,7 +354,8 @@
   text-decoration: underline;
   top: -100px;
   transition: top 0.3s ease-in-out;
-  z-index: 99;
+  z-index: 99999; // needs to be higher than menu
+  text-transform: capitalize;
 
   &:focus,
   &:active {
