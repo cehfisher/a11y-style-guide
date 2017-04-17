@@ -481,8 +481,7 @@ a[target='_blank']::after {
     display: inline-block;
     padding: 0 10px; }
   .kss-menu a {
-    text-decoration: none;
-    color: #333; }
+    text-decoration: none; }
   .kss-menu.active {
     display: block;
     clear: both; }
@@ -496,7 +495,7 @@ a[target='_blank']::after {
         display: none; } }
 
 .kss-nav {
-  margin-bottom: 0; }
+  margin-bottom: 0 !important; }
   .kss-nav .menu-toggle {
     float: right;
     margin-top: 1.5rem; }

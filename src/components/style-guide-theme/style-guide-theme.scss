@@ -596,7 +596,6 @@ a[target='_blank']::after {
 
   a {
     text-decoration: none;
-    color: #333;
   }
 
   &.active {
@@ -619,7 +618,7 @@ a[target='_blank']::after {
 }
 
 .kss-nav {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 
   .menu-toggle {
     float: right;
