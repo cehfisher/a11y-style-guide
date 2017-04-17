@@ -20,13 +20,16 @@
 
 input[type='search'] {
   background-color: $color-white;
-  width: 25%;
-  max-width: 100%;
+  width: 100%;
   padding: 0.75rem;
-  margin: 8px -2px 20px;
+  margin: 8px 0 20px;
   box-sizing: border-box;
   border-radius: $border-rd-sm;
   border: 2px solid $color-gallery;
   font-size: $padding-sm;
   min-height: 49px;
+
+  @include breakpoint($bp-sm) {
+    width: 25%;
+  }
 }

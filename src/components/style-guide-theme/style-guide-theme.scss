@@ -47,7 +47,7 @@
 
   .kss-content {
     padding-left: 0;
-    margin: $padding-md-lg;
+    margin: $padding-md;
     clear: both;
 
     @include breakpoint($bp-xsm) {
@@ -89,6 +89,11 @@
       font-weight: normal;
       font-style: normal;
       margin: 20px 0 0;
+      font-size: 16px;
+
+      @include breakpoint($bp-sm) {
+        font-size: 20px;
+      }
     }
   }
 
@@ -110,6 +115,7 @@
     z-index: 999;
     box-shadow: $shadow-sm;
     float: left;
+    height: 100%;
 
     .kss-sidebar-inner {
       text-decoration: none;
@@ -212,6 +218,23 @@
     padding-bottom: 0;
     margin-bottom: 0;
     border-bottom: 0;
+    font-size: 30px;
+
+    @include breakpoint($bp-sm) {
+      font-size: 42px;
+    }
+  }
+
+  .kss-depth-2 .kss-title {
+    font-weight: 100;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+    font-size: 24px;
+
+    @include breakpoint($bp-sm) {
+      font-size: 28px;
+    }
   }
 
   .kss-header {
@@ -220,12 +243,13 @@
     .site-logo {
       float: left;
       margin-top: $padding-sm;
-      width: 100%;
+      width: 50%;
       max-width: 150px;
       margin-top: 0;
       margin-bottom: $padding-sm;
 
       @include breakpoint($bp-xsm) {
+        width: 100%;
         max-width: 215px;
         margin-top: $padding-sm;
         margin-bottom: 0;
@@ -251,6 +275,19 @@
   .kss-overview h1 {
     margin: 0 0 30px;
     padding-bottom: 10px;
+    font-size: 30px;
+
+    @include breakpoint($bp-sm) {
+      font-size: 42px;
+    }
+  }
+
+  .kss-overview h2 {
+    font-size: 24px;
+
+    @include breakpoint($bp-sm) {
+      font-size: 28px;
+    }
   }
 
   blockquote {
@@ -462,29 +499,40 @@ abbr[title] {
 }
 
 .atblock__title__trigger {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal !important;
   padding: 0;
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
   background-image: url('#{$asset-path}/plus_round_red.png'); // replace with plus
-  background-size: 32px;
-  background-position: 100% 50%;
+  background-size: 28px;
+  background-position: 97% 0%;
   border: 0;
   box-shadow: none;
   background-color: transparent;
   font-family: 'Verdana', 'Arial', sans-serif;
   height: 30px;
-  line-height: 1.4;
+  line-height: 1.5;
   margin: $padding-xsm 0;
+
+  @include breakpoint($bp-sm) {
+    font-size: 20px;
+    background-size: 32px;
+    background-position: 100% 50%;
+  }
 
   &[aria-expanded='true'] {
     content: '';
     background: url('#{$asset-path}/minus_round_red.png'); // replace with minus
-    background-size: 32px;
+    background-size: 28px;
     background-repeat: no-repeat;
-    background-position: 100% 50%;
+    background-position: 97% 0%;
+
+    @include breakpoint($bp-sm) {
+      background-size: 32px;
+      background-position: 100% 50%;
+    }
   }
 
   &:hover,
