@@ -1053,15 +1053,17 @@ a:focus {
 
 input[type='search'] {
   background-color: #ffffff;
-  width: 25%;
-  max-width: 100%;
+  width: 100%;
   padding: 0.75rem;
-  margin: 8px -2px 20px;
+  margin: 8px 0 20px;
   box-sizing: border-box;
   border-radius: 4px;
   border: 2px solid #eeeeee;
   font-size: 1rem;
   min-height: 49px; }
+  @media (min-width: 55em) {
+    input[type='search'] {
+      width: 25%; } }
 
 .select {
   position: relative;
@@ -1150,7 +1152,7 @@ input[type='search'] {
 
 #kss-node .kss-content {
   padding-left: 0;
-  margin: 3rem;
+  margin: 2rem;
   clear: both; }
   @media (min-width: 40em) {
     #kss-node .kss-content {
@@ -1182,7 +1184,11 @@ input[type='search'] {
 #kss-node .kss-description h3 {
   font-weight: normal;
   font-style: normal;
-  margin: 20px 0 0; }
+  margin: 20px 0 0;
+  font-size: 16px; }
+  @media (min-width: 55em) {
+    #kss-node .kss-description h3 {
+      font-size: 20px; } }
 
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
@@ -1199,7 +1205,8 @@ input[type='search'] {
   box-sizing: border-box;
   z-index: 999;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  float: left; }
+  float: left;
+  height: 100%; }
   #kss-node .kss-sidebar.kss-fixed .kss-sidebar-inner,
   #kss-node .kss-sidebar .kss-sidebar-inner {
     text-decoration: none;
@@ -1306,19 +1313,35 @@ input[type='search'] {
   font-weight: 100;
   padding-bottom: 0;
   margin-bottom: 0;
-  border-bottom: 0; }
+  border-bottom: 0;
+  font-size: 30px; }
+  @media (min-width: 55em) {
+    #kss-node .kss-depth-1 .kss-title,
+    #kss-node .kss-overview > h1:first-child {
+      font-size: 42px; } }
+
+#kss-node .kss-depth-2 .kss-title {
+  font-weight: 100;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+  font-size: 24px; }
+  @media (min-width: 55em) {
+    #kss-node .kss-depth-2 .kss-title {
+      font-size: 28px; } }
 
 #kss-node .kss-header {
   background: transparent; }
   #kss-node .kss-header .site-logo {
     float: left;
     margin-top: 1rem;
-    width: 100%;
+    width: 50%;
     max-width: 150px;
     margin-top: 0;
     margin-bottom: 1rem; }
     @media (min-width: 40em) {
       #kss-node .kss-header .site-logo {
+        width: 100%;
         max-width: 215px;
         margin-top: 1rem;
         margin-bottom: 0; } }
@@ -1339,7 +1362,17 @@ input[type='search'] {
 
 #kss-node .kss-overview h1 {
   margin: 0 0 30px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  font-size: 30px; }
+  @media (min-width: 55em) {
+    #kss-node .kss-overview h1 {
+      font-size: 42px; } }
+
+#kss-node .kss-overview h2 {
+  font-size: 24px; }
+  @media (min-width: 55em) {
+    #kss-node .kss-overview h2 {
+      font-size: 28px; } }
 
 #kss-node blockquote {
   font-style: italic; }
@@ -1499,28 +1532,37 @@ abbr[title] {
   padding-left: 1rem; }
 
 .atblock__title__trigger {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal !important;
   padding: 0;
   background-repeat: no-repeat;
   padding-right: 40px;
   display: inline-block !important;
   background-image: url("../assets/plus_round_red.png");
-  background-size: 32px;
-  background-position: 100% 50%;
+  background-size: 28px;
+  background-position: 97% 0%;
   border: 0;
   box-shadow: none;
   background-color: transparent;
   font-family: 'Verdana', 'Arial', sans-serif;
   height: 30px;
-  line-height: 1.4;
+  line-height: 1.5;
   margin: 0.5rem 0; }
+  @media (min-width: 55em) {
+    .atblock__title__trigger {
+      font-size: 20px;
+      background-size: 32px;
+      background-position: 100% 50%; } }
   .atblock__title__trigger[aria-expanded='true'] {
     content: '';
     background: url("../assets/minus_round_red.png");
-    background-size: 32px;
+    background-size: 28px;
     background-repeat: no-repeat;
-    background-position: 100% 50%; }
+    background-position: 97% 0%; }
+    @media (min-width: 55em) {
+      .atblock__title__trigger[aria-expanded='true'] {
+        background-size: 32px;
+        background-position: 100% 50%; } }
   .atblock__title__trigger:hover, .atblock__title__trigger:focus, .atblock__title__trigger:active {
     border: 0;
     box-shadow: none;
