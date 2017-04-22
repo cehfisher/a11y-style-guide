@@ -639,8 +639,10 @@ a[target='_blank']::after {
 
   li {
     list-style: none;
-    display: inline-block;
     padding: 0 10px;
+    // @include breakpoint($bp-sm) {
+    //   display: inline-block;
+    // }
   }
 
   a {
