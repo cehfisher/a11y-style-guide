@@ -117,11 +117,9 @@
 
                               <div class="kss-description">
                   <ul>
- <li>Add <code>summary=&quot;&quot;</code> information to the <code>&lt;table&gt;</code> element to give users more context on how the table is structured. This is especially useful when your table is complex.</li>
- <li>Add the <code>&lt;caption&gt;</code> element before the table content to give users more information on the table contents. Think of it as a headline for your table.</li>
- <li>Wrap your column headers (th elements) in <code>&lt;thead&gt;</code> to group them together. Each column header should also include a <code>scope=&quot;col&quot;</code> attribute.</li>
- <li>If your table includes row headers, include a <code>scope=&quot;row&quot;</code> attribute to the row header (th elements).</li>
- <li>The table content should be wrapped in a <code>&lt;tbody&gt;</code> element.</li>
+ <li>Tables with one header and simple data are fairly accessible out of the box and may not need additional accessibility updates.</li>
+ <li>When your tables get more complex, use the <code>&lt;th&gt;</code> element to identify the header cells by adding a scope attribute. For header rows use <code>&lt;th scope=&quot;row&quot;&gt;</code>. For header columns use <code>&lt;th scope=&quot;col&quot;&gt;</code></li>
+ <li>Add the optional <code>&lt;caption&gt;</code> element before the table content to give users more information on the table contents. Think of it as a headline for your table.</li>
 </ul>
 
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tables_res">Resources</a></h3><div id="tables_res" class="atblock__panel"><ul><li><a href="https://css-tricks.com/responsive-data-table-roundup" target="_blank">Responsive Data Table Roundup</a></li><li><a href="https://www.w3.org/WAI/tutorials/tables" target="_blank">Web Accessibility Tutorials - Table Concepts</a></li></ul></div></section>
@@ -139,88 +137,80 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <section id="no-more-tables" class="basic-tables-section">
+                    <section class="basic-tables-section">
   <h3>Option #1: Table with one header</h3>
   <table class="tables" cellspacing="0" summary="Information for surprise party">
-    <thead>
-    	<tr>
-    		<th scope="col">Date</th>
-    		<th scope="col">Event</th>
-    		<th scope="col">Venue</th>
-    	</tr>
-  	</thead>
-    <tbody>
-    	<tr>
-    		<td data-title="Date">3 February</td>
-    		<td data-title="Event">Surprise Party</td>
-    		<td data-title="Venue">Party Town USA</td>
-    	</tr>
-    </tbody>
+  	<tr>
+  		<th>Date</th>
+  		<th>Event</th>
+  		<th>Venue</th>
+  	</tr>
+  	<tr>
+  		<td>3 February</td>
+  		<td>Surprise Party</td>
+  		<td>Party Town USA</td>
+  	</tr>
   </table>
   <div class="break"></div>
   <h3>Option #2: Table with two headers and caption</h3>
-  <table class="tables" cellspacing="0" summary="Color names for red, orange, yellow, green, blue, purple in multiple languages">
+  <table class="tables" cellspacing="0">
     <caption>Color Names in Multiple Languages</caption>
-    <thead>
-      <tr>
-        <th scope="col">Color</th>
-        <th scope="col">French</th>
-        <th scope="col">German</th>
-        <th scope="col">Italian</th>
-        <th scope="col">Portuguese</th>
-        <th scope="col">Spanish</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Red</th>
-        <td data-title="French">rouge</td>
-        <td data-title="German">rot</td>
-        <td data-title="Italian">rosso</td>
-        <td data-title="Portuguese">vermelho</td>
-        <td data-title="Spanish">rojo</td>
-      </tr>
-      <tr>
-        <th scope="row">Orange</th>
-        <td data-title="French">orange</td>
-        <td data-title="German">orange</td>
-        <td data-title="Italian">arancione</td>
-        <td data-title="Portuguese">laranja</td>
-        <td data-title="Spanish">anaranjado</td>
-      </tr>
-      <tr>
-        <th scope="row">Yellow</th>
-        <td data-title="French">jaune</td>
-        <td data-title="German">gelb</td>
-        <td data-title="Italian">giallo</td>
-        <td data-title="Portuguese">amarelo</td>
-        <td data-title="Spanish">amarillo</td>
-      </tr>
-      <tr>
-        <th scope="row">Green</th>
-        <td data-title="French">vert</td>
-        <td data-title="German">grün</td>
-        <td data-title="Italian">verde</td>
-        <td data-title="Portuguese">verde</td>
-        <td data-title="Spanish">verde</td>
-      </tr>
-      <tr>
-        <th scope="row">Blue</th>
-        <td data-title="French">bleu</td>
-        <td data-title="German">blau</td>
-        <td data-title="Italian">blu</td>
-        <td data-title="Portuguese">azul</td>
-        <td data-title="Spanish">azul</td>
-      </tr>
-      <tr>
-        <th scope="row">Purple</th>
-        <td data-title="French">pourpre</td>
-        <td data-title="German">lila</td>
-        <td data-title="Italian">porpora</td>
-        <td data-title="Portuguese">roxo</td>
-        <td data-title="Spanish">morado</td>
-      </tr>
-    </tbody>
+    <tr>
+      <th scope="col">Color</th>
+      <th scope="col">French</th>
+      <th scope="col">German</th>
+      <th scope="col">Italian</th>
+      <th scope="col">Portuguese</th>
+      <th scope="col">Spanish</th>
+    </tr>
+    <tr>
+      <th scope="row">Red</th>
+      <td>rouge</td>
+      <td>rot</td>
+      <td>rosso</td>
+      <td>vermelho</td>
+      <td>rojo</td>
+    </tr>
+    <tr>
+      <th scope="row">Orange</th>
+      <td>orange</td>
+      <td>orange</td>
+      <td>arancione</td>
+      <td>laranja</td>
+      <td>anaranjado</td>
+    </tr>
+    <tr>
+      <th scope="row">Yellow</th>
+      <td>jaune</td>
+      <td>gelb</td>
+      <td>giallo</td>
+      <td>amarelo</td>
+      <td>amarillo</td>
+    </tr>
+    <tr>
+      <th scope="row">Green</th>
+      <td>vert</td>
+      <td>grün</td>
+      <td>verde</td>
+      <td>verde</td>
+      <td>verde</td>
+    </tr>
+    <tr>
+      <th scope="row">Blue</th>
+      <td>bleu</td>
+      <td>blau</td>
+      <td>blu</td>
+      <td>azul</td>
+      <td>azul</td>
+    </tr>
+    <tr>
+      <th scope="row">Purple</th>
+      <td>pourpre</td>
+      <td>lila</td>
+      <td>porpora</td>
+      <td>roxo</td>
+      <td>morado</td>
+    </tr>
   </table>
 </section>
 
@@ -230,88 +220,80 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;section id=&quot;no-more-tables&quot; class=&quot;basic-tables-section&quot;&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;basic-tables-section&quot;&gt;
   &lt;h3&gt;Option #1: Table with one header&lt;/h3&gt;
   &lt;table class=&quot;tables&quot; cellspacing=&quot;0&quot; summary=&quot;Information for surprise party&quot;&gt;
-    &lt;thead&gt;
-    	&lt;tr&gt;
-    		&lt;th scope=&quot;col&quot;&gt;Date&lt;/th&gt;
-    		&lt;th scope=&quot;col&quot;&gt;Event&lt;/th&gt;
-    		&lt;th scope=&quot;col&quot;&gt;Venue&lt;/th&gt;
-    	&lt;/tr&gt;
-  	&lt;/thead&gt;
-    &lt;tbody&gt;
-    	&lt;tr&gt;
-    		&lt;td data-title=&quot;Date&quot;&gt;3 February&lt;/td&gt;
-    		&lt;td data-title=&quot;Event&quot;&gt;Surprise Party&lt;/td&gt;
-    		&lt;td data-title=&quot;Venue&quot;&gt;Party Town USA&lt;/td&gt;
-    	&lt;/tr&gt;
-    &lt;/tbody&gt;
+  	&lt;tr&gt;
+  		&lt;th&gt;Date&lt;/th&gt;
+  		&lt;th&gt;Event&lt;/th&gt;
+  		&lt;th&gt;Venue&lt;/th&gt;
+  	&lt;/tr&gt;
+  	&lt;tr&gt;
+  		&lt;td&gt;3 February&lt;/td&gt;
+  		&lt;td&gt;Surprise Party&lt;/td&gt;
+  		&lt;td&gt;Party Town USA&lt;/td&gt;
+  	&lt;/tr&gt;
   &lt;/table&gt;
   &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
   &lt;h3&gt;Option #2: Table with two headers and caption&lt;/h3&gt;
-  &lt;table class=&quot;tables&quot; cellspacing=&quot;0&quot; summary=&quot;Color names for red, orange, yellow, green, blue, purple in multiple languages&quot;&gt;
+  &lt;table class=&quot;tables&quot; cellspacing=&quot;0&quot;&gt;
     &lt;caption&gt;Color Names in Multiple Languages&lt;/caption&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;col&quot;&gt;Color&lt;/th&gt;
-        &lt;th scope=&quot;col&quot;&gt;French&lt;/th&gt;
-        &lt;th scope=&quot;col&quot;&gt;German&lt;/th&gt;
-        &lt;th scope=&quot;col&quot;&gt;Italian&lt;/th&gt;
-        &lt;th scope=&quot;col&quot;&gt;Portuguese&lt;/th&gt;
-        &lt;th scope=&quot;col&quot;&gt;Spanish&lt;/th&gt;
-      &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;Red&lt;/th&gt;
-        &lt;td data-title=&quot;French&quot;&gt;rouge&lt;/td&gt;
-        &lt;td data-title=&quot;German&quot;&gt;rot&lt;/td&gt;
-        &lt;td data-title=&quot;Italian&quot;&gt;rosso&lt;/td&gt;
-        &lt;td data-title=&quot;Portuguese&quot;&gt;vermelho&lt;/td&gt;
-        &lt;td data-title=&quot;Spanish&quot;&gt;rojo&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;Orange&lt;/th&gt;
-        &lt;td data-title=&quot;French&quot;&gt;orange&lt;/td&gt;
-        &lt;td data-title=&quot;German&quot;&gt;orange&lt;/td&gt;
-        &lt;td data-title=&quot;Italian&quot;&gt;arancione&lt;/td&gt;
-        &lt;td data-title=&quot;Portuguese&quot;&gt;laranja&lt;/td&gt;
-        &lt;td data-title=&quot;Spanish&quot;&gt;anaranjado&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;Yellow&lt;/th&gt;
-        &lt;td data-title=&quot;French&quot;&gt;jaune&lt;/td&gt;
-        &lt;td data-title=&quot;German&quot;&gt;gelb&lt;/td&gt;
-        &lt;td data-title=&quot;Italian&quot;&gt;giallo&lt;/td&gt;
-        &lt;td data-title=&quot;Portuguese&quot;&gt;amarelo&lt;/td&gt;
-        &lt;td data-title=&quot;Spanish&quot;&gt;amarillo&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;Green&lt;/th&gt;
-        &lt;td data-title=&quot;French&quot;&gt;vert&lt;/td&gt;
-        &lt;td data-title=&quot;German&quot;&gt;grün&lt;/td&gt;
-        &lt;td data-title=&quot;Italian&quot;&gt;verde&lt;/td&gt;
-        &lt;td data-title=&quot;Portuguese&quot;&gt;verde&lt;/td&gt;
-        &lt;td data-title=&quot;Spanish&quot;&gt;verde&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;Blue&lt;/th&gt;
-        &lt;td data-title=&quot;French&quot;&gt;bleu&lt;/td&gt;
-        &lt;td data-title=&quot;German&quot;&gt;blau&lt;/td&gt;
-        &lt;td data-title=&quot;Italian&quot;&gt;blu&lt;/td&gt;
-        &lt;td data-title=&quot;Portuguese&quot;&gt;azul&lt;/td&gt;
-        &lt;td data-title=&quot;Spanish&quot;&gt;azul&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;Purple&lt;/th&gt;
-        &lt;td data-title=&quot;French&quot;&gt;pourpre&lt;/td&gt;
-        &lt;td data-title=&quot;German&quot;&gt;lila&lt;/td&gt;
-        &lt;td data-title=&quot;Italian&quot;&gt;porpora&lt;/td&gt;
-        &lt;td data-title=&quot;Portuguese&quot;&gt;roxo&lt;/td&gt;
-        &lt;td data-title=&quot;Spanish&quot;&gt;morado&lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;col&quot;&gt;Color&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;French&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;German&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Italian&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Portuguese&lt;/th&gt;
+      &lt;th scope=&quot;col&quot;&gt;Spanish&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Red&lt;/th&gt;
+      &lt;td&gt;rouge&lt;/td&gt;
+      &lt;td&gt;rot&lt;/td&gt;
+      &lt;td&gt;rosso&lt;/td&gt;
+      &lt;td&gt;vermelho&lt;/td&gt;
+      &lt;td&gt;rojo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Orange&lt;/th&gt;
+      &lt;td&gt;orange&lt;/td&gt;
+      &lt;td&gt;orange&lt;/td&gt;
+      &lt;td&gt;arancione&lt;/td&gt;
+      &lt;td&gt;laranja&lt;/td&gt;
+      &lt;td&gt;anaranjado&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Yellow&lt;/th&gt;
+      &lt;td&gt;jaune&lt;/td&gt;
+      &lt;td&gt;gelb&lt;/td&gt;
+      &lt;td&gt;giallo&lt;/td&gt;
+      &lt;td&gt;amarelo&lt;/td&gt;
+      &lt;td&gt;amarillo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Green&lt;/th&gt;
+      &lt;td&gt;vert&lt;/td&gt;
+      &lt;td&gt;grün&lt;/td&gt;
+      &lt;td&gt;verde&lt;/td&gt;
+      &lt;td&gt;verde&lt;/td&gt;
+      &lt;td&gt;verde&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Blue&lt;/th&gt;
+      &lt;td&gt;bleu&lt;/td&gt;
+      &lt;td&gt;blau&lt;/td&gt;
+      &lt;td&gt;blu&lt;/td&gt;
+      &lt;td&gt;azul&lt;/td&gt;
+      &lt;td&gt;azul&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;Purple&lt;/th&gt;
+      &lt;td&gt;pourpre&lt;/td&gt;
+      &lt;td&gt;lila&lt;/td&gt;
+      &lt;td&gt;porpora&lt;/td&gt;
+      &lt;td&gt;roxo&lt;/td&gt;
+      &lt;td&gt;morado&lt;/td&gt;
+    &lt;/tr&gt;
   &lt;/table&gt;
 &lt;/section&gt;
 </code></pre>
