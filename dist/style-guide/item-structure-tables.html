@@ -81,17 +81,17 @@
       <article role="main" class="kss-article">
       
         
-                            <div id="kssref-structure-basic-tables" class="kss-section kss-depth-2">
+                            <div id="kssref-structure-tables" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-structure-basic-tables">
-                  Basic Tables
+                <a class="kss-title__permalink" href="#kssref-structure-tables">
+                  Tables
                 </a>
               </h2>
 
                               <div class="kss-description">
                   <ul>
- <li>Tables with one header and simple data are fairly accessible out of the box and may not need additional accessibility updates.</li>
+ <li>Tables with one header and simple data are fairly accessible out of the box and may not need additional accessibility updates. Always use the simplest table configuration possible.</li>
  <li>When your tables get more complex, use the <code>&lt;th&gt;</code> element to identify the header cells by adding a scope attribute. For header rows use <code>&lt;th scope=&quot;row&quot;&gt;</code>. For header columns use <code>&lt;th scope=&quot;col&quot;&gt;</code></li>
  <li>Add the optional <code>&lt;caption&gt;</code> element before the table content to give users more information on the table contents. Think of it as a headline for your table.</li>
 </ul>
@@ -111,7 +111,7 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <section class="basic-tables-section">
+                    <section class="tables-section">
   <h3>Option #1: Table with one header</h3>
   <table class="tables" cellspacing="0" summary="Information for surprise party">
   	<tr>
@@ -129,7 +129,7 @@
   <h3>Option #2: Table with two headers and caption</h3>
   <table class="tables" cellspacing="0">
     <caption>Color Names in Multiple Languages</caption>
-    <tr>
+    <tr  class="headers">
       <th scope="col">Color</th>
       <th scope="col">French</th>
       <th scope="col">German</th>
@@ -186,6 +186,60 @@
       <td>morado</td>
     </tr>
   </table>
+  <div class="break"></div>
+  <h3>Option #3: Complex Table</h3>
+  <table class="tables" cellspacing="0">
+  	<tbody>
+  		<tr class="headers">
+  			<th id="co1" headers="blank">Kingdom</th>
+  			<th id="co2" headers="blank">Phylum</th>
+  			<th id="co3" headers="blank">Class</th>
+  			<th id="co4" headers="blank">Order</th>
+  		</tr>
+  		<tr>
+  			<td headers="co1">Animalia</td>
+  			<td headers="co2">Chordata</td>
+  			<td headers="co3">Mammalia</td>
+  			<td headers="co4">Carnivora</td>
+  		</tr>
+  		<tr>
+  			<td headers="co1">Animalia</td>
+  			<td headers="co2">Arthropoda</td>
+  			<td headers="co3">Insecta</td>
+  			<td headers="co4">Lepidoptera</td>
+  		</tr>
+  		<tr>
+  			<td headers="co1">Animalia</td>
+  			<td headers="co2">Echinodermata</td>
+  			<td headers="co3">Asteroidea</td>
+  			<td headers="co4">Forcipulatida</td>
+  		</tr>
+		  <tr class="headers">
+        <th id="co5" headers="blank">Family</th>
+  			<th id="co6" headers="blank">Genus</th>
+  			<th id="co7" headers="blank">Species</th>
+  			<th id="co8" headers="blank">Common</th>
+  		</tr>
+  		<tr>
+  			<td headers="co5">Felidae</td>
+  			<td headers="co6">Panthera</td>
+  			<td headers="co7">Panthera tigris</td>
+  			<td headers="co8">Tiger</td>
+  		</tr>
+  		<tr>
+  			<td headers="co5">Danaidae</td>
+  			<td headers="co6">Dannaus</td>
+  			<td headers="co7">Plexippus</td>
+  			<td headers="co8">Monarch Butterfly</td>
+  		</tr>
+  		<tr>
+  			<td headers="co5">Asteriidae</td>
+  			<td headers="co6">Asterias</td>
+  			<td headers="co7">Asterias amurensis</td>
+  			<td headers="co8">Northern Pacific seastar</td>
+  		</tr>
+  	</tbody>
+  </table>
 </section>
 
                   </div>
@@ -194,7 +248,7 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;basic-tables-section&quot;&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;tables-section&quot;&gt;
   &lt;h3&gt;Option #1: Table with one header&lt;/h3&gt;
   &lt;table class=&quot;tables&quot; cellspacing=&quot;0&quot; summary=&quot;Information for surprise party&quot;&gt;
   	&lt;tr&gt;
@@ -212,7 +266,7 @@
   &lt;h3&gt;Option #2: Table with two headers and caption&lt;/h3&gt;
   &lt;table class=&quot;tables&quot; cellspacing=&quot;0&quot;&gt;
     &lt;caption&gt;Color Names in Multiple Languages&lt;/caption&gt;
-    &lt;tr&gt;
+    &lt;tr  class=&quot;headers&quot;&gt;
       &lt;th scope=&quot;col&quot;&gt;Color&lt;/th&gt;
       &lt;th scope=&quot;col&quot;&gt;French&lt;/th&gt;
       &lt;th scope=&quot;col&quot;&gt;German&lt;/th&gt;
@@ -268,6 +322,60 @@
       &lt;td&gt;roxo&lt;/td&gt;
       &lt;td&gt;morado&lt;/td&gt;
     &lt;/tr&gt;
+  &lt;/table&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Option #3: Complex Table&lt;/h3&gt;
+  &lt;table class=&quot;tables&quot; cellspacing=&quot;0&quot;&gt;
+  	&lt;tbody&gt;
+  		&lt;tr class=&quot;headers&quot;&gt;
+  			&lt;th id=&quot;co1&quot; headers=&quot;blank&quot;&gt;Kingdom&lt;/th&gt;
+  			&lt;th id=&quot;co2&quot; headers=&quot;blank&quot;&gt;Phylum&lt;/th&gt;
+  			&lt;th id=&quot;co3&quot; headers=&quot;blank&quot;&gt;Class&lt;/th&gt;
+  			&lt;th id=&quot;co4&quot; headers=&quot;blank&quot;&gt;Order&lt;/th&gt;
+  		&lt;/tr&gt;
+  		&lt;tr&gt;
+  			&lt;td headers=&quot;co1&quot;&gt;Animalia&lt;/td&gt;
+  			&lt;td headers=&quot;co2&quot;&gt;Chordata&lt;/td&gt;
+  			&lt;td headers=&quot;co3&quot;&gt;Mammalia&lt;/td&gt;
+  			&lt;td headers=&quot;co4&quot;&gt;Carnivora&lt;/td&gt;
+  		&lt;/tr&gt;
+  		&lt;tr&gt;
+  			&lt;td headers=&quot;co1&quot;&gt;Animalia&lt;/td&gt;
+  			&lt;td headers=&quot;co2&quot;&gt;Arthropoda&lt;/td&gt;
+  			&lt;td headers=&quot;co3&quot;&gt;Insecta&lt;/td&gt;
+  			&lt;td headers=&quot;co4&quot;&gt;Lepidoptera&lt;/td&gt;
+  		&lt;/tr&gt;
+  		&lt;tr&gt;
+  			&lt;td headers=&quot;co1&quot;&gt;Animalia&lt;/td&gt;
+  			&lt;td headers=&quot;co2&quot;&gt;Echinodermata&lt;/td&gt;
+  			&lt;td headers=&quot;co3&quot;&gt;Asteroidea&lt;/td&gt;
+  			&lt;td headers=&quot;co4&quot;&gt;Forcipulatida&lt;/td&gt;
+  		&lt;/tr&gt;
+		  &lt;tr class=&quot;headers&quot;&gt;
+        &lt;th id=&quot;co5&quot; headers=&quot;blank&quot;&gt;Family&lt;/th&gt;
+  			&lt;th id=&quot;co6&quot; headers=&quot;blank&quot;&gt;Genus&lt;/th&gt;
+  			&lt;th id=&quot;co7&quot; headers=&quot;blank&quot;&gt;Species&lt;/th&gt;
+  			&lt;th id=&quot;co8&quot; headers=&quot;blank&quot;&gt;Common&lt;/th&gt;
+  		&lt;/tr&gt;
+  		&lt;tr&gt;
+  			&lt;td headers=&quot;co5&quot;&gt;Felidae&lt;/td&gt;
+  			&lt;td headers=&quot;co6&quot;&gt;Panthera&lt;/td&gt;
+  			&lt;td headers=&quot;co7&quot;&gt;Panthera tigris&lt;/td&gt;
+  			&lt;td headers=&quot;co8&quot;&gt;Tiger&lt;/td&gt;
+  		&lt;/tr&gt;
+  		&lt;tr&gt;
+  			&lt;td headers=&quot;co5&quot;&gt;Danaidae&lt;/td&gt;
+  			&lt;td headers=&quot;co6&quot;&gt;Dannaus&lt;/td&gt;
+  			&lt;td headers=&quot;co7&quot;&gt;Plexippus&lt;/td&gt;
+  			&lt;td headers=&quot;co8&quot;&gt;Monarch Butterfly&lt;/td&gt;
+  		&lt;/tr&gt;
+  		&lt;tr&gt;
+  			&lt;td headers=&quot;co5&quot;&gt;Asteriidae&lt;/td&gt;
+  			&lt;td headers=&quot;co6&quot;&gt;Asterias&lt;/td&gt;
+  			&lt;td headers=&quot;co7&quot;&gt;Asterias amurensis&lt;/td&gt;
+  			&lt;td headers=&quot;co8&quot;&gt;Northern Pacific seastar&lt;/td&gt;
+  		&lt;/tr&gt;
+  	&lt;/tbody&gt;
   &lt;/table&gt;
 &lt;/section&gt;
 </code></pre>
