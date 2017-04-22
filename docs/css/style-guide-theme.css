@@ -519,7 +519,6 @@ a[target='_blank']::after {
   display: none; }
   .kss-menu li {
     list-style: none;
-    display: inline-block;
     padding: 0 10px; }
   .kss-menu a {
     text-decoration: none; }

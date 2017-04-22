@@ -1,6 +1,9 @@
 .tables-section {
   overflow-x: auto; }
 
+.basic-tables-section {
+  overflow: scroll; }
+
 .tables {
   border-collapse: collapse;
   width: 100%; }
@@ -13,13 +16,12 @@
   .tables td,
   .tables th {
     border: 1px solid #dddddd;
-    padding: 12px 16px;
-    text-align: center; }
+    padding: 10px 16px;
+    text-align: center;
+    height: 50px; }
   .tables tr:nth-child(even) {
     background-color: #f7f7f7; }
   .tables th {
-    padding-top: 12px;
-    padding-bottom: 12px;
     background-color: #e00000;
     color: #ffffff; }
   @media only screen and (max-width: 1000px) {
@@ -38,16 +40,14 @@
       border-left: 1px solid #dddddd;
       border-right: 1px solid #dddddd; }
       .tables tr:first-child {
-        border-top: 1px solid #dddddd; }
-    .tables th {
-      border: 1px solid #e00000; }
+        float: left; }
+    .tables tbody {
+      border-top: 1px solid #dddddd;
+      border-bottom: 1px solid #dddddd; }
     .tables td {
-      border: 0;
-      border-bottom: 1px solid #dddddd;
       position: relative;
-      padding-left: 50%;
       white-space: normal;
-      text-align: left; }
+      text-align: center; }
     .tables td::before {
       position: absolute;
       left: 1rem;
