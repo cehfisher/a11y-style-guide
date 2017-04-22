@@ -1,11 +1,9 @@
 // Basic Tables
 //
 // <ul>
-//  <li>Add `summary=""` information to the `<table>` element to give users more context on how the table is structured. This is especially useful when your table is complex.</li>
-//  <li>Add the `<caption>` element before the table content to give users more information on the table contents. Think of it as a headline for your table.</li>
-//  <li>Wrap your column headers (th elements) in `<thead>` to group them together. Each column header should also include a `scope="col"` attribute.</li>
-//  <li>If your table includes row headers, include a `scope="row"` attribute to the row header (th elements).</li>
-//  <li>The table content should be wrapped in a `<tbody>` element.</li>
+//  <li>Tables with one header and simple data are fairly accessible out of the box and may not need additional accessibility updates.</li>
+//  <li>When your tables get more complex, use the `<th>` element to identify the header cells by adding a scope attribute. For header rows use `<th scope="row">`. For header columns use `<th scope="col">`</li>
+//  <li>Add the optional `<caption>` element before the table content to give users more information on the table contents. Think of it as a headline for your table.</li>
 // </ul>
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tables_res">Resources</a></h3><div id="tables_res" class="atblock__panel"><ul><li><a href="https://css-tricks.com/responsive-data-table-roundup" target="_blank">Responsive Data Table Roundup</a></li><li><a href="https://www.w3.org/WAI/tutorials/tables" target="_blank">Web Accessibility Tutorials - Table Concepts</a></li></ul></div></section>
@@ -27,6 +25,10 @@
   overflow-x: auto;
 }
 
+.basic-tables-section {
+  overflow: scroll;
+}
+
 .tables {
   border-collapse: collapse;
   width: 100%;
@@ -44,8 +46,9 @@
   td,
   th {
     border: 1px solid $color-alto;
-    padding: 12px 16px;
+    padding: 10px 16px;
     text-align: center;
+    height: 50px;
   }
 
   tr:nth-child(even) {
@@ -53,8 +56,6 @@
   }
 
   th {
-    padding-top: 12px;
-    padding-bottom: 12px;
     background-color: $color-cherry;
     color: $color-white;
   }
@@ -81,21 +82,19 @@
       border-right: 1px solid $color-alto;
 
       &:first-child {
-        border-top: 1px solid $color-alto;
+        float: left;
       }
     }
 
-    th {
-      border: 1px solid $color-cherry;
+    tbody {
+      border-top: 1px solid $color-alto;
+      border-bottom: 1px solid $color-alto;
     }
 
     td {
-      border: 0;
-      border-bottom: 1px solid $color-alto;
       position: relative;
-      padding-left: 50%;
       white-space: normal;
-      text-align: left;
+      text-align: center;
     }
 
     td::before {
