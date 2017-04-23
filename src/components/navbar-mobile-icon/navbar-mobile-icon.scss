@@ -4,7 +4,7 @@
 //  <li>Use the `<button>` element for your mobile navigation icon.</li>
 //  <li>If you use an icon that is purely decoration, declare `alt=""`, as no additional information is needed. If the icon you are using *is* important to the functionality, then supply additional `alt="_descriptive text goes here_"` information.</li>
 //  <li>It is helpful to all users when you add descriptive text when displaying a mobile icon to give more context to the button's purpose.</li>
-//  <li>Place mobile open/close buttons within the `<nav>` element and use them to toggle state of another child wrapper of the nav. This will ensure that the navigation landmark is still discoverable by screen readers, even if it is in a closed / hidden state.</li>
+//  <li>Place mobile open/close buttons within the `<nav>` element and use them to toggle state of another child wrapper of the nav. This will ensure that the navigation landmark is still discoverable by screen readers, even if it is in a closed/hidden state.</li>
 // </ul>
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navbaricon_res">Resources</a></h3><div id="navbaricon_res" class="atblock__panel"><ul><li><a href="http://codepen.io/samikeijonen/pen/jqvxdL" target="_blank">Simple and accessible SVG menu hamburger animation</a></li></ul></div></section>
