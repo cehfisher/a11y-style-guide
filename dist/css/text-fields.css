@@ -12,7 +12,7 @@ textarea {
 
 input:required:focus,
 textarea:required:focus {
-  outline: auto 5px #DB0202; }
+  outline: auto 5px #e00000; }
 
 textarea {
   min-height: 8rem; }
@@ -27,5 +27,5 @@ legend {
 
 .required-field::after {
   content: '*';
-  color: #DB0202;
+  color: #e00000;
   display: inline-block; }

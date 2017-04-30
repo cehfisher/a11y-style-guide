@@ -610,18 +610,17 @@ a[target='_blank']::after {
 // back to top styling
 .back-to-top {
   background-color: $color-cherry;
-  bottom: -1px;
-  height: $padding-md-lg;
+  bottom: 10px;
+  height: 2.5rem;
+  width: 2.5rem;
   position: fixed;
-  right: 0;
-  transform: translateY(100%);
+  right: 10px;
+  transform: translateY(130%);
   transition: transform 0.5s ease-in-out;
-  width: $padding-md-lg;
   background-image: url('#{$asset-path}/chevron_up_round_red.png');
   background-repeat: no-repeat;
-  background-size: 32px;
-  border-top-left-radius: $border-rd-sm;
-  border-top-right-radius: $border-rd-sm;
+  background-size: 48px;
+  border-radius: 50%;
   background-position: 50%;
 
   &:hover {
@@ -678,6 +677,10 @@ a[target='_blank']::after {
 
   .navbar-mobile-icon {
     display: block;
+
+    button {
+      background: $color-cherry;
+    }
 
     @include breakpoint($bp-xsm) {
       display: none;

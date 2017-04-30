@@ -34,7 +34,7 @@
   top: 5px;
   width: 13px;
   height: 13px;
-  border: 7px solid #DB0202;
+  border: 7px solid #e00000;
   border-radius: 50%; }
 
 .radio input[type='radio'] + label::after {

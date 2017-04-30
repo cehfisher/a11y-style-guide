@@ -113,7 +113,7 @@
   [data-action='aria-switch'].flip[aria-checked='false'] {
     background: #ffffff; }
     [data-action='aria-switch'].flip[aria-checked='false'] span {
-      background: #DB0202;
+      background: #e00000;
       border-color: #dddddd; }
   [data-action='aria-switch'].flip[aria-checked='true'] {
     background: #ffffff; }

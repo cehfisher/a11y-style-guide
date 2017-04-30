@@ -1,5 +1,7 @@
-.tables-section {
-  overflow: scroll;
+.tables-section,
+.tables-section2,
+.tables-section3 {
+  width: 100%;
   overflow-x: auto; }
 
 .tables {
@@ -20,5 +22,5 @@
   .tables tr:nth-child(even) {
     background-color: #f7f7f7; }
   .tables th {
-    background-color: #DB0202;
+    background-color: #e00000;
     color: #ffffff; }
