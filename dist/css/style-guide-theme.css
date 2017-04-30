@@ -49,7 +49,7 @@
 #kss-node .kss-description code,
 #kss-node .kss-description pre {
   padding: 2px 6px;
-  background: #eeeeee;
+  background: #f4f4f4;
   border-radius: 4px; }
 
 #kss-node .kss-description blockquote {
@@ -66,12 +66,12 @@
 
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
-  border: 2px solid #eeeeee;
-  border-left: 5px solid #e00000; }
+  border: 2px solid #f4f4f4;
+  border-left: 5px solid #DB0202; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
-  background: #eeeeee;
+  background: #f4f4f4;
   padding: 0 2rem;
   width: 100%;
   margin: 0 auto;
@@ -144,7 +144,7 @@
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #e00000;
+  color: #DB0202;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -313,7 +313,7 @@
   top: 2px; }
 
 .kss-skip-link {
-  background: #e00000;
+  background: #DB0202;
   border: 3px solid #a51323;
   color: #ffffff;
   display: inline-block;
@@ -339,14 +339,14 @@ body {
 
 .break {
   margin: 3rem 0;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #f4f4f4;
   clear: both;
   float: left;
   width: 100%; }
 
 .markup {
   margin: 1.5rem 0;
-  border-bottom: 1px solid #eeeeee; }
+  border-bottom: 1px solid #f4f4f4; }
 
 .visuallyhidden {
   border: 0;
@@ -390,7 +390,7 @@ abbr[title] {
   .atblock__title.guidelines p,
   .atblock__panel.guidelines p {
     margin: 10px 10px 15px 55px !important;
-    border-left: 2px solid #eeeeee;
+    border-left: 2px solid #f4f4f4;
     padding-left: 15px;
     position: relative; }
 
@@ -495,7 +495,7 @@ a[target='_blank']::after {
   top: 2rem; }
 
 .back-to-top {
-  background-color: #e00000;
+  background-color: #DB0202;
   bottom: -1px;
   height: 3rem;
   position: fixed;
