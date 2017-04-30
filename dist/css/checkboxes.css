@@ -46,7 +46,7 @@
   content: ''; }
 
 .checkbox input[type='checkbox']:checked + label::before {
-  background: #DB0202; }
+  background: #e00000; }
 
 .checkbox input[type='checkbox']:focus + label::before {
   outline: auto 2px Highlight;

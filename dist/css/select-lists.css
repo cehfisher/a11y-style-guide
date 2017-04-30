@@ -12,7 +12,7 @@
   padding: 15px;
   border: 0;
   background: #f4f4f4;
-  color: #DB0202;
+  color: #e00000;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -39,4 +39,4 @@
   pointer-events: none;
   border-style: solid;
   border-width: 10px 8px 0;
-  border-color: #DB0202 transparent transparent; }
+  border-color: #e00000 transparent transparent; }

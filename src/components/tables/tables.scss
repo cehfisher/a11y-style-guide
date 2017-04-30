@@ -21,8 +21,10 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
-.tables-section {
-  overflow: scroll;
+.tables-section,
+.tables-section2,
+.tables-section3 {
+  width: 100%;
   overflow-x: auto;
 }
 

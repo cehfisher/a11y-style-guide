@@ -67,7 +67,7 @@
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #DB0202; }
+  border-left: 5px solid #e00000; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -144,7 +144,7 @@
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #DB0202;
+  color: #e00000;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -313,7 +313,7 @@
   top: 2px; }
 
 .kss-skip-link {
-  background: #DB0202;
+  background: #e00000;
   border: 3px solid #a51323;
   color: #ffffff;
   display: inline-block;
@@ -495,7 +495,7 @@ a[target='_blank']::after {
   top: 2rem; }
 
 .back-to-top {
-  background-color: #DB0202;
+  background-color: #e00000;
   bottom: -1px;
   height: 3rem;
   position: fixed;
