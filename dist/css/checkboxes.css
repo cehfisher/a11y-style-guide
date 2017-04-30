@@ -28,7 +28,7 @@
   width: 22px;
   left: 0;
   top: 1px;
-  background: #eeeeee; }
+  background: #f4f4f4; }
 
 .checkbox label::after {
   left: 7px;
@@ -46,7 +46,7 @@
   content: ''; }
 
 .checkbox input[type='checkbox']:checked + label::before {
-  background: #e00000; }
+  background: #DB0202; }
 
 .checkbox input[type='checkbox']:focus + label::before {
   outline: auto 2px Highlight;

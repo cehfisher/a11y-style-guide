@@ -5,7 +5,7 @@ input[type='search'] {
   margin: 8px 0 20px;
   box-sizing: border-box;
   border-radius: 4px;
-  border: 2px solid #eeeeee;
+  border: 2px solid #f4f4f4;
   font-size: 1rem;
   min-height: 49px; }
   @media (min-width: 55em) {

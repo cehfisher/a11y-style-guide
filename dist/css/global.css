@@ -84,7 +84,7 @@ h3 > a,
 a {
   text-align: left;
   margin-bottom: 0;
-  color: #e00000;
+  color: #DB0202;
   text-decoration: none;
   font-weight: normal; }
   h1 > a:hover, h1 > a:focus, h1 > a:active,
@@ -145,7 +145,7 @@ a {
   /* 1 */
   -webkit-text-decoration-skip: objects;
   /* 2 */
-  color: #e00000;
+  color: #DB0202;
   text-decoration: none; }
   a:hover, a:focus, a:active {
     color: #a51323;

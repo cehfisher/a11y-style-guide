@@ -1,5 +1,5 @@
 [data-action='aria-switch'] {
-  background: #eeeeee;
+  background: #f4f4f4;
   border-radius: 32px;
   display: inline-block;
   position: relative;
@@ -11,9 +11,9 @@
   clear: both;
   float: left; }
   [data-action='aria-switch']:focus {
-    background: #eeeeee; }
+    background: #f4f4f4; }
   [data-action='aria-switch']:hover {
-    background-color: #eeeeee; }
+    background-color: #f4f4f4; }
   [data-action='aria-switch']:not([disabled]):hover, [data-action='aria-switch']:not([disabled]):focus {
     border: 0; }
   [data-action='aria-switch'] span {
@@ -80,7 +80,7 @@
       left: 43px;
       transition: 0.4s; }
   [data-action='aria-switch'].flip {
-    background: #eeeeee;
+    background: #f4f4f4;
     border-radius: 0;
     display: inline-block;
     position: relative;
@@ -92,7 +92,7 @@
     clear: both;
     float: left; }
     [data-action='aria-switch'].flip:hover {
-      background: #eeeeee; }
+      background: #f4f4f4; }
     [data-action='aria-switch'].flip span {
       border: 1px solid;
       border-radius: 0;
@@ -113,7 +113,7 @@
   [data-action='aria-switch'].flip[aria-checked='false'] {
     background: #ffffff; }
     [data-action='aria-switch'].flip[aria-checked='false'] span {
-      background: #e00000;
+      background: #DB0202;
       border-color: #dddddd; }
   [data-action='aria-switch'].flip[aria-checked='true'] {
     background: #ffffff; }

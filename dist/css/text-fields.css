@@ -6,20 +6,20 @@ textarea {
   margin: 8px -2px 20px;
   box-sizing: border-box;
   border-radius: 4px;
-  border: 2px solid #eeeeee;
+  border: 2px solid #f4f4f4;
   font-size: 1rem;
   min-height: 49px; }
 
 input:required:focus,
 textarea:required:focus {
-  outline: auto 5px #e00000; }
+  outline: auto 5px #DB0202; }
 
 textarea {
   min-height: 8rem; }
 
 fieldset {
   padding: 1.75rem 1.5rem;
-  border: 2px solid #eeeeee;
+  border: 2px solid #f4f4f4;
   border-radius: 4px; }
 
 legend {
@@ -27,5 +27,5 @@ legend {
 
 .required-field::after {
   content: '*';
-  color: #e00000;
+  color: #DB0202;
   display: inline-block; }

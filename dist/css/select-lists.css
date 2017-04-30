@@ -11,8 +11,8 @@
   cursor: pointer;
   padding: 15px;
   border: 0;
-  background: #eeeeee;
-  color: #e00000;
+  background: #f4f4f4;
+  color: #DB0202;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -20,7 +20,7 @@
   border-radius: 4px; }
   .select select:hover, .select select:focus {
     color: #464646;
-    background: #eeeeee; }
+    background: #f4f4f4; }
   .select select:disabled {
     opacity: 0.5;
     pointer-events: none; }
@@ -28,7 +28,7 @@
   .select select:focus ~ .select__arrow {
     border-top-color: #464646; }
   .select select:disabled ~ .select__arrow {
-    border-top-color: #eeeeee; }
+    border-top-color: #f4f4f4; }
 
 .select__arrow {
   position: absolute;
@@ -39,4 +39,4 @@
   pointer-events: none;
   border-style: solid;
   border-width: 10px 8px 0;
-  border-color: #e00000 transparent transparent; }
+  border-color: #DB0202 transparent transparent; }

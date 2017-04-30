@@ -16,9 +16,9 @@
       border-bottom-right-radius: 4px;
       border-right: 1px solid #bbbbbb; }
     .pagination li.active {
-      background-color: #e00000;
+      background-color: #DB0202;
       color: #ffffff;
-      border: 1px solid #e00000; }
+      border: 1px solid #DB0202; }
       .pagination li.active a {
         color: #ffffff; }
       .pagination li.active:hover {
