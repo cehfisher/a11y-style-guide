@@ -1562,18 +1562,17 @@ a[target='_blank']::after {
 
 .back-to-top {
   background-color: #e00000;
-  bottom: -1px;
-  height: 3rem;
+  bottom: 10px;
+  height: 2.5rem;
+  width: 2.5rem;
   position: fixed;
-  right: 0;
-  transform: translateY(100%);
+  right: 10px;
+  transform: translateY(130%);
   transition: transform 0.5s ease-in-out;
-  width: 3rem;
   background-image: url("../assets/chevron_up_round_red.png");
   background-repeat: no-repeat;
-  background-size: 32px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  background-size: 48px;
+  border-radius: 50%;
   background-position: 50%; }
   .back-to-top:hover {
     background-color: #a51323; }
@@ -1607,6 +1606,8 @@ a[target='_blank']::after {
     margin-top: 1.5rem; }
   .kss-nav .navbar-mobile-icon {
     display: block; }
+    .kss-nav .navbar-mobile-icon button {
+      background: #e00000; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
