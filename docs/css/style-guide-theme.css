@@ -67,7 +67,7 @@
 #kss-node .kss-markup pre {
   border-radius: 0 4px 4px 0;
   border: 2px solid #f4f4f4;
-  border-left: 5px solid #DB0202; }
+  border-left: 5px solid #e00000; }
 
 #kss-node .kss-sidebar.kss-fixed,
 #kss-node .kss-sidebar {
@@ -144,7 +144,7 @@
 #kss-node .kss-overview a,
 #kss-node .kss-description a {
   text-align: left;
-  color: #DB0202;
+  color: #e00000;
   text-decoration: none;
   font-weight: bold; }
   #kss-node h1 > a:hover, #kss-node h1 > a:focus, #kss-node h1 > a:active,
@@ -313,7 +313,7 @@
   top: 2px; }
 
 .kss-skip-link {
-  background: #DB0202;
+  background: #e00000;
   border: 3px solid #a51323;
   color: #ffffff;
   display: inline-block;
@@ -495,19 +495,18 @@ a[target='_blank']::after {
   top: 2rem; }
 
 .back-to-top {
-  background-color: #DB0202;
-  bottom: -1px;
-  height: 3rem;
+  background-color: #e00000;
+  bottom: 10px;
+  height: 2.5rem;
+  width: 2.5rem;
   position: fixed;
-  right: 0;
-  transform: translateY(100%);
+  right: 10px;
+  transform: translateY(130%);
   transition: transform 0.5s ease-in-out;
-  width: 3rem;
   background-image: url("../assets/chevron_up_round_red.png");
   background-repeat: no-repeat;
-  background-size: 32px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  background-size: 48px;
+  border-radius: 50%;
   background-position: 50%; }
   .back-to-top:hover {
     background-color: #a51323; }
@@ -541,6 +540,8 @@ a[target='_blank']::after {
     margin-top: 1.5rem; }
   .kss-nav .navbar-mobile-icon {
     display: block; }
+    .kss-nav .navbar-mobile-icon button {
+      background: #e00000; }
     @media (min-width: 40em) {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
