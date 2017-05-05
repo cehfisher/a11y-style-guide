@@ -1,0 +1,13 @@
+input[type='search'] {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 0.75rem;
+  margin: 8px 0 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 2px solid #f4f4f4;
+  font-size: 1rem;
+  min-height: 49px; }
+  @media (min-width: 55em) {
+    input[type='search'] {
+      width: 25%; } }

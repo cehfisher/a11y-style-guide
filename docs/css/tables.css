@@ -1,0 +1,26 @@
+.tables-section,
+.tables-section2,
+.tables-section3 {
+  width: 100%;
+  overflow-x: auto; }
+
+.tables {
+  border-collapse: collapse;
+  width: 100%; }
+  .tables caption {
+    padding: 1rem 0;
+    font-size: 1.5rem; }
+  .tables tbody {
+    border-collapse: collapse;
+    width: 100%; }
+  .tables td,
+  .tables th {
+    border: 1px solid #dddddd;
+    padding: 10px 16px;
+    text-align: center;
+    height: 50px; }
+  .tables tr:nth-child(even) {
+    background-color: #f7f7f7; }
+  .tables th {
+    background-color: #e00000;
+    color: #ffffff; }

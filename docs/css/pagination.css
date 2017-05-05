@@ -1,0 +1,118 @@
+.pagination {
+  display: inline-block;
+  padding-left: 0; }
+  .pagination li {
+    list-style: none;
+    float: left;
+    padding-bottom: 0;
+    background-color: #f7f7f7;
+    border: 1px solid #bbbbbb; }
+    .pagination li:first-child {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      padding-left: 0; }
+    .pagination li:last-child {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-right: 1px solid #bbbbbb; }
+    .pagination li.active {
+      background-color: #e00000;
+      color: #ffffff;
+      border: 1px solid #e00000; }
+      .pagination li.active a {
+        color: #ffffff; }
+      .pagination li.active:hover {
+        background-color: #a51323; }
+    .pagination li:hover:not(.active) {
+      background-color: #dddddd; }
+      .pagination li:hover:not(.active):last-child {
+        border-right: 1px solid #bbbbbb; }
+  .pagination a {
+    color: #464646;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none; }
+
+.pagination,
+.pagination li a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.pagination li:not([class*='current']) a:hover {
+  border-top-color: rgba(0, 0, 0, 0.35);
+  border-bottom-color: rgba(0, 0, 0, 0.5); }
+
+.pagination li:first-of-type a {
+  border-left-width: 1px; }
+
+.pagination li:first-of-type span,
+.pagination li:last-of-type span,
+.pagination li:nth-of-type(2) span,
+.pagination li:nth-last-of-type(2) span {
+  /* screen readers only */
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
+.pagination li:first-child a::before,
+.pagination li:last-child a::after,
+.pagination li:nth-of-type(2) a::before,
+.pagination li:nth-last-of-type(2) a::after {
+  display: inline-block;
+  font-size: inherit;
+  text-rendering: auto;
+  transform: translate(0, 0); }
+
+.pagination li:first-child a::before,
+.pagination li:last-child a::after {
+  content: '\25C0 \25C0'; }
+
+.pagination li:nth-of-type(2) a::before,
+.pagination li:nth-last-of-type(2) a::after {
+  content: ' \25C0';
+  padding-right: 0.5rem; }
+
+.pagination li:last-child a::after,
+.pagination li:nth-last-of-type(2) a::after {
+  transform: rotate(180deg); }
+
+.pagination .current a {
+  padding-top: 0.25em;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 2px 1px 0 rgba(0, 0, 0, 0.25);
+  cursor: default;
+  pointer-events: none; }
+
+@media only screen and (max-width: 64.063em) {
+  .pagination li:first-child,
+  .pagination li:last-child {
+    /* screen readers only */
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+  .pagination li:nth-of-type(2) a {
+    border-left-width: 1px; } }
+
+@media only screen and (max-width: 40.063em) {
+  .pagination li {
+    /* screen readers only */
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+  .pagination .current,
+  .pagination li:first-of-type,
+  .pagination li:last-of-type,
+  .pagination li:nth-of-type(2),
+  .pagination li:nth-last-of-type(2) {
+    position: initial;
+    top: initial;
+    left: initial; }
+  .pagination li:nth-of-type(2) a {
+    border-left-width: 0; } }

@@ -1,0 +1,14 @@
+.site-logo a {
+  display: inline-block;
+  overflow: hidden; }
+
+.site-logo img,
+.site-logo svg {
+  max-width: 215px;
+  vertical-align: middle; }
+
+.site-logo h1 {
+  color: #000000;
+  display: inline-block;
+  margin: 0 0 0 0.25em;
+  vertical-align: middle; }
