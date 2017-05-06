@@ -46,10 +46,14 @@
   }
 
   .kss-content {
+    padding-right: 0;
+    padding-left: 0;
     margin: $padding-md;
     clear: both;
 
     @include breakpoint($bp-xsm) {
+      padding-right: $padding-xsm;
+      padding-left: $padding-xsm;
       transition: all 0.5s ease-in-out;
       margin: 0 $padding-md-lg 0 325px;
       clear: none;
