@@ -46,24 +46,22 @@
   }
 
   .kss-content {
-    padding-left: 0;
     margin: $padding-md;
     clear: both;
 
     @include breakpoint($bp-xsm) {
-      padding-left: $padding-xsm;
       transition: all 0.5s ease-in-out;
-      margin: 0 $padding-md 0 325px;
+      margin: 0 $padding-md-lg 0 325px;
       clear: none;
     }
   }
 
   .kss-sidebar-collapsed + .kss-content {
-    margin: 0 $padding-md;
+    margin: 0 $padding-md-lg;
 
     @include breakpoint($bp-xsm) {
       transition: all 0.5s ease-in-out;
-      margin: 0 $padding-md 0 5rem;
+      margin: 0 $padding-md-lg 0 $padding-xl;
     }
   }
 

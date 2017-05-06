@@ -25,22 +25,20 @@
   padding: 0; }
 
 #kss-node .kss-content {
-  padding-left: 0;
   margin: 2rem;
   clear: both; }
   @media (min-width: 40em) {
     #kss-node .kss-content {
-      padding-left: 0.5rem;
       transition: all 0.5s ease-in-out;
-      margin: 0 2rem 0 325px;
+      margin: 0 3rem 0 325px;
       clear: none; } }
 
 #kss-node .kss-sidebar-collapsed + .kss-content {
-  margin: 0 2rem; }
+  margin: 0 3rem; }
   @media (min-width: 40em) {
     #kss-node .kss-sidebar-collapsed + .kss-content {
       transition: all 0.5s ease-in-out;
-      margin: 0 2rem 0 5rem; } }
+      margin: 0 3rem 0 6rem; } }
 
 #kss-node .kss-modifier-original .kss-modifier-example {
   padding: 1rem 0; }
