@@ -46,24 +46,26 @@
   }
 
   .kss-content {
+    padding-right: 0;
     padding-left: 0;
     margin: $padding-md;
     clear: both;
 
     @include breakpoint($bp-xsm) {
+      padding-right: $padding-xsm;
       padding-left: $padding-xsm;
       transition: all 0.5s ease-in-out;
-      margin: 0 $padding-md 0 325px;
+      margin: 0 $padding-md-lg 0 325px;
       clear: none;
     }
   }
 
   .kss-sidebar-collapsed + .kss-content {
-    margin: 0 $padding-md;
+    margin: 0 $padding-md-lg;
 
     @include breakpoint($bp-xsm) {
       transition: all 0.5s ease-in-out;
-      margin: 0 $padding-md 0 5rem;
+      margin: 0 $padding-md-lg 0 $padding-xl;
     }
   }
 
@@ -77,6 +79,7 @@
     padding: 2px 6px;
     background: $color-gallery;
     border-radius: $border-rd-sm;
+    font-size: 14px;
   }
 
   .kss-description {
@@ -610,11 +613,11 @@ a[target='_blank']::after {
 // back to top styling
 .back-to-top {
   background-color: $color-cherry;
-  bottom: 10px;
+  bottom: 12px;
   height: 2.5rem;
   width: 2.5rem;
   position: fixed;
-  right: 10px;
+  right: 15px;
   transform: translateY(130%);
   transition: transform 0.5s ease-in-out;
   background-image: url('#{$asset-path}/chevron_up_round_red.png');

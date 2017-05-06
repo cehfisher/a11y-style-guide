@@ -26,12 +26,18 @@
 <div><h2>Where to begin?</h2>
 <p>This has a KSS node base, so learn a bit about <a href="https://github.com/kss-node/kss-node/wiki/Quick-Start-Guide" target="_blank">how KSS node works</a></p>
 <p>To make local changes to components, do the following:</p>
-<ul><li>Navigate to the project root</li>
+<ul>
+<li>Fork the project</li>
+<li>Navigate to the project root</li>
 <li><code>nvm install stable</code> (only need to do once - see the <a href="https://github.com/creationix/nvm" target="_blank">NVM project</a> for troubleshooting)</li>
 <li><code>nvm use stable</code></li>
 <li><code>npm install</code> (only need to do once)</li>
-<li>Change/add some code</li>
+<li>Create your feature branch (git checkout -b my-new-feature)</li>
+<li>Make changes</li>
 <li><code>npm run gulp</code> (this will run all the gulp commands)</li>
+<li>Commit your changes (git commit -m 'Add some feature')</li>
+<li>Push to the branch (git push origin my-new-feature)</li>
+<li>Create new Pull Request</li>
 </ul>
 <p>This will run all the gulp commands including the style guide update. If you want to contribute back, please do so! This is a great <a href="https://www.atlassian.com/git" target="_blank">Git resource</a> if you need to brush-up on your skills (all levels)</p></div>
 
@@ -47,5 +53,5 @@
 
 <li>Tip #4: Use the Right Tools. There are lots of accessibility tools that wonderful people spent lots of time creating, so use them. Use tools during the build process (ex. using Color Safe to check color combos) and after the site is finished (ex. using WAVE to evaluate accessibility errors and alerts, etc)</li>
 
-<li>Tip #5:  Try, Try Again. Keep in mind that even adding one or two accessible pieces to a website is moving in the right direction. The next site might have four or five pieces. “Rome wasn’t built in a day” and neither are accessible websites.</li>
+<li>Tip #5:  Try, Try Again. Keep in mind that even adding one or two accessible pieces to a website is moving in the right direction. The next site might have four or five pieces. "Rome wasn’t built in a day" and neither are accessible websites.</li>
 </ul></div>
