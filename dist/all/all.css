@@ -1571,11 +1571,11 @@ a[target='_blank']::after {
 
 .back-to-top {
   background-color: #e00000;
-  bottom: 10px;
+  bottom: 12px;
   height: 2.5rem;
   width: 2.5rem;
   position: fixed;
-  right: 10px;
+  right: 15px;
   transform: translateY(130%);
   transition: transform 0.5s ease-in-out;
   background-image: url("../assets/chevron_up_round_red.png");
