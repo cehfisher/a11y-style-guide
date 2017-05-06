@@ -36,8 +36,9 @@
 <li><code>git checkout -b my-new-feature</code> (create your feature branch)</li>
 <li>Make changes</li>
 <li><code>npm run gulp</code> (this will run all the gulp commands)</li>
-<li><code>git commit -m 'Add some feature'</code>(commit your changes)</li>
-<li><code>git push origin my-new-feature</code>(push to the branch)</li>
+<li><code>git commit -A</code> (adds all changes)</li>
+<li><code>git commit -m 'Add some feature'</code> (commit your changes)</li>
+<li><code>git push origin my-new-feature</code> (push to the branch)</li>
 <li>Create new Pull Request</li>
 </ul>
 <p>This will run all the gulp commands including the style guide update. If you want to contribute back, please do so! This is a great <a href="https://www.atlassian.com/git" target="_blank">Git resource</a> if you need to brush-up on your skills (all levels)</p></div>
