@@ -1124,7 +1124,8 @@ input[type='search'] {
 #kss-node .kss-description pre {
   padding: 2px 6px;
   background: #f4f4f4;
-  border-radius: 4px; }
+  border-radius: 4px;
+  font-size: 14px; }
 
 #kss-node .kss-description blockquote {
   margin-bottom: 2rem; }
