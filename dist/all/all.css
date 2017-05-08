@@ -472,6 +472,8 @@ li {
       content: ' / '; }
     .breadcrumb .breadcrumb-item:last-child::after {
       display: none; }
+    .breadcrumb .breadcrumb-item a[aria-current="page"] {
+      color: #464646; }
 
 [type='submit'],
 [role='button'],

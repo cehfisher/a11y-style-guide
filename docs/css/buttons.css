@@ -90,6 +90,8 @@ html [type='button'],
     background-color: transparent;
     color: #a51323;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+  .button--outline.magnifyingglass {
+    vertical-align: middle; }
 
 .buttons--center {
   text-align: center;
