@@ -50,6 +50,10 @@ html [type='button'],
 
 .button--outline {
   @include button-outline;
+
+  &.magnifyingglass {
+    vertical-align: middle;
+  }
 }
 
 .buttons--center {
