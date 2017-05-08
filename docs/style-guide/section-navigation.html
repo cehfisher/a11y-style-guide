@@ -135,7 +135,12 @@
  <li>Place the breadcrumb in a <code>&lt;nav&gt;</code> element when you can.</li>
  <li>If you do not use a <code>&lt;nav&gt;</code> element, you need to add <code>role=&quot;navigation&quot;</code> to the markup. <strong>Note:</strong> this role is implied when you use the <code>&lt;nav&gt;</code> element so it is a bit redundant to use both at the same time.</li>
  <li>The markup includes an <code>aria-label=&quot;breadcrumbs&quot;</code> to describe the type of navigation.</li>
+ <li>Add <code>aria-current=&quot;page&quot;</code> to the link that points to the current page. This will tell AT that the focused link is pointing to the current page.</li>
 </ul>
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#breadcrumbs_res">Resources</a></h3><div id="breadcrumbs_res" class="atblock__panel"><ul><li><a href="http://w3c.github.io/aria/aria/aria.html#aria-current" target="_blank">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li><li><a href="http://tink.uk/using-the-aria-current-attribute/" target="_blank">Using the aria-current attribute</a></li></ul></div></section>
+
+
 
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#breadcrumbs_guide">WCAG 2.0 Guidelines</a></h3><div id="breadcrumbs_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location" target="_blank">2.4.8 Location</a> - Information about the user&#39;s location within a set of Web pages is available. (Level AAA)</p></div><div class="markup"></div></section>
 
@@ -152,24 +157,27 @@
   <h3>Option #1: List styling with nav element</h3>
   <nav aria-label="breadcrumbs">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item active">Home</li>
+      <li class="breadcrumb-item"><a href="#" aria-current="page">Home</a></li>
     </ol>
+
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item active">Parent</li>
+      <li class="breadcrumb-item"><a href="#" aria-current="page">Parent</a></li>
     </ol>
+
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="#">Home</a></li>
       <li class="breadcrumb-item"><a href="#">Parent</a></li>
-      <li class="breadcrumb-item active">Child</li>
+      <li class="breadcrumb-item"><a href="#" aria-current="page">Child</a></li>
     </ol>
   </nav>
+
   <div class="break"></div>
   <h3>Option #2: Link styling with no nav element</h3>
   <div role="navigation" aria-label="breadcrumbs" class="breadcrumb">
     <a class="breadcrumb-item" href="#">Home</a>
     <a class="breadcrumb-item" href="#">Parent</a>
-    <span class="breadcrumb-item active">Child</span>
+    <a class="breadcrumb-item" href="#" aria-current="page">Child</a>
   </div>
 </section>
 
@@ -183,24 +191,27 @@
   &lt;h3&gt;Option #1: List styling with nav element&lt;/h3&gt;
   &lt;nav aria-label=&quot;breadcrumbs&quot;&gt;
     &lt;ol class=&quot;breadcrumb&quot;&gt;
-      &lt;li class=&quot;breadcrumb-item active&quot;&gt;Home&lt;/li&gt;
+      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot; aria-current=&quot;page&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
     &lt;/ol&gt;
+
     &lt;ol class=&quot;breadcrumb&quot;&gt;
       &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;breadcrumb-item active&quot;&gt;Parent&lt;/li&gt;
+      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot; aria-current=&quot;page&quot;&gt;Parent&lt;/a&gt;&lt;/li&gt;
     &lt;/ol&gt;
+
     &lt;ol class=&quot;breadcrumb&quot;&gt;
       &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
       &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Parent&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;breadcrumb-item active&quot;&gt;Child&lt;/li&gt;
+      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot; aria-current=&quot;page&quot;&gt;Child&lt;/a&gt;&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/nav&gt;
+
   &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
   &lt;h3&gt;Option #2: Link styling with no nav element&lt;/h3&gt;
   &lt;div role=&quot;navigation&quot; aria-label=&quot;breadcrumbs&quot; class=&quot;breadcrumb&quot;&gt;
     &lt;a class=&quot;breadcrumb-item&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
     &lt;a class=&quot;breadcrumb-item&quot; href=&quot;#&quot;&gt;Parent&lt;/a&gt;
-    &lt;span class=&quot;breadcrumb-item active&quot;&gt;Child&lt;/span&gt;
+    &lt;a class=&quot;breadcrumb-item&quot; href=&quot;#&quot; aria-current=&quot;page&quot;&gt;Child&lt;/a&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>
@@ -453,7 +464,12 @@
  <li>Place the pager in a <code>&lt;nav&gt;</code> element when you can.</li>
  <li>If you do not use a <code>&lt;nav&gt;</code> element, you need to add <code>role=&quot;navigation&quot;</code> to the markup. <strong>Note:</strong> this role is implied when you use the <code>&lt;nav&gt;</code> element so it is a bit redundant to use both at the same time.</li>
  <li>The markup includes an <code>aria-label=&quot;pagination&quot;</code> to describe the type of navigation.</li>
+ <li>Add <code>aria-current=&quot;page&quot;</code> to the link that points to the current page. This will tell AT that the focused link is pointing to the current page.</li>
 </ul>
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#pagination_res">Resources</a></h3><div id="pagination_res" class="atblock__panel"><ul><li><a href="http://w3c.github.io/aria/aria/aria.html#aria-current" target="_blank">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li><li><a href="http://tink.uk/using-the-aria-current-attribute/" target="_blank">Using the aria-current attribute</a></li></ul></div></section>
+
+
 
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#pagination_guide">WCAG 2.0 Guidelines</a></h3><div id="pagination_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location" target="_blank">2.4.8 Location</a> - Information about the user&#39;s location within a set of Web pages is available. (Level AAA)</p></div><div class="markup"></div></section>
 
@@ -477,7 +493,7 @@
       </li>
       <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>1</a></li>
       <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>2</a></li>
-      <li class="page-item active"><a class="page-link" href="#"><span class="visuallyhidden">page</span>3</a></li>
+      <li class="page-item active"><a class="page-link" href="#" aria-current="page"><span class="visuallyhidden">page</span>3</a></li>
       <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>4</a></li>
       <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>5</a></li>
       <li class="page-item ml-0_5">
@@ -507,7 +523,7 @@
       &lt;/li&gt;
       &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;1&lt;/a&gt;&lt;/li&gt;
       &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;2&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;page-item active&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page&lt;/span&gt;3&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;page-item active&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-current=&quot;page&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page&lt;/span&gt;3&lt;/a&gt;&lt;/li&gt;
       &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;4&lt;/a&gt;&lt;/li&gt;
       &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;5&lt;/a&gt;&lt;/li&gt;
       &lt;li class=&quot;page-item ml-0_5&quot;&gt;
