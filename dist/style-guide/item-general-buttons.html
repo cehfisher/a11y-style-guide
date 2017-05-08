@@ -99,7 +99,8 @@
  <li>Use <code>&lt;button&gt;</code> when you can, but it is possible to use other elements as long as you add <code>role=&quot;button&quot;</code> and add JavaScript to replicate the button functionality.</li>
  <li>Remember that <code>&lt;button&gt;</code> defaults to <code>type=&quot;submit&quot;</code>, so adding <code>type=&quot;button&quot;</code> helps you avoid accidentally submitting forms.</li>
  <li>Your button needs a descriptive name. Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
- <li>If the button only contains an <code>&lt;img&gt;</code> element, make sure to set its alt attribute. If it only contains an icon use <code>aria-label</code>.</li>
+ <li>If the button only contains an <code>&lt;img&gt;</code> element, make sure to set its <code>alt</code> attribute. If it only contains an icon, use <code>aria-label</code>.</li>
+ <li>You can also use <code>&lt;input type=&quot;image&quot;&gt;</code> to make a graphical button. It takes a <code>src</code> and <code>alt</code> attribute just like traditional images.</li>
 </ul>
 
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#button_res">Resources</a></h3><div id="button_res" class="atblock__panel"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank">Using the button role</a></li><li><a href="https://www.deque.com/blog/accessible-aria-buttons" target="_blank">Building Accessible Buttons with ARIA</a></li><li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/button/button.html" target="_blank">W3C Button Examples</a></li></ul></div></section>
@@ -123,6 +124,7 @@
   <a href="#" class="button-icon wheelchair" type="button" role="button" id="toggle" aria-pressed="false">A11Y<span class="visuallyhidden">all the things.</span></a>
   <a href="#" class="button--outline" role="button" type="button" role="button" id="print" aria-pressed="false">Print Page</a>
   <a href="#" class="button" type="button" role="button" id="alert1" aria-pressed="false">Tell me something nice</a>
+  <input type="image" class="button--outline magnifyingglass" src="../assets/searchicon.png" alt="Search"
 </section>
 
                   </div>
@@ -137,6 +139,7 @@
   &lt;a href=&quot;#&quot; class=&quot;button-icon wheelchair&quot; type=&quot;button&quot; role=&quot;button&quot; id=&quot;toggle&quot; aria-pressed=&quot;false&quot;&gt;A11Y&lt;span class=&quot;visuallyhidden&quot;&gt;all the things.&lt;/span&gt;&lt;/a&gt;
   &lt;a href=&quot;#&quot; class=&quot;button--outline&quot; role=&quot;button&quot; type=&quot;button&quot; role=&quot;button&quot; id=&quot;print&quot; aria-pressed=&quot;false&quot;&gt;Print Page&lt;/a&gt;
   &lt;a href=&quot;#&quot; class=&quot;button&quot; type=&quot;button&quot; role=&quot;button&quot; id=&quot;alert1&quot; aria-pressed=&quot;false&quot;&gt;Tell me something nice&lt;/a&gt;
+  &lt;input type=&quot;image&quot; class=&quot;button--outline magnifyingglass&quot; src=&quot;../assets/searchicon.png&quot; alt=&quot;Search&quot;
 &lt;/section&gt;
 </code></pre>
                     <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
