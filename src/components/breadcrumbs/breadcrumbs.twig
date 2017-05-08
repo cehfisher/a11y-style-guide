@@ -2,23 +2,26 @@
   <h3>Option #1: List styling with nav element</h3>
   <nav aria-label="breadcrumbs">
     <ol class="breadcrumb">
-      <li class="breadcrumb-item active">Home</li>
+      <li class="breadcrumb-item"><a href="#" aria-current="page">Home</a></li>
     </ol>
+
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item active">Parent</li>
+      <li class="breadcrumb-item"><a href="#" aria-current="page">Parent</a></li>
     </ol>
+
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="#">Home</a></li>
       <li class="breadcrumb-item"><a href="#">Parent</a></li>
-      <li class="breadcrumb-item active">Child</li>
+      <li class="breadcrumb-item"><a href="#" aria-current="page">Child</a></li>
     </ol>
   </nav>
+
   <div class="break"></div>
   <h3>Option #2: Link styling with no nav element</h3>
   <div role="navigation" aria-label="breadcrumbs" class="breadcrumb">
     <a class="breadcrumb-item" href="#">Home</a>
     <a class="breadcrumb-item" href="#">Parent</a>
-    <span class="breadcrumb-item active">Child</span>
+    <a class="breadcrumb-item" href="#" aria-current="page">Child</a>
   </div>
 </section>
