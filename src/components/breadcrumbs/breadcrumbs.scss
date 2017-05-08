@@ -39,5 +39,9 @@
     &:last-child::after {
       display: none;
     }
+
+    a[aria-current="page"] {
+      color: $color-midnight;
+    }
   }
 }
