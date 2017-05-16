@@ -80,6 +80,7 @@ html [type='button'],
   @include button;
   line-height: 0.9;
   padding: 0.8rem $padding-md 0.8rem ($padding-md + $padding-xsm);
+  height: 48px;
 
   &::before {
     float: left;

@@ -78,7 +78,7 @@
 // Mixin for outline buttons
 @mixin button-outline($hover-color: $color-ruby, $color: $color-cherry, $padding: 0.8rem $padding-sm, $corners: $border-rd-md) {
   @include button;
-  min-height: 50px;
+  height: 50px;
   color: $color;
   background-color: transparent;
   border: 3px solid $color;
