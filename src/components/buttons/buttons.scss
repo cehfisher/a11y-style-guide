@@ -25,8 +25,6 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
-[type='submit'],
-[role='button'],
 button {
   @include button;
   -webkit-appearance: inherit; // sass-lint:disable-line no-vendor-prefixes
@@ -35,6 +33,12 @@ button {
     color: $color-white;
     background: $color-manatee;
   }
+}
+
+[type='submit'],
+[role='button'] {
+  @include button;
+  min-height: inherit;
 }
 
 button,

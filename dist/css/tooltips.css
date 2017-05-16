@@ -1,5 +1,5 @@
 .a11y-tip {
-  display: inline-block;
+  display: table;
   position: relative; }
   .a11y-tip__trigger[tabindex] {
     border-bottom: 1px dotted #666; }
@@ -38,9 +38,8 @@
   color: #fff;
   font-size: 14px;
   left: 50%;
-  margin-top: 12px;
+  margin-top: 16px;
   max-width: 400px;
-  min-width: 220px;
   opacity: 0;
   padding: 0.5rem 1rem;
   pointer-events: none;
@@ -54,7 +53,7 @@
   width: 100%;
   z-index: 10; }
   [role='tooltip'].a11y-tip__help::after {
-    border: inset 6px;
+    border: inset 10px;
     content: '';
     display: inline-block;
     height: 0;
@@ -77,13 +76,13 @@
   [role='tooltip'].a11y-tip__help--top {
     bottom: 100%;
     left: 50%;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     margin-top: 0;
     top: auto;
     transform-origin: center top;
     transform: translate(-50%, 10px); }
     [role='tooltip'].a11y-tip__help--top::after {
-      border: inset 6px;
+      border: inset 10px;
       content: '';
       display: inline-block;
       height: 0;
@@ -100,13 +99,13 @@
   @media screen and (min-width: 55em) {
     [role='tooltip'].a11y-tip__help--left {
       left: auto;
-      margin-right: 11px;
+      margin-right: 15px;
       margin-top: 0;
       right: 100%;
       top: 50%;
       transform: translate(10px, -50%); }
       [role='tooltip'].a11y-tip__help--left::after {
-        border: inset 6px;
+        border: inset 10px;
         content: '';
         display: inline-block;
         height: 0;
@@ -121,12 +120,12 @@
         transform: translate(-10px, -50%); }
     [role='tooltip'].a11y-tip__help--right {
       left: 100%;
-      margin-left: 11px;
+      margin-left: 15px;
       margin-top: 0;
       top: 50%;
       transform: translate(10px, -50%); }
       [role='tooltip'].a11y-tip__help--right::after {
-        border: inset 6px;
+        border: inset 10px;
         content: '';
         display: inline-block;
         height: 0;
