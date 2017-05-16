@@ -24,3 +24,16 @@ $padding-xxxl: 10rem;
 $shadow-sm: 0 0 2px rgba(0, 0, 0, 0.5);
 $shadow-md: 0 2px 2px rgba(136, 139, 141, 0.5);
 $shadow-lg: 0 4px 2px rgba(136, 139, 141, 0.5);
+
+$tip--color-white: #fff !default;
+$tip--color-black: #000 !default;
+$tip--color-gray: #666 !default;
+$tip--bg: fade-out($tip--color-black, 0.1) !default;
+$tip--base-size: 12px !default;
+$tip--arrow-size: 10px !default;
+$tip--trigger--border-bottom: 1px dotted $tip--color-gray !default;
+$tip--compile-bottom: true !default;
+$tip--compile-left: true !default;
+$tip--compile-right: true !default;
+$tip--delay: 1s !default;
+$tip--no-delay: 0.18s !default;

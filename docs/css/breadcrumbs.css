@@ -15,5 +15,5 @@
       content: ' / '; }
     .breadcrumb .breadcrumb-item:last-child::after {
       display: none; }
-    .breadcrumb .breadcrumb-item a[aria-current="page"] {
+    .breadcrumb .breadcrumb-item a[aria-current='page'] {
       color: #464646; }

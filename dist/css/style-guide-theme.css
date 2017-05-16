@@ -25,8 +25,8 @@
   padding: 0; }
 
 #kss-node .kss-content {
-  padding-right: 0;
-  padding-left: 0;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   margin: 2rem;
   clear: both; }
   @media (min-width: 40em) {
