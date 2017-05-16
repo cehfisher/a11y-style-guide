@@ -1,0 +1,69 @@
+<section class="tooltips">
+  <h3>Option #1: Simple tooltip with no JS</h3>
+    <form action="" class="no-js-tooltip">
+    <fieldset>
+      <legend>Login</legend>
+      <div>
+        <label for="username">Username</label>
+  	  <input type="text" id="username" aria-describedby="username-tip" required />
+  	  <div role="tooltip" id="username-tip">Try your email address</div>
+  	</div>
+  	<div>
+  	  <label for="password">Password</label>
+  	  <input type="text" id="password" aria-describedby="password-tip" required />
+  	  <div role="tooltip" id="password-tip">It is most likely 1234</div>
+  	</div>
+    </fieldset>
+  </form>
+  <div class="break"></div>
+  <h3>Option #2: Tooltip with a span</h3>
+  <span class="a11y-tip">
+  	<span class="a11y-tip__trigger">
+  		Why did the Clydesdale give the pony a glass of water?
+  	</span>
+  	<span class="a11y-tip__help">
+  		Because he was a little horse!
+  	</span>
+  </span>
+  <div class="break"></div>
+  <h3>Option #3: Tooltip with a link</h3>
+  <span class="a11y-tip a11y-tip--no-delay">
+  	<a href="#!" class="a11y-tip__trigger">
+  		What is Beethoven's favorite fruit?
+  	</a>
+  	<span class="a11y-tip__help a11y-tip__help--top">
+  		A ba-na-na-na.
+  	</span>
+  </span>
+  <div class="break"></div>
+  <h3>Option #4: Tooltip with a button</h3>
+  <span class="a11y-tip">
+  	<button type="button" class="a11y-tip__trigger" aria-describedby="tt_id">
+  		Why did the invisible man turn down the job offer?
+  	</button>
+  	<span id="tt_id" role="tooltip" class="a11y-tip__help a11y-tip__help--bottom">
+  		He couldn't see himself doing it.
+  	</span>
+  </span>
+  <div class="break"></div>
+  <h3>Option #5: Input with right tooltip</h3>
+  <label for="test">
+  	Why do seagulls fly over the sea?
+  </label>
+  <span class="a11y-tip">
+  	<input id="test" placeholder="enter text" class="a11y-tip__trigger" aria-describedby="test_desc" type="text">
+  	<span id="test_desc" role="tooltip" class="a11y-tip__help a11y-tip__help--right">
+  		If they flew over the bay, they would be bagels.
+  	</span>
+  </span>
+  <div class="break"></div>
+  <h3>Option #6: Click to show/hide tooltip</h3>
+  <span class="a11y-tip a11y-tip--toggle">
+  	<span class="a11y-tip__trigger">
+  		Don't trust atoms.
+  	</span>
+  	<span class="a11y-tip__help">
+  		They make up everything!
+  	</span>
+  </span>
+</section>

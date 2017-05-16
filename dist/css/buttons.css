@@ -12,7 +12,7 @@ button {
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
-  height: 48px;
+  min-height: 48px;
   position: relative;
   margin: 0.5rem 0;
   -webkit-appearance: inherit; }
@@ -50,7 +50,7 @@ html [type='button'],
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
-  height: 48px;
+  min-height: 48px;
   position: relative;
   margin: 0.5rem 0;
   line-height: 0.9; }
@@ -73,10 +73,10 @@ html [type='button'],
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
-  height: 48px;
+  min-height: 48px;
   position: relative;
   margin: 0.5rem 0;
-  height: 50px;
+  min-height: 50px;
   color: #e00000;
   background-color: transparent;
   border: 3px solid #e00000; }
@@ -117,7 +117,7 @@ html [type='button'],
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
-  height: 48px;
+  min-height: 48px;
   position: relative;
   margin: 0.5rem 0;
   line-height: 0.9;
@@ -147,10 +147,10 @@ html [type='button'],
     border-radius: 4px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     font-size: 1rem;
-    height: 48px;
+    min-height: 48px;
     position: relative;
     margin: 0.5rem 0;
-    height: 50px;
+    min-height: 50px;
     color: #e00000;
     background-color: transparent;
     border: 3px solid #e00000;

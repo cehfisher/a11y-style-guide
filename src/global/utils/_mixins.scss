@@ -61,7 +61,7 @@
   border-radius: $border-rd-sm;
   box-shadow: $shadow-sm;
   font-size: $padding-sm;
-  height: 48px;
+  min-height: 48px;
   position: relative;
   margin: $padding-xsm 0;
 
@@ -78,7 +78,7 @@
 // Mixin for outline buttons
 @mixin button-outline($hover-color: $color-ruby, $color: $color-cherry, $padding: 0.8rem $padding-sm, $corners: $border-rd-md) {
   @include button;
-  height: 50px;
+  min-height: 50px;
   color: $color;
   background-color: transparent;
   border: 3px solid $color;
@@ -106,4 +106,33 @@
 
 @mixin text-shadow {
   text-shadow: $shadow-sm;
+}
+
+@mixin triangle($tri-size, $tri-color, $tri-direction) {
+	border: inset $tri-size;
+	content: '';
+	display: inline-block;
+	height: 0;
+	speak: none;
+	width: 0;
+
+	@if ($tri-direction == top) {
+		border-color: $tri-color transparent transparent transparent;
+		border-top-style: solid;
+	}
+
+	@if ($tri-direction == bottom) {
+		border-color: transparent transparent $tri-color transparent;
+		border-bottom-style: solid;
+	}
+
+	@if ($tri-direction == left) {
+		border-color: transparent transparent transparent $tri-color;
+		border-left-style: solid;
+	}
+
+	@if ($tri-direction == right) {
+		border-color: transparent $tri-color transparent transparent;
+		border-right-style: solid;
+	}
 }
