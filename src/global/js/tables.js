@@ -6,9 +6,9 @@ window.onload = function () {
 
   //create headers for the mobile view
   (function () {
-    var headers = document.querySelectorAll("th"),
+    var headers = document.getElementById("responsive-tableID").querySelectorAll("th"),
       index = 1,
-      columns = document.querySelectorAll("td"),
+      columns = document.getElementById("responsive-tableID").querySelectorAll("td"),
       headerName,
       responsiveHeader;
 
@@ -19,7 +19,7 @@ window.onload = function () {
         }
         //mobile headers are actually td
         element = columns[i];
-        headerName = document.querySelector('th:nth-of-type(' + index + ')').textContent;
+        headerName = document.getElementById("responsive-tableID").querySelector('th:nth-of-type(' + index + ')').textContent;
         responsiveHeader = document.createElement("td");
 
         responsiveHeader.className = "responsive-header";

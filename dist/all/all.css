@@ -1379,7 +1379,8 @@ input[type='search'] {
       background-size: 32px;
       border: 0;
       box-shadow: none;
-      background-color: transparent; }
+      background-color: transparent;
+      min-height: 0; }
       .nav-btn:hover, .nav-btn:focus, .nav-btn:active {
         border: 0;
         box-shadow: none;
@@ -1599,7 +1600,7 @@ a[target='_blank']::after {
   height: 2.5rem;
   width: 2.5rem;
   position: fixed;
-  right: 15px;
+  right: 9px;
   transform: translateY(130%);
   transition: transform 0.5s ease-in-out;
   background-image: url("../assets/chevron_up_round_red.png");
@@ -1652,44 +1653,29 @@ a[target='_blank']::after {
   width: 100%;
   overflow-x: auto; }
 
-.tables {
-  border-collapse: collapse;
-  width: 100%; }
-  .tables caption {
-    padding: 1rem 0;
-    font-size: 1.5rem; }
-  .tables tbody {
-    border-collapse: collapse;
-    width: 100%; }
-  .tables td,
-  .tables th {
-    border: 1px solid #dddddd;
-    padding: 10px 16px;
-    text-align: center;
-    height: 50px; }
-  .tables tr:nth-child(even) {
-    background-color: #f7f7f7; }
-  .tables th {
-    background-color: #e00000;
-    color: #ffffff; }
-
+.tables,
 .responsive-table {
   border-collapse: collapse;
   width: 100%; }
+  .tables caption,
   .responsive-table caption {
     padding: 1rem 0;
     font-size: 1.5rem; }
+  .tables tbody,
   .responsive-table tbody {
     border-collapse: collapse;
     width: 100%; }
+  .tables td,
+  .tables th,
   .responsive-table td,
   .responsive-table th {
     border: 1px solid #dddddd;
     padding: 10px 16px;
-    text-align: center;
-    height: 50px; }
+    text-align: center; }
+  .tables tr:nth-child(even),
   .responsive-table tr:nth-child(even) {
     background-color: #f7f7f7; }
+  .tables th,
   .responsive-table th {
     background-color: #e00000;
     color: #ffffff; }
@@ -1726,7 +1712,7 @@ a[target='_blank']::after {
   float: left;
   padding: 0 !important;
   border: 0 !important;
-  margin: 13px 5px 0 14px; }
+  margin: 10px 5px 0 14px; }
   .mobile .responsive-header::after {
     content: ': ';
     display: inline-block; }

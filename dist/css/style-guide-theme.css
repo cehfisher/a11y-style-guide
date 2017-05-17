@@ -283,7 +283,8 @@
       background-size: 32px;
       border: 0;
       box-shadow: none;
-      background-color: transparent; }
+      background-color: transparent;
+      min-height: 0; }
       .nav-btn:hover, .nav-btn:focus, .nav-btn:active {
         border: 0;
         box-shadow: none;
@@ -503,7 +504,7 @@ a[target='_blank']::after {
   height: 2.5rem;
   width: 2.5rem;
   position: fixed;
-  right: 15px;
+  right: 9px;
   transform: translateY(130%);
   transition: transform 0.5s ease-in-out;
   background-image: url("../assets/chevron_up_round_red.png");

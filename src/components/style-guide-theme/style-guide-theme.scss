@@ -332,6 +332,7 @@
     border: 0;
     box-shadow: none;
     background-color: transparent;
+    min-height: 0;
 
     &:hover,
     &:focus,
@@ -617,7 +618,7 @@ a[target='_blank']::after {
   height: 2.5rem;
   width: 2.5rem;
   position: fixed;
-  right: 15px;
+  right: 9px;
   transform: translateY(130%);
   transition: transform 0.5s ease-in-out;
   background-image: url('#{$asset-path}/chevron_up_round_red.png');

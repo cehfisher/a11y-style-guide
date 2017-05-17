@@ -78,15 +78,9 @@
                       </a>
                     </li>
                                       <li class="kss-menu-item">
-                      <a href="#kssref-structure-tables-basic">
+                      <a href="#kssref-structure-tables">
                         <span class="kss-ref ">5.2</span>
-                        <span class="kss-name">Tables - Basic</span>
-                      </a>
-                    </li>
-                                      <li class="kss-menu-item">
-                      <a href="#kssref-structure-tables-responsive">
-                        <span class="kss-ref ">5.3</span>
-                        <span class="kss-name">Tables - Responsive</span>
+                        <span class="kss-name">Tables</span>
                       </a>
                     </li>
                                   </ul>
@@ -178,11 +172,11 @@
                               </div>
 
                                     </section>
-                            <section id="kssref-structure-tables-basic" class="kss-section kss-depth-2">
+                            <section id="kssref-structure-tables" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-structure-tables-basic">
-                  Tables - Basic
+                <a class="kss-title__permalink" href="#kssref-structure-tables">
+                  Tables
                 </a>
               </h2>
 
@@ -342,6 +336,56 @@
   	</tbody>
   </table>
 </section>
+<section>
+  <div class="break"></div>
+  <h3>Option #4: Responsive Table</h3>
+  <table class="responsive-table" id="responsive-tableID">
+    <thead>
+      <tr align="center">
+        <th class="responsive">House Side</th>
+        <th class="responsive">House Address</th>
+        <th class="responsive">Other</th>
+        <th class="responsive">Other Address</th>
+        <th class="responsive">Senate Side</th>
+        <th class="responsive">Senate Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="responsive">Rayburn House Office Building</td>
+        <td class="responsive">50 Independence Ave, SW Washington, DC 20515</td>
+        <td class="responsive">Library of Congress</td>
+        <td class="responsive">101 Independence Ave SE, Washington, DC 20540</td>
+        <td class="responsive">Russell Senate Office Building</td>
+        <td class="responsive">2 Constitution Ave NE, Washington, DC 20002</td>
+      </tr>
+      <tr>
+        <td class="responsive">Longworth House Office Building</td>
+        <td class="responsive">15 Independence Ave, SW Washington, DC 20515</td>
+        <td class="responsive">Supreme Court</td>
+        <td class="responsive">1 First Street, NE Washington, DC 20543</td>
+        <td class="responsive">Dirksen Senate Office Building</td>
+        <td class="responsive">100 Constitution Ave NE Washington, DC 20002</td>
+      </tr>
+      <tr>
+        <td class="responsive">Cannon House Office Building</td>
+        <td class="responsive">25 Independence Ave, SE Washington, DC 20003</td>
+        <td class="responsive">Capitol Visitors Center</td>
+        <td class="responsive">First &amp; East Capitol St SE, Washington, DC 20004</td>
+        <td class="responsive">Hart Senate Office Building</td>
+        <td class="responsive">150 Constitution Ave NE Washington, DC 20510</td>
+      </tr>
+      <tr>
+        <td class="responsive">Capitol South Metro</td>
+        <td class="responsive">307 First Street SE Washington, DC 20003</td>
+        <td class="responsive">Federal Center Metro</td>
+        <td class="responsive">401 3rd Street SW Washington, DC 20024</td>
+        <td class="responsive">Union Station Metro</td>
+        <td class="responsive">701 First St. NE Washington, DC 20002</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
                   </div>
                 </div>
@@ -483,150 +527,57 @@
   	&lt;/tbody&gt;
   &lt;/table&gt;
 &lt;/section&gt;
-</code></pre>
-                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
-                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
-                  </template>
-                </div>
-                              </div>
-
-                                    </section>
-                            <section id="kssref-structure-tables-responsive" class="kss-section kss-depth-2">
-            <div class="kss-style">
-                            <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-structure-tables-responsive">
-                  Tables - Responsive
-                </a>
-              </h2>
-
-                              <div class="kss-description">
-                  <ul>
- <li>Tables with one header and simple data are fairly accessible out of the box and may not need additional accessibility updates. Always use the simplest table configuration possible.</li>
- <li>When your tables get more complex, use the <code>&lt;th&gt;</code> element to identify the header cells by adding a scope attribute. For header rows use <code>&lt;th scope=&quot;row&quot;&gt;</code>. For header columns use <code>&lt;th scope=&quot;col&quot;&gt;</code></li>
- <li>Add the optional <code>&lt;caption&gt;</code> element before the table content to give users more information on the table contents. Think of it as a headline for your table.</li>
-</ul>
-
-<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tables_res">Resources</a></h3><div id="tables_res" class="atblock__panel"><ul><li><a href="https://www.w3.org/WAI/tutorials/tables" target="_blank">Web Accessibility Tutorials - Table Concepts</a></li></ul></div></section>
-
-
-
-<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tables_guide">WCAG 2.0 Guidelines</a></h3><div id="tables_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</p></div><div class="markup"></div></section>
-
-
-                </div>
-              
-                          </div>
-
-                          <div class="kss-modifier-block">
-
-                <div class="kss-modifier kss-modifier-original">
-                  <div class="kss-modifier-example">
-                    <section>
-  <h3>Responsive Table</h3>
-  <table class="responsive-table">
-    <thead>
-      <tr align="center">
-        <th>House Side</th>
-        <th>House Address</th>
-        <th>Other</th>
-        <th>Other Address</th>
-        <th>Senate Side</th>
-        <th>Senate Address</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Rayburn House Office Building</td>
-        <td>50 Independence Ave, SW Washington, DC 20515</td>
-        <td>Library of Congress</td>
-        <td>101 Independence Ave SE, Washington, DC 20540</td>
-        <td>Russell Senate Office Building</td>
-        <td>2 Constitution Ave NE, Washington, DC 20002</td>
-      </tr>
-      <tr>
-        <td>Longworth House Office Building</td>
-        <td>15 Independence Ave, SW Washington, DC 20515</td>
-        <td>Supreme Court</td>
-        <td>1 First Street, NE Washington, DC 20543</td>
-        <td>Dirksen Senate Office Building</td>
-        <td>100 Constitution Ave NE Washington, DC 20002</td>
-      </tr>
-      <tr>
-        <td>Cannon House Office Building</td>
-        <td>25 Independence Ave, SE Washington, DC 20003</td>
-        <td>Capitol Visitors Center</td>
-        <td>First &amp; East Capitol St SE, Washington, DC 20004</td>
-        <td>Hart Senate Office Building</td>
-        <td>150 Constitution Ave NE Washington, DC 20510</td>
-      </tr>
-      <tr>
-        <td>Capitol South Metro</td>
-        <td>307 First Street SE Washington, DC 20003</td>
-        <td>Federal Center Metro</td>
-        <td>401 3rd Street SW Washington, DC 20024</td>
-        <td>Union Station Metro</td>
-        <td>701 First St. NE Washington, DC 20002</td>
-      </tr>
-    </tbody>
-  </table>
-  <script src="../js/tables.js"></script>
-</section>
-                  </div>
-                </div>
-
-                                                <div class="kss-markup">
-                  <button class="js-show-markup">Show Markup Example</button>
-                  <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;section&gt;
-  &lt;h3&gt;Responsive Table&lt;/h3&gt;
-  &lt;table class=&quot;responsive-table&quot;&gt;
+&lt;section&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Option #4: Responsive Table&lt;/h3&gt;
+  &lt;table class=&quot;responsive-table&quot; id=&quot;responsive-tableID&quot;&gt;
     &lt;thead&gt;
       &lt;tr align=&quot;center&quot;&gt;
-        &lt;th&gt;House Side&lt;/th&gt;
-        &lt;th&gt;House Address&lt;/th&gt;
-        &lt;th&gt;Other&lt;/th&gt;
-        &lt;th&gt;Other Address&lt;/th&gt;
-        &lt;th&gt;Senate Side&lt;/th&gt;
-        &lt;th&gt;Senate Address&lt;/th&gt;
+        &lt;th class=&quot;responsive&quot;&gt;House Side&lt;/th&gt;
+        &lt;th class=&quot;responsive&quot;&gt;House Address&lt;/th&gt;
+        &lt;th class=&quot;responsive&quot;&gt;Other&lt;/th&gt;
+        &lt;th class=&quot;responsive&quot;&gt;Other Address&lt;/th&gt;
+        &lt;th class=&quot;responsive&quot;&gt;Senate Side&lt;/th&gt;
+        &lt;th class=&quot;responsive&quot;&gt;Senate Address&lt;/th&gt;
       &lt;/tr&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
       &lt;tr&gt;
-        &lt;td&gt;Rayburn House Office Building&lt;/td&gt;
-        &lt;td&gt;50 Independence Ave, SW Washington, DC 20515&lt;/td&gt;
-        &lt;td&gt;Library of Congress&lt;/td&gt;
-        &lt;td&gt;101 Independence Ave SE, Washington, DC 20540&lt;/td&gt;
-        &lt;td&gt;Russell Senate Office Building&lt;/td&gt;
-        &lt;td&gt;2 Constitution Ave NE, Washington, DC 20002&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Rayburn House Office Building&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;50 Independence Ave, SW Washington, DC 20515&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Library of Congress&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;101 Independence Ave SE, Washington, DC 20540&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Russell Senate Office Building&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;2 Constitution Ave NE, Washington, DC 20002&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-        &lt;td&gt;Longworth House Office Building&lt;/td&gt;
-        &lt;td&gt;15 Independence Ave, SW Washington, DC 20515&lt;/td&gt;
-        &lt;td&gt;Supreme Court&lt;/td&gt;
-        &lt;td&gt;1 First Street, NE Washington, DC 20543&lt;/td&gt;
-        &lt;td&gt;Dirksen Senate Office Building&lt;/td&gt;
-        &lt;td&gt;100 Constitution Ave NE Washington, DC 20002&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Longworth House Office Building&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;15 Independence Ave, SW Washington, DC 20515&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Supreme Court&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;1 First Street, NE Washington, DC 20543&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Dirksen Senate Office Building&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;100 Constitution Ave NE Washington, DC 20002&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-        &lt;td&gt;Cannon House Office Building&lt;/td&gt;
-        &lt;td&gt;25 Independence Ave, SE Washington, DC 20003&lt;/td&gt;
-        &lt;td&gt;Capitol Visitors Center&lt;/td&gt;
-        &lt;td&gt;First &amp;amp; East Capitol St SE, Washington, DC 20004&lt;/td&gt;
-        &lt;td&gt;Hart Senate Office Building&lt;/td&gt;
-        &lt;td&gt;150 Constitution Ave NE Washington, DC 20510&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Cannon House Office Building&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;25 Independence Ave, SE Washington, DC 20003&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Capitol Visitors Center&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;First &amp;amp; East Capitol St SE, Washington, DC 20004&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Hart Senate Office Building&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;150 Constitution Ave NE Washington, DC 20510&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-        &lt;td&gt;Capitol South Metro&lt;/td&gt;
-        &lt;td&gt;307 First Street SE Washington, DC 20003&lt;/td&gt;
-        &lt;td&gt;Federal Center Metro&lt;/td&gt;
-        &lt;td&gt;401 3rd Street SW Washington, DC 20024&lt;/td&gt;
-        &lt;td&gt;Union Station Metro&lt;/td&gt;
-        &lt;td&gt;701 First St. NE Washington, DC 20002&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Capitol South Metro&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;307 First Street SE Washington, DC 20003&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Federal Center Metro&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;401 3rd Street SW Washington, DC 20024&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;Union Station Metro&lt;/td&gt;
+        &lt;td class=&quot;responsive&quot;&gt;701 First St. NE Washington, DC 20002&lt;/td&gt;
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
-  &lt;script src=&quot;../js/tables.js&quot;&gt;&lt;/script&gt;
-&lt;/section&gt;</code></pre>
+&lt;/section&gt;
+</code></pre>
                     <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
                     <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
                   </template>
