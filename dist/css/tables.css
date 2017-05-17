@@ -25,6 +25,9 @@
     text-align: center; }
   .tables tr:nth-child(even),
   .responsive-table tr:nth-child(even) {
+    background-color: #ffffff; }
+  .tables tr:nth-child(odd),
+  .responsive-table tr:nth-child(odd) {
     background-color: #f7f7f7; }
   .tables th,
   .responsive-table th {
