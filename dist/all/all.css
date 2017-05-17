@@ -1652,30 +1652,44 @@ a[target='_blank']::after {
   width: 100%;
   overflow-x: auto; }
 
-.tables,
-.responsive-table {
+.tables {
   border-collapse: collapse;
   width: 100%; }
-  .tables caption,
-  .responsive-table caption {
+  .tables caption {
     padding: 1rem 0;
     font-size: 1.5rem; }
-  .tables tbody,
-  .responsive-table tbody {
+  .tables tbody {
     border-collapse: collapse;
     width: 100%; }
   .tables td,
-  .tables th,
+  .tables th {
+    border: 1px solid #dddddd;
+    padding: 10px 16px;
+    text-align: center;
+    height: 50px; }
+  .tables tr:nth-child(even) {
+    background-color: #f7f7f7; }
+  .tables th {
+    background-color: #e00000;
+    color: #ffffff; }
+
+.responsive-table {
+  border-collapse: collapse;
+  width: 100%; }
+  .responsive-table caption {
+    padding: 1rem 0;
+    font-size: 1.5rem; }
+  .responsive-table tbody {
+    border-collapse: collapse;
+    width: 100%; }
   .responsive-table td,
   .responsive-table th {
     border: 1px solid #dddddd;
     padding: 10px 16px;
     text-align: center;
     height: 50px; }
-  .tables tr:nth-child(even),
   .responsive-table tr:nth-child(even) {
     background-color: #f7f7f7; }
-  .tables th,
   .responsive-table th {
     background-color: #e00000;
     color: #ffffff; }

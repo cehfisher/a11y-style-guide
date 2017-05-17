@@ -1,0 +1,61 @@
+// Tables - Basic
+//
+// <ul>
+//  <li>Tables with one header and simple data are fairly accessible out of the box and may not need additional accessibility updates. Always use the simplest table configuration possible.</li>
+//  <li>When your tables get more complex, use the `<th>` element to identify the header cells by adding a scope attribute. For header rows use `<th scope="row">`. For header columns use `<th scope="col">`</li>
+//  <li>Add the optional `<caption>` element before the table content to give users more information on the table contents. Think of it as a headline for your table.</li>
+// </ul>
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tables_res">Resources</a></h3><div id="tables_res" class="atblock__panel"><ul><li><a href="https://www.w3.org/WAI/tutorials/tables" target="_blank">Web Accessibility Tutorials - Table Concepts</a></li></ul></div></section>
+//
+//
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tables_guide">WCAG 2.0 Guidelines</a></h3><div id="tables_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</p></div><div class="markup"></div></section>
+//
+//
+//
+// Markup: tables-basic.twig
+//
+// Style guide: Structure.tables-basic
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.tables-section,
+.tables-section2,
+.tables-section3 {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tables {
+  border-collapse: collapse;
+  width: 100%;
+
+  caption {
+    padding: $padding-sm 0;
+    font-size: 1.5rem;
+  }
+
+  tbody {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid $color-alto;
+    padding: 10px 16px;
+    text-align: center;
+    height: 50px;
+  }
+
+  tr:nth-child(even) {
+    background-color: $color-alabaster;
+  }
+
+  th {
+    background-color: $color-cherry;
+    color: $color-white;
+  }
+}

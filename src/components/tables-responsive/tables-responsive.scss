@@ -1,4 +1,4 @@
-// Tables
+// Tables - Responsive
 //
 // <ul>
 //  <li>Tables with one header and simple data are fairly accessible out of the box and may not need additional accessibility updates. Always use the simplest table configuration possible.</li>
@@ -14,21 +14,13 @@
 //
 //
 //
-// Markup: tables.twig
+// Markup: tables-responsive.twig
 //
-// Style guide: Structure.tables
+// Style guide: Structure.tables-responsive
 
 // Import site utilities.
 @import '../../global/utils/init';
 
-.tables-section,
-.tables-section2,
-.tables-section3 {
-  width: 100%;
-  overflow-x: auto;
-}
-
-.tables,
 .responsive-table {
   border-collapse: collapse;
   width: 100%;
@@ -61,7 +53,6 @@
   }
 }
 
-// Responsive table styling
 .responsive-header {
   display: none;
 }
