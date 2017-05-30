@@ -1094,6 +1094,12 @@ input[type='search'] {
   vertical-align: middle; }
 
 
+/*
+  Styles for 'pressed' button state
+*/
+.button[aria-pressed='true'] {
+  background: #a51323; }
+
 #kss-node .kss-section {
   margin-bottom: 3rem;
   padding-bottom: 2rem;

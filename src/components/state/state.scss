@@ -1,0 +1,19 @@
+// State
+//
+// <ul>
+//  <li>Thinking about using an `.is-disabled` class on your `<button></button>` or `<input type="text" />`? That's only going to visually disable it. You're still going to have to programmatically turn off click and keyboard events to that element. Instead use the `[disabled]` attribute and you'll have yourself a CSS selector to style your element, and the browser will do all the appropriate work to disable that element for you!</li>
+// </ul>
+//
+// Markup: state.twig
+//
+// Style guide: Forms.State
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+/*
+  Styles for 'pressed' button state
+*/
+.button[aria-pressed='true'] {
+  background: $color-ruby;
+}

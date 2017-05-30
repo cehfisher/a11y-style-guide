@@ -1,0 +1,5 @@
+/*
+  Styles for 'pressed' button state
+*/
+.button[aria-pressed='true'] {
+  background: #a51323; }
