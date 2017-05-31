@@ -84,6 +84,9 @@
       <article role="main" class="kss-article">
       
         
+
+        <div><div class="social-link-out"><a href="https://twitter.com/cariefisher" target="_blank" class="social-link-twitter"><span class="visuallyhidden">Carie Fisher on Twitter</span></a><a href="https://github.com/cehfisher" target="_blank" class="social-link-github"><span class="visuallyhidden">Carie Fisher on GitHub</span></a></div>
+
                             <div id="kssref-general-buttons" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
@@ -101,6 +104,7 @@
  <li>Your button needs a descriptive name. Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
  <li>If the button only contains an <code>&lt;img&gt;</code> element, make sure to set its <code>alt</code> attribute. If it only contains an icon, use <code>aria-label</code>.</li>
  <li>You can also use <code>&lt;input type=&quot;image&quot;&gt;</code> to make a graphical button. It takes a <code>src</code> and <code>alt</code> attribute just like traditional images.</li>
+ <li>Thinking about using an <code>.is-disabled</code> class on your <code>&lt;button&gt;&lt;/button&gt;</code> or <code>&lt;input type=&quot;text&quot; /&gt;</code>? That&#39;s only going to visually disable it. You&#39;re still going to have to programmatically turn off click and keyboard events to that element. Instead use the <code>[disabled]</code> attribute and you&#39;ll have yourself a CSS selector to style your element, and the browser will do all the appropriate work to disable that element for you!</li>
 </ul>
 
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#button_res">Resources</a></h3><div id="button_res" class="atblock__panel"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank">Using the button role</a></li><li><a href="https://www.deque.com/blog/accessible-aria-buttons" target="_blank">Building Accessible Buttons with ARIA</a></li><li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/button/button.html" target="_blank">W3C Button Examples</a></li></ul></div></section>
@@ -119,12 +123,9 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     <section class="buttons-section">
-  <button type="button" class="button">Regular Button</button>
-  <button type="button" class="button-icon heart button--outline">Like</button>
-  <a href="#" class="button-icon wheelchair" type="button" role="button" id="toggle" aria-pressed="false">A11Y<span class="visuallyhidden">all the things.</span></a>
-  <a href="#" class="button--outline" role="button" type="button" role="button" id="print" aria-pressed="false">Print Page</a>
-  <a href="#" class="button" type="button" role="button" id="alert1" aria-pressed="false">Tell me something nice</a>
-  <input type="image" class="button--outline magnifyingglass" src="../assets/searchicon.png" alt="Search"
+  <button class="button" id="button_state" aria-pressed="false" aria-describedby="item_title">Regular Button</button>
+  <button class="button-icon wheelchair button--outline" id="toggle" aria-pressed="false" aria-describedby="item_title">A11Y<span class="visuallyhidden">all the things.</span></button>
+  <input type="image" class="button--outline magnifyingglass" id="toggle" aria-pressed="false" src="../assets/searchicon.png" alt="Search" />
 </section>
 
                   </div>
@@ -134,12 +135,9 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;buttons-section&quot;&gt;
-  &lt;button type=&quot;button&quot; class=&quot;button&quot;&gt;Regular Button&lt;/button&gt;
-  &lt;button type=&quot;button&quot; class=&quot;button-icon heart button--outline&quot;&gt;Like&lt;/button&gt;
-  &lt;a href=&quot;#&quot; class=&quot;button-icon wheelchair&quot; type=&quot;button&quot; role=&quot;button&quot; id=&quot;toggle&quot; aria-pressed=&quot;false&quot;&gt;A11Y&lt;span class=&quot;visuallyhidden&quot;&gt;all the things.&lt;/span&gt;&lt;/a&gt;
-  &lt;a href=&quot;#&quot; class=&quot;button--outline&quot; role=&quot;button&quot; type=&quot;button&quot; role=&quot;button&quot; id=&quot;print&quot; aria-pressed=&quot;false&quot;&gt;Print Page&lt;/a&gt;
-  &lt;a href=&quot;#&quot; class=&quot;button&quot; type=&quot;button&quot; role=&quot;button&quot; id=&quot;alert1&quot; aria-pressed=&quot;false&quot;&gt;Tell me something nice&lt;/a&gt;
-  &lt;input type=&quot;image&quot; class=&quot;button--outline magnifyingglass&quot; src=&quot;../assets/searchicon.png&quot; alt=&quot;Search&quot;
+  &lt;button class=&quot;button&quot; id=&quot;button_state&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;item_title&quot;&gt;Regular Button&lt;/button&gt;
+  &lt;button class=&quot;button-icon wheelchair button--outline&quot; id=&quot;toggle&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;item_title&quot;&gt;A11Y&lt;span class=&quot;visuallyhidden&quot;&gt;all the things.&lt;/span&gt;&lt;/button&gt;
+  &lt;input type=&quot;image&quot; class=&quot;button--outline magnifyingglass&quot; id=&quot;toggle&quot; aria-pressed=&quot;false&quot; src=&quot;../assets/searchicon.png&quot; alt=&quot;Search&quot; /&gt;
 &lt;/section&gt;
 </code></pre>
                     <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
@@ -172,7 +170,7 @@
 <script src="../js/aria-toggle.js"></script>
 <script src="../js/aria-tooltips.js"></script>
 <script src="../js/back-to-top.js"></script>
-<script src="../js/button-alert.js"></script>
+<script src="../js/button-state.js"></script>
 <script src="../js/button.js"></script>
 <script src="../js/clipboard.min.js"></script>
 <script src="../js/copy-button.js"></script>
@@ -180,7 +178,6 @@
 <script src="../js/mobile-menu-icon.js"></script>
 <script src="../js/mobile-menu.js"></script>
 <script src="../js/sidebar-slide.js"></script>
-<script src="../js/state.js"></script>
 <script src="../js/tables.js"></script>
 
 

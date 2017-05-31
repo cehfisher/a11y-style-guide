@@ -193,3 +193,6 @@ html [type='button'],
   .button-icon.wheelchair::before {
     content: '\267F';
     color: #464646; }
+
+.button[aria-pressed='true'] {
+  background: #a51323; }
