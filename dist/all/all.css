@@ -675,6 +675,12 @@ html [type='button'],
 .button[aria-pressed='true'] {
   background: #a51323; }
 
+.magnifyingglass {
+  margin: -0.5rem 1rem;
+  width: 28px; }
+  .magnifyingglass:hover, .magnifyingglass:active {
+    opacity: 0.6; }
+
 .checkbox.row label {
   display: block;
   float: left;
