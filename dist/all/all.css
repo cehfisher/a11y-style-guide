@@ -616,7 +616,7 @@ html [type='button'],
   min-height: 48px;
   position: relative;
   margin: 0.5rem 0;
-  line-height: 0.9;
+  line-height: 1.2;
   padding: 0.8rem 2rem 0.8rem 2.5rem;
   height: 48px; }
   .button-icon:hover, .button-icon:focus {
@@ -680,6 +680,15 @@ html [type='button'],
   width: 28px; }
   .magnifyingglass:hover, .magnifyingglass:active {
     opacity: 0.6; }
+
+.button[aria-pressed='true'],
+.button-icon[aria-pressed='true'] {
+  background: #42dc42;
+  color: #464646; }
+  .button[aria-pressed='true']:focus,
+  .button-icon[aria-pressed='true']:focus {
+    background: #42dc42;
+    color: #464646; }
 
 .checkbox.row label {
   display: block;

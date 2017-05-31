@@ -147,17 +147,14 @@
 
                               <div class="kss-description">
                   <ul>
- <li>It is important to know when to use a link and when to use a button. A button does an action while a link takes you to another URL.</li>
- <li>A <code>&lt;button&gt;</code> element does not need anything special to work. ARIA&#39;s <code>role=&quot;button&quot;</code> is already assigned implicitly. So if you need a button, use a true <code>&lt;button&gt;</code> element.</li>
- <li>Use <code>&lt;button&gt;</code> when you can, but it is possible to use other elements as long as you add <code>role=&quot;button&quot;</code> and add JavaScript to replicate the button functionality.</li>
- <li>Remember that <code>&lt;button&gt;</code> defaults to <code>type=&quot;submit&quot;</code>, so adding <code>type=&quot;button&quot;</code> helps you avoid accidentally submitting forms.</li>
- <li>Your button needs a descriptive name. Add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
- <li>If the button only contains an <code>&lt;img&gt;</code> element, make sure to set its <code>alt</code> attribute. If it only contains an icon, use <code>aria-label</code>.</li>
- <li>You can also use <code>&lt;input type=&quot;image&quot;&gt;</code> to make a graphical button. It takes a <code>src</code> and <code>alt</code> attribute just like traditional images.</li>
- <li>Thinking about using an <code>.is-disabled</code> class on your <code>&lt;button&gt;&lt;/button&gt;</code> or <code>&lt;input type=&quot;text&quot; /&gt;</code>? That&#39;s only going to visually disable it. You&#39;re still going to have to programmatically turn off click and keyboard events to that element. Instead use the <code>[disabled]</code> attribute and you&#39;ll have yourself a CSS selector to style your element, and the browser will do all the appropriate work to disable that element for you!</li>
+ <li>A <code>&lt;button&gt;</code> tag does not need anything special to work. Use <code>&lt;button&gt;</code> when you can, but it is possible to use other elements as long as you add <code>role=&quot;button&quot;</code> and add JavaScript to replicate the button functionality.</li>
+ <li>Just like links, you can add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
+ <li>If a button contains an <code>&lt;img&gt;</code> element, make sure to set its <code>alt</code> attribute. If it contains an icon, use <code>aria-label</code> to describe the icon instead.</li>
+ <li>You can use <code>&lt;input type=&quot;image&quot;&gt;</code> to make a graphical button. It takes a <code>src</code> and <code>alt</code> attribute just like traditional images.</li>
+ <li>Button states are important, not just button styling! If you are only toggling classes to visually manage state of your components, you are likely not appropriately conveying that state to users of assistive technologies.</li>
 </ul>
 
-<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#button_res">Resources</a></h3><div id="button_res" class="atblock__panel"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank">Using the button role</a></li><li><a href="https://www.deque.com/blog/accessible-aria-buttons" target="_blank">Building Accessible Buttons with ARIA</a></li><li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/button/button.html" target="_blank">W3C Button Examples</a></li></ul></div></section>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#button_res">Resources</a></h3><div id="button_res" class="atblock__panel"><ul><li><a href="https://www.deque.com/blog/accessible-aria-buttons" target="_blank">Building Accessible Buttons with ARIA</a></li><li><a href="https://css-tricks.com/user-facing-state/" target="_blank">User Facing State</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank">Using the button role</a></li><li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/button/button.html" target="_blank">W3C Button Examples</a></li></ul></div></section>
 
 
 
@@ -173,8 +170,9 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     <section class="buttons-section">
-  <button class="button" id="button_state" aria-pressed="false" aria-describedby="item_title">Regular Button</button>
-  <button class="button-icon wheelchair button--outline" id="button_all" aria-pressed="false" aria-describedby="item_title">A11Y<span class="visuallyhidden">all the things.</span></button>
+  <button class="button" id="button_state" aria-pressed="false" aria-describedby="Regular button example">Regular Button</button>
+  <button type="button" class="button-icon heart button--outline" id="button_like" aria-pressed="false" aria-describedby="Like button example" aria-label="heart icon">Like</button>
+  <button class="button-icon wheelchair" id="button_all" aria-pressed="false" aria-describedby="A11y test button example" aria-label="wheelchair icon">A11Y<span class="visuallyhidden">all the things.</span></button>
   <input type="image" class="magnifyingglass" id="button_search" aria-pressed="false" src="../assets/searchicon.png" alt="Search" />
 </section>
 
@@ -185,8 +183,9 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;buttons-section&quot;&gt;
-  &lt;button class=&quot;button&quot; id=&quot;button_state&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;item_title&quot;&gt;Regular Button&lt;/button&gt;
-  &lt;button class=&quot;button-icon wheelchair button--outline&quot; id=&quot;button_all&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;item_title&quot;&gt;A11Y&lt;span class=&quot;visuallyhidden&quot;&gt;all the things.&lt;/span&gt;&lt;/button&gt;
+  &lt;button class=&quot;button&quot; id=&quot;button_state&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;Regular button example&quot;&gt;Regular Button&lt;/button&gt;
+  &lt;button type=&quot;button&quot; class=&quot;button-icon heart button--outline&quot; id=&quot;button_like&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;Like button example&quot; aria-label=&quot;heart icon&quot;&gt;Like&lt;/button&gt;
+  &lt;button class=&quot;button-icon wheelchair&quot; id=&quot;button_all&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;A11y test button example&quot; aria-label=&quot;wheelchair icon&quot;&gt;A11Y&lt;span class=&quot;visuallyhidden&quot;&gt;all the things.&lt;/span&gt;&lt;/button&gt;
   &lt;input type=&quot;image&quot; class=&quot;magnifyingglass&quot; id=&quot;button_search&quot; aria-pressed=&quot;false&quot; src=&quot;../assets/searchicon.png&quot; alt=&quot;Search&quot; /&gt;
 &lt;/section&gt;
 </code></pre>
