@@ -1,7 +1,5 @@
 #kss-node .kss-section {
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #bbbbbb; }
+  margin-bottom: 2rem; }
   #kss-node .kss-section:first-child, #kss-node .kss-section:last-child {
     border-bottom: 0;
     margin-bottom: 0;
@@ -195,7 +193,7 @@
   @media (min-width: 55em) {
     #kss-node .kss-depth-1 .kss-title,
     #kss-node .kss-overview > h1:first-child {
-      font-size: 42px; } }
+      font-size: 38px; } }
 
 #kss-node .kss-depth-2 .kss-title {
   font-weight: 100;
@@ -243,7 +241,7 @@
   font-size: 30px; }
   @media (min-width: 55em) {
     #kss-node .kss-overview h1 {
-      font-size: 42px; } }
+      font-size: 38px; } }
 
 #kss-node .kss-overview h2 {
   font-size: 24px; }
@@ -480,7 +478,8 @@ a[target='_blank']::after {
   background: url("../assets/icon_twitter.png");
   background-size: 32px;
   background-repeat: no-repeat;
-  padding: 1rem 1.5rem; }
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
   .social-link-twitter[target='_blank']::after {
     display: none; }
 
@@ -489,7 +488,8 @@ a[target='_blank']::after {
   background: url("../assets/icon_github.png");
   background-size: 32px;
   background-repeat: no-repeat;
-  padding: 1rem 1.5rem; }
+  padding: 0.5rem 1rem;
+  margin: 0.5rem; }
   .social-link-github[target='_blank']::after {
     display: none; }
 

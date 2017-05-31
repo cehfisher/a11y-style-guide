@@ -1,3 +1,4 @@
-a:focus {
+a:focus,
+.button-icon:focus {
   outline: auto 2px Highlight;
   outline: auto 5px -webkit-focus-ring-color; }

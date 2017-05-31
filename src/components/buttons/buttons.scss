@@ -1,16 +1,14 @@
 // Buttons
 //
 // <ul>
-//  <li>It is important to know when to use a link and when to use a button. A button does an action while a link takes you to another URL.</li>
-//  <li>A `<button>` element does not need anything special to work. ARIA's `role="button"` is already assigned implicitly. So if you need a button, use a true `<button>` element.</li>
-//  <li>Use `<button>` when you can, but it is possible to use other elements as long as you add `role="button"` and add JavaScript to replicate the button functionality.</li>
-//  <li>Remember that `<button>` defaults to `type="submit"`, so adding `type="button"` helps you avoid accidentally submitting forms.</li>
-//  <li>Your button needs a descriptive name. Add `class="visuallyhidden"` with descriptive text to give more context to the button's purpose.</li>
-//  <li>If the button only contains an <code>&lt;img&gt;</code> element, make sure to set its `alt` attribute. If it only contains an icon, use `aria-label`.</li>
-//  <li>You can also use <code>&lt;input type=&quot;image&quot;&gt;</code> to make a graphical button. It takes a `src` and `alt` attribute just like traditional images.</li>
+//  <li>A `<button>` tag does not need anything special to work. Use `<button>` when you can, but it is possible to use other elements as long as you add `role="button"` and add JavaScript to replicate the button functionality.</li>
+//  <li>Just like links, you can add `class="visuallyhidden"` with descriptive text to give more context to the button's purpose.</li>
+//  <li>If a button contains an <code>&lt;img&gt;</code> element, make sure to set its `alt` attribute. If it contains an icon, use `aria-label` to describe the icon instead.</li>
+//  <li>You can use <code>&lt;input type=&quot;image&quot;&gt;</code> to make a graphical button. It takes a `src` and `alt` attribute just like traditional images.</li>
+//  <li>Button states are important, not just button styling! If you are only toggling classes to visually manage state of your components, you are likely not appropriately conveying that state to users of assistive technologies.</li>
 // </ul>
 //
-// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#button_res">Resources</a></h3><div id="button_res" class="atblock__panel"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank">Using the button role</a></li><li><a href="https://www.deque.com/blog/accessible-aria-buttons" target="_blank">Building Accessible Buttons with ARIA</a></li><li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/button/button.html" target="_blank">W3C Button Examples</a></li></ul></div></section>
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#button_res">Resources</a></h3><div id="button_res" class="atblock__panel"><ul><li><a href="https://www.deque.com/blog/accessible-aria-buttons" target="_blank">Building Accessible Buttons with ARIA</a></li><li><a href="https://css-tricks.com/user-facing-state/" target="_blank">User Facing State</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank">Using the button role</a></li><li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/button/button.html" target="_blank">W3C Button Examples</a></li></ul></div></section>
 //
 //
 //
@@ -78,7 +76,7 @@ html [type='button'],
 
 .button-icon {
   @include button;
-  line-height: 0.9;
+  line-height: 1.2;
   padding: 0.8rem $padding-md 0.8rem ($padding-md + $padding-xsm);
   height: 48px;
 
@@ -115,5 +113,30 @@ html [type='button'],
       content: '\267F';
       color: $color-midnight;
     }
+  }
+}
+
+.button[aria-pressed='true'] {
+  background: $color-ruby;
+}
+
+.magnifyingglass {
+  margin: -$padding-xsm $padding-sm;
+  width: 28px;
+
+  &:hover,
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.button[aria-pressed='true'],
+.button-icon[aria-pressed='true'] {
+  background: $color-grass;
+  color: $color-midnight;
+
+  &:focus {
+    background: $color-grass;
+    color: $color-midnight;
   }
 }
