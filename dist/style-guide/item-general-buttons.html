@@ -57,22 +57,25 @@
         <ul id="kss-nav-list" class="kss-menu">
           <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
                       <li class="kss-menu-item">
-              <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
+              <a href="section-components.html"><span class="kss-ref">1</span><span class="kss-name">Components</span></a>
                           </li>
                       <li class="kss-menu-item">
-              <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
+              <a href="section-forms.html"><span class="kss-ref">2</span><span class="kss-name">Forms</span></a>
                           </li>
                       <li class="kss-menu-item">
-              <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
+              <a href="section-general.html"><span class="kss-ref">3</span><span class="kss-name">General</span></a>
                           </li>
                       <li class="kss-menu-item">
-              <a href="section-navigation.html"><span class="kss-ref">4</span><span class="kss-name">Navigation</span></a>
+              <a href="section-media.html"><span class="kss-ref">4</span><span class="kss-name">Media</span></a>
                           </li>
                       <li class="kss-menu-item">
-              <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
+              <a href="section-navigation.html"><span class="kss-ref">5</span><span class="kss-name">Navigation</span></a>
                           </li>
                       <li class="kss-menu-item">
-              <a href="section-resources.html"><span class="kss-ref">6</span><span class="kss-name">Resources</span></a>
+              <a href="section-structure.html"><span class="kss-ref">6</span><span class="kss-name">Structure</span></a>
+                          </li>
+                      <li class="kss-menu-item">
+              <a href="section-resources.html"><span class="kss-ref">7</span><span class="kss-name">Resources</span></a>
                           </li>
                     </ul>
         </nav>
@@ -120,9 +123,11 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     <section class="buttons-section">
-  <button class="button" id="button_state" aria-pressed="false" aria-describedby="Regular button example">Regular Button</button>
-  <button type="button" class="button-icon heart button--outline" id="button_like" aria-pressed="false" aria-describedby="Like button example" aria-label="heart icon">Like</button>
-  <button class="button-icon wheelchair" id="button_all" aria-pressed="false" aria-describedby="A11y test button example" aria-label="wheelchair icon">A11Y<span class="visuallyhidden">all the things.</span></button>
+  <button class="button" id="button_state" aria-pressed="false" aria-describedby="button-example">Button</button>
+  <span id="button-example" class="visuallyhidden">Example button markup</span>
+  <button type="button" class="button-icon heart button--outline" id="button_like" aria-pressed="false" aria-describedby="like-button-example" aria-label="heart icon">Like</button>
+  <span id="like-button-example" class="visuallyhidden">Like example button markup</span>
+  <button class="button-icon wheelchair" id="button_all" aria-pressed="false" aria-describedby="a11y-button-example" aria-label="wheelchair icon">A11Y<span class="visuallyhidden">all the things.</span><span id="a11y-button-example" class="visuallyhidden">A11y example button markup</span></button>
   <input type="image" class="magnifyingglass" id="button_search" aria-pressed="false" src="../assets/searchicon.png" alt="Search" />
 </section>
 
@@ -133,9 +138,11 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;buttons-section&quot;&gt;
-  &lt;button class=&quot;button&quot; id=&quot;button_state&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;Regular button example&quot;&gt;Regular Button&lt;/button&gt;
-  &lt;button type=&quot;button&quot; class=&quot;button-icon heart button--outline&quot; id=&quot;button_like&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;Like button example&quot; aria-label=&quot;heart icon&quot;&gt;Like&lt;/button&gt;
-  &lt;button class=&quot;button-icon wheelchair&quot; id=&quot;button_all&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;A11y test button example&quot; aria-label=&quot;wheelchair icon&quot;&gt;A11Y&lt;span class=&quot;visuallyhidden&quot;&gt;all the things.&lt;/span&gt;&lt;/button&gt;
+  &lt;button class=&quot;button&quot; id=&quot;button_state&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;button-example&quot;&gt;Button&lt;/button&gt;
+  &lt;span id=&quot;button-example&quot; class=&quot;visuallyhidden&quot;&gt;Example button markup&lt;/span&gt;
+  &lt;button type=&quot;button&quot; class=&quot;button-icon heart button--outline&quot; id=&quot;button_like&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;like-button-example&quot; aria-label=&quot;heart icon&quot;&gt;Like&lt;/button&gt;
+  &lt;span id=&quot;like-button-example&quot; class=&quot;visuallyhidden&quot;&gt;Like example button markup&lt;/span&gt;
+  &lt;button class=&quot;button-icon wheelchair&quot; id=&quot;button_all&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;a11y-button-example&quot; aria-label=&quot;wheelchair icon&quot;&gt;A11Y&lt;span class=&quot;visuallyhidden&quot;&gt;all the things.&lt;/span&gt;&lt;span id=&quot;a11y-button-example&quot; class=&quot;visuallyhidden&quot;&gt;A11y example button markup&lt;/span&gt;&lt;/button&gt;
   &lt;input type=&quot;image&quot; class=&quot;magnifyingglass&quot; id=&quot;button_search&quot; aria-pressed=&quot;false&quot; src=&quot;../assets/searchicon.png&quot; alt=&quot;Search&quot; /&gt;
 &lt;/section&gt;
 </code></pre>
@@ -171,6 +178,7 @@
 <script src="../js/back-to-top.js"></script>
 <script src="../js/button-state.js"></script>
 <script src="../js/button.js"></script>
+<script src="../js/card-flip.js"></script>
 <script src="../js/clipboard.min.js"></script>
 <script src="../js/copy-button.js"></script>
 <script src="../js/jump-link-fix.js"></script>
