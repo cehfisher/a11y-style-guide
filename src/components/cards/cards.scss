@@ -2,15 +2,8 @@
 //
 // Markup: cards.twig
 //
-// Style guide: Components.cards
+// Style guide: Experimental.cards
 
-/**
- * The cards
- *
- * Each card plays home to a front and back. I've set them up as squares here
- * by using the padding technique, but you may set them up in any dimensions
- * you like based on your site design.
- */
 .card {
   position: relative;
   float: left;
@@ -41,10 +34,8 @@
 
 .card__front,
 .card__back {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.3s;
-          transition: transform 0.3s;
+  backface-visibility: hidden;
+  transition: transform 0.3s;
 }
 
 .card__front {
@@ -53,8 +44,7 @@
 
 .card__back {
   background-color: #1e1e1e;
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
 /* card text */
@@ -68,28 +58,14 @@
   margin: auto;
   height: 20px;
   color: #fff;
-  font-family: "Roboto Slab", serif;
   line-height: 20px;
 }
 
-/* hover effect */
-.card.effect__hover:hover .card__front {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-}
-
-.card.effect__hover:hover .card__back {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-}
-
 /* click effect */
-.card.effect__click.flipped .card__front {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+.card.card__click.flipped .card__front {
+  transform: rotateY(-180deg);
 }
 
-.card.effect__click.flipped .card__back {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
+.card.card__click.flipped .card__back {
+  transform: rotateY(0);
 }

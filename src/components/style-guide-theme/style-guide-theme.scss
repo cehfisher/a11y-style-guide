@@ -134,8 +134,8 @@
       .kss-nav {
         padding: $padding-xsm 0;
         margin: $padding-xsm 0;
-        max-height: calc(125vh - 44px - 68px - 30px);
-        overflow-y: auto;
+        max-height: 100%;
+        overflow-y: auto !important;
         clear: both;
         width: 100%;
       }
