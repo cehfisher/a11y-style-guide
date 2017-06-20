@@ -105,39 +105,65 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <div class="section__content clearfix">
-  <button id="card1" class="card card__click" aria-pressed="false">
-    <div class="card__front">
-      <span class="card__text">True or False:<br>Sloths can swim.</span>
-    </div>
-    <div class="card__back">
-      <span class="card__text">True!<br>Sloths are clumsy on land but are great swimmers.</span>
-    </div>
-  </button><!-- /card -->
-  <button id="card2" class="card card__click" aria-pressed="false">
-    <div class="card__front">
-      <span class="card__text">True or False:<br>Sloths have short tongues.</span>
-    </div>
-    <div class="card__back">
-      <span class="card__text">False!<br>Sloths can extend their tongues 10 to 12 inches out of their mouths.</span>
-    </div>
-  </button><!-- /card -->
-  <button id="card3" class="card card__click" aria-pressed="false">
-    <div class="card__front">
-      <span class="card__text">True or False:<br>Sloths sleep away most of the day.</span>
-    </div>
-    <div class="card__back">
-      <span class="card__text">False!<br>Sloths only sleep up to 10 hours a day.</span>
-    </div>
-  </button><!-- /card -->
-  <button id="card4" class="card card__click" aria-pressed="false">
-    <div class="card__front">
-      <span class="card__text">True or False:<br>Sloths have four-part stomachs.</span>
-    </div>
-    <div class="card__back">
-      <span class="card__text">True!<br>Sloths have a four-part stomach that very slowly digests the tough leaves they eat, it can sometimes take up to a month for them to digest a meal.</span>
+                    <div class="toggle card effect__click">
+  <button aria-controls="content">
+    <div class="cards__item-image card__front">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Two_toed_sloth.JPG" alt="Alt text related to the image" />
+      <p>True or False:<br>Sloths can swim</p>
     </div>
   </button>
+  <div id="content" class="card__back">
+    <a href="#">True!<br>Sloths are clumsy on land but are great swimmers</a>
+    <a href="#">Learn more about sloths</a>
+  </div><!--/#content-->
+</div><!--/.toggle-->
+
+  <div class="cards__content">
+    <div class="cards__column">
+      <div class="cards__item card effect__click">
+        <button id="card1" aria-pressed="false">
+          <div class="card__front">
+            <span class="card__text">True or False:<br>Sloths can swim.</span>
+          </div>
+          <div class="card__back">
+            <span class="card__text" aria-hidden="true">True!<br>Sloths are clumsy on land but are great swimmers.</span>
+          </div>
+        </button><!-- /cards -->
+      </div>
+    </div>
+    <div class="cards__column">
+      <div class="cards__item card effect__click">
+        <button id="card2" aria-pressed="false">
+          <div class="card__front">
+            <span class="cards__text">True or False:<br>Sloths have short tongues.</span>
+          </div>
+          <div class="cards__back">
+            <span class="cards__text">False!<br>Sloths can extend their tongues 10 to 12 inches out of their mouths.</span>
+          </div>
+        </button><!-- /cards -->
+      </div>
+    </div>
+    <div class="cards__column">
+      <button id="cards3" class="cards cards__click" aria-pressed="false">
+        <div class="cards__front">
+          <span class="cards__text">True or False:<br>Sloths sleep away most of the day.</span>
+        </div>
+        <div class="cards__back">
+          <span class="cards__text">False!<br>Sloths only sleep up to 10 hours a day.</span>
+        </div>
+      </button><!-- /cards -->
+    </div>
+    <div class="cards__column">
+      <button id="cards4" class="cards cards__click" aria-pressed="false">
+        <div class="cards__front">
+          <span class="cards__text">True or False:<br>Sloths have four-part stomachs.</span>
+        </div>
+        <div class="cards__back">
+          <span class="cards__text">True!<br>Sloths have a four-part stomach that very slowly digests the tough leaves they eat, it can sometimes take up to a month for them to digest a meal.</span>
+        </div>
+      </button>
+    </div>
+  </div>
 </div>
                   </div>
                 </div>
@@ -145,39 +171,65 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;div class=&quot;section__content clearfix&quot;&gt;
-  &lt;button id=&quot;card1&quot; class=&quot;card card__click&quot; aria-pressed=&quot;false&quot;&gt;
-    &lt;div class=&quot;card__front&quot;&gt;
-      &lt;span class=&quot;card__text&quot;&gt;True or False:&lt;br&gt;Sloths can swim.&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;card__back&quot;&gt;
-      &lt;span class=&quot;card__text&quot;&gt;True!&lt;br&gt;Sloths are clumsy on land but are great swimmers.&lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/button&gt;&lt;!-- /card --&gt;
-  &lt;button id=&quot;card2&quot; class=&quot;card card__click&quot; aria-pressed=&quot;false&quot;&gt;
-    &lt;div class=&quot;card__front&quot;&gt;
-      &lt;span class=&quot;card__text&quot;&gt;True or False:&lt;br&gt;Sloths have short tongues.&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;card__back&quot;&gt;
-      &lt;span class=&quot;card__text&quot;&gt;False!&lt;br&gt;Sloths can extend their tongues 10 to 12 inches out of their mouths.&lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/button&gt;&lt;!-- /card --&gt;
-  &lt;button id=&quot;card3&quot; class=&quot;card card__click&quot; aria-pressed=&quot;false&quot;&gt;
-    &lt;div class=&quot;card__front&quot;&gt;
-      &lt;span class=&quot;card__text&quot;&gt;True or False:&lt;br&gt;Sloths sleep away most of the day.&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;card__back&quot;&gt;
-      &lt;span class=&quot;card__text&quot;&gt;False!&lt;br&gt;Sloths only sleep up to 10 hours a day.&lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/button&gt;&lt;!-- /card --&gt;
-  &lt;button id=&quot;card4&quot; class=&quot;card card__click&quot; aria-pressed=&quot;false&quot;&gt;
-    &lt;div class=&quot;card__front&quot;&gt;
-      &lt;span class=&quot;card__text&quot;&gt;True or False:&lt;br&gt;Sloths have four-part stomachs.&lt;/span&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;card__back&quot;&gt;
-      &lt;span class=&quot;card__text&quot;&gt;True!&lt;br&gt;Sloths have a four-part stomach that very slowly digests the tough leaves they eat, it can sometimes take up to a month for them to digest a meal.&lt;/span&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;div class=&quot;toggle card effect__click&quot;&gt;
+  &lt;button aria-controls=&quot;content&quot;&gt;
+    &lt;div class=&quot;cards__item-image card__front&quot;&gt;
+      &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/b/b1/Two_toed_sloth.JPG&quot; alt=&quot;Alt text related to the image&quot; /&gt;
+      &lt;p&gt;True or False:&lt;br&gt;Sloths can swim&lt;/p&gt;
     &lt;/div&gt;
   &lt;/button&gt;
+  &lt;div id=&quot;content&quot; class=&quot;card__back&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;True!&lt;br&gt;Sloths are clumsy on land but are great swimmers&lt;/a&gt;
+    &lt;a href=&quot;#&quot;&gt;Learn more about sloths&lt;/a&gt;
+  &lt;/div&gt;&lt;!--/#content--&gt;
+&lt;/div&gt;&lt;!--/.toggle--&gt;
+
+  &lt;div class=&quot;cards__content&quot;&gt;
+    &lt;div class=&quot;cards__column&quot;&gt;
+      &lt;div class=&quot;cards__item card effect__click&quot;&gt;
+        &lt;button id=&quot;card1&quot; aria-pressed=&quot;false&quot;&gt;
+          &lt;div class=&quot;card__front&quot;&gt;
+            &lt;span class=&quot;card__text&quot;&gt;True or False:&lt;br&gt;Sloths can swim.&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;card__back&quot;&gt;
+            &lt;span class=&quot;card__text&quot; aria-hidden=&quot;true&quot;&gt;True!&lt;br&gt;Sloths are clumsy on land but are great swimmers.&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/button&gt;&lt;!-- /cards --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cards__column&quot;&gt;
+      &lt;div class=&quot;cards__item card effect__click&quot;&gt;
+        &lt;button id=&quot;card2&quot; aria-pressed=&quot;false&quot;&gt;
+          &lt;div class=&quot;card__front&quot;&gt;
+            &lt;span class=&quot;cards__text&quot;&gt;True or False:&lt;br&gt;Sloths have short tongues.&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;cards__back&quot;&gt;
+            &lt;span class=&quot;cards__text&quot;&gt;False!&lt;br&gt;Sloths can extend their tongues 10 to 12 inches out of their mouths.&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/button&gt;&lt;!-- /cards --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cards__column&quot;&gt;
+      &lt;button id=&quot;cards3&quot; class=&quot;cards cards__click&quot; aria-pressed=&quot;false&quot;&gt;
+        &lt;div class=&quot;cards__front&quot;&gt;
+          &lt;span class=&quot;cards__text&quot;&gt;True or False:&lt;br&gt;Sloths sleep away most of the day.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;cards__back&quot;&gt;
+          &lt;span class=&quot;cards__text&quot;&gt;False!&lt;br&gt;Sloths only sleep up to 10 hours a day.&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;&lt;!-- /cards --&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;cards__column&quot;&gt;
+      &lt;button id=&quot;cards4&quot; class=&quot;cards cards__click&quot; aria-pressed=&quot;false&quot;&gt;
+        &lt;div class=&quot;cards__front&quot;&gt;
+          &lt;span class=&quot;cards__text&quot;&gt;True or False:&lt;br&gt;Sloths have four-part stomachs.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;cards__back&quot;&gt;
+          &lt;span class=&quot;cards__text&quot;&gt;True!&lt;br&gt;Sloths have a four-part stomach that very slowly digests the tough leaves they eat, it can sometimes take up to a month for them to digest a meal.&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                     <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
                     <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>

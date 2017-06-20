@@ -25,6 +25,13 @@ $shadow-sm: 0 0 2px rgba(0, 0, 0, 0.5);
 $shadow-md: 0 2px 2px rgba(136, 139, 141, 0.5);
 $shadow-lg: 0 4px 2px rgba(136, 139, 141, 0.5);
 
+$anim-standard: ease-in-out;
+$anim-speed-faster: 100ms;
+$anim-speed-fast: 250ms;
+$anim-speed-moderate: 500ms;
+$anim-speed-slow: 800ms;
+$anim-speed-slower: 1000ms;
+
 $tip--color-white: #fff !default;
 $tip--color-black: #000 !default;
 $tip--color-gray: #666 !default;

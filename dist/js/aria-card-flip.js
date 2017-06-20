@@ -1,43 +1,60 @@
-;(function ( w, doc ) {
-  // enable strict mode
+(function(win, doc) {
   'use strict';
+  if (!doc.querySelectorAll || !win.addEventListener) {
+    return;
+  }
+  var toggles = doc.querySelectorAll('[aria-controls]');
+  var togglecount = toggles.length;
+  var toggleID;
+  var togglecontent;
+  var i;
+  var target;
+  for (i = 0; i < togglecount; i = i + 1) {
+    toggleID = toggles[i].getAttribute('aria-controls');
+    togglecontent = doc.getElementById(toggleID);
+    togglecontent.setAttribute('aria-hidden', 'true');
+    togglecontent.setAttribute('tabindex', '-1');
+    toggles[i].setAttribute('aria-expanded', 'false');
+  }
 
-  var cards = document.querySelectorAll(".card.card__click");
+  var cards = document.querySelectorAll(".card.effect__click");
   for ( var i  = 0, len = cards.length; i < len; i++ ) {
     var card = cards[i];
     clickListener( card );
   }
 
   function clickListener(card) {
-    card.addEventListener( "click", function() {
+    card.addEventListener( 'click', function() {
       var c = this.classList;
-      c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
+      c.contains('flipped') === true ? c.remove('flipped') : c.add('flipped');
     });
   }
 
-  // Cards need to have their own IDs
-  var pressedCard1 = document.getElementById('card1');
+  function toggle(ev) {
+    ev = ev || win.event;
+    target = ev.target || ev.srcElement;
 
-  pressedCard1.addEventListener('click', function (e) {
-    pressedCard1.setAttribute('aria-pressed', e.target.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+    if (target.hasAttribute('aria-controls')) {
+      toggleID = target.getAttribute('aria-controls');
+      togglecontent = doc.getElementById(toggleID);
+
+      if (togglecontent.getAttribute('aria-hidden') == 'true') {
+        togglecontent.setAttribute('aria-hidden', 'false');
+        target.setAttribute('aria-expanded', 'true');
+      } else {
+
+        togglecontent.setAttribute('aria-hidden', 'true');
+        target.setAttribute('aria-expanded', 'false');
+      }
+    }
+  }
+
+  doc.addEventListener('click', toggle, false);
+
+  var card1 = document.getElementById('card1');
+
+  card1.addEventListener('click', function (e) {
+    card1.setAttribute('aria-pressed', e.target.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
   });
 
-  var pressedCard2 = document.getElementById('card2');
-
-  pressedCard2.addEventListener('click', function (e) {
-    pressedCard2.setAttribute('aria-pressed', e.target.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
-  });
-
-  var pressedCard3 = document.getElementById('card3');
-
-  pressedCard3.addEventListener('click', function (e) {
-    pressedCard3.setAttribute('aria-pressed', e.target.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
-  });
-
-  var pressedCard4 = document.getElementById('card4');
-
-  pressedCard4.addEventListener('click', function (e) {
-    pressedCard4.setAttribute('aria-pressed', e.target.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
-  });
-
-})( this, this.document );
+}(this, this.document));
