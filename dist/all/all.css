@@ -687,23 +687,25 @@ html [type='button'],
     background: #42dc42;
     color: #464646; }
 
-.toggle {
+.toggleflip {
+  font-family: 'Verdana', 'Arial', sans-serif;
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  line-height: 1.2; }
 
-.toggle [aria-hidden] {
+.toggleflip [aria-hidden] {
   position: absolute;
   left: 0;
   top: 10px;
   width: 100%; }
 
-.toggle [aria-hidden='false'] {
+.toggleflip [aria-hidden='false'] {
   display: inline-block;
   z-index: 2; }
 
 .card__back[aria-hidden='false'] {
   transform-origin: center top;
-  animation-duration: 0.15s;
+  animation-duration: 500ms;
   animation-iteration-count: 1;
   animation-direction: normal; }
 
@@ -718,18 +720,14 @@ html [type='button'],
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.3s; }
-  .card__front button,
-  .card__back button {
-    background-color: transparent;
-    border: 0;
-    box-shadow: none;
-    width: 100%; }
 
 .card__back {
   transform: rotateY(-180deg);
   position: absolute;
   padding: 1rem 1.5rem;
   background: #ffffff; }
+  .card__back .cards__item-description {
+    height: 155px; }
 
 .card.effect__click.flipped .card__front {
   transform: rotateY(-180deg); }
@@ -750,7 +748,8 @@ html [type='button'],
       max-width: 600px; } }
   @media (min-width: 75em) {
     .cards {
-      max-width: 1060px; } }
+      max-width: 1200px;
+      padding: 0; } }
   .cards .link {
     position: relative;
     text-align: center;
@@ -760,6 +759,10 @@ html [type='button'],
     padding: 0;
     margin: 0 auto;
     clear: both; }
+  .cards button {
+    background-color: transparent;
+    border: 0;
+    width: 100%; }
 
 .cards__title {
   padding: 1rem;
@@ -799,7 +802,8 @@ html [type='button'],
   max-width: 225px;
   max-height: 300px; }
   .cards__item:hover .cards__back {
-    transform: translateY(-100%); }
+    transform: translateY(-100%);
+    animation-duration: 500ms; }
   @media (min-width: 55em) and (max-width: 64em) {
     .cards__item .button {
       padding: 1rem;
@@ -814,7 +818,7 @@ html [type='button'],
   width: 100%;
   height: 100%;
   transform: translateY(-60px);
-  transition: transform ease-in-out 250ms; }
+  transition: transform ease-in-out 500ms; }
 
 .cards__item-description {
   display: block;
@@ -836,16 +840,6 @@ html [type='button'],
     object-fit: cover;
     height: 100%; }
 
-.cards__item-icon {
-  float: left; }
-
-.cards__item-account {
-  float: right;
-  text-align: right;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  color: #42dc42; }
-
 .cards__item-title {
   font-family: 'Verdana', 'Arial', sans-serif;
   margin: 0;
@@ -860,7 +854,8 @@ html [type='button'],
   text-align: center;
   display: -ms-flexbox;
   display: flex;
-  line-height: 1; }
+  line-height: 1;
+  height: 85px; }
   .cards__item-title a {
     text-align: center; }
   .cards--slideout .cards__item-title {
@@ -939,7 +934,6 @@ html [type='button'],
   min-height: 271px;
   min-width: 225px; }
 
-/* Sliding layout for variants that use front/back classes */
 .cards__front {
   min-height: 202px;
   position: relative;
@@ -952,8 +946,7 @@ html [type='button'],
   -ms-flex-align: stretch;
   align-items: stretch;
   -ms-flex-pack: start;
-  justify-content: flex-start;
-  /* Grow the title section */ }
+  justify-content: flex-start; }
   .cards__front .cards__item-title {
     display: -ms-flexbox;
     display: flex;
@@ -973,7 +966,8 @@ html [type='button'],
   padding: 1.5rem;
   background: #ffffff;
   transform: translateY(0);
-  transition: transform ease-in-out 250ms; }
+  transition: transform ease-in-out 500ms;
+  line-height: 1.2; }
 
 .cards__description {
   margin-bottom: 2rem;
