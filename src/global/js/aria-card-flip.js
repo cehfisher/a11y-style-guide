@@ -51,10 +51,4 @@
 
   doc.addEventListener('click', toggle, false);
 
-  var card1 = document.getElementById('card1');
-
-  card1.addEventListener('click', function (e) {
-    card1.setAttribute('aria-pressed', e.target.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
-  });
-
 }(this, this.document));

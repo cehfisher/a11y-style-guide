@@ -707,16 +707,6 @@ html [type='button'],
   animation-iteration-count: 1;
   animation-direction: normal; }
 
-.card {
-  position: relative;
-  float: left;
-  padding-bottom: 25%;
-  width: 25%;
-  text-align: center; }
-  .card button {
-    height: 250px;
-    width: 100%; }
-
 .card__front,
 .card__back {
   position: absolute;
@@ -724,26 +714,28 @@ html [type='button'],
   left: 0;
   width: 100%;
   height: 100%;
-  max-height: 250px; }
-
-.card__front,
-.card__back {
+  max-height: 250px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.3s; }
-
-.card__front {
-  background-color: #ff5078; }
+  .card__front button,
+  .card__back button {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    width: 100%; }
 
 .card__back {
-  background-color: #1e1e1e;
-  transform: rotateY(-180deg); }
+  transform: rotateY(-180deg);
+  position: absolute;
+  padding: 1rem 1.5rem;
+  background: #ffffff; }
 
 .card.effect__click.flipped .card__front {
   transform: rotateY(-180deg); }
 
 .card.effect__click.flipped .card__back {
-  transform: rotateY(0); }
+  transform: scale(-1, 1); }
 
 .cards {
   margin: 2rem auto;
@@ -797,10 +789,8 @@ html [type='button'],
     .cards__content {
       max-width: 1060px; } }
 
-/* Cards - Columns */
 .cards__item {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  border: 1px solid #bbbbbb;
   border-radius: 4px;
   overflow: hidden;
   position: relative;
@@ -829,15 +819,13 @@ html [type='button'],
 .cards__item-description {
   display: block;
   text-align: left;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   font-size: 1rem;
-  color: #bbbbbb;
-  height: 134px;
+  color: #464646;
+  height: 175px;
   overflow: hidden; }
 
 .cards__item-image {
-  width: 100%;
-  height: auto;
   margin: auto;
   display: block;
   height: 170px;
@@ -845,7 +833,8 @@ html [type='button'],
   .cards__item-image img {
     display: block;
     margin: 0 auto;
-    object-fit: cover; }
+    object-fit: cover;
+    height: 100%; }
 
 .cards__item-icon {
   float: left; }
@@ -858,15 +847,16 @@ html [type='button'],
   color: #42dc42; }
 
 .cards__item-title {
+  font-family: 'Verdana', 'Arial', sans-serif;
   margin: 0;
   overflow: hidden;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   clear: both;
-  padding: 1rem 1rem 0.5rem;
+  padding: 0.5rem;
   text-align: center;
   display: -ms-flexbox;
   display: flex;
@@ -874,7 +864,7 @@ html [type='button'],
   .cards__item-title a {
     text-align: center; }
   .cards--slideout .cards__item-title {
-    color: #4083ae;
+    color: #e00000;
     text-align: center; }
 
 .cards__item-top {
@@ -914,7 +904,7 @@ html [type='button'],
   text-align: center;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  color: #bbbbbb;
+  color: #464646;
   text-shadow: none; }
 
 .cards__items {
@@ -946,7 +936,8 @@ html [type='button'],
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto 50px;
-  min-height: 271px; }
+  min-height: 271px;
+  min-width: 225px; }
 
 /* Sliding layout for variants that use front/back classes */
 .cards__front {
@@ -963,19 +954,15 @@ html [type='button'],
   -ms-flex-pack: start;
   justify-content: flex-start;
   /* Grow the title section */ }
-  .cards__front .cards__item-top,
-  .cards__front .cards__item-title,
-  .cards__front .cards__item-below {
-    width: 100%;
-    -ms-flex: 0 auto;
-    flex: 0 auto;
-    text-shadow: none; }
-  .cards__front .cards__item-below {
-    height: 30px;
-    overflow: hidden; }
   .cards__front .cards__item-title {
-    max-width: 225px;
-    margin: 0 auto; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 225px;
+    height: 100px; }
 
 .cards__back {
   position: absolute;
@@ -983,7 +970,7 @@ html [type='button'],
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 2rem;
+  padding: 1.5rem;
   background: #ffffff;
   transform: translateY(0);
   transition: transform ease-in-out 250ms; }
