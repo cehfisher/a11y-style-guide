@@ -194,9 +194,6 @@ html [type='button'],
     content: '\267F';
     color: #464646; }
 
-.button[aria-pressed='true'] {
-  background: #a51323; }
-
 .magnifyingglass {
   margin: -0.5rem 1rem;
   width: 28px; }

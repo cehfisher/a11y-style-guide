@@ -99,8 +99,8 @@
       #kss-node .kss-sidebar .kss-nav {
         padding: 0.5rem 0;
         margin: 0.5rem 0;
-        max-height: calc(125vh - 44px - 68px - 30px);
-        overflow-y: auto;
+        max-height: 100%;
+        overflow-y: auto !important;
         clear: both;
         width: 100%; } }
 

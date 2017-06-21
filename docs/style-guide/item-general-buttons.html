@@ -120,9 +120,11 @@
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
                     <section class="buttons-section">
-  <button class="button" id="button_state" aria-pressed="false" aria-describedby="Regular button example">Regular Button</button>
-  <button type="button" class="button-icon heart button--outline" id="button_like" aria-pressed="false" aria-describedby="Like button example" aria-label="heart icon">Like</button>
-  <button class="button-icon wheelchair" id="button_all" aria-pressed="false" aria-describedby="A11y test button example" aria-label="wheelchair icon">A11Y<span class="visuallyhidden">all the things.</span></button>
+  <button class="button" id="button_state" aria-pressed="false" aria-describedby="button-example">Button</button>
+  <span id="button-example" class="visuallyhidden">Example button markup</span>
+  <button type="button" class="button-icon heart button--outline" id="button_like" aria-pressed="false" aria-describedby="like-button-example" aria-label="heart icon">Like</button>
+  <span id="like-button-example" class="visuallyhidden">Like example button markup</span>
+  <button class="button-icon wheelchair" id="button_all" aria-pressed="false" aria-describedby="a11y-button-example" aria-label="wheelchair icon">A11Y<span class="visuallyhidden">all the things.</span><span id="a11y-button-example" class="visuallyhidden">A11y example button markup</span></button>
   <input type="image" class="magnifyingglass" id="button_search" aria-pressed="false" src="../assets/searchicon.png" alt="Search" />
 </section>
 
@@ -133,9 +135,11 @@
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
                     <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;buttons-section&quot;&gt;
-  &lt;button class=&quot;button&quot; id=&quot;button_state&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;Regular button example&quot;&gt;Regular Button&lt;/button&gt;
-  &lt;button type=&quot;button&quot; class=&quot;button-icon heart button--outline&quot; id=&quot;button_like&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;Like button example&quot; aria-label=&quot;heart icon&quot;&gt;Like&lt;/button&gt;
-  &lt;button class=&quot;button-icon wheelchair&quot; id=&quot;button_all&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;A11y test button example&quot; aria-label=&quot;wheelchair icon&quot;&gt;A11Y&lt;span class=&quot;visuallyhidden&quot;&gt;all the things.&lt;/span&gt;&lt;/button&gt;
+  &lt;button class=&quot;button&quot; id=&quot;button_state&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;button-example&quot;&gt;Button&lt;/button&gt;
+  &lt;span id=&quot;button-example&quot; class=&quot;visuallyhidden&quot;&gt;Example button markup&lt;/span&gt;
+  &lt;button type=&quot;button&quot; class=&quot;button-icon heart button--outline&quot; id=&quot;button_like&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;like-button-example&quot; aria-label=&quot;heart icon&quot;&gt;Like&lt;/button&gt;
+  &lt;span id=&quot;like-button-example&quot; class=&quot;visuallyhidden&quot;&gt;Like example button markup&lt;/span&gt;
+  &lt;button class=&quot;button-icon wheelchair&quot; id=&quot;button_all&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;a11y-button-example&quot; aria-label=&quot;wheelchair icon&quot;&gt;A11Y&lt;span class=&quot;visuallyhidden&quot;&gt;all the things.&lt;/span&gt;&lt;span id=&quot;a11y-button-example&quot; class=&quot;visuallyhidden&quot;&gt;A11y example button markup&lt;/span&gt;&lt;/button&gt;
   &lt;input type=&quot;image&quot; class=&quot;magnifyingglass&quot; id=&quot;button_search&quot; aria-pressed=&quot;false&quot; src=&quot;../assets/searchicon.png&quot; alt=&quot;Search&quot; /&gt;
 &lt;/section&gt;
 </code></pre>
@@ -165,6 +169,7 @@
 <script src="kss-assets/kss.js"></script>
 <script src="kss-assets/rainbow.min.js"></script>
 <script src="kss-assets/main.js"></script>
+<script src="../js/aria-card-flip.js"></script>
 <script src="../js/aria-switch.js"></script>
 <script src="../js/aria-toggle.js"></script>
 <script src="../js/aria-tooltips.js"></script>

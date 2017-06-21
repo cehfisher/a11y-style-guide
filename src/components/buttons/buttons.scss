@@ -116,10 +116,6 @@ html [type='button'],
   }
 }
 
-.button[aria-pressed='true'] {
-  background: $color-ruby;
-}
-
 .magnifyingglass {
   margin: -$padding-xsm $padding-sm;
   width: 28px;
