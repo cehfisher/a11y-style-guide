@@ -1,22 +1,352 @@
-.navbar {
-  background-color: #f7f7f7;
+/* MENU STUFF */
+#nav {
+  position: relative; }
+
+#exit {
+  position: fixed;
+  top: 0; }
+
+#nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #000;
+  background: #d33; }
+
+#nav #skip {
+  position: absolute;
+  left: -999em;
+  margin: 3px;
+  padding: 6px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.4); }
+
+#nav #skip:focus {
+  left: 12.5em;
+  z-index: 100; }
+
+#bar {
+  z-index: 30;
+  margin: 1.5em 0 0 0; }
+
+#mmen {
+  z-index: 40;
+  margin: 3px 0 0 0; }
+
+#bar, #mmen {
+  list-style: none;
+  list-style-position: outside;
+  padding: 0;
+  display: block; }
+
+#mmen li, #bar li {
+  height: 3.13em;
+  margin-top: 4px;
+  padding: 0; }
+
+#mmen li {
+  list-style: none;
+  float: left; }
+
+#mmen li a, #bar li a {
   position: relative;
-  margin-bottom: 1rem;
-  border-radius: 4px;
-  border: 1px solid #bbbbbb;
-  display: inline-block;
+  height: 100%;
+  box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 50;
+  width: 3.13em; }
+
+.smen #current,
+#mmen #currmen {
+  background: #f88;
+  /*-webkit-filter: brightness(2.5);
+       filter: brightness(2.5);*/ }
+
+#nav .first {
+  background: #c96; }
+
+#mmen li a span, #bar li a span {
+  position: absolute;
+  top: 0;
+  left: 3.1em;
+  width: 9em;
+  padding: 10px 5px;
+  display: none; }
+
+#mmen li a img, #bar li a img {
+  height: 90%;
+  width: auto;
+  margin-top: 2px;
+  border: 0; }
+
+#mmen #currmen:hover,
+#mmen #currmen:focus,
+#bar a:hover,
+#bar a:focus,
+#mmen a:hover,
+#mmen a:focus {
+  background: #fff;
+  width: 12em;
+  color: #000;
+  text-shadow: 1px 1px 0 #ccc; }
+
+#bar a:hover span,
+#bar a:focus span,
+#mmen a:hover span,
+#mmen a:focus span {
+  display: inline;
+  /*color: #2c7633;
+       text-shadow: 1px 1px 0 #ccc ;*/ }
+
+/* Sub Menus */
+#social,
+#index,
+#close,
+#ham,
+#war,
+#heritage,
+#events,
+#interviews,
+#about {
+  display: none; }
+
+#nav .active,
+#social:target,
+#index:target,
+#war:target,
+#heritage:target,
+#events:target,
+#interviews:target,
+#about:target {
+  display: block; }
+
+.smen {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 0 0 3.13em;
+  margin: 0;
+  /*overflow: scroll;*/
+  z-index: 70;
+  text-align: center; }
+
+.swrap {
+  position: relative;
+  top: 0;
+  width: 80%;
+  max-width: 16em;
+  margin: 0.5em 2em 0.5em 0.5em;
+  margin: 0.5em 2em 0.5em 4.2em;
+  background: #9B2424;
+  background: rgba(180, 18, 18, 0.8);
+  /*background-blend-mode: multiply ;*/
+  padding: 0.5em;
+  border-radius: 30px;
+  border-top: solid #fff 2px;
+  box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  z-index: 100; }
+
+/*.swrap:after {
+  content:"";
+  border-radius: 30px;
+  -webkit-filter: brightness(0.7);
+  filter: brightness(0.7);
+  background-color: #d33;
+  z-index: -10;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}*/
+.swrap p a:hover:after,
+.swrap p a:focus:after {
+  content: ' X';
+  position: absolute;
+  right: 1em; }
+
+.smen p {
+  font-size: 1.4em;
+  line-height: 1.2em;
+  text-align: center;
+  background: none;
+  padding: 0.2em;
+  margin: 0; }
+
+#nav .smen p a {
+  background: none; }
+
+.smen ul {
+  padding: 0;
+  margin: 0; }
+
+.smen ul li {
+  display: block;
+  margin: 2px;
+  padding: 0;
+  list-style-position: inside; }
+
+.smen ul li a {
+  padding: 0.4em;
+  border-radius: 15px;
+  border-bottom: solid #fff 2px; }
+
+#nav .smen ul li a:hover,
+#nav .smen ul li a:focus {
+  background: #fff;
+  color: #000;
+  border-bottom: solid #d00 2px;
+  text-shadow: 1px 1px 0 #ccc; }
+
+#index {
+  overflow: scroll; }
+
+#index .swrap {
+  width: auto;
+  max-width: 80%;
+  display: table; }
+
+.smen ol {
+  background: #fff;
+  list-style: decimal;
+  text-align: left;
+  font-weight: normal;
+  list-style-position: outside;
+  border-radius: 15px;
+  padding: 0.2em 0.4em 0.2em 1.8em;
+  /*-webkit-columns: 3 12em;
+       -moz-columns: 3 12em;
+       columns: 3 12em;*/ }
+
+.smen ol ol {
+  list-style: lower-roman;
+  padding-left: 1em;
+  font-size: 0.94em; }
+
+#nav .smen ol li a {
+  text-shadow: none;
+  display: inline;
+  padding: 0;
+  background: none;
+  color: blue; }
+
+#nav .smen ol a:hover,
+#nav .smen ol a:focus {
+  text-decoration: underline;
+  color: #0af; }
+
+#nav .close {
+  display: block;
   width: 100%;
-  overflow: hidden; }
-  .navbar a {
-    color: #464646;
-    padding: 23px 20px; }
-    .navbar a:hover, .navbar a:active {
-      background: #e00000;
-      color: #ffffff; }
-  .navbar ul {
-    padding: 0; }
-    .navbar ul li {
-      line-height: 4;
-      padding-bottom: 0; }
-  .navbar .nav-item {
-    display: inline-block; }
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: all .6s ease-in-out; }
+
+.close span {
+  display: none;
+  position: relative;
+  top: 80%;
+  color: #d33;
+  text-align: center;
+  font-size: 3em;
+  /*fallback for old browsers*/
+  font-size: 10vm;
+  /*fallback for IE9*/
+  font-size: 10vmin;
+  text-shadow: 0 0 10px #fff; }
+
+#nav .close:hover,
+#nav .close:focus {
+  background: transparent; }
+
+.close:hover span,
+.close:focus span {
+  display: block; }
+
+#nav #mmen li a:active,
+#nav .smen li a:active {
+  color: #d00;
+  background: #ffb;
+  transition: all .1s ease-in-out; }
+
+#nav #index li a:active {
+  background: none; }
+
+.share, .social {
+  background: #fff;
+  border-radius: 15px;
+  padding: 0.5em; }
+
+.share div {
+  display: inline-block; }
+
+.share input {
+  width: 95%; }
+
+.dn {
+  position: relative;
+  top: 6px; }
+
+.social {
+  margin-top: 1em; }
+
+#social .share a {
+  display: inline-block;
+  position: relative;
+  font-size: 0.8em;
+  border-radius: 4px;
+  box-shadow: 0 0 0 transparent;
+  padding: 0.1em 0.3em 0.1em 1.8em; }
+
+#nav .share a:hover,
+#nav .share a:focus {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3); }
+
+#social .social a {
+  display: inline-block;
+  transform: scale(0.8); }
+
+#social .social a {
+  background: none; }
+
+#social .social a:hover,
+#social .social a:focus {
+  transform: scale(1); }
+
+#social .twitter {
+  background: #00ABF1; }
+
+#social .facebook {
+  background: #3C5A99; }
+
+#social .google {
+  background: #DC4A3D; }
+
+.twitter::before {
+  background: url(http://burtonstatherheritage.org/image/icon/twitter.svg); }
+
+.facebook::before {
+  background: url(http://burtonstatherheritage.org/image/icon/facebook.svg); }
+
+.google::before {
+  background: url(http://burtonstatherheritage.org/image/icon/Gplus.svg); }
+
+.share-butt::before {
+  content: '';
+  width: 2em;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat; }

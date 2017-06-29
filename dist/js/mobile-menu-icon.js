@@ -1,4 +1,3 @@
-
 !((document, $) => {
   // Set button to click. Toggle button example 1.
   var button = document.getElementById( 'menu-toggle-ex1' );

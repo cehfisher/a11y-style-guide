@@ -1,50 +1,97 @@
-<section class="navbar-section">
-  <h3>Option #1: List styling with visuallyhidden class</h3>
-  <nav class="navbar">
-  	<h2 class="visuallyhidden">Main Menu</h2>
-  	<ul class="nav navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">More Information</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="break"></div>
-  <h3>Option #2: List styling with ARIA label</h3>
-  <nav class="navbar" aria-label="Main Menu">
-    <h2 class="visuallyhidden">Main Menu</h2>
-    <ul class="nav navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">More Information</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="break"></div>
-  <h3>Option #3: No list styling with ARIA labelledby</h3>
-  <nav class="navbar" role="navigation" aria-labelledby="mainmenulabel">
-	  <h2 class="visuallyhidden" id="mainmenulabel">Main Menu</h2>
-    <div class="nav navbar-nav" role="navigation">
-      <a class="nav-item nav-link2" href="#">Home</a>
-      <a class="nav-item nav-link2" href="#">About Us</a>
-      <a class="nav-item nav-link2" href="#">More Information</a>
-      <a class="nav-item nav-link2" href="#">Contact Us</a>
-    </div>
-  </nav>
-</section>
+<nav id="nav" itemprop="breadcrumb">
+  <div id="exit"></div>
+  <a id="skip" href="#pbody" title="Skip Navigation">Skip Navigation</a>
+
+  <!--Main Site Nav Menu-->
+  <ul id="mmen">
+    <li><a class="sec" href="/" title="Homepage">Homepage</a></li>
+    <li><a class="sec" href="#war" title="Burton at War">Burton at War</a></li>
+    <li><a class="sec" href="#heritage" title="Burtons Heritage">Burtons Heritage</a></li>
+    <li><a class="sec" href="#events" title="BSHG Events">BSHG Events</a></li>
+    <li><a class="sec" href="#interviews" title="Interviews" id="currmen">Interviews</a></li>
+    <li><a class="sec" href="#about" title="About Us">About Us</a></li>
+  </ul>
+
+<!--Site Nav Sub Menus-->
+
+<div id="war" class="smen">
+<div class="swrap">
+<p><a href="#exit" title="Close Navigation">Burton at War</a></p>
+<ul>
+<li><a href="../tank-ramp" title="The Tank Ramp">The Tank Ramp</a></li>
+<li><a href="../roll-of-honour" title="Roll of Honour">Roll of Honour</a></li>
+<li><a href="../canadians" title="The Canadians">The Canadians</a></li>
+</ul>
+</div>
+<a class="close" href="#exit" title="Close Navigation"><span>Close</span></a>
+</div>
+<div id="heritage" class="smen">
+<div class="swrap">
+<p><a href="#exit" title="Close Navigation">Burtons Heritage</a></p>
+<ul>
+<li><a href="../shipping" title="Shipping in Burton">Shipping in Burton</a></li>
+<li><a href="../shipping/list" title="The Ship List">The Ship List</a></li>
+<li><a href="../brickworks" title="The Brickworks">The Brickworks</a></li>
+<li><a href="../artefacts" title="Artefacts">Artefacts</a></li>
+<li><a href="../burton-wmc" title="Burton WMC">Burton WMC</a></li>
+<li><a href="../history-calendar" title="History Calendar">History Calendar</a></li>
+</ul>
+</div>
+<a class="close" href="#exit" title="Close Navigation"><span>Close</span></a>
+</div>
+<div id="events" class="smen">
+<div class="swrap">
+<p><a href="#exit" title="Close Navigation">BSHG Events</a></p>
+<ul>
+<li><a href="../events-calendar" title="Events Calendar">Events Calendar</a></li>
+<li><a href="../beer-fest" title="Burton in Beer">Burton in Beer</a></li>
+<li><a href="../past-events" title="Past Events">Past Events</a></li>
+</ul>
+</div>
+<a class="close" href="#exit" title="Close Navigation"><span>Close</span></a>
+</div>
+<div id="interviews" class="smen">
+<div class="swrap">
+<p><a href="#exit" title="Close Navigation">Interviews</a></p>
+<ul>
+<li><a href="../interviews/john-porteous" title="John Porteous">John Porteous</a></li>
+<li><a href="../interviews/dave-gibb" title="Dave Gibb">Dave Gibb</a></li>
+<li><a href="../interviews/sally-robinson" title="Sally Robinson">Sally Robinson</a></li>
+<li><a href="../interviews/edna-lawn" title="Edna Lawn" id="current">Edna Lawn</a></li>
+</ul>
+</div>
+<a class="close" href="#exit" title="Close Navigation"><span>Close</span></a>
+</div>
+<div id="about" class="smen">
+<div class="swrap">
+<p><a href="#exit" title="Close Navigation">About Us</a></p>
+<ul>
+<li><a href="../about" title="About BSHG">About BSHG</a></li>
+<li><a href="../contact" title="Contact Us">Contact Us</a></li>
+<li><a href="../our-work" title="Our Work">Our Work</a></li>
+<li><a href="../media" title="In the Media">In the Media</a></li>
+<li><a href="../thanks-links" title="Thanks &amp; Links">Thanks &amp; Links</a></li>
+<li><a href="../sitemap" title="Sitemap">Sitemap</a></li>
+</ul>
+</div>
+<a class="close" href="#exit" title="Close Navigation"><span>Close</span></a>
+</div>			<div id="index" class="smen">
+<div class="swrap">
+<p><a href="#exit" title="Close Index">Page Index</a></p>
+<ol>
+<li>
+<a href="#intro" title="Jump to Introduction">Introduction</a>
+	</li>
+<li>
+<a href="#johnny" title="Jump to Johnny Lawn">Johnny Lawn</a>
+	</li>
+<li>
+<a href="#memories" title="Jump to Post War Memories">Post War Memories</a>
+	</li>
+</ol>
+</div>
+<a class="close" href="#exit" title="Close Index"><span>Close Index</span></a>
+</div>
+
+</div>
+</nav>
