@@ -1,0 +1,50 @@
+<section class="navbar-section">
+  <h3>Option #1: List styling with visuallyhidden class</h3>
+  <nav class="navbar">
+  	<h2 class="visuallyhidden">Main Menu</h2>
+  	<ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">More Information</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="break"></div>
+  <h3>Option #2: List styling with ARIA label</h3>
+  <nav class="navbar" aria-label="Main Menu">
+    <h2 class="visuallyhidden">Main Menu</h2>
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">More Information</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="break"></div>
+  <h3>Option #3: No list styling with ARIA labelledby</h3>
+  <nav class="navbar" role="navigation" aria-labelledby="mainmenulabel">
+	  <h2 class="visuallyhidden" id="mainmenulabel">Main Menu</h2>
+    <div class="nav navbar-nav" role="navigation">
+      <a class="nav-item nav-link2" href="#">Home</a>
+      <a class="nav-item nav-link2" href="#">About Us</a>
+      <a class="nav-item nav-link2" href="#">More Information</a>
+      <a class="nav-item nav-link2" href="#">Contact Us</a>
+    </div>
+  </nav>
+</section>
