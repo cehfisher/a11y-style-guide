@@ -18,11 +18,9 @@
 @import '../../global/utils/init';
 
 .navbar {
-  background-color: $color-alabaster;
   position: relative;
   margin-bottom: $padding-sm;
   border-radius: $border-rd-sm;
-  border: 1px solid $color-silver;
   display: inline-block;
   width: 100%;
   overflow: hidden;
@@ -42,7 +40,7 @@
     padding: 0;
 
     li {
-      line-height: 4;
+      line-height: 2;
       padding-bottom: 0;
     }
   }

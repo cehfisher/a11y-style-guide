@@ -97,28 +97,27 @@
 
         <div><div class="social-link-out"><a href="https://twitter.com/cariefisher" target="_blank" class="social-link-twitter"><span class="visuallyhidden">Carie Fisher on Twitter</span></a><a href="https://github.com/cehfisher" target="_blank" class="social-link-github"><span class="visuallyhidden">Carie Fisher on GitHub</span></a></div>
 
-                            <div id="kssref-general-buttons" class="kss-section kss-depth-2">
+                            <div id="kssref-navigation-navigation-mobile" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-general-buttons">
-                  Buttons
+                <a class="kss-title__permalink" href="#kssref-navigation-navigation-mobile">
+                  Mobile Navigation
                 </a>
               </h2>
 
                               <div class="kss-description">
                   <ul>
- <li>A <code>&lt;button&gt;</code> tag does not need anything special to work. Use <code>&lt;button&gt;</code> when you can, but it is possible to use other elements as long as you add <code>role=&quot;button&quot;</code> and add JavaScript to replicate the button functionality.</li>
- <li>Just like links, you can add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
- <li>If a button contains an <code>&lt;img&gt;</code> element, make sure to set its <code>alt</code> attribute. If it contains an icon, use <code>aria-label</code> to describe the icon instead.</li>
- <li>You can use <code>&lt;input type=&quot;image&quot;&gt;</code> to make a graphical button. It takes a <code>src</code> and <code>alt</code> attribute just like traditional images.</li>
- <li>Button states are important, not just button styling! If you are only toggling classes to visually manage state of your components, you are likely not appropriately conveying that state to users of assistive technologies.</li>
+ <li>Use the <code>&lt;button&gt;</code> element for your mobile navigation icon.</li>
+ <li>If you use an icon that is purely decoration, declare <code>alt=&quot;&quot;</code>, as no additional information is needed. If the icon you are using <em>is</em> important to the functionality, then supply additional <code>alt=&quot;_descriptive text goes here_&quot;</code> information.</li>
+ <li>It is helpful to all users when you add descriptive text when displaying a mobile icon to give more context to the button&#39;s purpose.</li>
+ <li>Place mobile open/close buttons within the <code>&lt;nav&gt;</code> element and use them to toggle state of another child wrapper of the nav. This will ensure that the navigation landmark is still discoverable by screen readers, even if it is in a closed/hidden state.</li>
 </ul>
 
-<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#button_res">Resources</a></h3><div id="button_res" class="atblock__panel"><ul><li><a href="https://www.deque.com/blog/accessible-aria-buttons" target="_blank">Building Accessible Buttons with ARIA</a></li><li><a href="https://css-tricks.com/user-facing-state/" target="_blank">User Facing State</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank">Using the button role</a></li><li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/button/button.html" target="_blank">W3C Button Examples</a></li></ul></div></section>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navbaricon_res">Resources</a></h3><div id="navbaricon_res" class="atblock__panel"><ul><li><a href="http://codepen.io/samikeijonen/pen/jqvxdL" target="_blank">Simple and accessible SVG menu hamburger animation</a></li></ul></div></section>
 
 
 
-<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#button_guide">WCAG 2.0 Guidelines</a></h3><div id="button_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</p></div><div class="markup"></div></section>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navbaricon_guide">WCAG 2.0 Guidelines</a></h3><div id="navbaricon_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</p></div><div class="markup"></div></section>
 
 
                 </div>
@@ -129,13 +128,26 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <section class="buttons-section">
-  <button class="button" id="button_state" aria-pressed="false" aria-describedby="button-example">Button</button>
-  <span id="button-example" class="visuallyhidden">Example button markup</span>
-  <button type="button" class="button-icon heart button--outline" id="button_like" aria-pressed="false" aria-describedby="like-button-example" aria-label="heart icon">Like</button>
-  <span id="like-button-example" class="visuallyhidden">Like example button markup</span>
-  <button class="button-icon wheelchair" id="button_all" aria-pressed="false" aria-describedby="a11y-button-example" aria-label="wheelchair icon">A11Y<span class="visuallyhidden">all the things.</span><span id="a11y-button-example" class="visuallyhidden">A11y example button markup</span></button>
-  <input type="image" class="magnifyingglass" id="button_search" aria-pressed="false" src="../assets/searchicon.png" alt="Search" />
+                    <section class="navbar-mobile-icon">
+  <button class="menu-toggle" id="menu-toggle-ex1" aria-expanded="false" aria-controls="nav-menu-ex-1"><span class="screen-reader-text">Menu</span>
+    <svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
+      <g class="svg-menu-toggle">
+      <path class="line line-1" d="M5 13h90v14H5z"/>
+      <path class="line line-2" d="M5 43h90v14H5z"/>
+      <path class="line line-3" d="M5 73h90v14H5z"/>
+      </g>
+    </svg>
+  </button>
+
+  <button class="menu-toggle" id="menu-toggle-ex2" aria-expanded="false" aria-controls="nav-menu-ex-2"><span>Click for Menu</span>
+    <svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
+      <g class="svg-menu-toggle">
+      <path class="line line-1" d="M5 13h90v14H5z"/>
+      <path class="line line-2" d="M5 43h90v14H5z"/>
+      <path class="line line-3" d="M5 73h90v14H5z"/>
+      </g>
+    </svg>
+  </button>
 </section>
 
                   </div>
@@ -144,13 +156,26 @@
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;buttons-section&quot;&gt;
-  &lt;button class=&quot;button&quot; id=&quot;button_state&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;button-example&quot;&gt;Button&lt;/button&gt;
-  &lt;span id=&quot;button-example&quot; class=&quot;visuallyhidden&quot;&gt;Example button markup&lt;/span&gt;
-  &lt;button type=&quot;button&quot; class=&quot;button-icon heart button--outline&quot; id=&quot;button_like&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;like-button-example&quot; aria-label=&quot;heart icon&quot;&gt;Like&lt;/button&gt;
-  &lt;span id=&quot;like-button-example&quot; class=&quot;visuallyhidden&quot;&gt;Like example button markup&lt;/span&gt;
-  &lt;button class=&quot;button-icon wheelchair&quot; id=&quot;button_all&quot; aria-pressed=&quot;false&quot; aria-describedby=&quot;a11y-button-example&quot; aria-label=&quot;wheelchair icon&quot;&gt;A11Y&lt;span class=&quot;visuallyhidden&quot;&gt;all the things.&lt;/span&gt;&lt;span id=&quot;a11y-button-example&quot; class=&quot;visuallyhidden&quot;&gt;A11y example button markup&lt;/span&gt;&lt;/button&gt;
-  &lt;input type=&quot;image&quot; class=&quot;magnifyingglass&quot; id=&quot;button_search&quot; aria-pressed=&quot;false&quot; src=&quot;../assets/searchicon.png&quot; alt=&quot;Search&quot; /&gt;
+                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;navbar-mobile-icon&quot;&gt;
+  &lt;button class=&quot;menu-toggle&quot; id=&quot;menu-toggle-ex1&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;nav-menu-ex-1&quot;&gt;&lt;span class=&quot;screen-reader-text&quot;&gt;Menu&lt;/span&gt;
+    &lt;svg class=&quot;icon icon-menu-toggle&quot; aria-hidden=&quot;true&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+      &lt;g class=&quot;svg-menu-toggle&quot;&gt;
+      &lt;path class=&quot;line line-1&quot; d=&quot;M5 13h90v14H5z&quot;/&gt;
+      &lt;path class=&quot;line line-2&quot; d=&quot;M5 43h90v14H5z&quot;/&gt;
+      &lt;path class=&quot;line line-3&quot; d=&quot;M5 73h90v14H5z&quot;/&gt;
+      &lt;/g&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
+
+  &lt;button class=&quot;menu-toggle&quot; id=&quot;menu-toggle-ex2&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;nav-menu-ex-2&quot;&gt;&lt;span&gt;Click for Menu&lt;/span&gt;
+    &lt;svg class=&quot;icon icon-menu-toggle&quot; aria-hidden=&quot;true&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 100 100&quot;&gt;
+      &lt;g class=&quot;svg-menu-toggle&quot;&gt;
+      &lt;path class=&quot;line line-1&quot; d=&quot;M5 13h90v14H5z&quot;/&gt;
+      &lt;path class=&quot;line line-2&quot; d=&quot;M5 43h90v14H5z&quot;/&gt;
+      &lt;path class=&quot;line line-3&quot; d=&quot;M5 73h90v14H5z&quot;/&gt;
+      &lt;/g&gt;
+    &lt;/svg&gt;
+  &lt;/button&gt;
 &lt;/section&gt;
 </code></pre>
                     <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>

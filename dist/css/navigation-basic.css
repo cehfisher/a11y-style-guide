@@ -1,9 +1,7 @@
 .navbar {
-  background-color: #f7f7f7;
   position: relative;
   margin-bottom: 1rem;
   border-radius: 4px;
-  border: 1px solid #bbbbbb;
   display: inline-block;
   width: 100%;
   overflow: hidden; }
@@ -16,7 +14,7 @@
   .navbar ul {
     padding: 0; }
     .navbar ul li {
-      line-height: 4;
+      line-height: 2;
       padding-bottom: 0; }
   .navbar .nav-item {
     display: inline-block; }

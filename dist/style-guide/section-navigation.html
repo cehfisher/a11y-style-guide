@@ -12,15 +12,6 @@
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
 
-  <!-- include jquery -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-  <!-- include the jquery-accessibleMegaMenu plugin script -->
-  <script src="../js/jquery-accessibleMegaMenu.js"></script>
-
-  <!-- initialize a selector as an accessibleMegaMenu -->
-  <script src="../js/mega-menu.js"></script>
-
   <link rel="stylesheet" href="kss-assets/kss.css">
   <link rel="stylesheet" href="../all/all.css">
 
@@ -91,9 +82,9 @@
                       </a>
                     </li>
                                       <li class="kss-menu-item">
-                      <a href="#kssref-navigation-navigation-mega">
+                      <a href="#kssref-navigation-navigation-dropdown">
                         <span class="kss-ref ">4.3</span>
-                        <span class="kss-name">Mega Navigation</span>
+                        <span class="kss-name">Dropdown Navigation</span>
                       </a>
                     </li>
                                       <li class="kss-menu-item">
@@ -382,11 +373,11 @@
                               </div>
 
                                     </section>
-                            <section id="kssref-navigation-navigation-mega" class="kss-section kss-depth-2">
+                            <section id="kssref-navigation-navigation-dropdown" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-navigation-navigation-mega">
-                  Mega Navigation
+                <a class="kss-title__permalink" href="#kssref-navigation-navigation-dropdown">
+                  Dropdown Navigation
                 </a>
               </h2>
 
@@ -408,206 +399,88 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <nav id="nav" itemprop="breadcrumb">
-  <div id="exit"></div>
-  <a id="skip" href="#pbody" title="Skip Navigation">Skip Navigation</a>
-
-  <!--Main Site Nav Menu-->
-  <ul id="mmen">
-    <li><a class="sec" href="/" title="Homepage">Homepage</a></li>
-    <li><a class="sec" href="#war" title="Burton at War">Burton at War</a></li>
-    <li><a class="sec" href="#heritage" title="Burtons Heritage">Burtons Heritage</a></li>
-    <li><a class="sec" href="#events" title="BSHG Events">BSHG Events</a></li>
-    <li><a class="sec" href="#interviews" title="Interviews" id="currmen">Interviews</a></li>
-    <li><a class="sec" href="#about" title="About Us">About Us</a></li>
-  </ul>
-
-<!--Site Nav Sub Menus-->
-
-<div id="war" class="smen">
-<div class="swrap">
-<p><a href="#exit" title="Close Navigation">Burton at War</a></p>
-<ul>
-<li><a href="../tank-ramp" title="The Tank Ramp">The Tank Ramp</a></li>
-<li><a href="../roll-of-honour" title="Roll of Honour">Roll of Honour</a></li>
-<li><a href="../canadians" title="The Canadians">The Canadians</a></li>
-</ul>
+                    <div role="navigation" aria-label="Main menu">
+	<ul class="nav">
+		<li>
+			<a href="../generic.html">About</a>
+			<ul>
+				<li><a href="../generic.html">News</a></li>
+				<li><a href="../generic.html">Governance</a></li>
+				<li><a href="../generic.html">Diversity</a></li>
+				<li><a href="../generic.html">ContactUs</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="../generic.html">Academics</a>
+			<ul>
+				<li><a href="../generic.html">Degree Programs</a></li>
+				<li><a href="../generic.html">Faculty</a></li>
+				<li><a href="../generic.html">Distance Learning</a></li>
+				<li><a href="../generic.html">Libraries</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="../generic.html">Admissions</a>
+			<ul>
+				<li><a href="../generic.html">Undergraduate</a></li>
+				<li><a href="../generic.html">Tuition</a></li>
+				<li><a href="../generic.html">Financial Aid</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="../generic.html">Visitors</a>
+			<ul>
+				<li><a href="../generic.html">Events</a></li>
+				<li><a href="../generic.html">Campus Map</a></li>
+				<li><a href="../generic.html">Parking</a></li>
+			</ul>
+		</li>
+	</ul>
 </div>
-<a class="close" href="#exit" title="Close Navigation"><span>Close</span></a>
-</div>
-<div id="heritage" class="smen">
-<div class="swrap">
-<p><a href="#exit" title="Close Navigation">Burtons Heritage</a></p>
-<ul>
-<li><a href="../shipping" title="Shipping in Burton">Shipping in Burton</a></li>
-<li><a href="../shipping/list" title="The Ship List">The Ship List</a></li>
-<li><a href="../brickworks" title="The Brickworks">The Brickworks</a></li>
-<li><a href="../artefacts" title="Artefacts">Artefacts</a></li>
-<li><a href="../burton-wmc" title="Burton WMC">Burton WMC</a></li>
-<li><a href="../history-calendar" title="History Calendar">History Calendar</a></li>
-</ul>
-</div>
-<a class="close" href="#exit" title="Close Navigation"><span>Close</span></a>
-</div>
-<div id="events" class="smen">
-<div class="swrap">
-<p><a href="#exit" title="Close Navigation">BSHG Events</a></p>
-<ul>
-<li><a href="../events-calendar" title="Events Calendar">Events Calendar</a></li>
-<li><a href="../beer-fest" title="Burton in Beer">Burton in Beer</a></li>
-<li><a href="../past-events" title="Past Events">Past Events</a></li>
-</ul>
-</div>
-<a class="close" href="#exit" title="Close Navigation"><span>Close</span></a>
-</div>
-<div id="interviews" class="smen">
-<div class="swrap">
-<p><a href="#exit" title="Close Navigation">Interviews</a></p>
-<ul>
-<li><a href="../interviews/john-porteous" title="John Porteous">John Porteous</a></li>
-<li><a href="../interviews/dave-gibb" title="Dave Gibb">Dave Gibb</a></li>
-<li><a href="../interviews/sally-robinson" title="Sally Robinson">Sally Robinson</a></li>
-<li><a href="../interviews/edna-lawn" title="Edna Lawn" id="current">Edna Lawn</a></li>
-</ul>
-</div>
-<a class="close" href="#exit" title="Close Navigation"><span>Close</span></a>
-</div>
-<div id="about" class="smen">
-<div class="swrap">
-<p><a href="#exit" title="Close Navigation">About Us</a></p>
-<ul>
-<li><a href="../about" title="About BSHG">About BSHG</a></li>
-<li><a href="../contact" title="Contact Us">Contact Us</a></li>
-<li><a href="../our-work" title="Our Work">Our Work</a></li>
-<li><a href="../media" title="In the Media">In the Media</a></li>
-<li><a href="../thanks-links" title="Thanks &amp; Links">Thanks &amp; Links</a></li>
-<li><a href="../sitemap" title="Sitemap">Sitemap</a></li>
-</ul>
-</div>
-<a class="close" href="#exit" title="Close Navigation"><span>Close</span></a>
-</div>			<div id="index" class="smen">
-<div class="swrap">
-<p><a href="#exit" title="Close Index">Page Index</a></p>
-<ol>
-<li>
-<a href="#intro" title="Jump to Introduction">Introduction</a>
-	</li>
-<li>
-<a href="#johnny" title="Jump to Johnny Lawn">Johnny Lawn</a>
-	</li>
-<li>
-<a href="#memories" title="Jump to Post War Memories">Post War Memories</a>
-	</li>
-</ol>
-</div>
-<a class="close" href="#exit" title="Close Index"><span>Close Index</span></a>
-</div>
-
-</div>
-</nav>
                   </div>
                 </div>
 
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;nav id=&quot;nav&quot; itemprop=&quot;breadcrumb&quot;&gt;
-  &lt;div id=&quot;exit&quot;&gt;&lt;/div&gt;
-  &lt;a id=&quot;skip&quot; href=&quot;#pbody&quot; title=&quot;Skip Navigation&quot;&gt;Skip Navigation&lt;/a&gt;
-
-  &lt;!--Main Site Nav Menu--&gt;
-  &lt;ul id=&quot;mmen&quot;&gt;
-    &lt;li&gt;&lt;a class=&quot;sec&quot; href=&quot;/&quot; title=&quot;Homepage&quot;&gt;Homepage&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a class=&quot;sec&quot; href=&quot;#war&quot; title=&quot;Burton at War&quot;&gt;Burton at War&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a class=&quot;sec&quot; href=&quot;#heritage&quot; title=&quot;Burtons Heritage&quot;&gt;Burtons Heritage&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a class=&quot;sec&quot; href=&quot;#events&quot; title=&quot;BSHG Events&quot;&gt;BSHG Events&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a class=&quot;sec&quot; href=&quot;#interviews&quot; title=&quot;Interviews&quot; id=&quot;currmen&quot;&gt;Interviews&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a class=&quot;sec&quot; href=&quot;#about&quot; title=&quot;About Us&quot;&gt;About Us&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-
-&lt;!--Site Nav Sub Menus--&gt;
-
-&lt;div id=&quot;war&quot; class=&quot;smen&quot;&gt;
-&lt;div class=&quot;swrap&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;#exit&quot; title=&quot;Close Navigation&quot;&gt;Burton at War&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;../tank-ramp&quot; title=&quot;The Tank Ramp&quot;&gt;The Tank Ramp&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../roll-of-honour&quot; title=&quot;Roll of Honour&quot;&gt;Roll of Honour&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../canadians&quot; title=&quot;The Canadians&quot;&gt;The Canadians&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;a class=&quot;close&quot; href=&quot;#exit&quot; title=&quot;Close Navigation&quot;&gt;&lt;span&gt;Close&lt;/span&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;div id=&quot;heritage&quot; class=&quot;smen&quot;&gt;
-&lt;div class=&quot;swrap&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;#exit&quot; title=&quot;Close Navigation&quot;&gt;Burtons Heritage&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;../shipping&quot; title=&quot;Shipping in Burton&quot;&gt;Shipping in Burton&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../shipping/list&quot; title=&quot;The Ship List&quot;&gt;The Ship List&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../brickworks&quot; title=&quot;The Brickworks&quot;&gt;The Brickworks&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../artefacts&quot; title=&quot;Artefacts&quot;&gt;Artefacts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../burton-wmc&quot; title=&quot;Burton WMC&quot;&gt;Burton WMC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../history-calendar&quot; title=&quot;History Calendar&quot;&gt;History Calendar&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;a class=&quot;close&quot; href=&quot;#exit&quot; title=&quot;Close Navigation&quot;&gt;&lt;span&gt;Close&lt;/span&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;div id=&quot;events&quot; class=&quot;smen&quot;&gt;
-&lt;div class=&quot;swrap&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;#exit&quot; title=&quot;Close Navigation&quot;&gt;BSHG Events&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;../events-calendar&quot; title=&quot;Events Calendar&quot;&gt;Events Calendar&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../beer-fest&quot; title=&quot;Burton in Beer&quot;&gt;Burton in Beer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../past-events&quot; title=&quot;Past Events&quot;&gt;Past Events&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;a class=&quot;close&quot; href=&quot;#exit&quot; title=&quot;Close Navigation&quot;&gt;&lt;span&gt;Close&lt;/span&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;div id=&quot;interviews&quot; class=&quot;smen&quot;&gt;
-&lt;div class=&quot;swrap&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;#exit&quot; title=&quot;Close Navigation&quot;&gt;Interviews&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;../interviews/john-porteous&quot; title=&quot;John Porteous&quot;&gt;John Porteous&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../interviews/dave-gibb&quot; title=&quot;Dave Gibb&quot;&gt;Dave Gibb&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../interviews/sally-robinson&quot; title=&quot;Sally Robinson&quot;&gt;Sally Robinson&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../interviews/edna-lawn&quot; title=&quot;Edna Lawn&quot; id=&quot;current&quot;&gt;Edna Lawn&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;a class=&quot;close&quot; href=&quot;#exit&quot; title=&quot;Close Navigation&quot;&gt;&lt;span&gt;Close&lt;/span&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;div id=&quot;about&quot; class=&quot;smen&quot;&gt;
-&lt;div class=&quot;swrap&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;#exit&quot; title=&quot;Close Navigation&quot;&gt;About Us&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;../about&quot; title=&quot;About BSHG&quot;&gt;About BSHG&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../contact&quot; title=&quot;Contact Us&quot;&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../our-work&quot; title=&quot;Our Work&quot;&gt;Our Work&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../media&quot; title=&quot;In the Media&quot;&gt;In the Media&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../thanks-links&quot; title=&quot;Thanks &amp;amp; Links&quot;&gt;Thanks &amp;amp; Links&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../sitemap&quot; title=&quot;Sitemap&quot;&gt;Sitemap&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;a class=&quot;close&quot; href=&quot;#exit&quot; title=&quot;Close Navigation&quot;&gt;&lt;span&gt;Close&lt;/span&gt;&lt;/a&gt;
-&lt;/div&gt;			&lt;div id=&quot;index&quot; class=&quot;smen&quot;&gt;
-&lt;div class=&quot;swrap&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;#exit&quot; title=&quot;Close Index&quot;&gt;Page Index&lt;/a&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;a href=&quot;#intro&quot; title=&quot;Jump to Introduction&quot;&gt;Introduction&lt;/a&gt;
-	&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&quot;#johnny&quot; title=&quot;Jump to Johnny Lawn&quot;&gt;Johnny Lawn&lt;/a&gt;
-	&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&quot;#memories&quot; title=&quot;Jump to Post War Memories&quot;&gt;Post War Memories&lt;/a&gt;
-	&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;a class=&quot;close&quot; href=&quot;#exit&quot; title=&quot;Close Index&quot;&gt;&lt;span&gt;Close Index&lt;/span&gt;&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/nav&gt;</code></pre>
+                    <pre><code id="post-shortlink" data-language="html">&lt;div role=&quot;navigation&quot; aria-label=&quot;Main menu&quot;&gt;
+	&lt;ul class=&quot;nav&quot;&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;../generic.html&quot;&gt;About&lt;/a&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Governance&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Diversity&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;ContactUs&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;../generic.html&quot;&gt;Academics&lt;/a&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Degree Programs&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Faculty&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Distance Learning&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Libraries&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;../generic.html&quot;&gt;Admissions&lt;/a&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Undergraduate&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Tuition&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Financial Aid&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;../generic.html&quot;&gt;Visitors&lt;/a&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Events&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Campus Map&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Parking&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</code></pre>
                     <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
                     <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
                   </template>
@@ -825,6 +698,7 @@
 <script src="../js/clipboard.min.js"></script>
 <script src="../js/copy-button.js"></script>
 <script src="../js/jump-link-fix.js"></script>
+<script src="../js/main-menu.js"></script>
 <script src="../js/mobile-menu-icon.js"></script>
 <script src="../js/mobile-menu.js"></script>
 <script src="../js/sidebar-slide.js"></script>
