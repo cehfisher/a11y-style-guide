@@ -10,8 +10,7 @@
   float: left;
   background: #dddddd;
   background-image: linear-gradient(top, #dddddd, #888b8d);
-  border-radius: 4px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }
+  border-radius: 4px; }
 
 .nav ul {
   position: absolute;
@@ -21,8 +20,7 @@
   transition: 0.1s linear opacity;
   min-width: 150px;
   background: #464646;
-  background: rgba(0, 0, 0, 0.9);
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5); }
+  background: rgba(0, 0, 0, 0.9); }
 
 .nav li {
   float: left;
@@ -36,11 +34,8 @@
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   color: #464646;
-  font-weight: bold;
-  font-size: 14px;
   text-decoration: none; }
 
-/* Top level hover state, preserve hover state when hovering dropdown  */
 .nav li > a:hover,
 .nav li > a:focus,
 .nav li:focus > a,
@@ -48,13 +43,11 @@
   background: #e00000;
   color: #ffffff; }
 
-/* Rounded corners for first top level nav item */
 .nav > li:first-child > a {
   border-left: 0;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px; }
 
-/* Rounded corners for last top level nav item */
 .nav > li:last-child > a {
   border-right: 0;
   border-top-right-radius: 4px;
@@ -64,7 +57,8 @@
 .nav li:focus ul,
 ul.show-menu {
   left: 0;
-  opacity: 0.9; }
+  opacity: 0.95;
+  margin-top: 4px; }
 
 .nav ul li {
   float: none;
@@ -79,7 +73,6 @@ ul.show-menu {
   border-width: 0 0 1px;
   transition: 0.1s linear all; }
 
-/* Rounded corners for ul and last list item */
 .nav ul,
 .nav ul li:last-child a {
   border: 0;
