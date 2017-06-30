@@ -24,11 +24,6 @@ $.fn.setup_navigation = function(settings) {
 
 	var top_level_links = $(this).find('> li > a');
 
-	// Added by Terrill: (removed temporarily: doesn't fix the JAWS problem after all)
-	// Add tabindex="0" to all top-level links
-	// Without at least one of these, JAWS doesn't read widget as a menu, despite all the other ARIA
-	//$(top_level_links).attr('tabindex','0');
-
 	// Set tabIndex to -1 so that top_level_links can't receive focus until menu is open
 	$(top_level_links).next('ul')
 		.attr('data-test','true')
@@ -57,10 +52,6 @@ $.fn.setup_navigation = function(settings) {
 	});
 	$(top_level_links).focus(function(){
 		$(this).closest('ul')
-			// Removed by Terrill
-			// The following was adding aria-hidden="false" to root ul since menu is never hidden
-			// and seemed to be causing flakiness in JAWS (needs more testing)
-			// .attr('aria-hidden', 'false')
 			.find('.'+settings.menuHoverClass)
 				.attr('aria-hidden', 'true')
 				.removeClass(settings.menuHoverClass)
