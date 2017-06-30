@@ -1188,22 +1188,66 @@ a:focus,
   background: #e00000;
   color: #ffffff; }
 
+/* Top level nav */
+.nav {
+  float: left;
+  margin: 20px 0; }
+
 /* Dropdowns */
 .nav ul {
   position: absolute;
   top: 2.5em;
   left: -9999px;
   opacity: 0;
-  -webkit-transition: 0.1s linear opacity;
-  min-width: 150px;
-  background: #333;
-  background: #340449;
-  background: rgba(0, 0, 0, 0.9);
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5); }
+  transition: 0.1s linear opacity;
+  min-width: 150px; }
 
 .nav li {
   float: left;
   position: relative; }
+
+/* Top level nav items */
+.nav li > a {
+  float: left;
+  padding: 10px 15px;
+  text-decoration: none; }
+
+/* Top level hover state, preserve hover state when hovering dropdown  */
+.nav li > a:hover,
+.nav li > a:focus,
+.nav li:focus > a,
+.nav li:hover > a {
+  background: #EFEFEF;
+  outline: 0; }
+
+.nav li:hover ul,
+.nav li:focus ul,
+ul.show-menu {
+  left: 0;
+  opacity: 0.99; }
+
+.nav ul li {
+  float: none;
+  position: static; }
+
+.nav ul a {
+  float: none;
+  display: block;
+  font-size: 12px;
+  text-shadow: none;
+  transition: 0.1s linear all; }
+
+.nav ul a:hover,
+.nav ul a:focus {
+  text-shadow: none; }
+
+/*==================================================
+  $Helpers
+  ==================================================*/
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
 
 .navbar-mobile-icon {
   /* Menu toggle styles. */

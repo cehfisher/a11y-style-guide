@@ -1,5 +1,24 @@
 $(document).ready(function() {
+  // Setup the a11y nav
 	$('.nav').setup_navigation();
+
+  // RWD Nav Pattern
+  $('body').addClass('js');
+  var $menu = $('#menu'),
+		  $menulink = $('.menu-link'),
+		  $menuTrigger = $('.has-subnav > a');
+
+		$menulink.click(function(e) {
+			e.preventDefault();
+			$menulink.toggleClass('active');
+			$menu.toggleClass('active');
+		});
+
+		$menuTrigger.click(function(e) {
+			e.preventDefault();
+			var $this = $(this);
+			$this.toggleClass('active').next('ul').toggleClass('active');
+		});
 });
 /*
 $(function(){
@@ -24,12 +43,17 @@ $.fn.setup_navigation = function(settings) {
 
 	var top_level_links = $(this).find('> li > a');
 
+	// Added by Terrill: (removed temporarily: doesn't fix the JAWS problem after all)
+	// Add tabindex="0" to all top-level links
+	// Without at least one of these, JAWS doesn't read widget as a menu, despite all the other ARIA
+	//$(top_level_links).attr('tabindex','0');
+
 	// Set tabIndex to -1 so that top_level_links can't receive focus until menu is open
 	$(top_level_links).next('ul')
 		.attr('data-test','true')
 		.attr({ 'aria-hidden': 'true', 'role': 'menu' })
 		.find('a')
-			.attr('tabIndex',-1);
+		.attr('tabIndex',-1);
 
 	// Adding aria-haspopup for appropriate items
 	$(top_level_links).each(function(){
@@ -41,23 +65,29 @@ $.fn.setup_navigation = function(settings) {
 		$(this).closest('ul')
 			.attr('aria-hidden', 'false')
 			.find('.'+settings.menuHoverClass)
-				.attr('aria-hidden', 'true')
-				.removeClass(settings.menuHoverClass)
-				.find('a')
-					.attr('tabIndex',-1);
+			.attr('aria-hidden', 'true')
+			.removeClass(settings.menuHoverClass)
+			.find('a')
+			.attr('tabIndex',-1);
 		$(this).next('ul')
 			.attr('aria-hidden', 'false')
 			.addClass(settings.menuHoverClass)
 			.find('a').attr('tabIndex',0);
 	});
-	$(top_level_links).focus(function(){
+
+  $(top_level_links).focus(function(){
 		$(this).closest('ul')
+			// Removed by Terrill
+			// The following was adding aria-hidden="false" to root ul since menu is never hidden
+			// and seemed to be causing flakiness in JAWS (needs more testing)
+			// .attr('aria-hidden', 'false')
 			.find('.'+settings.menuHoverClass)
-				.attr('aria-hidden', 'true')
-				.removeClass(settings.menuHoverClass)
-				.find('a')
-					.attr('tabIndex',-1);
-		$(this).next('ul')
+			.attr('aria-hidden', 'true')
+			.removeClass(settings.menuHoverClass)
+			.find('a')
+			.attr('tabIndex',-1);
+
+    $(this).next('ul')
 			.attr('aria-hidden', 'false')
 			.addClass(settings.menuHoverClass)
 			.find('a').attr('tabIndex',0);
@@ -80,7 +110,7 @@ $.fn.setup_navigation = function(settings) {
 					.attr('aria-hidden', 'false')
 					.addClass(settings.menuHoverClass)
 					.find('a').attr('tabIndex',0)
-						.last().focus();
+					.last().focus();
 			}
 		} else if(e.keyCode == 39) {
 			e.preventDefault();
@@ -97,7 +127,7 @@ $.fn.setup_navigation = function(settings) {
 					.attr('aria-hidden', 'false')
 					.addClass(settings.menuHoverClass)
 					.find('a').attr('tabIndex',0)
-						.first().focus();
+					.first().focus();
 			}
 		} else if(e.keyCode == 13 || e.keyCode == 32) {
 			// If submenu is hidden, open it
@@ -106,14 +136,14 @@ $.fn.setup_navigation = function(settings) {
 					.attr('aria-hidden', 'false')
 					.addClass(settings.menuHoverClass)
 					.find('a').attr('tabIndex',0)
-						.first().focus();
+					.first().focus();
 		} else if(e.keyCode == 27) {
 			e.preventDefault();
 			$('.'+settings.menuHoverClass)
 				.attr('aria-hidden', 'true')
 				.removeClass(settings.menuHoverClass)
 				.find('a')
-					.attr('tabIndex',-1);
+				.attr('tabIndex',-1);
 		} else {
 			$(this).parent('li').find('ul[aria-hidden=false] a').each(function(){
 				if($(this).text().substring(0,1).toLowerCase() == keyCodeMap[e.keyCode]) {
@@ -148,10 +178,10 @@ $.fn.setup_navigation = function(settings) {
 				.parents('ul').first()
 					.prev('a').focus()
 					.parents('ul').first().find('.'+settings.menuHoverClass)
-						.attr('aria-hidden', 'true')
-						.removeClass(settings.menuHoverClass)
-						.find('a')
-							.attr('tabIndex',-1);
+					.attr('aria-hidden', 'true')
+					.removeClass(settings.menuHoverClass)
+					.find('a')
+					.attr('tabIndex',-1);
 		} else if(e.keyCode == 32) {
 			e.preventDefault();
 			window.location = $(this).attr('href');
@@ -188,7 +218,8 @@ $.fn.setup_navigation = function(settings) {
 					.attr('tabIndex',-1);
 		}
 	});
-	$(document).click(function(){ $('.'+settings.menuHoverClass).attr('aria-hidden', 'true').removeClass(settings.menuHoverClass).find('a').attr('tabIndex',-1); });
+
+  $(document).click(function(){ $('.'+settings.menuHoverClass).attr('aria-hidden', 'true').removeClass(settings.menuHoverClass).find('a').attr('tabIndex',-1); });
 
 	$(this).click(function(e){
 		e.stopPropagation();

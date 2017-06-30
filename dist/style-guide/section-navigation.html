@@ -11,7 +11,6 @@
     // remove no-js and add 'js' to the HTML
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
-
   <link rel="stylesheet" href="kss-assets/kss.css">
   <link rel="stylesheet" href="../all/all.css">
 
@@ -399,88 +398,96 @@
 
                 <div class="kss-modifier kss-modifier-original">
                   <div class="kss-modifier-example">
-                    <div role="navigation" aria-label="Main menu">
-	<ul class="nav">
-		<li>
-			<a href="../generic.html">About</a>
-			<ul>
-				<li><a href="../generic.html">News</a></li>
-				<li><a href="../generic.html">Governance</a></li>
-				<li><a href="../generic.html">Diversity</a></li>
-				<li><a href="../generic.html">ContactUs</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="../generic.html">Academics</a>
-			<ul>
-				<li><a href="../generic.html">Degree Programs</a></li>
-				<li><a href="../generic.html">Faculty</a></li>
-				<li><a href="../generic.html">Distance Learning</a></li>
-				<li><a href="../generic.html">Libraries</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="../generic.html">Admissions</a>
-			<ul>
-				<li><a href="../generic.html">Undergraduate</a></li>
-				<li><a href="../generic.html">Tuition</a></li>
-				<li><a href="../generic.html">Financial Aid</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="../generic.html">Visitors</a>
-			<ul>
-				<li><a href="../generic.html">Events</a></li>
-				<li><a href="../generic.html">Campus Map</a></li>
-				<li><a href="../generic.html">Parking</a></li>
-			</ul>
-		</li>
-	</ul>
-</div>
+                    <nav class="menu" id="a11y-menu" role="navigation" aria-label="Main menu">
+
+  <ul class="nav level-1 list-reset" role="menubar" aria-hidden="false">
+    <li class="has-subnav" role="menuitem" aria-haspopup="true">
+      <a href="#about">About</a>
+      <ul class="level-2 list-reset" data-test="true" aria-hidden="true" role="menu">
+        <li role="menuitem"><a href="#news" tabindex="-1">News</a></li>
+        <li role="menuitem"><a href="#governance" tabindex="-1">Governance</a></li>
+        <li role="menuitem"><a href="#diversity" tabindex="-1">Diversity</a></li>
+        <li role="menuitem"><a href="#contact" tabindex="-1">ContactUs</a></li>
+      </ul>
+    </li>
+
+    <li role="menuitem" aria-haspopup="true">
+      <a href="#academics">Academics</a>
+      <ul class="level-2 list-reset" data-test="true" aria-hidden="true" role="menu" class="list-reset">
+        <li role="menuitem"><a href="#programs" tabindex="-1">Degree Programs</a></li>
+        <li role="menuitem"><a href="#faculty" tabindex="-1">Faculty</a></li>
+        <li role="menuitem"><a href="#distance" tabindex="-1">Distance Learning</a></li>
+        <li role="menuitem"><a href="#libs" tabindex="-1">Libraries</a></li>
+      </ul>
+    </li>
+
+    <li role="menuitem" aria-haspopup="true">
+      <a href="#admissions">Admissions</a>
+      <ul class="level-2 list-reset" data-test="true" aria-hidden="true" role="menu" class="list-reset">
+        <li role="menuitem"><a href="#undergraduate" tabindex="-1">Undergraduate</a></li>
+        <li role="menuitem"><a href="#tuition" tabindex="-1">Tuition</a></li>
+        <li role="menuitem"><a href="#financial-aid" tabindex="-1">Financial Aid</a></li>
+      </ul>
+    </li>
+
+    <li role="menuitem" aria-haspopup="true">
+      <a href="#visitors">Visitors</a>
+      <ul class="level-2 list-reset" data-test="true" aria-hidden="true" role="menu" class="list-reset">
+        <li role="menuitem"><a href="#events" tabindex="-1">Events</a></li>
+        <li role="menuitem"><a href="#campus-map" tabindex="-1">Campus Map</a></li>
+        <li role="menuitem"><a href="#parking" tabindex="-1">Parking</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
                   </div>
                 </div>
 
                                                 <div class="kss-markup">
                   <button class="js-show-markup">Show Markup Example</button>
                   <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;div role=&quot;navigation&quot; aria-label=&quot;Main menu&quot;&gt;
-	&lt;ul class=&quot;nav&quot;&gt;
-		&lt;li&gt;
-			&lt;a href=&quot;../generic.html&quot;&gt;About&lt;/a&gt;
-			&lt;ul&gt;
-				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
-				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Governance&lt;/a&gt;&lt;/li&gt;
-				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Diversity&lt;/a&gt;&lt;/li&gt;
-				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;ContactUs&lt;/a&gt;&lt;/li&gt;
-			&lt;/ul&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
-			&lt;a href=&quot;../generic.html&quot;&gt;Academics&lt;/a&gt;
-			&lt;ul&gt;
-				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Degree Programs&lt;/a&gt;&lt;/li&gt;
-				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Faculty&lt;/a&gt;&lt;/li&gt;
-				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Distance Learning&lt;/a&gt;&lt;/li&gt;
-				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Libraries&lt;/a&gt;&lt;/li&gt;
-			&lt;/ul&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
-			&lt;a href=&quot;../generic.html&quot;&gt;Admissions&lt;/a&gt;
-			&lt;ul&gt;
-				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Undergraduate&lt;/a&gt;&lt;/li&gt;
-				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Tuition&lt;/a&gt;&lt;/li&gt;
-				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Financial Aid&lt;/a&gt;&lt;/li&gt;
-			&lt;/ul&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
-			&lt;a href=&quot;../generic.html&quot;&gt;Visitors&lt;/a&gt;
-			&lt;ul&gt;
-				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Events&lt;/a&gt;&lt;/li&gt;
-				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Campus Map&lt;/a&gt;&lt;/li&gt;
-				&lt;li&gt;&lt;a href=&quot;../generic.html&quot;&gt;Parking&lt;/a&gt;&lt;/li&gt;
-			&lt;/ul&gt;
-		&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;</code></pre>
+                    <pre><code id="post-shortlink" data-language="html">&lt;nav class=&quot;menu&quot; id=&quot;a11y-menu&quot; role=&quot;navigation&quot; aria-label=&quot;Main menu&quot;&gt;
+
+  &lt;ul class=&quot;nav level-1 list-reset&quot; role=&quot;menubar&quot; aria-hidden=&quot;false&quot;&gt;
+    &lt;li class=&quot;has-subnav&quot; role=&quot;menuitem&quot; aria-haspopup=&quot;true&quot;&gt;
+      &lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;
+      &lt;ul class=&quot;level-2 list-reset&quot; data-test=&quot;true&quot; aria-hidden=&quot;true&quot; role=&quot;menu&quot;&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#news&quot; tabindex=&quot;-1&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#governance&quot; tabindex=&quot;-1&quot;&gt;Governance&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#diversity&quot; tabindex=&quot;-1&quot;&gt;Diversity&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#contact&quot; tabindex=&quot;-1&quot;&gt;ContactUs&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+
+    &lt;li role=&quot;menuitem&quot; aria-haspopup=&quot;true&quot;&gt;
+      &lt;a href=&quot;#academics&quot;&gt;Academics&lt;/a&gt;
+      &lt;ul class=&quot;level-2 list-reset&quot; data-test=&quot;true&quot; aria-hidden=&quot;true&quot; role=&quot;menu&quot; class=&quot;list-reset&quot;&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#programs&quot; tabindex=&quot;-1&quot;&gt;Degree Programs&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#faculty&quot; tabindex=&quot;-1&quot;&gt;Faculty&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#distance&quot; tabindex=&quot;-1&quot;&gt;Distance Learning&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#libs&quot; tabindex=&quot;-1&quot;&gt;Libraries&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+
+    &lt;li role=&quot;menuitem&quot; aria-haspopup=&quot;true&quot;&gt;
+      &lt;a href=&quot;#admissions&quot;&gt;Admissions&lt;/a&gt;
+      &lt;ul class=&quot;level-2 list-reset&quot; data-test=&quot;true&quot; aria-hidden=&quot;true&quot; role=&quot;menu&quot; class=&quot;list-reset&quot;&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#undergraduate&quot; tabindex=&quot;-1&quot;&gt;Undergraduate&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#tuition&quot; tabindex=&quot;-1&quot;&gt;Tuition&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#financial-aid&quot; tabindex=&quot;-1&quot;&gt;Financial Aid&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+
+    &lt;li role=&quot;menuitem&quot; aria-haspopup=&quot;true&quot;&gt;
+      &lt;a href=&quot;#visitors&quot;&gt;Visitors&lt;/a&gt;
+      &lt;ul class=&quot;level-2 list-reset&quot; data-test=&quot;true&quot; aria-hidden=&quot;true&quot; role=&quot;menu&quot; class=&quot;list-reset&quot;&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#events&quot; tabindex=&quot;-1&quot;&gt;Events&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#campus-map&quot; tabindex=&quot;-1&quot;&gt;Campus Map&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#parking&quot; tabindex=&quot;-1&quot;&gt;Parking&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
                     <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
                     <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
                   </template>
