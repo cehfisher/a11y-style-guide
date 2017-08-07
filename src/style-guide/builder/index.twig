@@ -73,9 +73,10 @@
           {% endfor %}
           </ul>
         </nav>
-      </div>
 
-    </div>
+      </div> <!-- /.kss-sidebar-inner -->
+
+    </div> <!-- /.kss-sidebar -->
 
     <main id="kss-main-content" class="kss-content" aria-label="content">
       <article role="main" class="kss-article">
@@ -91,91 +92,102 @@
           The "root" element comes first in this loop, and can be detected using the
           "loop.first" variable as seen below.
         #}
+        <div>
+          <div class="social-link-out">
+            <a href="https://twitter.com/cariefisher" target="_blank" class="social-link-twitter"><span class="visuallyhidden">Carie Fisher on Twitter</span></a>
+            <a href="https://github.com/cehfisher" target="_blank" class="social-link-github"><span class="visuallyhidden">Carie Fisher on GitHub</span></a>
+          </div>
 
-        <div><div class="social-link-out"><a href="https://twitter.com/cariefisher" target="_blank" class="social-link-twitter"><span class="visuallyhidden">Carie Fisher on Twitter</span></a><a href="https://github.com/cehfisher" target="_blank" class="social-link-github"><span class="visuallyhidden">Carie Fisher on GitHub</span></a></div>
+          {% for section in sections %}
+            {% set sectionElement = loop.first ? 'div' : 'section' %}
+            <{{ sectionElement }} id="kssref-{{ section.referenceURI }}" class="kss-section kss-depth-{{ section.depth }}">
+              <div class="kss-style">
+                {% set headerElement = (section.depth > 6) ? 'h6' : 'h' ~ section.depth %}
+                <{{ headerElement }} class="kss-title kss-title--level-{{ section.depth }}">
+                  <a class="kss-title__permalink" href="#kssref-{{ section.referenceURI }}">
+                    {{ section.header }}
+                  </a>
+                </{{ headerElement }}>
 
-        {% for section in sections %}
-          {% set sectionElement = loop.first ? 'div' : 'section' %}
-          <{{ sectionElement }} id="kssref-{{ section.referenceURI }}" class="kss-section kss-depth-{{ section.depth }}">
-            <div class="kss-style">
-              {% set headerElement = (section.depth > 6) ? 'h6' : 'h' ~ section.depth %}
-              <{{ headerElement }} class="kss-title kss-title--level-{{ section.depth }}">
-                <a class="kss-title__permalink" href="#kssref-{{ section.referenceURI }}">
-                  {{ section.header }}
-                </a>
-              </{{ headerElement }}>
-
-              {% if section.description %}
-                <div class="kss-description">
-                  {{ section.description|raw }}
-                </div>
-              {% endif %}
-
-              {% for parameter in section.parameters %}
-                {% if loop.first %}
-                  <div class="kss-parameters__title">Parameters:</div>
-                  <ul class="kss-parameters">
+                {% if section.description %}
+                  <div class="kss-description">
+                    {{ section.description|raw }}
+                  </div>
                 {% endif %}
-                  <li class="kss-parameters__item">
-                    <div class="kss-parameters__name"><code>{{ parameter.name }}</code></div>
-                    <div class="kss-parameters__description">
-                      {{ parameter.description|raw }}
-                      {% if parameter.defaultValue %}
-                        <div class="kss-parameters__default-value">
-                          Defaults to: <code>{{ parameter.defaultValue }}</code>
-                        </div>
-                      {% endif %}
-                    </div>
-                  </li>
-                {% if loop.last %}
-                  </ul>
-                {% endif %}
-              {% endfor %}
-            </div>
 
-            {% if section.example %}
-              <div class="kss-modifier-block">
-
-                <div class="kss-modifier kss-modifier-original">
-                  <div class="kss-modifier-example">
-                    {{ section.example|raw }}
-                  </div>
-                </div>
-
-                {% for modifier in section.modifiers %}
-                <div class="kss-modifier">
-                  <div class="kss-modifier-head">
-                    <div class="kss-modifier-name">{{ modifier.name }}</div>
-                    <div class="kss-modifier-description">
-                      {{ modifier.description|raw }}
-                    </div>
-                  </div>
-                  <div class="kss-modifier-example">
-                    {{ modifier.markup|raw }}
-                  </div>
-                </div>
+                {% for parameter in section.parameters %}
+                  {% if loop.first %}
+                    <p class="kss-parameters__title">
+                      Parameters:
+                    </p>
+                    <ul class="kss-parameters">
+                  {% endif %}
+                    <li class="kss-parameters__item">
+                      <div class="kss-parameters__name">
+                        <code>{{ parameter.name }}</code>
+                      </div>
+                      <div class="kss-parameters__description">
+                        {{ parameter.description|raw }}
+                        {% if parameter.defaultValue %}
+                          <div class="kss-parameters__default-value">
+                            Defaults to: <code>{{ parameter.defaultValue }}</code>
+                          </div>
+                        {% endif %}
+                      </div>
+                    </li>
+                  {% if loop.last %}
+                    </ul>
+                  {% endif %}
                 {% endfor %}
-                {% if section.markup %}
-                <div class="kss-markup">
-                  <button class="js-show-markup">Show Markup Example</button>
-                  <template>
-                    <pre><code id="post-shortlink" data-language="html">{{ section.markup|escape('html') }}</code></pre>
-                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
-                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
-                  </template>
-                </div>
-                {% endif %}
               </div>
+              {% if section.example %}
+                <div class="kss-modifier-block">
 
-              {% if section.sourceFile.name %}
-                <div class="kss-source kss-style">
-                  Source: <code>{{ section.sourceFile.name }}</code>, line {{ section.sourceFile.line }}
+                  <div class="kss-modifier kss-modifier-original">
+                    <div class="kss-modifier-example">
+                      {{ section.example|raw }}
+                    </div>
+                  </div>
+
+                  {% for modifier in section.modifiers %}
+                  <div class="kss-modifier">
+                    <div class="kss-modifier-head">
+                      <div class="kss-modifier-name">
+                        {{ modifier.name }}
+                      </div>
+                      <div class="kss-modifier-description">
+                        {{ modifier.description|raw }}
+                      </div>
+                    </div>
+                    <div class="kss-modifier-example">
+                      {{ modifier.markup|raw }}
+                    </div>
+                  </div>
+                  {% endfor %}
+
+                  {% if section.markup %}
+                  <div class="kss-markup">
+                    <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                    <template>
+                      <pre><code id="post-shortlink" data-language="html">{{ section.markup|escape('html') }}</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+                  </div>
+                  {% endif %}
                 </div>
+                {% if section.sourceFile.name %}
+                  <div class="kss-source kss-style">
+                    Source: <code>{{ section.sourceFile.name }}</code>, line {{ section.sourceFile.line }}
+                  </div>
+                {% endif %}
               {% endif %}
-            {% endif %}
-          </{{ sectionElement }}>
-        {% endfor %}
-      {% endif %}
+            </{{ sectionElement }}>
+          {% endfor %}
+        </div>
+        {% endif %}
       </article>
     </main>
 
@@ -184,8 +196,7 @@
         Back to top
       </span>
     </a>
-
-  </div>
+  </div> <!-- /.kss-wrapper -->
 
 <!-- SCRIPTS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
