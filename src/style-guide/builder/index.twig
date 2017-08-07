@@ -20,7 +20,6 @@
   </a>
 
   <div class="kss-wrapper">
-
     <div class="kss-sidebar">
 
       <div class="kss-sidebar-inner">
@@ -34,25 +33,26 @@
           </div>
         </header>
 
-        <nav class="kss-nav">
-        <button type="button" class="nav-btn">
-          <span class="visuallyhidden">
-            Navigation Toggle
-          </span>
-        </button>
-
-        <section class="navbar-mobile-icon">
-          <button class="menu-toggle" href="#" id="toggle-menu" aria-expanded="false"><span>Menu</span>
-            <svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
-              <g class="svg-menu-toggle">
-              <path class="line line-1" d="M5 13h90v14H5z"/>
-              <path class="line line-2" d="M5 43h90v14H5z"/>
-              <path class="line line-3" d="M5 73h90v14H5z"/>
-              </g>
-            </svg>
+        <nav class="kss-nav" aria-label="Style Guide">
+          <button type="button" class="nav-btn">
+            <span class="visuallyhidden">
+              Navigation Toggle
+            </span>
           </button>
-        </section>
-        <ul id="kss-nav-list" class="kss-menu">
+
+          <div class="navbar-mobile-icon">
+            <button class="menu-toggle" id="toggle-menu" aria-expanded="false">
+              <span>Menu</span>
+              <svg class="icon icon-menu-toggle" aria-hidden="true" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
+                <g class="svg-menu-toggle">
+                  <path class="line line-1" d="M5 13h90v14H5z"/>
+                  <path class="line line-2" d="M5 43h90v14H5z"/>
+                  <path class="line line-3" d="M5 73h90v14H5z"/>
+                </g>
+              </svg>
+            </button>
+          </div>
+          <ul id="kss-nav-list" class="kss-menu">
           <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
           {% for menu_item in menu %}
             <li class="kss-menu-item">
