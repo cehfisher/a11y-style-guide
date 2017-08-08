@@ -1,24 +1,51 @@
 <section class="videos-section">
   <figure class="videos">
-    <video controls="controls" poster="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" style="width: 100%;">
-      <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" />
-      <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" type="video/webm" />
-      <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type="video/ogg" />
-      <object type="application/x-shockwave-flash" data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" width="640" height="360">
-        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
-        <param name="allowFullScreen" value="true" />
-        <param name="wmode" value="transparent" />
-        <param name="flashVars" value="config={'playlist':['http%3A%2F%2Fsandbox.thewikies.com%2Fvfe-generator%2Fimages%2Fbig-buck-bunny_poster.jpg',{'url':'http%3A%2F%2Fclips.vorwaerts-gmbh.de%2Fbig_buck_bunny.mp4','autoPlay':false}]}" />
-        <img alt="Big Buck Bunny" src="http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg" width="640" height="360" title="No video playback capabilities, please download the video below" />
-        <iframe width="560" height="315" title="Big Buck Bunny on youtube" src="https://www.youtube.com/embed/U9t-slLl30E" frameborder="0" allowfullscreen></iframe>
-      </object>
-    </video>
+    <div class="px-video-container" id="myvid">
+    	<div class="px-video-img-captions-container">
+    		<div class="px-video-captions hide"></div>
+    		<video width="640" height="360" poster="../assets/videos/read-more.png" controls>
+    			<!-- video files -->
+    			<source src="../assets/videos/read-more.mp4" type="video/mp4" />
+    			<source src="../assets/videos/read-more.webm" type="video/webm" />
+
+    			<!-- text track file -->
+    			<track kind="captions" label="English captions" src="../assets/videos/read-more.vtt" srclang="en" default />
+
+    			<!-- fallback for browsers that don't support the video element -->
+    			<div>
+    				<a href="../assets/videos/read-more.mp4">
+    					<img src="../assets/videos/read-more.png" width="640" height="360" alt="download video" />
+    				</a>
+    			</div>
+    		</video>
+    	</div><!-- end container for captions and video -->
+    	<div class="px-video-controls"></div>
+    </div><!-- end video container -->
+
+    <p><a href="https://github.com/paypal/accessible-html5-video-player" target="_blank">Accessible HTML5 Video Player GitHub</a></p>
+
+    </div><!-- end page wrapper container -->
+    <script src="js/strings.js"></script>
+    <script src="js/px-video.js"></script>
+
+    <script>
+
+    // Initialize
+    new InitPxVideo({
+    	"videoId": "myvid",
+    	"captionsOnDefault": true,
+    	"seekInterval": 20,
+    	"videoTitle": "Demo video of Read More section using Mac Voice Over tool",
+    	"debug": true
+    });
+
+    </script>
     <figcaption>
       <p class="videos__transcript">
-        <a href="http://www.example.com/location/of_transcript.htm">Get Transcript</a>
+        <a href="../assets/videos/read-more.txt">Get Transcript</a>
       </p>
       <p class="videos__alt-audio">
-        <a href="http://www.example.com/location/of_audiotrack.mp4">Alternative Audio Track</a>
+        <a href="../assets/videos/read-more.m4a">Alternative Audio Track</a>
       </p>
     </figcaption>
   </figure>

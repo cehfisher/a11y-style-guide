@@ -33,7 +33,7 @@
 .nav {
   float: left;
   background: $color-alto;
-  background-image: linear-gradient(top, $color-alto, $color-manatee);
+  background-image: linear-gradient(to top, $color-alto, $color-manatee);
   border-radius: $border-rd-sm;
 }
 
@@ -86,7 +86,7 @@
 
 .nav li:hover ul,
 .nav li:focus ul,
-ul.show-menu {
+ul.show-menu { // sass-lint:disable-line no-qualifying-elements
   left: 0;
   opacity: 0.95;
   margin-top: 4px;
@@ -104,7 +104,7 @@ ul.show-menu {
   font-size: 12px;
   border: 1px solid $color-midnight;
   border-width: 0 0 1px;
-  transition: 0.1s linear all;
+  transition: 0.1s linear all; // sass-lint:disable-line no-transition-all
 }
 
 .nav ul,

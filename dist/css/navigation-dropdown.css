@@ -9,7 +9,7 @@
 .nav {
   float: left;
   background: #dddddd;
-  background-image: linear-gradient(top, #dddddd, #888b8d);
+  background-image: linear-gradient(to top, #dddddd, #888b8d);
   border-radius: 4px; }
 
 .nav ul {
