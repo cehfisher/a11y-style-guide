@@ -57,44 +57,6 @@
           <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
                       <li class="kss-menu-item">
               <a href="section-cards.html"><span class="kss-ref">1</span><span class="kss-name">Cards</span></a>
-                              <ul class="kss-menu-child">
-                                      <li class="kss-menu-item">
-                      <a href="#kssref-cards-basic">
-                        <span class="kss-ref ">1.1</span>
-                        <span class="kss-name">Basic Card</span>
-                      </a>
-                    </li>
-                                      <li class="kss-menu-item">
-                      <a href="#kssref-cards-basic-grid">
-                        <span class="kss-ref ">1.2</span>
-                        <span class="kss-name">Resources Grid</span>
-                      </a>
-                    </li>
-                                      <li class="kss-menu-item">
-                      <a href="#kssref-cards-cards-click">
-                        <span class="kss-ref ">1.3</span>
-                        <span class="kss-name">Click Card</span>
-                      </a>
-                    </li>
-                                      <li class="kss-menu-item">
-                      <a href="#kssref-cards-cards-hover">
-                        <span class="kss-ref ">1.4</span>
-                        <span class="kss-name">Hover Card</span>
-                      </a>
-                    </li>
-                                      <li class="kss-menu-item">
-                      <a href="#kssref-cards-cards-person-details">
-                        <span class="kss-ref ">1.5</span>
-                        <span class="kss-name">Person Detail Card</span>
-                      </a>
-                    </li>
-                                      <li class="kss-menu-item">
-                      <a href="#kssref-cards-cards-person-grid">
-                        <span class="kss-ref ">1.6</span>
-                        <span class="kss-name">Person Grid Card</span>
-                      </a>
-                    </li>
-                                  </ul>
                           </li>
                       <li class="kss-menu-item">
               <a href="section-forms.html"><span class="kss-ref">2</span><span class="kss-name">Forms</span></a>
@@ -131,17 +93,190 @@
             <a href="https://github.com/cehfisher" target="_blank" class="social-link-github"><span class="visuallyhidden">Carie Fisher on GitHub</span></a>
           </div>
 
-                                  <div id="kssref-cards" class="kss-section kss-depth-1">
+                                  <div id="kssref-cards-cards-person-details" class="kss-section kss-depth-2">
               <div class="kss-style">
-                                <h1 class="kss-title kss-title--level-1">
-                  <a class="kss-title__permalink" href="#kssref-cards">
-                    Cards
+                                <h2 class="kss-title kss-title--level-2">
+                  <a class="kss-title__permalink" href="#kssref-cards-cards-person-details">
+                    Person Detail Card
                   </a>
-                </h1>
+                </h2>
 
                 
                               </div>
-                          </div>
+                              <div class="kss-modifier-block">
+
+                  <div class="kss-modifier kss-modifier-original">
+                    <div class="kss-modifier-example">
+                      <article class="person person-list__item-wrapper list with-image">
+            <div class="person-list__image">
+        <a href="#"><img src="http://placehold.it/256x360" alt="Person name"></a>
+      </div>
+        <div class="person-list__content">
+    <div class="person__content-section">
+              <h3 class="person-list__name">
+          <a href ="#" class="person-list__name-link">Ban Allos Ph.D.</a>
+        </h3>
+                    <div class="person__content-item person-list__title">Associate Professor of Medicine, Preventative Medicine</div>
+                    <div class="person__content-item person__phone">
+          555-555-1212
+        </div>
+                    <div class="person__content-item person__email">
+          <a href="mailto:email@email.com">
+            <i class="fa fa-fw fa-envelope"></i>
+            email@email.com
+          </a>
+        </div>
+          </div>
+          <div class="person__content-section">
+        <div class="person__content-item person__address">
+          <div class="person__address-container"><i class="fa fa-fw fa-building-o" aria-label="Address"></i><div><strong>Office Address</strong></div><div>123 Maple St.</div><div>Nashville, TN</div></div>
+        </div>
+      </div>
+              <div class="person__content-section">
+        <h4 class="person__content-section-title">More Information</h4>
+        <div class="person__content-item person-list__more-info-link">
+          <i class="fa fa-fw fa-globe"></i>
+          <a href="#">http://medschool.vanderbilt.edu</a>
+        </div>
+      </div>
+              <div class="person__content-section">
+                  <div class="person__content-item person-list__brief-description">
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec id elit non mi porta gravida at eget metus.</p>
+           </div>
+                              </div>
+              </div>
+</article>
+
+                    </div>
+                  </div>
+
+                  
+                                    <div class="kss-markup">
+                    <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                    <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;article class=&quot;person person-list__item-wrapper {{ modifier_class }}{{ photo or use_placeholder_images ? &#039; with-image&#039; }}&quot;&gt;
+  {% if use_placeholder_images %}
+    &lt;div class=&quot;person-list__image&quot;&gt;
+      {% if photo %}
+        {{ photo }}
+      {% else %}
+        &lt;div class=&quot;person-list__image-placeholder&quot;&gt;&lt;/div&gt;
+      {% endif %}
+    &lt;/div&gt;
+  {% else %}
+    {% if photo %}
+      &lt;div class=&quot;person-list__image&quot;&gt;
+        {{ photo }}
+      &lt;/div&gt;
+    {% endif %}
+  {% endif %}
+  &lt;div class=&quot;person-list__content&quot;&gt;
+    &lt;div class=&quot;person__content-section&quot;&gt;
+      {% if link %}
+        &lt;h3 class=&quot;person-list__name&quot;&gt;
+          &lt;a href =&quot;{{ link }}&quot; class=&quot;person-list__name-link&quot;&gt;{{ name }} {{ suffix }}&lt;/a&gt;
+        &lt;/h3&gt;
+      {% else %}
+        &lt;h3 class=&quot;person-list__name&quot;&gt;{{ name }} {{ suffix }}&lt;/h3&gt;
+      {% endif %}
+      {% if title %}
+        &lt;div class=&quot;person__content-item person-list__title&quot;&gt;{{ title }}&lt;/div&gt;
+      {% endif %}
+      {% if phone %}
+        &lt;div class=&quot;person__content-item person__phone&quot;&gt;
+          {{ phone }}
+        &lt;/div&gt;
+      {% endif %}
+      {% if email %}
+        &lt;div class=&quot;person__content-item person__email&quot;&gt;
+          &lt;a href=&quot;mailto:{{ email }}&quot;&gt;
+            &lt;i class=&quot;fa fa-fw fa-envelope&quot;&gt;&lt;/i&gt;
+            {{ email }}
+          &lt;/a&gt;
+        &lt;/div&gt;
+      {% endif %}
+    &lt;/div&gt;
+    {% if address %}
+      &lt;div class=&quot;person__content-section&quot;&gt;
+        &lt;div class=&quot;person__content-item person__address&quot;&gt;
+          {{ address }}
+        &lt;/div&gt;
+      &lt;/div&gt;
+    {% endif %}
+    {% if external_link %}
+      &lt;div class=&quot;person__content-section&quot;&gt;
+        &lt;h4 class=&quot;person__content-section-title&quot;&gt;More Information&lt;/h4&gt;
+        &lt;div class=&quot;person__content-item person-list__more-info-link&quot;&gt;
+          &lt;i class=&quot;fa fa-fw fa-globe&quot;&gt;&lt;/i&gt;
+          {{ external_link }}
+        &lt;/div&gt;
+      &lt;/div&gt;
+    {% endif %}
+    {% if brief_description or bio or cv_link %}
+      &lt;div class=&quot;person__content-section&quot;&gt;
+        {% if brief_description %}
+          &lt;div class=&quot;person__content-item person-list__brief-description&quot;&gt;
+            {{ brief_description }}
+           &lt;/div&gt;
+        {% endif %}
+        {% if bio %}
+          &lt;div class=&quot;person__content-item person-list__bio&quot;&gt;
+            {{ bio }}
+          &lt;/div&gt;
+        {% endif %}
+        {% if cv_link %}
+          &lt;div class=&quot;person__content-item person-list__cv&quot;&gt;
+            {{ cv_link }}
+          &lt;/div&gt;
+        {% endif %}
+      &lt;/div&gt;
+    {% endif %}
+    {% if clinical or patient_link %}
+      &lt;div class=&quot;person__content-section&quot;&gt;
+        &lt;h4 class=&quot;person__content-section-title&quot;&gt;Clinical Information&lt;/h4&gt;
+        {% if clinical %}
+          &lt;div class=&quot;person__content-item person-list__clinical-interests&quot;&gt;
+            {{ clinical }}
+          &lt;/div&gt;
+        {% endif %}
+        {% if patient_link %}
+          &lt;div class=&quot;person__content-item person-list__patient-website&quot;&gt;
+            {{ patient_link }}
+          &lt;/div&gt;
+        {% endif %}
+      &lt;/div&gt;
+    {% endif %}
+    {% if research or lab_link or postdoc_positions %}
+      &lt;div class=&quot;person__content-section&quot;&gt;
+        &lt;h4 class=&quot;person__content-section-title&quot;&gt;Research Information&lt;/h4&gt;
+        {% if research %}
+          &lt;div class=&quot;person__content-item person-list__research-info&quot;&gt;
+            {{ research }}
+          &lt;/div&gt;
+        {% endif %}
+        {% if lab_link %}
+          &lt;div class=&quot;person__content-item person-list__lab-website&quot;&gt;
+            {{ lab_link }}
+          &lt;/div&gt;
+        {% endif %}
+        {% if postdoc_positions %}
+          &lt;div class=&quot;person__content-item person-list__postdoc-positions&quot;&gt;
+            {{ postdoc_positions }}
+          &lt;/div&gt;
+        {% endif %}
+      &lt;/div&gt;
+    {% endif %}
+  &lt;/div&gt;
+&lt;/article&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+                  </div>
+                                  </div>
+                                          </div>
                   </div>
               </article>
     </main>

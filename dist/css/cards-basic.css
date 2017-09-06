@@ -1,6 +1,8 @@
 .card {
   position: relative;
-  max-width: 300px; }
+  max-width: 300px;
+  float: left;
+  margin: 1rem; }
 
 .card__image img {
   max-width: 100%;

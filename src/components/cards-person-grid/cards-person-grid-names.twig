@@ -1,0 +1,30 @@
+{{ attach_library('a11y_style_guide/cards-person') }}
+<article class="person person-grid__item-wrapper {{ modifier_class }}">
+  <div class="person-grid__image">
+    {% if photo %}
+      {{ photo }}
+    {% else %}
+      <div class="person-grid__placeholder-image"></div>
+    {% endif %}
+  </div>
+  <div class="person-grid__content">
+    {% if link %}
+      <h3 class="person-grid__name">
+        <a href="{{ link }}">{{ name }}</a>
+      </h3>
+    {% else %}
+      <h3 class="person-grid__name">{{ name }}</h3>
+    {% endif %}
+    {% if title %}
+      <div class="person-grid__title">{{ title }}</div>
+    {% endif %}
+    {% if email %}
+      <div class="person-grid__email">
+        <a href="mailto:{{ email }}">
+          <i class="fa fa-fw fa-envelope"></i>
+          {{ 'Email'|t }}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</article>

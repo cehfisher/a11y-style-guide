@@ -1,0 +1,6 @@
+.resources-grid__item {
+  margin: 3rem 0; }
+  @media (min-width: 64em) {
+    .resources-grid__item .card__title {
+      left: 15px;
+      right: 15px; } }

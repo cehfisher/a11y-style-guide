@@ -1,0 +1,13 @@
+{
+  "modifier_class": "list",
+  "link": "#",
+  "photo": "<a href=\"#\"><img src=\"http://placehold.it/256x360\" alt=\"Person name\"></a>",
+  "name": "Ban Allos",
+  "suffix": "Ph.D.",
+  "title": "Associate Professor of Medicine, Preventative Medicine",
+  "email": "email@email.com",
+  "phone": "555-555-1212",
+  "address": "<div class=\"person__address-container\"><i class=\"fa fa-fw fa-building-o\" aria-label=\"Address\"></i><div><strong>Office Address</strong></div><div>123 Maple St.</div><div>Nashville, TN</div></div>",
+  "external_link": "<a href=\"#\">http://medschool.vanderbilt.edu</a>",
+  "brief_description": "<p>Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec id elit non mi porta gravida at eget metus.</p>"
+}

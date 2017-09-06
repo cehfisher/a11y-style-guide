@@ -26,6 +26,8 @@
 .card {
   position: relative;
   max-width: 300px;
+  float: left;
+  margin: $padding-sm;
 }
 
 .card__image {

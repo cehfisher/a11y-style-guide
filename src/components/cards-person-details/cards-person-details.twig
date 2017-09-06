@@ -1,0 +1,114 @@
+<article class="person person-list__item-wrapper {{ modifier_class }}{{ photo or use_placeholder_images ? ' with-image' }}">
+  {% if use_placeholder_images %}
+    <div class="person-list__image">
+      {% if photo %}
+        {{ photo }}
+      {% else %}
+        <div class="person-list__image-placeholder"></div>
+      {% endif %}
+    </div>
+  {% else %}
+    {% if photo %}
+      <div class="person-list__image">
+        {{ photo }}
+      </div>
+    {% endif %}
+  {% endif %}
+  <div class="person-list__content">
+    <div class="person__content-section">
+      {% if link %}
+        <h3 class="person-list__name">
+          <a href ="{{ link }}" class="person-list__name-link">{{ name }} {{ suffix }}</a>
+        </h3>
+      {% else %}
+        <h3 class="person-list__name">{{ name }} {{ suffix }}</h3>
+      {% endif %}
+      {% if title %}
+        <div class="person__content-item person-list__title">{{ title }}</div>
+      {% endif %}
+      {% if phone %}
+        <div class="person__content-item person__phone">
+          {{ phone }}
+        </div>
+      {% endif %}
+      {% if email %}
+        <div class="person__content-item person__email">
+          <a href="mailto:{{ email }}">
+            <i class="fa fa-fw fa-envelope"></i>
+            {{ email }}
+          </a>
+        </div>
+      {% endif %}
+    </div>
+    {% if address %}
+      <div class="person__content-section">
+        <div class="person__content-item person__address">
+          {{ address }}
+        </div>
+      </div>
+    {% endif %}
+    {% if external_link %}
+      <div class="person__content-section">
+        <h4 class="person__content-section-title">More Information</h4>
+        <div class="person__content-item person-list__more-info-link">
+          <i class="fa fa-fw fa-globe"></i>
+          {{ external_link }}
+        </div>
+      </div>
+    {% endif %}
+    {% if brief_description or bio or cv_link %}
+      <div class="person__content-section">
+        {% if brief_description %}
+          <div class="person__content-item person-list__brief-description">
+            {{ brief_description }}
+           </div>
+        {% endif %}
+        {% if bio %}
+          <div class="person__content-item person-list__bio">
+            {{ bio }}
+          </div>
+        {% endif %}
+        {% if cv_link %}
+          <div class="person__content-item person-list__cv">
+            {{ cv_link }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+    {% if clinical or patient_link %}
+      <div class="person__content-section">
+        <h4 class="person__content-section-title">Clinical Information</h4>
+        {% if clinical %}
+          <div class="person__content-item person-list__clinical-interests">
+            {{ clinical }}
+          </div>
+        {% endif %}
+        {% if patient_link %}
+          <div class="person__content-item person-list__patient-website">
+            {{ patient_link }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+    {% if research or lab_link or postdoc_positions %}
+      <div class="person__content-section">
+        <h4 class="person__content-section-title">Research Information</h4>
+        {% if research %}
+          <div class="person__content-item person-list__research-info">
+            {{ research }}
+          </div>
+        {% endif %}
+        {% if lab_link %}
+          <div class="person__content-item person-list__lab-website">
+            {{ lab_link }}
+          </div>
+        {% endif %}
+        {% if postdoc_positions %}
+          <div class="person__content-item person-list__postdoc-positions">
+            {{ postdoc_positions }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</article>

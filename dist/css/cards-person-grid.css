@@ -1,0 +1,91 @@
+.node--view-mode-photo-grid-names {
+  width: 100%; }
+
+.person-grid__item-wrapper.photo-grid-names {
+  background-color: #dddddd;
+  margin: 0 auto;
+  max-width: 150px; }
+
+.person-grid__item-wrapper.photo-grid {
+  margin: 0 auto;
+  max-width: 150px; }
+
+.person-grid__image a {
+  display: block; }
+
+.person-grid__image img {
+  width: 100%; }
+
+.person-grid__placeholder-image {
+  background-color: #888b8d;
+  padding-top: 140.5%;
+  width: 100%; }
+
+.person-grid__content {
+  background-color: #dddddd;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 1rem; }
+
+.person-grid__name {
+  margin: 0 0 0.5rem;
+  font-size: inherit;
+  line-height: inherit;
+  word-break: break-word; }
+
+.person-grid__title {
+  margin-bottom: 0.5rem;
+  word-break: break-word; }
+
+h2.directory__group-title {
+  color: #e00000;
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  text-transform: none; }
+
+ul.directory__items {
+  margin: 0;
+  padding: 0; }
+  .directory-layout--photo-grid ul.directory__items,
+  .directory-layout--photo-grid-name ul.directory__items {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -0.5rem; }
+    @media (min-width: 40em) {
+      .directory-layout--photo-grid ul.directory__items,
+      .directory-layout--photo-grid-name ul.directory__items {
+        margin: 0 -1rem; } }
+
+.directory__item {
+  list-style: none;
+  padding: 1rem; }
+  .directory-layout--list .directory__item {
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    padding: 0; }
+  .directory-layout--photo-grid .directory__item,
+  .directory-layout--photo-grid-name .directory__item {
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+    padding: 1rem; }
+    @media (min-width: 30em) {
+      .directory-layout--photo-grid .directory__item,
+      .directory-layout--photo-grid-name .directory__item {
+        -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%; } }
+    @media (min-width: 40em) {
+      .directory-layout--photo-grid .directory__item,
+      .directory-layout--photo-grid-name .directory__item {
+        -ms-flex-preferred-size: 20%;
+        flex-basis: 20%; } }
+    @media (min-width: 64em) {
+      .directory-layout--photo-grid .directory__item,
+      .directory-layout--photo-grid-name .directory__item {
+        -ms-flex-preferred-size: 16.66%;
+        flex-basis: 16.66%; } }
+  .directory-layout--photo-grid-name .directory__item {
+    display: -ms-flexbox;
+    display: flex; }

@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "modifier_class": "photo-grid-names",
+      "link": "#",
+      "photo": "<a href=\"#\"><img src=\"http://placehold.it/256x360\" alt=\"Person name\"></a>",
+      "name": "Ban Allos, MD",
+      "title": "Associate Professor of Medicine, Preventative Medicine",
+      "email": "email@email.com"
+    },
+    {
+      "modifier_class": "photo-grid-names",
+      "link": "#",
+      "photo": "<a href=\"#\"><img src=\"http://placehold.it/256x360\" alt=\"Person name\"></a>",
+      "name": "Lorem Ultricies, MD",
+      "title": "Professor of Medicine, Preventative Medicine",
+      "email": "email@email.com"
+    }
+  ]
+}

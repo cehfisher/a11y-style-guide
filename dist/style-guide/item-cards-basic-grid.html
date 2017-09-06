@@ -57,44 +57,6 @@
           <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
                       <li class="kss-menu-item">
               <a href="section-cards.html"><span class="kss-ref">1</span><span class="kss-name">Cards</span></a>
-                              <ul class="kss-menu-child">
-                                      <li class="kss-menu-item">
-                      <a href="#kssref-cards-basic">
-                        <span class="kss-ref ">1.1</span>
-                        <span class="kss-name">Basic Card</span>
-                      </a>
-                    </li>
-                                      <li class="kss-menu-item">
-                      <a href="#kssref-cards-basic-grid">
-                        <span class="kss-ref ">1.2</span>
-                        <span class="kss-name">Resources Grid</span>
-                      </a>
-                    </li>
-                                      <li class="kss-menu-item">
-                      <a href="#kssref-cards-cards-click">
-                        <span class="kss-ref ">1.3</span>
-                        <span class="kss-name">Click Card</span>
-                      </a>
-                    </li>
-                                      <li class="kss-menu-item">
-                      <a href="#kssref-cards-cards-hover">
-                        <span class="kss-ref ">1.4</span>
-                        <span class="kss-name">Hover Card</span>
-                      </a>
-                    </li>
-                                      <li class="kss-menu-item">
-                      <a href="#kssref-cards-cards-person-details">
-                        <span class="kss-ref ">1.5</span>
-                        <span class="kss-name">Person Detail Card</span>
-                      </a>
-                    </li>
-                                      <li class="kss-menu-item">
-                      <a href="#kssref-cards-cards-person-grid">
-                        <span class="kss-ref ">1.6</span>
-                        <span class="kss-name">Person Grid Card</span>
-                      </a>
-                    </li>
-                                  </ul>
                           </li>
                       <li class="kss-menu-item">
               <a href="section-forms.html"><span class="kss-ref">2</span><span class="kss-name">Forms</span></a>
@@ -131,17 +93,98 @@
             <a href="https://github.com/cehfisher" target="_blank" class="social-link-github"><span class="visuallyhidden">Carie Fisher on GitHub</span></a>
           </div>
 
-                                  <div id="kssref-cards" class="kss-section kss-depth-1">
+                                  <div id="kssref-cards-basic-grid" class="kss-section kss-depth-2">
               <div class="kss-style">
-                                <h1 class="kss-title kss-title--level-1">
-                  <a class="kss-title__permalink" href="#kssref-cards">
-                    Cards
+                                <h2 class="kss-title kss-title--level-2">
+                  <a class="kss-title__permalink" href="#kssref-cards-basic-grid">
+                    Resources Grid
                   </a>
-                </h1>
+                </h2>
 
                 
                               </div>
-                          </div>
+                              <div class="kss-modifier-block">
+
+                  <div class="kss-modifier kss-modifier-original">
+                    <div class="kss-modifier-example">
+                      <section class="resources-grid">
+      <article class="card">
+  <a href="#" class="card__link-wrapper">
+    <div class="card__image"><img src='../assets/angry-pepper.jpg' alt='Alt text'></div>
+    <div class="card__title">
+      <a href="https://twitter.com/cariefisher/status/901993743535964161" class="card__title--link">Research Administration</a>
+    </div>
+  </a>
+</article>
+      <article class="card">
+  <a href="#" class="card__link-wrapper">
+    <div class="card__image"><img src='../assets/angry-pepper.jpg' alt='Alt text'></div>
+    <div class="card__title">
+      <a href="https://twitter.com/cariefisher/status/901993743535964161" class="card__title--link">Research Administration</a>
+    </div>
+  </a>
+</article>
+      <article class="card">
+  <a href="#" class="card__link-wrapper">
+    <div class="card__image"><img src='../assets/angry-pepper.jpg' alt='Alt text'></div>
+    <div class="card__title">
+      <a href="https://twitter.com/cariefisher/status/901993743535964161" class="card__title--link">Research Administration</a>
+    </div>
+  </a>
+</article>
+      <article class="card">
+  <a href="#" class="card__link-wrapper">
+    <div class="card__image"><img src='../assets/angry-pepper.jpg' alt='Alt text'></div>
+    <div class="card__title">
+      <a href="https://twitter.com/cariefisher/status/901993743535964161" class="card__title--link">Research Administration</a>
+    </div>
+  </a>
+</article>
+      <article class="card">
+  <a href="#" class="card__link-wrapper">
+    <div class="card__image"><img src='../assets/angry-pepper.jpg' alt='Alt text'></div>
+    <div class="card__title">
+      <a href="https://twitter.com/cariefisher/status/901993743535964161" class="card__title--link">Research Administration</a>
+    </div>
+  </a>
+</article>
+      <article class="card">
+  <a href="#" class="card__link-wrapper">
+    <div class="card__image"><img src='../assets/angry-pepper.jpg' alt='Alt text'></div>
+    <div class="card__title">
+      <a href="https://twitter.com/cariefisher/status/901993743535964161" class="card__title--link">Research Administration</a>
+    </div>
+  </a>
+</article>
+  </section>
+
+                    </div>
+                  </div>
+
+                  
+                                    <div class="kss-markup">
+                    <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                    <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;resources-grid&quot;&gt;
+  {% for item in items %}
+    {%
+      include &#039;@a11y_style_guide/cards-basic/cards-basic.twig&#039; with {
+        &#039;image&#039;: item.image,
+        &#039;title&#039;: item.title,
+        &#039;classes&#039;: &#039;card__item resources-grid__item col-md-4&#039;,
+      } only
+    %}
+  {% endfor %}
+&lt;/section&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+                  </div>
+                                  </div>
+                                          </div>
                   </div>
               </article>
     </main>

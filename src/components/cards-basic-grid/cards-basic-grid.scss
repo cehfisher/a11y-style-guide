@@ -1,0 +1,19 @@
+// Resources Grid
+//
+// Markup: cards-basic-grid.twig
+//
+// Style guide: Cards.Basic Grid
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.resources-grid__item {
+  margin: 3rem 0;
+
+  @include breakpoint($bp-md) {
+    .card__title {
+      left: 15px;
+      right: 15px;
+    }
+  }
+}
