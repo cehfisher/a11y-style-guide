@@ -1,3 +1,6 @@
+.card-grid .card {
+  margin: 0 0.5rem 1rem; }
+
 .card-grid__item {
   margin: 3rem 0; }
   @media (min-width: 64em) {

@@ -107,40 +107,40 @@
 
                   <div class="kss-modifier kss-modifier-original">
                     <div class="kss-modifier-example">
-                      <article class="person person-list__item-wrapper detail with-image">
-            <div class="person-list__image">
+                      <article class="cards-person cards-person-list__item-wrapper detail with-image">
+            <div class="cards-person-list__image">
         <a href="#"><img src='../assets/gus-grissom.jpg' alt='Portrait of Astronaut Gus Grissom'></a>
       </div>
-        <div class="person-list__content">
-    <div class="person__content-section">
-              <h3 class="person-list__name">
-          <a href ="#" class="person-list__name-link">Gus Grissom </a>
+        <div class="cards-person-list__content">
+    <div class="cards-person__content-section">
+              <h3 class="cards-person-list__name">
+          <a href ="#" class="cards-person-list__name-link">Gus Grissom </a>
         </h3>
-                    <div class="person__content-item person-list__title">Lieutenant colonel, USAF</div>
-                    <div class="person__content-item person__phone">
+                    <div class="cards-person__content-item cards-person-list__title">Lieutenant colonel, USAF</div>
+                    <div class="cards-person__content-item cards-person__phone">
           555-555-1212
         </div>
-                    <div class="person__content-item person__email">
+                    <div class="cards-person__content-item cards-person__email">
           <a href="mailto:email@email.com">
             <i class="fa fa-fw fa-envelope"></i>
             email@email.com
           </a>
         </div>
           </div>
-          <div class="person__content-section">
-        <div class="person__content-item person__address">
+          <div class="cards-person__content-section">
+        <div class="cards-person__content-item cards-person__address">
           <div><strong>Office Address</strong></div><div>123 Maple St.</div><div>West Lafayette, IN</div>
         </div>
       </div>
-              <div class="person__content-section">
-        <h4 class="person__content-section-title">More Information</h4>
-        <div class="person__content-item person-list__more-info-link">
+              <div class="cards-person__content-section">
+        <h4 class="cards-person__content-section-title">More Information</h4>
+        <div class="cards-person__content-item cards-person-list__more-info-link">
           <i class="fa fa-fw fa-globe"></i>
           <a href="#">https://en.wikipedia.org/wiki/Gus_Grissom</a>
         </div>
       </div>
-              <div class="person__content-section">
-                  <div class="person__content-item person-list__brief-description">
+              <div class="cards-person__content-section">
+                  <div class="cards-person__content-item cards-person-list__brief-description">
             <p>Lieutenant Colonel Virgil Ivan (Gus) Grissom (April 3, 1926 – January 27, 1967) was one of the original NASA Project Mercury astronauts, a United States Air Force test pilot, and a mechanical engineer. He was the second American to fly in space, and the first member of the NASA Astronaut Corps to fly in space twice.</p>
            </div>
                               </div>
@@ -156,41 +156,41 @@
                       Show Markup Example
                     </button>
                     <template>
-                      <pre><code id="post-shortlink" data-language="html">&lt;article class=&quot;person person-list__item-wrapper {{ modifier_class }}{{ photo or use_placeholder_images ? &#039; with-image&#039; }}&quot;&gt;
+                      <pre><code id="post-shortlink" data-language="html">&lt;article class=&quot;cards-person cards-person-list__item-wrapper {{ modifier_class }}{{ photo or use_placeholder_images ? &#039; with-image&#039; }}&quot;&gt;
   {% if use_placeholder_images %}
-    &lt;div class=&quot;person-list__image&quot;&gt;
+    &lt;div class=&quot;cards-person-list__image&quot;&gt;
       {% if photo %}
         {{ photo }}
       {% else %}
-        &lt;div class=&quot;person-list__image-placeholder&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;cards-person-list__image-placeholder&quot;&gt;&lt;/div&gt;
       {% endif %}
     &lt;/div&gt;
   {% else %}
     {% if photo %}
-      &lt;div class=&quot;person-list__image&quot;&gt;
+      &lt;div class=&quot;cards-person-list__image&quot;&gt;
         {{ photo }}
       &lt;/div&gt;
     {% endif %}
   {% endif %}
-  &lt;div class=&quot;person-list__content&quot;&gt;
-    &lt;div class=&quot;person__content-section&quot;&gt;
+  &lt;div class=&quot;cards-person-list__content&quot;&gt;
+    &lt;div class=&quot;cards-person__content-section&quot;&gt;
       {% if link %}
-        &lt;h3 class=&quot;person-list__name&quot;&gt;
-          &lt;a href =&quot;{{ link }}&quot; class=&quot;person-list__name-link&quot;&gt;{{ name }} {{ suffix }}&lt;/a&gt;
+        &lt;h3 class=&quot;cards-person-list__name&quot;&gt;
+          &lt;a href =&quot;{{ link }}&quot; class=&quot;cards-person-list__name-link&quot;&gt;{{ name }} {{ suffix }}&lt;/a&gt;
         &lt;/h3&gt;
       {% else %}
-        &lt;h3 class=&quot;person-list__name&quot;&gt;{{ name }} {{ suffix }}&lt;/h3&gt;
+        &lt;h3 class=&quot;cards-person-list__name&quot;&gt;{{ name }} {{ suffix }}&lt;/h3&gt;
       {% endif %}
       {% if title %}
-        &lt;div class=&quot;person__content-item person-list__title&quot;&gt;{{ title }}&lt;/div&gt;
+        &lt;div class=&quot;cards-person__content-item cards-person-list__title&quot;&gt;{{ title }}&lt;/div&gt;
       {% endif %}
       {% if phone %}
-        &lt;div class=&quot;person__content-item person__phone&quot;&gt;
+        &lt;div class=&quot;cards-person__content-item cards-person__phone&quot;&gt;
           {{ phone }}
         &lt;/div&gt;
       {% endif %}
       {% if email %}
-        &lt;div class=&quot;person__content-item person__email&quot;&gt;
+        &lt;div class=&quot;cards-person__content-item cards-person__email&quot;&gt;
           &lt;a href=&quot;mailto:{{ email }}&quot;&gt;
             &lt;i class=&quot;fa fa-fw fa-envelope&quot;&gt;&lt;/i&gt;
             {{ email }}
@@ -199,70 +199,70 @@
       {% endif %}
     &lt;/div&gt;
     {% if address %}
-      &lt;div class=&quot;person__content-section&quot;&gt;
-        &lt;div class=&quot;person__content-item person__address&quot;&gt;
+      &lt;div class=&quot;cards-person__content-section&quot;&gt;
+        &lt;div class=&quot;cards-person__content-item cards-person__address&quot;&gt;
           {{ address }}
         &lt;/div&gt;
       &lt;/div&gt;
     {% endif %}
     {% if external_link %}
-      &lt;div class=&quot;person__content-section&quot;&gt;
-        &lt;h4 class=&quot;person__content-section-title&quot;&gt;More Information&lt;/h4&gt;
-        &lt;div class=&quot;person__content-item person-list__more-info-link&quot;&gt;
+      &lt;div class=&quot;cards-person__content-section&quot;&gt;
+        &lt;h4 class=&quot;cards-person__content-section-title&quot;&gt;More Information&lt;/h4&gt;
+        &lt;div class=&quot;cards-person__content-item cards-person-list__more-info-link&quot;&gt;
           &lt;i class=&quot;fa fa-fw fa-globe&quot;&gt;&lt;/i&gt;
           {{ external_link }}
         &lt;/div&gt;
       &lt;/div&gt;
     {% endif %}
     {% if brief_description or bio or cv_link %}
-      &lt;div class=&quot;person__content-section&quot;&gt;
+      &lt;div class=&quot;cards-person__content-section&quot;&gt;
         {% if brief_description %}
-          &lt;div class=&quot;person__content-item person-list__brief-description&quot;&gt;
+          &lt;div class=&quot;cards-person__content-item cards-person-list__brief-description&quot;&gt;
             {{ brief_description }}
            &lt;/div&gt;
         {% endif %}
         {% if bio %}
-          &lt;div class=&quot;person__content-item person-list__bio&quot;&gt;
+          &lt;div class=&quot;cards-person__content-item cards-person-list__bio&quot;&gt;
             {{ bio }}
           &lt;/div&gt;
         {% endif %}
         {% if cv_link %}
-          &lt;div class=&quot;person__content-item person-list__cv&quot;&gt;
+          &lt;div class=&quot;cards-person__content-item cards-person-list__cv&quot;&gt;
             {{ cv_link }}
           &lt;/div&gt;
         {% endif %}
       &lt;/div&gt;
     {% endif %}
     {% if clinical or patient_link %}
-      &lt;div class=&quot;person__content-section&quot;&gt;
-        &lt;h4 class=&quot;person__content-section-title&quot;&gt;Clinical Information&lt;/h4&gt;
+      &lt;div class=&quot;cards-person__content-section&quot;&gt;
+        &lt;h4 class=&quot;cards-person__content-section-title&quot;&gt;Clinical Information&lt;/h4&gt;
         {% if clinical %}
-          &lt;div class=&quot;person__content-item person-list__clinical-interests&quot;&gt;
+          &lt;div class=&quot;cards-person__content-item cards-person-list__clinical-interests&quot;&gt;
             {{ clinical }}
           &lt;/div&gt;
         {% endif %}
         {% if patient_link %}
-          &lt;div class=&quot;person__content-item person-list__patient-website&quot;&gt;
+          &lt;div class=&quot;cards-person__content-item cards-person-list__patient-website&quot;&gt;
             {{ patient_link }}
           &lt;/div&gt;
         {% endif %}
       &lt;/div&gt;
     {% endif %}
     {% if research or lab_link or postdoc_positions %}
-      &lt;div class=&quot;person__content-section&quot;&gt;
-        &lt;h4 class=&quot;person__content-section-title&quot;&gt;Research Information&lt;/h4&gt;
+      &lt;div class=&quot;cards-person__content-section&quot;&gt;
+        &lt;h4 class=&quot;cards-person__content-section-title&quot;&gt;Research Information&lt;/h4&gt;
         {% if research %}
-          &lt;div class=&quot;person__content-item person-list__research-info&quot;&gt;
+          &lt;div class=&quot;cards-person__content-item cards-person-list__research-info&quot;&gt;
             {{ research }}
           &lt;/div&gt;
         {% endif %}
         {% if lab_link %}
-          &lt;div class=&quot;person__content-item person-list__lab-website&quot;&gt;
+          &lt;div class=&quot;cards-person__content-item cards-person-list__lab-website&quot;&gt;
             {{ lab_link }}
           &lt;/div&gt;
         {% endif %}
         {% if postdoc_positions %}
-          &lt;div class=&quot;person__content-item person-list__postdoc-positions&quot;&gt;
+          &lt;div class=&quot;cards-person__content-item cards-person-list__postdoc-positions&quot;&gt;
             {{ postdoc_positions }}
           &lt;/div&gt;
         {% endif %}

@@ -7,7 +7,7 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
-.person__content-section {
+.cards-person__content-section {
   margin-bottom: $padding-md;
 
   &:last-child {
@@ -15,12 +15,12 @@
   }
 }
 
-.person__content-section-title {
+.cards-person__content-section-title {
   font-weight: $font-weight-bold;
   margin: 0 0 $padding-sm;
 }
 
-.person__content-item {
+.cards-person__content-item {
   margin-bottom: $padding-sm;
 
   &:last-child {
@@ -28,7 +28,7 @@
   }
 }
 
-.person__phone {
+.cards-person__phone {
   word-break: break-word;
 
   a {
@@ -55,7 +55,7 @@
   }
 }
 
-.person__address {
+.cards-person__address {
 
   & > .field {
     display: flex;
@@ -70,7 +70,7 @@
     padding-right: 0;
   }
 
-  .person__address-container {
+  .cards-person__address-container {
     padding-left: 20px;
     position: relative;
 
@@ -113,8 +113,8 @@
   }
 }
 
-.person__titles-title,
-.person__titles-dept {
+.cards-person__titles-title,
+.cards-person__titles-dept {
   display: inline;
 
   .field {
@@ -122,7 +122,7 @@
   }
 }
 
-.person__titles-title.with-dept {
+.cards-person__titles-title.with-dept {
 
   &::after {
     content: ',';
@@ -201,14 +201,14 @@
   }
 }
 
-.person-list__item-wrapper {
+.cards-person-list__item-wrapper {
 
   @include breakpoint($bp-xsm) {
     display: flex;
   }
 }
 
-.person-list__image {
+.cards-person-list__image {
   margin: 0.75rem 0;
 
   @include breakpoint($bp-xsm) {
@@ -218,16 +218,17 @@
   img {
     margin: 0 auto;
     width: $person-list-image--width;
+    border-radius: $border-rd-sm;
   }
 }
 
-.person-list__image-placeholder {
+.cards-person-list__image-placeholder {
   background-color: $color-manatee;
   height: 180px;
   width: $person-list-image--width;
 }
 
-.person-list__content {
+.cards-person-list__content {
 
   @include breakpoint($bp-xsm) {
 
@@ -238,7 +239,7 @@
   }
 }
 
-.person-list__name {
+.cards-person-list__name {
   color: $color-cherry;
   font-weight: $font-weight-bold;
   font-size: 1.8rem;
@@ -246,11 +247,11 @@
   margin: 0;
 }
 
-.person-list__title {
+.cards-person-list__title {
   font-size: 1.4rem;
   word-break: break-word;
 }
 
-.person-list__more-info-link .field {
+.cards-person-list__more-info-link .field {
   display: inline-block;
 }

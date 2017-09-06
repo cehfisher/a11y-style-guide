@@ -1,81 +1,81 @@
-.person__content-section {
+.cards-person__content-section {
   margin-bottom: 2rem; }
-  .person__content-section:last-child {
+  .cards-person__content-section:last-child {
     margin-bottom: 0; }
 
-.person__content-section-title {
+.cards-person__content-section-title {
   font-weight: bold;
   margin: 0 0 1rem; }
 
-.person__content-item {
+.cards-person__content-item {
   margin-bottom: 1rem; }
-  .person__content-item:last-child {
+  .cards-person__content-item:last-child {
     margin-bottom: 0; }
 
-.person__phone {
+.cards-person__phone {
   word-break: break-word; }
-  .person__phone a {
+  .cards-person__phone a {
     display: inline-block;
     color: #e00000;
     font-weight: bold;
     font-size: 1.8rem; }
-  .person__phone .paragraph--type--phone-numbers {
+  .cards-person__phone .paragraph--type--phone-numbers {
     display: -ms-flexbox;
     display: flex; }
-    .person__phone .paragraph--type--phone-numbers .field {
+    .cards-person__phone .paragraph--type--phone-numbers .field {
       margin-right: 0.5rem; }
-    .person__phone .paragraph--type--phone-numbers .field--name-field-type {
+    .cards-person__phone .paragraph--type--phone-numbers .field--name-field-type {
       font-weight: bold; }
-    .person__phone .paragraph--type--phone-numbers .field--name-field-type::after {
+    .cards-person__phone .paragraph--type--phone-numbers .field--name-field-type::after {
       content: ':'; }
 
-.person__address > .field {
+.cards-person__address > .field {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-.person__address > .field > .field__item {
+.cards-person__address > .field > .field__item {
   padding: 0 4rem 1rem 0; }
 
-.person__address > .field > .field__item:last-child {
+.cards-person__address > .field > .field__item:last-child {
   padding-right: 0; }
 
-.person__address .person__address-container {
+.cards-person__address .cards-person__address-container {
   padding-left: 20px;
   position: relative; }
-  .person__address .person__address-container .fa {
+  .cards-person__address .cards-person__address-container .fa {
     display: block;
     left: 0;
     position: absolute;
     top: 2px; }
-  .person__address .person__address-container .field--name-field-address-type {
+  .cards-person__address .cards-person__address-container .field--name-field-address-type {
     font-weight: bold;
     white-space: nowrap; }
-  .person__address .person__address-container .field--name-field-room::after {
+  .cards-person__address .cards-person__address-container .field--name-field-room::after {
     content: '';
     display: table;
     clear: both; }
-  .person__address .person__address-container .field--name-field-room div {
+  .cards-person__address .cards-person__address-container .field--name-field-room div {
     float: left; }
-  .person__address .person__address-container .field--name-field-room .field__label {
+  .cards-person__address .cards-person__address-container .field--name-field-room .field__label {
     font-weight: normal; }
-  .person__address .person__address-container .field--name-field-city {
+  .cards-person__address .cards-person__address-container .field--name-field-city {
     display: inline-block;
     margin-right: 0.5rem; }
-    .person__address .person__address-container .field--name-field-city::after {
+    .cards-person__address .cards-person__address-container .field--name-field-city::after {
       content: ','; }
-  .person__address .person__address-container .field--name-field-state {
+  .cards-person__address .cards-person__address-container .field--name-field-state {
     display: inline-block; }
 
-.person__titles-title,
-.person__titles-dept {
+.cards-person__titles-title,
+.cards-person__titles-dept {
   display: inline; }
-  .person__titles-title .field,
-  .person__titles-dept .field {
+  .cards-person__titles-title .field,
+  .cards-person__titles-dept .field {
     display: inline; }
 
-.person__titles-title.with-dept::after {
+.cards-person__titles-title.with-dept::after {
   content: ',';
   margin-left: -3px; }
 
@@ -132,39 +132,40 @@
     z-index: 2; }
 
 @media (min-width: 40em) {
-  .person-list__item-wrapper {
+  .cards-person-list__item-wrapper {
     display: -ms-flexbox;
     display: flex; } }
 
-.person-list__image {
+.cards-person-list__image {
   margin: 0.75rem 0; }
   @media (min-width: 40em) {
-    .person-list__image {
+    .cards-person-list__image {
       width: 150px; } }
-  .person-list__image img {
+  .cards-person-list__image img {
     margin: 0 auto;
-    width: 150px; }
+    width: 150px;
+    border-radius: 4px; }
 
-.person-list__image-placeholder {
+.cards-person-list__image-placeholder {
   background-color: #888b8d;
   height: 180px;
   width: 150px; }
 
 @media (min-width: 40em) {
-  .with-image .person-list__content {
+  .with-image .cards-person-list__content {
     padding-left: 2rem;
     max-width: calc(100% - 150px); } }
 
-.person-list__name {
+.cards-person-list__name {
   color: #e00000;
   font-weight: bold;
   font-size: 1.8rem;
   line-height: 1.5;
   margin: 0; }
 
-.person-list__title {
+.cards-person-list__title {
   font-size: 1.4rem;
   word-break: break-word; }
 
-.person-list__more-info-link .field {
+.cards-person-list__more-info-link .field {
   display: inline-block; }

@@ -7,6 +7,10 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
+.card-grid .card {
+  margin: 0 $padding-xsm $padding-sm;
+}
+
 .card-grid__item {
   margin: 3rem 0;
 
