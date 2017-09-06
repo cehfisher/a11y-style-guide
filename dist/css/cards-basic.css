@@ -1,8 +1,7 @@
 .card {
   position: relative;
   max-width: 300px;
-  float: left;
-  margin: 1rem; }
+  display: inline-block; }
 
 .card__image img {
   max-width: 100%;
