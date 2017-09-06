@@ -37,26 +37,26 @@
   margin-bottom: 0.5rem;
   word-break: break-word; }
 
-h2.directory__group-title {
+.directory__group-title {
   color: #e00000;
   font-weight: bold;
   font-size: 2.2rem;
   line-height: 1.5;
   text-transform: none; }
 
-ul.directory__items {
+.directory__items {
   margin: 0;
   padding: 0; }
-  .directory-layout--photo-grid ul.directory__items,
-  .directory-layout--photo-grid-name ul.directory__items {
+  .directory-layout--photo-grid .directory__items,
+  .directory-layout--photo-grid-name .directory__items {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0 -0.5rem; }
     @media (min-width: 40em) {
-      .directory-layout--photo-grid ul.directory__items,
-      .directory-layout--photo-grid-name ul.directory__items {
+      .directory-layout--photo-grid .directory__items,
+      .directory-layout--photo-grid-name .directory__items {
         margin: 0 -1rem; } }
 
 .directory__item {

@@ -64,7 +64,7 @@
 
 // <h2> required to override
 // default body text styling.
-h2.directory__group-title {
+.directory__group-title {
   color: $color-cherry;
   font-weight: $font-weight-bold;
   font-size: 2.2rem;
@@ -74,7 +74,7 @@ h2.directory__group-title {
 
 // <ul> required to override
 // default body text styling.
-ul.directory__items {
+.directory__items {
   margin: 0;
   padding: 0;
 
