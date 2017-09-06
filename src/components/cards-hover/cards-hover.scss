@@ -78,6 +78,7 @@
   background: $color-white;
   max-width: 225px;
   max-height: 300px;
+  margin-bottom: $padding-md;
 
   &:hover {
     .cards__back {
@@ -201,7 +202,7 @@
   align-items: stretch;
   justify-content: center;
   margin: 0 auto;
-  min-height: 271px;
+  min-height: 300px;
   min-width: 225px;
 }
 

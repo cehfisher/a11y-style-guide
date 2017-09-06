@@ -14,12 +14,12 @@
 .person-grid__item-wrapper.photo-grid-names {
   background-color: $color-alto;
   margin: 0 auto;
-  max-width: 150px;
+  max-width: 250px;
 }
 
 .person-grid__item-wrapper.photo-grid {
   margin: 0 auto;
-  max-width: 150px;
+  max-width: 250px;
 }
 
 .person-grid__image {
@@ -43,7 +43,7 @@
 
 .person-grid__content {
   background-color: $color-alto;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5;
   padding: $padding-sm;
 }
@@ -103,17 +103,10 @@ ul.directory__items {
   .directory-layout--photo-grid-name & {
     flex: 0 1 50%;
     padding: 1rem;
+    flex-basis: 100%;
 
-    @include breakpoint($bp-xxsm) {
+    @include breakpoint($bp-sm) {
       flex-basis: 33.33%;
-    }
-
-    @include breakpoint($bp-xsm) {
-      flex-basis: 20%;
-    }
-
-    @include breakpoint($bp-md) {
-      flex-basis: 16.66%;
     }
   }
 

@@ -1,13 +1,12 @@
 {
-  "modifier_class": "list",
+  "modifier_class": "detail",
   "link": "#",
   "photo": "<a href=\"#\"><img src=\"http://placehold.it/256x360\" alt=\"Person name\"></a>",
-  "name": "Ban Allos",
-  "suffix": "Ph.D.",
-  "title": "Associate Professor of Medicine, Preventative Medicine",
+  "name": "Gus Grissom",
+  "title": "Lieutenant colonel, USAF",
   "email": "email@email.com",
   "phone": "555-555-1212",
-  "address": "<div class=\"person__address-container\"><i class=\"fa fa-fw fa-building-o\" aria-label=\"Address\"></i><div><strong>Office Address</strong></div><div>123 Maple St.</div><div>Nashville, TN</div></div>",
-  "external_link": "<a href=\"#\">http://medschool.vanderbilt.edu</a>",
-  "brief_description": "<p>Cras mattis consectetur purus sit amet fermentum. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec id elit non mi porta gravida at eget metus.</p>"
+  "address": "<div><strong>Office Address</strong></div><div>123 Maple St.</div><div>West Lafayette, IN</div>",
+  "external_link": "<a href=\"#\">https://en.wikipedia.org/wiki/Gus_Grissom</a>",
+  "brief_description": "<p>Lieutenant Colonel Virgil Ivan (Gus) Grissom (April 3, 1926 – January 27, 1967) was one of the original NASA Project Mercury astronauts, a United States Air Force test pilot, and a mechanical engineer. He was the second American to fly in space, and the first member of the NASA Astronaut Corps to fly in space twice.</p>"
 }

@@ -202,9 +202,6 @@
 }
 
 .person-list__item-wrapper {
-  border-bottom: 1px solid $color-alto;
-  margin-bottom: $padding-md;
-  padding-bottom: $padding-md;
 
   @include breakpoint($bp-xsm) {
     display: flex;

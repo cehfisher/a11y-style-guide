@@ -131,33 +131,29 @@
     transform: rotateY(0deg);
     z-index: 2; }
 
-.person-list__item-wrapper {
-  border-bottom: 1px solid #dddddd;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem; }
-  @media (min-width: 40em) {
-    .person-list__item-wrapper {
-      display: -ms-flexbox;
-      display: flex; } }
+@media (min-width: 40em) {
+  .person-list__item-wrapper {
+    display: -ms-flexbox;
+    display: flex; } }
 
 .person-list__image {
   margin: 1.5rem 0; }
   @media (min-width: 40em) {
     .person-list__image {
-      width: 128px; } }
+      width: 150px; } }
   .person-list__image img {
     margin: 0 auto;
-    width: 128px; }
+    width: 150px; }
 
 .person-list__image-placeholder {
   background-color: #888b8d;
   height: 180px;
-  width: 128px; }
+  width: 150px; }
 
 @media (min-width: 40em) {
   .with-image .person-list__content {
     padding-left: 2rem;
-    max-width: calc(100% - 128px); } }
+    max-width: calc(100% - 150px); } }
 
 .person-list__name {
   color: #e00000;

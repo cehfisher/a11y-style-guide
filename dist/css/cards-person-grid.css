@@ -4,11 +4,11 @@
 .person-grid__item-wrapper.photo-grid-names {
   background-color: #dddddd;
   margin: 0 auto;
-  max-width: 150px; }
+  max-width: 250px; }
 
 .person-grid__item-wrapper.photo-grid {
   margin: 0 auto;
-  max-width: 150px; }
+  max-width: 250px; }
 
 .person-grid__image a {
   display: block; }
@@ -23,7 +23,7 @@
 
 .person-grid__content {
   background-color: #dddddd;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.5;
   padding: 1rem; }
 
@@ -70,22 +70,14 @@ ul.directory__items {
   .directory-layout--photo-grid-name .directory__item {
     -ms-flex: 0 1 50%;
     flex: 0 1 50%;
-    padding: 1rem; }
-    @media (min-width: 30em) {
+    padding: 1rem;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+    @media (min-width: 55em) {
       .directory-layout--photo-grid .directory__item,
       .directory-layout--photo-grid-name .directory__item {
         -ms-flex-preferred-size: 33.33%;
         flex-basis: 33.33%; } }
-    @media (min-width: 40em) {
-      .directory-layout--photo-grid .directory__item,
-      .directory-layout--photo-grid-name .directory__item {
-        -ms-flex-preferred-size: 20%;
-        flex-basis: 20%; } }
-    @media (min-width: 64em) {
-      .directory-layout--photo-grid .directory__item,
-      .directory-layout--photo-grid-name .directory__item {
-        -ms-flex-preferred-size: 16.66%;
-        flex-basis: 16.66%; } }
   .directory-layout--photo-grid-name .directory__item {
     display: -ms-flexbox;
     display: flex; }

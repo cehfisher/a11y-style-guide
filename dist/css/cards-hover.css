@@ -61,7 +61,8 @@
   width: 100%;
   background: #ffffff;
   max-width: 225px;
-  max-height: 300px; }
+  max-height: 300px;
+  margin-bottom: 2rem; }
   .cards__item:hover .cards__back {
     transform: translateY(-100%);
     animation-duration: 500ms; }
@@ -192,7 +193,7 @@
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto;
-  min-height: 271px;
+  min-height: 300px;
   min-width: 225px; }
 
 .cards__front {
