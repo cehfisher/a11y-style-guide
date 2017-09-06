@@ -687,6 +687,28 @@ html [type='button'],
     background: #42dc42;
     color: #464646; }
 
+.card {
+  position: relative;
+  max-width: 300px; }
+
+.card__image img {
+  max-width: 100%;
+  border-radius: 4px; }
+
+.card__title {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  margin-bottom: 6px;
+  border-radius: 0 0 4px 4px;
+  text-align: center; }
+  .card__title a {
+    color: #ffffff; }
+
 .toggleflip {
   font-family: 'Verdana', 'Arial', sans-serif;
   position: relative;
@@ -736,7 +758,7 @@ html [type='button'],
   transform: scale(-1, 1); }
 
 .cards {
-  margin: 2rem auto;
+  margin: 0 auto;
   padding: 0 3rem; }
   .cards::after {
     content: '';
@@ -744,7 +766,6 @@ html [type='button'],
     clear: both; }
   @media (min-width: 55em) {
     .cards {
-      margin: 2rem auto;
       max-width: 600px; } }
   @media (min-width: 75em) {
     .cards {
@@ -775,7 +796,7 @@ html [type='button'],
       font-size: 4rem; } }
 
 .cards__content {
-  margin: 2rem auto;
+  margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -786,7 +807,6 @@ html [type='button'],
     clear: both; }
   @media (min-width: 55em) {
     .cards__content {
-      margin: 2rem auto;
       max-width: 600px; } }
   @media (min-width: 75em) {
     .cards__content {
@@ -930,7 +950,7 @@ html [type='button'],
   align-items: stretch;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0 auto 50px;
+  margin: 0 auto;
   min-height: 271px;
   min-width: 225px; }
 
@@ -1118,7 +1138,6 @@ a:focus,
 .nav {
   float: left;
   background: #dddddd;
-  background-image: linear-gradient(to top, #dddddd, #888b8d);
   border-radius: 4px; }
 
 .nav ul {

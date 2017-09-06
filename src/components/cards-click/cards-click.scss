@@ -1,0 +1,66 @@
+// Click Card
+//
+// Markup: cards-click.twig
+//
+// Style guide: Cards.cards-click
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+// Base styling for click cards
+.toggleflip {
+  @include font-stack-base;
+  position: relative;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.toggleflip [aria-hidden] {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 100%;
+}
+
+.toggleflip [aria-hidden='false'] {
+  display: inline-block;
+  z-index: 2;
+}
+
+.card__back[aria-hidden='false'] {
+  transform-origin: center top;
+  animation-duration: $anim-speed-moderate;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+  backface-visibility: hidden;
+  transition: transform 0.3s;
+}
+
+.card__back {
+  transform: rotateY(-180deg);
+  position: absolute;
+  padding: $padding-sm 1.5rem;
+  background: $color-white;
+
+  .cards__item-description {
+    height: 155px;
+  }
+}
+
+.card.effect__click.flipped .card__front {
+  transform: rotateY(-180deg);
+}
+
+.card.effect__click.flipped .card__back {
+  transform: scale(-1, 1);
+}
