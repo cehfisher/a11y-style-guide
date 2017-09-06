@@ -1,0 +1,18 @@
+<div class="directory directory-layout--photo-grid-name">
+  <ul class="directory__items">
+    {% for item in items %}
+      <li class="directory directory-layout--photo-grid-name directory__item">
+        {%
+          include "@a11y_style_guide/cards-bio-grid/cards-bio-grid-names.twig" with {
+            "modifier_class": item.modifier_class,
+            "photo": item.photo,
+            "name": item.name,
+            "title": item.title,
+            "link": item.link,
+            "email": item.email
+          } only
+        %}
+      </li>
+    {% endfor %}
+  </ul>
+<div>

@@ -93,11 +93,11 @@
             <a href="https://github.com/cehfisher" target="_blank" class="social-link-github"><span class="visuallyhidden">Carie Fisher on GitHub</span></a>
           </div>
 
-                                  <div id="kssref-cards-cards-person-grid" class="kss-section kss-depth-2">
+                                  <div id="kssref-cards-cards-bio-details" class="kss-section kss-depth-2">
               <div class="kss-style">
                                 <h2 class="kss-title kss-title--level-2">
-                  <a class="kss-title__permalink" href="#kssref-cards-cards-person-grid">
-                    Person Grid Card
+                  <a class="kss-title__permalink" href="#kssref-cards-cards-bio-details">
+                    Bio Detail Card
                   </a>
                 </h2>
 
@@ -107,67 +107,45 @@
 
                   <div class="kss-modifier kss-modifier-original">
                     <div class="kss-modifier-example">
-                      <div class="directory directory-layout--photo-grid-name">
-  <ul class="directory__items">
-    <li class="directory directory-layout--photo-grid-name directory__item">
-      <article class="person person-grid__item-wrapper photo-grid-names">
-        <div class="person-grid__image">
-          <a href="#"><img src="http://placehold.it/250x250" alt="Person name"></a>
+                      <section class="cards-bio cards-bio-list__item-wrapper  with-image">
+            <div class="cards-bio-list__image">
+        <a href="#"><img src='../assets/gus-grissom.jpg' alt='Portrait of Astronaut Gus Grissom'></a>
+      </div>
+        <div class="cards-bio-list__content">
+    <div class="cards-bio__content-section">
+              <h3 class="cards-bio-list__name">
+          <a href ="#" class="cards-bio-list__name-link">Gus Grissom </a>
+        </h3>
+                    <div class="cards-bio__content-item cards-bio-list__title">Lieutenant colonel, USAF</div>
+                    <div class="cards-bio__content-item cards-bio__phone">
+          555-555-1212
         </div>
-        <div class="person-grid__content">
-          <h3 class="person-grid__name">
-            <a href="#">Ban Allos, MD</a>
-          </h3>
-          <div class="person-grid__title">Associate Professor of Medicine, Preventative Medicine  </div>
-          <div class="person-grid__email">
-            <a href="mailto:email@email.com">
+                    <div class="cards-bio__content-item cards-bio__email">
+          <a href="mailto:email@email.com">
             <i class="fa fa-fw fa-envelope"></i>
-            Email
-            </a>
+            email@email.com
+          </a>
+        </div>
           </div>
+          <div class="cards-bio__content-section">
+        <div class="cards-bio__content-item cards-bio__address">
+          <div><strong>Office Address</strong></div><div>123 Maple St.</div><div>West Lafayette, IN</div>
         </div>
-      </article>
-    </li>
-    <li class="directory directory-layout--photo-grid-name directory__item">
-      <article class="person person-grid__item-wrapper photo-grid-names">
-        <div class="person-grid__image">
-          <a href="#"><img src="http://placehold.it/250x250" alt="Person name"></a>
+      </div>
+              <div class="cards-bio__content-section">
+        <h4 class="cards-bio__content-section-title">More Information</h4>
+        <div class="cards-bio__content-item cards-bio-list__more-info-link">
+          <i class="fa fa-fw fa-globe"></i>
+          <a href="#">https://en.wikipedia.org/wiki/Gus_Grissom</a>
         </div>
-        <div class="person-grid__content">
-          <h3 class="person-grid__name">
-            <a href="#">Lorem Ultricies, MD</a>
-          </h3>
-          <div class="person-grid__title">Professor of Medicine, Preventative Medicine</div>
-          <div class="person-grid__email">
-            <a href="mailto:email@email.com">
-            <i class="fa fa-fw fa-envelope"></i>
-            Email
-            </a>
-          </div>
-        </div>
-      </article>
-    </li>
-    <li class="directory directory-layout--photo-grid-name directory__item">
-      <article class="person person-grid__item-wrapper photo-grid-names">
-        <div class="person-grid__image">
-          <a href="#"><img src="http://placehold.it/250x250" alt="Person name"></a>
-        </div>
-        <div class="person-grid__content">
-          <h3 class="person-grid__name">
-            <a href="#">Lorem Ultricies, MD</a>
-          </h3>
-          <div class="person-grid__title">Professor of Medicine, Preventative Medicine</div>
-          <div class="person-grid__email">
-            <a href="mailto:email@email.com">
-            <i class="fa fa-fw fa-envelope"></i>
-            Email
-            </a>
-          </div>
-        </div>
-      </article>
-    </li>
-  </ul>
-</div>
+      </div>
+              <div class="cards-bio__content-section">
+                  <div class="cards-bio__content-item cards-bio-list__brief-description">
+            <p>Lieutenant Colonel Virgil Ivan (Gus) Grissom (April 3, 1926 – January 27, 1967) was one of the original NASA Project Mercury astronauts, a United States Air Force test pilot, and a mechanical engineer. He was the second American to fly in space, and the first member of the NASA Astronaut Corps to fly in space twice.</p>
+           </div>
+                              </div>
+              </div>
+</section>
 
                     </div>
                   </div>
@@ -178,67 +156,120 @@
                       Show Markup Example
                     </button>
                     <template>
-                      <pre><code id="post-shortlink" data-language="html">&lt;div class=&quot;directory directory-layout--photo-grid-name&quot;&gt;
-  &lt;ul class=&quot;directory__items&quot;&gt;
-    &lt;li class=&quot;directory directory-layout--photo-grid-name directory__item&quot;&gt;
-      &lt;article class=&quot;person person-grid__item-wrapper photo-grid-names&quot;&gt;
-        &lt;div class=&quot;person-grid__image&quot;&gt;
-          &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Person name&quot;&gt;&lt;/a&gt;
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;cards-bio cards-bio-list__item-wrapper {{ modifier_class }}{{ photo or use_placeholder_images ? &#039; with-image&#039; }}&quot;&gt;
+  {% if use_placeholder_images %}
+    &lt;div class=&quot;cards-bio-list__image&quot;&gt;
+      {% if photo %}
+        {{ photo }}
+      {% else %}
+        &lt;div class=&quot;cards-bio-list__image-placeholder&quot;&gt;&lt;/div&gt;
+      {% endif %}
+    &lt;/div&gt;
+  {% else %}
+    {% if photo %}
+      &lt;div class=&quot;cards-bio-list__image&quot;&gt;
+        {{ photo }}
+      &lt;/div&gt;
+    {% endif %}
+  {% endif %}
+  &lt;div class=&quot;cards-bio-list__content&quot;&gt;
+    &lt;div class=&quot;cards-bio__content-section&quot;&gt;
+      {% if link %}
+        &lt;h3 class=&quot;cards-bio-list__name&quot;&gt;
+          &lt;a href =&quot;{{ link }}&quot; class=&quot;cards-bio-list__name-link&quot;&gt;{{ name }} {{ suffix }}&lt;/a&gt;
+        &lt;/h3&gt;
+      {% else %}
+        &lt;h3 class=&quot;cards-bio-list__name&quot;&gt;{{ name }} {{ suffix }}&lt;/h3&gt;
+      {% endif %}
+      {% if title %}
+        &lt;div class=&quot;cards-bio__content-item cards-bio-list__title&quot;&gt;{{ title }}&lt;/div&gt;
+      {% endif %}
+      {% if phone %}
+        &lt;div class=&quot;cards-bio__content-item cards-bio__phone&quot;&gt;
+          {{ phone }}
         &lt;/div&gt;
-        &lt;div class=&quot;person-grid__content&quot;&gt;
-          &lt;h3 class=&quot;person-grid__name&quot;&gt;
-            &lt;a href=&quot;#&quot;&gt;Ban Allos, MD&lt;/a&gt;
-          &lt;/h3&gt;
-          &lt;div class=&quot;person-grid__title&quot;&gt;Associate Professor of Medicine, Preventative Medicine  &lt;/div&gt;
-          &lt;div class=&quot;person-grid__email&quot;&gt;
-            &lt;a href=&quot;mailto:email@email.com&quot;&gt;
+      {% endif %}
+      {% if email %}
+        &lt;div class=&quot;cards-bio__content-item cards-bio__email&quot;&gt;
+          &lt;a href=&quot;mailto:{{ email }}&quot;&gt;
             &lt;i class=&quot;fa fa-fw fa-envelope&quot;&gt;&lt;/i&gt;
-            Email
-            &lt;/a&gt;
+            {{ email }}
+          &lt;/a&gt;
+        &lt;/div&gt;
+      {% endif %}
+    &lt;/div&gt;
+    {% if address %}
+      &lt;div class=&quot;cards-bio__content-section&quot;&gt;
+        &lt;div class=&quot;cards-bio__content-item cards-bio__address&quot;&gt;
+          {{ address }}
+        &lt;/div&gt;
+      &lt;/div&gt;
+    {% endif %}
+    {% if external_link %}
+      &lt;div class=&quot;cards-bio__content-section&quot;&gt;
+        &lt;h4 class=&quot;cards-bio__content-section-title&quot;&gt;More Information&lt;/h4&gt;
+        &lt;div class=&quot;cards-bio__content-item cards-bio-list__more-info-link&quot;&gt;
+          &lt;i class=&quot;fa fa-fw fa-globe&quot;&gt;&lt;/i&gt;
+          {{ external_link }}
+        &lt;/div&gt;
+      &lt;/div&gt;
+    {% endif %}
+    {% if brief_description or bio or cv_link %}
+      &lt;div class=&quot;cards-bio__content-section&quot;&gt;
+        {% if brief_description %}
+          &lt;div class=&quot;cards-bio__content-item cards-bio-list__brief-description&quot;&gt;
+            {{ brief_description }}
+           &lt;/div&gt;
+        {% endif %}
+        {% if bio %}
+          &lt;div class=&quot;cards-bio__content-item cards-bio-list__bio&quot;&gt;
+            {{ bio }}
           &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/article&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;directory directory-layout--photo-grid-name directory__item&quot;&gt;
-      &lt;article class=&quot;person person-grid__item-wrapper photo-grid-names&quot;&gt;
-        &lt;div class=&quot;person-grid__image&quot;&gt;
-          &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Person name&quot;&gt;&lt;/a&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;person-grid__content&quot;&gt;
-          &lt;h3 class=&quot;person-grid__name&quot;&gt;
-            &lt;a href=&quot;#&quot;&gt;Lorem Ultricies, MD&lt;/a&gt;
-          &lt;/h3&gt;
-          &lt;div class=&quot;person-grid__title&quot;&gt;Professor of Medicine, Preventative Medicine&lt;/div&gt;
-          &lt;div class=&quot;person-grid__email&quot;&gt;
-            &lt;a href=&quot;mailto:email@email.com&quot;&gt;
-            &lt;i class=&quot;fa fa-fw fa-envelope&quot;&gt;&lt;/i&gt;
-            Email
-            &lt;/a&gt;
+        {% endif %}
+        {% if cv_link %}
+          &lt;div class=&quot;cards-bio__content-item cards-bio-list__cv&quot;&gt;
+            {{ cv_link }}
           &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/article&gt;
-    &lt;/li&gt;
-    &lt;li class=&quot;directory directory-layout--photo-grid-name directory__item&quot;&gt;
-      &lt;article class=&quot;person person-grid__item-wrapper photo-grid-names&quot;&gt;
-        &lt;div class=&quot;person-grid__image&quot;&gt;
-          &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;http://placehold.it/250x250&quot; alt=&quot;Person name&quot;&gt;&lt;/a&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;person-grid__content&quot;&gt;
-          &lt;h3 class=&quot;person-grid__name&quot;&gt;
-            &lt;a href=&quot;#&quot;&gt;Lorem Ultricies, MD&lt;/a&gt;
-          &lt;/h3&gt;
-          &lt;div class=&quot;person-grid__title&quot;&gt;Professor of Medicine, Preventative Medicine&lt;/div&gt;
-          &lt;div class=&quot;person-grid__email&quot;&gt;
-            &lt;a href=&quot;mailto:email@email.com&quot;&gt;
-            &lt;i class=&quot;fa fa-fw fa-envelope&quot;&gt;&lt;/i&gt;
-            Email
-            &lt;/a&gt;
+        {% endif %}
+      &lt;/div&gt;
+    {% endif %}
+    {% if clinical or patient_link %}
+      &lt;div class=&quot;cards-bio__content-section&quot;&gt;
+        &lt;h4 class=&quot;cards-bio__content-section-title&quot;&gt;Clinical Information&lt;/h4&gt;
+        {% if clinical %}
+          &lt;div class=&quot;cards-bio__content-item cards-bio-list__clinical-interests&quot;&gt;
+            {{ clinical }}
           &lt;/div&gt;
-        &lt;/div&gt;
-      &lt;/article&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
+        {% endif %}
+        {% if patient_link %}
+          &lt;div class=&quot;cards-bio__content-item cards-bio-list__patient-website&quot;&gt;
+            {{ patient_link }}
+          &lt;/div&gt;
+        {% endif %}
+      &lt;/div&gt;
+    {% endif %}
+    {% if research or lab_link or postdoc_positions %}
+      &lt;div class=&quot;cards-bio__content-section&quot;&gt;
+        &lt;h4 class=&quot;cards-bio__content-section-title&quot;&gt;Research Information&lt;/h4&gt;
+        {% if research %}
+          &lt;div class=&quot;cards-bio__content-item cards-bio-list__research-info&quot;&gt;
+            {{ research }}
+          &lt;/div&gt;
+        {% endif %}
+        {% if lab_link %}
+          &lt;div class=&quot;cards-bio__content-item cards-bio-list__lab-website&quot;&gt;
+            {{ lab_link }}
+          &lt;/div&gt;
+        {% endif %}
+        {% if postdoc_positions %}
+          &lt;div class=&quot;cards-bio__content-item cards-bio-list__postdoc-positions&quot;&gt;
+            {{ postdoc_positions }}
+          &lt;/div&gt;
+        {% endif %}
+      &lt;/div&gt;
+    {% endif %}
+  &lt;/div&gt;
+&lt;/section&gt;
 </code></pre>
                       <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
                       <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>

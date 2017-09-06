@@ -1,69 +1,61 @@
-// Person Grid Card
+// Bio Grid Card
 //
-// Markup: cards-person-grid.twig
+// Markup: cards-bio-grid.twig
 //
-// Style guide: Cards.cards-person-grid
+// Style guide: Cards.cards-bio-grid
 
 // Import site utilities.
 @import '../../global/utils/init';
 
-.node--view-mode-photo-grid-names {
-  width: 100%;
-}
-
-.person-grid__item-wrapper.photo-grid-names {
+.cards-bio-grid__item-wrapper.photo-grid-names {
   background-color: $color-alto;
   margin: 0 auto;
   max-width: 250px;
+  border-radius: 0 0 $border-rd-sm $border-rd-sm;
 }
 
-.person-grid__item-wrapper.photo-grid {
+.cards-bio-grid__item-wrapper.photo-grid {
   margin: 0 auto;
   max-width: 250px;
 }
 
-.person-grid__image {
+.cards-bio-grid__image {
 
   a {
     display: block;
   }
 
   img {
+    border-radius: $border-rd-sm $border-rd-sm 0 0;
     width: 100%;
   }
 }
 
-.person-grid__placeholder-image {
+.cards-bio-grid__placeholder-image {
   background-color: $color-manatee;
-  // Matching aspect ratio of
-  // barista_person_photo_grid_thumbnail image style.
   padding-top: 140.5%;
   width: 100%;
 }
 
-.person-grid__content {
+.cards-bio-grid__content {
   background-color: $color-alto;
   font-size: 1rem;
   line-height: 1.5;
-  padding: $padding-sm;
+  margin: $padding-sm;
 }
 
-// <h3> required to override
-// default body text styling.
-.person-grid__name {
+.cards-bio-grid__name {
   margin: 0 0 0.5rem;
   font-size: inherit;
   line-height: inherit;
   word-break: break-word;
 }
 
-.person-grid__title {
+.cards-bio-grid__title {
   margin-bottom: 0.5rem;
   word-break: break-word;
 }
 
-// <h2> required to override
-// default body text styling.
 .directory__group-title {
   color: $color-cherry;
   font-weight: $font-weight-bold;
@@ -72,8 +64,6 @@
   text-transform: none;
 }
 
-// <ul> required to override
-// default body text styling.
 .directory__items {
   margin: 0;
   padding: 0;

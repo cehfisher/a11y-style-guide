@@ -1,0 +1,186 @@
+// Bio Detail Card
+//
+// Markup: cards-bio-details.twig
+//
+// Style guide: Cards.cards-bio-details
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.cards-bio__content-section {
+  margin-bottom: $padding-md;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cards-bio__content-section-title {
+  font-weight: $font-weight-bold;
+  margin: 0 0 $padding-sm;
+}
+
+.cards-bio__content-item {
+  margin-bottom: $padding-sm;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cards-bio__phone {
+  word-break: break-word;
+
+  a {
+    display: inline-block;
+    color: $color-cherry;
+    font-weight: $font-weight-bold;
+    font-size: 1.8rem;
+  }
+
+  .paragraph--type--phone-numbers {
+    display: flex;
+
+    .field {
+      margin-right: $padding-xsm;
+    }
+
+    .field--name-field-type {
+      font-weight: $font-weight-bold;
+    }
+
+    .field--name-field-type::after {
+      content: ':';
+    }
+  }
+}
+
+.cards-bio__address {
+
+  & > .field {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  & > .field > .field__item {
+    padding: 0 $padding-lg $padding-sm 0;
+  }
+
+  & > .field > .field__item:last-child {
+    padding-right: 0;
+  }
+
+  .cards-bio__address-container {
+    padding-left: 20px;
+    position: relative;
+
+    .fa {
+      display: block;
+      left: 0;
+      position: absolute;
+      top: 2px;
+    }
+
+    .field--name-field-address-type {
+      font-weight: $font-weight-bold;
+      white-space: nowrap;
+    }
+
+    .field--name-field-room {
+      @include clearfix;
+
+      div {
+        float: left;
+      }
+
+      .field__label {
+        font-weight: normal;
+      }
+    }
+
+    .field--name-field-city {
+      display: inline-block;
+      margin-right: $padding-xsm;
+
+      &::after {
+        content: ',';
+      }
+    }
+
+    .field--name-field-state {
+      display: inline-block;
+    }
+  }
+}
+
+.cards-bio__titles-title,
+.cards-bio__titles-dept {
+  display: inline;
+
+  .field {
+    display: inline;
+  }
+}
+
+.cards-bio__titles-title.with-dept {
+
+  &::after {
+    content: ',';
+    margin-left: -3px;
+  }
+}
+
+.cards-bio-list__item-wrapper {
+
+  @include breakpoint($bp-xsm) {
+    display: flex;
+  }
+}
+
+.cards-bio-list__image {
+  margin: 0.75rem 0;
+
+  @include breakpoint($bp-xsm) {
+    width: $bio-list-image--width;
+  }
+
+  img {
+    margin: 0 auto;
+    width: $bio-list-image--width;
+    border-radius: $border-rd-sm;
+  }
+}
+
+.cards-bio-list__image-placeholder {
+  background-color: $color-manatee;
+  height: 180px;
+  width: $bio-list-image--width;
+}
+
+.cards-bio-list__content {
+
+  @include breakpoint($bp-xsm) {
+
+    .with-image & {
+      padding-left: $padding-md;
+      max-width: calc(100% - #{$bio-list-image--width});
+    }
+  }
+}
+
+.cards-bio-list__name {
+  color: $color-cherry;
+  font-weight: $font-weight-bold;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.cards-bio-list__title {
+  font-size: 1.4rem;
+  word-break: break-word;
+}
+
+.cards-bio-list__more-info-link .field {
+  display: inline-block;
+}

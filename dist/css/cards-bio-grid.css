@@ -1,39 +1,38 @@
-.node--view-mode-photo-grid-names {
-  width: 100%; }
-
-.person-grid__item-wrapper.photo-grid-names {
+.cards-bio-grid__item-wrapper.photo-grid-names {
   background-color: #dddddd;
   margin: 0 auto;
-  max-width: 250px; }
+  max-width: 250px;
+  border-radius: 0 0 4px 4px; }
 
-.person-grid__item-wrapper.photo-grid {
+.cards-bio-grid__item-wrapper.photo-grid {
   margin: 0 auto;
   max-width: 250px; }
 
-.person-grid__image a {
+.cards-bio-grid__image a {
   display: block; }
 
-.person-grid__image img {
+.cards-bio-grid__image img {
+  border-radius: 4px 4px 0 0;
   width: 100%; }
 
-.person-grid__placeholder-image {
+.cards-bio-grid__placeholder-image {
   background-color: #888b8d;
   padding-top: 140.5%;
   width: 100%; }
 
-.person-grid__content {
+.cards-bio-grid__content {
   background-color: #dddddd;
   font-size: 1rem;
   line-height: 1.5;
-  padding: 1rem; }
+  margin: 1rem; }
 
-.person-grid__name {
+.cards-bio-grid__name {
   margin: 0 0 0.5rem;
   font-size: inherit;
   line-height: inherit;
   word-break: break-word; }
 
-.person-grid__title {
+.cards-bio-grid__title {
   margin-bottom: 0.5rem;
   word-break: break-word; }
 
