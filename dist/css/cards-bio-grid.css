@@ -1,0 +1,82 @@
+.cards-bio-grid__item-wrapper.photo-grid-names {
+  background-color: #dddddd;
+  margin: 0 auto;
+  max-width: 250px;
+  border-radius: 0 0 4px 4px; }
+
+.cards-bio-grid__item-wrapper.photo-grid {
+  margin: 0 auto;
+  max-width: 250px; }
+
+.cards-bio-grid__image a {
+  display: block; }
+
+.cards-bio-grid__image img {
+  border-radius: 4px 4px 0 0;
+  width: 100%; }
+
+.cards-bio-grid__placeholder-image {
+  background-color: #888b8d;
+  padding-top: 140.5%;
+  width: 100%; }
+
+.cards-bio-grid__content {
+  background-color: #dddddd;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1rem; }
+
+.cards-bio-grid__name {
+  margin: 0 0 0.5rem;
+  font-size: inherit;
+  line-height: inherit;
+  word-break: break-word; }
+
+.cards-bio-grid__title {
+  margin-bottom: 0.5rem;
+  word-break: break-word; }
+
+.directory__group-title {
+  color: #e00000;
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  text-transform: none; }
+
+.directory__items {
+  margin: 0;
+  padding: 0; }
+  .directory-layout--photo-grid .directory__items,
+  .directory-layout--photo-grid-name .directory__items {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -0.5rem; }
+    @media (min-width: 40em) {
+      .directory-layout--photo-grid .directory__items,
+      .directory-layout--photo-grid-name .directory__items {
+        margin: 0 -1rem; } }
+
+.directory__item {
+  list-style: none;
+  padding: 1rem; }
+  .directory-layout--list .directory__item {
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    padding: 0; }
+  .directory-layout--photo-grid .directory__item,
+  .directory-layout--photo-grid-name .directory__item {
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+    padding: 1rem;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
+    @media (min-width: 55em) {
+      .directory-layout--photo-grid .directory__item,
+      .directory-layout--photo-grid-name .directory__item {
+        -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%; } }
+  .directory-layout--photo-grid-name .directory__item {
+    display: -ms-flexbox;
+    display: flex; }

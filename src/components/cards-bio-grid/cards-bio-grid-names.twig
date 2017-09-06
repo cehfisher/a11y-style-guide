@@ -1,0 +1,26 @@
+<section class="cards-bio cards-bio-grid__item-wrapper {{ modifier_class }}">
+  <div class="cards-bio-grid__image">
+    {% if photo %}
+      {{ photo }}
+    {% else %}
+      <div class="cards-bio-grid__placeholder-image"></div>
+    {% endif %}
+  </div>
+  <div class="cards-bio-grid__content">
+    {% if link %}
+      <h3 class="cards-bio-grid__name">
+        <a href="{{ link }}">{{ name }}</a>
+      </h3>
+    {% else %}
+      <h3 class="cards-bio-grid__name">{{ name }}</h3>
+    {% endif %}
+    {% if title %}
+      <div class="cards-bio-grid__title">{{ title }}</div>
+    {% endif %}
+    {% if email %}
+      <div class="cards-bio-grid__email">
+        <a href="mailto:{{ email }}">{{ email }}</a>
+      </div>
+    {% endif %}
+  </div>
+</section>

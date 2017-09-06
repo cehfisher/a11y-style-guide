@@ -1,0 +1,9 @@
+.card-grid .card {
+  margin: 0 0.5rem 1rem; }
+
+.card-grid__item {
+  margin: 3rem 0; }
+  @media (min-width: 64em) {
+    .card-grid__item .card__title {
+      left: 15px;
+      right: 15px; } }

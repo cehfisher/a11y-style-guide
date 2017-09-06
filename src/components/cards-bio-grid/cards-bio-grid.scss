@@ -1,0 +1,106 @@
+// Bio Grid Card
+//
+// Markup: cards-bio-grid.twig
+//
+// Style guide: Cards.cards-bio-grid
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.cards-bio-grid__item-wrapper.photo-grid-names {
+  background-color: $color-alto;
+  margin: 0 auto;
+  max-width: 250px;
+  border-radius: 0 0 $border-rd-sm $border-rd-sm;
+}
+
+.cards-bio-grid__item-wrapper.photo-grid {
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+.cards-bio-grid__image {
+
+  a {
+    display: block;
+  }
+
+  img {
+    border-radius: $border-rd-sm $border-rd-sm 0 0;
+    width: 100%;
+  }
+}
+
+.cards-bio-grid__placeholder-image {
+  background-color: $color-manatee;
+  padding-top: 140.5%;
+  width: 100%;
+}
+
+.cards-bio-grid__content {
+  background-color: $color-alto;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: $padding-sm;
+}
+
+.cards-bio-grid__name {
+  margin: 0 0 0.5rem;
+  font-size: inherit;
+  line-height: inherit;
+  word-break: break-word;
+}
+
+.cards-bio-grid__title {
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+}
+
+.directory__group-title {
+  color: $color-cherry;
+  font-weight: $font-weight-bold;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+.directory__items {
+  margin: 0;
+  padding: 0;
+
+  .directory-layout--photo-grid &,
+  .directory-layout--photo-grid-name & {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -0.5rem;
+
+    @include breakpoint($bp-xsm) {
+      margin: 0 -1rem;
+    }
+  }
+}
+
+.directory__item {
+  list-style: none;
+  padding: 1rem;
+
+  .directory-layout--list & {
+    flex: 0 1 100%;
+    padding: 0;
+  }
+
+  .directory-layout--photo-grid &,
+  .directory-layout--photo-grid-name & {
+    flex: 0 1 50%;
+    padding: 1rem;
+    flex-basis: 100%;
+
+    @include breakpoint($bp-sm) {
+      flex-basis: 33.33%;
+    }
+  }
+
+  .directory-layout--photo-grid-name & {
+    display: flex;
+  }
+}
