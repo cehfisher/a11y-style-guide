@@ -1,7 +1,7 @@
 {
   "modifier_class": "detail",
   "link": "#",
-  "photo": "<a href=\"#\"><img src=\"http://placehold.it/256x360\" alt=\"Person name\"></a>",
+  "photo": "<a href=\"#\"><img src='../assets/gus-grissom.jpg' alt='Portrait of Astronaut Gus Grissom'></a>",
   "name": "Gus Grissom",
   "title": "Lieutenant colonel, USAF",
   "email": "email@email.com",

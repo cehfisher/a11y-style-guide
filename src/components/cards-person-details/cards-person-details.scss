@@ -209,7 +209,7 @@
 }
 
 .person-list__image {
-  margin: 1.5rem 0;
+  margin: 0.75rem 0;
 
   @include breakpoint($bp-xsm) {
     width: $person-list-image--width;
