@@ -4,7 +4,8 @@
       include '@a11y_style_guide/cards-basic/cards-basic.twig' with {
         'image': item.image,
         'title': item.title,
-        'classes': 'card__item resources-grid__item col-md-4',
+        'link': item.link,
+        'classes': 'card__item card-grid__item',
       } only
     %}
   {% endfor %}

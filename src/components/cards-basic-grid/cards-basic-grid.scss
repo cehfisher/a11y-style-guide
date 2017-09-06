@@ -7,7 +7,7 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
-.resources-grid__item {
+.card-grid__item {
   margin: 3rem 0;
 
   @include breakpoint($bp-md) {

@@ -110,49 +110,49 @@
                       <section class="resources-grid">
       <article class="card">
   <a href="#" class="card__link-wrapper">
-    <div class="card__image"><img src='../assets/angry-pepper.jpg' alt='Alt text'></div>
+    <div class="card__image"><img src='../assets/butterfly.jpg' alt='Blue Morpho butterfly'></div>
     <div class="card__title">
-      <a target="_blank" href="https://twitter.com/cariefisher/status/901993743535964161" class="card__title--link">Research Administration</a>
+      <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/" class="card__title--link">Blue Morpho</a>
     </div>
   </a>
 </article>
       <article class="card">
   <a href="#" class="card__link-wrapper">
-    <div class="card__image"><img src='../assets/angry-pepper.jpg' alt='Alt text'></div>
+    <div class="card__image"><img src='../assets/gold-banded.jpg' alt='Gold-banded Forester butterfly'></div>
     <div class="card__title">
-      <a target="_blank" href="https://twitter.com/cariefisher/status/901993743535964161" class="card__title--link">Research Administration</a>
+      <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/" class="card__title--link">Gold-banded Forester</a>
     </div>
   </a>
 </article>
       <article class="card">
   <a href="#" class="card__link-wrapper">
-    <div class="card__image"><img src='../assets/angry-pepper.jpg' alt='Alt text'></div>
+    <div class="card__image"><img src='../assets/starry.jpg' alt='Starry Night Cracker butterfly'></div>
     <div class="card__title">
-      <a target="_blank" href="https://twitter.com/cariefisher/status/901993743535964161" class="card__title--link">Research Administration</a>
+      <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/" class="card__title--link">Starry Night Cracker</a>
     </div>
   </a>
 </article>
       <article class="card">
   <a href="#" class="card__link-wrapper">
-    <div class="card__image"><img src='../assets/angry-pepper.jpg' alt='Alt text'></div>
+    <div class="card__image"><img src='../assets/lacewing.jpg' alt='Red Lacewing butterfly'></div>
     <div class="card__title">
-      <a target="_blank" href="https://twitter.com/cariefisher/status/901993743535964161" class="card__title--link">Research Administration</a>
+      <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/red/" class="card__title--link">Red Lacewing</a>
     </div>
   </a>
 </article>
       <article class="card">
   <a href="#" class="card__link-wrapper">
-    <div class="card__image"><img src='../assets/angry-pepper.jpg' alt='Alt text'></div>
+    <div class="card__image"><img src='../assets/swallowtail.jpg' alt='Emerald Swallowtail butterfly'></div>
     <div class="card__title">
-      <a target="_blank" href="https://twitter.com/cariefisher/status/901993743535964161" class="card__title--link">Research Administration</a>
+      <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/green/" class="card__title--link">Emerald Swallowtail</a>
     </div>
   </a>
 </article>
       <article class="card">
   <a href="#" class="card__link-wrapper">
-    <div class="card__image"><img src='../assets/angry-pepper.jpg' alt='Alt text'></div>
+    <div class="card__image"><img src='../assets/glasswing.jpg' alt='Glasswing butterfly'></div>
     <div class="card__title">
-      <a target="_blank" href="https://twitter.com/cariefisher/status/901993743535964161" class="card__title--link">Research Administration</a>
+      <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/gray-white/" class="card__title--link">Glasswing</a>
     </div>
   </a>
 </article>
@@ -173,7 +173,8 @@
       include &#039;@a11y_style_guide/cards-basic/cards-basic.twig&#039; with {
         &#039;image&#039;: item.image,
         &#039;title&#039;: item.title,
-        &#039;classes&#039;: &#039;card__item resources-grid__item col-md-4&#039;,
+        &#039;link&#039;: item.link,
+        &#039;classes&#039;: &#039;card__item card-grid__item&#039;,
       } only
     %}
   {% endfor %}
