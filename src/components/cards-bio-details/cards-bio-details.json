@@ -1,6 +1,5 @@
 {
-  "link": "#",
-  "photo": "<a href=\"#\"><img src='../assets/gus-grissom.jpg' alt='Portrait of Astronaut Gus Grissom'></a>",
+  "photo": "<img src='../assets/gus-grissom.jpg' alt='Portrait of Astronaut Gus Grissom'>",
   "name": "Gus Grissom",
   "title": "Lieutenant colonel, USAF",
   "email": "email@email.com",
