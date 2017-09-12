@@ -45,15 +45,5 @@
 
 <div class="break"></div>
 <div><h2>Wait how did I get here?</h2>
-<p>Maybe you are a total beginner and wondering where to start? That's cool too...welcome! Learning accessibility can feel a bit like drinking out of a firehose, so here are some tips to follow on your journey toward accessibility:</p>
-<ul>
-<li><strong>Tip #1: Don’t Freak Out.</strong> There is a ton of information out there about website accessibility. No one expects you to know everything about everything. It’s ok to say you don’t know something. Which brings me to my next rule…</li>
-
-<li><strong>Tip #2: Learn a Few Things.</strong> Read an article, watch a video, attend a webinar, chat with someone on twitter. If you focus on one aspect of accessibility at a time, you will not get overwhelmed and you will retain the information better.</li>
-
-<li><strong>Tip #3: Build from the Ground Up.</strong> If you have the opportunity, build accessibility into the beginning of a project. It will be more difficult, more timely and thus more expensive to retrofit your site for accessibility after the site is complete.</li>
-
-<li><strong>Tip #4: Use the Right Tools.</strong> There are lots of accessibility tools that wonderful people spent lots of time creating, so use them. Use tools during the build process (ex. using Color Safe to check color combos) and after the site is finished (ex. using WAVE to evaluate accessibility errors and alerts, etc)</li>
-
-<li><strong>Tip #5:  Try, Try Again.</strong> Keep in mind that even adding one or two accessible pieces to a website is moving in the right direction. The next site might have four or five pieces. “Rome wasn’t built in a day” and neither are accessible websites.</li>
-</ul></div>
+<p>Maybe you are a total beginner and wondering where to start? That's cool too...welcome! Learning accessibility can feel a bit like drinking out of a firehose, so here are some tips to follow on your journey toward accessibility: <a href="https://medium.com/cariefisher/getting-started-with-website-accessibility-5586c7febc92" target="_blank">Getting Started with Website Accessibility</a></p>
+</div>
