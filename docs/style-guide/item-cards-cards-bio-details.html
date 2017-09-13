@@ -114,22 +114,27 @@
         <div class="cards-bio-list__content">
     <div class="cards-bio__content-section">
               <h3 class="cards-bio-list__name">Gus Grissom </h3>
-                    <div class="cards-bio__content-item cards-bio-list__title">Lieutenant colonel, USAF</div>
-                    <div class="cards-bio__content-item cards-bio__phone">
-          555-555-1212
-        </div>
-                    <div class="cards-bio__content-item cards-bio__email">
-          <a href="mailto:email@email.com">
-            <i class="fa fa-fw fa-envelope"></i>
-            email@email.com
-          </a>
-        </div>
+                    <div class="cards-bio__content-item cards-bio-list__title">Astronaut, NASA</div>
           </div>
           <div class="cards-bio__content-section">
         <div class="cards-bio__content-item cards-bio__address">
           <div><strong>Office Address</strong></div><div>123 Maple St.</div><div>West Lafayette, IN</div>
-        </div>
+                  <div class="cards-bio__content-item cards-bio__phone">
+            555-555-1212
+          </div>
+                          <div class="cards-bio__content-item cards-bio__email">
+            <a href="mailto:email@email.com">
+              <i class="fa fa-fw fa-envelope"></i>
+              email@email.com
+            </a>
+          </div>
+                </div>
       </div>
+              <div class="cards-bio__content-section">
+                  <div class="cards-bio__content-item cards-bio-list__brief-description">
+            <p>Lieutenant Colonel Virgil Ivan (Gus) Grissom (April 3, 1926 – January 27, 1967) was one of the original NASA Project Mercury astronauts, a United States Air Force test pilot, and a mechanical engineer. He was the second American to fly in space, and the first member of the NASA Astronaut Corps to fly in space twice.</p>
+           </div>
+                              </div>
               <div class="cards-bio__content-section">
         <h4 class="cards-bio__content-section-title">More Information</h4>
         <div class="cards-bio__content-item cards-bio-list__more-info-link">
@@ -137,12 +142,7 @@
           <a href="#">https://en.wikipedia.org/wiki/Gus_Grissom</a>
         </div>
       </div>
-              <div class="cards-bio__content-section">
-                  <div class="cards-bio__content-item cards-bio-list__brief-description">
-            <p>Lieutenant Colonel Virgil Ivan (Gus) Grissom (April 3, 1926 – January 27, 1967) was one of the original NASA Project Mercury astronauts, a United States Air Force test pilot, and a mechanical engineer. He was the second American to fly in space, and the first member of the NASA Astronaut Corps to fly in space twice.</p>
-           </div>
-                              </div>
-              </div>
+      </div>
 </section>
 
                     </div>
@@ -182,33 +182,24 @@
       {% if title %}
         &lt;div class=&quot;cards-bio__content-item cards-bio-list__title&quot;&gt;{{ title }}&lt;/div&gt;
       {% endif %}
-      {% if phone %}
-        &lt;div class=&quot;cards-bio__content-item cards-bio__phone&quot;&gt;
-          {{ phone }}
-        &lt;/div&gt;
-      {% endif %}
-      {% if email %}
-        &lt;div class=&quot;cards-bio__content-item cards-bio__email&quot;&gt;
-          &lt;a href=&quot;mailto:{{ email }}&quot;&gt;
-            &lt;i class=&quot;fa fa-fw fa-envelope&quot;&gt;&lt;/i&gt;
-            {{ email }}
-          &lt;/a&gt;
-        &lt;/div&gt;
-      {% endif %}
     &lt;/div&gt;
     {% if address %}
       &lt;div class=&quot;cards-bio__content-section&quot;&gt;
         &lt;div class=&quot;cards-bio__content-item cards-bio__address&quot;&gt;
           {{ address }}
-        &lt;/div&gt;
-      &lt;/div&gt;
-    {% endif %}
-    {% if external_link %}
-      &lt;div class=&quot;cards-bio__content-section&quot;&gt;
-        &lt;h4 class=&quot;cards-bio__content-section-title&quot;&gt;More Information&lt;/h4&gt;
-        &lt;div class=&quot;cards-bio__content-item cards-bio-list__more-info-link&quot;&gt;
-          &lt;i class=&quot;fa fa-fw fa-globe&quot;&gt;&lt;/i&gt;
-          {{ external_link }}
+        {% if phone %}
+          &lt;div class=&quot;cards-bio__content-item cards-bio__phone&quot;&gt;
+            {{ phone }}
+          &lt;/div&gt;
+        {% endif %}
+        {% if email %}
+          &lt;div class=&quot;cards-bio__content-item cards-bio__email&quot;&gt;
+            &lt;a href=&quot;mailto:{{ email }}&quot;&gt;
+              &lt;i class=&quot;fa fa-fw fa-envelope&quot;&gt;&lt;/i&gt;
+              {{ email }}
+            &lt;/a&gt;
+          &lt;/div&gt;
+        {% endif %}
         &lt;/div&gt;
       &lt;/div&gt;
     {% endif %}
@@ -231,39 +222,13 @@
         {% endif %}
       &lt;/div&gt;
     {% endif %}
-    {% if clinical or patient_link %}
+    {% if external_link %}
       &lt;div class=&quot;cards-bio__content-section&quot;&gt;
-        &lt;h4 class=&quot;cards-bio__content-section-title&quot;&gt;Clinical Information&lt;/h4&gt;
-        {% if clinical %}
-          &lt;div class=&quot;cards-bio__content-item cards-bio-list__clinical-interests&quot;&gt;
-            {{ clinical }}
-          &lt;/div&gt;
-        {% endif %}
-        {% if patient_link %}
-          &lt;div class=&quot;cards-bio__content-item cards-bio-list__patient-website&quot;&gt;
-            {{ patient_link }}
-          &lt;/div&gt;
-        {% endif %}
-      &lt;/div&gt;
-    {% endif %}
-    {% if research or lab_link or postdoc_positions %}
-      &lt;div class=&quot;cards-bio__content-section&quot;&gt;
-        &lt;h4 class=&quot;cards-bio__content-section-title&quot;&gt;Research Information&lt;/h4&gt;
-        {% if research %}
-          &lt;div class=&quot;cards-bio__content-item cards-bio-list__research-info&quot;&gt;
-            {{ research }}
-          &lt;/div&gt;
-        {% endif %}
-        {% if lab_link %}
-          &lt;div class=&quot;cards-bio__content-item cards-bio-list__lab-website&quot;&gt;
-            {{ lab_link }}
-          &lt;/div&gt;
-        {% endif %}
-        {% if postdoc_positions %}
-          &lt;div class=&quot;cards-bio__content-item cards-bio-list__postdoc-positions&quot;&gt;
-            {{ postdoc_positions }}
-          &lt;/div&gt;
-        {% endif %}
+        &lt;h4 class=&quot;cards-bio__content-section-title&quot;&gt;More Information&lt;/h4&gt;
+        &lt;div class=&quot;cards-bio__content-item cards-bio-list__more-info-link&quot;&gt;
+          &lt;i class=&quot;fa fa-fw fa-globe&quot;&gt;&lt;/i&gt;
+          {{ external_link }}
+        &lt;/div&gt;
       &lt;/div&gt;
     {% endif %}
   &lt;/div&gt;
