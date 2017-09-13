@@ -730,7 +730,7 @@ html [type='button'],
 
 .cards-bio__content-section-title {
   font-weight: bold;
-  margin: 0 0 1rem; }
+  margin: 0; }
 
 .cards-bio__content-item {
   margin-bottom: 1rem; }
@@ -738,7 +738,8 @@ html [type='button'],
     margin-bottom: 0; }
 
 .cards-bio__phone {
-  word-break: break-word; }
+  word-break: break-word;
+  margin-bottom: 0; }
   .cards-bio__phone a {
     display: inline-block;
     color: #e00000;
