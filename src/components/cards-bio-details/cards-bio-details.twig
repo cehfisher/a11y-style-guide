@@ -26,33 +26,24 @@
       {% if title %}
         <div class="cards-bio__content-item cards-bio-list__title">{{ title }}</div>
       {% endif %}
-      {% if phone %}
-        <div class="cards-bio__content-item cards-bio__phone">
-          {{ phone }}
-        </div>
-      {% endif %}
-      {% if email %}
-        <div class="cards-bio__content-item cards-bio__email">
-          <a href="mailto:{{ email }}">
-            <i class="fa fa-fw fa-envelope"></i>
-            {{ email }}
-          </a>
-        </div>
-      {% endif %}
     </div>
     {% if address %}
       <div class="cards-bio__content-section">
         <div class="cards-bio__content-item cards-bio__address">
           {{ address }}
-        </div>
-      </div>
-    {% endif %}
-    {% if external_link %}
-      <div class="cards-bio__content-section">
-        <h4 class="cards-bio__content-section-title">More Information</h4>
-        <div class="cards-bio__content-item cards-bio-list__more-info-link">
-          <i class="fa fa-fw fa-globe"></i>
-          {{ external_link }}
+        {% if phone %}
+          <div class="cards-bio__content-item cards-bio__phone">
+            {{ phone }}
+          </div>
+        {% endif %}
+        {% if email %}
+          <div class="cards-bio__content-item cards-bio__email">
+            <a href="mailto:{{ email }}">
+              <i class="fa fa-fw fa-envelope"></i>
+              {{ email }}
+            </a>
+          </div>
+        {% endif %}
         </div>
       </div>
     {% endif %}
@@ -75,39 +66,13 @@
         {% endif %}
       </div>
     {% endif %}
-    {% if clinical or patient_link %}
+    {% if external_link %}
       <div class="cards-bio__content-section">
-        <h4 class="cards-bio__content-section-title">Clinical Information</h4>
-        {% if clinical %}
-          <div class="cards-bio__content-item cards-bio-list__clinical-interests">
-            {{ clinical }}
-          </div>
-        {% endif %}
-        {% if patient_link %}
-          <div class="cards-bio__content-item cards-bio-list__patient-website">
-            {{ patient_link }}
-          </div>
-        {% endif %}
-      </div>
-    {% endif %}
-    {% if research or lab_link or postdoc_positions %}
-      <div class="cards-bio__content-section">
-        <h4 class="cards-bio__content-section-title">Research Information</h4>
-        {% if research %}
-          <div class="cards-bio__content-item cards-bio-list__research-info">
-            {{ research }}
-          </div>
-        {% endif %}
-        {% if lab_link %}
-          <div class="cards-bio__content-item cards-bio-list__lab-website">
-            {{ lab_link }}
-          </div>
-        {% endif %}
-        {% if postdoc_positions %}
-          <div class="cards-bio__content-item cards-bio-list__postdoc-positions">
-            {{ postdoc_positions }}
-          </div>
-        {% endif %}
+        <h4 class="cards-bio__content-section-title">More Information</h4>
+        <div class="cards-bio__content-item cards-bio-list__more-info-link">
+          <i class="fa fa-fw fa-globe"></i>
+          {{ external_link }}
+        </div>
       </div>
     {% endif %}
   </div>

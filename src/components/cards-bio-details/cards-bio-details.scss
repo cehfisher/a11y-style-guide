@@ -17,7 +17,7 @@
 
 .cards-bio__content-section-title {
   font-weight: $font-weight-bold;
-  margin: 0 0 $padding-sm;
+  margin: 0;
 }
 
 .cards-bio__content-item {
@@ -30,6 +30,7 @@
 
 .cards-bio__phone {
   word-break: break-word;
+  margin-bottom: 0;
 
   a {
     display: inline-block;
