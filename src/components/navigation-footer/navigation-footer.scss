@@ -29,7 +29,7 @@
     max-width: 60%;
     width: 100%;
 
-    @include breakpoint($bp-sm) {
+    @include breakpoint($bp-md) {
       max-width: 60%;
       width: 100%;
     }
@@ -52,13 +52,14 @@
   }
 
   li {
-    margin: 0 0 10px;
+    margin: 0 -18px 10px;
+    list-style: none;
   }
 
   .buttons {
     text-align: center;
 
-    @include breakpoint($bp-sm) {
+    @include breakpoint($bp-md) {
       text-align: left;
     }
   }
@@ -85,23 +86,31 @@
   .navigation--social {
     display: block;
     float: none;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
     width: 100%;
+    text-align: center;
 
-    @include breakpoint($bp-sm) {
+    @include breakpoint($bp-md) {
       float: left;
+      margin: 0 auto;
     }
 
     .navigation__link {
       padding-right: 0;
-      margin: 0 $padding-xsm 0 $padding-sm;
-      display: block;
-      float: left;
+      margin: 0 $padding-xsm;
+      display: inline-block;
     }
 
     .navigation__menu {
       @include clearfix;
       margin: 0 auto;
+      float: none;
+
+      @include breakpoint($bp-md) {
+        float: left;
+        padding-left: 0;
+        margin-left: -6px;
+      }
     }
   }
 
@@ -142,7 +151,7 @@
     border-radius: $border-rd-sm;
     overflow: hidden;
 
-    @include breakpoint($bp-sm) {
+    @include breakpoint($bp-md) {
       margin: 0;
     }
   }
@@ -180,7 +189,7 @@
   padding: $padding-md;
   background: $color-manatee;
 
-  @include breakpoint($bp-sm) {
+  @include breakpoint($bp-md) {
     padding: $padding-lg $padding-md;
   }
 }
@@ -210,7 +219,7 @@
   text-align: center;
   padding: 0;
 
-  @include breakpoint($bp-sm) {
+  @include breakpoint($bp-md) {
     text-align: left;
   }
 }
@@ -222,7 +231,8 @@
   margin-bottom: -$padding-sm;
 
   @include breakpoint($bp-md) {
-    padding: $padding-md-lg;
+    padding: $padding-md;
+    margin-bottom: 0;
   }
 }
 
@@ -237,7 +247,7 @@
   margin: 0 auto;
 
   @include breakpoint($bp-md) {
-    padding: 0 $padding-xl 0 $padding-xxxl;
+    padding: 0 $padding-md-lg;
   }
 }
 
@@ -245,7 +255,7 @@
   flex-direction: column;
   display: flex;
 
-  @include breakpoint($bp-sm) {
+  @include breakpoint($bp-md) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -299,8 +309,10 @@
 .footer__left-social {
   width: 100%;
   clear: both;
+  text-align: center;
+  margin: 0 auto;
 
-  @include breakpoint($bp-sm) {
+  @include breakpoint($bp-md) {
     width: 50%;
     padding-right: $padding-md;
   }
@@ -312,9 +324,10 @@
   margin: 0 auto;
   text-align: center;
 
-  @include breakpoint($bp-sm) {
+  @include breakpoint($bp-md) {
     width: 50%;
     padding-right: 0;
+    text-align: right;
   }
 }
 
