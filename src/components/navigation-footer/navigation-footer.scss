@@ -25,6 +25,16 @@
   background: $color-manatee;
   position: relative;
 
+  input[type='search'] {
+    max-width: 60%;
+    width: 100%;
+
+    @include breakpoint($bp-sm) {
+      max-width: 60%;
+      width: 100%;
+    }
+  }
+
   h2 {
     text-align: left;
     color: $color-white;
@@ -299,6 +309,8 @@
 .footer__right-search {
   width: 100%;
   clear: both;
+  margin: 0 auto;
+  text-align: center;
 
   @include breakpoint($bp-sm) {
     width: 50%;

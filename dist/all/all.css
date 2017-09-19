@@ -1456,6 +1456,13 @@ ul.show-menu {
     content: '';
     display: table;
     clear: both; }
+  .footer input[type='search'] {
+    max-width: 60%;
+    width: 100%; }
+    @media (min-width: 55em) {
+      .footer input[type='search'] {
+        max-width: 60%;
+        width: 100%; } }
   .footer h2 {
     text-align: left;
     color: #ffffff;
@@ -1684,7 +1691,9 @@ ul.show-menu {
 
 .footer__right-search {
   width: 100%;
-  clear: both; }
+  clear: both;
+  margin: 0 auto;
+  text-align: center; }
   @media (min-width: 55em) {
     .footer__right-search {
       width: 50%;
