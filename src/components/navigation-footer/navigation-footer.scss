@@ -22,7 +22,7 @@
   float: left;
   clear: both;
   width: 100%;
-  background: $color-manatee;
+  background: $color-midnight;
   position: relative;
 
   input[type='search'] {
@@ -43,10 +43,11 @@
 
   a {
     color: $color-white;
+    text-decoration: underline;
 
     &:hover,
     &:focus {
-      color: $color-white;
+      color: $color-cherry;
       text-decoration: underline;
     }
   }
@@ -54,6 +55,7 @@
   li {
     margin: 0 -18px 10px;
     list-style: none;
+    color: $color-white;
   }
 
   .buttons {
@@ -96,8 +98,8 @@
     }
 
     .navigation__link {
-      padding-right: 0;
-      margin: 0 $padding-xsm;
+      padding: $padding-sm 0 $padding-sm $padding-xsm;
+      margin: 0;
       display: inline-block;
     }
 
@@ -109,7 +111,6 @@
       @include breakpoint($bp-md) {
         float: left;
         padding-left: 0;
-        margin-left: -6px;
       }
     }
   }
@@ -187,7 +188,6 @@
 
 .footer__top {
   padding: $padding-md;
-  background: $color-manatee;
 
   @include breakpoint($bp-md) {
     padding: $padding-lg $padding-md;
@@ -240,11 +240,15 @@
   width: 100%;
 }
 
-.l-center {
+.footer .l-center {
   @include clearfix;
-  padding: 0 $padding-md-lg $padding-md-lg;
-  max-width: 900px;
+  padding: 0 $padding-sm $padding-md-lg;
+  max-width: 700px;
   margin: 0 auto;
+
+  @include breakpoint($bp-xsm) {
+    padding: 0 $padding-md $padding-md-lg;
+  }
 
   @include breakpoint($bp-md) {
     padding: 0 $padding-md-lg;
@@ -262,26 +266,13 @@
   }
 }
 
-.footer__logo {
-  display: block;
-  margin-left: 0;
-
-  @include breakpoint($bp-md) {
-    margin-left: -$padding-lg;
-  }
-}
-
 .footer__left {
   width: 100%;
   float: left;
   padding-top: 3rem;
 
-  @include breakpoint($bp-xsm) {
-    width: 50%;
-    padding-right: $padding-md;
-  }
-
   @include breakpoint($bp-sm) {
+    width: 50%;
     padding-right: 0;
   }
 }
@@ -292,7 +283,7 @@
   float: left;
   padding-top: 3rem;
 
-  @include breakpoint($bp-xsm) {
+  @include breakpoint($bp-sm) {
     width: 50%;
     padding-right: 0;
     float: right;
@@ -327,21 +318,6 @@
   @include breakpoint($bp-md) {
     width: 50%;
     padding-right: 0;
-    text-align: right;
-  }
-}
-
-.footer__center {
-  width: 100%;
-  clear: both;
-
-  @include breakpoint($bp-xsm) {
-    width: 50%;
-    padding-right: 0;
-    padding-left: $padding-md;
-  }
-
-  @include breakpoint($bp-sm) {
-    padding-right: $padding-md;
+    text-align: left;
   }
 }

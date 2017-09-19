@@ -8,7 +8,7 @@
 @import '../../global/utils/init';
 
 .cards-bio-grid__item-wrapper.photo-grid-names {
-  background-color: $color-alto;
+  background-color: $color-gallery;
   margin: 0 auto;
   max-width: 250px;
   border-radius: 0 0 $border-rd-sm $border-rd-sm;
@@ -38,7 +38,7 @@
 }
 
 .cards-bio-grid__content {
-  background-color: $color-alto;
+  background-color: $color-gallery;
   font-size: 1rem;
   line-height: 1.5;
   margin: $padding-sm;

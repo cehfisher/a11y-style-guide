@@ -716,7 +716,7 @@ html [type='button'],
   left: 0;
   right: 0;
   padding: 2rem;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.65);
   margin-bottom: 6px;
   border-radius: 0 0 4px 4px;
   text-align: center; }
@@ -845,7 +845,7 @@ html [type='button'],
   display: inline-block; }
 
 .cards-bio-grid__item-wrapper.photo-grid-names {
-  background-color: #dddddd;
+  background-color: #f4f4f4;
   margin: 0 auto;
   max-width: 250px;
   border-radius: 0 0 4px 4px; }
@@ -867,7 +867,7 @@ html [type='button'],
   width: 100%; }
 
 .cards-bio-grid__content {
-  background-color: #dddddd;
+  background-color: #f4f4f4;
   font-size: 1rem;
   line-height: 1.5;
   margin: 1rem; }
@@ -1510,7 +1510,7 @@ ul.show-menu {
   float: left;
   clear: both;
   width: 100%;
-  background: #888b8d;
+  background: #464646;
   position: relative;
   /* Navigation */
   /* Social Icons */ }
@@ -1530,13 +1530,15 @@ ul.show-menu {
     color: #ffffff;
     text-transform: uppercase; }
   .footer a {
-    color: #ffffff; }
+    color: #ffffff;
+    text-decoration: underline; }
     .footer a:hover, .footer a:focus {
-      color: #ffffff;
+      color: #e00000;
       text-decoration: underline; }
   .footer li {
     margin: 0 -18px 10px;
-    list-style: none; }
+    list-style: none;
+    color: #ffffff; }
   .footer .buttons {
     text-align: center; }
     @media (min-width: 64em) {
@@ -1584,8 +1586,8 @@ ul.show-menu {
         float: left;
         margin: 0 auto; } }
     .footer .navigation--social .navigation__link {
-      padding-right: 0;
-      margin: 0 0.5rem;
+      padding: 1rem 0 1rem 0.5rem;
+      margin: 0;
       display: inline-block; }
     .footer .navigation--social .navigation__menu {
       margin: 0 auto;
@@ -1597,8 +1599,7 @@ ul.show-menu {
       @media (min-width: 64em) {
         .footer .navigation--social .navigation__menu {
           float: left;
-          padding-left: 0;
-          margin-left: -6px; } }
+          padding-left: 0; } }
   .footer .icon {
     background-position: center;
     background-size: inherit;
@@ -1648,8 +1649,7 @@ ul.show-menu {
       border: 0; }
 
 .footer__top {
-  padding: 2rem;
-  background: #888b8d; }
+  padding: 2rem; }
   @media (min-width: 64em) {
     .footer__top {
       padding: 4rem 2rem; } }
@@ -1691,16 +1691,19 @@ ul.show-menu {
 .l-region--footer-bottom {
   width: 100%; }
 
-.l-center {
-  padding: 0 3rem 3rem;
-  max-width: 900px;
+.footer .l-center {
+  padding: 0 1rem 3rem;
+  max-width: 700px;
   margin: 0 auto; }
-  .l-center::after {
+  .footer .l-center::after {
     content: '';
     display: table;
     clear: both; }
+  @media (min-width: 40em) {
+    .footer .l-center {
+      padding: 0 2rem 3rem; } }
   @media (min-width: 64em) {
-    .l-center {
+    .footer .l-center {
       padding: 0 3rem; } }
 
 .footer__flex {
@@ -1717,23 +1720,13 @@ ul.show-menu {
       -ms-flex-pack: justify;
       justify-content: space-between; } }
 
-.footer__logo {
-  display: block;
-  margin-left: 0; }
-  @media (min-width: 64em) {
-    .footer__logo {
-      margin-left: -4rem; } }
-
 .footer__left {
   width: 100%;
   float: left;
   padding-top: 3rem; }
-  @media (min-width: 40em) {
-    .footer__left {
-      width: 50%;
-      padding-right: 2rem; } }
   @media (min-width: 55em) {
     .footer__left {
+      width: 50%;
       padding-right: 0; } }
 
 .footer__right {
@@ -1741,7 +1734,7 @@ ul.show-menu {
   max-width: 300px;
   float: left;
   padding-top: 3rem; }
-  @media (min-width: 40em) {
+  @media (min-width: 55em) {
     .footer__right {
       width: 50%;
       padding-right: 0;
@@ -1771,19 +1764,7 @@ ul.show-menu {
     .footer__right-search {
       width: 50%;
       padding-right: 0;
-      text-align: right; } }
-
-.footer__center {
-  width: 100%;
-  clear: both; }
-  @media (min-width: 40em) {
-    .footer__center {
-      width: 50%;
-      padding-right: 0;
-      padding-left: 2rem; } }
-  @media (min-width: 55em) {
-    .footer__center {
-      padding-right: 2rem; } }
+      text-align: left; } }
 
 .navbar-mobile-icon {
   /* Menu toggle styles. */
