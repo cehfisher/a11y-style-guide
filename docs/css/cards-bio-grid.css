@@ -1,5 +1,5 @@
 .cards-bio-grid__item-wrapper.photo-grid-names {
-  background-color: #dddddd;
+  background-color: #f4f4f4;
   margin: 0 auto;
   max-width: 250px;
   border-radius: 0 0 4px 4px; }
@@ -21,7 +21,7 @@
   width: 100%; }
 
 .cards-bio-grid__content {
-  background-color: #dddddd;
+  background-color: #f4f4f4;
   font-size: 1rem;
   line-height: 1.5;
   margin: 1rem; }

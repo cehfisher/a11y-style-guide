@@ -1,0 +1,88 @@
+// Import site utilities.
+@import '../../global/utils/init';
+
+.icon {
+  @include image-replace;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  max-width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+// Social Footer Icons
+.icon--facebook {
+  background-image: url('#{$asset-path}/icon_facebook_small.svg');
+
+  &:hover,
+  &:focus {
+    background-image: url('#{$asset-path}/icon_facebook_small_hover.svg');
+  }
+}
+
+.icon--twitter {
+  background-image: url('#{$asset-path}/icon_twitter_small.svg');
+
+  &:hover,
+  &:focus {
+    background-image: url('#{$asset-path}/icon_twitter_small_hover.svg');
+  }
+}
+
+.icon--youtube {
+  background-image: url('#{$asset-path}/icon_you-tube_small.svg');
+  width: 50px;
+  max-width: 100%;
+
+  &:hover,
+  &:focus {
+    background-image: url('#{$asset-path}/icon_you-tube_small_hover.svg');
+  }
+}
+
+.icon--instagram {
+  background-image: url('#{$asset-path}/icon_instagram_small.svg');
+
+  &:hover,
+  &:focus {
+    background-image: url('#{$asset-path}/icon_instagram_small_hover.svg');
+  }
+}
+
+.icon--snapchat {
+  background-image: url('#{$asset-path}/icon_snapchat_small.svg');
+
+  &:hover,
+  &:focus {
+    background-image: url('#{$asset-path}/icon_snapchat_small_hover.svg');
+  }
+}
+
+// Contact Footer Icons
+.icon--phone {
+  background-image: url('#{$asset-path}/icon_phone.svg');
+  content: '';
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  padding: 0 4px 0 25px;
+}
+
+.icon--email {
+  background-image: url('#{$asset-path}/icon_email.svg');
+  content: '';
+  background-size: 17px 21px;
+  background-repeat: no-repeat;
+  padding: 0 4px 0 25px;
+}
+
+.icon--address {
+  background-image: url('#{$asset-path}/icon_address.svg');
+  content: '';
+  background-size: 17px 19px;
+  background-repeat: no-repeat;
+  padding: 0 4px 0 25px;
+}

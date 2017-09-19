@@ -1,0 +1,61 @@
+.icon {
+  text-indent: 99999999%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  max-width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.icon--facebook {
+  background-image: url("../assets/icon_facebook_small.svg"); }
+  .icon--facebook:hover, .icon--facebook:focus {
+    background-image: url("../assets/icon_facebook_small_hover.svg"); }
+
+.icon--twitter {
+  background-image: url("../assets/icon_twitter_small.svg"); }
+  .icon--twitter:hover, .icon--twitter:focus {
+    background-image: url("../assets/icon_twitter_small_hover.svg"); }
+
+.icon--youtube {
+  background-image: url("../assets/icon_you-tube_small.svg");
+  width: 50px;
+  max-width: 100%; }
+  .icon--youtube:hover, .icon--youtube:focus {
+    background-image: url("../assets/icon_you-tube_small_hover.svg"); }
+
+.icon--instagram {
+  background-image: url("../assets/icon_instagram_small.svg"); }
+  .icon--instagram:hover, .icon--instagram:focus {
+    background-image: url("../assets/icon_instagram_small_hover.svg"); }
+
+.icon--snapchat {
+  background-image: url("../assets/icon_snapchat_small.svg"); }
+  .icon--snapchat:hover, .icon--snapchat:focus {
+    background-image: url("../assets/icon_snapchat_small_hover.svg"); }
+
+.icon--phone {
+  background-image: url("../assets/icon_phone.svg");
+  content: '';
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  padding: 0 4px 0 25px; }
+
+.icon--email {
+  background-image: url("../assets/icon_email.svg");
+  content: '';
+  background-size: 17px 21px;
+  background-repeat: no-repeat;
+  padding: 0 4px 0 25px; }
+
+.icon--address {
+  background-image: url("../assets/icon_address.svg");
+  content: '';
+  background-size: 17px 19px;
+  background-repeat: no-repeat;
+  padding: 0 4px 0 25px; }
