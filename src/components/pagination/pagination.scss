@@ -5,6 +5,7 @@
 //  <li>If you do not use a `<nav>` element, you need to add `role="navigation"` to the markup. <strong>Note:</strong> this role is implied when you use the `<nav>` element so it is a bit redundant to use both at the same time.</li>
 //  <li>The markup includes an `aria-label="pagination"` to describe the type of navigation.</li>
 //  <li>Add `aria-current="page"` to the link that points to the current page. This will tell AT that the focused link is pointing to the current page.</li>
+//  <li>Add `aria-disabled="true"` to the link when the link is disabled.</li>
 // </ul>
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#pagination_res">Resources</a></h3><div id="pagination_res" class="atblock__panel"><ul><li><a href="http://w3c.github.io/aria/aria/aria.html#aria-current" target="_blank">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li><li><a href="http://tink.uk/using-the-aria-current-attribute/" target="_blank">Using the aria-current attribute</a></li></ul></div></section>
@@ -23,149 +24,204 @@
 @import '../../global/utils/init';
 
 .pagination {
-  display: inline-block;
-  padding-left: 0;
-  overflow: hidden;
-  position: relative;
-
-  li {
-    list-style: none;
-    float: left;
-    padding-bottom: 0;
-    background-color: $color-alabaster;
-    border: 1px solid $color-silver;
-
-    &:first-child {
-      border-top-left-radius: $border-rd-sm;
-      border-bottom-left-radius: $border-rd-sm;
-      padding-left: 0;
-    }
-
-    &:last-child {
-      border-top-right-radius: $border-rd-sm;
-      border-bottom-right-radius: $border-rd-sm;
-      border-right: 1px solid $color-silver;
-    }
-
-    &.active {
-      background-color: $color-cherry;
-      color: $color-white;
-      border: 1px solid $color-cherry;
-
-      a {
-        color: $color-white;
-      }
-
-      &:hover {
-        background-color: $color-ruby;
-      }
-    }
-
-    &:hover:not(.active) {
-      background-color: $color-alto;
-
-      &:last-child {
-        border-right: 1px solid $color-silver;
-      }
-    }
-  }
-
-  a {
-    color: $color-midnight;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-  }
-}
-
-.pagination,
-.pagination li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  overflow: hidden;
+  padding-left: 0;
+  position: relative;
 }
 
-.pagination li:not([class*='current']) a:hover {
-  border-top-color: rgba(0, 0, 0, 0.35);
-  border-bottom-color: rgba(0, 0, 0, 0.5);
+.pagination__item {
+  background-color: $color-alabaster;
+  border: 1px solid $color-silver;
+  border-right-width: 0;
+  list-style: none;
+  overflow: hidden;
+
+  &:last-child {
+    border-right-width: 1px;
+  }
 }
 
-.pagination li:first-of-type a {
-  border-left-width: 1px;
+.pagination__link {
+  color: $color-midnight;
+  display: block;
+  height: 40px;
+  padding: 8px 16px;
+  min-width: 40px;
+
+  &:hover {
+    background-color: $color-alto;
+  }
 }
 
-.pagination li:first-child a::before,
-.pagination li:last-child a::after,
-.pagination li:nth-of-type(2) a::before,
-.pagination li:nth-last-of-type(2) a::after {
-  display: inline-block;
-  font-size: inherit;
-  text-rendering: auto;
-  transform: translate(0, 0);
+.pagination__link--is-disabled {
+  background-color: $color-white;
 }
 
-.pagination li:first-child a::before {
-  content: '\25C0 \25C0';
+$group-link-width: 64px;
+
+@mixin pagination-triangle {
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-right: 12px solid $color-midnight;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 12px;
 }
 
-.pagination li:last-child a::after {
-  content: '\25B6 \25B6';
-}
+.pagination__item--previous-group {
+  border-top-left-radius: $border-rd-sm;
+  border-bottom-left-radius: $border-rd-sm;
 
-.pagination li:nth-of-type(2) a::before {
-  padding-right: $padding-xsm;
-  content: ' \25C0';
-}
-
-.pagination li:nth-last-of-type(2) a::after {
-  padding-left: $padding-xsm;
-  content: ' \25B6';
-}
-
-.pagination .current a {
-  padding-top: 0.25em;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(255, 255, 255, 0.15);
-  box-shadow: inset 0 2px 1px 0 rgba(0, 0, 0, 0.25);
-  cursor: default;
-  pointer-events: none;
-}
-
-@media only screen and ( max-width: 64.063em ) {
-  .pagination li:first-child,
-  .pagination li:last-child {
+  @include breakpoint(screen and max-width $bp-sm) {
     /* screen readers only */
     position: absolute;
     top: -50px;
     left: -10px;
   }
 
-  .pagination li:nth-of-type(2) a {
-    border-left-width: 1px;
+  .pagination__link {
+    position: relative;
+    width: $group-link-width;
+
+    &::before {
+      @include pagination-triangle;
+      left: 18px;
+    }
+
+    &::after {
+      @include pagination-triangle;
+      left: 34px;
+    }
   }
 
+  .pagination__link--is-disabled {
+    pointer-events: none;
+
+    &::before,
+    &::after {
+      border-right-color: $color-silver;
+    }
+  }
 }
 
-@media only screen and ( max-width: 40.063em ) {
-  .pagination li {
+.pagination__item--next-group {
+  border-top-right-radius: $border-rd-sm;
+  border-bottom-right-radius: $border-rd-sm;
+
+  @include breakpoint(screen and max-width $bp-sm) {
     /* screen readers only */
     position: absolute;
     top: -50px;
     left: -10px;
   }
 
-  .pagination .current,
-  .pagination li:first-of-type,
-  .pagination li:last-of-type,
-  .pagination li:nth-of-type(2),
-  .pagination li:nth-last-of-type(2) {
-    position: initial;
-    top: initial;
-    left: initial;
+  .pagination__link {
+    position: relative;
+    width: $group-link-width;
+
+    &::before {
+      @include pagination-triangle;
+      left: 18px;
+      transform: rotate(180deg);
+    }
+
+    &::after {
+      @include pagination-triangle;
+      left: 34px;
+      transform: rotate(180deg);
+    }
   }
 
-  .pagination li:nth-of-type(2) a {
-    border-left-width: 0;
+  .pagination__link--is-disabled {
+    pointer-events: none;
+
+    &::before,
+    &::after {
+      border-right-color: $color-silver;
+    }
+  }
+}
+
+.pagination__item--previous-page {
+
+  @include breakpoint(screen and max-width $bp-sm) {
+    border-top-left-radius: $border-rd-sm;
+    border-bottom-left-radius: $border-rd-sm;
+  }
+
+  &:first-child {
+    border-top-left-radius: $border-rd-sm;
+    border-bottom-left-radius: $border-rd-sm;
+  }
+
+  .pagination__link {
+    position: relative;
+
+    &::before {
+      @include pagination-triangle;
+      left: 12px;
+    }
+  }
+
+  .pagination__link--is-disabled {
+    pointer-events: none;
+
+    &::before {
+      border-right-color: $color-silver;
+    }
+  }
+}
+
+.pagination__item--next-page {
+
+  @include breakpoint(screen and max-width $bp-sm) {
+    border-top-right-radius: $border-rd-sm;
+    border-bottom-right-radius: $border-rd-sm;
+    border-right-width: 1px;
+  }
+
+  &:last-child {
+    border-top-right-radius: $border-rd-sm;
+    border-bottom-right-radius: $border-rd-sm;
+  }
+
+  .pagination__link {
+    position: relative;
+
+    &::before {
+      @include pagination-triangle;
+      right: 12px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .pagination__link--is-disabled {
+    pointer-events: none;
+
+    &::before {
+      border-right-color: $color-silver;
+    }
+  }
+}
+
+.pagination__item--is-active {
+  background-color: $color-cherry;
+  color: $color-white;
+
+  .pagination__link {
+    color: $color-white;
+
+    &:hover {
+      background-color: $color-ruby;
+    }
+
+    &::before,
+    &::after {
+      border-right-color: $color-white;
+    }
   }
 }
