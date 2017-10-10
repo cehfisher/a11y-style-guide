@@ -196,7 +196,7 @@
 
 .footer__title,
 .block__title {
-  color: $color-white !important;
+  color: $color-white !important; // sass-lint:disable-line no-important
 }
 
 .block--mailchimp-signup-newsletter-subscribe {
