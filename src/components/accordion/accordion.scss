@@ -13,16 +13,21 @@
     text-decoration: none;
     text-transform: none;
     outline: none;
+
     &--active {
       background-color: $color-cherry;
       color: $color-white;
     }
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
       color: $color-white;
       background-color: $color-cherry;
       outline: none;
     }
+
   }
+
   &__content {
     display: none;
     padding: 10px 16px;
