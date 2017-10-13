@@ -20,5 +20,14 @@
       event.preventDefault();
     });
 
+    accordion.on('keydown',function(event){
+      //navigate up and down
+        if (event.keyCode == 40) {
+            $(this).closest('.js-accordion__panel').next().find(accordion).focus();
+        }
+        if (event.keyCode == 38) {
+          $(this).closest('.js-accordion__panel').prev().find(accordion).focus()
+        }
+    });
 
 })( jQuery, this.document );
