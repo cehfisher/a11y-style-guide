@@ -6,17 +6,14 @@
     accordion.on('click',function(event) {
       //check if the panel is already expanded
       var isExpanded = $(this).attr('aria-expanded') == 'true';
+      var accordionContent = '#' + $(this).attr('aria-controls');
 
       if(isExpanded) {
         //hide the content panel and mark expanded as false
-        var accordionContent = '#' + $(this).attr('aria-controls');
-        $(accordionContent).attr('aria-hidden',true);
-        $(accordionContent).slideUp();
+        $(accordionContent).attr('aria-hidden',true).slideUp();
         $(this).attr('aria-expanded',false);
       } else {
-        var accordionContent = '#' + $(this).attr('aria-controls');
-        $(accordionContent).attr('aria-hidden',false);
-        $(accordionContent).slideDown();
+        $(accordionContent).attr('aria-hidden',false).slideDown();
         $(this).attr('aria-expanded', true);
       }
 
