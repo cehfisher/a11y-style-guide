@@ -85,8 +85,8 @@
 
     <main id="kss-main-content" class="kss-content" aria-label="content">
       <article class="kss-article">
-        
-        
+
+
         <div>
           <div class="social-link-out">
             <a href="https://twitter.com/cariefisher" target="_blank" class="social-link-twitter"><span class="visuallyhidden">Carie Fisher on Twitter</span></a>
@@ -105,7 +105,14 @@
                     <ul>
  <li>Use real text rather than text within graphics.</li>
  <li>Select basic, simple, easily-readable fonts and use a limited number of fonts.</li>
- <li>Avoid small font sizes and use relative units for font size (ems or rems).</li>
+ <li>Avoid small font sizes</li>
+ <li>
+   Use relative units for font size, such as ems or rems. While modern browsers can smoothly zoom
+   pixel-based layouts, sizing type in relative units ensures an entire layout can be scaled up or
+   down by simply updating the font-size of the body element.
+ </li>
+ <li>A design should allow typography to be magnified up to 200% by the user without clipping or distorting content.
+ </li>
  <li>Limit the use of font variations such as bold, italics, and ALL CAPITAL LETTERS (caps are similar to screaming to screenreaders).</li>
  <li>Don&#39;t rely only on the appearance of the font (color, shape, font variation, placement, etc.) to convey meaning.</li>
  <li>Avoid blinking or moving text.</li>
@@ -115,7 +122,7 @@
 
 
                   </div>
-                
+
                               </div>
                               <div class="kss-modifier-block">
 
@@ -142,7 +149,7 @@
                     </div>
                   </div>
 
-                  
+
                                     <div class="kss-markup">
                     <button type="button" class="js-show-markup">
                       Show Markup Example
