@@ -1,12 +1,20 @@
 // Typography
 //
 // <ul>
-//  <li>Use real text rather than text within graphics.</li>
+// <li>Avoid small font sizes.</li>
+// <li>
+//   Use relative units for font size, such as ems or rems. While modern browsers can smoothly zoom
+//   pixel-based layouts, sizing type in relative units ensures an entire layout can be scaled up or
+//   down by simply updating the font-size of the body element.
+// </li>
+// <li>A design should allow typography to be magnified up to 200% by the user without clipping or distorting content.
+// </li>
 //  <li>Select basic, simple, easily-readable fonts and use a limited number of fonts.</li>
 //  <li>Avoid small font sizes and use relative units for font size (ems or rems).</li>
 //  <li>Limit the use of font variations such as bold, italics, and ALL CAPITAL LETTERS (caps are similar to screaming to screenreaders).</li>
 //  <li>Don't rely only on the appearance of the font (color, shape, font variation, placement, etc.) to convey meaning.</li>
-//  <li>Avoid blinking or moving text.</li>
+//  <li>Avoid blinking or moving text. </li>
+//  <li>Use real text rather than text within graphics.</li>
 // </ul>
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#type_guide">WCAG 2.0 Guidelines</a></h3><div id="type_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-without-color" target="_blank">1.4.1. Use of Color</a> - Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for some cases. (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-scale" target="_blank">1.4.4 Resize Text</a> - Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality. (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation" target="_blank">1.4.5 Images of Text</a> - If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-visual-presentation" target="_blank">1.4.8 Visual Presentation</a> - For the visual presentation of blocks of text, a mechanism is available to achieve the following (see WCAG guidelines for more info). (Level AAA)</p></div><div class="markup"></div></section>
