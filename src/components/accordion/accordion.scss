@@ -7,6 +7,9 @@
 
 .accordion {
   &__heading {
+    margin: 0;
+  }
+  &__trigger {
     width: 100%;
     text-align: left;
     padding: 10px 16px;

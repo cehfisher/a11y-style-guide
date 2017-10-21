@@ -1,7 +1,7 @@
 ;(function ( $, doc ) {
   'use strict';
 
-  var accordion = $('.accordion__heading');
+  var accordion = $('.accordion__trigger');
 
     accordion.on('click',function(event) {
       //check if the panel is already expanded
@@ -26,7 +26,7 @@
             $(this).closest('.js-accordion__panel').next().find(accordion).focus();
         }
         if (event.keyCode == 38) {
-          $(this).closest('.js-accordion__panel').prev().find(accordion).focus()
+          $(this).closest('.js-accordion__panel').prev().find(accordion).focus();
         }
     });
 
