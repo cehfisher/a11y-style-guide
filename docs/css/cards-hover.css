@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .cards {
   margin: 0 auto;
   padding: 0 3rem; }
@@ -103,7 +104,7 @@
     height: 100%; }
 
 .cards__item-title {
-  font-family: 'Verdana', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   margin: 0;
   overflow: hidden;
   -ms-flex-align: center;
