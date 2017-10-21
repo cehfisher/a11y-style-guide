@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .toggleflip {
-  font-family: 'Verdana', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   position: relative;
   display: inline-block;
   line-height: 1.2; }

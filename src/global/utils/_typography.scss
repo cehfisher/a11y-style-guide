@@ -22,38 +22,50 @@
 //
 //
 // Markup:
-// <h3>Base</h3>
-// <div style="font: 20px/2 'Verdana'"> Verdana Medium </div>
-// <div style="font: italic 20px/2 'Verdana'"> Verdana Italic </div>
-// <div style="font: bold 20px/2 'Verdana'"> Verdana Bold </div>
-// <div style="font: bold italic 20px/2 'Verdana'"> Verdana Bold Italic </div>
+// <h2>Open Sans Family</h2>
+// <div style="font: 20px/2 'Open Sans'">Regular</div>
+// <div style="font: italic 20px/2 'Open Sans'">Italic</div>
+// <div style="font: bold 20px/2 'Open Sans'">Bold</div>
+// <div style="font: bold italic 20px/2 'Open Sans'">Bold Italic</div>
 // <div class="break"></div>
-// <h3>Secondary</h3>
-// <div style="font: 20px/2 'Tahoma'"> Tahoma Light </div>
-// <div style="font: italic 20px/2 'Tahoma'"> Tahoma Light Italic </div>
-// <div style="font: 500 20px/2 'Tahoma'"> Tahoma Roman </div>
-// <div style="font: bold 20px/2 'Tahoma'"> Tahoma Italic </div>
-// <div style="font: bold italic 20px/2 'Tahoma'"> Tahoma Medium </div>
+// <h2 style="font: 20px/2 'Verdana'">Verdana Family</h2>
+// <div style="font: 20px/2 'Verdana'">Regular</div>
+// <div style="font: italic 20px/2 'Verdana'">Italic</div>
+// <div style="font: bold 20px/2 'Verdana'">Bold</div>
+// <div style="font: bold italic 20px/2 'Verdana'">Bold Italic</div>
 // <div class="break"></div>
-// <h3>Tertiary</h3>
-// <div style="font: 20px/2 'Georgia'"> Georgia Bold </div>
-// <div style="font: italic 20px/2 'Georgia'"> Georgia Bold Italic </div>
-// <div style="font: bold 20px/2 'Georgia'"> Georgia Italic </div>
-// <div style="font: bold italic 20px/2 'Georgia'"> Georgia Regular </div>
+// <h2 style="font: 20px/2 'Tahoma'">Tahoma Family</h2>
+// <div style="font: 20px/2 'Tahoma'">Regular</div>
+// <div style="font: italic 20px/2 'Tahoma'">Italic</div>
+// <div style="font: bold 20px/2 'Tahoma'">Bold</div>
+// <div style="font: bold italic 20px/2 'Tahoma'">Bold Italic</div>
+// <div class="break"></div>
+// <h2 style="font: 20px/2 'Georgia'">Georgia Family</h2>
+// <div style="font: 20px/2 'Georgia'">Regular</div>
+// <div style="font: italic 20px/2 'Georgia'">Italic</div>
+// <div style="font: bold 20px/2 'Georgia'">Bold</div>
+// <div style="font: bold italic 20px/2 'Georgia'">Bold Italic</div>
+//
 //
 // Weight: 999
 //
 // Style guide: General.typography
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 @mixin font-stack-base {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
+@mixin font-stack-second {
   font-family: 'Verdana', 'Arial', sans-serif;
 }
 
-@mixin font-stack-secondary {
+@mixin font-stack-third {
   font-family: 'Tahoma', 'Arial', sans-serif;
 }
 
-@mixin font-stack-tertiary {
+@mixin font-stack-forth {
   font-family: 'Georgia', serif;
 }
 

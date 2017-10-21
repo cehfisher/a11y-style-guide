@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 /* Document
    ========================================================================== */
 /**
@@ -455,7 +456,9 @@ li {
   padding: 0;
   list-style: disc; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .breadcrumb {
   padding: 1rem;
   margin-bottom: 1rem;
@@ -476,6 +479,7 @@ li {
     .breadcrumb .breadcrumb-item a[aria-current='page'] {
       color: #464646; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 button {
   display: inline-block;
   background-color: #e00000;
@@ -687,6 +691,7 @@ html [type='button'],
     background: #42dc42;
     color: #464646; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .card-grid .card {
   margin: 0 0.5rem 1rem; }
 
@@ -697,6 +702,7 @@ html [type='button'],
       left: 15px;
       right: 15px; } }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .card {
   position: relative;
   max-width: 300px;
@@ -723,6 +729,7 @@ html [type='button'],
   .card__title a {
     color: #ffffff; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .cards-bio__content-section {
   margin-bottom: 2rem; }
   .cards-bio__content-section:last-child {
@@ -844,6 +851,7 @@ html [type='button'],
 .cards-bio-list__more-info-link .field {
   display: inline-block; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .cards-bio-grid__item-wrapper.photo-grid-names {
   background-color: #f4f4f4;
   margin: 0 auto;
@@ -927,8 +935,9 @@ html [type='button'],
     display: -ms-flexbox;
     display: flex; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .toggleflip {
-  font-family: 'Verdana', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   position: relative;
   display: inline-block;
   line-height: 1.2; }
@@ -982,6 +991,7 @@ html [type='button'],
     visibility: visible;
     transform: rotateY(0deg); }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .cards {
   margin: 0 auto;
   padding: 0 3rem; }
@@ -1087,7 +1097,7 @@ html [type='button'],
     height: 100%; }
 
 .cards__item-title {
-  font-family: 'Verdana', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   margin: 0;
   overflow: hidden;
   -ms-flex-align: center;
@@ -1223,6 +1233,7 @@ html [type='button'],
     .cards__description {
       margin-bottom: 4rem; } }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .checkbox.row label {
   display: block;
   float: left;
@@ -1277,7 +1288,9 @@ html [type='button'],
   outline: auto 2px Highlight;
   outline: auto 5px -webkit-focus-ring-color; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .icon {
   text-indent: 99999999%;
   overflow: hidden;
@@ -1340,6 +1353,7 @@ html [type='button'],
   background-repeat: no-repeat;
   padding: 0 4px 0 25px; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .image-gallery {
   position: relative;
   font-size: 0;
@@ -1366,6 +1380,7 @@ html [type='button'],
       max-width: 100%;
       height: auto; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .images {
   position: relative;
   margin: 0 auto;
@@ -1375,11 +1390,13 @@ html [type='button'],
   .images img {
     border-radius: 4px; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 a:focus,
 .button-icon:focus {
   outline: auto 2px Highlight;
   outline: auto 5px -webkit-focus-ring-color; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .navbar {
   position: relative;
   margin-bottom: 1rem;
@@ -1415,6 +1432,7 @@ a:focus,
   .navbar .nav-item {
     display: table-cell; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .nav,
 .nav ul {
   margin: 0;
@@ -1506,6 +1524,7 @@ ul.show-menu {
   padding: 0;
   list-style: none; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .footer {
   float: left;
   clear: both;
@@ -1766,6 +1785,7 @@ ul.show-menu {
       padding-right: 0;
       text-align: left; } }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .navbar-mobile-icon {
   /* Menu toggle styles. */
   /* Text meant only for screen readers. */ }
@@ -1819,6 +1839,7 @@ ul.show-menu {
     width: 1px;
     overflow: hidden; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .pagination {
   display: -ms-flexbox;
   display: flex;
@@ -1987,6 +2008,7 @@ ul.show-menu {
     .pagination__item--is-active .pagination__link::before, .pagination__item--is-active .pagination__link::after {
       border-right-color: #ffffff; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .radio.row label {
   display: block;
   float: left; }
@@ -2036,6 +2058,7 @@ ul.show-menu {
   outline: auto 2px Highlight;
   outline: auto 5px -webkit-focus-ring-color; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .read-more::after {
   content: ' ';
   height: 0;
@@ -2046,7 +2069,9 @@ ul.show-menu {
   margin-left: 6px;
   margin-top: 5px; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 input[type='search'] {
   background-color: #ffffff;
   width: 100%;
@@ -2061,6 +2086,7 @@ input[type='search'] {
     input[type='search'] {
       width: 25%; } }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .select {
   position: relative;
   display: inline-block;
@@ -2104,6 +2130,7 @@ input[type='search'] {
   border-width: 10px 8px 0;
   border-color: #e00000 transparent transparent; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .site-logo a {
   display: inline-block;
   overflow: hidden; }
@@ -2119,7 +2146,9 @@ input[type='search'] {
   margin: 0 0 0 0.25em;
   vertical-align: middle; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 #kss-node .kss-section {
   margin-bottom: 2rem; }
   #kss-node .kss-section:first-child, #kss-node .kss-section:last-child {
@@ -2458,7 +2487,7 @@ input[type='search'] {
     top: 0; }
 
 body {
-  font-family: 'Verdana', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   color: #464646; }
 
 .break {
@@ -2672,7 +2701,9 @@ a[target='_blank']::after {
       .kss-nav .navbar-mobile-icon {
         display: none; } }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .tables-section,
 .tables-section2,
 .tables-section3 {
@@ -2754,6 +2785,7 @@ a[target='_blank']::after {
   padding-right: 10px;
   white-space: nowrap; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 [type='text'],
 textarea {
   width: 100%;
@@ -2786,6 +2818,7 @@ legend {
   color: #e00000;
   display: inline-block; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 [data-action='aria-switch'] {
   background: #f4f4f4;
   border-radius: 32px;
@@ -2929,6 +2962,7 @@ legend {
   left: 43px;
   transition: 0.4s; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .a11y-tip {
   display: table;
   position: relative; }
@@ -3099,6 +3133,7 @@ legend {
     margin-top: -19px;
     margin-left: -2px; }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .videos {
   margin: 0; }
 
