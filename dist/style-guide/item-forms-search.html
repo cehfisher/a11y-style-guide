@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>A11Y Style Guide</title>
@@ -10,10 +11,10 @@
     // remove no-js and add 'js' to the HTML
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
-  <link rel="stylesheet" href="kss-assets/kss.css">
-  <link rel="stylesheet" href="../all/all.css">
+  <link rel="stylesheet" href="kss-assets/kss.css"> <link rel="stylesheet" href="../all/all.css">
 
 </head>
+
 <body id="kss-node">
 
   <a href="#kss-main-content" class="kss-skip-link">
@@ -54,55 +55,49 @@
             </button>
           </div>
           <ul id="kss-nav-list" class="kss-menu">
-          <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
-                      <li class="kss-menu-item">
-              <a href="section-cards.html"><span class="kss-ref">1</span><span class="kss-name">Cards</span></a>
-                          </li>
-                      <li class="kss-menu-item">
-              <a href="section-forms.html"><span class="kss-ref">2</span><span class="kss-name">Forms</span></a>
-                          </li>
-                      <li class="kss-menu-item">
-              <a href="section-general.html"><span class="kss-ref">3</span><span class="kss-name">General</span></a>
-                          </li>
-                      <li class="kss-menu-item">
-              <a href="section-media.html"><span class="kss-ref">4</span><span class="kss-name">Media</span></a>
-                          </li>
-                      <li class="kss-menu-item">
-              <a href="section-navigation.html"><span class="kss-ref">5</span><span class="kss-name">Navigation</span></a>
-                          </li>
-                      <li class="kss-menu-item">
-              <a href="section-structure.html"><span class="kss-ref">6</span><span class="kss-name">Structure</span></a>
-                          </li>
-                      <li class="kss-menu-item">
-              <a href="section-resources.html"><span class="kss-ref">7</span><span class="kss-name">Resources</span></a>
-                          </li>
-                    </ul>
+            <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+                        <li class="kss-menu-item">
+              <a href="section-cards.html"><span class="kss-ref">1</span><span class="kss-name">Cards</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-forms.html"><span class="kss-ref">2</span><span class="kss-name">Forms</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-general.html"><span class="kss-ref">3</span><span class="kss-name">General</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-media.html"><span class="kss-ref">4</span><span class="kss-name">Media</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-navigation.html"><span class="kss-ref">5</span><span class="kss-name">Navigation</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-structure.html"><span class="kss-ref">6</span><span class="kss-name">Structure</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-resources.html"><span class="kss-ref">7</span><span class="kss-name">Resources</span></a>             </li>
+                      </ul>
         </nav>
 
-      </div> <!-- /.kss-sidebar-inner -->
+      </div>
+      <!-- /.kss-sidebar-inner -->
 
-    </div> <!-- /.kss-sidebar -->
+    </div>
+    <!-- /.kss-sidebar -->
 
     <main id="kss-main-content" class="kss-content" aria-label="content">
       <article class="kss-article">
-        
-        
+         
         <div>
           <div class="social-link-out">
             <a href="https://twitter.com/cariefisher" target="_blank" class="social-link-twitter"><span class="visuallyhidden">Carie Fisher on Twitter</span></a>
             <a href="https://github.com/cehfisher" target="_blank" class="social-link-github"><span class="visuallyhidden">Carie Fisher on GitHub</span></a>
           </div>
 
-                                  <div id="kssref-forms-search" class="kss-section kss-depth-2">
-              <div class="kss-style">
-                                <h2 class="kss-title kss-title--level-2">
-                  <a class="kss-title__permalink" href="#kssref-forms-search">
+                     <div id="kssref-forms-search" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-forms-search">
                     Search
                   </a>
-                </h2>
+              </h2>
 
-                                  <div class="kss-description">
-                    <ul>
+                            <div class="kss-description">
+                <ul>
  <li>Wrap search components in a parent element <code>role=&quot;search&quot;</code> to increase their discoverability to assistive technologies</li>
  <li>Whenever possible, use the <code>label</code> element to explicitly associate text with form elements. The <code>for</code> attribute of the label must exactly match the <code>id</code> of the form control.</li>
  <li>Some form fields do not need explicit <code>label</code> elements, when next to a button with descriptive text. Ex. search field next to a button labeled search. In these cases you should still have a <code>label</code> in the markup, but you can hide it visually.</li>
@@ -112,14 +107,13 @@
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#search_guide">WCAG 2.0 Guidelines</a></h3><div id="search_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic" target="_blank">1.3.1 Info and Relationships</a> - Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-descriptive" target="_blank">2.4.6 Headings and Labels</a> - Headings and labels describe topic or purpose. (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues" target="_blank">3.3.2 Labels or Instructions</a> - Labels or instructions are provided when content requires user input. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv" target="_blank">4.1.2 Name, Role, Value</a> - For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. (Level A)</p></div><div class="markup"></div></section>
 
 
-                  </div>
-                
-                              </div>
-                              <div class="kss-modifier-block">
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
 
-                  <div class="kss-modifier kss-modifier-original">
-                    <div class="kss-modifier-example">
-                      <section class="search-section">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="search-section">
   <h3>Option #1: Search Input with Visible Label</h3>
   <div role="search">
     <label for="search_1" style="display: block;">Search the site:</label>
@@ -145,15 +139,14 @@
   </div>
 </section>
 
-                    </div>
-                  </div>
+                </div>
+              </div>
 
-                  
-                                    <div class="kss-markup">
-                    <button type="button" class="js-show-markup">
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
                       Show Markup Example
                     </button>
-                    <template>
+                <template>
                       <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;search-section&quot;&gt;
   &lt;h3&gt;Option #1: Search Input with Visible Label&lt;/h3&gt;
   &lt;div role=&quot;search&quot;&gt;
@@ -183,9 +176,9 @@
                       <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
                       <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
                     </template>
-                  </div>
-                                  </div>
-                                          </div>
+              </div>
+                          </div>
+                       </div>
                   </div>
               </article>
     </main>
@@ -195,34 +188,37 @@
         Back to top
       </span>
     </a>
-  </div> <!-- /.kss-wrapper -->
+  </div>
+  <!-- /.kss-wrapper -->
 
-<!-- SCRIPTS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-once/2.1.2/jquery.once.min.js"></script>
-<script src="https://vadikom.github.io/smartmenus/src/libs/jquery/jquery.js"></script>
-<script src="https://vadikom.github.io/smartmenus/src/jquery.smartmenus.js"></script>
-<script src="kss-assets/kss.js"></script>
-<script src="kss-assets/rainbow.min.js"></script>
-<script src="kss-assets/main.js"></script>
-<script src="../js/aria-card-flip.js"></script>
-<script src="../js/aria-switch.js"></script>
-<script src="../js/aria-toggle.js"></script>
-<script src="../js/aria-tooltips.js"></script>
-<script src="../js/back-to-top.js"></script>
-<script src="../js/button-state.js"></script>
-<script src="../js/button.js"></script>
-<script src="../js/clipboard.min.js"></script>
-<script src="../js/copy-button.js"></script>
-<script src="../js/jump-link-fix.js"></script>
-<script src="../js/menu.js"></script>
-<script src="../js/mobile-menu-icon.js"></script>
-<script src="../js/mobile-menu.js"></script>
-<script src="../js/px-video.js"></script>
-<script src="../js/sidebar-slide.js"></script>
-<script src="../js/strings.js"></script>
-<script src="../js/tables.js"></script>
-
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-once/2.1.2/jquery.once.min.js"></script>
+  <script src="https://vadikom.github.io/smartmenus/src/libs/jquery/jquery.js"></script>
+  <script src="https://vadikom.github.io/smartmenus/src/jquery.smartmenus.js"></script>
+  <script src="kss-assets/kss.js"></script>
+  <script src="kss-assets/rainbow.min.js"></script>
+  <script src="kss-assets/main.js"></script>
+  <script src="../js/aria-card-flip.js"></script>
+  <script src="../js/aria-switch.js"></script>
+  <script src="../js/aria-toggle.js"></script>
+  <script src="../js/aria-tooltips.js"></script>
+  <script src="../js/back-to-top.js"></script>
+  <script src="../js/button-state.js"></script>
+  <script src="../js/button.js"></script>
+  <script src="../js/clipboard.min.js"></script>
+  <script src="../js/copy-button.js"></script>
+  <script src="../js/jump-link-fix.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/mobile-menu-icon.js"></script>
+  <script src="../js/mobile-menu.js"></script>
+  <script src="../js/px-video.js"></script>
+  <script src="../js/sidebar-slide.js"></script>
+  <script src="../js/strings.js"></script>
+  <script src="../js/tables.js"></script>
+  <script src="../js/tabs.js"></script>
+  
 </body>
+
 </html>
