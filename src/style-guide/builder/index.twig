@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>A11Y Style Guide</title>
@@ -10,9 +11,9 @@
     // remove no-js and add 'js' to the HTML
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
-  <link rel="stylesheet" href="kss-assets/kss.css">
-  {{ styles|raw }}
+  <link rel="stylesheet" href="kss-assets/kss.css"> {{ styles|raw }}
 </head>
+
 <body id="kss-node">
 
   <a href="#kss-main-content" class="kss-skip-link">
@@ -53,138 +54,123 @@
             </button>
           </div>
           <ul id="kss-nav-list" class="kss-menu">
-          <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
-          {% for menu_item in menu %}
+            <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+            {% for menu_item in menu %}
             <li class="kss-menu-item">
-              <a href="section-{{ menu_item.referenceURI }}.html"><span class="kss-ref">{{ menu_item.referenceNumber }}</span><span class="kss-name">{{ menu_item.header }}</span></a>
-              {% if menu_item.isActive and menu_item.children is not empty %}
-                <ul class="kss-menu-child">
-                  {% for menu_child in menu_item.children %}
-                    <li class="kss-menu-item">
-                      <a href="#kssref-{{ menu_child.referenceURI }}">
+              <a href="section-{{ menu_item.referenceURI }}.html"><span class="kss-ref">{{ menu_item.referenceNumber }}</span><span class="kss-name">{{ menu_item.header }}</span></a> {% if menu_item.isActive and menu_item.children is not empty %}
+              <ul class="kss-menu-child">
+                {% for menu_child in menu_item.children %}
+                <li class="kss-menu-item">
+                  <a href="#kssref-{{ menu_child.referenceURI }}">
                         <span class="kss-ref {% if menu_child.isGrandChild %}kss-nav__ref-child{% endif %}">{{ menu_child.referenceNumber }}</span>
                         <span class="kss-name">{{ menu_child.header }}</span>
                       </a>
-                    </li>
-                  {% endfor %}
-                </ul>
+                </li>
+                {% endfor %}
+              </ul>
               {% endif %}
             </li>
-          {% endfor %}
+            {% endfor %}
           </ul>
         </nav>
 
-      </div> <!-- /.kss-sidebar-inner -->
+      </div>
+      <!-- /.kss-sidebar-inner -->
 
-    </div> <!-- /.kss-sidebar -->
+    </div>
+    <!-- /.kss-sidebar -->
 
     <main id="kss-main-content" class="kss-content" aria-label="content">
       <article class="kss-article">
         {% if homepage %}
-          <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
-            {{ homepage|raw }}
-          </div>
-        {% else %}
-
-        {#
-          Display each section, in order.
-
-          The "root" element comes first in this loop, and can be detected using the
-          "loop.first" variable as seen below.
-        #}
+        <div id="kssref-0" class="kss-section kss-section--depth-0 kss-overview kss-style">
+          {{ homepage|raw }}
+        </div>
+        {% else %} {# Display each section, in order. The "root" element comes first in this loop, and can be detected using the "loop.first" variable as seen below. #}
         <div>
           <div class="social-link-out">
             <a href="https://twitter.com/cariefisher" target="_blank" class="social-link-twitter"><span class="visuallyhidden">Carie Fisher on Twitter</span></a>
             <a href="https://github.com/cehfisher" target="_blank" class="social-link-github"><span class="visuallyhidden">Carie Fisher on GitHub</span></a>
           </div>
 
-          {% for section in sections %}
-            {% set sectionElement = loop.first ? 'div' : 'section' %}
-            <{{ sectionElement }} id="kssref-{{ section.referenceURI }}" class="kss-section kss-depth-{{ section.depth }}">
-              <div class="kss-style">
-                {% set headerElement = (section.depth > 6) ? 'h6' : 'h' ~ section.depth %}
-                <{{ headerElement }} class="kss-title kss-title--level-{{ section.depth }}">
-                  <a class="kss-title__permalink" href="#kssref-{{ section.referenceURI }}">
+          {% for section in sections %} {% set sectionElement = loop.first ? 'div' : 'section' %}
+          <{{ sectionElement }} id="kssref-{{ section.referenceURI }}" class="kss-section kss-depth-{{ section.depth }}">
+            <div class="kss-style">
+              {% set headerElement = (section.depth > 6) ? 'h6' : 'h' ~ section.depth %}
+              <{{ headerElement }} class="kss-title kss-title--level-{{ section.depth }}">
+                <a class="kss-title__permalink" href="#kssref-{{ section.referenceURI }}">
                     {{ section.header }}
                   </a>
-                </{{ headerElement }}>
+              </{{ headerElement }}>
 
-                {% if section.description %}
-                  <div class="kss-description">
-                    {{ section.description|raw }}
-                  </div>
-                {% endif %}
-
-                {% for parameter in section.parameters %}
-                  {% if loop.first %}
-                    <p class="kss-parameters__title">
-                      Parameters:
-                    </p>
-                    <ul class="kss-parameters">
-                  {% endif %}
-                    <li class="kss-parameters__item">
-                      <div class="kss-parameters__name">
-                        <code>{{ parameter.name }}</code>
-                      </div>
-                      <div class="kss-parameters__description">
-                        {{ parameter.description|raw }}
-                        {% if parameter.defaultValue %}
-                          <div class="kss-parameters__default-value">
-                            Defaults to: <code>{{ parameter.defaultValue }}</code>
-                          </div>
-                        {% endif %}
-                      </div>
-                    </li>
-                  {% if loop.last %}
-                    </ul>
-                  {% endif %}
-                {% endfor %}
+              {% if section.description %}
+              <div class="kss-description">
+                {{ section.description|raw }}
               </div>
-              {% if section.example %}
-                <div class="kss-modifier-block">
-
-                  <div class="kss-modifier kss-modifier-original">
-                    <div class="kss-modifier-example">
-                      {{ section.example|raw }}
-                    </div>
+              {% endif %} {% for parameter in section.parameters %} {% if loop.first %}
+              <p class="kss-parameters__title">
+                Parameters:
+              </p>
+              <ul class="kss-parameters">
+                {% endif %}
+                <li class="kss-parameters__item">
+                  <div class="kss-parameters__name">
+                    <code>{{ parameter.name }}</code>
                   </div>
-
-                  {% for modifier in section.modifiers %}
-                  <div class="kss-modifier">
-                    <div class="kss-modifier-head">
-                      <div class="kss-modifier-name">
-                        {{ modifier.name }}
-                      </div>
-                      <div class="kss-modifier-description">
-                        {{ modifier.description|raw }}
-                      </div>
+                  <div class="kss-parameters__description">
+                    {{ parameter.description|raw }} {% if parameter.defaultValue %}
+                    <div class="kss-parameters__default-value">
+                      Defaults to: <code>{{ parameter.defaultValue }}</code>
                     </div>
-                    <div class="kss-modifier-example">
-                      {{ modifier.markup|raw }}
-                    </div>
+                    {% endif %}
                   </div>
-                  {% endfor %}
+                </li>
+                {% if loop.last %}
+              </ul>
+              {% endif %} {% endfor %}
+            </div>
+            {% if section.example %}
+            <div class="kss-modifier-block">
 
-                  {% if section.markup %}
-                  <div class="kss-markup">
-                    <button type="button" class="js-show-markup">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  {{ section.example|raw }}
+                </div>
+              </div>
+
+              {% for modifier in section.modifiers %}
+              <div class="kss-modifier">
+                <div class="kss-modifier-head">
+                  <div class="kss-modifier-name">
+                    {{ modifier.name }}
+                  </div>
+                  <div class="kss-modifier-description">
+                    {{ modifier.description|raw }}
+                  </div>
+                </div>
+                <div class="kss-modifier-example">
+                  {{ modifier.markup|raw }}
+                </div>
+              </div>
+              {% endfor %} {% if section.markup %}
+              <div class="kss-markup">
+                <button type="button" class="js-show-markup">
                       Show Markup Example
                     </button>
-                    <template>
+                <template>
                       <pre><code id="post-shortlink" data-language="html">{{ section.markup|escape('html') }}</code></pre>
                       <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
                       <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
                     </template>
-                  </div>
-                  {% endif %}
-                </div>
-                {% if section.sourceFile.name %}
-                  <div class="kss-source kss-style">
-                    Source: <code>{{ section.sourceFile.name }}</code>, line {{ section.sourceFile.line }}
-                  </div>
-                {% endif %}
+              </div>
               {% endif %}
-            </{{ sectionElement }}>
+            </div>
+            {% if section.sourceFile.name %}
+            <div class="kss-source kss-style">
+              Source: <code>{{ section.sourceFile.name }}</code>, line {{ section.sourceFile.line }}
+            </div>
+            {% endif %} {% endif %}
+          </{{ sectionElement }}>
           {% endfor %}
         </div>
         {% endif %}
@@ -196,34 +182,37 @@
         Back to top
       </span>
     </a>
-  </div> <!-- /.kss-wrapper -->
+  </div>
+  <!-- /.kss-wrapper -->
 
-<!-- SCRIPTS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-once/2.1.2/jquery.once.min.js"></script>
-<script src="https://vadikom.github.io/smartmenus/src/libs/jquery/jquery.js"></script>
-<script src="https://vadikom.github.io/smartmenus/src/jquery.smartmenus.js"></script>
-<script src="kss-assets/kss.js"></script>
-<script src="kss-assets/rainbow.min.js"></script>
-<script src="kss-assets/main.js"></script>
-<script src="../js/aria-card-flip.js"></script>
-<script src="../js/aria-switch.js"></script>
-<script src="../js/aria-toggle.js"></script>
-<script src="../js/aria-tooltips.js"></script>
-<script src="../js/back-to-top.js"></script>
-<script src="../js/button-state.js"></script>
-<script src="../js/button.js"></script>
-<script src="../js/clipboard.min.js"></script>
-<script src="../js/copy-button.js"></script>
-<script src="../js/jump-link-fix.js"></script>
-<script src="../js/menu.js"></script>
-<script src="../js/mobile-menu-icon.js"></script>
-<script src="../js/mobile-menu.js"></script>
-<script src="../js/px-video.js"></script>
-<script src="../js/sidebar-slide.js"></script>
-<script src="../js/strings.js"></script>
-<script src="../js/tables.js"></script>
-{{ scripts|raw }}
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-once/2.1.2/jquery.once.min.js"></script>
+  <script src="https://vadikom.github.io/smartmenus/src/libs/jquery/jquery.js"></script>
+  <script src="https://vadikom.github.io/smartmenus/src/jquery.smartmenus.js"></script>
+  <script src="kss-assets/kss.js"></script>
+  <script src="kss-assets/rainbow.min.js"></script>
+  <script src="kss-assets/main.js"></script>
+  <script src="../js/aria-card-flip.js"></script>
+  <script src="../js/aria-switch.js"></script>
+  <script src="../js/aria-toggle.js"></script>
+  <script src="../js/aria-tooltips.js"></script>
+  <script src="../js/back-to-top.js"></script>
+  <script src="../js/button-state.js"></script>
+  <script src="../js/button.js"></script>
+  <script src="../js/clipboard.min.js"></script>
+  <script src="../js/copy-button.js"></script>
+  <script src="../js/jump-link-fix.js"></script>
+  <script src="../js/menu.js"></script>
+  <script src="../js/mobile-menu-icon.js"></script>
+  <script src="../js/mobile-menu.js"></script>
+  <script src="../js/px-video.js"></script>
+  <script src="../js/sidebar-slide.js"></script>
+  <script src="../js/strings.js"></script>
+  <script src="../js/tables.js"></script>
+  <script src="../js/tabs.js"></script>
+  {{ scripts|raw }}
 </body>
+
 </html>
