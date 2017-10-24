@@ -71,38 +71,44 @@
               <a href="section-navigation.html"><span class="kss-ref">5</span><span class="kss-name">Navigation</span></a>
                               <ul class="kss-menu-child">
                                       <li class="kss-menu-item">
-                      <a href="#kssref-navigation-breadcrumbs">
+                      <a href="#kssref-navigation-accordion">
                         <span class="kss-ref ">5.1</span>
+                        <span class="kss-name">Accordion</span>
+                      </a>
+                    </li>
+                                      <li class="kss-menu-item">
+                      <a href="#kssref-navigation-breadcrumbs">
+                        <span class="kss-ref ">5.2</span>
                         <span class="kss-name">Breadcrumbs</span>
                       </a>
                     </li>
                                       <li class="kss-menu-item">
                       <a href="#kssref-navigation-navigation-basic">
-                        <span class="kss-ref ">5.2</span>
+                        <span class="kss-ref ">5.3</span>
                         <span class="kss-name">Basic Navigation</span>
                       </a>
                     </li>
                                       <li class="kss-menu-item">
                       <a href="#kssref-navigation-navigation-dropdown">
-                        <span class="kss-ref ">5.3</span>
+                        <span class="kss-ref ">5.4</span>
                         <span class="kss-name">Dropdown Navigation</span>
                       </a>
                     </li>
                                       <li class="kss-menu-item">
                       <a href="#kssref-navigation-navigation-footer">
-                        <span class="kss-ref ">5.4</span>
+                        <span class="kss-ref ">5.5</span>
                         <span class="kss-name">Footer Navigation</span>
                       </a>
                     </li>
                                       <li class="kss-menu-item">
                       <a href="#kssref-navigation-navigation-mobile">
-                        <span class="kss-ref ">5.5</span>
+                        <span class="kss-ref ">5.6</span>
                         <span class="kss-name">Mobile Navigation</span>
                       </a>
                     </li>
                                       <li class="kss-menu-item">
                       <a href="#kssref-navigation-pagination">
-                        <span class="kss-ref ">5.6</span>
+                        <span class="kss-ref ">5.7</span>
                         <span class="kss-name">Pagination</span>
                       </a>
                     </li>
@@ -142,6 +148,99 @@
                 
                               </div>
                           </div>
+                                  <section id="kssref-navigation-accordion" class="kss-section kss-depth-2">
+              <div class="kss-style">
+                                <h2 class="kss-title kss-title--level-2">
+                  <a class="kss-title__permalink" href="#kssref-navigation-accordion">
+                    Accordion
+                  </a>
+                </h2>
+
+                
+                              </div>
+                              <div class="kss-modifier-block">
+
+                  <div class="kss-modifier kss-modifier-original">
+                    <div class="kss-modifier-example">
+                      <section class="accordion-section">
+  <div class="accordion" role="presentation">
+    <div class="js-accordion__panel">
+      <h3 class="accordion__heading">
+      <button class="accordion__trigger" aria-controls="accordion__content_1" aria-expanded="false" tabindex="0" id="accordion__title_1" aria-selected="false">I’m tall when I’m young and I’m short when I’m old. What am I?
+      </button>
+      </h3>
+      <div class="accordion__content" id="accordion__content_1" role="region" aria-hidden="true" aria-labelledby="accordion__title_1">
+        <p>A candle</p>
+      </div>
+    </div>
+    <div class="js-accordion__panel">
+      <h3 class="accordion__heading">
+      <button class="accordion__trigger" aria-controls="accordion__content_2" aria-expanded="false" tabindex="0" id="accordion__title_2" aria-selected="false">Which weighs more, a pound of feathers or a pound of bricks?
+      </button>
+      </h3>
+      <div class="accordion__content" id="accordion__content_2" role="region" aria-hidden="true" aria-labelledby="accordion__title_2">
+        <p>Neither, they both weigh one pound.</p>
+      </div>
+    </div>
+    <div class="js-accordion__panel">
+      <h3 class="accordion__heading">
+      <button class="accordion__trigger" aria-controls="accordion__content_3" aria-expanded="false" tabindex="0" id="accordion__title_3" aria-selected="false">The more you take, the more you leave behind. What are they?
+      </button>
+      </h3>
+      <div class="accordion__content" id="accordion__content_3" role="region" aria-hidden="true" aria-labelledby="accordion__title_3">
+        <p>Footprints.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+                    </div>
+                  </div>
+
+                  
+                                    <div class="kss-markup">
+                    <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                    <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;accordion-section&quot;&gt;
+  &lt;div class=&quot;accordion&quot; role=&quot;presentation&quot;&gt;
+    &lt;div class=&quot;js-accordion__panel&quot;&gt;
+      &lt;h3 class=&quot;accordion__heading&quot;&gt;
+      &lt;button class=&quot;accordion__trigger&quot; aria-controls=&quot;accordion__content_1&quot; aria-expanded=&quot;false&quot; tabindex=&quot;0&quot; id=&quot;accordion__title_1&quot; aria-selected=&quot;false&quot;&gt;I’m tall when I’m young and I’m short when I’m old. What am I?
+      &lt;/button&gt;
+      &lt;/h3&gt;
+      &lt;div class=&quot;accordion__content&quot; id=&quot;accordion__content_1&quot; role=&quot;region&quot; aria-hidden=&quot;true&quot; aria-labelledby=&quot;accordion__title_1&quot;&gt;
+        &lt;p&gt;A candle&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;js-accordion__panel&quot;&gt;
+      &lt;h3 class=&quot;accordion__heading&quot;&gt;
+      &lt;button class=&quot;accordion__trigger&quot; aria-controls=&quot;accordion__content_2&quot; aria-expanded=&quot;false&quot; tabindex=&quot;0&quot; id=&quot;accordion__title_2&quot; aria-selected=&quot;false&quot;&gt;Which weighs more, a pound of feathers or a pound of bricks?
+      &lt;/button&gt;
+      &lt;/h3&gt;
+      &lt;div class=&quot;accordion__content&quot; id=&quot;accordion__content_2&quot; role=&quot;region&quot; aria-hidden=&quot;true&quot; aria-labelledby=&quot;accordion__title_2&quot;&gt;
+        &lt;p&gt;Neither, they both weigh one pound.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;js-accordion__panel&quot;&gt;
+      &lt;h3 class=&quot;accordion__heading&quot;&gt;
+      &lt;button class=&quot;accordion__trigger&quot; aria-controls=&quot;accordion__content_3&quot; aria-expanded=&quot;false&quot; tabindex=&quot;0&quot; id=&quot;accordion__title_3&quot; aria-selected=&quot;false&quot;&gt;The more you take, the more you leave behind. What are they?
+      &lt;/button&gt;
+      &lt;/h3&gt;
+      &lt;div class=&quot;accordion__content&quot; id=&quot;accordion__content_3&quot; role=&quot;region&quot; aria-hidden=&quot;true&quot; aria-labelledby=&quot;accordion__title_3&quot;&gt;
+        &lt;p&gt;Footprints.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+                  </div>
+                                  </div>
+                                          </section>
                                   <section id="kssref-navigation-breadcrumbs" class="kss-section kss-depth-2">
               <div class="kss-style">
                                 <h2 class="kss-title kss-title--level-2">
@@ -577,7 +676,7 @@
         <div class="footer__social">
           <nav aria-labelledby="footer-social-links" class="navigation navigation--social">
             <h2 class="visuallyhidden" id="footer-scoial-links">Social Media Links</h2>
-            <ul class="navigation__menu menu">
+            <ul class="navigation__menu menu" id="footer-social-links">
               <li class="navigation__link navigation__link--icon first"><a href="#" class="icon icon--facebook">Facebook</a></li>
               <li class="navigation__link navigation__link--icon"><a href="#" class="icon icon--instagram">Instagram</a></li>
               <li class="navigation__link navigation__link--icon"><a href="#" class="icon icon--twitter">Twitter</a></li>
@@ -651,7 +750,7 @@
         &lt;div class=&quot;footer__social&quot;&gt;
           &lt;nav aria-labelledby=&quot;footer-social-links&quot; class=&quot;navigation navigation--social&quot;&gt;
             &lt;h2 class=&quot;visuallyhidden&quot; id=&quot;footer-scoial-links&quot;&gt;Social Media Links&lt;/h2&gt;
-            &lt;ul class=&quot;navigation__menu menu&quot;&gt;
+            &lt;ul class=&quot;navigation__menu menu&quot; id=&quot;footer-social-links&quot;&gt;
               &lt;li class=&quot;navigation__link navigation__link--icon first&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;icon icon--facebook&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
               &lt;li class=&quot;navigation__link navigation__link--icon&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;icon icon--instagram&quot;&gt;Instagram&lt;/a&gt;&lt;/li&gt;
               &lt;li class=&quot;navigation__link navigation__link--icon&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;icon icon--twitter&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
@@ -1178,6 +1277,7 @@
 <script src="kss-assets/kss.js"></script>
 <script src="kss-assets/rainbow.min.js"></script>
 <script src="kss-assets/main.js"></script>
+<script src="../js/accordion.js"></script>
 <script src="../js/aria-card-flip.js"></script>
 <script src="../js/aria-switch.js"></script>
 <script src="../js/aria-toggle.js"></script>
