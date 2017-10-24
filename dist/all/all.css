@@ -457,6 +457,32 @@ li {
   list-style: disc; }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.accordion__heading {
+  margin: 0; }
+
+.accordion__trigger {
+  width: 100%;
+  text-align: left;
+  padding: 10px 16px;
+  font-size: 1rem;
+  color: #e00000;
+  background-color: #f7f7f7;
+  border: 0;
+  border-bottom: 2px solid rgba(136, 139, 141, 0.5);
+  display: block;
+  text-decoration: none;
+  text-transform: none;
+  outline: none; }
+  .accordion__trigger:hover, .accordion__trigger:focus {
+    color: #ffffff;
+    background-color: #e00000;
+    border: 1px solid #a51323; }
+
+.accordion__content {
+  display: none;
+  padding: 10px 16px; }
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .breadcrumb {

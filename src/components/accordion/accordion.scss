@@ -2,18 +2,23 @@
 //
 // Markup: accordion.twig
 //
+// Style guide: Navigation.accordion
+
 // Import site utilities.
 @import '../../global/utils/init';
 
 .accordion {
+
   &__heading {
     margin: 0;
   }
+
   &__trigger {
     width: 100%;
     text-align: left;
     padding: 10px 16px;
     font-size: 1rem;
+    color: $color-cherry;
     background-color: $color-alabaster;
     border: 0;
     border-bottom: $border-regular;
@@ -26,7 +31,7 @@
     &:focus {
       color: $color-white;
       background-color: $color-cherry;
-      outline: none;
+      border: 1px solid $color-ruby;
     }
 
   }
