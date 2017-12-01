@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>A11Y Style Guide</title>
+  <meta name="description" content="Style guide and pattern library promoting accessible components and WCAG compliance criteria">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script>
+    // remove no-js and add 'js' to the HTML
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+  <link rel="stylesheet" href="kss-assets/kss.css"> <link rel="stylesheet" href="../all/all.css">
+
+</head>
+
+<body id="kss-node">
+
+  <a href="#kss-main-content" class="kss-skip-link">
+    Jump to main content
+  </a>
+
+  <div class="kss-wrapper">
+    <div class="kss-sidebar">
+
+      <div class="kss-sidebar-inner">
+        <header class="kss-header">
+          <p class="kss-doc-title visuallyhidden">
+            <abbr title="accessibility">A11Y</abbr> Style Guide
+          </p>
+          <div class="site-logo">
+            <svg aria-labelledby="logo-title description" id="site_logo" data-name="site logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 132.07"><defs><style>.cls-1{fill:#e00000;}.cls-2{fill:#fff;}</style></defs><title id="logo-title">A11y style guide logo</title><desc id="description">Red badge reading 'A11Y' positioned above red text reading 'style guide'</desc>
+              <g><path class="cls-1" d="M185,77.5a6.4,6.4,0,0,1-4.9,6L100.5,99a32.2,32.2,0,0,1-9.8,0L11,83.5a6.31,6.31,0,0,1-4.9-6V27.7a6.4,6.4,0,0,1,4.9-6L90.7,6.2a32.2,32.2,0,0,1,9.8,0l79.7,15.5a6.31,6.31,0,0,1,4.9,6V77.5ZM15.8,116.1c0-.4-.1-.5-.5-.5H11.1c-.4,0-.5.1-.5.5v1.7c0,.4.2.6.8.7l5.3,1.2c2.5.6,3.9,1.3,3.9,3.9v3.3c0,2.5-1.2,3.7-3.7,3.7h-7c-2.5,0-3.7-1.2-3.7-3.7v-2.5h4.4v1.9c0,.4.1.5.5.5h4.5c.4,0,.5-.1.5-.5v-2c0-.4-.2-.6-.8-.7L10,122.4c-2.5-.6-3.9-1.3-3.9-3.9v-3.1c0-2.5,1.2-3.7,3.7-3.7h6.6c2.5,0,3.7,1.2,3.7,3.7v2.3H15.7v-1.6Zm19.7-.7H33v11.7h2.7v3.5H25.9v-3.5h2.7V115.4H26v3.3H22.3v-6.9h17v6.9H35.6v-3.3Zm16.4,11.8h2.4v3.5H45v-3.5h2.4v-3l-5-8.9H40.2v-3.5h8.1v3.5H47.1l2.5,4.9,2.5-4.9H50.9v-3.5h8v3.5H56.7l-5,8.9v3Zm8.3,3.5v-3.5h2.3V115.4H60.2v-3.5h9.4v3.5H67V127h4.7v-3.7h3.8v7.4Zm32.4-12.9H88.9v-2.3H84v3.7h6.4v3.7H84v4h4.9v-2.3h3.7v5.9H77.2V127h2.3V115.2H77.2v-3.5H92.6Zm20-1.6c0-.4-.1-.5-.5-.5h-4.8c-.4,0-.5.1-.5.5v10.1c0,.4.1.5.5.5h4.8c.4,0,.5-.1.5-.5v-2.7h-3.4v-3.7H117V127c0,2.5-1.2,3.7-3.7,3.7H106c-2.5,0-3.7-1.2-3.7-3.7V115.6c0-2.5,1.2-3.7,3.7-3.7h7.3c2.5,0,3.7,1.2,3.7,3.7v2.5h-4.4Zm23-.9V127c0,2.4-1.2,3.7-3.7,3.7h-7c-2.4,0-3.7-1.3-3.7-3.7V115.4H119v-3.5h8.7v3.5h-2v10.9a.47.47,0,0,0,.5.5h4.4c.4,0,.5-.2.5-.5V115.4h-2v-3.5h8.7v3.5h-2.2Zm10.9,11.9h2.4v3.5h-9.4v-3.5h2.4V115.4h-2.4v-3.5h9.4v3.5h-2.4Zm6.5,0V115.4h-2.3v-3.5h13.1c2.5,0,3.7,1.2,3.7,3.7V127c0,2.5-1.2,3.7-3.7,3.7H150.7v-3.5Zm9.5-.4c.4,0,.5-.1.5-.5V116.2c0-.4-.1-.5-.5-.5h-5v11.1Zm22.5-9h-3.7v-2.3h-4.9v3.7h6.4v3.7h-6.4v4h4.9v-2.3H185v5.9H169.6V127h2.3V115.2h-2.3v-3.5H185Z" transform="translate(-6.1 -5.82)"/><path class="cls-2" d="M68.6,71h-18V63.5h3.7l-1.4-4.8H40.5l-1.4,4.8h3.7V71H25.2V63.5h4.4L38,38.3H33.4V30.8H53.2l11,32.7h4.4ZM46.7,38.5l-4,13.2h8.1ZM99.1,71.1H72.6V63.5h8.7V40.3L72,43.7V35.5L83.4,31h7.3V63.6h8.4Zm30.4-.1H103V63.4h8.7V40.2l-9.2,3.3V35.3l11.4-4.5h7.3V63.4h8.4V71Zm20.4-7.5H155V71H135.3V63.5h5.1V57.2L129.8,38.3h-4.6V30.8h17.3v7.5h-2.6l5.3,10.4,5.3-10.4h-2.6V30.8H165v7.5h-4.6L149.8,57.2v6.3Z" transform="translate(-6.1 -5.82)"/><path class="cls-1" d="M6.1,105.5H185v1.9H6.1Zm0,30H185v1.9H6.1Z" transform="translate(-6.1 -5.82)"/></g></svg>
+          </div>
+        </header>
+
+        <nav class="kss-nav" aria-label="Style Guide">
+          <button type="button" class="nav-btn">
+            <span class="visuallyhidden">
+              Navigation Toggle
+            </span>
+          </button>
+
+          <div class="navbar-mobile-icon">
+            <button class="menu-toggle" id="toggle-menu" aria-expanded="false">
+              <span>Menu</span>
+              <svg class="icon icon-menu-toggle" aria-hidden="true" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
+                <g class="svg-menu-toggle">
+                  <path class="line line-1" d="M5 13h90v14H5z"/>
+                  <path class="line line-2" d="M5 43h90v14H5z"/>
+                  <path class="line line-3" d="M5 73h90v14H5z"/>
+                </g>
+              </svg>
+            </button>
+          </div>
+          <ul id="kss-nav-list" class="kss-menu">
+            <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+                        <li class="kss-menu-item">
+              <a href="section-cards.html"><span class="kss-ref">1</span><span class="kss-name">Cards</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-forms.html"><span class="kss-ref">2</span><span class="kss-name">Forms</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-general.html"><span class="kss-ref">3</span><span class="kss-name">General</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-media.html"><span class="kss-ref">4</span><span class="kss-name">Media</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-navigation.html"><span class="kss-ref">5</span><span class="kss-name">Navigation</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-structure.html"><span class="kss-ref">6</span><span class="kss-name">Structure</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-resources.html"><span class="kss-ref">7</span><span class="kss-name">Resources</span></a>             </li>
+                      </ul>
+        </nav>
+
+      </div>
+      <!-- /.kss-sidebar-inner -->
+
+    </div>
+    <!-- /.kss-sidebar -->
+
+    <main id="kss-main-content" class="kss-content" aria-label="content">
+      <article class="kss-article">
+         
+        <div>
+          <div class="social-link-out">
+            <a href="https://twitter.com/cariefisher" target="_blank" class="social-link-twitter"><span class="visuallyhidden">Carie Fisher on Twitter</span></a>
+            <a href="https://github.com/cehfisher" target="_blank" class="social-link-github"><span class="visuallyhidden">Carie Fisher on GitHub</span></a>
+          </div>
+
+                     <div id="kssref-structure-tabs" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-structure-tabs">
+                    Tabs
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <ul>
+ <li>Be mindful of using tabs, as they are less discoverable by design.</li>
+ <li>Once a tab button is focused, other tabs can be selected with the arrow keys.</li>
+ <li>A tab&#39;s contents can be accessed via Tab (if there are focusable elements in the tab well) or PgDn (if there are no focusable elements in the tab well).</li>
+ <li>Be sure to update the values of the <code>aria-posinset</code> and <code>aria-setsize</code> attributes if you have more than three tabs.</li>
+</ul>
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tabs_res">Resources</a></h3><div id="tabs_res" class="atblock__panel"><ul><li><a href="https://www.deque.com/blog/a11y-support-series-part-1-aria-tab-panel-accessibility/" target="_blank">ARIA Tab Panel Accessibility</a></li></ul></div></section>
+
+
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tabs_guide">WCAG 2.0 Guidelines</a></h3><div id="tabs_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#keyboard-operation-keyboard-operable" target="_blank">2.1.1 Keyboard</a> - All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user&#39;s movement and not just the endpoints. (Level A)</section>
+
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  
+<section class="tabs" aria-multiselectable="false">
+  <ul class="tabs__navlist" role="tablist">
+    <li class="tabs__nav-item is-active" role="presentation">
+      <button class="tabs__nav-trigger" id="tab-label-1" role="tab" aria-setsize="3" aria-posinset="1" tabindex="0" aria-controls="tab-panel-1" aria-selected="true">Tab 1</button>
+    </li><li class="tabs__nav-item" role="presentation">
+      <button class="tabs__nav-trigger" id="tab-label-2" role="tab" aria-setsize="3" aria-posinset="2" tabindex="-1" aria-controls="tab-panel-2" aria-selected="false">Tab 2</button>
+    </li><li class="tabs__nav-item" role="presentation">
+      <button class="tabs__nav-trigger" id="tab-label-3" role="tab" aria-setsize="3" aria-posinset="3" tabindex="-1" aria-controls="tab-panel-3" aria-selected="false">Tab 3</button>
+    </li>
+  </ul>
+  <div class="tabs__panels">
+    <div class="tabs__panel is-current" id="tab-panel-1" role="tabpanel" aria-labelledby="tab-label-1" tabindex="-1">
+      <h3>Tab 1</h3>
+      <div class="panel-body">
+        <p>The important achievement of Apollo was demonstrating that humanity is not forever chained to this planet and our visions go rather further than that and our opportunities are unlimited.</p>
+      </div>
+    </div>
+    <div class="tabs__panel" id="tab-panel-2" aria-hidden="true" role="tabpanel" aria-labelledby="tab-label-2" tabindex="-1">
+      <h3>Tab 2</h3>
+      <div class="panel-body">
+        <p>Never limit yourself because of others' limited imagination; never limit others because of your own limited imagination.</p>
+      </div>
+    </div>
+    <div class="tabs__panel" id="tab-panel-3" aria-hidden="true" role="tabpanel" aria-labelledby="tab-label-3" tabindex="-1">
+      <h3>Tab 3</h3>
+      <div class="panel-body">
+        <p>After Apollo 17, America stopped looking towards the next horizon. The United States had become a space-faring nation, but threw it away. We have sacrificed space exploration for space exploitation, which is interesting but scarcely visionary.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">
+&lt;section class=&quot;tabs&quot; aria-multiselectable=&quot;false&quot;&gt;
+  &lt;ul class=&quot;tabs__navlist&quot; role=&quot;tablist&quot;&gt;
+    &lt;li class=&quot;tabs__nav-item is-active&quot; role=&quot;presentation&quot;&gt;
+      &lt;button class=&quot;tabs__nav-trigger&quot; id=&quot;tab-label-1&quot; role=&quot;tab&quot; aria-setsize=&quot;3&quot; aria-posinset=&quot;1&quot; tabindex=&quot;0&quot; aria-controls=&quot;tab-panel-1&quot; aria-selected=&quot;true&quot;&gt;Tab 1&lt;/button&gt;
+    &lt;/li&gt;&lt;li class=&quot;tabs__nav-item&quot; role=&quot;presentation&quot;&gt;
+      &lt;button class=&quot;tabs__nav-trigger&quot; id=&quot;tab-label-2&quot; role=&quot;tab&quot; aria-setsize=&quot;3&quot; aria-posinset=&quot;2&quot; tabindex=&quot;-1&quot; aria-controls=&quot;tab-panel-2&quot; aria-selected=&quot;false&quot;&gt;Tab 2&lt;/button&gt;
+    &lt;/li&gt;&lt;li class=&quot;tabs__nav-item&quot; role=&quot;presentation&quot;&gt;
+      &lt;button class=&quot;tabs__nav-trigger&quot; id=&quot;tab-label-3&quot; role=&quot;tab&quot; aria-setsize=&quot;3&quot; aria-posinset=&quot;3&quot; tabindex=&quot;-1&quot; aria-controls=&quot;tab-panel-3&quot; aria-selected=&quot;false&quot;&gt;Tab 3&lt;/button&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;tabs__panels&quot;&gt;
+    &lt;div class=&quot;tabs__panel is-current&quot; id=&quot;tab-panel-1&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tab-label-1&quot; tabindex=&quot;-1&quot;&gt;
+      &lt;h3&gt;Tab 1&lt;/h3&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        &lt;p&gt;The important achievement of Apollo was demonstrating that humanity is not forever chained to this planet and our visions go rather further than that and our opportunities are unlimited.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tabs__panel&quot; id=&quot;tab-panel-2&quot; aria-hidden=&quot;true&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tab-label-2&quot; tabindex=&quot;-1&quot;&gt;
+      &lt;h3&gt;Tab 2&lt;/h3&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        &lt;p&gt;Never limit yourself because of others&#039; limited imagination; never limit others because of your own limited imagination.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tabs__panel&quot; id=&quot;tab-panel-3&quot; aria-hidden=&quot;true&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;tab-label-3&quot; tabindex=&quot;-1&quot;&gt;
+      &lt;h3&gt;Tab 3&lt;/h3&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        &lt;p&gt;After Apollo 17, America stopped looking towards the next horizon. The United States had become a space-faring nation, but threw it away. We have sacrificed space exploration for space exploitation, which is interesting but scarcely visionary.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </div>
+                  </div>
+              </article>
+    </main>
+
+    <a href="#kss-main-content" class="back-to-top">
+      <span class="visuallyhidden">
+        Back to top
+      </span>
+    </a>
+<<<<<<< HEAD
+  </div> <!-- /.kss-wrapper -->
+
+<!-- SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-once/2.1.2/jquery.once.min.js"></script>
+<script src="https://vadikom.github.io/smartmenus/src/libs/jquery/jquery.js"></script>
+<script src="https://vadikom.github.io/smartmenus/src/jquery.smartmenus.js"></script>
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/rainbow.min.js"></script>
+<script src="kss-assets/main.js"></script>
+<script src="../js/accordion.js"></script>
+<script src="../js/aria-card-flip.js"></script>
+<script src="../js/aria-switch.js"></script>
+<script src="../js/aria-toggle.js"></script>
+<script src="../js/aria-tooltips.js"></script>
+<script src="../js/back-to-top.js"></script>
+<script src="../js/button-state.js"></script>
+<script src="../js/button.js"></script>
+<script src="../js/clipboard.min.js"></script>
+<script src="../js/copy-button.js"></script>
+<script src="../js/jump-link-fix.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/mobile-menu-icon.js"></script>
+<script src="../js/mobile-menu.js"></script>
+<script src="../js/px-video.js"></script>
+<script src="../js/sidebar-slide.js"></script>
+<script src="../js/strings.js"></script>
+<script src="../js/tables.js"></script>
+<script src="../js/tabs.js"></script>
+
+</body>
+
+</html>

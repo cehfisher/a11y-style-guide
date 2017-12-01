@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>A11Y Style Guide</title>
@@ -10,10 +11,10 @@
     // remove no-js and add 'js' to the HTML
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
-  <link rel="stylesheet" href="kss-assets/kss.css">
-  <link rel="stylesheet" href="../all/all.css">
+  <link rel="stylesheet" href="kss-assets/kss.css"> <link rel="stylesheet" href="../all/all.css">
 
 </head>
+
 <body id="kss-node">
 
   <a href="#kss-main-content" class="kss-skip-link">
@@ -54,55 +55,49 @@
             </button>
           </div>
           <ul id="kss-nav-list" class="kss-menu">
-          <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
-                      <li class="kss-menu-item">
-              <a href="section-cards.html"><span class="kss-ref">1</span><span class="kss-name">Cards</span></a>
-                          </li>
-                      <li class="kss-menu-item">
-              <a href="section-forms.html"><span class="kss-ref">2</span><span class="kss-name">Forms</span></a>
-                          </li>
-                      <li class="kss-menu-item">
-              <a href="section-general.html"><span class="kss-ref">3</span><span class="kss-name">General</span></a>
-                          </li>
-                      <li class="kss-menu-item">
-              <a href="section-media.html"><span class="kss-ref">4</span><span class="kss-name">Media</span></a>
-                          </li>
-                      <li class="kss-menu-item">
-              <a href="section-navigation.html"><span class="kss-ref">5</span><span class="kss-name">Navigation</span></a>
-                          </li>
-                      <li class="kss-menu-item">
-              <a href="section-structure.html"><span class="kss-ref">6</span><span class="kss-name">Structure</span></a>
-                          </li>
-                      <li class="kss-menu-item">
-              <a href="section-resources.html"><span class="kss-ref">7</span><span class="kss-name">Resources</span></a>
-                          </li>
-                    </ul>
+            <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+                        <li class="kss-menu-item">
+              <a href="section-cards.html"><span class="kss-ref">1</span><span class="kss-name">Cards</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-forms.html"><span class="kss-ref">2</span><span class="kss-name">Forms</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-general.html"><span class="kss-ref">3</span><span class="kss-name">General</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-media.html"><span class="kss-ref">4</span><span class="kss-name">Media</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-navigation.html"><span class="kss-ref">5</span><span class="kss-name">Navigation</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-structure.html"><span class="kss-ref">6</span><span class="kss-name">Structure</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-resources.html"><span class="kss-ref">7</span><span class="kss-name">Resources</span></a>             </li>
+                      </ul>
         </nav>
 
-      </div> <!-- /.kss-sidebar-inner -->
+      </div>
+      <!-- /.kss-sidebar-inner -->
 
-    </div> <!-- /.kss-sidebar -->
+    </div>
+    <!-- /.kss-sidebar -->
 
     <main id="kss-main-content" class="kss-content" aria-label="content">
       <article class="kss-article">
-        
-        
+         
         <div>
           <div class="social-link-out">
             <a href="https://twitter.com/cariefisher" target="_blank" class="social-link-twitter"><span class="visuallyhidden">Carie Fisher on Twitter</span></a>
             <a href="https://github.com/cehfisher" target="_blank" class="social-link-github"><span class="visuallyhidden">Carie Fisher on GitHub</span></a>
           </div>
 
-                                  <div id="kssref-forms-toggles" class="kss-section kss-depth-2">
-              <div class="kss-style">
-                                <h2 class="kss-title kss-title--level-2">
-                  <a class="kss-title__permalink" href="#kssref-forms-toggles">
+                     <div id="kssref-forms-toggles" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-forms-toggles">
                     Toggles
                   </a>
-                </h2>
+              </h2>
 
-                                  <div class="kss-description">
-                    <ul>
+                            <div class="kss-description">
+                <ul>
  <li>When you can, use a <code>&lt;button&gt;</code> element and include <code>aria-pressed</code> or <code>role=&quot;switch&quot;</code> for your toggles.</li>
  <li>You can add optional labels to your toggles, just make sure the label element includes an <code>id</code> and the toggle button includes an <code>aria-labelledby</code> tag that match.
  <li>Make sure you include <code>aria-checked</code> on toggles, with JavaScript changing the state on click from true to false (or the reverse).</li>
@@ -116,14 +111,13 @@
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#toggle_guide">WCAG 2.0 Guidelines</a></h3><div id="toggle_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv" target="_blank">4.1.2 Name, Role, Value</a> - For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. (Level A)</p></div><div class="markup"></div></section>
 
 
-                  </div>
-                
-                              </div>
-                              <div class="kss-modifier-block">
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
 
-                  <div class="kss-modifier kss-modifier-original">
-                    <div class="kss-modifier-example">
-                      <section class="toggles-section">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="toggles-section">
   <div>
     <button type="button" data-action="aria-switch" aria-labelledby="toggle_label" aria-checked="false" role="switch">
       <span></span>
@@ -144,15 +138,14 @@
   </button>
 </section>
 
-                    </div>
-                  </div>
+                </div>
+              </div>
 
-                  
-                                    <div class="kss-markup">
-                    <button type="button" class="js-show-markup">
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
                       Show Markup Example
                     </button>
-                    <template>
+                <template>
                       <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;toggles-section&quot;&gt;
   &lt;div&gt;
     &lt;button type=&quot;button&quot; data-action=&quot;aria-switch&quot; aria-labelledby=&quot;toggle_label&quot; aria-checked=&quot;false&quot; role=&quot;switch&quot;&gt;
@@ -177,9 +170,9 @@
                       <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
                       <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
                     </template>
-                  </div>
-                                  </div>
-                                          </div>
+              </div>
+                          </div>
+                       </div>
                   </div>
               </article>
     </main>
@@ -189,6 +182,7 @@
         Back to top
       </span>
     </a>
+<<<<<<< HEAD
   </div> <!-- /.kss-wrapper -->
 
 <!-- SCRIPTS -->
@@ -218,6 +212,8 @@
 <script src="../js/sidebar-slide.js"></script>
 <script src="../js/strings.js"></script>
 <script src="../js/tables.js"></script>
+<script src="../js/tabs.js"></script>
 
 </body>
+
 </html>
