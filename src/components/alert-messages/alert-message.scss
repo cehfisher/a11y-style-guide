@@ -1,0 +1,102 @@
+// Import site utilities.
+@import '../../global/utils/init';
+
+/* colors scheme - all pass Level AAA for color contrast pairings */
+$white: rgb(255,255,255);
+$red: rgba(133,0,0,.85);
+$orange: rgba(240,120,0,.85);
+$green: rgba(0,92,0,.85);
+$blue: rgba(112,184,255,.85);
+$black: rgb(0,0,0);
+
+/* alert boxes with variation */
+
+dialog.alert {
+  justify-content: space-around;
+  display: flex;
+  position: fixed;
+  top: 0;
+  outline: 1px solid $white;
+  min-width: 100%;
+  padding: .25em;
+  opacity: 1;
+  transition: opacity 0.6s;
+  span {
+    align-self: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    padding: .25em;
+  }
+  p {
+    color: inherit;
+    font-size: 1.125rem;
+    padding: .25em 1em;
+  }
+}
+
+.danger {
+  background-color: $red;
+  color: $white;
+  span {
+    &:before {
+      content: '\26A0'; // ⚠
+    }
+  }
+}
+
+.warning {
+  background-color: $orange;
+  color: $black;
+  span {
+    &:before {
+      content: '\26A0'; // ⚠
+    }
+  }
+}
+
+.success {
+  background-color: $green;
+  color: $white;
+  span {
+    &:before {
+      content: '\2713'; // ✓
+    }
+  }
+}
+
+.info {
+  background-color: $blue;
+  color: $black;
+  span {
+    &:before {
+      content: '\0069'; // i
+    }
+  }
+}
+
+.btn-close {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  line-height: .8;
+  padding: .2em;
+  &:hover,
+  &:focus {
+    filter: invert(100%);
+    border: 1px solid $white;
+  }
+}
+
+.img-close {
+  &:before {
+    content: '\00d7'; // X
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+.close-dialog {
+  display: none;
+  transition: ease;
+}
