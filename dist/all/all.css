@@ -2483,7 +2483,8 @@ input[type='search'] {
       .nav-btn:hover, .nav-btn:focus, .nav-btn:active {
         border: 0;
         box-shadow: none;
-        background-color: transparent; } }
+        background-color: transparent;
+        cursor: pointer; } }
 
 .kss-menu {
   opacity: 1;
