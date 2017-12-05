@@ -1310,7 +1310,8 @@ html [type='button'],
   width: 22px;
   left: 0;
   top: 1px;
-  background: #f4f4f4; }
+  background: #f4f4f4;
+  border: 1px solid #bbbbbb; }
 
 .checkbox label::after {
   left: 7px;
@@ -2084,7 +2085,8 @@ ul.show-menu {
   left: 0;
   top: 1px;
   background: #f4f4f4;
-  border-radius: 50%; }
+  border-radius: 50%;
+  border: 1px solid #bbbbbb; }
 
 .radio label::after {
   left: 4px;
@@ -2470,8 +2472,8 @@ input[type='search'] {
     .nav-btn {
       display: block;
       position: absolute;
-      width: 30px;
-      height: 30px;
+      width: 32px;
+      height: 32px;
       background: url("../assets/chevron_left_round_red.png") no-repeat;
       right: 10px;
       top: 2px;
@@ -2484,7 +2486,9 @@ input[type='search'] {
         border: 0;
         box-shadow: none;
         background-color: transparent;
-        cursor: pointer; } }
+        cursor: pointer;
+        box-shadow: 0px 3px 15px #888b8d;
+        border-radius: 75%; } }
 
 .kss-menu {
   opacity: 1;
@@ -2510,7 +2514,19 @@ input[type='search'] {
   background: url("../assets/chevron_right_round_red.png") no-repeat;
   background-size: 32px;
   right: 40px;
-  top: 2px; }
+  top: 2px;
+  background-position: 50%;
+  border: 0;
+  box-shadow: none;
+  background-color: transparent;
+  min-height: 0; }
+  .kss-sidebar-collapsed .nav-btn:hover, .kss-sidebar-collapsed .nav-btn:focus, .kss-sidebar-collapsed .nav-btn:active {
+    border: 0;
+    box-shadow: none;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px #888b8d;
+    border-radius: 75%; }
 
 .kss-skip-link {
   background: #e00000;
@@ -2697,7 +2713,7 @@ a[target='_blank']::after {
   top: 2rem; }
 
 .back-to-top {
-  background-color: #e00000;
+  background-color: transparent;
   bottom: 12px;
   height: 2.5rem;
   width: 2.5rem;
@@ -2707,11 +2723,15 @@ a[target='_blank']::after {
   transition: transform 0.5s ease-in-out;
   background-image: url("../assets/chevron_up_round_red.png");
   background-repeat: no-repeat;
-  background-size: 48px;
+  background-size: 42px;
   border-radius: 50%;
   background-position: 50%; }
-  .back-to-top:hover {
-    background-color: #a51323; }
+  .back-to-top:hover, .back-to-top:focus, .back-to-top:active {
+    border: 0;
+    box-shadow: none;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px #888b8d;
+    border-radius: 50%; }
 
 .show-back-to-top .back-to-top {
   transform: translateY(0%); }
@@ -2852,7 +2872,6 @@ a[target='_blank']::after {
     border-radius: 4px 4px 0 0; }
   .tabs .tabs__nav-item .tabs__nav-trigger {
     box-shadow: none;
-    padding: 0.5rem;
     line-height: normal;
     border: 1px solid #dddddd;
     border-bottom: 0;
