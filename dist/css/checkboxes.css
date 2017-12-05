@@ -29,7 +29,8 @@
   width: 22px;
   left: 0;
   top: 1px;
-  background: #f4f4f4; }
+  background: #f4f4f4;
+  border: 1px solid #bbbbbb; }
 
 .checkbox label::after {
   left: 7px;
