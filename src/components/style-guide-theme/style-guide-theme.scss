@@ -321,8 +321,8 @@
   @include breakpoint($bp-xsm) {
     display: block;
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     background: url('#{$asset-path}/chevron_left_round_red.png') no-repeat;
     right: 10px;
     top: 2px;
@@ -339,6 +339,8 @@
       box-shadow: none;
       background-color: transparent;
       cursor: pointer;
+      box-shadow: 0px 3px 15px $color-manatee;
+      border-radius: 75%;
     }
   }
 }
@@ -377,6 +379,22 @@
   background-size: 32px;
   right: 40px;
   top: 2px;
+  background-position: 50%;
+  border: 0;
+  box-shadow: none;
+  background-color: transparent;
+  min-height: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 0;
+    box-shadow: none;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px $color-manatee;
+    border-radius: 75%;
+  }
 }
 
 
@@ -614,7 +632,7 @@ a[target='_blank']::after {
 
 // back to top styling
 .back-to-top {
-  background-color: $color-cherry;
+  background-color: transparent;
   bottom: 12px;
   height: 2.5rem;
   width: 2.5rem;
@@ -624,12 +642,18 @@ a[target='_blank']::after {
   transition: transform 0.5s ease-in-out;
   background-image: url('#{$asset-path}/chevron_up_round_red.png');
   background-repeat: no-repeat;
-  background-size: 48px;
+  background-size: 42px;
   border-radius: 50%;
   background-position: 50%;
 
-  &:hover {
-    background-color: $color-ruby;
+  &:hover,
+  &:focus,
+  &:active {
+    border: 0;
+    box-shadow: none;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px $color-manatee;
+    border-radius: 50%;
   }
 }
 
