@@ -45,7 +45,7 @@
 
 <div class="break"></div>
 <div><h2>Wait how did I get here?</h2>
-<p>Maybe you are a total beginner and wondering where to start? That's cool too...welcome! Learning accessibility can feel a bit like drinking out of a firehose, so here are some articles to help you on your journey toward knowing more about website accessibility.<p>
+<p>Maybe you are a total beginner and wondering where to start? That's cool too...welcome! Learning accessibility can feel a bit like drinking out of a firehose, so here are some articles to help you on your journey towards knowing more about website accessibility.<p>
 <p>For beginners: <a href="https://medium.com/cariefisher/getting-started-with-website-accessibility-5586c7febc92" target="_blank" aria-label="Getting Started with Website Accessibility article">Getting Started with Website Accessibility</a></p>
 <p>For designers: <a href="https://uxplanet.org/designing-for-all-5-ways-to-make-your-next-website-design-more-accessible-23a3528bc8dc" target="_blank" aria-label="Designing for All: 5 Ways to Make Your Next Website Design More Accessible article">Designing for All: 5 Ways to Make Your Next Website Design More Accessible</a></p>  
 </div>
