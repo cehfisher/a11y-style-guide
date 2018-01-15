@@ -19,9 +19,9 @@
 <div>
 <div><h2>Tips and Tricks</h2>
   <ul>
-    <li>Make all of your changes in the `src` folder or your changes will be overwritten on the next `gulp` command.</li>
-    <li>If you add a JS file, you must add the script to the bottom of the `index.twig` file in the `style-guide` folder, otherwise the script will not be added to the page.</li>
-    <li>Once you are done making changes to the patterns, you can easily update the doc folders by these commands (or let a repo manager do it):<br>`npm run gulp clean:docs` - Removes old code from /docs except index and jeckyll settings<br>
-`npm run gulp move:docs` - Move items from /dist to /docs.
+    <li>Make all of your changes in the <code>src</code> folder or your changes will be overwritten on the next <code>gulp</code> command.</li>
+    <li>If you add a JS file, you must add the script to the bottom of the <code>index.twig</code> file in the <code>style-guide</code> folder, otherwise the script will not be added to the page.</li>
+    <li>Once you are done making changes to the patterns, you can easily update the doc folders by these commands (or let a repo manager do it):<br><code>npm run gulp clean:docs</code> - Removes old code from /docs except index and jeckyll settings<br>
+<code>npm run gulp move:docs</code> - Move items from /dist to /docs.
 </li>
 </div>

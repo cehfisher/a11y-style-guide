@@ -13,13 +13,11 @@
 <div class="break"></div>
 <div><h2>How do I use this tool?</h2>
 <ul>
-<li>Use it as a reference.</li>
-<li>Use it as inspiration.</li>
-<li>Use it as a base style guide.</li>
-<li>Use it for creating base components.</li>
-<li>Use it as a base for an accessible theme.</li>
-<li>Contribute to the tool and make it better.</li>
-<li>Fork it and give your own spin to it.</li>
+<li>As a reference.</li>
+<li>As a base for your own style guide.</li>
+<li>As a base for creating your own accessible components.</li>
+<li>As a base for a new accessible theme.</li>
+<li>Contribute to the style guide and make it better.</li>
 </ul>
 <p>Really? What can't you do with it is an easier question?</p></div>
 
