@@ -1,5 +1,5 @@
 <div><h1>A11Y Style Guide</h1>
-<p>This application is a living style guide, generated from <abbr title="Knyle Style Sheets">KSS</abbr> documented styles...with an accessibility twist. See a <a href="http://a11y-style-guide.com/style-guide" target="_blank" aria-label="Accessibility style guide demo">live demo</a> of the style guide.</p></div>
+<p>This application is a living style guide or pattern library, generated from <abbr title="Knyle Style Sheets">KSS</abbr> documented styles...with an accessibility twist. See a <a href="http://a11y-style-guide.com/style-guide" target="_blank" aria-label="Accessibility style guide demo">live demo</a> of the style guide.</p></div>
 
 <div class="break"></div>
 <div><h2>How this all got started</h2>
@@ -25,7 +25,7 @@
 
 <div class="break"></div>
 <div><h2>How can I contribute?</h2>
-<p>Please see the <a href="https://github.com/cehfisher/a11y-style-guide/blob/master/CONTRIBUTING.md" target="_blank">Contributing Guide</a> for more information.</p>
+<p>Please see the <a href="https://github.com/cehfisher/a11y-style-guide/blob/master/CONTRIBUTING.md">Contributing Guide</a> for more information.</p>
 </div>
 
 <div class="break"></div>
