@@ -1,4 +1,4 @@
-<div><h1>A11Y Style Guide</h1><p>This application is a living style guide or pattern library, generated from <abbr title="Knyle Style Sheets">KSS</abbr> documented styles...with an accessibility twist. No matter your level of development or accessibility expertise, there are ways to <a href="https://github.com/cehfisher/a11y-style-guide" target="_blank">help contribute<span class="visuallyhidden"> to the a11y style guide</span></a>.</p></div>
+<div><h1>A11Y Style Guide</h1><p>This application is a living style guide or pattern library, generated from <abbr title="Knyle Style Sheets">KSS</abbr> documented styles...with an accessibility twist. No matter your level of development or accessibility expertise, there are ways to <a href="https://github.com/cehfisher/a11y-style-guide" target="_blank">help contribute<span class="visuallyhidden"> to the a11y style guide</span></a>.</p><p>See a <a href="http://a11y-style-guide.com/style-guide" target="_blank" aria-label="Accessibility style guide demo">live demo</a> of the style guide.</p></div>
 
 <div class="break"></div>
 <div><h2>Why did this project start?</h2>
