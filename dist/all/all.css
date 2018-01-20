@@ -453,8 +453,7 @@ dl {
 
 li {
   margin: 0;
-  padding: 0;
-  list-style: disc; }
+  padding: 0; }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .accordion__heading {
@@ -1442,6 +1441,8 @@ a:focus,
 .button-icon:focus {
   outline: auto 2px Highlight;
   outline: auto 5px -webkit-focus-ring-color; }
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .navbar {
