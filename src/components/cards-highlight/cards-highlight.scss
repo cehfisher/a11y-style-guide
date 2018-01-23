@@ -1,5 +1,19 @@
 // Highlight
 //
+// Each highlight supports the following:
+// - background image
+// - main title
+// - optional sub-title
+// - brief description
+// - optional button
+//
+// .highlight--full - background iamge
+// .highlight--left - left aligned image
+// .highlight--left-small - small left aligned image
+// .highlight--right - right aligned image
+// .highlight--right-small - small right aligned image
+//
+//
 // Markup: highlight.twig
 //
 // Style guide: Cards.highlight
