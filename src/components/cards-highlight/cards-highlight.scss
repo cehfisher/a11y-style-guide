@@ -1,22 +1,8 @@
 // Highlight
 //
-// Each highlight supports the following:
-// - background image
-// - main title
-// - optional sub-title
-// - brief description
-// - optional button
-//
-// .highlight--full - background iamge
-// .highlight--left - left aligned image
-// .highlight--left-small - small left aligned image
-// .highlight--right - right aligned image
-// .highlight--right-small - small right aligned image
-//
-//
 // Markup: highlight.twig
 //
-// Style guide: Cards.highlight'
+// Style guide: Cards.highlight
 //
 // Import site utilities.
 @import '../../global/utils/init';
@@ -254,7 +240,7 @@
 
 /* Variants */
 .highlight--full {
-  background: url('#{$asset-path}/background--highlight.jpg') $blue-ocean center no-repeat;
+  background: url('#{$asset-path}/background--highlight.jpg') $color-cherry center no-repeat;
   background-size: cover !important;
 
   @include breakpoint($bp-sm) {
@@ -264,7 +250,7 @@
   &::before {
     display: block;
     content: '';
-    background: rgba($white, 0.5);
+    background: rgba($color-white, 0.5);
     position: absolute;
     left: 0;
     top: 0;
@@ -274,7 +260,7 @@
   }
 
   &.section--background--1 {
-    background: $white;
+    background: $color-white;
   }
 
   .highlight__content {
@@ -289,13 +275,11 @@
   }
 
   .highlight__sub-title {
-    @include headline--three;
     text-transform: uppercase;
     margin: $padding-md 0;
   }
 
   .highlight__description {
-    @include headline--four;
     margin-bottom: $padding-lg;
   }
 
