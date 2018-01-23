@@ -1,0 +1,42 @@
+<!-- inline background image only applied on the full variant -->
+<section class="l-highlight highlight section {{modifier_class}}" {{inline-styles}}>
+  <div class="l-center">
+    <!-- add the element invisible class for the full variant -->
+    <div class="highlight__content">
+      <div class="highlight__header">
+        {{#if title}}
+        <h2 class="highlight__title">{{title}}</h2>
+        {{else}}
+        <h2 class="highlight__title">Highlight title</h2>
+        {{/if}}
+        <!-- optional sub-title -->
+        {{#if subtitle}}
+        <h3 class="highlight__sub-title">{{subtitle}}</h3>
+        {{/if}}
+      </div>
+      <div class="highlight__description">
+        {{#if description }}
+        <p>{{description}}</p>
+        {{else}}
+        <p>In convallis euismod nibh a ornare. Integer vitae ultrices lectus, quis semper leo. Sed tempus massa vel arcu dapibus tempus. Quisque dignissim ac diam et auctor. In hac habitasse platea dictumst. Vestibulum ut tellus eu magna varius tempus. Sed vitae scelerisque odio, ut tempor dolor. Vivamus non ultrices nisl. Donec maximus vehicula consequat. Integer sed fermentum nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<p>
+        {{/if}}
+      </div>
+      <div class="highlight__buttons buttons buttons--center">
+        {{#if button-text}}
+        <a href="#" class="button">{{button-text}}</a>
+        {{else}}
+        <a href="#" class="button">Learn more<span class="element-invisible"> about this highlight</span></a>
+        {{/if}}
+      </div>
+    </div>
+    <div class="highlight__image">
+      {{#if image }}
+      <img src="{{image}}.png"
+           srcset="{{image}}@2x.png 490w, {{image}}.png 489w"
+           alt="Partner illustration" />
+      {{else}}
+      <img src="http://placebear.com/400/300" alt="Alternate text related to the image/video"/>
+      {{/if}}
+    </div>
+  </div>
+</section>
