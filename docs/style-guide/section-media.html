@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>A11Y Style Guide</title>
+  <meta name="description" content="Style guide and pattern library promoting accessible components and WCAG compliance criteria">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="../favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+  <link rel="manifest" href="../favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <script>
+    // remove no-js and add 'js' to the HTML
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="../all/all.css">
+
+</head>
+
+<body id="kss-node">
+
+  <a href="#kss-main-content" class="kss-skip-link">
+    Jump to main content
+  </a>
+
+  <div class="kss-wrapper">
+    <div class="kss-sidebar">
+
+      <div class="kss-sidebar-inner">
+        <header class="kss-header">
+          <p class="kss-doc-title visuallyhidden">
+            <abbr title="accessibility">A11Y</abbr> Style Guide
+          </p>
+          <div class="site-logo">
+            <svg aria-labelledby="logo-title description" id="site_logo" data-name="site logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 132.07"><defs><style>.cls-1{fill:#e00000;}.cls-2{fill:#fff;}</style></defs><title id="logo-title">A11y style guide logo</title><desc id="description">Red badge reading 'A11Y' positioned above red text reading 'style guide'</desc>
+              <g><path class="cls-1" d="M185,77.5a6.4,6.4,0,0,1-4.9,6L100.5,99a32.2,32.2,0,0,1-9.8,0L11,83.5a6.31,6.31,0,0,1-4.9-6V27.7a6.4,6.4,0,0,1,4.9-6L90.7,6.2a32.2,32.2,0,0,1,9.8,0l79.7,15.5a6.31,6.31,0,0,1,4.9,6V77.5ZM15.8,116.1c0-.4-.1-.5-.5-.5H11.1c-.4,0-.5.1-.5.5v1.7c0,.4.2.6.8.7l5.3,1.2c2.5.6,3.9,1.3,3.9,3.9v3.3c0,2.5-1.2,3.7-3.7,3.7h-7c-2.5,0-3.7-1.2-3.7-3.7v-2.5h4.4v1.9c0,.4.1.5.5.5h4.5c.4,0,.5-.1.5-.5v-2c0-.4-.2-.6-.8-.7L10,122.4c-2.5-.6-3.9-1.3-3.9-3.9v-3.1c0-2.5,1.2-3.7,3.7-3.7h6.6c2.5,0,3.7,1.2,3.7,3.7v2.3H15.7v-1.6Zm19.7-.7H33v11.7h2.7v3.5H25.9v-3.5h2.7V115.4H26v3.3H22.3v-6.9h17v6.9H35.6v-3.3Zm16.4,11.8h2.4v3.5H45v-3.5h2.4v-3l-5-8.9H40.2v-3.5h8.1v3.5H47.1l2.5,4.9,2.5-4.9H50.9v-3.5h8v3.5H56.7l-5,8.9v3Zm8.3,3.5v-3.5h2.3V115.4H60.2v-3.5h9.4v3.5H67V127h4.7v-3.7h3.8v7.4Zm32.4-12.9H88.9v-2.3H84v3.7h6.4v3.7H84v4h4.9v-2.3h3.7v5.9H77.2V127h2.3V115.2H77.2v-3.5H92.6Zm20-1.6c0-.4-.1-.5-.5-.5h-4.8c-.4,0-.5.1-.5.5v10.1c0,.4.1.5.5.5h4.8c.4,0,.5-.1.5-.5v-2.7h-3.4v-3.7H117V127c0,2.5-1.2,3.7-3.7,3.7H106c-2.5,0-3.7-1.2-3.7-3.7V115.6c0-2.5,1.2-3.7,3.7-3.7h7.3c2.5,0,3.7,1.2,3.7,3.7v2.5h-4.4Zm23-.9V127c0,2.4-1.2,3.7-3.7,3.7h-7c-2.4,0-3.7-1.3-3.7-3.7V115.4H119v-3.5h8.7v3.5h-2v10.9a.47.47,0,0,0,.5.5h4.4c.4,0,.5-.2.5-.5V115.4h-2v-3.5h8.7v3.5h-2.2Zm10.9,11.9h2.4v3.5h-9.4v-3.5h2.4V115.4h-2.4v-3.5h9.4v3.5h-2.4Zm6.5,0V115.4h-2.3v-3.5h13.1c2.5,0,3.7,1.2,3.7,3.7V127c0,2.5-1.2,3.7-3.7,3.7H150.7v-3.5Zm9.5-.4c.4,0,.5-.1.5-.5V116.2c0-.4-.1-.5-.5-.5h-5v11.1Zm22.5-9h-3.7v-2.3h-4.9v3.7h6.4v3.7h-6.4v4h4.9v-2.3H185v5.9H169.6V127h2.3V115.2h-2.3v-3.5H185Z" transform="translate(-6.1 -5.82)"/><path class="cls-2" d="M68.6,71h-18V63.5h3.7l-1.4-4.8H40.5l-1.4,4.8h3.7V71H25.2V63.5h4.4L38,38.3H33.4V30.8H53.2l11,32.7h4.4ZM46.7,38.5l-4,13.2h8.1ZM99.1,71.1H72.6V63.5h8.7V40.3L72,43.7V35.5L83.4,31h7.3V63.6h8.4Zm30.4-.1H103V63.4h8.7V40.2l-9.2,3.3V35.3l11.4-4.5h7.3V63.4h8.4V71Zm20.4-7.5H155V71H135.3V63.5h5.1V57.2L129.8,38.3h-4.6V30.8h17.3v7.5h-2.6l5.3,10.4,5.3-10.4h-2.6V30.8H165v7.5h-4.6L149.8,57.2v6.3Z" transform="translate(-6.1 -5.82)"/><path class="cls-1" d="M6.1,105.5H185v1.9H6.1Zm0,30H185v1.9H6.1Z" transform="translate(-6.1 -5.82)"/></g></svg>
+          </div>
+        </header>
+
+        <nav class="kss-nav" aria-label="Style Guide">
+          <button type="button" class="nav-btn">
+            <span class="visuallyhidden">
+              Navigation Toggle
+            </span>
+          </button>
+
+          <div class="navbar-mobile-icon">
+            <button class="menu-toggle" id="toggle-menu" aria-expanded="false">
+              <span>Menu</span>
+              <svg class="icon icon-menu-toggle" aria-hidden="true" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
+                <g class="svg-menu-toggle">
+                  <path class="line line-1" d="M5 13h90v14H5z"/>
+                  <path class="line line-2" d="M5 43h90v14H5z"/>
+                  <path class="line line-3" d="M5 73h90v14H5z"/>
+                </g>
+              </svg>
+            </button>
+          </div>
+          <ul id="kss-nav-list" class="kss-menu">
+            <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+                        <li class="kss-menu-item">
+              <a href="section-cards.html"><span class="kss-ref">1</span><span class="kss-name">Cards</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-forms.html"><span class="kss-ref">2</span><span class="kss-name">Forms</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-general.html"><span class="kss-ref">3</span><span class="kss-name">General</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-media.html"><span class="kss-ref">4</span><span class="kss-name">Media</span></a>               <ul class="kss-menu-child">
+                                <li class="kss-menu-item">
+                  <a href="#kssref-media-audio">
+                        <span class="kss-ref ">4.1</span>
+                        <span class="kss-name">Audio</span>
+                      </a>
+                </li>
+                                <li class="kss-menu-item">
+                  <a href="#kssref-media-image-gallery">
+                        <span class="kss-ref ">4.2</span>
+                        <span class="kss-name">Image Gallery</span>
+                      </a>
+                </li>
+                                <li class="kss-menu-item">
+                  <a href="#kssref-media-images">
+                        <span class="kss-ref ">4.3</span>
+                        <span class="kss-name">Images</span>
+                      </a>
+                </li>
+                                <li class="kss-menu-item">
+                  <a href="#kssref-media-site-logo">
+                        <span class="kss-ref ">4.4</span>
+                        <span class="kss-name">Site Logo</span>
+                      </a>
+                </li>
+                                <li class="kss-menu-item">
+                  <a href="#kssref-media-svgs">
+                        <span class="kss-ref ">4.5</span>
+                        <span class="kss-name">SVGs</span>
+                      </a>
+                </li>
+                                <li class="kss-menu-item">
+                  <a href="#kssref-media-videos">
+                        <span class="kss-ref ">4.6</span>
+                        <span class="kss-name">Videos</span>
+                      </a>
+                </li>
+                              </ul>
+                          </li>
+                        <li class="kss-menu-item">
+              <a href="section-navigation.html"><span class="kss-ref">5</span><span class="kss-name">Navigation</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-structure.html"><span class="kss-ref">6</span><span class="kss-name">Structure</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-resources.html"><span class="kss-ref">7</span><span class="kss-name">Resources</span></a>             </li>
+                      </ul>
+        </nav>
+
+      </div>
+      <!-- /.kss-sidebar-inner -->
+
+    </div>
+    <!-- /.kss-sidebar -->
+
+    <main id="kss-main-content" class="kss-content" aria-label="content">
+      <article class="kss-article">
+         
+        <div>
+          <div class="social-link-out">
+            <a href="https://twitter.com/cariefisher" target="_blank" class="social-link-twitter"><span class="visuallyhidden">Carie Fisher on Twitter</span></a>
+            <a href="https://github.com/cehfisher" target="_blank" class="social-link-github"><span class="visuallyhidden">Carie Fisher on GitHub</span></a>
+          </div>
+
+                     <div id="kssref-media" class="kss-section kss-depth-1">
+            <div class="kss-style">
+                            <h1 class="kss-title kss-title--level-1">
+                <a class="kss-title__permalink" href="#kssref-media">
+                    Media
+                  </a>
+              </h1>
+
+                           </div>
+                      </div>
+                     <section id="kssref-media-audio" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-media-audio">
+                    Audio
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <ul>
+ <li>Build your media with accessibility in mind! It is much easier to work accessibility into the beginning than trying to tack it on later. This is true of all components, but especially for media components.</li>
+ <li>Make sure your player is accessible and includes control elements to pause, stop, and play your media.</li>
+ <li>Do not auto-play your media. This can cause confusion as well as annoyance.</li>
+ <li>Make sure your media has alternative methods to get to the content. For example, add transcripts of your audio files.</li>
+</ul>
+
+<blockquote>There are a ton of WCAG Guidelines for media on websites for a reason...there are a lot of factors to consider. Don&#39;t let that scare you though, there are also some easy wins. Just including alternatives to the media you present (ex. transcript for a video) is half the battle.</blockquote>
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#audio_res">Resources</a></h3><div id="audio_res" class="atblock__panel"><ul><li><a href="https://www.w3.org/2008/06/video-notes" target="_blank">Multimedia Accessibility FAQ</a></li></ul></div></section>
+
+
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#audio_guide">WCAG 2.0 Guidelines</a></h3><div id="audio_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-av-only-alt" target="_blank">1.2.1 Audio-only and Video-only (Prerecorded)</a> - Prerecorded Video-only: Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-captions" target="_blank">1.2.2 Captions (Prerecorded)</a> - Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-audio-desc" target="_blank">1.2.3 Audio Description or Media Alternative (Prerecorded)</a> - An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-sign" target="_blank">1.2.6 Sign Language (Prerecorded)</a> - Sign language interpretation is provided for all prerecorded audio content in synchronized media. (Level AAA)</p></div><div class="markup"></div></section>
+
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="audio-section">
+  <div class="audio">
+    <audio src="../assets/test.mp3" controls>
+      <p>Your user agent does not support the HTML5 Audio element.</p>
+    </audio>
+  </div>
+</section>
+
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;audio-section&quot;&gt;
+  &lt;div class=&quot;audio&quot;&gt;
+    &lt;audio src=&quot;../assets/test.mp3&quot; controls&gt;
+      &lt;p&gt;Your user agent does not support the HTML5 Audio element.&lt;/p&gt;
+    &lt;/audio&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </section>
+                     <section id="kssref-media-image-gallery" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-media-image-gallery">
+                    Image Gallery
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <ul>
+ <li>Every <code>&lt;img&gt;</code> you add to your site needs to have an alt attribute. If the image is informational, set the <code>alt</code> equal to a <em>descriptive</em> alternative for that image.</li>
+ <li>Avoid using generic strings like photo, image, or icon as <code>alt</code> values, as they don’t communicate valuable content to the user. Be as descriptive as possible.</li>
+</ul>
+
+<blockquote>Note: we are using a randomly generated image filler so the <code>alt</code> text is not as descriptive as it could be...make your real images more descriptive!</blockquote>
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#image-gallery_guide">WCAG 2.0 Guidelines</a></h3><div id="image-gallery_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</p></div><div class="markup"></div></section>
+
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="image-gallery-section">
+  <div class="image-gallery">
+    <div class="square"><img src="http://placecage.com/300/300" alt="randomly generated image of the zany Nic Cage"></div>
+    <div class="square"><img src="http://fillmurray.com/300/300" alt="randomly generated image of the fabulous Bill Murray"></div>
+    <div class="square"><img src="http://placecage.com/300/300" alt="randomly generated image of the zany Nic Cage"></div>
+    <div class="square"><img src="http://fillmurray.com/300/300" alt="randomly generated image of the fabulous Bill Murray"></div>
+    <div class="square"><img src="http://placecage.com/300/300" alt="randomly generated image of the zany Nic Cage"></div>
+    <div class="square"><img src="http://fillmurray.com/300/300" alt="randomly generated image of the fabulous Bill Murray"></div>
+    <div class="square"><img src="http://placecage.com/300/300" alt="randomly generated image of the zany Nic Cage"></div>
+    <div class="square"><img src="http://fillmurray.com/300/300" alt="randomly generated image of the fabulous Bill Murray"></div>
+    <div class="square"><img src="http://placecage.com/300/300" alt="randomly generated image of the zany Nic Cage"></div>
+    <div class="square"><img src="http://fillmurray.com/300/300" alt="randomly generated image of the fabulous Bill Murray"></div>
+    <div class="square"><img src="http://placecage.com/300/300" alt="randomly generated image of the zany Nic Cage"></div>
+    <div class="square"><img src="http://fillmurray.com/300/300" alt="randomly generated image of the fabulous Bill Murray"></div>
+  </div>
+</section>
+
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;image-gallery-section&quot;&gt;
+  &lt;div class=&quot;image-gallery&quot;&gt;
+    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://placecage.com/300/300&quot; alt=&quot;randomly generated image of the zany Nic Cage&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://fillmurray.com/300/300&quot; alt=&quot;randomly generated image of the fabulous Bill Murray&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://placecage.com/300/300&quot; alt=&quot;randomly generated image of the zany Nic Cage&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://fillmurray.com/300/300&quot; alt=&quot;randomly generated image of the fabulous Bill Murray&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://placecage.com/300/300&quot; alt=&quot;randomly generated image of the zany Nic Cage&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://fillmurray.com/300/300&quot; alt=&quot;randomly generated image of the fabulous Bill Murray&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://placecage.com/300/300&quot; alt=&quot;randomly generated image of the zany Nic Cage&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://fillmurray.com/300/300&quot; alt=&quot;randomly generated image of the fabulous Bill Murray&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://placecage.com/300/300&quot; alt=&quot;randomly generated image of the zany Nic Cage&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://fillmurray.com/300/300&quot; alt=&quot;randomly generated image of the fabulous Bill Murray&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://placecage.com/300/300&quot; alt=&quot;randomly generated image of the zany Nic Cage&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;square&quot;&gt;&lt;img src=&quot;http://fillmurray.com/300/300&quot; alt=&quot;randomly generated image of the fabulous Bill Murray&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </section>
+                     <section id="kssref-media-images" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-media-images">
+                    Images
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <ul>
+ <li>Every <code>&lt;img&gt;</code> you add to your site needs to have an alt attribute. If the image is informational, set the <code>alt</code> equal to a <em>descriptive</em> alternative for that image.</li>
+ <li>If the image is decorative or redundant to adjacent text, set <code>alt=&quot;&quot;</code>, which conveys to assistive technology users that the image isn’t necessary for understanding the page.</li>
+ <li>Avoid using generic strings like photo, image, or icon as <code>alt</code> values, as they don’t communicate valuable content to the user. Be as descriptive as possible.</li>
+ <li>Make sure any text in images of text is at least 14 points and has good contrast with the background.</li>
+</ul>
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#images_guide">WCAG 2.0 Guidelines</a></h3><div id="images_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1 (some exceptions). (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation" target="_blank">1.4.5 Images of Text</a> - If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)</p></div><div class="markup"></div></section>
+
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="images-section">
+  <div class="images"><img src="../assets/snail.jpg" alt="Small, pink snail resting on top of a gray capped mushrom with green moss as the background">
+  </div>
+</section>
+
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;images-section&quot;&gt;
+  &lt;div class=&quot;images&quot;&gt;&lt;img src=&quot;../assets/snail.jpg&quot; alt=&quot;Small, pink snail resting on top of a gray capped mushrom with green moss as the background&quot;&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </section>
+                     <section id="kssref-media-site-logo" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-media-site-logo">
+                    Site Logo
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <ul>
+ <li>Every <code>&lt;img&gt;</code> you add to your site needs to have an alt attribute. If the image is informational, set the <code>alt</code> equal to a <em>descriptive</em> alternative for that image.</li>
+ <li>Avoid using generic strings like photo, image, or icon as <code>alt</code> values, as they don’t communicate valuable content to the user. Be as descriptive as possible.</li>
+ <li>Make sure any text in images of text is at least 14 points and has good contrast with the background.</li>
+ <li>When using images as links, one must consider how the <code>alt</code> text will be read back to users of assistive technology. The following examples showcase appropriate <code>alt</code> text for logos when used as a link, or as a stand alone image asset.
+</ul>
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#site-logo_res">Resources</a></h3><div id="site-logo_res" class="atblock__panel"><ul><li><a href="http://accessibleicon.org" target="_blank">The Accessible Icon Project</a></li><li><a href="https://snook.ca/archives/html_and_css/hiding-content-for-accessibility" target="_blank">Hiding Content</a></li></ul></div></section>
+
+
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#site-logo_guide">WCAG 2.0 Guidelines</a></h3><div id="site-logo_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1 (some exceptions). (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation" target="_blank">1.4.5 Images of Text</a> - If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-refs" target="_blank">2.4.4 Link Purpose (In Context)</a> - Often a logo is a link to the homepage. The purpose of the link can be determined from the link text alone. Even when hidden. (Level A)</p></div><div class="markup"></div></section>
+
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="site-logo-section">
+  <h3>Example #1: Logo as a link</h3>
+  <div class="site-logo">
+    <a href="#">
+      <img src="../assets/blueicon.jpg" alt="Accessible Icon Project logo">
+    </a>
+  </div>
+  <div class="break"></div>
+  <h3>Example #2: Logo as a link with visible link text</h3>
+  <div class="site-logo">
+    <a href="#">
+      <img src="../assets/blackicon.jpg" alt="">
+      <p>Accessible Icon Project</p>
+    </a>
+  </div>
+  <div class="break"></div>
+  <h3>Example #3: Logo as a PNG</h3>
+  <div class="site-logo">
+    <img src="../assets/site-logo.png" alt="Red badge reading 'A11Y' positioned above red text reading 'style guide'">
+  </div>
+  <div class="break"></div>
+  <h3>Example #4: Logo as an SVG</h3>
+  <div class="site-logo">
+    <svg aria-labelledby="logo-title description" id="site_logo" data-name="site logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 132.07"><defs><style>.cls-1{fill:#e00000;}.cls-2{fill:#fff;}</style></defs><title id="logo-title">A11y style guide logo</title><desc id="description">Red badge reading 'A11Y' positioned above red text reading 'style guide'</desc>
+    <g><path class="cls-1" d="M185,77.5a6.4,6.4,0,0,1-4.9,6L100.5,99a32.2,32.2,0,0,1-9.8,0L11,83.5a6.31,6.31,0,0,1-4.9-6V27.7a6.4,6.4,0,0,1,4.9-6L90.7,6.2a32.2,32.2,0,0,1,9.8,0l79.7,15.5a6.31,6.31,0,0,1,4.9,6V77.5ZM15.8,116.1c0-.4-.1-.5-.5-.5H11.1c-.4,0-.5.1-.5.5v1.7c0,.4.2.6.8.7l5.3,1.2c2.5.6,3.9,1.3,3.9,3.9v3.3c0,2.5-1.2,3.7-3.7,3.7h-7c-2.5,0-3.7-1.2-3.7-3.7v-2.5h4.4v1.9c0,.4.1.5.5.5h4.5c.4,0,.5-.1.5-.5v-2c0-.4-.2-.6-.8-.7L10,122.4c-2.5-.6-3.9-1.3-3.9-3.9v-3.1c0-2.5,1.2-3.7,3.7-3.7h6.6c2.5,0,3.7,1.2,3.7,3.7v2.3H15.7v-1.6Zm19.7-.7H33v11.7h2.7v3.5H25.9v-3.5h2.7V115.4H26v3.3H22.3v-6.9h17v6.9H35.6v-3.3Zm16.4,11.8h2.4v3.5H45v-3.5h2.4v-3l-5-8.9H40.2v-3.5h8.1v3.5H47.1l2.5,4.9,2.5-4.9H50.9v-3.5h8v3.5H56.7l-5,8.9v3Zm8.3,3.5v-3.5h2.3V115.4H60.2v-3.5h9.4v3.5H67V127h4.7v-3.7h3.8v7.4Zm32.4-12.9H88.9v-2.3H84v3.7h6.4v3.7H84v4h4.9v-2.3h3.7v5.9H77.2V127h2.3V115.2H77.2v-3.5H92.6Zm20-1.6c0-.4-.1-.5-.5-.5h-4.8c-.4,0-.5.1-.5.5v10.1c0,.4.1.5.5.5h4.8c.4,0,.5-.1.5-.5v-2.7h-3.4v-3.7H117V127c0,2.5-1.2,3.7-3.7,3.7H106c-2.5,0-3.7-1.2-3.7-3.7V115.6c0-2.5,1.2-3.7,3.7-3.7h7.3c2.5,0,3.7,1.2,3.7,3.7v2.5h-4.4Zm23-.9V127c0,2.4-1.2,3.7-3.7,3.7h-7c-2.4,0-3.7-1.3-3.7-3.7V115.4H119v-3.5h8.7v3.5h-2v10.9a.47.47,0,0,0,.5.5h4.4c.4,0,.5-.2.5-.5V115.4h-2v-3.5h8.7v3.5h-2.2Zm10.9,11.9h2.4v3.5h-9.4v-3.5h2.4V115.4h-2.4v-3.5h9.4v3.5h-2.4Zm6.5,0V115.4h-2.3v-3.5h13.1c2.5,0,3.7,1.2,3.7,3.7V127c0,2.5-1.2,3.7-3.7,3.7H150.7v-3.5Zm9.5-.4c.4,0,.5-.1.5-.5V116.2c0-.4-.1-.5-.5-.5h-5v11.1Zm22.5-9h-3.7v-2.3h-4.9v3.7h6.4v3.7h-6.4v4h4.9v-2.3H185v5.9H169.6V127h2.3V115.2h-2.3v-3.5H185Z" transform="translate(-6.1 -5.82)"/><path class="cls-2" d="M68.6,71h-18V63.5h3.7l-1.4-4.8H40.5l-1.4,4.8h3.7V71H25.2V63.5h4.4L38,38.3H33.4V30.8H53.2l11,32.7h4.4ZM46.7,38.5l-4,13.2h8.1ZM99.1,71.1H72.6V63.5h8.7V40.3L72,43.7V35.5L83.4,31h7.3V63.6h8.4Zm30.4-.1H103V63.4h8.7V40.2l-9.2,3.3V35.3l11.4-4.5h7.3V63.4h8.4V71Zm20.4-7.5H155V71H135.3V63.5h5.1V57.2L129.8,38.3h-4.6V30.8h17.3v7.5h-2.6l5.3,10.4,5.3-10.4h-2.6V30.8H165v7.5h-4.6L149.8,57.2v6.3Z" transform="translate(-6.1 -5.82)"/><path class="cls-1" d="M6.1,105.5H185v1.9H6.1Zm0,30H185v1.9H6.1Z" transform="translate(-6.1 -5.82)"/></g></svg>
+    </div>
+    <p class="kss-doc-title visuallyhidden">Accessibility Style Guide</p>
+</section>
+
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;site-logo-section&quot;&gt;
+  &lt;h3&gt;Example #1: Logo as a link&lt;/h3&gt;
+  &lt;div class=&quot;site-logo&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img src=&quot;../assets/blueicon.jpg&quot; alt=&quot;Accessible Icon Project logo&quot;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Example #2: Logo as a link with visible link text&lt;/h3&gt;
+  &lt;div class=&quot;site-logo&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;
+      &lt;img src=&quot;../assets/blackicon.jpg&quot; alt=&quot;&quot;&gt;
+      &lt;p&gt;Accessible Icon Project&lt;/p&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Example #3: Logo as a PNG&lt;/h3&gt;
+  &lt;div class=&quot;site-logo&quot;&gt;
+    &lt;img src=&quot;../assets/site-logo.png&quot; alt=&quot;Red badge reading &#039;A11Y&#039; positioned above red text reading &#039;style guide&#039;&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Example #4: Logo as an SVG&lt;/h3&gt;
+  &lt;div class=&quot;site-logo&quot;&gt;
+    &lt;svg aria-labelledby=&quot;logo-title description&quot; id=&quot;site_logo&quot; data-name=&quot;site logo&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 180 132.07&quot;&gt;&lt;defs&gt;&lt;style&gt;.cls-1{fill:#e00000;}.cls-2{fill:#fff;}&lt;/style&gt;&lt;/defs&gt;&lt;title id=&quot;logo-title&quot;&gt;A11y style guide logo&lt;/title&gt;&lt;desc id=&quot;description&quot;&gt;Red badge reading &#039;A11Y&#039; positioned above red text reading &#039;style guide&#039;&lt;/desc&gt;
+    &lt;g&gt;&lt;path class=&quot;cls-1&quot; d=&quot;M185,77.5a6.4,6.4,0,0,1-4.9,6L100.5,99a32.2,32.2,0,0,1-9.8,0L11,83.5a6.31,6.31,0,0,1-4.9-6V27.7a6.4,6.4,0,0,1,4.9-6L90.7,6.2a32.2,32.2,0,0,1,9.8,0l79.7,15.5a6.31,6.31,0,0,1,4.9,6V77.5ZM15.8,116.1c0-.4-.1-.5-.5-.5H11.1c-.4,0-.5.1-.5.5v1.7c0,.4.2.6.8.7l5.3,1.2c2.5.6,3.9,1.3,3.9,3.9v3.3c0,2.5-1.2,3.7-3.7,3.7h-7c-2.5,0-3.7-1.2-3.7-3.7v-2.5h4.4v1.9c0,.4.1.5.5.5h4.5c.4,0,.5-.1.5-.5v-2c0-.4-.2-.6-.8-.7L10,122.4c-2.5-.6-3.9-1.3-3.9-3.9v-3.1c0-2.5,1.2-3.7,3.7-3.7h6.6c2.5,0,3.7,1.2,3.7,3.7v2.3H15.7v-1.6Zm19.7-.7H33v11.7h2.7v3.5H25.9v-3.5h2.7V115.4H26v3.3H22.3v-6.9h17v6.9H35.6v-3.3Zm16.4,11.8h2.4v3.5H45v-3.5h2.4v-3l-5-8.9H40.2v-3.5h8.1v3.5H47.1l2.5,4.9,2.5-4.9H50.9v-3.5h8v3.5H56.7l-5,8.9v3Zm8.3,3.5v-3.5h2.3V115.4H60.2v-3.5h9.4v3.5H67V127h4.7v-3.7h3.8v7.4Zm32.4-12.9H88.9v-2.3H84v3.7h6.4v3.7H84v4h4.9v-2.3h3.7v5.9H77.2V127h2.3V115.2H77.2v-3.5H92.6Zm20-1.6c0-.4-.1-.5-.5-.5h-4.8c-.4,0-.5.1-.5.5v10.1c0,.4.1.5.5.5h4.8c.4,0,.5-.1.5-.5v-2.7h-3.4v-3.7H117V127c0,2.5-1.2,3.7-3.7,3.7H106c-2.5,0-3.7-1.2-3.7-3.7V115.6c0-2.5,1.2-3.7,3.7-3.7h7.3c2.5,0,3.7,1.2,3.7,3.7v2.5h-4.4Zm23-.9V127c0,2.4-1.2,3.7-3.7,3.7h-7c-2.4,0-3.7-1.3-3.7-3.7V115.4H119v-3.5h8.7v3.5h-2v10.9a.47.47,0,0,0,.5.5h4.4c.4,0,.5-.2.5-.5V115.4h-2v-3.5h8.7v3.5h-2.2Zm10.9,11.9h2.4v3.5h-9.4v-3.5h2.4V115.4h-2.4v-3.5h9.4v3.5h-2.4Zm6.5,0V115.4h-2.3v-3.5h13.1c2.5,0,3.7,1.2,3.7,3.7V127c0,2.5-1.2,3.7-3.7,3.7H150.7v-3.5Zm9.5-.4c.4,0,.5-.1.5-.5V116.2c0-.4-.1-.5-.5-.5h-5v11.1Zm22.5-9h-3.7v-2.3h-4.9v3.7h6.4v3.7h-6.4v4h4.9v-2.3H185v5.9H169.6V127h2.3V115.2h-2.3v-3.5H185Z&quot; transform=&quot;translate(-6.1 -5.82)&quot;/&gt;&lt;path class=&quot;cls-2&quot; d=&quot;M68.6,71h-18V63.5h3.7l-1.4-4.8H40.5l-1.4,4.8h3.7V71H25.2V63.5h4.4L38,38.3H33.4V30.8H53.2l11,32.7h4.4ZM46.7,38.5l-4,13.2h8.1ZM99.1,71.1H72.6V63.5h8.7V40.3L72,43.7V35.5L83.4,31h7.3V63.6h8.4Zm30.4-.1H103V63.4h8.7V40.2l-9.2,3.3V35.3l11.4-4.5h7.3V63.4h8.4V71Zm20.4-7.5H155V71H135.3V63.5h5.1V57.2L129.8,38.3h-4.6V30.8h17.3v7.5h-2.6l5.3,10.4,5.3-10.4h-2.6V30.8H165v7.5h-4.6L149.8,57.2v6.3Z&quot; transform=&quot;translate(-6.1 -5.82)&quot;/&gt;&lt;path class=&quot;cls-1&quot; d=&quot;M6.1,105.5H185v1.9H6.1Zm0,30H185v1.9H6.1Z&quot; transform=&quot;translate(-6.1 -5.82)&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;kss-doc-title visuallyhidden&quot;&gt;Accessibility Style Guide&lt;/p&gt;
+&lt;/section&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </section>
+                     <section id="kssref-media-svgs" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-media-svgs">
+                    SVGs
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <p>SVGs are scalable vector graphics and can be made used for icons, images, logos, etc. SVG content is scalable and scales without any reduction in visual quality.</p>
+<ul>
+ <li>The best way to make SVGs accessible to Assistive Technologies (AT) like screen readers and speech recognition tools is to put it directly into your HTML using the <code>&lt;svg&gt;</code> tag</li>
+ <li>Avoid using <code>&lt;embed&gt;</code>, <code>&lt;object&gt;</code>, or <code>&lt;img&gt;</code> elements as they are not as supported by browsers as inline SVG</li>
+ <li>Include a <code>&lt;title&gt;</code> and <code>&lt;description&gt;</code> in your SVG markup</li>
+ <li>Use <code>aria-labelledby=&quot;&quot;</code> and reference the id values of the title and description elements</li>
+ <li>Give your SVGs a job with the <code>role=&quot;&quot;</code> attribute</li>
+ <li>To “hide” elements from a screen reader in an SVG add <code>role=&quot;presentation&quot;</code></li>
+</ul>
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#svg_res">Resources</a></h3><div id="svg_res" class="atblock__panel"><ul><li><a href="https://www.sitepoint.com/tips-accessible-svg" target="_blank">Tips for Creating Accessible SVG</a></li><li><a href="https://css-tricks.com/accessible-svgs" target="_blank">Accessible SVGs</a></li></ul></div></section>
+
+
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#svg_guide">WCAG 2.0 Guidelines</a></h3><div id="svg_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1 (some exceptions). (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation" target="_blank">1.4.5 Images of Text</a> - If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)</p></div><div class="markup"></div></section>
+
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="svgs-section">
+  <div class="svgs">
+    <h3>Example #1: SVG with image role</h3>
+    <svg version="1.1" width="32" height="32" viewBox="0 0 32 32" aria-labelledby="title" aria-describedby="description" role="img">
+      <title id="title">Thumbs Up</title>
+      <desc id="description">A hand with a thumb pointed upwards in approval. Call it the approval thumb.</desc>
+      <g>
+        <path d="M29.164 10.472c-1.25-0.328-4.189-0.324-8.488-0.438 0.203-0.938 0.25-1.784 0.25-3.286 0-3.588-2.614-6.748-4.926-6.748-1.633 0-2.979 1.335-3 2.977-0.022 2.014-0.645 5.492-4 7.256-0.246 0.13-0.95 0.477-1.053 0.522l0.053 0.045c-0.525-0.453-1.253-0.8-2-0.8h-3c-1.654 0-3 1.346-3 3v16c0 1.654 1.346 3 3 3h3c1.19 0 2.186-0.719 2.668-1.727 0.012 0.004 0.033 0.010 0.047 0.012 0.066 0.018 0.144 0.037 0.239 0.062 0.018 0.005 0.027 0.007 0.046 0.012 0.576 0.143 1.685 0.408 4.055 0.953 0.508 0.116 3.192 0.688 5.972 0.688h5.467c1.666 0 2.867-0.641 3.582-1.928 0.010-0.020 0.24-0.469 0.428-1.076 0.141-0.457 0.193-1.104 0.023-1.76 1.074-0.738 1.42-1.854 1.645-2.58 0.377-1.191 0.264-2.086 0.002-2.727 0.604-0.57 1.119-1.439 1.336-2.766 0.135-0.822-0.010-1.668-0.389-2.372 0.566-0.636 0.824-1.436 0.854-2.176l0.012-0.209c0.007-0.131 0.013-0.212 0.013-0.5 0-1.263-0.875-2.874-2.836-3.434zM7 29c0 0.553-0.447 1-1 1h-3c-0.553 0-1-0.447-1-1v-16c0-0.553 0.447-1 1-1h3c0.553 0 1 0.447 1 1v16zM29.977 14.535c-0.020 0.494-0.227 1.465-1.977 1.465-1.5 0-2 0-2 0-0.277 0-0.5 0.224-0.5 0.5s0.223 0.5 0.5 0.5c0 0 0.438 0 1.938 0s1.697 1.244 1.6 1.844c-0.124 0.746-0.474 2.156-2.163 2.156-1.687 0-2.375 0-2.375 0-0.277 0-0.5 0.223-0.5 0.5 0 0.275 0.223 0.5 0.5 0.5 0 0 1.188 0 1.969 0 1.688 0 1.539 1.287 1.297 2.055-0.319 1.009-0.514 1.945-2.641 1.945-0.719 0-1.631 0-1.631 0-0.277 0-0.5 0.223-0.5 0.5 0 0.275 0.223 0.5 0.5 0.5 0 0 0.693 0 1.568 0 1.094 0 1.145 1.035 1.031 1.406-0.125 0.406-0.273 0.707-0.279 0.721-0.302 0.545-0.789 0.873-1.82 0.873h-5.467c-2.746 0-5.47-0.623-5.54-0.639-4.154-0.957-4.373-1.031-4.634-1.105 0 0-0.846-0.143-0.846-0.881l-0.007-13.812c0-0.469 0.299-0.893 0.794-1.042 0.062-0.024 0.146-0.050 0.206-0.075 4.568-1.892 5.959-6.040 6-9.446 0.006-0.479 0.375-1 1-1 1.057 0 2.926 2.122 2.926 4.748 0 2.371-0.096 2.781-0.926 5.252 10 0 9.93 0.144 10.812 0.375 1.094 0.313 1.188 1.219 1.188 1.531 0 0.343-0.010 0.293-0.023 0.629zM4.5 26c-0.828 0-1.5 0.672-1.5 1.5s0.672 1.5 1.5 1.5 1.5-0.672 1.5-1.5-0.672-1.5-1.5-1.5zM4.5 28c-0.275 0-0.5-0.225-0.5-0.5s0.225-0.5 0.5-0.5 0.5 0.225 0.5 0.5-0.225 0.5-0.5 0.5z" fill="#000000" />
+      </g>
+    </svg>
+    <div class="break"></div>
+    <h3>Example #2: SVG with link role</h3>
+    <svg version="1.1" width="300" height="60" aria-labelledby="title desc">
+      <title id="title">Blue rectangle</title>
+      <desc id="desc">A dark blue rectangle with rounded corners and a dark gray border.</desc>
+      <a xlink:href="http://www.google.com" tabindex="0" role="link">
+      <rect width="100" height="50" rx="20" ry="20" fill="#0a3055" stroke="#444444" stroke-fill="2" />
+      <text x="50" y="30" font-size="1rem" text-anchor="middle" fill="#ffffff">Google</text>
+      </a>
+    </svg>
+  </div>
+</section>
+
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;svgs-section&quot;&gt;
+  &lt;div class=&quot;svgs&quot;&gt;
+    &lt;h3&gt;Example #1: SVG with image role&lt;/h3&gt;
+    &lt;svg version=&quot;1.1&quot; width=&quot;32&quot; height=&quot;32&quot; viewBox=&quot;0 0 32 32&quot; aria-labelledby=&quot;title&quot; aria-describedby=&quot;description&quot; role=&quot;img&quot;&gt;
+      &lt;title id=&quot;title&quot;&gt;Thumbs Up&lt;/title&gt;
+      &lt;desc id=&quot;description&quot;&gt;A hand with a thumb pointed upwards in approval. Call it the approval thumb.&lt;/desc&gt;
+      &lt;g&gt;
+        &lt;path d=&quot;M29.164 10.472c-1.25-0.328-4.189-0.324-8.488-0.438 0.203-0.938 0.25-1.784 0.25-3.286 0-3.588-2.614-6.748-4.926-6.748-1.633 0-2.979 1.335-3 2.977-0.022 2.014-0.645 5.492-4 7.256-0.246 0.13-0.95 0.477-1.053 0.522l0.053 0.045c-0.525-0.453-1.253-0.8-2-0.8h-3c-1.654 0-3 1.346-3 3v16c0 1.654 1.346 3 3 3h3c1.19 0 2.186-0.719 2.668-1.727 0.012 0.004 0.033 0.010 0.047 0.012 0.066 0.018 0.144 0.037 0.239 0.062 0.018 0.005 0.027 0.007 0.046 0.012 0.576 0.143 1.685 0.408 4.055 0.953 0.508 0.116 3.192 0.688 5.972 0.688h5.467c1.666 0 2.867-0.641 3.582-1.928 0.010-0.020 0.24-0.469 0.428-1.076 0.141-0.457 0.193-1.104 0.023-1.76 1.074-0.738 1.42-1.854 1.645-2.58 0.377-1.191 0.264-2.086 0.002-2.727 0.604-0.57 1.119-1.439 1.336-2.766 0.135-0.822-0.010-1.668-0.389-2.372 0.566-0.636 0.824-1.436 0.854-2.176l0.012-0.209c0.007-0.131 0.013-0.212 0.013-0.5 0-1.263-0.875-2.874-2.836-3.434zM7 29c0 0.553-0.447 1-1 1h-3c-0.553 0-1-0.447-1-1v-16c0-0.553 0.447-1 1-1h3c0.553 0 1 0.447 1 1v16zM29.977 14.535c-0.020 0.494-0.227 1.465-1.977 1.465-1.5 0-2 0-2 0-0.277 0-0.5 0.224-0.5 0.5s0.223 0.5 0.5 0.5c0 0 0.438 0 1.938 0s1.697 1.244 1.6 1.844c-0.124 0.746-0.474 2.156-2.163 2.156-1.687 0-2.375 0-2.375 0-0.277 0-0.5 0.223-0.5 0.5 0 0.275 0.223 0.5 0.5 0.5 0 0 1.188 0 1.969 0 1.688 0 1.539 1.287 1.297 2.055-0.319 1.009-0.514 1.945-2.641 1.945-0.719 0-1.631 0-1.631 0-0.277 0-0.5 0.223-0.5 0.5 0 0.275 0.223 0.5 0.5 0.5 0 0 0.693 0 1.568 0 1.094 0 1.145 1.035 1.031 1.406-0.125 0.406-0.273 0.707-0.279 0.721-0.302 0.545-0.789 0.873-1.82 0.873h-5.467c-2.746 0-5.47-0.623-5.54-0.639-4.154-0.957-4.373-1.031-4.634-1.105 0 0-0.846-0.143-0.846-0.881l-0.007-13.812c0-0.469 0.299-0.893 0.794-1.042 0.062-0.024 0.146-0.050 0.206-0.075 4.568-1.892 5.959-6.040 6-9.446 0.006-0.479 0.375-1 1-1 1.057 0 2.926 2.122 2.926 4.748 0 2.371-0.096 2.781-0.926 5.252 10 0 9.93 0.144 10.812 0.375 1.094 0.313 1.188 1.219 1.188 1.531 0 0.343-0.010 0.293-0.023 0.629zM4.5 26c-0.828 0-1.5 0.672-1.5 1.5s0.672 1.5 1.5 1.5 1.5-0.672 1.5-1.5-0.672-1.5-1.5-1.5zM4.5 28c-0.275 0-0.5-0.225-0.5-0.5s0.225-0.5 0.5-0.5 0.5 0.225 0.5 0.5-0.225 0.5-0.5 0.5z&quot; fill=&quot;#000000&quot; /&gt;
+      &lt;/g&gt;
+    &lt;/svg&gt;
+    &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+    &lt;h3&gt;Example #2: SVG with link role&lt;/h3&gt;
+    &lt;svg version=&quot;1.1&quot; width=&quot;300&quot; height=&quot;60&quot; aria-labelledby=&quot;title desc&quot;&gt;
+      &lt;title id=&quot;title&quot;&gt;Blue rectangle&lt;/title&gt;
+      &lt;desc id=&quot;desc&quot;&gt;A dark blue rectangle with rounded corners and a dark gray border.&lt;/desc&gt;
+      &lt;a xlink:href=&quot;http://www.google.com&quot; tabindex=&quot;0&quot; role=&quot;link&quot;&gt;
+      &lt;rect width=&quot;100&quot; height=&quot;50&quot; rx=&quot;20&quot; ry=&quot;20&quot; fill=&quot;#0a3055&quot; stroke=&quot;#444444&quot; stroke-fill=&quot;2&quot; /&gt;
+      &lt;text x=&quot;50&quot; y=&quot;30&quot; font-size=&quot;1rem&quot; text-anchor=&quot;middle&quot; fill=&quot;#ffffff&quot;&gt;Google&lt;/text&gt;
+      &lt;/a&gt;
+    &lt;/svg&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </section>
+                     <section id="kssref-media-videos" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-media-videos">
+                    Videos
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <ul>
+ <li>Build your media with accessibility in mind! It is much easier to work accessibility into the beginning than trying to tack it on later. This is true of all components, but especially for media components.</li>
+ <li>Make sure your player is accessible and includes control elements to pause, stop, and play your media.</li>
+ <li>Do not auto-play your media. This can cause confusion as well as annoyance.</li>
+ <li>Make sure your media has alternative methods to get to the content. For example, add captions to your videos and/or provide a transcript for your users to read.</li>
+ <li>Make sure your media does not cause seizures! Use the Photosensitive Epilepsy Analysis Tool (PEAT) to check your media before you add it to your website.</li>
+</ul>
+
+<blockquote>There are a ton of WCAG Guidelines for media on websites for a reason...there are a lot of factors to consider. Don&#39;t let that scare you though, there are also some easy wins. Just including alternatives to the media you present (ex. transcript for a video) is half the battle.</blockquote>
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#video_res">Resources</a></h3><div id="video_res" class="atblock__panel"><ul><li><a href="https://www.sitepoint.com/accessible-video" target="_blank">8 Steps to Creating Accessible Video</a></li><li><a href="https://www.w3.org/2008/06/video-notes" target="_blank">Multimedia Accessibility FAQ</a></li><li><a href="http://trace.umd.edu/peat" target="_blank">Photosensitive Epilepsy Analysis Tool</a> - tests your visual media to see if it will trigger seizures or other light disorder issues in viewers</li></ul></div></section>
+
+
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#video_guide">WCAG 2.0 Guidelines</a></h3><div id="video_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-av-only-alt" target="_blank">1.2.1 Audio-only and Video-only (Prerecorded)</a> - Prerecorded Video-only: Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-captions" target="_blank">1.2.2 Captions (Prerecorded)</a> - Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-audio-desc" target="_blank">1.2.3 Audio Description or Media Alternative (Prerecorded)</a> - An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-audio-desc-only" target="_blank">1.2.5 Audio Description (Prerecorded)</a> - Provide an audio (spoken) version of information that is provided visually so that it is possible for people who cannot see to be able to understand audio-visual material. (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-sign" target="_blank">1.2.6 Sign Language (Prerecorded)</a> - Sign language interpretation is provided for all prerecorded audio content in synchronized media. (Level AAA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#media-equiv-text-doc" target="_blank">1.2.8 Media Alternative (Prerecorded)</a> - An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media. (Level AAA)</p></div><div class="markup"></div></section>
+
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="videos-section">
+  <figure class="videos">
+    <div class="px-video-container" id="myvid">
+    	<div class="px-video-img-captions-container">
+    		<div class="px-video-captions hide"></div>
+    		<video width="640" height="360" poster="../assets/videos/read-more.png" controls>
+    			<!-- video files -->
+    			<source src="../assets/videos/read-more.mp4" type="video/mp4" />
+    			<source src="../assets/videos/read-more.webm" type="video/webm" />
+
+    			<!-- text track file -->
+    			<track kind="captions" label="English captions" src="../assets/videos/read-more.vtt" srclang="en" default />
+
+    			<!-- fallback for browsers that don't support the video element -->
+    			<div>
+    				<a href="../assets/videos/read-more.mp4">
+    					<img src="../assets/videos/read-more.png" width="640" height="360" alt="download video" />
+    				</a>
+    			</div>
+    		</video>
+    	</div><!-- end container for captions and video -->
+    	<div class="px-video-controls"></div>
+    </div><!-- end video container -->
+
+    <p><a href="https://github.com/paypal/accessible-html5-video-player" target="_blank">Accessible HTML5 Video Player GitHub</a></p>
+
+    </div><!-- end page wrapper container -->
+    <script src="js/strings.js"></script>
+    <script src="js/px-video.js"></script>
+
+    <script>
+
+    // Initialize
+    new InitPxVideo({
+    	"videoId": "myvid",
+    	"captionsOnDefault": true,
+    	"seekInterval": 20,
+    	"videoTitle": "Demo video of Read More section using Mac Voice Over tool",
+    	"debug": true
+    });
+
+    </script>
+    <figcaption>
+      <p class="videos__transcript">
+        <a href="../assets/videos/read-more.txt">Get Transcript</a>
+      </p>
+      <p class="videos__alt-audio">
+        <a href="../assets/videos/read-more.m4a">Alternative Audio Track</a>
+      </p>
+    </figcaption>
+  </figure>
+</section>
+
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;videos-section&quot;&gt;
+  &lt;figure class=&quot;videos&quot;&gt;
+    &lt;div class=&quot;px-video-container&quot; id=&quot;myvid&quot;&gt;
+    	&lt;div class=&quot;px-video-img-captions-container&quot;&gt;
+    		&lt;div class=&quot;px-video-captions hide&quot;&gt;&lt;/div&gt;
+    		&lt;video width=&quot;640&quot; height=&quot;360&quot; poster=&quot;../assets/videos/read-more.png&quot; controls&gt;
+    			&lt;!-- video files --&gt;
+    			&lt;source src=&quot;../assets/videos/read-more.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+    			&lt;source src=&quot;../assets/videos/read-more.webm&quot; type=&quot;video/webm&quot; /&gt;
+
+    			&lt;!-- text track file --&gt;
+    			&lt;track kind=&quot;captions&quot; label=&quot;English captions&quot; src=&quot;../assets/videos/read-more.vtt&quot; srclang=&quot;en&quot; default /&gt;
+
+    			&lt;!-- fallback for browsers that don&#039;t support the video element --&gt;
+    			&lt;div&gt;
+    				&lt;a href=&quot;../assets/videos/read-more.mp4&quot;&gt;
+    					&lt;img src=&quot;../assets/videos/read-more.png&quot; width=&quot;640&quot; height=&quot;360&quot; alt=&quot;download video&quot; /&gt;
+    				&lt;/a&gt;
+    			&lt;/div&gt;
+    		&lt;/video&gt;
+    	&lt;/div&gt;&lt;!-- end container for captions and video --&gt;
+    	&lt;div class=&quot;px-video-controls&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;!-- end video container --&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://github.com/paypal/accessible-html5-video-player&quot; target=&quot;_blank&quot;&gt;Accessible HTML5 Video Player GitHub&lt;/a&gt;&lt;/p&gt;
+
+    &lt;/div&gt;&lt;!-- end page wrapper container --&gt;
+    &lt;script src=&quot;js/strings.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;js/px-video.js&quot;&gt;&lt;/script&gt;
+
+    &lt;script&gt;
+
+    // Initialize
+    new InitPxVideo({
+    	&quot;videoId&quot;: &quot;myvid&quot;,
+    	&quot;captionsOnDefault&quot;: true,
+    	&quot;seekInterval&quot;: 20,
+    	&quot;videoTitle&quot;: &quot;Demo video of Read More section using Mac Voice Over tool&quot;,
+    	&quot;debug&quot;: true
+    });
+
+    &lt;/script&gt;
+    &lt;figcaption&gt;
+      &lt;p class=&quot;videos__transcript&quot;&gt;
+        &lt;a href=&quot;../assets/videos/read-more.txt&quot;&gt;Get Transcript&lt;/a&gt;
+      &lt;/p&gt;
+      &lt;p class=&quot;videos__alt-audio&quot;&gt;
+        &lt;a href=&quot;../assets/videos/read-more.m4a&quot;&gt;Alternative Audio Track&lt;/a&gt;
+      &lt;/p&gt;
+    &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/section&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </section>
+                  </div>
+              </article>
+    </main>
+
+    <a href="#kss-main-content" class="back-to-top">
+      <span class="visuallyhidden">
+        Back to top
+      </span>
+    </a>
+  </div> <!-- /.kss-wrapper -->
+
+<!-- SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-once/2.1.2/jquery.once.min.js"></script>
+<script src="https://vadikom.github.io/smartmenus/src/libs/jquery/jquery.js"></script>
+<script src="https://vadikom.github.io/smartmenus/src/jquery.smartmenus.js"></script>
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/rainbow.min.js"></script>
+<script src="kss-assets/main.js"></script>
+<script src="../js/accordion.js"></script>
+<script src="../js/aria-card-flip.js"></script>
+<script src="../js/aria-switch.js"></script>
+<script src="../js/aria-toggle.js"></script>
+<script src="../js/aria-tooltips.js"></script>
+<script src="../js/back-to-top.js"></script>
+<script src="../js/button-state.js"></script>
+<script src="../js/button.js"></script>
+<script src="../js/clipboard.min.js"></script>
+<script src="../js/copy-button.js"></script>
+<script src="../js/jump-link-fix.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/mobile-menu-icon.js"></script>
+<script src="../js/mobile-menu.js"></script>
+<script src="../js/px-video.js"></script>
+<script src="../js/sidebar-slide.js"></script>
+<script src="../js/strings.js"></script>
+<script src="../js/tables.js"></script>
+<script src="../js/tabs.js"></script>
+
+</body>
+
+</html>

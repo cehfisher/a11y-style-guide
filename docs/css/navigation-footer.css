@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.footer {
+  float: left;
+  clear: both;
+  width: 100%;
+  background: #464646;
+  position: relative;
+  /* Navigation */
+  /* Social Icons */ }
+  .footer::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .footer input[type='search'] {
+    max-width: 60%;
+    width: 100%; }
+    @media (min-width: 64em) {
+      .footer input[type='search'] {
+        max-width: 60%;
+        width: 100%; } }
+  .footer h2 {
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase; }
+  .footer a {
+    color: #ffffff;
+    text-decoration: underline; }
+    .footer a:hover, .footer a:focus {
+      color: #e00000;
+      text-decoration: underline; }
+  .footer li {
+    margin: 0 -18px 10px;
+    list-style: none;
+    color: #ffffff; }
+  .footer .buttons {
+    text-align: center; }
+    @media (min-width: 64em) {
+      .footer .buttons {
+        text-align: left; } }
+  .footer .button {
+    display: inline-block;
+    background-color: #e00000;
+    color: #ffffff;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1;
+    border: 3px solid #e00000;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    min-height: 48px;
+    position: relative;
+    margin: 0.5rem 0;
+    width: 175px; }
+    .footer .button:hover, .footer .button:focus {
+      background-color: #a51323;
+      color: #ffffff;
+      border: 3px solid #a51323;
+      text-decoration: underline;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+  .footer .navigation {
+    display: block;
+    float: left;
+    text-align: left; }
+  .footer .navigation__link {
+    display: block;
+    padding-right: 2rem;
+    line-height: 1;
+    padding-bottom: 5px; }
+  .footer .navigation--social {
+    display: block;
+    float: none;
+    margin: 0 auto 2rem;
+    width: 100%;
+    text-align: center; }
+    @media (min-width: 64em) {
+      .footer .navigation--social {
+        float: left;
+        margin: 0 auto; } }
+    .footer .navigation--social .navigation__link {
+      padding: 1rem 0 1rem 0.5rem;
+      margin: 0;
+      display: inline-block; }
+    .footer .navigation--social .navigation__menu {
+      margin: 0 auto;
+      float: none; }
+      .footer .navigation--social .navigation__menu::after {
+        content: '';
+        display: table;
+        clear: both; }
+      @media (min-width: 64em) {
+        .footer .navigation--social .navigation__menu {
+          float: left;
+          padding-left: 0; } }
+  .footer .icon {
+    background-position: center;
+    background-size: inherit;
+    margin-top: -1rem; }
+  .footer .first {
+    margin-left: 0; }
+  .footer .last {
+    margin-right: 0; }
+
+/* submit input */
+.footer__submit {
+  text-align: left;
+  padding-bottom: 2rem;
+  width: 100%;
+  max-width: 350px;
+  position: relative; }
+  .footer__submit .form-float-label {
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  .footer__submit .submit-block-form {
+    position: relative;
+    margin: auto;
+    border-radius: 4px;
+    overflow: hidden; }
+    @media (min-width: 64em) {
+      .footer__submit .submit-block-form {
+        margin: 0; } }
+  .footer__submit .form-text {
+    width: 100%;
+    padding-right: 11rem;
+    border: 1px solid #bbbbbb; }
+  .footer__submit .form-actions {
+    float: right; }
+  .footer__submit .form-submit {
+    background: #e00000;
+    color: #ffffff;
+    border: 0;
+    border-radius: 0 4px 4px 0;
+    position: relative;
+    margin-top: -72px;
+    float: right;
+    margin-right: -10px;
+    padding: 1.5rem 2rem 1.5rem 1.75rem; }
+    .footer__submit .form-submit:hover, .footer__submit .form-submit:focus, .footer__submit .form-submit:active {
+      border: 0; }
+
+.footer__top {
+  padding: 2rem; }
+  @media (min-width: 64em) {
+    .footer__top {
+      padding: 4rem 2rem; } }
+
+.footer__title,
+.block__title {
+  color: #ffffff !important; }
+
+.block--mailchimp-signup-newsletter-subscribe {
+  float: none; }
+  @media (min-width: 55em) {
+    .block--mailchimp-signup-newsletter-subscribe {
+      float: right;
+      max-width: 275px; } }
+  @media (min-width: 64em) {
+    .block--mailchimp-signup-newsletter-subscribe {
+      max-width: 100%; } }
+
+/* Credits and social */
+.footer__credits {
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 0; }
+  @media (min-width: 64em) {
+    .footer__credits {
+      text-align: left; } }
+
+.footer__copyright {
+  margin: 0;
+  padding: 2rem 2rem 0;
+  text-align: center;
+  margin-bottom: -1rem; }
+  @media (min-width: 64em) {
+    .footer__copyright {
+      padding: 2rem;
+      margin-bottom: 0; } }
+
+.l-region--footer-bottom {
+  width: 100%; }
+
+.footer .l-center {
+  padding: 0 1rem 3rem;
+  max-width: 700px;
+  margin: 0 auto; }
+  .footer .l-center::after {
+    content: '';
+    display: table;
+    clear: both; }
+  @media (min-width: 40em) {
+    .footer .l-center {
+      padding: 0 2rem 3rem; } }
+  @media (min-width: 64em) {
+    .footer .l-center {
+      padding: 0 3rem; } }
+
+.footer__flex {
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (min-width: 64em) {
+    .footer__flex {
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+
+.footer__left {
+  width: 100%;
+  float: left;
+  padding-top: 3rem; }
+  @media (min-width: 55em) {
+    .footer__left {
+      width: 50%;
+      padding-right: 0; } }
+
+.footer__right {
+  width: 100%;
+  max-width: 300px;
+  float: left;
+  padding-top: 3rem; }
+  @media (min-width: 55em) {
+    .footer__right {
+      width: 50%;
+      padding-right: 0;
+      float: right; } }
+  .footer__right ul {
+    float: left;
+    clear: right;
+    position: relative;
+    width: 50%; }
+
+.footer__left-social {
+  width: 100%;
+  clear: both;
+  text-align: center;
+  margin: 0 auto; }
+  @media (min-width: 64em) {
+    .footer__left-social {
+      width: 50%;
+      padding-right: 2rem; } }
+
+.footer__right-search {
+  width: 100%;
+  clear: both;
+  margin: 0 auto;
+  text-align: center; }
+  @media (min-width: 64em) {
+    .footer__right-search {
+      width: 50%;
+      padding-right: 0;
+      text-align: left; } }
