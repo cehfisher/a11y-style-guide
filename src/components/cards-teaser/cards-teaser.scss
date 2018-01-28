@@ -30,14 +30,14 @@
 }
 
 .teaser__title {
-  color: $color-white;
+  color: $color-white !important; // sass-lint:disable-line no-important
   padding: $padding-sm;
   margin: $padding-md-lg;
   text-align: center;
 }
 
 .teaser__sub-title {
-  color: $color-white;
+  color: $color-white !important; // sass-lint:disable-line no-important
   font-weight: bold;
   text-transform: capitalize;
   margin: $padding-md 0;

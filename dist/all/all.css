@@ -1297,13 +1297,13 @@ html [type='button'],
   padding: 2rem 0; }
 
 .teaser__title {
-  color: #ffffff;
+  color: #ffffff !important;
   padding: 1rem;
   margin: 3rem;
   text-align: center; }
 
 .teaser__sub-title {
-  color: #ffffff;
+  color: #ffffff !important;
   font-weight: bold;
   text-transform: capitalize;
   margin: 2rem 0;
