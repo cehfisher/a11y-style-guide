@@ -1,0 +1,280 @@
+// Highlight Card
+//
+// Markup: cards-highlight.twig
+//
+// Style guide: Cards.cards-highlight
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.highlight {
+  position: relative;
+  padding: $padding-md;
+  text-align: center;
+
+  @include breakpoint($bp-sm) {
+    padding: $padding-lg $padding-md;
+  }
+
+  h3 {
+    margin-bottom: $padding-xsm;
+  }
+}
+
+.highlight__content {
+  z-index: $zi-low;
+  position: relative;
+  max-width: 1020px;
+  margin: auto;
+  padding: $padding-md 0;
+}
+
+.highlight__title {
+  color: $color-white !important; // sass-lint:disable-line no-important
+  padding: $padding-sm;
+  margin: $padding-md-lg;
+  text-align: center;
+}
+
+.highlight__sub-title {
+  color: $color-white !important; // sass-lint:disable-line no-important
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: $padding-md 0;
+  text-align: center;
+}
+
+.highlight__description {
+  font-weight: bold;
+  margin-bottom: $padding-md;
+  max-width: 1020px;
+
+  @include breakpoint($bp-sm) {
+    margin-bottom: $padding-lg;
+  }
+}
+
+.highlight__image {
+  max-width: 640px;
+  margin: 5rem auto 0;
+  overflow: hidden;
+
+  @include breakpoint($bp-md) {
+    margin: 1.3rem auto;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid $color-silver;
+    margin: 0 auto;
+    border-radius: $border-rd-sm;
+  }
+}
+
+.highlight--right,
+.highlight--right-small,
+.highlight--left,
+.highlight--left-small {
+  text-align: center;
+
+  &::before {
+    display: none;
+  }
+
+  .highlight__content {
+    color: $color-white;
+    text-shadow: none;
+    padding: 0;
+    margin-top: -$padding-md;
+  }
+
+  .highlight__title {
+    text-align: center;
+    padding: $padding-sm;
+    margin: $padding-md-lg $padding-md-lg 0;
+    order: 1;
+
+    @include breakpoint($bp-md) {
+      float: left;
+      margin: $padding-md-lg 0 0;
+      clear: both;
+      padding: 0 0 $padding-sm;
+      text-align: left;
+    }
+  }
+
+  .highlight__description {
+    text-align: center;
+    width: 100%;
+
+    @include breakpoint($bp-md) {
+      float: left;
+      clear: both;
+      text-align: left;
+      margin: $padding-md auto;
+      padding-top: $padding-md;
+      border-top: 2px solid $color-silver;
+    }
+  }
+
+  .buttons--left {
+    margin-bottom: $padding-lg;
+    text-align: center;
+
+    @include breakpoint($bp-md) {
+      margin-bottom: $padding-md;
+      text-align: left;
+    }
+  }
+
+  .highlight__sub-title {
+    order: 0;
+    margin: 0;
+  }
+}
+
+/* Grid layouts for each variant */
+.highlight--left {
+  width: 100%;
+
+  .highlight__content {
+    @include breakpoint($bp-md) {
+      width: 50%;
+      padding-left: $padding-md;
+    }
+  }
+
+  .highlight__image {
+    @include breakpoint($bp-md) {
+      width: 50%;
+      padding-right: $padding-md;
+
+      img {
+        margin: 0;
+        float: left;
+      }
+    }
+  }
+}
+
+.highlight--left-small {
+  width: 100%;
+
+  .highlight__content {
+    @include breakpoint($bp-md) {
+      width: 66%;
+      padding-left: $padding-md;
+    }
+  }
+
+  .highlight__image {
+    @include breakpoint($bp-md) {
+      width: 33%;
+      padding-right: $padding-md;
+
+      img {
+        margin: 0;
+        float: left;
+      }
+    }
+  }
+}
+
+/* Right variants */
+.highlight--right {
+  width: 100%;
+
+  .highlight__content {
+    @include breakpoint($bp-md) {
+      padding-right: $padding-md;
+    }
+  }
+
+  .highlight__image {
+    @include breakpoint($bp-md) {
+      width: 50%;
+      padding-left: $padding-md;
+
+      img {
+        margin: 0;
+        float: right;
+      }
+    }
+  }
+}
+
+.highlight--right-small {
+  width: 100%;
+
+  .highlight__content {
+    @include breakpoint($bp-md) {
+      width: 66%;
+      padding-right: $padding-md;
+    }
+  }
+
+  .highlight__image {
+    @include breakpoint($bp-md) {
+      width: 33%;
+      padding-right: 0;
+      padding-left: $padding-md;
+
+      img {
+        margin: 0;
+        float: right;
+      }
+    }
+  }
+}
+
+/* Variants */
+.highlight--full {
+  background: url('#{$asset-path}/snow.jpg') $color-cherry center no-repeat;
+  background-size: cover !important; // sass-lint:disable-line no-important
+
+  @include breakpoint($bp-sm) {
+    padding: $padding-xl $padding-md;
+  }
+
+  &::before {
+    display: block;
+    content: '';
+    background: rgba($color-black, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: $zi-ground;
+  }
+
+  &.section--background--1 {
+    background: $color-white;
+  }
+
+  .highlight__content {
+    color: $color-white;
+  }
+
+  .highlight__title {
+    padding: $padding-sm;
+    margin: 0;
+    text-align: center !important; // sass-lint:disable-line no-important
+  }
+
+  .highlight__sub-title {
+    text-transform: uppercase;
+    margin: 0 0 $padding-md;
+    text-align: center !important; // sass-lint:disable-line no-important
+  }
+
+  .highlight__description {
+    margin-bottom: $padding-lg;
+  }
+
+  .highlight__image {
+    @include element-invisible;
+  }
+}
