@@ -1226,8 +1226,9 @@ html [type='button'],
 /* Variants */
 .highlight--full {
   background: url("../assets/snow.jpg") #e00000 center no-repeat;
-  background-size: cover !important; }
-  @media (min-width: 55em) {
+  background-size: cover !important;
+  padding: 6rem 2rem; }
+  @media (min-width: 40em) {
     .highlight--full {
       padding: 6rem 2rem; } }
   .highlight--full::before {
@@ -1243,7 +1244,8 @@ html [type='button'],
   .highlight--full.section--background--1 {
     background: #ffffff; }
   .highlight--full .highlight__content {
-    color: #ffffff; }
+    color: #ffffff;
+    padding: 4rem 0; }
   .highlight--full .highlight__title {
     padding: 1rem;
     margin: 0;

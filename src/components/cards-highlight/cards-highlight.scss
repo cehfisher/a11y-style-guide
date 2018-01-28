@@ -233,8 +233,9 @@
 .highlight--full {
   background: url('#{$asset-path}/snow.jpg') $color-cherry center no-repeat;
   background-size: cover !important; // sass-lint:disable-line no-important
+  padding: $padding-xl $padding-md;
 
-  @include breakpoint($bp-sm) {
+  @include breakpoint($bp-xsm) {
     padding: $padding-xl $padding-md;
   }
 
@@ -256,6 +257,7 @@
 
   .highlight__content {
     color: $color-white;
+    padding: $padding-lg 0;
   }
 
   .highlight__title {
