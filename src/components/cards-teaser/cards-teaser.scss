@@ -1,27 +1,13 @@
-// Highlight
+// Teaser Card
 //
-// Each highlight supports the following:
-// - background image
-// - main title
-// - optional sub-title
-// - brief description
-// - optional button
+// Markup: cards-teaser.twig
 //
-// .highlight--full - background iamge
-// .highlight--left - left aligned image
-// .highlight--left-small - small left aligned image
-// .highlight--right - right aligned image
-// .highlight--right-small - small right aligned image
-//
-//
-// Markup: highlight.twig
-//
-// Style guide: Cards.highlight
+// Style guide: Cards.cards-teaser
 //
 // Import site utilities.
 @import '../../global/utils/init';
 
-.highlight {
+.teaser {
   position: relative;
   padding: $padding-md;
   text-align: center;
@@ -39,7 +25,7 @@
   }
 }
 
-.highlight__content {
+.teaser__content {
   z-index: $zi-low;
   position: relative;
   max-width: 1020px;
@@ -47,27 +33,27 @@
   padding: $padding-md 0;
 }
 
-.highlight__title {
+.teaser__title {
   padding: $padding-sm;
   margin: $padding-md-lg;
   text-align: center;
 }
 
-.highlight__sub-title {
+.teaser__sub-title {
   font-weight: bold;
   text-transform: capitalize;
   margin: $padding-md 0;
   float: left;
 
   &::after {
-    content: " | ";
+    content: ' | ';
     display: block;
     float: right;
     padding: 0 5px;
   }
 }
 
-.highlight__description {
+.teaser__description {
   font-weight: bold;
   margin-bottom: $padding-md;
   max-width: 1020px;
@@ -77,7 +63,7 @@
   }
 }
 
-.highlight__image {
+.teaser__image {
   max-width: 640px;
   margin: 5rem auto 0;
   overflow: hidden;
@@ -96,24 +82,24 @@
   }
 }
 
-.highlight--right,
-.highlight--right-small,
-.highlight--left,
-.highlight--left-small {
+.teaser--right,
+.teaser--right-small,
+.teaser--left,
+.teaser--left-small {
   text-align: center;
 
   &::before {
     display: none;
   }
 
-  .highlight__content {
+  .teaser__content {
     color: $color-manatee;
     text-shadow: none;
     padding: 0;
     margin-top: -$padding-md;
   }
 
-  .highlight__title {
+  .teaser__title {
     text-align: center;
     padding: $padding-sm;
     margin: $padding-md-lg $padding-md-lg 0;
@@ -128,7 +114,7 @@
     }
   }
 
-  .highlight__description {
+  .teaser__description {
     text-align: center;
     width: 100%;
 
@@ -152,24 +138,24 @@
     }
   }
 
-  .highlight__sub-title {
+  .teaser__sub-title {
     order: 0;
     margin: 0;
   }
 }
 
 /* Grid layouts for each variant */
-.highlight--left {
+.teaser--left {
   width: 100%;
 
-  .highlight__content {
+  .teaser__content {
     @include breakpoint($bp-md) {
       width: 50%;
       padding-left: $padding-md;
     }
   }
 
-  .highlight__image {
+  .teaser__image {
     @include breakpoint($bp-md) {
       width: 50%;
       padding-right: $padding-md;
@@ -182,17 +168,17 @@
   }
 }
 
-.highlight--left-small {
+.teaser--left-small {
   width: 100%;
 
-  .highlight__content {
+  .teaser__content {
     @include breakpoint($bp-md) {
       width: 66%;
       padding-left: $padding-md;
     }
   }
 
-  .highlight__image {
+  .teaser__image {
     @include breakpoint($bp-md) {
       width: 33%;
       padding-right: $padding-md;
@@ -206,16 +192,16 @@
 }
 
 /* Right variants */
-.highlight--right {
+.teaser--right {
   width: 100%;
 
-  .highlight__content {
+  .teaser__content {
     @include breakpoint($bp-md) {
       padding-right: $padding-md;
     }
   }
 
-  .highlight__image {
+  .teaser__image {
     @include breakpoint($bp-md) {
       width: 50%;
       padding-left: $padding-md;
@@ -228,17 +214,17 @@
   }
 }
 
-.highlight--right-small {
+.teaser--right-small {
   width: 100%;
 
-  .highlight__content {
+  .teaser__content {
     @include breakpoint($bp-md) {
       width: 66%;
       padding-right: $padding-md;
     }
   }
 
-  .highlight__image {
+  .teaser__image {
     @include breakpoint($bp-md) {
       width: 33%;
       padding-right: 0;
@@ -253,9 +239,9 @@
 }
 
 /* Variants */
-.highlight--full {
-  background: url('#{$asset-path}/background--highlight.jpg') $color-cherry center no-repeat;
-  background-size: cover !important;
+.teaser--full {
+  background: url('#{$asset-path}/snow.jpg') $color-cherry center no-repeat;
+  background-size: cover !important; // sass-lint:disable-line no-important
 
   @include breakpoint($bp-sm) {
     padding: $padding-xl $padding-md;
@@ -277,27 +263,26 @@
     background: $color-white;
   }
 
-  .highlight__content {
+  .teaser__content {
     color: $color-manatee;
   }
 
-  .highlight__title {
+  .teaser__title {
     padding: $padding-sm;
-    margin: $padding-md-lg $padding-md-lg 0;
     text-align: center;
     margin: $padding-md 0;
   }
 
-  .highlight__sub-title {
+  .teaser__sub-title {
     text-transform: uppercase;
     margin: $padding-md 0;
   }
 
-  .highlight__description {
+  .teaser__description {
     margin-bottom: $padding-lg;
   }
 
-  .highlight__image {
+  .teaser__image {
     @include element-invisible;
   }
 }
