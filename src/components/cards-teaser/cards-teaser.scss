@@ -3,7 +3,7 @@
 // Markup: cards-teaser.twig
 //
 // Style guide: Cards.cards-teaser
-//
+
 // Import site utilities.
 @import '../../global/utils/init';
 
@@ -14,10 +14,6 @@
 
   @include breakpoint($bp-sm) {
     padding: $padding-lg $padding-md;
-  }
-
-  .l-center {
-    @include clearfix;
   }
 
   h3 {
@@ -34,23 +30,18 @@
 }
 
 .teaser__title {
+  color: $color-white;
   padding: $padding-sm;
   margin: $padding-md-lg;
   text-align: center;
 }
 
 .teaser__sub-title {
+  color: $color-white;
   font-weight: bold;
   text-transform: capitalize;
   margin: $padding-md 0;
-  float: left;
-
-  &::after {
-    content: ' | ';
-    display: block;
-    float: right;
-    padding: 0 5px;
-  }
+  text-align: center;
 }
 
 .teaser__description {
@@ -93,7 +84,7 @@
   }
 
   .teaser__content {
-    color: $color-manatee;
+    color: $color-white;
     text-shadow: none;
     padding: 0;
     margin-top: -$padding-md;
@@ -250,7 +241,7 @@
   &::before {
     display: block;
     content: '';
-    background: rgba($color-white, 0.5);
+    background: rgba($color-black, 0.5);
     position: absolute;
     left: 0;
     top: 0;
@@ -264,18 +255,19 @@
   }
 
   .teaser__content {
-    color: $color-manatee;
+    color: $color-white;
   }
 
   .teaser__title {
     padding: $padding-sm;
-    text-align: center;
-    margin: $padding-md 0;
+    margin: 0;
+    text-align: center !important; // sass-lint:disable-line no-important
   }
 
   .teaser__sub-title {
     text-transform: uppercase;
-    margin: $padding-md 0;
+    margin: 0 0 $padding-md;
+    text-align: center !important; // sass-lint:disable-line no-important
   }
 
   .teaser__description {
