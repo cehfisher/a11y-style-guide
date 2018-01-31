@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.highlight {
+  position: relative;
+  padding: 2rem;
+  text-align: center; }
+  @media (min-width: 55em) {
+    .highlight {
+      padding: 4rem 2rem; } }
+  .highlight h3 {
+    margin-bottom: 0.5rem; }
+
+.highlight__content {
+  z-index: 20;
+  position: relative;
+  max-width: 1020px;
+  margin: auto;
+  padding: 2rem 0; }
+
+.highlight__title {
+  color: #ffffff !important;
+  padding: 1rem;
+  margin: 3rem;
+  text-align: center; }
+
+.highlight__sub-title {
+  color: #ffffff !important;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 2rem 0;
+  text-align: center; }
+
+.highlight__description {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  max-width: 1020px; }
+  @media (min-width: 55em) {
+    .highlight__description {
+      margin-bottom: 4rem; } }
+
+.highlight__image {
+  max-width: 640px;
+  margin: 5rem auto 0;
+  overflow: hidden; }
+  @media (min-width: 64em) {
+    .highlight__image {
+      margin: 1.3rem auto; } }
+  .highlight__image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #bbbbbb;
+    margin: 0 auto;
+    border-radius: 4px; }
+
+.highlight--right,
+.highlight--right-small,
+.highlight--left,
+.highlight--left-small {
+  text-align: center; }
+  .highlight--right::before,
+  .highlight--right-small::before,
+  .highlight--left::before,
+  .highlight--left-small::before {
+    display: none; }
+  .highlight--right .highlight__content,
+  .highlight--right-small .highlight__content,
+  .highlight--left .highlight__content,
+  .highlight--left-small .highlight__content {
+    color: #ffffff;
+    text-shadow: none;
+    padding: 0;
+    margin-top: -2rem; }
+  .highlight--right .highlight__title,
+  .highlight--right-small .highlight__title,
+  .highlight--left .highlight__title,
+  .highlight--left-small .highlight__title {
+    text-align: center;
+    padding: 1rem;
+    margin: 3rem 3rem 0;
+    -ms-flex-order: 1;
+    order: 1; }
+    @media (min-width: 64em) {
+      .highlight--right .highlight__title,
+      .highlight--right-small .highlight__title,
+      .highlight--left .highlight__title,
+      .highlight--left-small .highlight__title {
+        float: left;
+        margin: 3rem 0 0;
+        clear: both;
+        padding: 0 0 1rem;
+        text-align: left; } }
+  .highlight--right .highlight__description,
+  .highlight--right-small .highlight__description,
+  .highlight--left .highlight__description,
+  .highlight--left-small .highlight__description {
+    text-align: center;
+    width: 100%; }
+    @media (min-width: 64em) {
+      .highlight--right .highlight__description,
+      .highlight--right-small .highlight__description,
+      .highlight--left .highlight__description,
+      .highlight--left-small .highlight__description {
+        float: left;
+        clear: both;
+        text-align: left;
+        margin: 2rem auto;
+        padding-top: 2rem;
+        border-top: 2px solid #bbbbbb; } }
+  .highlight--right .buttons--left,
+  .highlight--right-small .buttons--left,
+  .highlight--left .buttons--left,
+  .highlight--left-small .buttons--left {
+    margin-bottom: 4rem;
+    text-align: center; }
+    @media (min-width: 64em) {
+      .highlight--right .buttons--left,
+      .highlight--right-small .buttons--left,
+      .highlight--left .buttons--left,
+      .highlight--left-small .buttons--left {
+        margin-bottom: 2rem;
+        text-align: left; } }
+  .highlight--right .highlight__sub-title,
+  .highlight--right-small .highlight__sub-title,
+  .highlight--left .highlight__sub-title,
+  .highlight--left-small .highlight__sub-title {
+    -ms-flex-order: 0;
+    order: 0;
+    margin: 0; }
+
+/* Grid layouts for each variant */
+.highlight--left {
+  width: 100%; }
+  @media (min-width: 64em) {
+    .highlight--left .highlight__content {
+      width: 50%;
+      padding-left: 2rem; } }
+  @media (min-width: 64em) {
+    .highlight--left .highlight__image {
+      width: 50%;
+      padding-right: 2rem; }
+      .highlight--left .highlight__image img {
+        margin: 0;
+        float: left; } }
+
+.highlight--left-small {
+  width: 100%; }
+  @media (min-width: 64em) {
+    .highlight--left-small .highlight__content {
+      width: 66%;
+      padding-left: 2rem; } }
+  @media (min-width: 64em) {
+    .highlight--left-small .highlight__image {
+      width: 33%;
+      padding-right: 2rem; }
+      .highlight--left-small .highlight__image img {
+        margin: 0;
+        float: left; } }
+
+/* Right variants */
+.highlight--right {
+  width: 100%; }
+  @media (min-width: 64em) {
+    .highlight--right .highlight__content {
+      padding-right: 2rem; } }
+  @media (min-width: 64em) {
+    .highlight--right .highlight__image {
+      width: 50%;
+      padding-left: 2rem; }
+      .highlight--right .highlight__image img {
+        margin: 0;
+        float: right; } }
+
+.highlight--right-small {
+  width: 100%; }
+  @media (min-width: 64em) {
+    .highlight--right-small .highlight__content {
+      width: 66%;
+      padding-right: 2rem; } }
+  @media (min-width: 64em) {
+    .highlight--right-small .highlight__image {
+      width: 33%;
+      padding-right: 0;
+      padding-left: 2rem; }
+      .highlight--right-small .highlight__image img {
+        margin: 0;
+        float: right; } }
+
+/* Variants */
+.highlight--full {
+  background: url("../assets/snow.jpg") #e00000 center no-repeat;
+  background-size: cover !important;
+  padding: 6rem 2rem; }
+  @media (min-width: 40em) {
+    .highlight--full {
+      padding: 6rem 2rem; } }
+  .highlight--full::before {
+    display: block;
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; }
+  .highlight--full.section--background--1 {
+    background: #ffffff; }
+  .highlight--full .highlight__content {
+    color: #ffffff;
+    padding: 4rem 0; }
+  .highlight--full .highlight__title {
+    padding: 1rem;
+    margin: 0;
+    text-align: center !important; }
+  .highlight--full .highlight__sub-title {
+    text-transform: uppercase;
+    margin: 0 0 2rem;
+    text-align: center !important; }
+  .highlight--full .highlight__description {
+    margin-bottom: 4rem; }
+  .highlight--full .highlight__image {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px); }
