@@ -120,11 +120,14 @@
 
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
-                  <section class="cards highlight section highlight--left">
+                  <section class="highlight section highlight--left">
   <div class="l-center">
+    <div class="highlight__image">
+      <img src="http://placebear.com/500/300" alt="Alternate text related to the image/video">
+    </div>
     <div class="highlight__content">
       <div class="highlight__header">
-        <h2 class="highlight__title">Highlight title</h2>
+        <h2 class="highlight__title">Highlight Card Left with Large Photo</h2>
       </div>
       <div class="highlight__description">
         <p>In convallis euismod nibh a ornare. Integer vitae ultrices lectus, quis semper leo. Sed tempus massa vel arcu dapibus tempus. Quisque dignissim ac diam et auctor. In hac habitasse platea dictumst. Vestibulum ut tellus eu magna varius tempus. Sed vitae scelerisque odio, ut tempor dolor. Vivamus non ultrices nisl. Donec maximus vehicula consequat. Integer sed fermentum nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p>
@@ -133,23 +136,23 @@
         <a href="#" class="button">Learn more<span class="element-invisible"> about this highlight</span></a>
       </div>
     </div>
-    <div class="highlight__image">
-      <img src="http://placebear.com/400/300" alt="Alternate text related to the image/video">
-    </div>
   </div>
 </section>
 
-<section class="cards highlight highlight--left-small section">
- <div class="l-center">
+<section class="highlight section highlight--left-small">
+  <div class="l-center">
     <div class="highlight__image">
-      <div class="card__image"></div>
+      <img src="http://placebear.com/400/300" alt="Alternate text related to the image/video">
     </div>
     <div class="highlight__content">
       <div class="highlight__header">
-        <h2 class="highlight__title"></h2>
+        <h2 class="highlight__title">Highlight Card Left with Small Photo</h2>
       </div>
       <div class="highlight__description">
-        
+        <p>In convallis euismod nibh a ornare. Integer vitae ultrices lectus, quis semper leo. Sed tempus massa vel arcu dapibus tempus. Quisque dignissim ac diam et auctor. In hac habitasse platea dictumst. Vestibulum ut tellus eu magna varius tempus. Sed vitae scelerisque odio, ut tempor dolor. Vivamus non ultrices nisl. Donec maximus vehicula consequat. Integer sed fermentum nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><p>
+      </p></div>
+      <div class="highlight__buttons buttons buttons--center">
+        <a href="#" class="button">Learn more<span class="element-invisible"> about this highlight</span></a>
       </div>
     </div>
   </div>
@@ -162,11 +165,14 @@
                       Show Markup Example
                     </button>
                 <template>
-                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;cards highlight section highlight--left&quot;&gt;
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;highlight section highlight--left&quot;&gt;
   &lt;div class=&quot;l-center&quot;&gt;
+    &lt;div class=&quot;highlight__image&quot;&gt;
+      &lt;img src=&quot;http://placebear.com/500/300&quot; alt=&quot;Alternate text related to the image/video&quot;&gt;
+    &lt;/div&gt;
     &lt;div class=&quot;highlight__content&quot;&gt;
       &lt;div class=&quot;highlight__header&quot;&gt;
-        &lt;h2 class=&quot;highlight__title&quot;&gt;Highlight title&lt;/h2&gt;
+        &lt;h2 class=&quot;highlight__title&quot;&gt;Highlight Card Left with Large Photo&lt;/h2&gt;
       &lt;/div&gt;
       &lt;div class=&quot;highlight__description&quot;&gt;
         &lt;p&gt;In convallis euismod nibh a ornare. Integer vitae ultrices lectus, quis semper leo. Sed tempus massa vel arcu dapibus tempus. Quisque dignissim ac diam et auctor. In hac habitasse platea dictumst. Vestibulum ut tellus eu magna varius tempus. Sed vitae scelerisque odio, ut tempor dolor. Vivamus non ultrices nisl. Donec maximus vehicula consequat. Integer sed fermentum nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;&lt;p&gt;
@@ -175,23 +181,23 @@
         &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Learn more&lt;span class=&quot;element-invisible&quot;&gt; about this highlight&lt;/span&gt;&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;highlight__image&quot;&gt;
-      &lt;img src=&quot;http://placebear.com/400/300&quot; alt=&quot;Alternate text related to the image/video&quot;&gt;
-    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/section&gt;
 
-&lt;section class=&quot;cards highlight highlight--left-small section&quot;&gt;
- &lt;div class=&quot;l-center&quot;&gt;
+&lt;section class=&quot;highlight section highlight--left-small&quot;&gt;
+  &lt;div class=&quot;l-center&quot;&gt;
     &lt;div class=&quot;highlight__image&quot;&gt;
-      &lt;div class=&quot;card__image&quot;&gt;{{ image }}&lt;/div&gt;
+      &lt;img src=&quot;http://placebear.com/400/300&quot; alt=&quot;Alternate text related to the image/video&quot;&gt;
     &lt;/div&gt;
     &lt;div class=&quot;highlight__content&quot;&gt;
       &lt;div class=&quot;highlight__header&quot;&gt;
-        &lt;h2 class=&quot;highlight__title&quot;&gt;{{ title }}&lt;/h2&gt;
+        &lt;h2 class=&quot;highlight__title&quot;&gt;Highlight Card Left with Small Photo&lt;/h2&gt;
       &lt;/div&gt;
       &lt;div class=&quot;highlight__description&quot;&gt;
-        {{ description }}
+        &lt;p&gt;In convallis euismod nibh a ornare. Integer vitae ultrices lectus, quis semper leo. Sed tempus massa vel arcu dapibus tempus. Quisque dignissim ac diam et auctor. In hac habitasse platea dictumst. Vestibulum ut tellus eu magna varius tempus. Sed vitae scelerisque odio, ut tempor dolor. Vivamus non ultrices nisl. Donec maximus vehicula consequat. Integer sed fermentum nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;&lt;p&gt;
+      &lt;/p&gt;&lt;/div&gt;
+      &lt;div class=&quot;highlight__buttons buttons buttons--center&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Learn more&lt;span class=&quot;element-invisible&quot;&gt; about this highlight&lt;/span&gt;&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;

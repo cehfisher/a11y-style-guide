@@ -9,12 +9,9 @@
 
 .highlight {
   position: relative;
-  padding: $padding-md;
+  padding: 0 $padding-md;
   text-align: center;
-
-  @include breakpoint($bp-sm) {
-    padding: $padding-lg $padding-md;
-  }
+  clear: both;
 
   h3 {
     margin-bottom: $padding-xsm;
@@ -89,7 +86,7 @@
   }
 
   .highlight__title {
-    text-align: center;
+    text-align: center !important; // sass-lint:disable-line no-important
     padding: $padding-sm;
     margin: $padding-md-lg $padding-md-lg 0;
     order: 1;
@@ -142,17 +139,23 @@
 
   .highlight__content {
     @include breakpoint($bp-md) {
-      width: 50%;
-      padding-left: $padding-md;
+      width: 58.33333%;
       float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none;
+      padding-right: 0;
+      padding-left: $padding-md;
     }
   }
 
   .highlight__image {
     @include breakpoint($bp-md) {
-      width: 50%;
-      padding-right: $padding-md;
+      width: 41.66667%;
       float: left;
+      margin-right: -100%;
+      clear: none;
+      padding-right: $padding-md;
 
       img {
         margin: 0;
@@ -168,17 +171,23 @@
 
   .highlight__content {
     @include breakpoint($bp-md) {
-      width: 66%;
-      padding-left: $padding-md;
+      width: 75%;
       float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none;
+      padding-right: 0;
+      padding-left: $padding-md;
     }
   }
 
   .highlight__image {
     @include breakpoint($bp-md) {
-      width: 33%;
-      padding-right: $padding-md;
+      width: 25%;
       float: left;
+      margin-right: -100%;
+      clear: none;
+      padding-right: $padding-md;
 
       img {
         margin: 0;
