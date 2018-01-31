@@ -16,6 +16,14 @@
   h3 {
     margin-bottom: $padding-xsm;
   }
+
+  .read-more {
+    float: none;
+
+    @include breakpoint($bp-md) {
+      float: left;
+    }
+  }
 }
 
 .highlight__content {
