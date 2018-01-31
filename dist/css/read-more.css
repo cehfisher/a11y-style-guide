@@ -1,12 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-.read-more {
-  float: left; }
-  .read-more::after {
-    content: ' ';
-    height: 0;
-    position: absolute;
-    width: 0;
-    border: 7px solid transparent;
-    border-left-color: #e00000;
-    margin-left: 6px;
-    margin-top: 5px; }
+.read-more::after {
+  content: ' ';
+  height: 0;
+  position: absolute;
+  width: 0;
+  border: 7px solid transparent;
+  border-left-color: #e00000;
+  margin-left: 6px;
+  margin-top: 5px; }
