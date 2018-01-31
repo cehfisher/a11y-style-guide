@@ -30,14 +30,12 @@
 }
 
 .highlight__title {
-  color: $color-white !important; // sass-lint:disable-line no-important
   padding: $padding-sm;
   margin: $padding-md-lg;
   text-align: center;
 }
 
 .highlight__sub-title {
-  color: $color-white !important; // sass-lint:disable-line no-important
   font-weight: bold;
   text-transform: capitalize;
   margin: $padding-md 0;
@@ -84,7 +82,7 @@
   }
 
   .highlight__content {
-    color: $color-white;
+    color: $color-midnight;
     text-shadow: none;
     padding: 0;
     margin-top: -$padding-md;
@@ -95,6 +93,7 @@
     padding: $padding-sm;
     margin: $padding-md-lg $padding-md-lg 0;
     order: 1;
+    color: $color-midnight;
 
     @include breakpoint($bp-md) {
       float: left;
@@ -130,6 +129,7 @@
   }
 
   .highlight__sub-title {
+    color: $color-midnight;
     order: 0;
     margin: 0;
   }
@@ -138,11 +138,13 @@
 /* Grid layouts for each variant */
 .highlight--left {
   width: 100%;
+  float: none;
 
   .highlight__content {
     @include breakpoint($bp-md) {
       width: 50%;
       padding-left: $padding-md;
+      float: right;
     }
   }
 
@@ -150,6 +152,7 @@
     @include breakpoint($bp-md) {
       width: 50%;
       padding-right: $padding-md;
+      float: left;
 
       img {
         margin: 0;
@@ -161,11 +164,13 @@
 
 .highlight--left-small {
   width: 100%;
+  float: none;
 
   .highlight__content {
     @include breakpoint($bp-md) {
       width: 66%;
       padding-left: $padding-md;
+      float: right;
     }
   }
 
@@ -173,6 +178,7 @@
     @include breakpoint($bp-md) {
       width: 33%;
       padding-right: $padding-md;
+      float: left;
 
       img {
         margin: 0;
@@ -264,12 +270,14 @@
     padding: $padding-sm;
     margin: 0;
     text-align: center !important; // sass-lint:disable-line no-important
+    color: $color-white !important; // sass-lint:disable-line no-important
   }
 
   .highlight__sub-title {
     text-transform: uppercase;
     margin: 0 0 $padding-md;
     text-align: center !important; // sass-lint:disable-line no-important
+    color: $color-white !important; // sass-lint:disable-line no-important
   }
 
   .highlight__description {

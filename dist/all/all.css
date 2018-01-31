@@ -1056,13 +1056,11 @@ html [type='button'],
   padding: 2rem 0; }
 
 .highlight__title {
-  color: #ffffff !important;
   padding: 1rem;
   margin: 3rem;
   text-align: center; }
 
 .highlight__sub-title {
-  color: #ffffff !important;
   font-weight: bold;
   text-transform: capitalize;
   margin: 2rem 0;
@@ -1105,7 +1103,7 @@ html [type='button'],
   .highlight--right-small .highlight__content,
   .highlight--left .highlight__content,
   .highlight--left-small .highlight__content {
-    color: #ffffff;
+    color: #464646;
     text-shadow: none;
     padding: 0;
     margin-top: -2rem; }
@@ -1117,7 +1115,8 @@ html [type='button'],
     padding: 1rem;
     margin: 3rem 3rem 0;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1;
+    color: #464646; }
     @media (min-width: 64em) {
       .highlight--right .highlight__title,
       .highlight--right-small .highlight__title,
@@ -1162,35 +1161,42 @@ html [type='button'],
   .highlight--right-small .highlight__sub-title,
   .highlight--left .highlight__sub-title,
   .highlight--left-small .highlight__sub-title {
+    color: #464646;
     -ms-flex-order: 0;
     order: 0;
     margin: 0; }
 
 /* Grid layouts for each variant */
 .highlight--left {
-  width: 100%; }
+  width: 100%;
+  float: none; }
   @media (min-width: 64em) {
     .highlight--left .highlight__content {
       width: 50%;
-      padding-left: 2rem; } }
+      padding-left: 2rem;
+      float: right; } }
   @media (min-width: 64em) {
     .highlight--left .highlight__image {
       width: 50%;
-      padding-right: 2rem; }
+      padding-right: 2rem;
+      float: left; }
       .highlight--left .highlight__image img {
         margin: 0;
         float: left; } }
 
 .highlight--left-small {
-  width: 100%; }
+  width: 100%;
+  float: none; }
   @media (min-width: 64em) {
     .highlight--left-small .highlight__content {
       width: 66%;
-      padding-left: 2rem; } }
+      padding-left: 2rem;
+      float: right; } }
   @media (min-width: 64em) {
     .highlight--left-small .highlight__image {
       width: 33%;
-      padding-right: 2rem; }
+      padding-right: 2rem;
+      float: left; }
       .highlight--left-small .highlight__image img {
         margin: 0;
         float: left; } }
@@ -1250,11 +1256,13 @@ html [type='button'],
   .highlight--full .highlight__title {
     padding: 1rem;
     margin: 0;
-    text-align: center !important; }
+    text-align: center !important;
+    color: #ffffff !important; }
   .highlight--full .highlight__sub-title {
     text-transform: uppercase;
     margin: 0 0 2rem;
-    text-align: center !important; }
+    text-align: center !important;
+    color: #ffffff !important; }
   .highlight--full .highlight__description {
     margin-bottom: 4rem; }
   .highlight--full .highlight__image {
