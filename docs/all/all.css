@@ -1036,14 +1036,13 @@ html [type='button'],
     visibility: visible;
     transform: rotateY(0deg); }
 
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .highlight {
   position: relative;
   padding: 2rem;
-  text-align: center; }
-  @media (min-width: 55em) {
-    .highlight {
-      padding: 4rem 2rem; } }
+  text-align: center;
+  clear: both; }
   .highlight h3 {
     margin-bottom: 0.5rem; }
 
@@ -1055,13 +1054,11 @@ html [type='button'],
   padding: 2rem 0; }
 
 .highlight__title {
-  color: #ffffff !important;
   padding: 1rem;
   margin: 3rem;
   text-align: center; }
 
 .highlight__sub-title {
-  color: #ffffff !important;
   font-weight: bold;
   text-transform: capitalize;
   margin: 2rem 0;
@@ -1071,13 +1068,10 @@ html [type='button'],
   font-weight: bold;
   margin-bottom: 2rem;
   max-width: 1020px; }
-  @media (min-width: 55em) {
-    .highlight__description {
-      margin-bottom: 4rem; } }
 
 .highlight__image {
   max-width: 640px;
-  margin: 5rem auto 0;
+  margin: 2rem auto 0;
   overflow: hidden; }
   @media (min-width: 64em) {
     .highlight__image {
@@ -1104,7 +1098,7 @@ html [type='button'],
   .highlight--right-small .highlight__content,
   .highlight--left .highlight__content,
   .highlight--left-small .highlight__content {
-    color: #ffffff;
+    color: #464646;
     text-shadow: none;
     padding: 0;
     margin-top: -2rem; }
@@ -1112,11 +1106,12 @@ html [type='button'],
   .highlight--right-small .highlight__title,
   .highlight--left .highlight__title,
   .highlight--left-small .highlight__title {
-    text-align: center;
+    text-align: center !important;
     padding: 1rem;
     margin: 3rem 3rem 0;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1;
+    color: #464646; }
     @media (min-width: 64em) {
       .highlight--right .highlight__title,
       .highlight--right-small .highlight__title,
@@ -1125,7 +1120,7 @@ html [type='button'],
         float: left;
         margin: 3rem 0 0;
         clear: both;
-        padding: 0 0 1rem;
+        padding: 0;
         text-align: left; } }
   .highlight--right .highlight__description,
   .highlight--right-small .highlight__description,
@@ -1161,34 +1156,53 @@ html [type='button'],
   .highlight--right-small .highlight__sub-title,
   .highlight--left .highlight__sub-title,
   .highlight--left-small .highlight__sub-title {
+    color: #464646;
     -ms-flex-order: 0;
     order: 0;
     margin: 0; }
 
 /* Grid layouts for each variant */
 .highlight--left {
-  width: 100%; }
+  width: 100%;
+  float: none; }
   @media (min-width: 64em) {
     .highlight--left .highlight__content {
-      width: 50%;
+      width: 58.33333%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none;
+      padding-right: 0;
       padding-left: 2rem; } }
   @media (min-width: 64em) {
     .highlight--left .highlight__image {
-      width: 50%;
+      width: 41.66667%;
+      float: left;
+      margin-right: -100%;
+      clear: none;
       padding-right: 2rem; }
       .highlight--left .highlight__image img {
         margin: 0;
         float: left; } }
 
 .highlight--left-small {
-  width: 100%; }
+  width: 100%;
+  float: none; }
   @media (min-width: 64em) {
     .highlight--left-small .highlight__content {
-      width: 66%;
+      width: 75%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none;
+      padding-right: 0;
       padding-left: 2rem; } }
   @media (min-width: 64em) {
     .highlight--left-small .highlight__image {
-      width: 33%;
+      width: 25%;
+      float: left;
+      margin-right: -100%;
+      clear: none;
       padding-right: 2rem; }
       .highlight--left-small .highlight__image img {
         margin: 0;
@@ -1249,13 +1263,15 @@ html [type='button'],
   .highlight--full .highlight__title {
     padding: 1rem;
     margin: 0;
-    text-align: center !important; }
+    text-align: center !important;
+    color: #ffffff !important; }
   .highlight--full .highlight__sub-title {
     text-transform: uppercase;
     margin: 0 0 2rem;
-    text-align: center !important; }
+    text-align: center !important;
+    color: #ffffff !important; }
   .highlight--full .highlight__description {
-    margin-bottom: 4rem; }
+    margin-bottom: 2rem; }
   .highlight--full .highlight__image {
     position: absolute !important;
     height: 1px;
@@ -2335,15 +2351,17 @@ ul.show-menu {
   outline: auto 5px -webkit-focus-ring-color; }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-.read-more::after {
-  content: ' ';
-  height: 0;
-  position: absolute;
-  width: 0;
-  border: 7px solid transparent;
-  border-left-color: #e00000;
-  margin-left: 6px;
-  margin-top: 5px; }
+.read-more {
+  float: left; }
+  .read-more::after {
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 7px solid transparent;
+    border-left-color: #e00000;
+    margin-left: 6px;
+    margin-top: 5px; }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
