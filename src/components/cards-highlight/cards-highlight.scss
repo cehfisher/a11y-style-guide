@@ -43,15 +43,11 @@
   font-weight: bold;
   margin-bottom: $padding-md;
   max-width: 1020px;
-
-  @include breakpoint($bp-sm) {
-    margin-bottom: $padding-lg;
-  }
 }
 
 .highlight__image {
   max-width: 640px;
-  margin: 5rem auto 0;
+  margin: $padding-md auto 0;
   overflow: hidden;
 
   @include breakpoint($bp-md) {
@@ -96,7 +92,7 @@
       float: left;
       margin: $padding-md-lg 0 0;
       clear: both;
-      padding: 0 0 $padding-sm;
+      padding: 0;
       text-align: left;
     }
   }
@@ -290,7 +286,7 @@
   }
 
   .highlight__description {
-    margin-bottom: $padding-lg;
+    margin-bottom: $padding-md;
   }
 
   .highlight__image {

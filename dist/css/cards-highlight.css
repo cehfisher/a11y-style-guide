@@ -29,13 +29,10 @@
   font-weight: bold;
   margin-bottom: 2rem;
   max-width: 1020px; }
-  @media (min-width: 55em) {
-    .highlight__description {
-      margin-bottom: 4rem; } }
 
 .highlight__image {
   max-width: 640px;
-  margin: 5rem auto 0;
+  margin: 2rem auto 0;
   overflow: hidden; }
   @media (min-width: 64em) {
     .highlight__image {
@@ -84,7 +81,7 @@
         float: left;
         margin: 3rem 0 0;
         clear: both;
-        padding: 0 0 1rem;
+        padding: 0;
         text-align: left; } }
   .highlight--right .highlight__description,
   .highlight--right-small .highlight__description,
@@ -235,7 +232,7 @@
     text-align: center !important;
     color: #ffffff !important; }
   .highlight--full .highlight__description {
-    margin-bottom: 4rem; }
+    margin-bottom: 2rem; }
   .highlight--full .highlight__image {
     position: absolute !important;
     height: 1px;
