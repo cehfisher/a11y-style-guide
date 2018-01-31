@@ -6,6 +6,11 @@
   clear: both; }
   .highlight h3 {
     margin-bottom: 0.5rem; }
+  .highlight .read-more {
+    float: none; }
+    @media (min-width: 64em) {
+      .highlight .read-more {
+        float: left; } }
 
 .highlight__content {
   z-index: 20;
