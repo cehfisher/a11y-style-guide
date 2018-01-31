@@ -11,10 +11,7 @@
   position: relative;
   padding: $padding-md;
   text-align: center;
-
-  @include breakpoint($bp-sm) {
-    padding: $padding-lg $padding-md;
-  }
+  clear: both;
 
   h3 {
     margin-bottom: $padding-xsm;
@@ -30,14 +27,12 @@
 }
 
 .highlight__title {
-  color: $color-white !important; // sass-lint:disable-line no-important
   padding: $padding-sm;
   margin: $padding-md-lg;
   text-align: center;
 }
 
 .highlight__sub-title {
-  color: $color-white !important; // sass-lint:disable-line no-important
   font-weight: bold;
   text-transform: capitalize;
   margin: $padding-md 0;
@@ -48,15 +43,11 @@
   font-weight: bold;
   margin-bottom: $padding-md;
   max-width: 1020px;
-
-  @include breakpoint($bp-sm) {
-    margin-bottom: $padding-lg;
-  }
 }
 
 .highlight__image {
   max-width: 640px;
-  margin: 5rem auto 0;
+  margin: $padding-md auto 0;
   overflow: hidden;
 
   @include breakpoint($bp-md) {
@@ -84,23 +75,24 @@
   }
 
   .highlight__content {
-    color: $color-white;
+    color: $color-midnight;
     text-shadow: none;
     padding: 0;
     margin-top: -$padding-md;
   }
 
   .highlight__title {
-    text-align: center;
+    text-align: center !important; // sass-lint:disable-line no-important
     padding: $padding-sm;
     margin: $padding-md-lg $padding-md-lg 0;
     order: 1;
+    color: $color-midnight;
 
     @include breakpoint($bp-md) {
       float: left;
       margin: $padding-md-lg 0 0;
       clear: both;
-      padding: 0 0 $padding-sm;
+      padding: 0;
       text-align: left;
     }
   }
@@ -130,6 +122,7 @@
   }
 
   .highlight__sub-title {
+    color: $color-midnight;
     order: 0;
     margin: 0;
   }
@@ -138,17 +131,26 @@
 /* Grid layouts for each variant */
 .highlight--left {
   width: 100%;
+  float: none;
 
   .highlight__content {
     @include breakpoint($bp-md) {
-      width: 50%;
+      width: 58.33333%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none;
+      padding-right: 0;
       padding-left: $padding-md;
     }
   }
 
   .highlight__image {
     @include breakpoint($bp-md) {
-      width: 50%;
+      width: 41.66667%;
+      float: left;
+      margin-right: -100%;
+      clear: none;
       padding-right: $padding-md;
 
       img {
@@ -161,17 +163,26 @@
 
 .highlight--left-small {
   width: 100%;
+  float: none;
 
   .highlight__content {
     @include breakpoint($bp-md) {
-      width: 66%;
+      width: 75%;
+      float: right;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none;
+      padding-right: 0;
       padding-left: $padding-md;
     }
   }
 
   .highlight__image {
     @include breakpoint($bp-md) {
-      width: 33%;
+      width: 25%;
+      float: left;
+      margin-right: -100%;
+      clear: none;
       padding-right: $padding-md;
 
       img {
@@ -264,16 +275,18 @@
     padding: $padding-sm;
     margin: 0;
     text-align: center !important; // sass-lint:disable-line no-important
+    color: $color-white !important; // sass-lint:disable-line no-important
   }
 
   .highlight__sub-title {
     text-transform: uppercase;
     margin: 0 0 $padding-md;
     text-align: center !important; // sass-lint:disable-line no-important
+    color: $color-white !important; // sass-lint:disable-line no-important
   }
 
   .highlight__description {
-    margin-bottom: $padding-lg;
+    margin-bottom: $padding-md;
   }
 
   .highlight__image {

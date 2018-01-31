@@ -17,6 +17,7 @@
 @import '../../global/utils/init';
 
 .read-more {
+  float: left;
 
   &::after {
     content: ' ';
