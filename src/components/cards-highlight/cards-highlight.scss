@@ -213,8 +213,8 @@
       margin-left: 0;
       margin-right: 0;
       clear: none;
-      padding-right: 0;
-      padding-left: $padding-md;
+      padding-left: 0;
+      padding-right: $padding-md;
     }
   }
 
@@ -222,13 +222,13 @@
     @include breakpoint($bp-md) {
       width: 41.66667%;
       float: right;
-      margin-right: -100%;
+      margin-left: -100%;
       clear: none;
-      padding-right: $padding-md;
+      padding-left: $padding-md;
 
       img {
         margin: 0;
-        float: left;
+        float: right;
       }
     }
   }
@@ -245,8 +245,8 @@
       margin-left: 0;
       margin-right: 0;
       clear: none;
-      padding-right: 0;
-      padding-left: $padding-md;
+      padding-left: 0;
+      padding-right: $padding-md;
     }
   }
 
@@ -254,13 +254,13 @@
     @include breakpoint($bp-md) {
       width: 25%;
       float: right;
-      margin-right: -100%;
+      margin-left: -100%;
       clear: none;
-      padding-right: $padding-md;
+      padding-left: $padding-md;
 
       img {
         margin: 0;
-        float: left;
+        float: right;
       }
     }
   }
