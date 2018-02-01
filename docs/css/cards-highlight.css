@@ -176,28 +176,46 @@
 
 /* Right variants */
 .highlight--right {
-  width: 100%; }
+  width: 100%;
+  float: none; }
   @media (min-width: 64em) {
     .highlight--right .highlight__content {
+      width: 58.33333%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none;
+      padding-left: 0;
       padding-right: 2rem; } }
   @media (min-width: 64em) {
     .highlight--right .highlight__image {
-      width: 50%;
+      width: 41.66667%;
+      float: right;
+      margin-left: -100%;
+      clear: none;
       padding-left: 2rem; }
       .highlight--right .highlight__image img {
         margin: 0;
         float: right; } }
 
 .highlight--right-small {
-  width: 100%; }
+  width: 100%;
+  float: none; }
   @media (min-width: 64em) {
     .highlight--right-small .highlight__content {
-      width: 66%;
+      width: 75%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none;
+      padding-left: 0;
       padding-right: 2rem; } }
   @media (min-width: 64em) {
     .highlight--right-small .highlight__image {
-      width: 33%;
-      padding-right: 0;
+      width: 25%;
+      float: right;
+      margin-left: -100%;
+      clear: none;
       padding-left: 2rem; }
       .highlight--right-small .highlight__image img {
         margin: 0;

@@ -204,16 +204,26 @@
 /* Right variants */
 .highlight--right {
   width: 100%;
+  float: none;
 
   .highlight__content {
     @include breakpoint($bp-md) {
+      width: 58.33333%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none;
+      padding-left: 0;
       padding-right: $padding-md;
     }
   }
 
   .highlight__image {
     @include breakpoint($bp-md) {
-      width: 50%;
+      width: 41.66667%;
+      float: right;
+      margin-left: -100%;
+      clear: none;
       padding-left: $padding-md;
 
       img {
@@ -226,18 +236,26 @@
 
 .highlight--right-small {
   width: 100%;
+  float: none;
 
   .highlight__content {
     @include breakpoint($bp-md) {
-      width: 66%;
+      width: 75%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      clear: none;
+      padding-left: 0;
       padding-right: $padding-md;
     }
   }
 
   .highlight__image {
     @include breakpoint($bp-md) {
-      width: 33%;
-      padding-right: 0;
+      width: 25%;
+      float: right;
+      margin-left: -100%;
+      clear: none;
       padding-left: $padding-md;
 
       img {
