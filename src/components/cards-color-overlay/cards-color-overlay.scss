@@ -1,13 +1,13 @@
-// Basic Card Color Overlay
+// Color Overlay Card
 //
-// Markup: cards-basic-color.twig
+// Markup: cards-color-overlay.twig
 //
-// Style guide: Cards.cards-basic-color
+// Style guide: Cards.cards-color-overlay
 
 // Import site utilities.
 @import '../../global/utils/init';
 
-.blocks-color {
+.color-overlay-cards {
 
   .three-photos {
     @include clearfix;
