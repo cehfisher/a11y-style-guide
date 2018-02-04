@@ -1,9 +1,0 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-.images {
-  position: relative;
-  margin: 0 auto;
-  max-width: 650px;
-  max-height: 500px;
-  background-size: contain; }
-  .images img {
-    border-radius: 4px; }

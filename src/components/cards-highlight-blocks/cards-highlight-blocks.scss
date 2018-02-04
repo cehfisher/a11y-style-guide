@@ -7,315 +7,89 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
-.highlight {
-  position: relative;
-  padding: $padding-md;
-  text-align: center;
-  clear: both;
+.highlight-blocks {
+  @include clearfix;
+  margin-bottom: $padding-xxl;
 
-  h3 {
-    margin-bottom: $padding-xsm;
-  }
-
-  .read-more {
-    float: none;
-
-    @include breakpoint($bp-md) {
-      float: left;
-    }
-  }
-}
-
-.highlight__content {
-  z-index: $zi-low;
-  position: relative;
-  max-width: 1020px;
-  margin: auto;
-  padding: $padding-md 0;
-}
-
-.highlight__title {
-  padding: $padding-sm;
-  margin: $padding-md-lg;
-  text-align: center;
-}
-
-.highlight__sub-title {
-  font-weight: bold;
-  text-transform: capitalize;
-  margin: $padding-md 0;
-  text-align: center;
-}
-
-.highlight__description {
-  font-weight: bold;
-  margin-bottom: $padding-md;
-  max-width: 1020px;
-}
-
-.highlight__image {
-  max-width: 640px;
-  margin: $padding-md auto 0;
-  overflow: hidden;
-
-  @include breakpoint($bp-md) {
-    margin: 1.3rem auto;
-  }
-
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border: 3px solid $color-silver;
+  .three-photos {
+    @include clearfix;
     margin: 0 auto;
-    border-radius: $border-rd-sm;
-  }
-}
-
-.highlight--right,
-.highlight--right-small,
-.highlight--left,
-.highlight--left-small {
-  text-align: center;
-
-  &::before {
-    display: none;
-  }
-
-  .highlight__content {
-    color: $color-midnight;
-    text-shadow: none;
-    padding: 0;
-    margin-top: -$padding-md;
-  }
-
-  .highlight__title {
-    text-align: center !important; // sass-lint:disable-line no-important
-    padding: $padding-sm;
-    margin: $padding-md-lg $padding-md-lg 0;
-    order: 1;
-    color: $color-midnight;
-
-    @include breakpoint($bp-md) {
-      float: left;
-      margin: $padding-md-lg 0 0;
-      clear: both;
-      padding: 0;
-      text-align: left;
-    }
-  }
-
-  .highlight__description {
-    text-align: center;
-    width: 100%;
-
-    @include breakpoint($bp-md) {
-      float: left;
-      clear: both;
-      text-align: left;
-      margin: $padding-md auto;
-      padding-top: $padding-md;
-      border-top: 2px solid $color-silver;
-    }
-  }
-
-  .buttons--left {
-    margin-bottom: $padding-lg;
+    padding: $padding-md $padding-md $padding-lg;
+    position: relative;
     text-align: center;
 
-    @include breakpoint($bp-md) {
-      margin-bottom: $padding-md;
-      text-align: left;
+    @include breakpoint($bp-sm) {
+      max-width: 400px;
     }
-  }
 
-  .highlight__sub-title {
-    color: $color-midnight;
-    order: 0;
-    margin: 0;
-  }
-}
-
-/* Grid layouts for each variant */
-.highlight--left {
-  width: 100%;
-  float: none;
-
-  .highlight__content {
     @include breakpoint($bp-md) {
-      width: 58.33333%;
-      float: right;
-      margin-left: 0;
-      margin-right: 0;
-      clear: none;
-      padding-right: 0;
-      padding-left: $padding-md;
+      max-width: 1010px;
+      padding: 0 0 $padding-md-lg $padding-sm;
     }
-  }
 
-  .highlight__image {
-    @include breakpoint($bp-md) {
-      width: 41.66667%;
-      float: left;
-      margin-right: -100%;
-      clear: none;
-      padding-right: $padding-md;
+    li {
+      list-style: none;
+      margin-bottom: $padding-xl;
+    }
 
-      img {
-        margin: 0;
+    .col {
+      float: none;
+      width: 100%;
+
+      .image-overlay::before {
+        border-radius: $border-rd-sm;
+      }
+
+      .highlight__img_overlay {
+        @include headline--four;
+        text-transform: uppercase;
+        font-family: $font-stack-tertiary;
+        color: $white;
+        margin-top: -64px;
+        padding: $padding-md;
+        background: $gray-mineshaft;
+        opacity: 0.75;
+        border-radius: $border-rd-sm;
+        width: 100%;
+        max-width: 860px;
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        @include breakpoint($bp-xsm) {
+          border-radius: 0 0 $border-rd-sm $border-rd-sm;
+          height: auto;
+        }
+      }
+
+      .highlight__image {
+        max-width: 770px;
+        width: 100%;
+        margin: auto;
+        position: relative;
+
+        img {
+          border-radius: $border-rd-sm;
+          width: 100%;
+          min-height: 125px;
+          border: none;
+        }
+      }
+
+      p {
+        font-family: $font-stack-tertiary;
+        text-transform: uppercase;
+      }
+
+      @include breakpoint($bp-md) {
         float: left;
+        width: 29%;
+        margin: 2%;
       }
     }
-  }
-}
-
-.highlight--left-small {
-  width: 100%;
-  float: none;
-
-  .highlight__content {
-    @include breakpoint($bp-md) {
-      width: 75%;
-      float: right;
-      margin-left: 0;
-      margin-right: 0;
-      clear: none;
-      padding-right: 0;
-      padding-left: $padding-md;
-    }
-  }
-
-  .highlight__image {
-    @include breakpoint($bp-md) {
-      width: 25%;
-      float: left;
-      margin-right: -100%;
-      clear: none;
-      padding-right: $padding-md;
-
-      img {
-        margin: 0;
-        float: left;
-      }
-    }
-  }
-}
-
-/* Right variants */
-.highlight--right {
-  width: 100%;
-  float: none;
-
-  .highlight__content {
-    @include breakpoint($bp-md) {
-      width: 58.33333%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
-      clear: none;
-      padding-left: 0;
-      padding-right: $padding-md;
-    }
-  }
-
-  .highlight__image {
-    @include breakpoint($bp-md) {
-      width: 41.66667%;
-      float: right;
-      margin-left: -100%;
-      clear: none;
-      padding-left: $padding-md;
-
-      img {
-        margin: 0;
-        float: right;
-      }
-    }
-  }
-}
-
-.highlight--right-small {
-  width: 100%;
-  float: none;
-
-  .highlight__content {
-    @include breakpoint($bp-md) {
-      width: 75%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
-      clear: none;
-      padding-left: 0;
-      padding-right: $padding-md;
-    }
-  }
-
-  .highlight__image {
-    @include breakpoint($bp-md) {
-      width: 25%;
-      float: right;
-      margin-left: -100%;
-      clear: none;
-      padding-left: $padding-md;
-
-      img {
-        margin: 0;
-        float: right;
-      }
-    }
-  }
-}
-
-/* Variants */
-.highlight--full {
-  background: url('#{$asset-path}/snow.jpg') $color-cherry center no-repeat;
-  background-size: cover !important; // sass-lint:disable-line no-important
-  padding: $padding-xl $padding-md;
-
-  @include breakpoint($bp-xsm) {
-    padding: $padding-xl $padding-md;
-  }
-
-  &::before {
-    display: block;
-    content: '';
-    background: rgba($color-black, 0.5);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: $zi-ground;
-  }
-
-  &.section--background--1 {
-    background: $color-white;
-  }
-
-  .highlight__content {
-    color: $color-white;
-    padding: $padding-lg 0;
-  }
-
-  .highlight__title {
-    padding: $padding-sm;
-    margin: 0;
-    text-align: center !important; // sass-lint:disable-line no-important
-    color: $color-white !important; // sass-lint:disable-line no-important
-  }
-
-  .highlight__sub-title {
-    text-transform: uppercase;
-    margin: 0 0 $padding-md;
-    text-align: center !important; // sass-lint:disable-line no-important
-    color: $color-white !important; // sass-lint:disable-line no-important
-  }
-
-  .highlight__description {
-    margin-bottom: $padding-md;
-  }
-
-  .highlight__image {
-    @include element-invisible;
   }
 }
