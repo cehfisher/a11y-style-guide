@@ -1,35 +1,35 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-.highlight-blocks {
+.blocks-color {
   margin-bottom: 8rem; }
-  .highlight-blocks::after {
+  .blocks-color::after {
     content: '';
     display: table;
     clear: both; }
-  .highlight-blocks .three-photos {
+  .blocks-color .three-photos {
     margin: 0 auto;
     padding: 2rem 2rem 4rem;
     position: relative;
     text-align: center; }
-    .highlight-blocks .three-photos::after {
+    .blocks-color .three-photos::after {
       content: '';
       display: table;
       clear: both; }
     @media (min-width: 55em) {
-      .highlight-blocks .three-photos {
+      .blocks-color .three-photos {
         max-width: 400px; } }
     @media (min-width: 64em) {
-      .highlight-blocks .three-photos {
+      .blocks-color .three-photos {
         max-width: 1010px;
         padding: 0 0 3rem 1rem; } }
-    .highlight-blocks .three-photos li {
+    .blocks-color .three-photos li {
       list-style: none;
       margin-bottom: 6rem; }
-    .highlight-blocks .three-photos .col {
+    .blocks-color .three-photos .col {
       float: none;
       width: 100%; }
-      .highlight-blocks .three-photos .col .image-overlay::before {
+      .blocks-color .three-photos .col .image-overlay::before {
         border-radius: 4px; }
-      .highlight-blocks .three-photos .col .highlight__img-overlay {
+      .blocks-color .three-photos .col .highlight__img-overlay {
         text-transform: uppercase;
         color: #ffffff;
         margin-top: -64px;
@@ -50,23 +50,133 @@
         align-items: center;
         text-align: center; }
         @media (min-width: 40em) {
-          .highlight-blocks .three-photos .col .highlight__img-overlay {
+          .blocks-color .three-photos .col .highlight__img-overlay {
             border-radius: 0 0 4px 4px;
             height: auto; } }
-      .highlight-blocks .three-photos .col .highlight__image {
+      .blocks-color .three-photos .col .highlight__image {
         max-width: 770px;
         width: 100%;
         margin: auto;
         position: relative; }
-        .highlight-blocks .three-photos .col .highlight__image img {
+        .blocks-color .three-photos .col .highlight__image img {
           border-radius: 4px;
           width: 100%;
           min-height: 125px;
           border: 0; }
-      .highlight-blocks .three-photos .col p {
+      .blocks-color .three-photos .col p {
         text-transform: uppercase; }
       @media (min-width: 64em) {
-        .highlight-blocks .three-photos .col {
+        .blocks-color .three-photos .col {
           float: left;
           width: 29%;
           margin: 2%; } }
+
+.image-overlay.blue-overlay::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: #4083ae;
+  opacity: 0.65; }
+
+.image-overlay.green-overlay::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: #7fffd4;
+  opacity: 0.65; }
+
+.image-overlay.purple-overlay::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: #550055;
+  opacity: 0.65; }
+
+.image-overlay.red-overlay::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: #e00000;
+  opacity: 0.55; }
+
+.image-overlay.dark-blue-overlay::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: #0a3055;
+  opacity: 0.65; }
+
+.image-overlay.dark-red-overlay::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: #a51323;
+  opacity: 0.55; }
+
+.image-overlay.gray-overlay::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: #bbbbbb;
+  opacity: 0.65; }
+
+.image-overlay.white-overlay::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: #ffffff;
+  opacity: 0.65; }
+
+.image-overlay.dark-overlay::before {
+  opacity: 0.85; }
+
+.image-overlay.gradient-ltr::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: linear-gradient(to right, white 40%, rgba(255, 255, 255, 0.65)); }
