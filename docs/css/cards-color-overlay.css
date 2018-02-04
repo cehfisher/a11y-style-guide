@@ -1,29 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-.blocks-color .three-photos {
+.color-overlay-cards .three-photos {
   margin: 0 auto;
   padding: 2rem 2rem 4rem;
   position: relative;
   text-align: center; }
-  .blocks-color .three-photos::after {
+  .color-overlay-cards .three-photos::after {
     content: '';
     display: table;
     clear: both; }
   @media (min-width: 55em) {
-    .blocks-color .three-photos {
+    .color-overlay-cards .three-photos {
       max-width: 400px; } }
   @media (min-width: 64em) {
-    .blocks-color .three-photos {
+    .color-overlay-cards .three-photos {
       max-width: 1010px;
       padding: 0 0 3rem 1rem; } }
-  .blocks-color .three-photos li {
+  .color-overlay-cards .three-photos li {
     list-style: none;
     margin-bottom: 6rem; }
-  .blocks-color .three-photos .col {
+  .color-overlay-cards .three-photos .col {
     float: none;
     width: 100%; }
-    .blocks-color .three-photos .col .image-overlay::before {
+    .color-overlay-cards .three-photos .col .image-overlay::before {
       border-radius: 4px; }
-    .blocks-color .three-photos .col .highlight__img-overlay {
+    .color-overlay-cards .three-photos .col .highlight__img-overlay {
       text-transform: uppercase;
       color: #ffffff;
       margin-top: -64px;
@@ -44,23 +44,23 @@
       align-items: center;
       text-align: center; }
       @media (min-width: 40em) {
-        .blocks-color .three-photos .col .highlight__img-overlay {
+        .color-overlay-cards .three-photos .col .highlight__img-overlay {
           border-radius: 0 0 4px 4px;
           height: auto; } }
-    .blocks-color .three-photos .col .highlight__image {
+    .color-overlay-cards .three-photos .col .highlight__image {
       max-width: 770px;
       width: 100%;
       margin: auto;
       position: relative; }
-      .blocks-color .three-photos .col .highlight__image img {
+      .color-overlay-cards .three-photos .col .highlight__image img {
         border-radius: 4px;
         width: 100%;
         min-height: 125px;
         border: 0; }
-    .blocks-color .three-photos .col p {
+    .color-overlay-cards .three-photos .col p {
       text-transform: uppercase; }
     @media (min-width: 64em) {
-      .blocks-color .three-photos .col {
+      .color-overlay-cards .three-photos .col {
         float: left;
         width: 29%;
         margin: 2%; } }
