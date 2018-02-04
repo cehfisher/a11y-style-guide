@@ -40,14 +40,12 @@
         border-radius: $border-rd-sm;
       }
 
-      .highlight__img_overlay {
-        @include headline--four;
+      .highlight__img-overlay {
         text-transform: uppercase;
-        font-family: $font-stack-tertiary;
-        color: $white;
+        color: $color-white;
         margin-top: -64px;
         padding: $padding-md;
-        background: $gray-mineshaft;
+        background: $color-midnight;
         opacity: 0.75;
         border-radius: $border-rd-sm;
         width: 100%;
@@ -76,12 +74,11 @@
           border-radius: $border-rd-sm;
           width: 100%;
           min-height: 125px;
-          border: none;
+          border: 0;
         }
       }
 
       p {
-        font-family: $font-stack-tertiary;
         text-transform: uppercase;
       }
 
