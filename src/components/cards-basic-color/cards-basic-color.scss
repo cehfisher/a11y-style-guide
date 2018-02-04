@@ -8,8 +8,6 @@
 @import '../../global/utils/init';
 
 .blocks-color {
-  @include clearfix;
-  margin-bottom: $padding-xxl;
 
   .three-photos {
     @include clearfix;
@@ -46,7 +44,7 @@
         margin-top: -64px;
         padding: $padding-md;
         background: $color-midnight;
-        opacity: 0.75;
+        opacity: 0.95;
         border-radius: $border-rd-sm;
         width: 100%;
         max-width: 860px;
@@ -116,7 +114,7 @@
     width: 100%;
     height: 100%;
     z-index: $zi-ground;
-    background: $color-sea-glass;
+    background: $color-grass;
     opacity: 0.65;
   }
 
