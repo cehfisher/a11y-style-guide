@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.toggleflip {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  position: relative;
+  display: inline-block;
+  line-height: 1.2; }
+
+.toggleflip [aria-hidden] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%; }
+
+.toggleflip [aria-hidden='false'] {
+  display: inline-block;
+  z-index: 2; }
+
+.card__back[aria-hidden='false'] {
+  transform-origin: center top;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  animation-direction: normal; }
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.3s; }
+
+.card__back {
+  transform: rotateY(-180deg);
+  position: absolute;
+  padding: 1rem 1.5rem;
+  background: #ffffff; }
+  .card__back .cards__item-description {
+    height: 155px;
+    transform: rotateY(-180deg);
+    visibility: hidden; }
+
+.card__front {
+  transform: rotateY(0deg); }
+
+.card.effect__click.flipped .card__front {
+  transform: rotateY(0deg); }
+
+.card.effect__click.flipped .card__back {
+  transform: scale(1, 1); }
+  .card.effect__click.flipped .card__back .cards__item-description {
+    visibility: visible;
+    transform: rotateY(0deg); }

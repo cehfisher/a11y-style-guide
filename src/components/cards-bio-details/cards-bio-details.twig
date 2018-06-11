@@ -1,0 +1,79 @@
+<section class="cards-bio cards-bio-list__item-wrapper {{ modifier_class }}{{ photo or use_placeholder_images ? ' with-image' }}">
+  {% if use_placeholder_images %}
+    <div class="cards-bio-list__image">
+      {% if photo %}
+        {{ photo }}
+      {% else %}
+        <div class="cards-bio-list__image-placeholder"></div>
+      {% endif %}
+    </div>
+  {% else %}
+    {% if photo %}
+      <div class="cards-bio-list__image">
+        {{ photo }}
+      </div>
+    {% endif %}
+  {% endif %}
+  <div class="cards-bio-list__content">
+    <div class="cards-bio__content-section">
+      {% if link %}
+        <h3 class="cards-bio-list__name">
+          <a href ="{{ link }}" class="cards-bio-list__name-link">{{ name }} {{ suffix }}</a>
+        </h3>
+      {% else %}
+        <h3 class="cards-bio-list__name">{{ name }} {{ suffix }}</h3>
+      {% endif %}
+      {% if title %}
+        <div class="cards-bio__content-item cards-bio-list__title">{{ title }}</div>
+      {% endif %}
+    </div>
+    {% if address %}
+      <div class="cards-bio__content-section">
+        <div class="cards-bio__content-item cards-bio__address">
+          {{ address }}
+        {% if phone %}
+          <div class="cards-bio__content-item cards-bio__phone">
+            {{ phone }}
+          </div>
+        {% endif %}
+        {% if email %}
+          <div class="cards-bio__content-item cards-bio__email">
+            <a href="mailto:{{ email }}">
+              <i class="fa fa-fw fa-envelope"></i>
+              {{ email }}
+            </a>
+          </div>
+        {% endif %}
+        </div>
+      </div>
+    {% endif %}
+    {% if brief_description or bio or cv_link %}
+      <div class="cards-bio__content-section">
+        {% if brief_description %}
+          <div class="cards-bio__content-item cards-bio-list__brief-description">
+            {{ brief_description }}
+           </div>
+        {% endif %}
+        {% if bio %}
+          <div class="cards-bio__content-item cards-bio-list__bio">
+            {{ bio }}
+          </div>
+        {% endif %}
+        {% if cv_link %}
+          <div class="cards-bio__content-item cards-bio-list__cv">
+            {{ cv_link }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+    {% if external_link %}
+      <div class="cards-bio__content-section">
+        <h4 class="cards-bio__content-section-title">More Information</h4>
+        <div class="cards-bio__content-item cards-bio-list__more-info-link">
+          <i class="fa fa-fw fa-globe"></i>
+          {{ external_link }}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</section>

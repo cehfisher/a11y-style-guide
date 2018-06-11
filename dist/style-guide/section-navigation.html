@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>A11Y Style Guide</title>
-
-  <meta name="description" content="">
+  <meta name="description" content="Style guide and pattern library promoting accessible components and WCAG compliance criteria">
   <meta name="generator" content="kss-node">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="../favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="../favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+  <link rel="manifest" href="../favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <script>
     // remove no-js and add 'js' to the HTML
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -15,6 +33,7 @@
   <link rel="stylesheet" href="../all/all.css">
 
 </head>
+
 <body id="kss-node">
 
   <a href="#kss-main-content" class="kss-skip-link">
@@ -22,116 +41,227 @@
   </a>
 
   <div class="kss-wrapper">
-
     <div class="kss-sidebar">
 
       <div class="kss-sidebar-inner">
         <header class="kss-header">
+          <p class="kss-doc-title visuallyhidden">
+            <abbr title="accessibility">A11Y</abbr> Style Guide
+          </p>
           <div class="site-logo">
             <svg aria-labelledby="logo-title description" id="site_logo" data-name="site logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 132.07"><defs><style>.cls-1{fill:#e00000;}.cls-2{fill:#fff;}</style></defs><title id="logo-title">A11y style guide logo</title><desc id="description">Red badge reading 'A11Y' positioned above red text reading 'style guide'</desc>
-      <g><path class="cls-1" d="M185,77.5a6.4,6.4,0,0,1-4.9,6L100.5,99a32.2,32.2,0,0,1-9.8,0L11,83.5a6.31,6.31,0,0,1-4.9-6V27.7a6.4,6.4,0,0,1,4.9-6L90.7,6.2a32.2,32.2,0,0,1,9.8,0l79.7,15.5a6.31,6.31,0,0,1,4.9,6V77.5ZM15.8,116.1c0-.4-.1-.5-.5-.5H11.1c-.4,0-.5.1-.5.5v1.7c0,.4.2.6.8.7l5.3,1.2c2.5.6,3.9,1.3,3.9,3.9v3.3c0,2.5-1.2,3.7-3.7,3.7h-7c-2.5,0-3.7-1.2-3.7-3.7v-2.5h4.4v1.9c0,.4.1.5.5.5h4.5c.4,0,.5-.1.5-.5v-2c0-.4-.2-.6-.8-.7L10,122.4c-2.5-.6-3.9-1.3-3.9-3.9v-3.1c0-2.5,1.2-3.7,3.7-3.7h6.6c2.5,0,3.7,1.2,3.7,3.7v2.3H15.7v-1.6Zm19.7-.7H33v11.7h2.7v3.5H25.9v-3.5h2.7V115.4H26v3.3H22.3v-6.9h17v6.9H35.6v-3.3Zm16.4,11.8h2.4v3.5H45v-3.5h2.4v-3l-5-8.9H40.2v-3.5h8.1v3.5H47.1l2.5,4.9,2.5-4.9H50.9v-3.5h8v3.5H56.7l-5,8.9v3Zm8.3,3.5v-3.5h2.3V115.4H60.2v-3.5h9.4v3.5H67V127h4.7v-3.7h3.8v7.4Zm32.4-12.9H88.9v-2.3H84v3.7h6.4v3.7H84v4h4.9v-2.3h3.7v5.9H77.2V127h2.3V115.2H77.2v-3.5H92.6Zm20-1.6c0-.4-.1-.5-.5-.5h-4.8c-.4,0-.5.1-.5.5v10.1c0,.4.1.5.5.5h4.8c.4,0,.5-.1.5-.5v-2.7h-3.4v-3.7H117V127c0,2.5-1.2,3.7-3.7,3.7H106c-2.5,0-3.7-1.2-3.7-3.7V115.6c0-2.5,1.2-3.7,3.7-3.7h7.3c2.5,0,3.7,1.2,3.7,3.7v2.5h-4.4Zm23-.9V127c0,2.4-1.2,3.7-3.7,3.7h-7c-2.4,0-3.7-1.3-3.7-3.7V115.4H119v-3.5h8.7v3.5h-2v10.9a.47.47,0,0,0,.5.5h4.4c.4,0,.5-.2.5-.5V115.4h-2v-3.5h8.7v3.5h-2.2Zm10.9,11.9h2.4v3.5h-9.4v-3.5h2.4V115.4h-2.4v-3.5h9.4v3.5h-2.4Zm6.5,0V115.4h-2.3v-3.5h13.1c2.5,0,3.7,1.2,3.7,3.7V127c0,2.5-1.2,3.7-3.7,3.7H150.7v-3.5Zm9.5-.4c.4,0,.5-.1.5-.5V116.2c0-.4-.1-.5-.5-.5h-5v11.1Zm22.5-9h-3.7v-2.3h-4.9v3.7h6.4v3.7h-6.4v4h4.9v-2.3H185v5.9H169.6V127h2.3V115.2h-2.3v-3.5H185Z" transform="translate(-6.1 -5.82)"/><path class="cls-2" d="M68.6,71h-18V63.5h3.7l-1.4-4.8H40.5l-1.4,4.8h3.7V71H25.2V63.5h4.4L38,38.3H33.4V30.8H53.2l11,32.7h4.4ZM46.7,38.5l-4,13.2h8.1ZM99.1,71.1H72.6V63.5h8.7V40.3L72,43.7V35.5L83.4,31h7.3V63.6h8.4Zm30.4-.1H103V63.4h8.7V40.2l-9.2,3.3V35.3l11.4-4.5h7.3V63.4h8.4V71Zm20.4-7.5H155V71H135.3V63.5h5.1V57.2L129.8,38.3h-4.6V30.8h17.3v7.5h-2.6l5.3,10.4,5.3-10.4h-2.6V30.8H165v7.5h-4.6L149.8,57.2v6.3Z" transform="translate(-6.1 -5.82)"/><path class="cls-1" d="M6.1,105.5H185v1.9H6.1Zm0,30H185v1.9H6.1Z" transform="translate(-6.1 -5.82)"/></g></svg>
+              <g><path class="cls-1" d="M185,77.5a6.4,6.4,0,0,1-4.9,6L100.5,99a32.2,32.2,0,0,1-9.8,0L11,83.5a6.31,6.31,0,0,1-4.9-6V27.7a6.4,6.4,0,0,1,4.9-6L90.7,6.2a32.2,32.2,0,0,1,9.8,0l79.7,15.5a6.31,6.31,0,0,1,4.9,6V77.5ZM15.8,116.1c0-.4-.1-.5-.5-.5H11.1c-.4,0-.5.1-.5.5v1.7c0,.4.2.6.8.7l5.3,1.2c2.5.6,3.9,1.3,3.9,3.9v3.3c0,2.5-1.2,3.7-3.7,3.7h-7c-2.5,0-3.7-1.2-3.7-3.7v-2.5h4.4v1.9c0,.4.1.5.5.5h4.5c.4,0,.5-.1.5-.5v-2c0-.4-.2-.6-.8-.7L10,122.4c-2.5-.6-3.9-1.3-3.9-3.9v-3.1c0-2.5,1.2-3.7,3.7-3.7h6.6c2.5,0,3.7,1.2,3.7,3.7v2.3H15.7v-1.6Zm19.7-.7H33v11.7h2.7v3.5H25.9v-3.5h2.7V115.4H26v3.3H22.3v-6.9h17v6.9H35.6v-3.3Zm16.4,11.8h2.4v3.5H45v-3.5h2.4v-3l-5-8.9H40.2v-3.5h8.1v3.5H47.1l2.5,4.9,2.5-4.9H50.9v-3.5h8v3.5H56.7l-5,8.9v3Zm8.3,3.5v-3.5h2.3V115.4H60.2v-3.5h9.4v3.5H67V127h4.7v-3.7h3.8v7.4Zm32.4-12.9H88.9v-2.3H84v3.7h6.4v3.7H84v4h4.9v-2.3h3.7v5.9H77.2V127h2.3V115.2H77.2v-3.5H92.6Zm20-1.6c0-.4-.1-.5-.5-.5h-4.8c-.4,0-.5.1-.5.5v10.1c0,.4.1.5.5.5h4.8c.4,0,.5-.1.5-.5v-2.7h-3.4v-3.7H117V127c0,2.5-1.2,3.7-3.7,3.7H106c-2.5,0-3.7-1.2-3.7-3.7V115.6c0-2.5,1.2-3.7,3.7-3.7h7.3c2.5,0,3.7,1.2,3.7,3.7v2.5h-4.4Zm23-.9V127c0,2.4-1.2,3.7-3.7,3.7h-7c-2.4,0-3.7-1.3-3.7-3.7V115.4H119v-3.5h8.7v3.5h-2v10.9a.47.47,0,0,0,.5.5h4.4c.4,0,.5-.2.5-.5V115.4h-2v-3.5h8.7v3.5h-2.2Zm10.9,11.9h2.4v3.5h-9.4v-3.5h2.4V115.4h-2.4v-3.5h9.4v3.5h-2.4Zm6.5,0V115.4h-2.3v-3.5h13.1c2.5,0,3.7,1.2,3.7,3.7V127c0,2.5-1.2,3.7-3.7,3.7H150.7v-3.5Zm9.5-.4c.4,0,.5-.1.5-.5V116.2c0-.4-.1-.5-.5-.5h-5v11.1Zm22.5-9h-3.7v-2.3h-4.9v3.7h6.4v3.7h-6.4v4h4.9v-2.3H185v5.9H169.6V127h2.3V115.2h-2.3v-3.5H185Z" transform="translate(-6.1 -5.82)"/><path class="cls-2" d="M68.6,71h-18V63.5h3.7l-1.4-4.8H40.5l-1.4,4.8h3.7V71H25.2V63.5h4.4L38,38.3H33.4V30.8H53.2l11,32.7h4.4ZM46.7,38.5l-4,13.2h8.1ZM99.1,71.1H72.6V63.5h8.7V40.3L72,43.7V35.5L83.4,31h7.3V63.6h8.4Zm30.4-.1H103V63.4h8.7V40.2l-9.2,3.3V35.3l11.4-4.5h7.3V63.4h8.4V71Zm20.4-7.5H155V71H135.3V63.5h5.1V57.2L129.8,38.3h-4.6V30.8h17.3v7.5h-2.6l5.3,10.4,5.3-10.4h-2.6V30.8H165v7.5h-4.6L149.8,57.2v6.3Z" transform="translate(-6.1 -5.82)"/><path class="cls-1" d="M6.1,105.5H185v1.9H6.1Zm0,30H185v1.9H6.1Z" transform="translate(-6.1 -5.82)"/></g></svg>
           </div>
-          <h1 class="kss-doc-title visuallyhidden">
-            <abbr title="accessibility">A11Y</abbr> Style Guide
-          </h1>
         </header>
 
-        <nav class="kss-nav">
-        <button type="button" class="nav-btn">
-          <span class="visuallyhidden">
-            Navigation Toggle
-          </span>
-        </button>
-
-        <section class="navbar-mobile-icon">
-          <button class="menu-toggle" href="#" id="toggle-menu" aria-expanded="false"><span>Menu</span>
-            <svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
-              <g class="svg-menu-toggle">
-              <path class="line line-1" d="M5 13h90v14H5z"/>
-              <path class="line line-2" d="M5 43h90v14H5z"/>
-              <path class="line line-3" d="M5 73h90v14H5z"/>
-              </g>
-            </svg>
+        <nav class="kss-nav" aria-label="Style Guide">
+          <button type="button" class="nav-btn">
+            <span class="visuallyhidden">
+              Navigation Toggle
+            </span>
           </button>
-        </section>
-        <ul id="kss-nav-list" class="kss-menu">
-          <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
-                      <li class="kss-menu-item">
-              <a href="section-forms.html"><span class="kss-ref">1</span><span class="kss-name">Forms</span></a>
-                          </li>
-                      <li class="kss-menu-item">
-              <a href="section-general.html"><span class="kss-ref">2</span><span class="kss-name">General</span></a>
-                          </li>
-                      <li class="kss-menu-item">
-              <a href="section-media.html"><span class="kss-ref">3</span><span class="kss-name">Media</span></a>
-                          </li>
-                      <li class="kss-menu-item">
-              <a href="section-navigation.html"><span class="kss-ref">4</span><span class="kss-name">Navigation</span></a>
-                              <ul class="kss-menu-child">
-                                      <li class="kss-menu-item">
-                      <a href="#kssref-navigation-breadcrumbs">
-                        <span class="kss-ref ">4.1</span>
+
+          <div class="navbar-mobile-icon">
+            <button class="menu-toggle" id="toggle-menu" aria-expanded="false">
+              <span>Menu</span>
+              <svg class="icon icon-menu-toggle" aria-hidden="true" focusable="false" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
+                <g class="svg-menu-toggle">
+                  <path class="line line-1" d="M5 13h90v14H5z"/>
+                  <path class="line line-2" d="M5 43h90v14H5z"/>
+                  <path class="line line-3" d="M5 73h90v14H5z"/>
+                </g>
+              </svg>
+            </button>
+          </div>
+          <ul id="kss-nav-list" class="kss-menu">
+            <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+                        <li class="kss-menu-item">
+              <a href="section-cards.html"><span class="kss-ref">1</span><span class="kss-name">Cards</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-forms.html"><span class="kss-ref">2</span><span class="kss-name">Forms</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-general.html"><span class="kss-ref">3</span><span class="kss-name">General</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-media.html"><span class="kss-ref">4</span><span class="kss-name">Media</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-navigation.html"><span class="kss-ref">5</span><span class="kss-name">Navigation</span></a>               <ul class="kss-menu-child">
+                                <li class="kss-menu-item">
+                  <a href="#kssref-navigation-accordion">
+                        <span class="kss-ref ">5.1</span>
+                        <span class="kss-name">Accordion</span>
+                      </a>
+                </li>
+                                <li class="kss-menu-item">
+                  <a href="#kssref-navigation-breadcrumbs">
+                        <span class="kss-ref ">5.2</span>
                         <span class="kss-name">Breadcrumbs</span>
                       </a>
-                    </li>
-                                      <li class="kss-menu-item">
-                      <a href="#kssref-navigation-navbar">
-                        <span class="kss-ref ">4.2</span>
-                        <span class="kss-name">Basic Navbar</span>
+                </li>
+                                <li class="kss-menu-item">
+                  <a href="#kssref-navigation-navigation-basic">
+                        <span class="kss-ref ">5.3</span>
+                        <span class="kss-name">Basic Navigation</span>
                       </a>
-                    </li>
-                                      <li class="kss-menu-item">
-                      <a href="#kssref-navigation-navbar-mobile-icon">
-                        <span class="kss-ref ">4.3</span>
-                        <span class="kss-name">Navbar Mobile Icon</span>
+                </li>
+                                <li class="kss-menu-item">
+                  <a href="#kssref-navigation-navigation-dropdown">
+                        <span class="kss-ref ">5.4</span>
+                        <span class="kss-name">Dropdown Navigation</span>
                       </a>
-                    </li>
-                                      <li class="kss-menu-item">
-                      <a href="#kssref-navigation-pagination">
-                        <span class="kss-ref ">4.4</span>
+                </li>
+                                <li class="kss-menu-item">
+                  <a href="#kssref-navigation-navigation-footer">
+                        <span class="kss-ref ">5.5</span>
+                        <span class="kss-name">Footer Navigation</span>
+                      </a>
+                </li>
+                                <li class="kss-menu-item">
+                  <a href="#kssref-navigation-navigation-mobile">
+                        <span class="kss-ref ">5.6</span>
+                        <span class="kss-name">Mobile Navigation</span>
+                      </a>
+                </li>
+                                <li class="kss-menu-item">
+                  <a href="#kssref-navigation-pagination">
+                        <span class="kss-ref ">5.7</span>
                         <span class="kss-name">Pagination</span>
                       </a>
-                    </li>
-                                  </ul>
+                </li>
+                              </ul>
                           </li>
-                      <li class="kss-menu-item">
-              <a href="section-structure.html"><span class="kss-ref">5</span><span class="kss-name">Structure</span></a>
-                          </li>
-                      <li class="kss-menu-item">
-              <a href="section-resources.html"><span class="kss-ref">6</span><span class="kss-name">Resources</span></a>
-                          </li>
-                    </ul>
+                        <li class="kss-menu-item">
+              <a href="section-structure.html"><span class="kss-ref">6</span><span class="kss-name">Structure</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-resources.html"><span class="kss-ref">7</span><span class="kss-name">Resources</span></a>             </li>
+                      </ul>
         </nav>
+
       </div>
+      <!-- /.kss-sidebar-inner -->
 
     </div>
+    <!-- /.kss-sidebar -->
 
     <main id="kss-main-content" class="kss-content" aria-label="content">
-      <article role="main" class="kss-article">
-      
-        
-                            <div id="kssref-navigation" class="kss-section kss-depth-1">
+      <article class="kss-article">
+         
+        <div>
+          <div class="social-link-out">
+            <a href="https://twitter.com/cariefisher" target="_blank" class="social-link-twitter"><span class="visuallyhidden">Carie Fisher on Twitter</span></a>
+            <a href="https://github.com/cehfisher" target="_blank" class="social-link-github"><span class="visuallyhidden">Carie Fisher on GitHub</span></a>
+          </div>
+
+                     <div id="kssref-navigation" class="kss-section kss-depth-1">
             <div class="kss-style">
                             <h1 class="kss-title kss-title--level-1">
                 <a class="kss-title__permalink" href="#kssref-navigation">
-                  Navigation
-                </a>
+                    Navigation
+                  </a>
               </h1>
 
-              
-                          </div>
-
+                           </div>
                       </div>
-                            <section id="kssref-navigation-breadcrumbs" class="kss-section kss-depth-2">
+                     <section id="kssref-navigation-accordion" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-navigation-accordion">
+                    Accordion
+                  </a>
+              </h2>
+
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="accordion-section">
+  <div class="accordion" role="presentation">
+    <div class="js-accordion__panel">
+      <h3 class="accordion__heading">
+      <button class="accordion__trigger" aria-controls="accordion__content_1" aria-expanded="false" tabindex="0" id="accordion__title_1" aria-selected="false">I’m tall when I’m young and I’m short when I’m old. What am I?
+      </button>
+      </h3>
+      <div class="accordion__content" id="accordion__content_1" role="region" aria-hidden="true" aria-labelledby="accordion__title_1">
+        <p>A candle</p>
+      </div>
+    </div>
+    <div class="js-accordion__panel">
+      <h3 class="accordion__heading">
+      <button class="accordion__trigger" aria-controls="accordion__content_2" aria-expanded="false" tabindex="0" id="accordion__title_2" aria-selected="false">Which weighs more, a pound of feathers or a pound of bricks?
+      </button>
+      </h3>
+      <div class="accordion__content" id="accordion__content_2" role="region" aria-hidden="true" aria-labelledby="accordion__title_2">
+        <p>Neither, they both weigh one pound.</p>
+      </div>
+    </div>
+    <div class="js-accordion__panel">
+      <h3 class="accordion__heading">
+      <button class="accordion__trigger" aria-controls="accordion__content_3" aria-expanded="false" tabindex="0" id="accordion__title_3" aria-selected="false">The more you take, the more you leave behind. What are they?
+      </button>
+      </h3>
+      <div class="accordion__content" id="accordion__content_3" role="region" aria-hidden="true" aria-labelledby="accordion__title_3">
+        <p>Footprints.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;accordion-section&quot;&gt;
+  &lt;div class=&quot;accordion&quot; role=&quot;presentation&quot;&gt;
+    &lt;div class=&quot;js-accordion__panel&quot;&gt;
+      &lt;h3 class=&quot;accordion__heading&quot;&gt;
+      &lt;button class=&quot;accordion__trigger&quot; aria-controls=&quot;accordion__content_1&quot; aria-expanded=&quot;false&quot; tabindex=&quot;0&quot; id=&quot;accordion__title_1&quot; aria-selected=&quot;false&quot;&gt;I’m tall when I’m young and I’m short when I’m old. What am I?
+      &lt;/button&gt;
+      &lt;/h3&gt;
+      &lt;div class=&quot;accordion__content&quot; id=&quot;accordion__content_1&quot; role=&quot;region&quot; aria-hidden=&quot;true&quot; aria-labelledby=&quot;accordion__title_1&quot;&gt;
+        &lt;p&gt;A candle&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;js-accordion__panel&quot;&gt;
+      &lt;h3 class=&quot;accordion__heading&quot;&gt;
+      &lt;button class=&quot;accordion__trigger&quot; aria-controls=&quot;accordion__content_2&quot; aria-expanded=&quot;false&quot; tabindex=&quot;0&quot; id=&quot;accordion__title_2&quot; aria-selected=&quot;false&quot;&gt;Which weighs more, a pound of feathers or a pound of bricks?
+      &lt;/button&gt;
+      &lt;/h3&gt;
+      &lt;div class=&quot;accordion__content&quot; id=&quot;accordion__content_2&quot; role=&quot;region&quot; aria-hidden=&quot;true&quot; aria-labelledby=&quot;accordion__title_2&quot;&gt;
+        &lt;p&gt;Neither, they both weigh one pound.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;js-accordion__panel&quot;&gt;
+      &lt;h3 class=&quot;accordion__heading&quot;&gt;
+      &lt;button class=&quot;accordion__trigger&quot; aria-controls=&quot;accordion__content_3&quot; aria-expanded=&quot;false&quot; tabindex=&quot;0&quot; id=&quot;accordion__title_3&quot; aria-selected=&quot;false&quot;&gt;The more you take, the more you leave behind. What are they?
+      &lt;/button&gt;
+      &lt;/h3&gt;
+      &lt;div class=&quot;accordion__content&quot; id=&quot;accordion__content_3&quot; role=&quot;region&quot; aria-hidden=&quot;true&quot; aria-labelledby=&quot;accordion__title_3&quot;&gt;
+        &lt;p&gt;Footprints.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </section>
+                     <section id="kssref-navigation-breadcrumbs" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
                 <a class="kss-title__permalink" href="#kssref-navigation-breadcrumbs">
-                  Breadcrumbs
-                </a>
+                    Breadcrumbs
+                  </a>
               </h2>
 
-                              <div class="kss-description">
-                  <ul>
+                            <div class="kss-description">
+                <ul>
  <li>Place the breadcrumb in a <code>&lt;nav&gt;</code> element when you can.</li>
  <li>If you do not use a <code>&lt;nav&gt;</code> element, you need to add <code>role=&quot;navigation&quot;</code> to the markup. <strong>Note:</strong> this role is implied when you use the <code>&lt;nav&gt;</code> element so it is a bit redundant to use both at the same time.</li>
  <li>The markup includes an <code>aria-label=&quot;breadcrumbs&quot;</code> to describe the type of navigation.</li>
@@ -145,15 +275,13 @@
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#breadcrumbs_guide">WCAG 2.0 Guidelines</a></h3><div id="breadcrumbs_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location" target="_blank">2.4.8 Location</a> - Information about the user&#39;s location within a set of Web pages is available. (Level AAA)</p></div><div class="markup"></div></section>
 
 
-                </div>
-              
-                          </div>
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
 
-                          <div class="kss-modifier-block">
-
-                <div class="kss-modifier kss-modifier-original">
-                  <div class="kss-modifier-example">
-                    <section class="breadcrumbs-section">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="breadcrumbs-section">
   <h3>Option #1: List styling with nav element</h3>
   <nav aria-label="breadcrumbs">
     <ol class="breadcrumb">
@@ -181,13 +309,15 @@
   </div>
 </section>
 
-                  </div>
                 </div>
+              </div>
 
-                                                <div class="kss-markup">
-                  <button class="js-show-markup">Show Markup Example</button>
-                  <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;breadcrumbs-section&quot;&gt;
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;breadcrumbs-section&quot;&gt;
   &lt;h3&gt;Option #1: List styling with nav element&lt;/h3&gt;
   &lt;nav aria-label=&quot;breadcrumbs&quot;&gt;
     &lt;ol class=&quot;breadcrumb&quot;&gt;
@@ -215,42 +345,39 @@
   &lt;/div&gt;
 &lt;/section&gt;
 </code></pre>
-                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
-                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
-                  </template>
-                </div>
-                              </div>
-
-                                    </section>
-                            <section id="kssref-navigation-navbar" class="kss-section kss-depth-2">
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </section>
+                     <section id="kssref-navigation-navigation-basic" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-navigation-navbar">
-                  Basic Navbar
-                </a>
+                <a class="kss-title__permalink" href="#kssref-navigation-navigation-basic">
+                    Basic Navigation
+                  </a>
               </h2>
 
-                              <div class="kss-description">
-                  <ul>
+                            <div class="kss-description">
+                <ul>
  <li>All navigation elements should have a <code>&lt;nav&gt;</code> tag.</li>
  <li>If you have to use a more generic element such as a <code>&lt;div&gt;</code>, add <code>role=&quot;navigation&quot;</code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</li>
  <li>Menus should be labeled according to their individual function. Use can use <code>class=&quot;visuallyhidden&quot;&gt;</code>, <code>aria-label=&quot;&quot;</code>, or <code>aria-labelledby=&quot;&quot;</code> to easily add context to the different menus on your site.</li>
 </ul>
 
-<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navbar_guide">WCAG 2.0 Guidelines</a></h3><div id="navbar_guide" class="atblock__panel guidelines"><p><a href="https://www.mobile-menu.org/WAI/WCAG20/quickref/#ensure-compat-rsv" target="_blank">4.1.2 Name, Role, Value</a> - For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. (Level A)</p></div><div class="markup"></div></section>
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navbar_guide">WCAG 2.0 Guidelines</a></h3><div id="navbar_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-focus-order" target="_blank">2.4.3 Focus Order</a> - If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-mult-loc" target="_blank">2.4.5 Multiple Ways</a> - More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process. (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-focus-visible" target="_blank">2.4.7 Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-location" target="_blank">2.4.8 Location</a> - Information about the user&#39;s location within a set of Web pages is available. (Level AAA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv" target="_blank">4.1.2 Name, Role, Value</a> - For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. (Level A)</p></div><div class="markup"></div></section>
 
 
-                </div>
-              
-                          </div>
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
 
-                          <div class="kss-modifier-block">
-
-                <div class="kss-modifier kss-modifier-original">
-                  <div class="kss-modifier-example">
-                    <section class="navbar-section">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="navbar-section">
   <h3>Option #1: List styling with visuallyhidden class</h3>
-  <nav class="navbar" role="navigation">
+  <nav class="navbar">
   	<h2 class="visuallyhidden">Main Menu</h2>
   	<ul class="nav navbar-nav">
       <li class="nav-item">
@@ -269,7 +396,7 @@
   </nav>
   <div class="break"></div>
   <h3>Option #2: List styling with ARIA label</h3>
-  <nav class="navbar" role="navigation" aria-label="Main Menu">
+  <nav class="navbar" aria-label="Main Menu">
     <h2 class="visuallyhidden">Main Menu</h2>
     <ul class="nav navbar-nav">
       <li class="nav-item">
@@ -290,7 +417,7 @@
   <h3>Option #3: No list styling with ARIA labelledby</h3>
   <nav class="navbar" role="navigation" aria-labelledby="mainmenulabel">
 	  <h2 class="visuallyhidden" id="mainmenulabel">Main Menu</h2>
-    <div class="nav navbar-nav" role="navigation">
+    <div class="nav navbar-nav menu3" role="navigation">
       <a class="nav-item nav-link2" href="#">Home</a>
       <a class="nav-item nav-link2" href="#">About Us</a>
       <a class="nav-item nav-link2" href="#">More Information</a>
@@ -299,15 +426,17 @@
   </nav>
 </section>
 
-                  </div>
                 </div>
+              </div>
 
-                                                <div class="kss-markup">
-                  <button class="js-show-markup">Show Markup Example</button>
-                  <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;navbar-section&quot;&gt;
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;navbar-section&quot;&gt;
   &lt;h3&gt;Option #1: List styling with visuallyhidden class&lt;/h3&gt;
-  &lt;nav class=&quot;navbar&quot; role=&quot;navigation&quot;&gt;
+  &lt;nav class=&quot;navbar&quot;&gt;
   	&lt;h2 class=&quot;visuallyhidden&quot;&gt;Main Menu&lt;/h2&gt;
   	&lt;ul class=&quot;nav navbar-nav&quot;&gt;
       &lt;li class=&quot;nav-item&quot;&gt;
@@ -326,7 +455,7 @@
   &lt;/nav&gt;
   &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
   &lt;h3&gt;Option #2: List styling with ARIA label&lt;/h3&gt;
-  &lt;nav class=&quot;navbar&quot; role=&quot;navigation&quot; aria-label=&quot;Main Menu&quot;&gt;
+  &lt;nav class=&quot;navbar&quot; aria-label=&quot;Main Menu&quot;&gt;
     &lt;h2 class=&quot;visuallyhidden&quot;&gt;Main Menu&lt;/h2&gt;
     &lt;ul class=&quot;nav navbar-nav&quot;&gt;
       &lt;li class=&quot;nav-item&quot;&gt;
@@ -347,7 +476,7 @@
   &lt;h3&gt;Option #3: No list styling with ARIA labelledby&lt;/h3&gt;
   &lt;nav class=&quot;navbar&quot; role=&quot;navigation&quot; aria-labelledby=&quot;mainmenulabel&quot;&gt;
 	  &lt;h2 class=&quot;visuallyhidden&quot; id=&quot;mainmenulabel&quot;&gt;Main Menu&lt;/h2&gt;
-    &lt;div class=&quot;nav navbar-nav&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;nav navbar-nav menu3&quot; role=&quot;navigation&quot;&gt;
       &lt;a class=&quot;nav-item nav-link2&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
       &lt;a class=&quot;nav-item nav-link2&quot; href=&quot;#&quot;&gt;About Us&lt;/a&gt;
       &lt;a class=&quot;nav-item nav-link2&quot; href=&quot;#&quot;&gt;More Information&lt;/a&gt;
@@ -356,23 +485,314 @@
   &lt;/nav&gt;
 &lt;/section&gt;
 </code></pre>
-                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
-                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
-                  </template>
-                </div>
-                              </div>
-
-                                    </section>
-                            <section id="kssref-navigation-navbar-mobile-icon" class="kss-section kss-depth-2">
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </section>
+                     <section id="kssref-navigation-navigation-dropdown" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-navigation-navbar-mobile-icon">
-                  Navbar Mobile Icon
-                </a>
+                <a class="kss-title__permalink" href="#kssref-navigation-navigation-dropdown">
+                    Dropdown Navigation
+                  </a>
               </h2>
 
-                              <div class="kss-description">
-                  <ul>
+                            <div class="kss-description">
+                <ul>
+ <li>All navigation elements should have a <code>&lt;nav&gt;</code> tag.</li>
+ <li>If you have to use a more generic element such as a <code>&lt;div&gt;</code>, add <code>role=&quot;navigation&quot;</code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</li>
+ <li>Menus should be labeled according to their individual function. Use can use <code>class=&quot;visuallyhidden&quot;&gt;</code>, <code>aria-label=&quot;&quot;</code>, or <code>aria-labelledby=&quot;&quot;</code> to easily add context to the different menus on your site.</li>
+</ul>
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navdrop_res">Resources</a></h3><div id="navdrop_res" class="atblock__panel"><ul><li><a href="https://codepen.io/grayghostvisuals/pen/ltjDa" target="_blank">Accessible Dropdown Menu</a> - CodePen that shows the base skeleton of an accessible menu</li><li><a href="http://www.washington.edu" target="_blank">University of Washington</a> - great example of a live site using accessible (and beautiful) menus</li></ul></div></section>
+
+
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navdrop_guide">WCAG 2.0 Guidelines</a></h3><div id="navdrop_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-focus-order" target="_blank">2.4.3 Focus Order</a> - If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-mult-loc" target="_blank">2.4.5 Multiple Ways</a> - More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process. (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-focus-visible" target="_blank">2.4.7 Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-location" target="_blank">2.4.8 Location</a> - Information about the user&#39;s location within a set of Web pages is available. (Level AAA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv" target="_blank">4.1.2 Name, Role, Value</a> - For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. (Level A)</p></div><div class="markup"></div></section>
+
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <nav class="menu" id="a11y-menu" role="navigation" aria-label="Main menu">
+  <ul class="nav level-1 list-reset" role="menubar" aria-hidden="false">
+    <li class="has-subnav" role="menuitem" aria-haspopup="true">
+      <a href="#about">About</a>
+      <ul class="level-2 list-reset" data-test="true" aria-hidden="true" role="menu">
+        <li role="menuitem"><a href="#news" tabindex="-1">News</a></li>
+        <li role="menuitem"><a href="#governance" tabindex="-1">Governance</a></li>
+        <li role="menuitem"><a href="#diversity" tabindex="-1">Diversity</a></li>
+        <li role="menuitem"><a href="#contact" tabindex="-1">ContactUs</a></li>
+      </ul>
+    </li>
+
+    <li role="menuitem" aria-haspopup="true">
+      <a href="#academics">Academics</a>
+      <ul class="level-2 list-reset" data-test="true" aria-hidden="true" role="menu" class="list-reset">
+        <li role="menuitem"><a href="#programs" tabindex="-1">Degree Programs</a></li>
+        <li role="menuitem"><a href="#faculty" tabindex="-1">Faculty</a></li>
+        <li role="menuitem"><a href="#distance" tabindex="-1">Distance Learning</a></li>
+        <li role="menuitem"><a href="#libs" tabindex="-1">Libraries</a></li>
+      </ul>
+    </li>
+
+    <li role="menuitem" aria-haspopup="true">
+      <a href="#admissions">Admissions</a>
+      <ul class="level-2 list-reset" data-test="true" aria-hidden="true" role="menu" class="list-reset">
+        <li role="menuitem"><a href="#undergraduate" tabindex="-1">Undergraduate</a></li>
+        <li role="menuitem"><a href="#tuition" tabindex="-1">Tuition</a></li>
+        <li role="menuitem"><a href="#financial-aid" tabindex="-1">Financial Aid</a></li>
+      </ul>
+    </li>
+
+    <li role="menuitem" aria-haspopup="true">
+      <a href="#visitors">Visitors</a>
+      <ul class="level-2 list-reset" data-test="true" aria-hidden="true" role="menu" class="list-reset">
+        <li role="menuitem"><a href="#events" tabindex="-1">Events</a></li>
+        <li role="menuitem"><a href="#campus-map" tabindex="-1">Campus Map</a></li>
+        <li role="menuitem"><a href="#parking" tabindex="-1">Parking</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;nav class=&quot;menu&quot; id=&quot;a11y-menu&quot; role=&quot;navigation&quot; aria-label=&quot;Main menu&quot;&gt;
+  &lt;ul class=&quot;nav level-1 list-reset&quot; role=&quot;menubar&quot; aria-hidden=&quot;false&quot;&gt;
+    &lt;li class=&quot;has-subnav&quot; role=&quot;menuitem&quot; aria-haspopup=&quot;true&quot;&gt;
+      &lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;
+      &lt;ul class=&quot;level-2 list-reset&quot; data-test=&quot;true&quot; aria-hidden=&quot;true&quot; role=&quot;menu&quot;&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#news&quot; tabindex=&quot;-1&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#governance&quot; tabindex=&quot;-1&quot;&gt;Governance&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#diversity&quot; tabindex=&quot;-1&quot;&gt;Diversity&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#contact&quot; tabindex=&quot;-1&quot;&gt;ContactUs&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+
+    &lt;li role=&quot;menuitem&quot; aria-haspopup=&quot;true&quot;&gt;
+      &lt;a href=&quot;#academics&quot;&gt;Academics&lt;/a&gt;
+      &lt;ul class=&quot;level-2 list-reset&quot; data-test=&quot;true&quot; aria-hidden=&quot;true&quot; role=&quot;menu&quot; class=&quot;list-reset&quot;&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#programs&quot; tabindex=&quot;-1&quot;&gt;Degree Programs&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#faculty&quot; tabindex=&quot;-1&quot;&gt;Faculty&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#distance&quot; tabindex=&quot;-1&quot;&gt;Distance Learning&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#libs&quot; tabindex=&quot;-1&quot;&gt;Libraries&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+
+    &lt;li role=&quot;menuitem&quot; aria-haspopup=&quot;true&quot;&gt;
+      &lt;a href=&quot;#admissions&quot;&gt;Admissions&lt;/a&gt;
+      &lt;ul class=&quot;level-2 list-reset&quot; data-test=&quot;true&quot; aria-hidden=&quot;true&quot; role=&quot;menu&quot; class=&quot;list-reset&quot;&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#undergraduate&quot; tabindex=&quot;-1&quot;&gt;Undergraduate&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#tuition&quot; tabindex=&quot;-1&quot;&gt;Tuition&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#financial-aid&quot; tabindex=&quot;-1&quot;&gt;Financial Aid&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+
+    &lt;li role=&quot;menuitem&quot; aria-haspopup=&quot;true&quot;&gt;
+      &lt;a href=&quot;#visitors&quot;&gt;Visitors&lt;/a&gt;
+      &lt;ul class=&quot;level-2 list-reset&quot; data-test=&quot;true&quot; aria-hidden=&quot;true&quot; role=&quot;menu&quot; class=&quot;list-reset&quot;&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#events&quot; tabindex=&quot;-1&quot;&gt;Events&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#campus-map&quot; tabindex=&quot;-1&quot;&gt;Campus Map&lt;/a&gt;&lt;/li&gt;
+        &lt;li role=&quot;menuitem&quot;&gt;&lt;a href=&quot;#parking&quot; tabindex=&quot;-1&quot;&gt;Parking&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </section>
+                     <section id="kssref-navigation-navigation-footer" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-navigation-navigation-footer">
+                    Footer Navigation
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <ul>
+ <li>All navigation elements should have a <code>&lt;nav&gt;</code> tag.</li>
+ <li>If you have to use a more generic element such as a <code>&lt;div&gt;</code>, add <code>role=&quot;navigation&quot;</code> to every navbar to explicitly identify it as a landmark region for users of assistive technologies.</li>
+ <li>Menus should be labeled according to their individual function. Use can use <code>class=&quot;visuallyhidden&quot;&gt;</code>, <code>aria-label=&quot;&quot;</code>, or <code>aria-labelledby=&quot;&quot;</code> to easily add context to the different menus on your site.</li>
+</ul>
+
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navbar-footer_guide">WCAG 2.0 Guidelines</a></h3><div id="navbar-footer_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-focus-order" target="_blank">2.4.3 Focus Order</a> - If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-mult-loc" target="_blank">2.4.5 Multiple Ways</a> - More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process. (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-focus-visible" target="_blank">2.4.7 Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-location" target="_blank">2.4.8 Location</a> - Information about the user&#39;s location within a set of Web pages is available. (Level AAA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#qr-ensure-compat-rsv" target="_blank">4.1.2 Name, Role, Value</a> - For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. (Level A)</p></div><div class="markup"></div></section>
+
+
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
+
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <footer class="footer">
+  <div>
+    <div class="l-center">
+      <div class="footer__left">
+        <div class="footer__contact">
+          <div aria-labelledby="footer-contact" class="footer__header">
+            <h2 class="footer__title" id="footer-contact">Contact</h2>
+            <div class="footer__content">
+              <ul>
+                <li class="icon--phone">+1 (800) 555-5555</li>
+                <li><a class="icon--email" href="#">info@company.com</a></li>
+                <li class="icon--address">Street Address <br>City, Zip Code</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__right">
+        <nav aria-labelledby="footer-resources" class="footer__header">
+          <h2 class="footer__title" id="footer-resources">Resources</h2>
+          <ul>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Charity</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="l-center">
+    <div class="footer__flex">
+      <div class="footer__left-social">
+        <div class="footer__social">
+          <nav aria-labelledby="footer-social-links" class="navigation navigation--social">
+            <h2 class="visuallyhidden" id="footer-scoial-links">Social Media Links</h2>
+            <ul class="navigation__menu menu" id="footer-social-links">
+              <li class="navigation__link navigation__link--icon first"><a href="#" class="icon icon--facebook">Facebook</a></li>
+              <li class="navigation__link navigation__link--icon"><a href="#" class="icon icon--instagram">Instagram</a></li>
+              <li class="navigation__link navigation__link--icon"><a href="#" class="icon icon--twitter">Twitter</a></li>
+              <li class="navigation__link navigation__link--icon last"><a href="#" class="icon icon--youtube">YouTube</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__right-search">
+        <div role="search">
+          <input type="search" name="search" aria-label="Search">
+          <button type="submit">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__credits">
+    <div class="l-center">
+      <p class="footer__copyright">All rights reserved A11Y Style Guide ©2017</p>
+    </div>
+  </div>
+</footer>
+
+                </div>
+              </div>
+
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;footer class=&quot;footer&quot;&gt;
+  &lt;div&gt;
+    &lt;div class=&quot;l-center&quot;&gt;
+      &lt;div class=&quot;footer__left&quot;&gt;
+        &lt;div class=&quot;footer__contact&quot;&gt;
+          &lt;div aria-labelledby=&quot;footer-contact&quot; class=&quot;footer__header&quot;&gt;
+            &lt;h2 class=&quot;footer__title&quot; id=&quot;footer-contact&quot;&gt;Contact&lt;/h2&gt;
+            &lt;div class=&quot;footer__content&quot;&gt;
+              &lt;ul&gt;
+                &lt;li class=&quot;icon--phone&quot;&gt;+1 (800) 555-5555&lt;/li&gt;
+                &lt;li&gt;&lt;a class=&quot;icon--email&quot; href=&quot;#&quot;&gt;info@company.com&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;icon--address&quot;&gt;Street Address &lt;br&gt;City, Zip Code&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;footer__right&quot;&gt;
+        &lt;nav aria-labelledby=&quot;footer-resources&quot; class=&quot;footer__header&quot;&gt;
+          &lt;h2 class=&quot;footer__title&quot; id=&quot;footer-resources&quot;&gt;Resources&lt;/h2&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Press&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Jobs&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Charity&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Privacy&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;l-center&quot;&gt;
+    &lt;div class=&quot;footer__flex&quot;&gt;
+      &lt;div class=&quot;footer__left-social&quot;&gt;
+        &lt;div class=&quot;footer__social&quot;&gt;
+          &lt;nav aria-labelledby=&quot;footer-social-links&quot; class=&quot;navigation navigation--social&quot;&gt;
+            &lt;h2 class=&quot;visuallyhidden&quot; id=&quot;footer-scoial-links&quot;&gt;Social Media Links&lt;/h2&gt;
+            &lt;ul class=&quot;navigation__menu menu&quot; id=&quot;footer-social-links&quot;&gt;
+              &lt;li class=&quot;navigation__link navigation__link--icon first&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;icon icon--facebook&quot;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;navigation__link navigation__link--icon&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;icon icon--instagram&quot;&gt;Instagram&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;navigation__link navigation__link--icon&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;icon icon--twitter&quot;&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+              &lt;li class=&quot;navigation__link navigation__link--icon last&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;icon icon--youtube&quot;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/nav&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;footer__right-search&quot;&gt;
+        &lt;div role=&quot;search&quot;&gt;
+          &lt;input type=&quot;search&quot; name=&quot;search&quot; aria-label=&quot;Search&quot;&gt;
+          &lt;button type=&quot;submit&quot;&gt;Search&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;footer__credits&quot;&gt;
+    &lt;div class=&quot;l-center&quot;&gt;
+      &lt;p class=&quot;footer__copyright&quot;&gt;All rights reserved A11Y Style Guide ©2017&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+</code></pre>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </section>
+                     <section id="kssref-navigation-navigation-mobile" class="kss-section kss-depth-2">
+            <div class="kss-style">
+                            <h2 class="kss-title kss-title--level-2">
+                <a class="kss-title__permalink" href="#kssref-navigation-navigation-mobile">
+                    Mobile Navigation
+                  </a>
+              </h2>
+
+                            <div class="kss-description">
+                <ul>
  <li>Use the <code>&lt;button&gt;</code> element for your mobile navigation icon.</li>
  <li>If you use an icon that is purely decoration, declare <code>alt=&quot;&quot;</code>, as no additional information is needed. If the icon you are using <em>is</em> important to the functionality, then supply additional <code>alt=&quot;_descriptive text goes here_&quot;</code> information.</li>
  <li>It is helpful to all users when you add descriptive text when displaying a mobile icon to give more context to the button&#39;s purpose.</li>
@@ -386,15 +806,13 @@
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#navbaricon_guide">WCAG 2.0 Guidelines</a></h3><div id="navbaricon_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</p></div><div class="markup"></div></section>
 
 
-                </div>
-              
-                          </div>
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
 
-                          <div class="kss-modifier-block">
-
-                <div class="kss-modifier kss-modifier-original">
-                  <div class="kss-modifier-example">
-                    <section class="navbar-mobile-icon">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="navbar-mobile-icon">
   <button class="menu-toggle" id="menu-toggle-ex1" aria-expanded="false" aria-controls="nav-menu-ex-1"><span class="screen-reader-text">Menu</span>
     <svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
       <g class="svg-menu-toggle">
@@ -416,13 +834,15 @@
   </button>
 </section>
 
-                  </div>
                 </div>
+              </div>
 
-                                                <div class="kss-markup">
-                  <button class="js-show-markup">Show Markup Example</button>
-                  <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;navbar-mobile-icon&quot;&gt;
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;navbar-mobile-icon&quot;&gt;
   &lt;button class=&quot;menu-toggle&quot; id=&quot;menu-toggle-ex1&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;nav-menu-ex-1&quot;&gt;&lt;span class=&quot;screen-reader-text&quot;&gt;Menu&lt;/span&gt;
     &lt;svg class=&quot;icon icon-menu-toggle&quot; aria-hidden=&quot;true&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 100 100&quot;&gt;
       &lt;g class=&quot;svg-menu-toggle&quot;&gt;
@@ -444,27 +864,27 @@
   &lt;/button&gt;
 &lt;/section&gt;
 </code></pre>
-                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
-                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
-                  </template>
-                </div>
-                              </div>
-
-                                    </section>
-                            <section id="kssref-navigation-pagination" class="kss-section kss-depth-2">
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </section>
+                     <section id="kssref-navigation-pagination" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
                 <a class="kss-title__permalink" href="#kssref-navigation-pagination">
-                  Pagination
-                </a>
+                    Pagination
+                  </a>
               </h2>
 
-                              <div class="kss-description">
-                  <ul>
+                            <div class="kss-description">
+                <ul>
  <li>Place the pager in a <code>&lt;nav&gt;</code> element when you can.</li>
  <li>If you do not use a <code>&lt;nav&gt;</code> element, you need to add <code>role=&quot;navigation&quot;</code> to the markup. <strong>Note:</strong> this role is implied when you use the <code>&lt;nav&gt;</code> element so it is a bit redundant to use both at the same time.</li>
  <li>The markup includes an <code>aria-label=&quot;pagination&quot;</code> to describe the type of navigation.</li>
  <li>Add <code>aria-current=&quot;page&quot;</code> to the link that points to the current page. This will tell AT that the focused link is pointing to the current page.</li>
+ <li>Add <code>aria-disabled=&quot;true&quot;</code> to the link when the link is disabled.</li>
 </ul>
 
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#pagination_res">Resources</a></h3><div id="pagination_res" class="atblock__panel"><ul><li><a href="http://w3c.github.io/aria/aria/aria.html#aria-current" target="_blank">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li><li><a href="http://tink.uk/using-the-aria-current-attribute/" target="_blank">Using the aria-current attribute</a></li></ul></div></section>
@@ -474,76 +894,370 @@
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#pagination_guide">WCAG 2.0 Guidelines</a></h3><div id="pagination_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-location" target="_blank">2.4.8 Location</a> - Information about the user&#39;s location within a set of Web pages is available. (Level AAA)</p></div><div class="markup"></div></section>
 
 
-                </div>
-              
-                          </div>
+              </div>
+                           </div>
+                        <div class="kss-modifier-block">
 
-                          <div class="kss-modifier-block">
-
-                <div class="kss-modifier kss-modifier-original">
-                  <div class="kss-modifier-example">
-                    <section class="pagination-section">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <section class="pagination-section">
+  <h3>Default State</h3>
   <nav aria-label="pagination">
     <ul class="pagination">
-      <li class="page-item">
-        <a class="page-link" href="#" aria-label="previous">
-          <span class="visuallyhidden">Previous set of pages</span>
-          <span aria-hidden="true" role="presentation">Previous</span>
+      <li class="pagination__item pagination__item--previous-group">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Previous
+            <span>set of pages</span>
+          </span>
         </a>
       </li>
-      <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>1</a></li>
-      <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>2</a></li>
-      <li class="page-item active"><a class="page-link" href="#" aria-current="page"><span class="visuallyhidden">page</span>3</a></li>
-      <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>4</a></li>
-      <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>5</a></li>
-      <li class="page-item ml-0_5">
-        <a class="page-link" href="#" aria-label="Next">
-          <span class="visuallyhidden">Next set of pages</span>
-          <span aria-hidden="true" role="presentation">Next</span>
+      <li class="pagination__item pagination__item--previous-page">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Previous
+            <span>page</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>1
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>2
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--is-active">
+        <a class="pagination__link" href="#" aria-current="page"><span class="visuallyhidden">page</span>3</a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>4
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>5
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--next-page">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Next
+            <span>page</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--next-group">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Next
+            <span>set of pages</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="break"></div>
+  <h3>Disabled Previous/Next Group Link State</h3>
+  <nav aria-label="pagination">
+    <ul class="pagination">
+      <li class="pagination__item pagination__item--previous-group">
+        <a class="pagination__link pagination__link--is-disabled" href="#" aria-disabled="true">
+          <span class="visuallyhidden">
+            Previous
+            <span>set of pages</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--previous-page">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Previous
+            <span>page</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>1
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>2
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#"><span class="visuallyhidden">page</span>3</a>
+      </li>
+      <li class="pagination__item pagination__item--is-active">
+        <a class="pagination__link" href="#" aria-current="page">
+          <span class="visuallyhidden">page </span>4
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>5
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--next-page">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Next
+            <span>page</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--next-group">
+        <a class="pagination__link pagination__link--is-disabled" href="#" aria-disabled="true">
+          <span class="visuallyhidden">
+            Next
+            <span>set of pages</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="break"></div>
+  <h3>Disabled Previous/Next Page Link State</h3>
+  <nav aria-label="pagination">
+    <ul class="pagination">
+      <li class="pagination__item pagination__item--previous-page">
+        <a class="pagination__link pagination__link--is-disabled" href="#" aria-disabled="true">
+          <span class="visuallyhidden">
+            Previous
+            <span>page</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>1
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>2
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#"><span class="visuallyhidden">page</span>3</a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>4
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--is-active">
+        <a class="pagination__link" href="#" aria-current="page">
+          <span class="visuallyhidden">page </span>5
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--next-page">
+        <a class="pagination__link pagination__link--is-disabled" href="#" aria-disabled="true">
+          <span class="visuallyhidden">
+            Next
+            <span>page</span>
+          </span>
         </a>
       </li>
     </ul>
   </nav>
 </section>
 
-                  </div>
                 </div>
+              </div>
 
-                                                <div class="kss-markup">
-                  <button class="js-show-markup">Show Markup Example</button>
-                  <template>
-                    <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;pagination-section&quot;&gt;
+                             <div class="kss-markup">
+                <button type="button" class="js-show-markup">
+                      Show Markup Example
+                    </button>
+                <template>
+                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;pagination-section&quot;&gt;
+  &lt;h3&gt;Default State&lt;/h3&gt;
   &lt;nav aria-label=&quot;pagination&quot;&gt;
     &lt;ul class=&quot;pagination&quot;&gt;
-      &lt;li class=&quot;page-item&quot;&gt;
-        &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;previous&quot;&gt;
-          &lt;span class=&quot;visuallyhidden&quot;&gt;Previous set of pages&lt;/span&gt;
-          &lt;span aria-hidden=&quot;true&quot; role=&quot;presentation&quot;&gt;Previous&lt;/span&gt;
+      &lt;li class=&quot;pagination__item pagination__item--previous-group&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Previous
+            &lt;span&gt;set of pages&lt;/span&gt;
+          &lt;/span&gt;
         &lt;/a&gt;
       &lt;/li&gt;
-      &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;1&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;2&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;page-item active&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-current=&quot;page&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page&lt;/span&gt;3&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;4&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;5&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;page-item ml-0_5&quot;&gt;
-        &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;
-          &lt;span class=&quot;visuallyhidden&quot;&gt;Next set of pages&lt;/span&gt;
-          &lt;span aria-hidden=&quot;true&quot; role=&quot;presentation&quot;&gt;Next&lt;/span&gt;
+      &lt;li class=&quot;pagination__item pagination__item--previous-page&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Previous
+            &lt;span&gt;page&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;1
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;2
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--is-active&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot; aria-current=&quot;page&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page&lt;/span&gt;3&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;4
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;5
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--next-page&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Next
+            &lt;span&gt;page&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--next-group&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Next
+            &lt;span&gt;set of pages&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Disabled Previous/Next Group Link State&lt;/h3&gt;
+  &lt;nav aria-label=&quot;pagination&quot;&gt;
+    &lt;ul class=&quot;pagination&quot;&gt;
+      &lt;li class=&quot;pagination__item pagination__item--previous-group&quot;&gt;
+        &lt;a class=&quot;pagination__link pagination__link--is-disabled&quot; href=&quot;#&quot; aria-disabled=&quot;true&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Previous
+            &lt;span&gt;set of pages&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--previous-page&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Previous
+            &lt;span&gt;page&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;1
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;2
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page&lt;/span&gt;3&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--is-active&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot; aria-current=&quot;page&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;4
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;5
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--next-page&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Next
+            &lt;span&gt;page&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--next-group&quot;&gt;
+        &lt;a class=&quot;pagination__link pagination__link--is-disabled&quot; href=&quot;#&quot; aria-disabled=&quot;true&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Next
+            &lt;span&gt;set of pages&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+
+  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
+  &lt;h3&gt;Disabled Previous/Next Page Link State&lt;/h3&gt;
+  &lt;nav aria-label=&quot;pagination&quot;&gt;
+    &lt;ul class=&quot;pagination&quot;&gt;
+      &lt;li class=&quot;pagination__item pagination__item--previous-page&quot;&gt;
+        &lt;a class=&quot;pagination__link pagination__link--is-disabled&quot; href=&quot;#&quot; aria-disabled=&quot;true&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Previous
+            &lt;span&gt;page&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;1
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;2
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;visuallyhidden&quot;&gt;page&lt;/span&gt;3&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;4
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--is-active&quot;&gt;
+        &lt;a class=&quot;pagination__link&quot; href=&quot;#&quot; aria-current=&quot;page&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;page &lt;/span&gt;5
+        &lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;pagination__item pagination__item--next-page&quot;&gt;
+        &lt;a class=&quot;pagination__link pagination__link--is-disabled&quot; href=&quot;#&quot; aria-disabled=&quot;true&quot;&gt;
+          &lt;span class=&quot;visuallyhidden&quot;&gt;
+            Next
+            &lt;span&gt;page&lt;/span&gt;
+          &lt;/span&gt;
         &lt;/a&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/nav&gt;
 &lt;/section&gt;
 </code></pre>
-                    <button class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
-                    <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
-                  </template>
-                </div>
-                              </div>
-
-                                    </section>
-                    </article>
+                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
+                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
+                    </template>
+              </div>
+                          </div>
+                       </section>
+                  </div>
+              </article>
     </main>
 
     <a href="#kss-main-content" class="back-to-top">
@@ -551,10 +1265,10 @@
         Back to top
       </span>
     </a>
-
-  </div>
+  </div> <!-- /.kss-wrapper -->
 
 <!-- SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-once/2.1.2/jquery.once.min.js"></script>
 <script src="https://vadikom.github.io/smartmenus/src/libs/jquery/jquery.js"></script>
@@ -562,21 +1276,26 @@
 <script src="kss-assets/kss.js"></script>
 <script src="kss-assets/rainbow.min.js"></script>
 <script src="kss-assets/main.js"></script>
+<script src="../js/accordion.js"></script>
+<script src="../js/aria-card-flip.js"></script>
 <script src="../js/aria-switch.js"></script>
 <script src="../js/aria-toggle.js"></script>
 <script src="../js/aria-tooltips.js"></script>
 <script src="../js/back-to-top.js"></script>
-<script src="../js/button-alert.js"></script>
+<script src="../js/button-state.js"></script>
 <script src="../js/button.js"></script>
 <script src="../js/clipboard.min.js"></script>
 <script src="../js/copy-button.js"></script>
 <script src="../js/jump-link-fix.js"></script>
+<script src="../js/menu.js"></script>
 <script src="../js/mobile-menu-icon.js"></script>
 <script src="../js/mobile-menu.js"></script>
+<script src="../js/px-video.js"></script>
 <script src="../js/sidebar-slide.js"></script>
+<script src="../js/strings.js"></script>
 <script src="../js/tables.js"></script>
+<script src="../js/tabs.js"></script>
 
-
-<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
 </body>
+
 </html>

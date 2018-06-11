@@ -1,0 +1,66 @@
+// Accordion
+//
+// Markup: accordion.twig
+//
+// Style guide: Navigation.accordion
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.accordion {
+
+  &__heading {
+    margin: 0;
+  }
+
+  &__trigger {
+    background-repeat: no-repeat;
+    background-image: url('#{$asset-path}/plus_round_red.png'); // replace with plus
+    background-size: 28px;
+    background-position: 97% 50%;
+    box-shadow: none;
+    line-height: 1.5;
+    margin: $padding-xsm 0;
+    width: 100%;
+    text-align: left;
+    padding: 10px 40px 10px 16px;
+    font-size: 1rem;
+    color: $color-cherry;
+    background-color: $color-alabaster;
+    border: 1px solid $color-silver;
+    border-bottom: $border-regular;
+    display: block;
+    text-decoration: none;
+    text-transform: none;
+
+    @include breakpoint($bp-sm) {
+      background-size: 32px;
+      background-position: 98% 50%;
+    }
+
+    &[aria-expanded='true'] {
+      content: '';
+      background: url('#{$asset-path}/minus_round_red.png'); // replace with minus
+      background-size: 28px;
+      background-repeat: no-repeat;
+      background-position: 97% 50%;
+      background-color: $color-alabaster;
+
+      @include breakpoint($bp-sm) {
+        background-size: 32px;
+        background-position: 98% 50%;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-cherry;
+      border: 1px solid $color-ruby;
+    }
+  }
+
+  &__content {
+    display: none;
+    padding: 10px 16px;
+  }
+}

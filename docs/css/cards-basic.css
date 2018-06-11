@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.card {
+  position: relative;
+  max-width: 300px;
+  display: inline-block; }
+
+.card__image img {
+  max-width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+  width: 300px;
+  height: 300px; }
+
+.card__title {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.65);
+  margin-bottom: 6px;
+  border-radius: 0 0 4px 4px;
+  text-align: center; }
+  .card__title a {
+    color: #ffffff; }

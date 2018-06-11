@@ -1,0 +1,80 @@
+// Tabs - draft
+//
+// <ul>
+//  <li>Be mindful of using tabs, as they are less discoverable by design.</li>
+//  <li>Once a tab button is focused, other tabs can be selected with the arrow keys.</li>
+//  <li>A tab's contents can be accessed via Tab (if there are focusable elements in the tab well) or PgDn (if there are no focusable elements in the tab well).</li>
+//  <li>Be sure to update the values of the `aria-posinset` and `aria-setsize` attributes if you have more than three tabs.</li>
+// </ul>
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tabs_res">Resources</a></h3><div id="tabs_res" class="atblock__panel"><ul><li><a href="https://www.deque.com/blog/a11y-support-series-part-1-aria-tab-panel-accessibility/" target="_blank">ARIA Tab Panel Accessibility</a></li></ul></div></section>
+//
+//
+//
+// <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tabs_guide">WCAG 2.0 Guidelines</a></h3><div id="tabs_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#keyboard-operation-keyboard-operable" target="_blank">2.1.1 Keyboard</a> - All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints. (Level A)</section>
+//
+//
+//
+// Markup: tabs.twig
+//
+// Style guide: Structure.tabs
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+$width-border: 1px;
+$color-border: $color-alto;
+$border: $width-border solid $color-border;
+
+.tabs {
+
+  .tabs__navlist {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    margin-left: $padding-xsm;
+  }
+
+  .tabs__nav-item {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+    font-size: $padding-sm;
+
+    &.is-active {
+
+      .tabs__nav-trigger {
+        background: $color-cherry;
+        color: $color-white;
+        font-weight: 600;
+        border-radius: $border-rd-sm $border-rd-sm 0 0;
+      }
+    }
+
+    .tabs__nav-trigger {
+      box-shadow: none;
+      line-height: normal;
+      border: $border;
+      border-bottom: 0;
+      background: $color-alabaster;
+      color: $color-midnight;
+      margin: 0 5px;
+      border-radius: $border-rd-sm $border-rd-sm 0 0;
+    }
+  }
+
+  .tabs__panels {
+    border: $border;
+    padding: $padding-xsm $padding-xsm $padding-sm;
+  }
+
+  .tabs__panel {
+    display: none;
+    padding: $padding-xsm;
+
+    &.is-current {
+      display: block;
+    }
+  }
+}

@@ -136,3 +136,9 @@
 		border-right-style: solid;
 	}
 }
+
+@mixin image-replace($indent: 99999999%) {
+  text-indent: $indent;
+  overflow: hidden;
+  white-space: nowrap;
+}

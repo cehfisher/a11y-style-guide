@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "modifier_class": "photo-grid-names",
+      "link": "https://en.wikipedia.org/wiki/Mae_Jemison",
+      "photo": "<a href=\"#\"><img src=\"../assets/mae-jemison.jpg\" alt=\"Mae Carol Jemison in an orange space suit holding their helmet to their side\"></a>",
+      "name": "Mae Carol Jemison",
+      "title": "Astronaut, NASA",
+      "email": "email@email.com"
+    },
+    {
+      "modifier_class": "photo-grid-names",
+      "link": "https://en.wikipedia.org/wiki/Gus_Grissom",
+      "photo": "<a href=\"#\"><img src=\"../assets/gus-grissom.jpg\" alt=\"Gus Grissom holding replica space rocket with American flag in the background\"></a>",
+      "name": "Gus Grissom",
+      "title": "Astronaut, NASA",
+      "email": "email@email.com"
+    },
+    {
+      "modifier_class": "photo-grid-names",
+      "link": "https://en.wikipedia.org/wiki/Tracy_Caldwell_Dyson",
+      "photo": "<a href=\"#\"><img src=\"../assets/tracy-caldwell.jpg\" alt=\"Tracy Caldwell in an orange space suit with their helment in front of them\"></a>",
+      "name": "Tracy Caldwell Dyson",
+      "title": "Astronaut, NASA",
+      "email": "email@email.com"
+    }
+  ]
+}

@@ -1,21 +1,168 @@
 <section class="pagination-section">
+  <h3>Default State</h3>
   <nav aria-label="pagination">
     <ul class="pagination">
-      <li class="page-item">
-        <a class="page-link" href="#" aria-label="previous">
-          <span class="visuallyhidden">Previous set of pages</span>
-          <span aria-hidden="true" role="presentation">Previous</span>
+      <li class="pagination__item pagination__item--previous-group">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Previous
+            <span>set of pages</span>
+          </span>
         </a>
       </li>
-      <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>1</a></li>
-      <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>2</a></li>
-      <li class="page-item active"><a class="page-link" href="#" aria-current="page"><span class="visuallyhidden">page</span>3</a></li>
-      <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>4</a></li>
-      <li class="page-item"><a class="page-link" href="#"><span class="visuallyhidden">page </span>5</a></li>
-      <li class="page-item ml-0_5">
-        <a class="page-link" href="#" aria-label="Next">
-          <span class="visuallyhidden">Next set of pages</span>
-          <span aria-hidden="true" role="presentation">Next</span>
+      <li class="pagination__item pagination__item--previous-page">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Previous
+            <span>page</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>1
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>2
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--is-active">
+        <a class="pagination__link" href="#" aria-current="page"><span class="visuallyhidden">page</span>3</a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>4
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>5
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--next-page">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Next
+            <span>page</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--next-group">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Next
+            <span>set of pages</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="break"></div>
+  <h3>Disabled Previous/Next Group Link State</h3>
+  <nav aria-label="pagination">
+    <ul class="pagination">
+      <li class="pagination__item pagination__item--previous-group">
+        <a class="pagination__link pagination__link--is-disabled" href="#" aria-disabled="true">
+          <span class="visuallyhidden">
+            Previous
+            <span>set of pages</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--previous-page">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Previous
+            <span>page</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>1
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>2
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#"><span class="visuallyhidden">page</span>3</a>
+      </li>
+      <li class="pagination__item pagination__item--is-active">
+        <a class="pagination__link" href="#" aria-current="page">
+          <span class="visuallyhidden">page </span>4
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>5
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--next-page">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">
+            Next
+            <span>page</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--next-group">
+        <a class="pagination__link pagination__link--is-disabled" href="#" aria-disabled="true">
+          <span class="visuallyhidden">
+            Next
+            <span>set of pages</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="break"></div>
+  <h3>Disabled Previous/Next Page Link State</h3>
+  <nav aria-label="pagination">
+    <ul class="pagination">
+      <li class="pagination__item pagination__item--previous-page">
+        <a class="pagination__link pagination__link--is-disabled" href="#" aria-disabled="true">
+          <span class="visuallyhidden">
+            Previous
+            <span>page</span>
+          </span>
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>1
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>2
+        </a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#"><span class="visuallyhidden">page</span>3</a>
+      </li>
+      <li class="pagination__item">
+        <a class="pagination__link" href="#">
+          <span class="visuallyhidden">page </span>4
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--is-active">
+        <a class="pagination__link" href="#" aria-current="page">
+          <span class="visuallyhidden">page </span>5
+        </a>
+      </li>
+      <li class="pagination__item pagination__item--next-page">
+        <a class="pagination__link pagination__link--is-disabled" href="#" aria-disabled="true">
+          <span class="visuallyhidden">
+            Next
+            <span>page</span>
+          </span>
         </a>
       </li>
     </ul>

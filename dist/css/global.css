@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 /* Document
    ========================================================================== */
 /**
@@ -452,5 +453,4 @@ dl {
 
 li {
   margin: 0;
-  padding: 0;
-  list-style: disc; }
+  padding: 0; }

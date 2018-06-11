@@ -1,0 +1,248 @@
+// Flip Hover Card
+//
+// Markup: cards-hover.twig
+//
+// Style guide: Cards.cards-flip-hover
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+// Base styling for all cards, plus hover effect
+.cards {
+  @include clearfix;
+  margin: 0 auto;
+  padding: 0 $padding-md-lg;
+
+  @include breakpoint ($bp-sm) {
+    max-width: 600px;
+  }
+
+  @include breakpoint ($bp-lg) {
+    max-width: 1200px;
+    padding: 0;
+  }
+
+  .link {
+    position: relative;
+    text-align: center;
+    margin-bottom: $padding-md-lg;
+    bottom: $padding-md-lg;
+  }
+
+  .l-center {
+    padding: 0;
+    margin: 0 auto;
+    clear: both;
+  }
+
+  button {
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+  }
+}
+
+.cards__title {
+  padding: $padding-sm;
+  margin: $padding-md-lg $padding-md-lg 0;
+  text-align: center;
+  clear: both;
+  font-size: $padding-md;
+
+  @include breakpoint ($bp-sm) {
+    font-size: $padding-lg;
+  }
+}
+
+.cards__content {
+  @include clearfix;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include breakpoint ($bp-sm) {
+    max-width: 600px;
+  }
+
+  @include breakpoint ($bp-lg) {
+    max-width: 1060px;
+  }
+}
+
+.cards__item {
+  @include box-shadow;
+  border-radius: $border-rd-sm;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: $color-white;
+  max-width: 225px;
+  max-height: 300px;
+  margin-bottom: $padding-md;
+
+  &:hover {
+    .cards__back {
+      transform: translateY(-100%);
+      animation-duration: $anim-speed-moderate;
+    }
+  }
+
+  .button {
+    // tighten padding between mobile and tablet
+    @include breakpoint ($bp-sm $bp-md) {
+      padding: $padding-sm;
+      min-height: auto;
+    }
+  }
+}
+
+.cards__item-content {
+  padding: $padding-sm $padding-md $padding-md;
+  background: rgba($color-white, 0.9);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-60px);
+  transition: transform $anim-standard $anim-speed-moderate;
+}
+
+.cards__item-description {
+  display: block;
+  text-align: left;
+  margin-bottom: 0;
+  font-size: $padding-sm;
+  color: $color-midnight;
+  height: 175px;
+  overflow: hidden;
+}
+
+.cards__item-image {
+  margin: auto;
+  display: block;
+  height: 170px;
+  width: 225px;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.cards__item-title {
+  @include font-stack-base;
+  margin: 0;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  clear: both;
+  padding: $padding-xsm;
+  text-align: center;
+  display: flex;
+  line-height: 1;
+  height: 85px;
+
+  a {
+    text-align: center;
+  }
+
+  .cards--slideout & {
+    color: $color-cherry;
+    text-align: center;
+  }
+}
+
+.cards__item-top {
+  @include clearfix;
+  padding: $padding-sm $padding-sm $padding-xsm;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: $padding-sm;
+}
+
+.cards__back .cards__item-top {
+  @include clearfix;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: $padding-sm;
+  margin: 0 (-$padding-sm);
+}
+
+.cards__item-below {
+  text-align: center;
+  font-size: $padding-sm;
+  padding: $padding-xsm $padding-sm;
+  color: $color-midnight;
+  text-shadow: none;
+}
+
+.cards__items {
+  @include clearfix;
+  margin: $padding-lg 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.cards__column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: 300px;
+  min-width: 225px;
+}
+
+.cards__front {
+  min-height: 202px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+
+  .cards__item-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    height: 100px;
+  }
+}
+
+.cards__back {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  background: $color-white;
+  transform: translateY(0);
+  transition: transform $anim-standard $anim-speed-moderate;
+  line-height: 1.2;
+}
+
+.cards__description {
+  margin-bottom: $padding-md;
+  margin: $padding-sm auto;
+  text-align: center;
+
+  @include breakpoint ($bp-sm) {
+    margin-bottom: $padding-lg;
+  }
+}

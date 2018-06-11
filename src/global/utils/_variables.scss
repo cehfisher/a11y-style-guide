@@ -21,9 +21,25 @@ $padding-xl: 6rem;
 $padding-xxl: 8rem;
 $padding-xxxl: 10rem;
 
+$zi-higher: 100;
+$zi-highest: 50;
+$zi-high: 40;
+$zi-medium: 30;
+$zi-low: 20;
+$zi-lowest: 10;
+$zi-ground: 0;
+$zi-below-ground: -1;
+
 $shadow-sm: 0 0 2px rgba(0, 0, 0, 0.5);
 $shadow-md: 0 2px 2px rgba(136, 139, 141, 0.5);
 $shadow-lg: 0 4px 2px rgba(136, 139, 141, 0.5);
+
+$anim-standard: ease-in-out;
+$anim-speed-faster: 100ms;
+$anim-speed-fast: 250ms;
+$anim-speed-moderate: 500ms;
+$anim-speed-slow: 800ms;
+$anim-speed-slower: 1000ms;
 
 $tip--color-white: #fff !default;
 $tip--color-black: #000 !default;
@@ -37,3 +53,7 @@ $tip--compile-left: true !default;
 $tip--compile-right: true !default;
 $tip--delay: 1s !default;
 $tip--no-delay: 0.18s !default;
+
+$bio-grid-item--height: 202px;
+$bio-grid-item--width: 150px;
+$bio-list-image--width: 150px;

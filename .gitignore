@@ -9,3 +9,13 @@ npm-debug.log
 
 # Ignore any map files. These don't need to be committed.
 *.map
+
+# Ignore OS Mac (mostly) & Windows files
+._*
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+Desktop.ini
+ehthumbs.db
+Thumbs.db

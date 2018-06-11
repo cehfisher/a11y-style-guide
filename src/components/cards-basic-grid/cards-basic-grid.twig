@@ -1,0 +1,12 @@
+<section class="card-grid">
+  {% for item in items %}
+    {%
+      include '@a11y_style_guide/cards-basic/cards-basic.twig' with {
+        'image': item.image,
+        'title': item.title,
+        'link': item.link,
+        'classes': 'card__item card-grid__item',
+      } only
+    %}
+  {% endfor %}
+</section>

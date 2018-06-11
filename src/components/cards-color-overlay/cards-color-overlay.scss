@@ -1,0 +1,216 @@
+// Color Overlay Card
+//
+// Markup: cards-color-overlay.twig
+//
+// Style guide: Cards.cards-color-overlay
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.color-overlay-cards {
+
+  .three-photos {
+    @include clearfix;
+    margin: 0 auto;
+    padding: $padding-md $padding-md $padding-lg;
+    position: relative;
+    text-align: center;
+
+    @include breakpoint($bp-sm) {
+      max-width: 400px;
+    }
+
+    @include breakpoint($bp-md) {
+      max-width: 1010px;
+      padding: 0 0 $padding-md-lg $padding-sm;
+    }
+
+    li {
+      list-style: none;
+      margin-bottom: $padding-xl;
+    }
+
+    .col {
+      float: none;
+      width: 100%;
+
+      .image-overlay::before {
+        border-radius: $border-rd-sm;
+      }
+
+      .highlight__img-overlay {
+        text-transform: uppercase;
+        color: $color-white;
+        margin-top: -64px;
+        padding: $padding-md;
+        background: $color-midnight;
+        opacity: 0.90;
+        border-radius: $border-rd-sm;
+        width: 100%;
+        max-width: 860px;
+        position: absolute;
+        bottom: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        @include breakpoint($bp-xsm) {
+          border-radius: 0 0 $border-rd-sm $border-rd-sm;
+          height: auto;
+        }
+      }
+
+      .highlight__image {
+        max-width: 770px;
+        width: 100%;
+        margin: auto;
+        position: relative;
+
+        img {
+          border-radius: $border-rd-sm;
+          width: 100%;
+          min-height: 125px;
+          border: 0;
+        }
+      }
+
+      p {
+        text-transform: uppercase;
+      }
+
+      @include breakpoint($bp-md) {
+        float: left;
+        width: 29%;
+        margin: 2%;
+      }
+    }
+  }
+}
+
+// Colors
+.image-overlay {
+
+  &.blue-overlay::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: $zi-ground;
+    background: $color-cornflower;
+    opacity: 0.65;
+  }
+
+  &.green-overlay::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: $zi-ground;
+    background: $color-grass;
+    opacity: 0.65;
+  }
+
+  &.purple-overlay::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: $zi-ground;
+    background: $color-eggplant;
+    opacity: 0.65;
+  }
+
+  &.red-overlay::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: $zi-ground;
+    background: $color-cherry;
+    opacity: 0.55;
+  }
+
+  &.dark-blue-overlay::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: $zi-ground;
+    background: $color-navy;
+    opacity: 0.65;
+  }
+
+  &.dark-red-overlay::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: $zi-ground;
+    background: $color-ruby;
+    opacity: 0.55;
+  }
+
+  &.gray-overlay::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: $zi-ground;
+    background: $color-silver;
+    opacity: 0.65;
+  }
+
+  &.white-overlay::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: $zi-ground;
+    background: $color-white;
+    opacity: 0.65;
+  }
+
+  // For images that need more opacity
+  &.dark-overlay::before {
+    opacity: 0.85;
+  }
+
+  // White gradient opacity change left (white) to right (transparent)
+  &.gradient-ltr::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: $zi-ground;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0.65));
+  }
+}

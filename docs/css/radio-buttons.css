@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .radio.row label {
   display: block;
   float: left; }
@@ -27,7 +28,8 @@
   left: 0;
   top: 1px;
   background: #f4f4f4;
-  border-radius: 50%; }
+  border-radius: 50%;
+  border: 1px solid #bbbbbb; }
 
 .radio label::after {
   left: 4px;
