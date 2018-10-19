@@ -16,9 +16,14 @@
   z-index: 2; }
 
 .card__back[aria-hidden='false'] {
+  -webkit-transform-origin: center top;
+  -ms-transform-origin: center top;
   transform-origin: center top;
+  -webkit-animation-duration: 500ms;
   animation-duration: 500ms;
+  -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
   animation-direction: normal; }
 
 .card__front,
@@ -30,26 +35,37 @@
   height: 250px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transition: transform 0.3s; }
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s; }
 
 .card__back {
+  -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
   position: absolute;
   padding: 1rem 1.5rem;
   background: #ffffff; }
   .card__back .cards__item-description {
     height: 155px;
+    -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
     visibility: hidden; }
 
 .card__front {
+  -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg); }
 
 .card.effect__click.flipped .card__front {
+  -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg); }
 
 .card.effect__click.flipped .card__back {
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
   transform: scale(1, 1); }
   .card.effect__click.flipped .card__back .cards__item-description {
     visibility: visible;
+    -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg); }

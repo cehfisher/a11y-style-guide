@@ -4,6 +4,8 @@
   border-radius: 32px;
   display: inline-block;
   position: relative;
+  -webkit-transition: background 0.1s ease-in-out;
+  -o-transition: background 0.1s ease-in-out;
   transition: background 0.1s ease-in-out;
   border: 0;
   width: 75px;
@@ -32,6 +34,8 @@
     width: 30px;
     top: 2px;
     left: 2px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s; }
   [data-action='aria-switch'][aria-checked='true'] span {
     background: #ffffff;
@@ -41,6 +45,8 @@
     width: 30px;
     top: 2px;
     left: 43px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
     transition: 0.4s; }
   [data-action='aria-switch'][aria-checked='true'] {
     background: #42dc42; }
@@ -68,6 +74,8 @@
       width: 30px;
       top: 2px;
       left: 2px;
+      -webkit-transition: 0.4s;
+      -o-transition: 0.4s;
       transition: 0.4s; }
   [data-action='aria-switch'].reverse[aria-checked='true'] {
     background: #ffffff; }
@@ -79,12 +87,16 @@
       width: 30px;
       top: 2px;
       left: 43px;
+      -webkit-transition: 0.4s;
+      -o-transition: 0.4s;
       transition: 0.4s; }
   [data-action='aria-switch'].flip {
     background: #f4f4f4;
     border-radius: 0;
     display: inline-block;
     position: relative;
+    -webkit-transition: background 0.1s ease-in-out;
+    -o-transition: background 0.1s ease-in-out;
     transition: background 0.1s ease-in-out;
     border: 0;
     width: 75px;
@@ -101,6 +113,8 @@
       width: 100%;
       top: 0;
       left: 0;
+      -webkit-transition: 0.4s;
+      -o-transition: 0.4s;
       transition: 0.4s; }
       [data-action='aria-switch'].flip span::after, [data-action='aria-switch'].flip span::before {
         display: block;
@@ -110,6 +124,8 @@
         margin: 0 auto;
         padding: 0.5rem;
         top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
         transform: translateY(-50%); }
   [data-action='aria-switch'].flip[aria-checked='false'] {
     background: #ffffff; }
@@ -140,4 +156,6 @@
   width: 30px;
   top: 2px;
   left: 43px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s; }
