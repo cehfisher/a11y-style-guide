@@ -88,7 +88,7 @@
                         <li class="kss-menu-item">
               <a href="section-structure.html"><span class="kss-ref">6</span><span class="kss-name">Structure</span></a>             </li>
                         <li class="kss-menu-item">
-              <a href="section-theme.html"><span class="kss-ref">7</span><span class="kss-name">This is the theme styling component for the style guide</span></a>             </li>
+              <a href="section-theme.html"><span class="kss-ref">7</span><span class="kss-name">Theme</span></a>             </li>
                         <li class="kss-menu-item">
               <a href="section-resources.html"><span class="kss-ref">8</span><span class="kss-name">Resources</span></a>             </li>
                       </ul>
@@ -109,10 +109,10 @@
             <a href="https://github.com/cehfisher" target="_blank" class="social-link-github"><span class="visuallyhidden">Carie Fisher on GitHub</span></a>
           </div>
 
-                     <div id="kssref-cards-basic-card-grid" class="kss-section kss-depth-2">
+                     <div id="kssref-cards-cards-basic-grid" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-cards-basic-card-grid">
+                <a class="kss-title__permalink" href="#kssref-cards-cards-basic-grid">
                     Basic Card Grid
                   </a>
               </h2>
@@ -123,8 +123,55 @@
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
                   <section class="card-grid">
+  <section class="card">
+    <div class="card__link-wrapper">
+      <div class="card__image"><img src="../assets/butterfly.jpg" alt="Blue Morpho butterfly"></div>
+      <div class="card__title">
+        <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/" class="card__title--link">Blue Morpho</a>
+      </div>
+    </div>
   </section>
-
+  <section class="card">
+    <div class="card__link-wrapper">
+      <div class="card__image"><img src="../assets/gold-banded.jpg" alt="Gold-banded Forester butterfly"></div>
+      <div class="card__title">
+        <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/" class="card__title--link">Gold-banded Forester</a>
+      </div>
+    </div>
+  </section>
+  <section class="card">
+    <div class="card__link-wrapper">
+      <div class="card__image"><img src="../assets/starry.jpg" alt="Starry Night Cracker butterfly"></div>
+      <div class="card__title">
+        <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/" class="card__title--link">Starry Night Cracker</a>
+      </div>
+    </div>
+  </section>
+  <section class="card">
+    <div class="card__link-wrapper">
+      <div class="card__image"><img src="../assets/lacewing.jpg" alt="Red Lacewing butterfly"></div>
+      <div class="card__title">
+        <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/red/" class="card__title--link">Red Lacewing</a>
+      </div>
+    </div>
+  </section>
+  <section class="card">
+    <div class="card__link-wrapper">
+      <div class="card__image"><img src="../assets/swallowtail.jpg" alt="Emerald Swallowtail butterfly"></div>
+      <div class="card__title">
+        <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/green/" class="card__title--link">Emerald Swallowtail</a>
+      </div>
+    </div>
+  </section>
+  <section class="card">
+    <div class="card__link-wrapper">
+      <div class="card__image"><img src="../assets/glasswing.jpg" alt="Glasswing butterfly"></div>
+      <div class="card__title">
+        <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/gray-white/" class="card__title--link">Glasswing</a>
+      </div>
+    </div>
+  </section>
+</section>
                 </div>
               </div>
 
@@ -134,18 +181,55 @@
                     </button>
                 <template>
                       <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;card-grid&quot;&gt;
-  {% for item in items %}
-    {%
-      include &#039;@a11y_style_guide/cards-basic/cards-basic.twig&#039; with {
-        &#039;image&#039;: item.image,
-        &#039;title&#039;: item.title,
-        &#039;link&#039;: item.link,
-        &#039;classes&#039;: &#039;card__item card-grid__item&#039;,
-      } only
-    %}
-  {% endfor %}
-&lt;/section&gt;
-</code></pre>
+  &lt;section class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card__link-wrapper&quot;&gt;
+      &lt;div class=&quot;card__image&quot;&gt;&lt;img src=&quot;../assets/butterfly.jpg&quot; alt=&quot;Blue Morpho butterfly&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;card__title&quot;&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/&quot; class=&quot;card__title--link&quot;&gt;Blue Morpho&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card__link-wrapper&quot;&gt;
+      &lt;div class=&quot;card__image&quot;&gt;&lt;img src=&quot;../assets/gold-banded.jpg&quot; alt=&quot;Gold-banded Forester butterfly&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;card__title&quot;&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/&quot; class=&quot;card__title--link&quot;&gt;Gold-banded Forester&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card__link-wrapper&quot;&gt;
+      &lt;div class=&quot;card__image&quot;&gt;&lt;img src=&quot;../assets/starry.jpg&quot; alt=&quot;Starry Night Cracker butterfly&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;card__title&quot;&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/&quot; class=&quot;card__title--link&quot;&gt;Starry Night Cracker&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card__link-wrapper&quot;&gt;
+      &lt;div class=&quot;card__image&quot;&gt;&lt;img src=&quot;../assets/lacewing.jpg&quot; alt=&quot;Red Lacewing butterfly&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;card__title&quot;&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/red/&quot; class=&quot;card__title--link&quot;&gt;Red Lacewing&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card__link-wrapper&quot;&gt;
+      &lt;div class=&quot;card__image&quot;&gt;&lt;img src=&quot;../assets/swallowtail.jpg&quot; alt=&quot;Emerald Swallowtail butterfly&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;card__title&quot;&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/green/&quot; class=&quot;card__title--link&quot;&gt;Emerald Swallowtail&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card__link-wrapper&quot;&gt;
+      &lt;div class=&quot;card__image&quot;&gt;&lt;img src=&quot;../assets/glasswing.jpg&quot; alt=&quot;Glasswing butterfly&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;card__title&quot;&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/gray-white/&quot; class=&quot;card__title--link&quot;&gt;Glasswing&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/section&gt;</code></pre>
                       <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
                       <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
                     </template>

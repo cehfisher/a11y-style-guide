@@ -84,7 +84,7 @@
                       </a>
                 </li>
                                 <li class="kss-menu-item">
-                  <a href="#kssref-cards-basic-card-grid">
+                  <a href="#kssref-cards-cards-basic-grid">
                         <span class="kss-ref ">1.2</span>
                         <span class="kss-name">Basic Card Grid</span>
                       </a>
@@ -150,7 +150,7 @@
                         <li class="kss-menu-item">
               <a href="section-structure.html"><span class="kss-ref">6</span><span class="kss-name">Structure</span></a>             </li>
                         <li class="kss-menu-item">
-              <a href="section-theme.html"><span class="kss-ref">7</span><span class="kss-name">This is the theme styling component for the style guide</span></a>             </li>
+              <a href="section-theme.html"><span class="kss-ref">7</span><span class="kss-name">Theme</span></a>             </li>
                         <li class="kss-menu-item">
               <a href="section-resources.html"><span class="kss-ref">8</span><span class="kss-name">Resources</span></a>             </li>
                       </ul>
@@ -191,11 +191,11 @@
 
                             <div class="kss-description">
                 <ul>
- <li>Make sure you have tabbing focus indicators for all elements that need to be highlighted.</li>
- <li>Every `<img>` you add to your site needs to have an alt attribute. If the image is informational, set the `alt` equal to a *descriptive* alternative for that image.</li>
- <li>If the image is decorative or redundant to adjacent text, set `alt=""`, which conveys to assistive technology users that the image isn’t necessary for understanding the page.</li>
- <li>Avoid using generic strings like photo, image, or icon as `alt` values, as they don’t communicate valuable content to the user. Be as descriptive as possible.</li>
- <li>You can add `class="visuallyhidden"` with descriptive text to give more context to a button or link's purpose.</li>
+<li>Make sure you have tabbing focus indicators for all elements that need to be highlighted.</li>
+<li>Every <code>&lt;img&gt;</code> you add to your site needs to have an alt attribute. If the image is informational, set the <code>alt</code> equal to a <em>descriptive</em> alternative for that image.</li>
+<li>If the image is decorative or redundant to adjacent text, set <code>alt=&quot;&quot;</code>, which conveys to assistive technology users that the image isn’t necessary for understanding the page.</li>
+<li>Avoid using generic strings like photo, image, or icon as <code>alt</code> values, as they don’t communicate valuable content to the user. Be as descriptive as possible.
+-You can add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to a button or link's purpose.</li>
 </ul>
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#cards_res">Resources</a></h3><div id="cards_res" class="atblock__panel"><ul><li><a href="http://callmenick.com/post/css-transitions-transforms-animations-flipping-card" target="_blank">CSS Transitions, Transforms & Animations – Flipping Card</a></li></ul></div></section>
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#cards_guide">WCAG 2.0 Guidelines</a></h3><div id="cards_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1 (some exceptions). (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation" target="_blank">1.4.5 Images of Text</a> - If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)</p><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-focus-visible" target="_blank">2.4.7 Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. (Level AA)</p></div><div class="markup"></div></section>
@@ -238,10 +238,10 @@
               </div>
                           </div>
                        </section>
-                     <section id="kssref-cards-basic-card-grid" class="kss-section kss-depth-2">
+                     <section id="kssref-cards-cards-basic-grid" class="kss-section kss-depth-2">
             <div class="kss-style">
                             <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-cards-basic-card-grid">
+                <a class="kss-title__permalink" href="#kssref-cards-cards-basic-grid">
                     Basic Card Grid
                   </a>
               </h2>
@@ -252,8 +252,55 @@
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
                   <section class="card-grid">
+  <section class="card">
+    <div class="card__link-wrapper">
+      <div class="card__image"><img src="../assets/butterfly.jpg" alt="Blue Morpho butterfly"></div>
+      <div class="card__title">
+        <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/" class="card__title--link">Blue Morpho</a>
+      </div>
+    </div>
   </section>
-
+  <section class="card">
+    <div class="card__link-wrapper">
+      <div class="card__image"><img src="../assets/gold-banded.jpg" alt="Gold-banded Forester butterfly"></div>
+      <div class="card__title">
+        <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/" class="card__title--link">Gold-banded Forester</a>
+      </div>
+    </div>
+  </section>
+  <section class="card">
+    <div class="card__link-wrapper">
+      <div class="card__image"><img src="../assets/starry.jpg" alt="Starry Night Cracker butterfly"></div>
+      <div class="card__title">
+        <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/" class="card__title--link">Starry Night Cracker</a>
+      </div>
+    </div>
+  </section>
+  <section class="card">
+    <div class="card__link-wrapper">
+      <div class="card__image"><img src="../assets/lacewing.jpg" alt="Red Lacewing butterfly"></div>
+      <div class="card__title">
+        <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/red/" class="card__title--link">Red Lacewing</a>
+      </div>
+    </div>
+  </section>
+  <section class="card">
+    <div class="card__link-wrapper">
+      <div class="card__image"><img src="../assets/swallowtail.jpg" alt="Emerald Swallowtail butterfly"></div>
+      <div class="card__title">
+        <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/green/" class="card__title--link">Emerald Swallowtail</a>
+      </div>
+    </div>
+  </section>
+  <section class="card">
+    <div class="card__link-wrapper">
+      <div class="card__image"><img src="../assets/glasswing.jpg" alt="Glasswing butterfly"></div>
+      <div class="card__title">
+        <a target="_blank" href="https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/gray-white/" class="card__title--link">Glasswing</a>
+      </div>
+    </div>
+  </section>
+</section>
                 </div>
               </div>
 
@@ -263,18 +310,55 @@
                     </button>
                 <template>
                       <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;card-grid&quot;&gt;
-  {% for item in items %}
-    {%
-      include &#039;@a11y_style_guide/cards-basic/cards-basic.twig&#039; with {
-        &#039;image&#039;: item.image,
-        &#039;title&#039;: item.title,
-        &#039;link&#039;: item.link,
-        &#039;classes&#039;: &#039;card__item card-grid__item&#039;,
-      } only
-    %}
-  {% endfor %}
-&lt;/section&gt;
-</code></pre>
+  &lt;section class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card__link-wrapper&quot;&gt;
+      &lt;div class=&quot;card__image&quot;&gt;&lt;img src=&quot;../assets/butterfly.jpg&quot; alt=&quot;Blue Morpho butterfly&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;card__title&quot;&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/&quot; class=&quot;card__title--link&quot;&gt;Blue Morpho&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card__link-wrapper&quot;&gt;
+      &lt;div class=&quot;card__image&quot;&gt;&lt;img src=&quot;../assets/gold-banded.jpg&quot; alt=&quot;Gold-banded Forester butterfly&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;card__title&quot;&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/&quot; class=&quot;card__title--link&quot;&gt;Gold-banded Forester&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card__link-wrapper&quot;&gt;
+      &lt;div class=&quot;card__image&quot;&gt;&lt;img src=&quot;../assets/starry.jpg&quot; alt=&quot;Starry Night Cracker butterfly&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;card__title&quot;&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/&quot; class=&quot;card__title--link&quot;&gt;Starry Night Cracker&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card__link-wrapper&quot;&gt;
+      &lt;div class=&quot;card__image&quot;&gt;&lt;img src=&quot;../assets/lacewing.jpg&quot; alt=&quot;Red Lacewing butterfly&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;card__title&quot;&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/red/&quot; class=&quot;card__title--link&quot;&gt;Red Lacewing&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card__link-wrapper&quot;&gt;
+      &lt;div class=&quot;card__image&quot;&gt;&lt;img src=&quot;../assets/swallowtail.jpg&quot; alt=&quot;Emerald Swallowtail butterfly&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;card__title&quot;&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/green/&quot; class=&quot;card__title--link&quot;&gt;Emerald Swallowtail&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card__link-wrapper&quot;&gt;
+      &lt;div class=&quot;card__image&quot;&gt;&lt;img src=&quot;../assets/glasswing.jpg&quot; alt=&quot;Glasswing butterfly&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;card__title&quot;&gt;
+        &lt;a target=&quot;_blank&quot; href=&quot;https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/gray-white/&quot; class=&quot;card__title--link&quot;&gt;Glasswing&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/section&gt;</code></pre>
                       <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
                       <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
                     </template>
@@ -441,8 +525,58 @@
                 <div class="kss-modifier-example">
                   <div class="directory directory-layout--photo-grid-name">
   <ul class="directory__items">
-      </ul>
-<div>
+    <li class="directory directory-layout--photo-grid-name directory__item">
+      <section class="cards-bio cards-bio-grid__item-wrapper photo-grid-names">
+        <div class="cards-bio-grid__image">
+          <a href="#"><img src="../assets/mae-jemison.jpg" alt="Mae Carol Jemison in an orange space suit holding their helmet to their side"></a>
+        </div>
+        <div class="cards-bio-grid__content">
+          <h3 class="cards-bio-grid__name">
+            <a href="https://en.wikipedia.org/wiki/Mae_Jemison">Mae Carol Jemison</a>
+          </h3>
+          <div class="cards-bio-grid__title">Astronaut, NASA</div>
+          <div class="cards-bio-grid__email">
+            <a href="mailto:email@email.com">email@email.com</a>
+          </div>
+        </div>
+      </section>
+    </li>
+    <li class="directory directory-layout--photo-grid-name directory__item">
+      <section class="cards-bio cards-bio-grid__item-wrapper photo-grid-names">
+        <div class="cards-bio-grid__image">
+          <a href="#"><img src="../assets/gus-grissom.jpg" alt="Gus Grissom holding replica space rocket with American flag in the background"></a>
+        </div>
+        <div class="cards-bio-grid__content">
+          <h3 class="cards-bio-grid__name">
+            <a href="https://en.wikipedia.org/wiki/Gus_Grissom">Gus Grissom</a>
+          </h3>
+          <div class="cards-bio-grid__title">Astronaut, NASA</div>
+          <div class="cards-bio-grid__email">
+            <a href="mailto:email@email.com">email@email.com</a>
+          </div>
+        </div>
+      </section>
+    </li>
+    <li class="directory directory-layout--photo-grid-name directory__item">
+      <section class="cards-bio cards-bio-grid__item-wrapper photo-grid-names">
+        <div class="cards-bio-grid__image">
+          <a href="#"><img src="../assets/tracy-caldwell.jpg" alt="Tracy Caldwell in an orange space suit with their helment in front of them"></a>
+        </div>
+        <div class="cards-bio-grid__content">
+          <h3 class="cards-bio-grid__name">
+            <a href="https://en.wikipedia.org/wiki/Tracy_Caldwell_Dyson">Tracy Caldwell Dyson</a>
+          </h3>
+          <div class="cards-bio-grid__title">Astronaut, NASA</div>
+          <div class="cards-bio-grid__email">
+            <a href="mailto:email@email.com">email@email.com</a>
+          </div>
+        </div>
+      </section>
+    </li>
+  </ul>
+  <div>
+  </div>
+</div>
                 </div>
               </div>
 
@@ -453,22 +587,58 @@
                 <template>
                       <pre><code id="post-shortlink" data-language="html">&lt;div class=&quot;directory directory-layout--photo-grid-name&quot;&gt;
   &lt;ul class=&quot;directory__items&quot;&gt;
-    {% for item in items %}
-      &lt;li class=&quot;directory directory-layout--photo-grid-name directory__item&quot;&gt;
-        {%
-          include &quot;@a11y_style_guide/cards-bio-grid/cards-bio-grid-names.twig&quot; with {
-            &quot;modifier_class&quot;: item.modifier_class,
-            &quot;photo&quot;: item.photo,
-            &quot;name&quot;: item.name,
-            &quot;title&quot;: item.title,
-            &quot;link&quot;: item.link,
-            &quot;email&quot;: item.email
-          } only
-        %}
-      &lt;/li&gt;
-    {% endfor %}
+    &lt;li class=&quot;directory directory-layout--photo-grid-name directory__item&quot;&gt;
+      &lt;section class=&quot;cards-bio cards-bio-grid__item-wrapper photo-grid-names&quot;&gt;
+        &lt;div class=&quot;cards-bio-grid__image&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/mae-jemison.jpg&quot; alt=&quot;Mae Carol Jemison in an orange space suit holding their helmet to their side&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;cards-bio-grid__content&quot;&gt;
+          &lt;h3 class=&quot;cards-bio-grid__name&quot;&gt;
+            &lt;a href=&quot;https://en.wikipedia.org/wiki/Mae_Jemison&quot;&gt;Mae Carol Jemison&lt;/a&gt;
+          &lt;/h3&gt;
+          &lt;div class=&quot;cards-bio-grid__title&quot;&gt;Astronaut, NASA&lt;/div&gt;
+          &lt;div class=&quot;cards-bio-grid__email&quot;&gt;
+            &lt;a href=&quot;mailto:email@email.com&quot;&gt;email@email.com&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;directory directory-layout--photo-grid-name directory__item&quot;&gt;
+      &lt;section class=&quot;cards-bio cards-bio-grid__item-wrapper photo-grid-names&quot;&gt;
+        &lt;div class=&quot;cards-bio-grid__image&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/gus-grissom.jpg&quot; alt=&quot;Gus Grissom holding replica space rocket with American flag in the background&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;cards-bio-grid__content&quot;&gt;
+          &lt;h3 class=&quot;cards-bio-grid__name&quot;&gt;
+            &lt;a href=&quot;https://en.wikipedia.org/wiki/Gus_Grissom&quot;&gt;Gus Grissom&lt;/a&gt;
+          &lt;/h3&gt;
+          &lt;div class=&quot;cards-bio-grid__title&quot;&gt;Astronaut, NASA&lt;/div&gt;
+          &lt;div class=&quot;cards-bio-grid__email&quot;&gt;
+            &lt;a href=&quot;mailto:email@email.com&quot;&gt;email@email.com&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;directory directory-layout--photo-grid-name directory__item&quot;&gt;
+      &lt;section class=&quot;cards-bio cards-bio-grid__item-wrapper photo-grid-names&quot;&gt;
+        &lt;div class=&quot;cards-bio-grid__image&quot;&gt;
+          &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;../assets/tracy-caldwell.jpg&quot; alt=&quot;Tracy Caldwell in an orange space suit with their helment in front of them&quot;&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;cards-bio-grid__content&quot;&gt;
+          &lt;h3 class=&quot;cards-bio-grid__name&quot;&gt;
+            &lt;a href=&quot;https://en.wikipedia.org/wiki/Tracy_Caldwell_Dyson&quot;&gt;Tracy Caldwell Dyson&lt;/a&gt;
+          &lt;/h3&gt;
+          &lt;div class=&quot;cards-bio-grid__title&quot;&gt;Astronaut, NASA&lt;/div&gt;
+          &lt;div class=&quot;cards-bio-grid__email&quot;&gt;
+            &lt;a href=&quot;mailto:email@email.com&quot;&gt;email@email.com&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/section&gt;
+    &lt;/li&gt;
   &lt;/ul&gt;
-&lt;div&gt;</code></pre>
+  &lt;div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
                       <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
                       <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
                     </template>
@@ -625,7 +795,7 @@
         <button id="flip4" class="cards__item toggleflip card effect__click" aria-controls="content">
           <div class="cards__item-image card__front">
             <div class="cards__item-image">
-              <img src="https://qph.ec.quoracdn.net/main-qimg-65f440a8e959fef359b8cd7d88d4640f-c" width="225" height="126" alt="">
+              <img src="http://www.enchanting-costarica.com/wp-content/uploads/2015/09/Sloth-baby-being-weighed-in-plastic-basket-Costa-Rica-Credit-Sam-Trull-2014.jpg" width="225" height="126" alt="">
             </div>
             <div>
               <div class="cards__item-title">True or False:<br>Sloths are related to armadillos.</div>
@@ -707,7 +877,7 @@
         &lt;button id=&quot;flip4&quot; class=&quot;cards__item toggleflip card effect__click&quot; aria-controls=&quot;content&quot;&gt;
           &lt;div class=&quot;cards__item-image card__front&quot;&gt;
             &lt;div class=&quot;cards__item-image&quot;&gt;
-              &lt;img src=&quot;https://qph.ec.quoracdn.net/main-qimg-65f440a8e959fef359b8cd7d88d4640f-c&quot; width=&quot;225&quot; height=&quot;126&quot; alt=&quot;&quot;&gt;
+              &lt;img src=&quot;http://www.enchanting-costarica.com/wp-content/uploads/2015/09/Sloth-baby-being-weighed-in-plastic-basket-Costa-Rica-Credit-Sam-Trull-2014.jpg&quot; width=&quot;225&quot; height=&quot;126&quot; alt=&quot;&quot;&gt;
             &lt;/div&gt;
             &lt;div&gt;
               &lt;div class=&quot;cards__item-title&quot;&gt;True or False:&lt;br&gt;Sloths are related to armadillos.&lt;/div&gt;

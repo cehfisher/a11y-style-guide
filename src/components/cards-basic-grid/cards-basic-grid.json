@@ -1,34 +1,32 @@
 {
-  "items":[
-    {
-      "image": "<img src='../assets/butterfly.jpg' alt='Blue Morpho butterfly'>",
-      "title": "Blue Morpho",
-      "link": "https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/"
-    },
-    {
-      "image": "<img src='../assets/gold-banded.jpg' alt='Gold-banded Forester butterfly'>",
-      "title": "Gold-banded Forester",
-      "link": "https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/"
-    },
-    {
-      "image": "<img src='../assets/starry.jpg' alt='Starry Night Cracker butterfly'>",
-      "title": "Starry Night Cracker",
-      "link": "https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/"
-    },
-    {
-      "image": "<img src='../assets/lacewing.jpg' alt='Red Lacewing butterfly'>",
-      "title": "Red Lacewing",
-      "link": "https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/red/"
-    },
-    {
-      "image": "<img src='../assets/swallowtail.jpg' alt='Emerald Swallowtail butterfly'>",
-      "title": "Emerald Swallowtail",
-      "link": "https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/green/"
-    },
-    {
-      "image": "<img src='../assets/glasswing.jpg' alt='Glasswing butterfly'>",
-      "title": "Glasswing",
-      "link": "https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/gray-white/"
-    }
-  ]
+  {
+    "image1": "<img src='../assets/butterfly.jpg' alt='Blue Morpho butterfly'>",
+    "title1": "Blue Morpho",
+    "link1": "https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/"
+  },
+  {
+    "image": "<img src='../assets/gold-banded.jpg' alt='Gold-banded Forester butterfly'>",
+    "title": "Gold-banded Forester",
+    "link": "https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/"
+  },
+  {
+    "image": "<img src='../assets/starry.jpg' alt='Starry Night Cracker butterfly'>",
+    "title": "Starry Night Cracker",
+    "link": "https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/blue/"
+  },
+  {
+    "image": "<img src='../assets/lacewing.jpg' alt='Red Lacewing butterfly'>",
+    "title": "Red Lacewing",
+    "link": "https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/red/"
+  },
+  {
+    "image": "<img src='../assets/swallowtail.jpg' alt='Emerald Swallowtail butterfly'>",
+    "title": "Emerald Swallowtail",
+    "link": "https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/green/"
+  },
+  {
+    "image": "<img src='../assets/glasswing.jpg' alt='Glasswing butterfly'>",
+    "title": "Glasswing",
+    "link": "https://www.floridamuseum.ufl.edu/exhibits/butterfly-rainforest/id-guide/gray-white/"
+  }
 }

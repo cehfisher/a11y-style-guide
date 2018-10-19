@@ -169,7 +169,7 @@ gulp.task('watch:styleguide', ['styleguide'], sync.reload);
 gulp.task('default', function(callback) {
   runSequence(
     'clean',
-    ['lint', 'compile', 'compress', 'styleguide'],
+    ['compile', 'compress', 'styleguide'],
     'concat',
     callback
   );
