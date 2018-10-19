@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .pagination {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   overflow: hidden;
@@ -87,6 +89,8 @@
       position: absolute;
       top: 12px;
       left: 18px;
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
       transform: rotate(180deg); }
     .pagination__item--next-group .pagination__link::after {
       border-bottom: 8px solid transparent;
@@ -97,6 +101,8 @@
       position: absolute;
       top: 12px;
       left: 34px;
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
       transform: rotate(180deg); }
   .pagination__item--next-group .pagination__link--is-disabled {
     pointer-events: none; }
@@ -150,6 +156,8 @@
     position: absolute;
     top: 12px;
     right: 12px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg); }
 
 .pagination__item--next-page .pagination__link--is-disabled {

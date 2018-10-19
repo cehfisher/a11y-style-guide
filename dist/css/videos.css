@@ -23,6 +23,7 @@
 
 /* containers */
 .px-video-img-captions-container * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .px-video-img-captions-container {

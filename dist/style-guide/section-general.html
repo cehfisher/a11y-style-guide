@@ -126,7 +126,9 @@
                         <li class="kss-menu-item">
               <a href="section-structure.html"><span class="kss-ref">6</span><span class="kss-name">Structure</span></a>             </li>
                         <li class="kss-menu-item">
-              <a href="section-resources.html"><span class="kss-ref">7</span><span class="kss-name">Resources</span></a>             </li>
+              <a href="section-theme.html"><span class="kss-ref">7</span><span class="kss-name">This is the theme styling component for the style guide</span></a>             </li>
+                        <li class="kss-menu-item">
+              <a href="section-resources.html"><span class="kss-ref">8</span><span class="kss-name">Resources</span></a>             </li>
                       </ul>
         </nav>
 
@@ -165,19 +167,14 @@
 
                             <div class="kss-description">
                 <ul>
- <li>A <code>&lt;button&gt;</code> tag does not need anything special to work. Use <code>&lt;button&gt;</code> when you can, but it is possible to use other elements as long as you add <code>role=&quot;button&quot;</code> and add JavaScript to replicate the button functionality.</li>
- <li>Just like links, you can add <code>class=&quot;visuallyhidden&quot;</code> with descriptive text to give more context to the button&#39;s purpose.</li>
- <li>If a button contains an <code>&lt;img&gt;</code> element, make sure to set its <code>alt</code> attribute. If it contains an icon, use <code>aria-label</code> to describe the icon instead.</li>
- <li>You can use <code>&lt;input type=&quot;image&quot;&gt;</code> to make a graphical button. It takes a <code>src</code> and <code>alt</code> attribute just like traditional images.</li>
+ <li>A `<button>` tag does not need anything special to work. Use `<button>` when you can, but it is possible to use other elements as long as you add `role="button"` and add JavaScript to replicate the button functionality.</li>
+ <li>Just like links, you can add `class="visuallyhidden"` with descriptive text to give more context to the button's purpose.</li>
+ <li>If a button contains an <code>&lt;img&gt;</code> element, make sure to set its `alt` attribute. If it contains an icon, use `aria-label` to describe the icon instead.</li>
+ <li>You can use <code>&lt;input type=&quot;image&quot;&gt;</code> to make a graphical button. It takes a `src` and `alt` attribute just like traditional images.</li>
  <li>Button states are important, not just button styling! If you are only toggling classes to visually manage state of your components, you are likely not appropriately conveying that state to users of assistive technologies.</li>
 </ul>
-
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#button_res">Resources</a></h3><div id="button_res" class="atblock__panel"><ul><li><a href="https://www.deque.com/blog/accessible-aria-buttons" target="_blank">Building Accessible Buttons with ARIA</a></li><li><a href="https://css-tricks.com/user-facing-state/" target="_blank">User Facing State</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank">Using the button role</a></li><li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/button/button.html" target="_blank">W3C Button Examples</a></li></ul></div></section>
-
-
-
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#button_guide">WCAG 2.0 Guidelines</a></h3><div id="button_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#text-equiv-all" target="_blank">1.1.1 Non-text Content</a> - All non-text content that is presented to the user has a text alternative that serves the equivalent purpose (some exceptions). (Level A)<br><br><strong>Note:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it does not need text alternatives.</p></div><div class="markup"></div></section>
-
 
               </div>
                            </div>
@@ -227,16 +224,11 @@
 
                             <div class="kss-description">
                 <ul>
- <li>Avoid using color <em>only</em> to communicate information. In the case of links, use another identifier such as bold or underline to indicate a link verses using color alone.</li>
+ <li>Avoid using color *only* to communicate information. In the case of links, use another identifier such as bold or underline to indicate a link verses using color alone.</li>
  <li>Some users have difficulty reading text if there is too little contrast between foreground and background. To meet Level AA, text must have a contrast ratio of at least 4.5:1 (or 3:1 for large text). In order to meet the guidelines at the stricter Level AAA, the contrast ratio must be at least 7:1 (or 4.5:1 for large text).</li>
 </ul>
-
-<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#color_res">Resources</a></h3><div id="color_res" class="atblock__panel"><ul><li><a href="https://chrome.google.com/webstore/detail/color-contrast-analyzer/dagdlcijhfbmgkjokkjicnnfimlebcll?hl=en" target="_blank">Chrome&#39;s Color Contrast Analyzer Extension</a> - best way to identify gradients &amp; background images with a site</li><li><a href="http://www.color-blindness.com/coblis-color-blindness-simulator" target="_blank">Color Blindness Simulator</a> - see how your site looks to a person with one of the various forms of color blindness</li><li><a href="http://colorsafe.co" target="_blank">Color Safe</a> - accessible color palettes based on WCAG Guidelines</li><li><a href="http://contrastchecker.com" target="_blank">Contrast Checker</a> - test color contrast combinations based on WCAG Guidelines</li><li><a href="https://addons.mozilla.org/en-us/firefox/addon/wcag-contrast-checker/" target="_blank">Firefox&#39;s WCAG Contrast Checker Add-on</a> - easiest way to quickly test a site &amp; list CSS problems</li><li><a href="https://randoma11y.com" target="_blank">Random A11y Color Palettes</a> - project to try and curate beautiful, random color palettes that are a11y friendly</li><li><a href="http://contrast-finder.tanaguru.com/" target="_blank">Tanaguru Contrast Finder</a> - best way to find close colors that meet WCAG 2.0</li></ul></div></section>
-
-
-
+<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#color_res">Resources</a></h3><div id="color_res" class="atblock__panel"><ul><li><a href="https://chrome.google.com/webstore/detail/color-contrast-analyzer/dagdlcijhfbmgkjokkjicnnfimlebcll?hl=en" target="_blank">Chrome's Color Contrast Analyzer Extension</a> - best way to identify gradients & background images with a site</li><li><a href="http://www.color-blindness.com/coblis-color-blindness-simulator" target="_blank">Color Blindness Simulator</a> - see how your site looks to a person with one of the various forms of color blindness</li><li><a href="http://colorsafe.co" target="_blank">Color Safe</a> - accessible color palettes based on WCAG Guidelines</li><li><a href="http://contrastchecker.com" target="_blank">Contrast Checker</a> - test color contrast combinations based on WCAG Guidelines</li><li><a href="https://addons.mozilla.org/en-us/firefox/addon/wcag-contrast-checker/" target="_blank">Firefox's WCAG Contrast Checker Add-on</a> - easiest way to quickly test a site & list CSS problems</li><li><a href="https://randoma11y.com" target="_blank">Random A11y Color Palettes</a> - project to try and curate beautiful, random color palettes that are a11y friendly</li><li><a href="http://contrast-finder.tanaguru.com/" target="_blank">Tanaguru Contrast Finder</a> - best way to find close colors that meet WCAG 2.0</li></ul></div></section>
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#color_guide">WCAG 2.0 Guidelines</a></h3><div id="color_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-without-color" target="_blank">1.4.1. Use of Color</a> - Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for some cases. (Level AA)</p></div><div class="markup"></div></section>
-
 
               </div>
                            </div>
@@ -370,8 +362,8 @@
 
                             <div class="kss-description">
                 <ul>
- <li>Do not set your site&#39;s link focus to <code>outline: none</code>. Never. Ever.</li>
- <li>If you have multiple form fields on your site or you see the dreaded <code>outline: none</code> in your base code, you can reset the browser defaults by adding the code:
+ <li>Do not set your site's link focus to `outline: none`. Never. Ever.</li>
+ <li>If you have multiple form fields on your site or you see the dreaded `outline: none` in your base code, you can reset the browser defaults by adding the code:
  <pre>
  a:focus {
    outline: auto 2px Highlight; // for non-webkit browsers
@@ -379,9 +371,7 @@
  }</pre></li>
  <li>Of course you can create your own focus styles to match your theme or to make the default browser styles more prominent, just make sure they are visible by tabbing and obvious to your users.</li>
 </ul>
-
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#focus_guide">WCAG 2.0 Guidelines</a></h3><div id="focus_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-focus-visible" target="_blank">2.4.7 Focus Visible</a> - Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. (Level AA)</p></div><div class="markup"></div></section>
-
 
               </div>
                            </div>
@@ -423,11 +413,10 @@
                 <ul>
 <li>Add id selectors to titles and use <code>aria-labelledby=&quot;&quot;</code> to link to the title text (Example #1).</li>
 <li>Add decriptive text with <code>aria-label=&quot;&quot;</code> directly in the link (Example #2).</li>
-<li>Use the class <code>visuallyhidden</code> to visually hide more information about the link (Example #3).</li>
+<li>Use the class <code>visuallyhidden</code> to visually hide more information about the link (Example #4).</li>
 <li>Turn read more links into buttons, when you can, since they allow for more labeling options.</li>
 </ul>
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#read_guide">WCAG 2.0 Guidelines</a></h3><div id="read_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-refs" target="_blank">2.4.4 Link Purpose (In Context)</a>: The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-link" target="_blank">2.4.9 Link Purpose (Link Only)</a>: A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general. (Level AAA)</p></div><div class="markup"></div></section>
-
 
               </div>
                            </div>
@@ -504,12 +493,10 @@
  <li>Provide ways for users to skip to important sections of your website. This will help users using screenreaders navigate your site easier and more efficiently.</li>
  <li>There is no real theming rule when it comes to styling your skip links, as such a lot of websites tend to hide them with <code>class=&quot;visuallyhidden&quot;</code> with a special focus attribute so that sighted keyboard only users are able to see them.
  <li>It is important to see that the link points to a valid HTML ID, as often this is overlooked in implementation.</li>
- <li>In this site we have used &#39;Jump to main content&#39;, but other valid examples of &quot;skip&quot; links include:
+ <li>In this site we have used 'Jump to main content', but other valid examples of &quot;skip&quot; links include:
  <pre>Skip to content<br>Skip to main content<br>Skip to search<br>Skip to bottom navigation<br>Skip to main menu</pre></li>
 </ul>
-
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#skip_guide">WCAG 2.0 Guidelines</a></h3><div id="skip_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#navigation-mechanisms-skip" target="_blank">2.4.1 Bypass Blocks</a> - A mechanism is available to bypass blocks of content that are repeated on multiple Web pages. (Level A)</p></div><div class="markup"></div></section>
-
 
               </div>
                            </div>
@@ -570,13 +557,11 @@
  <li>Select basic, simple, easily-readable fonts and use a limited number of fonts.</li>
  <li>Avoid small font sizes and use relative units for font size (ems or rems).</li>
  <li>Limit the use of font variations such as bold, italics, and ALL CAPITAL LETTERS (caps are similar to screaming to screenreaders).</li>
- <li>Don&#39;t rely only on the appearance of the font (color, shape, font variation, placement, etc.) to convey meaning.</li>
+ <li>Don't rely only on the appearance of the font (color, shape, font variation, placement, etc.) to convey meaning.</li>
  <li>Avoid blinking or moving text. </li>
  <li>Use real text rather than text within graphics.</li>
 </ul>
-
 <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#type_guide">WCAG 2.0 Guidelines</a></h3><div id="type_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-without-color" target="_blank">1.4.1. Use of Color</a> - Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. (Level A)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast" target="_blank">1.4.3 Contrast (Minimum)</a> - The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for some cases. (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-scale" target="_blank">1.4.4 Resize Text</a> - Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality. (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-text-presentation" target="_blank">1.4.5 Images of Text</a> - If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text (some exceptions). (Level AA)<br><br><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=131#visual-audio-contrast-visual-presentation" target="_blank">1.4.8 Visual Presentation</a> - For the visual presentation of blocks of text, a mechanism is available to achieve the following (see WCAG guidelines for more info). (Level AAA)</p></div><div class="markup"></div></section>
-
 
               </div>
                            </div>

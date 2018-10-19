@@ -17,6 +17,8 @@
   top: 2.5em;
   left: -9999px;
   opacity: 0;
+  -webkit-transition: 0.1s linear opacity;
+  -o-transition: 0.1s linear opacity;
   transition: 0.1s linear opacity;
   min-width: 150px;
   background: #464646;
@@ -71,6 +73,8 @@ ul.show-menu {
   font-size: 12px;
   border: 1px solid #464646;
   border-width: 0 0 1px;
+  -webkit-transition: 0.1s linear all;
+  -o-transition: 0.1s linear all;
   transition: 0.1s linear all; }
 
 .nav ul,

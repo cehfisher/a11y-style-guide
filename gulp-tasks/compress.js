@@ -18,7 +18,7 @@ module.exports = {
   // Compress svg/png/jpg files.
   assets: function() {
     return gulp.src([
-      './src/{global,components}/**/*{.png,.jpg,.svg}'
+      './src/{global,layout,components}/**/*{.png,.jpg,.svg}'
     ])
       .pipe(imagemin({
         progressive: true,

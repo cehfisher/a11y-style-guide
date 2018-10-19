@@ -2,8 +2,11 @@
 .image-gallery {
   position: relative;
   font-size: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0; }
@@ -15,6 +18,7 @@
     .image-gallery {
       padding: 0.5vw; } }
   .image-gallery .square {
+    -webkit-box-flex: 1;
     -ms-flex: auto;
     flex: auto;
     width: 100px;
