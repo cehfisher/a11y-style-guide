@@ -2,7 +2,7 @@
 <p>This has a <abbr title="Knyle Style Sheets">KSS</abbr> node base, so learn a bit about <a href="https://github.com/kss-node/kss-node/wiki/Quick-Start-Guide" target="_blank">how KSS node works</a>.</p>
 <p>To make local changes to components, do the following:</p>
 <ul>
-<li>Fork the project</li>
+<li>Fork or clone the project</li>
 <li>Navigate to the project root (a11y_style_guide)</li>
 <li><code>nvm install stable</code> (only need to do once - see the <a href="https://github.com/creationix/nvm" target="_blank"><abbr title="node version manager">NVM</abbr> project</a> for troubleshooting)</li>
 <li><code>nvm use stable</code></li>
