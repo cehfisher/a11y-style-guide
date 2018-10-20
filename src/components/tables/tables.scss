@@ -1,10 +1,8 @@
 // Tables
 //
-// <ul>
-//  <li>Tables with one header and simple data are fairly accessible out of the box and may not need additional accessibility updates. Always use the simplest table configuration possible.</li>
-//  <li>When your tables get more complex, use the `<th>` element to identify the header cells by adding a scope attribute. For header rows use `<th scope="row">`. For header columns use `<th scope="col">`</li>
-//  <li>Add the optional `<caption>` element before the table content to give users more information on the table contents. Think of it as a headline for your table.</li>
-// </ul>
+//  - Tables with one header and simple data are fairly accessible out of the box and may not need additional accessibility updates. Always use the simplest table configuration possible.
+//  - When your tables get more complex, use the `<th>` element to identify the header cells by adding a scope attribute. For header rows use `<th scope="row">`. For header columns use `<th scope="col">`
+//  - Add the optional `<caption>` element before the table content to give users more information on the table contents. Think of it as a headline for your table.
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tables_res">Resources</a></h3><div id="tables_res" class="atblock__panel"><ul><li><a href="https://www.w3.org/WAI/tutorials/tables" target="_blank">Web Accessibility Tutorials - Table Concepts</a></li></ul></div></section>
 //
