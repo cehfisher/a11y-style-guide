@@ -29,9 +29,9 @@ module.exports = {
         return path;
       }))
       .pipe(gulp.dest('./dist/js'));
-  },   
-
-  docs: function() {
+  },
+ 
+   docs: function() {
     return gulp.src([
       '*/**'
     ], { base: './dist'})

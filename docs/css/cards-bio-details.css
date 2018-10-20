@@ -22,6 +22,7 @@
     font-weight: bold;
     font-size: 1.8rem; }
   .cards-bio__phone .paragraph--type--phone-numbers {
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
     .cards-bio__phone .paragraph--type--phone-numbers .field {
@@ -32,6 +33,7 @@
       content: ':'; }
 
 .cards-bio__address > .field {
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -83,6 +85,7 @@
 
 @media (min-width: 40em) {
   .cards-bio-list__item-wrapper {
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
 

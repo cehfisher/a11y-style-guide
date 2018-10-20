@@ -7,6 +7,7 @@
   background-image: url("../assets/plus_round_red.png");
   background-size: 28px;
   background-position: 97% 50%;
+  -webkit-box-shadow: none;
   box-shadow: none;
   line-height: 1.5;
   margin: 0.5rem 0;

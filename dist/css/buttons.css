@@ -9,6 +9,7 @@ button {
   line-height: 1;
   border: 3px solid #e00000;
   border-radius: 4px;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
   min-height: 48px;
@@ -20,6 +21,7 @@ button {
     color: #ffffff;
     border: 3px solid #a51323;
     text-decoration: underline;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
   button [role='button'][aria-pressed='true'] {
     color: #ffffff;
@@ -36,6 +38,7 @@ button {
   line-height: 1;
   border: 3px solid #e00000;
   border-radius: 4px;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
   min-height: 48px;
@@ -49,6 +52,7 @@ button {
     color: #ffffff;
     border: 3px solid #a51323;
     text-decoration: underline;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
 
 button,
@@ -67,6 +71,7 @@ html [type='button'],
   line-height: 1;
   border: 3px solid #e00000;
   border-radius: 4px;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
   min-height: 48px;
@@ -78,6 +83,7 @@ html [type='button'],
     color: #ffffff;
     border: 3px solid #a51323;
     text-decoration: underline;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
 
 .button--outline {
@@ -90,6 +96,7 @@ html [type='button'],
   line-height: 1;
   border: 3px solid #e00000;
   border-radius: 4px;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
   min-height: 48px;
@@ -104,10 +111,12 @@ html [type='button'],
     color: #ffffff;
     border: 3px solid #a51323;
     text-decoration: underline;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
   .button--outline:hover, .button--outline:focus {
     background-color: transparent;
     color: #a51323;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
   .button--outline.magnifyingglass {
     vertical-align: middle; }
@@ -134,6 +143,7 @@ html [type='button'],
   line-height: 1;
   border: 3px solid #e00000;
   border-radius: 4px;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   font-size: 1rem;
   min-height: 48px;
@@ -147,6 +157,7 @@ html [type='button'],
     color: #ffffff;
     border: 3px solid #a51323;
     text-decoration: underline;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
   .button-icon::before {
     float: left;
@@ -165,6 +176,7 @@ html [type='button'],
     line-height: 1;
     border: 3px solid #e00000;
     border-radius: 4px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     font-size: 1rem;
     min-height: 48px;
@@ -181,10 +193,12 @@ html [type='button'],
       color: #ffffff;
       border: 3px solid #a51323;
       text-decoration: underline;
+      -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
     .button-icon.button--outline:hover, .button-icon.button--outline:focus {
       background-color: transparent;
       color: #a51323;
+      -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
   .button-icon.heart::before {
     content: '\2764';

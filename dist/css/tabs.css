@@ -17,6 +17,7 @@
     font-weight: 600;
     border-radius: 4px 4px 0 0; }
   .tabs .tabs__nav-item .tabs__nav-trigger {
+    -webkit-box-shadow: none;
     box-shadow: none;
     line-height: normal;
     border: 1px solid #dddddd;

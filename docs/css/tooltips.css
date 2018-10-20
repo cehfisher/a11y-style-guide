@@ -12,11 +12,17 @@
     pointer-events: auto;
     visibility: visible; }
   .a11y-tip__trigger[aria-describedby]:hover + .a11y-tip__help, .a11y-tip__trigger[aria-describedby]:hover + .a11y-tip__help::after, .a11y-tip__trigger[aria-describedby]:not(.a11y-tip__trigger--toggle):focus + .a11y-tip__help, .a11y-tip__trigger[aria-describedby]:not(.a11y-tip__trigger--toggle):focus + .a11y-tip__help::after, .a11y-tip__trigger[aria-describedby][aria-expanded='true'] .a11y-tip__help, .a11y-tip__trigger[aria-describedby][aria-expanded='true'] .a11y-tip__help::after {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0); }
   @media screen and (min-width: 55em) {
     .a11y-tip__trigger[aria-describedby]:hover + .a11y-tip__help--left, .a11y-tip__trigger[aria-describedby]:hover + .a11y-tip__help--left::after, .a11y-tip__trigger[aria-describedby]:not(.a11y-tip__trigger--toggle):focus + .a11y-tip__help--left, .a11y-tip__trigger[aria-describedby]:not(.a11y-tip__trigger--toggle):focus + .a11y-tip__help--left::after, .a11y-tip__trigger[aria-describedby][aria-expanded='true'] .a11y-tip__help--left, .a11y-tip__trigger[aria-describedby][aria-expanded='true'] .a11y-tip__help--left::after {
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
       transform: translate(0, -50%); }
     .a11y-tip__trigger[aria-describedby]:hover + .a11y-tip__help--right, .a11y-tip__trigger[aria-describedby]:hover + .a11y-tip__help--right::after, .a11y-tip__trigger[aria-describedby]:not(.a11y-tip__trigger--toggle):focus + .a11y-tip__help--right, .a11y-tip__trigger[aria-describedby]:not(.a11y-tip__trigger--toggle):focus + .a11y-tip__help--right::after, .a11y-tip__trigger[aria-describedby][aria-expanded='true'] .a11y-tip__help--right, .a11y-tip__trigger[aria-describedby][aria-expanded='true'] .a11y-tip__help--right::after {
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
       transform: translate(0, -50%); } }
   .a11y-tip__trigger[aria-describedby].a11y-tip__trigger--toggle:hover + .a11y-tip__help,
   .a11y-tip__trigger[aria-describedby].a11y-tip__trigger--toggle:hover + .a11y-tip__help::after {
@@ -27,11 +33,19 @@
   .a11y-tip__trigger[aria-expanded='true'].a11y-tip__trigger--toggle:hover + .a11y-tip__help::after {
     opacity: 1 !important;
     pointer-events: auto !important;
+    -webkit-transition: opacity 0.18s ease-in-out, -webkit-transform 0.18s ease-in-out;
+    transition: opacity 0.18s ease-in-out, -webkit-transform 0.18s ease-in-out;
+    -o-transition: opacity 0.18s ease-in-out, transform 0.18s ease-in-out;
     transition: opacity 0.18s ease-in-out, transform 0.18s ease-in-out;
+    transition: opacity 0.18s ease-in-out, transform 0.18s ease-in-out, -webkit-transform 0.18s ease-in-out;
     visibility: visible !important; }
   .a11y-tip--no-delay .a11y-tip__help,
   .a11y-tip--no-delay .a11y-tip__help::after {
-    transition: opacity 0.18s ease-in-out, transform 0.18s ease-in-out; }
+    -webkit-transition: opacity 0.18s ease-in-out, -webkit-transform 0.18s ease-in-out;
+    transition: opacity 0.18s ease-in-out, -webkit-transform 0.18s ease-in-out;
+    -o-transition: opacity 0.18s ease-in-out, transform 0.18s ease-in-out;
+    transition: opacity 0.18s ease-in-out, transform 0.18s ease-in-out;
+    transition: opacity 0.18s ease-in-out, transform 0.18s ease-in-out, -webkit-transform 0.18s ease-in-out; }
 
 [role='tooltip'].a11y-tip__help {
   background: rgba(0, 0, 0, 0.9);
@@ -47,8 +61,13 @@
   position: absolute;
   text-align: left;
   top: 100%;
+  -webkit-transform: translate(-50%, 10px);
+  -ms-transform: translate(-50%, 10px);
   transform: translate(-50%, 10px);
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  -webkit-transition: opacity 0.2s 1s ease-in-out;
+  -o-transition: opacity 0.2s 1s ease-in-out;
   transition: opacity 0.2s 1s ease-in-out;
   visibility: hidden;
   width: 100%;
@@ -69,8 +88,13 @@
     opacity: 0;
     pointer-events: none;
     position: absolute;
+    -webkit-transform: translate(-50%, 10px);
+    -ms-transform: translate(-50%, 10px);
     transform: translate(-50%, 10px);
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    -webkit-transition: opacity 0.2s 1s ease-in-out;
+    -o-transition: opacity 0.2s 1s ease-in-out;
     transition: opacity 0.2s 1s ease-in-out;
     visibility: hidden;
     z-index: 10; }
@@ -80,7 +104,11 @@
     margin-bottom: 16px;
     margin-top: 0;
     top: auto;
+    -webkit-transform-origin: center top;
+    -ms-transform-origin: center top;
     transform-origin: center top;
+    -webkit-transform: translate(-50%, 10px);
+    -ms-transform: translate(-50%, 10px);
     transform: translate(-50%, 10px); }
     [role='tooltip'].a11y-tip__help--top::after {
       border: inset 10px;
@@ -95,7 +123,11 @@
       margin-bottom: 6px;
       margin-top: 0;
       top: 100%;
+      -webkit-transform-origin: center top;
+      -ms-transform-origin: center top;
       transform-origin: center top;
+      -webkit-transform: translate(-50%, -10px);
+      -ms-transform: translate(-50%, -10px);
       transform: translate(-50%, -10px); }
   @media screen and (min-width: 55em) {
     [role='tooltip'].a11y-tip__help--left {
@@ -104,6 +136,8 @@
       margin-top: 0;
       right: 100%;
       top: 50%;
+      -webkit-transform: translate(10px, -50%);
+      -ms-transform: translate(10px, -50%);
       transform: translate(10px, -50%); }
       [role='tooltip'].a11y-tip__help--left::after {
         border: inset 10px;
@@ -118,12 +152,16 @@
         margin-right: 5px;
         margin-top: 0;
         top: 50%;
+        -webkit-transform: translate(-10px, -50%);
+        -ms-transform: translate(-10px, -50%);
         transform: translate(-10px, -50%); }
     [role='tooltip'].a11y-tip__help--right {
       left: 100%;
       margin-left: 15px;
       margin-top: 0;
       top: 50%;
+      -webkit-transform: translate(10px, -50%);
+      -ms-transform: translate(10px, -50%);
       transform: translate(10px, -50%); }
       [role='tooltip'].a11y-tip__help--right::after {
         border: inset 10px;
@@ -140,6 +178,8 @@
         margin-top: 0;
         right: 100%;
         top: 50%;
+        -webkit-transform: translate(10px, -50%);
+        -ms-transform: translate(10px, -50%);
         transform: translate(10px, -50%); } }
 
 .a11y-tip--hide .a11y-tip__help {

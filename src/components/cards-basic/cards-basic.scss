@@ -1,12 +1,10 @@
 // Basic Card
 //
-// <ul>
-//  <li>Make sure you have tabbing focus indicators for all elements that need to be highlighted.</li>
-//  <li>Every `<img>` you add to your site needs to have an alt attribute. If the image is informational, set the `alt` equal to a *descriptive* alternative for that image.</li>
-//  <li>If the image is decorative or redundant to adjacent text, set `alt=""`, which conveys to assistive technology users that the image isn’t necessary for understanding the page.</li>
-//  <li>Avoid using generic strings like photo, image, or icon as `alt` values, as they don’t communicate valuable content to the user. Be as descriptive as possible.</li>
-//  <li>You can add `class="visuallyhidden"` with descriptive text to give more context to a button or link's purpose.</li>
-// </ul>
+//  - Make sure you have tabbing focus indicators for all elements that need to be highlighted.
+//  - Every `<img>` you add to your site needs to have an alt attribute. If the image is informational, set the `alt` equal to a *descriptive* alternative for that image.
+//  - If the image is decorative or redundant to adjacent text, set `alt=""`, which conveys to assistive technology users that the image isn’t necessary for understanding the page.
+//  - Avoid using generic strings like photo, image, or icon as `alt` values, as they don’t communicate valuable content to the user. Be as descriptive as possible.
+//  -You can add `class="visuallyhidden"` with descriptive text to give more context to a button or link's purpose.
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#cards_res">Resources</a></h3><div id="cards_res" class="atblock__panel"><ul><li><a href="http://callmenick.com/post/css-transitions-transforms-animations-flipping-card" target="_blank">CSS Transitions, Transforms & Animations – Flipping Card</a></li></ul></div></section>
 //

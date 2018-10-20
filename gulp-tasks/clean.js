@@ -30,8 +30,7 @@ module.exports = {
       './dist/js/*'
     ], {force: true});
   },
-
-  docs: function() {
+   docs: function() {
     return del([
       './docs/style-guide/',
       './docs/css/',

@@ -49,6 +49,7 @@
   padding: 0; }
   .directory-layout--photo-grid .directory__items,
   .directory-layout--photo-grid-name .directory__items {
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -63,11 +64,13 @@
   list-style: none;
   padding: 1rem; }
   .directory-layout--list .directory__item {
+    -webkit-box-flex: 0;
     -ms-flex: 0 1 100%;
     flex: 0 1 100%;
     padding: 0; }
   .directory-layout--photo-grid .directory__item,
   .directory-layout--photo-grid-name .directory__item {
+    -webkit-box-flex: 0;
     -ms-flex: 0 1 50%;
     flex: 0 1 50%;
     padding: 1rem;
@@ -79,5 +82,6 @@
         -ms-flex-preferred-size: 33.33%;
         flex-basis: 33.33%; } }
   .directory-layout--photo-grid-name .directory__item {
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }

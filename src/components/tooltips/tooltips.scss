@@ -1,11 +1,9 @@
 // Tooltips
 //
-// <ul>
-//  <li>Tooltips should not receive focus. The focus should remain on the field, button, or link the tooltip is about.</li>
-//  <li>Tooltips should not be revealed until a short time has passed (~1-5 seconds).</li>
-//  <li>Depending on the tooltip option you choose, there may be additional ARIA tags you should apply. Add `aria-describedby="example1"` on an input field and link it to a related section with a matching ID selector `id="example1"`.</li>
-//  <li>Whenever possible, use descriptive text on your form fields that does need to be activated by a focus or hover event. Tooltips can be problematic for some assistive technologies (AT) devices.</li>
-// </ul>
+//  - Tooltips should not receive focus. The focus should remain on the field, button, or link the tooltip is about.
+//  - Tooltips should not be revealed until a short time has passed (~1-5 seconds).
+//  - Depending on the tooltip option you choose, there may be additional ARIA tags you should apply. Add `aria-describedby="example1"` on an input field and link it to a related section with a matching ID selector `id="example1"`.
+//  - Whenever possible, use descriptive text on your form fields that does need to be activated by a focus or hover event. Tooltips can be problematic for some assistive technologies (AT) devices.
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tooltips_res">Resources</a></h3><div id="tooltips_res" class="atblock__panel"><ul><li><a href="http://heydonworks.com/practical_aria_examples/#input-tooltip" target="_blank">ARIA Examples - Tooltips</a></li><li><a href="https://github.com/scottaohara/a11y_tooltips" target="_blank">ARIA Tooltips</a></li><li><a href="https://www.w3.org/TR/wai-aria-practices/#tooltip" target="_blank">Tooltip Widget</a></li></ul></div></section>
 //

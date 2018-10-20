@@ -75,6 +75,7 @@
     text-align: center !important;
     padding: 1rem;
     margin: 3rem 3rem 0;
+    -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
     color: #464646; }
@@ -123,6 +124,7 @@
   .highlight--left .highlight__sub-title,
   .highlight--left-small .highlight__sub-title {
     color: #464646;
+    -webkit-box-ordinal-group: 1;
     -ms-flex-order: 0;
     order: 0;
     margin: 0; }
