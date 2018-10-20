@@ -1,10 +1,3 @@
-// Style Guide Theme
-
-// Import site utilities.
-@import '../../global/utils/init';
-
-// KSS node changes
-// sass-lint:disable-all
 #kss-node {
 
   // Main content
@@ -712,5 +705,3 @@ a[target='_blank']::after {
     }
   }
 }
-
-// sass-lint:enable-all
