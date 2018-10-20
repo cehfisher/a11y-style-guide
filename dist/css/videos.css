@@ -680,7 +680,7 @@ a[target='_blank']::after {
   width: 25px;
   height: 20px;
   overflow: hidden;
-  background: no-repeat url("../images/px-video-sprite.png"); }
+  background: no-repeat url("../assets/px-video-sprite.png"); }
 
 .px-video-controls button:focus {
   border: 1px #999 dotted;
@@ -735,7 +735,7 @@ a[target='_blank']::after {
   width: 25px;
   height: 20px;
   margin-left: 10px;
-  background: no-repeat url("../images/px-video-sprite.png");
+  background: no-repeat url("../assets/px-video-sprite.png");
   background-position: -6px -907px; }
 
 .px-video-fullscreen-btn-container input[type="checkbox"]:focus + label {
@@ -762,7 +762,7 @@ a[target='_blank']::after {
   width: 25px;
   height: 20px;
   margin-left: 10px;
-  background: no-repeat url("../images/px-video-sprite.png");
+  background: no-repeat url("../assets/px-video-sprite.png");
   background-position: -6px -835px; }
 
 .px-video-captions-btn-container input[type="checkbox"]:focus + label {
@@ -787,7 +787,7 @@ a[target='_blank']::after {
   height: 20px;
   margin-left: 240px;
   margin-top: 2px;
-  background: no-repeat url("../images/px-video-sprite.png");
+  background: no-repeat url("../assets/px-video-sprite.png");
   background-position: -6px -476px; }
 
 .px-video-mute-btn-container input[type="checkbox"]:focus + label {
