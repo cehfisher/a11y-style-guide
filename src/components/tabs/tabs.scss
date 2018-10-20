@@ -1,11 +1,9 @@
 // Tabs - draft
 //
-// <ul>
-//  <li>Be mindful of using tabs, as they are less discoverable by design.</li>
-//  <li>Once a tab button is focused, other tabs can be selected with the arrow keys.</li>
-//  <li>A tab's contents can be accessed via Tab (if there are focusable elements in the tab well) or PgDn (if there are no focusable elements in the tab well).</li>
-//  <li>Be sure to update the values of the `aria-posinset` and `aria-setsize` attributes if you have more than three tabs.</li>
-// </ul>
+//  - Be mindful of using tabs, as they are less discoverable by design.
+//  - Once a tab button is focused, other tabs can be selected with the arrow keys.
+//  - A tab's contents can be accessed via Tab (if there are focusable elements in the tab well) or PgDn (if there are no focusable elements in the tab well).
+//  - Be sure to update the values of the `aria-posinset` and `aria-setsize` attributes if you have more than three tabs.
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#tabs_res">Resources</a></h3><div id="tabs_res" class="atblock__panel"><ul><li><a href="https://www.deque.com/blog/a11y-support-series-part-1-aria-tab-panel-accessibility/" target="_blank">ARIA Tab Panel Accessibility</a></li></ul></div></section>
 //

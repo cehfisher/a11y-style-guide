@@ -1,12 +1,10 @@
 // Pagination
 //
-// <ul>
-//  <li>Place the pager in a `<nav>` element when you can.</li>
-//  <li>If you do not use a `<nav>` element, you need to add `role="navigation"` to the markup. <strong>Note:</strong> this role is implied when you use the `<nav>` element so it is a bit redundant to use both at the same time.</li>
-//  <li>The markup includes an `aria-label="pagination"` to describe the type of navigation.</li>
-//  <li>Add `aria-current="page"` to the link that points to the current page. This will tell AT that the focused link is pointing to the current page.</li>
-//  <li>Add `aria-disabled="true"` to the link when the link is disabled.</li>
-// </ul>
+//  - Place the pager in a `<nav>` element when you can.
+//  - If you do not use a `<nav>` element, you need to add `role="navigation"` to the markup. <strong>Note:</strong> this role is implied when you use the `<nav>` element so it is a bit redundant to use both at the same time.
+//  - The markup includes an `aria-label="pagination"` to describe the type of navigation.
+//  - Add `aria-current="page"` to the link that points to the current page. This will tell AT that the focused link is pointing to the current page.
+//  - Add `aria-disabled="true"` to the link when the link is disabled.
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#pagination_res">Resources</a></h3><div id="pagination_res" class="atblock__panel"><ul><li><a href="http://w3c.github.io/aria/aria/aria.html#aria-current" target="_blank">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li><li><a href="http://tink.uk/using-the-aria-current-attribute/" target="_blank">Using the aria-current attribute</a></li></ul></div></section>
 //

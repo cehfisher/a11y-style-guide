@@ -479,10 +479,9 @@ li {
   text-align: left;
   padding: 10px 40px 10px 16px;
   font-size: 1rem;
-  color: #e00000;
+  color: #000000;
   background-color: #f7f7f7;
   border: 1px solid #bbbbbb;
-  border-bottom: 2px solid rgba(136, 139, 141, 0.5);
   display: block;
   text-decoration: none;
   text-transform: none; }
