@@ -1,12 +1,10 @@
 // Buttons
 //
-// <ul>
-//  <li>A `<button>` tag does not need anything special to work. Use `<button>` when you can, but it is possible to use other elements as long as you add `role="button"` and add JavaScript to replicate the button functionality.</li>
-//  <li>Just like links, you can add `class="visuallyhidden"` with descriptive text to give more context to the button's purpose.</li>
-//  <li>If a button contains an <code>&lt;img&gt;</code> element, make sure to set its `alt` attribute. If it contains an icon, use `aria-label` to describe the icon instead.</li>
-//  <li>You can use <code>&lt;input type=&quot;image&quot;&gt;</code> to make a graphical button. It takes a `src` and `alt` attribute just like traditional images.</li>
-//  <li>Button states are important, not just button styling! If you are only toggling classes to visually manage state of your components, you are likely not appropriately conveying that state to users of assistive technologies.</li>
-// </ul>
+//  - A `<button>` tag does not need anything special to work. Use `<button>` when you can, but it is possible to use other elements as long as you add `role="button"` and add JavaScript to replicate the button functionality.
+//  - Just like links, you can add `class="visuallyhidden"` with descriptive text to give more context to the button's purpose.
+//  - If a button contains an <code>&lt;img&gt;</code> element, make sure to set its `alt` attribute. If it contains an icon, use `aria-label` to describe the icon instead.
+//  - You can use <code>&lt;input type=&quot;image&quot;&gt;</code> to make a graphical button. It takes a `src` and `alt` attribute just like traditional images.
+//  - Button states are important, not just button styling! If you are only toggling classes to visually manage state of your components, you are likely not appropriately conveying that state to users of assistive technologies.
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#button_res">Resources</a></h3><div id="button_res" class="atblock__panel"><ul><li><a href="https://www.deque.com/blog/accessible-aria-buttons" target="_blank">Building Accessible Buttons with ARIA</a></li><li><a href="https://css-tricks.com/user-facing-state/" target="_blank">User Facing State</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role" target="_blank">Using the button role</a></li><li><a href="https://www.w3.org/TR/wai-aria-practices-1.1/examples/button/button.html" target="_blank">W3C Button Examples</a></li></ul></div></section>
 //
