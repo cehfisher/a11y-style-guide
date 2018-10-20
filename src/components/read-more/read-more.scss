@@ -1,7 +1,8 @@
 // Read More Links
 //
-// - Add id selectors to titles and use `aria-labelledby=""` to link to the title text (Example #1).
+// - Add id selectors to titles or paragraphs and use `aria-labelledby=""` to link to the title text (Example #1).
 // - Add decriptive text with `aria-label=""` directly in the link (Example #2).
+// - Add id selectors to titles or paragraphs and use `aria-describedby=""` to link to the title text (Example #3).
 // - Use the class `visuallyhidden` to visually hide more information about the link (Example #4).
 // - Turn read more links into buttons, when you can, since they allow for more labeling options.
 //

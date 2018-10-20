@@ -119,8 +119,9 @@
 
                             <div class="kss-description">
                 <ul>
-<li>Add id selectors to titles and use <code>aria-labelledby=&quot;&quot;</code> to link to the title text (Example #1).</li>
+<li>Add id selectors to titles or paragraphs and use <code>aria-labelledby=&quot;&quot;</code> to link to the title text (Example #1).</li>
 <li>Add decriptive text with <code>aria-label=&quot;&quot;</code> directly in the link (Example #2).</li>
+<li>Add id selectors to titles or paragraphs and use <code>aria-describedby=&quot;&quot;</code> to link to the title text (Example #3).</li>
 <li>Use the class <code>visuallyhidden</code> to visually hide more information about the link (Example #4).</li>
 <li>Turn read more links into buttons, when you can, since they allow for more labeling options.</li>
 </ul>
@@ -142,9 +143,9 @@
   <p>Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. <a href="#" aria-label="Learn more about trapped black bears" class="read-more">Read More</a></p>
   <div class="break"></div>
   <h3>Example #3: Using aria-describedby</h3>
-  <h4 class="bold" id="info">Can I have a badge?</h4>
+  <h4 class="bold">Can I have a badge?</h4>
   <p>Badges? We ain't got no badges! We don't need no badges! I don't have to show you any stinking badges!
-  <p class="visuallyhidden">This is a quote from the 1948 movie The Treasure of the Sierra Madre.</p><p><a href="#" aria-describedby="info" class="read-more">Read More</a></p>
+  <p id="info" class="visuallyhidden">This is a quote from the 1948 movie The Treasure of the Sierra Madre.</p><p><a href="#" aria-describedby="info" class="read-more">Read More</a></p>
   <div class="break"></div>
   <h3>Example #4: Using visually hidden text</h3>
   <h4 class="bold">Mass Hysteria</h4>
@@ -171,9 +172,9 @@
   &lt;p&gt;Over the past three weeks there have been 15 reports or black bears getting themselves trapped in vehicles. There are several ways to prevent this from happening to you. &lt;a href=&quot;#&quot; aria-label=&quot;Learn more about trapped black bears&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
   &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
   &lt;h3&gt;Example #3: Using aria-describedby&lt;/h3&gt;
-  &lt;h4 class=&quot;bold&quot; id=&quot;info&quot;&gt;Can I have a badge?&lt;/h4&gt;
+  &lt;h4 class=&quot;bold&quot;&gt;Can I have a badge?&lt;/h4&gt;
   &lt;p&gt;Badges? We ain&#039;t got no badges! We don&#039;t need no badges! I don&#039;t have to show you any stinking badges!
-  &lt;p class=&quot;visuallyhidden&quot;&gt;This is a quote from the 1948 movie The Treasure of the Sierra Madre.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;#&quot; aria-describedby=&quot;info&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
+  &lt;p id=&quot;info&quot; class=&quot;visuallyhidden&quot;&gt;This is a quote from the 1948 movie The Treasure of the Sierra Madre.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;#&quot; aria-describedby=&quot;info&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;&lt;/p&gt;
   &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
   &lt;h3&gt;Example #4: Using visually hidden text&lt;/h3&gt;
   &lt;h4 class=&quot;bold&quot;&gt;Mass Hysteria&lt;/h4&gt;
