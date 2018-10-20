@@ -2,14 +2,12 @@
 //
 // SVGs are scalable vector graphics and can be made used for icons, images, logos, etc. SVG content is scalable and scales without any reduction in visual quality.
 //
-// <ul>
-//  <li>The best way to make SVGs accessible to Assistive Technologies (AT) like screen readers and speech recognition tools is to put it directly into your HTML using the `<svg>` tag</li>
-//  <li>Avoid using `<embed>`, `<object>`, or `<img>` elements as they are not as supported by browsers as inline SVG</li>
-//  <li>Include a `<title>` and `<description>` in your SVG markup</li>
-//  <li>Use `aria-labelledby=""` and reference the id values of the title and description elements</li>
-//  <li>Give your SVGs a job with the `role=""` attribute</li>
-//  <li>To “hide” elements from a screen reader in an SVG add `role="presentation"`</li>
-// </ul>
+//  - The best way to make SVGs accessible to Assistive Technologies (AT) like screen readers and speech recognition tools is to put it directly into your HTML using the `<svg>` tag
+//  - Avoid using `<embed>`, `<object>`, or `<img>` elements as they are not as supported by browsers as inline SVG
+//  - Include a `<title>` and `<description>` in your SVG markup
+//  - Use `aria-labelledby=""` and reference the id values of the title and description elements
+//  - Give your SVGs a job with the `role=""` attribute
+//  - To “hide” elements from a screen reader in an SVG add `role="presentation"`
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#svg_res">Resources</a></h3><div id="svg_res" class="atblock__panel"><ul><li><a href="https://www.sitepoint.com/tips-accessible-svg" target="_blank">Tips for Creating Accessible SVG</a></li><li><a href="https://css-tricks.com/accessible-svgs" target="_blank">Accessible SVGs</a></li></ul></div></section>
 //
