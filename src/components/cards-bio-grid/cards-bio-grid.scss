@@ -10,13 +10,13 @@
 .cards-bio-grid__item-wrapper.photo-grid-names {
   background-color: $color-gallery;
   margin: 0 auto;
-  max-width: 250px;
+  max-width: 15.625rem;
   border-radius: 0 0 $border-rd-sm $border-rd-sm;
 }
 
 .cards-bio-grid__item-wrapper.photo-grid {
   margin: 0 auto;
-  max-width: 250px;
+  max-width: 15.625rem;
 }
 
 .cards-bio-grid__image {
@@ -96,7 +96,7 @@
     flex-basis: 100%;
 
     @include breakpoint($bp-sm) {
-      flex-basis: 33.33%;
+      flex-basis: 33.33333%;
     }
   }
 

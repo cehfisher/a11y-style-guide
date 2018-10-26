@@ -17,11 +17,11 @@
     text-align: center;
 
     @include breakpoint($bp-sm) {
-      max-width: 400px;
+      max-width: 25rem;
     }
 
     @include breakpoint($bp-md) {
-      max-width: 1010px;
+      max-width: 63.125rem;
       padding: 0 0 $padding-md-lg $padding-sm;
     }
 
@@ -41,13 +41,13 @@
       .highlight__img-overlay {
         text-transform: uppercase;
         color: $color-white;
-        margin-top: -64px;
+        margin-top: -4rem;
         padding: $padding-md;
         background: $color-midnight;
-        opacity: 0.90;
+        opacity: .9;
         border-radius: $border-rd-sm;
         width: 100%;
-        max-width: 860px;
+        max-width: 53.75rem;
         position: absolute;
         bottom: 0;
         height: 100%;
@@ -63,7 +63,7 @@
       }
 
       .highlight__image {
-        max-width: 770px;
+        max-width: 48.125rem;
         width: 100%;
         margin: auto;
         position: relative;
@@ -71,7 +71,7 @@
         img {
           border-radius: $border-rd-sm;
           width: 100%;
-          min-height: 125px;
+          min-height: 7.8125rem;
           border: 0;
         }
       }
@@ -92,108 +92,57 @@
 // Colors
 .image-overlay {
 
-  &.blue-overlay::before {
-    display: block;
+  // these should really be a single selector
+  &.blue-overlay:before,
+  &.green-overlay:before,
+  &.purplse-overlay:before,
+  &.red-overlay:before,
+  &.dark-blue-overlay:before,
+  &.dark-red-overlay:before,
+  &.gray-overlay:before,
+  &.white-overlay:before {
     content: '';
+    height: 100%;
+    left: 0;
+    opacity: .65;
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
     z-index: $zi-ground;
+  }
+
+  &.blue-overlay::before {
     background: $color-cornflower;
-    opacity: 0.65;
   }
 
   &.green-overlay::before {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: $zi-ground;
     background: $color-grass;
-    opacity: 0.65;
   }
 
   &.purple-overlay::before {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: $zi-ground;
     background: $color-eggplant;
-    opacity: 0.65;
   }
 
   &.red-overlay::before {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: $zi-ground;
     background: $color-cherry;
     opacity: 0.55;
   }
 
   &.dark-blue-overlay::before {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: $zi-ground;
     background: $color-navy;
-    opacity: 0.65;
   }
 
   &.dark-red-overlay::before {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: $zi-ground;
     background: $color-ruby;
     opacity: 0.55;
   }
 
   &.gray-overlay::before {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: $zi-ground;
     background: $color-silver;
-    opacity: 0.65;
   }
 
   &.white-overlay::before {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: $zi-ground;
     background: $color-white;
-    opacity: 0.65;
   }
 
   // For images that need more opacity

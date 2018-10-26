@@ -24,14 +24,14 @@
   &__trigger {
     background-repeat: no-repeat;
     background-image: url('#{$asset-path}/plus_round_red.png'); // replace with plus
-    background-size: 28px;
+    background-size: 1.75rem;
     background-position: 97% 50%;
     box-shadow: none;
     line-height: 1.5;
     margin: $padding-xsm 0;
     width: 100%;
     text-align: left;
-    padding: 10px 40px 10px 16px;
+    padding: .625rem 2.5rem .625rem 1rem;
     font-size: 1rem;
     color: $color-black;
     background-color: $color-alabaster;
@@ -41,20 +41,20 @@
     text-transform: none;
 
     @include breakpoint($bp-sm) {
-      background-size: 32px;
+      background-size: 2em;
       background-position: 98% 50%;
     }
 
     &[aria-expanded='true'] {
       content: '';
       background: url('#{$asset-path}/minus_round_red.png'); // replace with minus
-      background-size: 28px;
+      background-size: 1.75rem;
       background-repeat: no-repeat;
       background-position: 97% 50%;
       background-color: $color-alabaster;
 
       @include breakpoint($bp-sm) {
-        background-size: 32px;
+        background-size: 2rem;
         background-position: 98% 50%;
       }
     }
@@ -68,6 +68,6 @@
 
   &__content {
     display: none;
-    padding: 10px 16px;
+    padding: .625rem 1rem;
   }
 }

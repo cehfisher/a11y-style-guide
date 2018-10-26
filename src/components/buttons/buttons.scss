@@ -76,7 +76,7 @@ html [type='button'],
   @include button;
   line-height: 1.2;
   padding: 0.8rem $padding-md 0.8rem ($padding-md + $padding-xsm);
-  height: 48px;
+  height: 3rem;
 
   &::before {
     float: left;
@@ -116,7 +116,7 @@ html [type='button'],
 
 .magnifyingglass {
   margin: -$padding-xsm $padding-sm;
-  width: 28px;
+  width: 1.75rem;
 
   &:hover,
   &:active {

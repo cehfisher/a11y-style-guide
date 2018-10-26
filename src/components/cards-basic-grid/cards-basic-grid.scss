@@ -16,8 +16,8 @@
 
   @include breakpoint($bp-md) {
     .card__title {
-      left: 15px;
-      right: 15px;
+      left: 1rem;
+      right: 1rem;
     }
   }
 }
