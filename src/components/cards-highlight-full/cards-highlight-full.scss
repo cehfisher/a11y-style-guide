@@ -29,7 +29,7 @@
 .highlight__content {
   z-index: $zi-low;
   position: relative;
-  max-width: 1020px;
+  max-width: 63.75rem;
   margin: auto;
   padding: $padding-md 0;
 }
@@ -50,11 +50,11 @@
 .highlight__description {
   font-weight: bold;
   margin-bottom: $padding-md;
-  max-width: 1020px;
+  max-width: 63.75rem;
 }
 
 .highlight__image {
-  max-width: 640px;
+  max-width: 40rem;
   margin: $padding-md auto 0;
   overflow: hidden;
 

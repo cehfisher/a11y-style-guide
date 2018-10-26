@@ -14,11 +14,11 @@
   padding: 0 $padding-md-lg;
 
   @include breakpoint ($bp-sm) {
-    max-width: 600px;
+    max-width: 37.5rem;
   }
 
   @include breakpoint ($bp-lg) {
-    max-width: 1200px;
+    max-width: 75rem;
     padding: 0;
   }
 
@@ -61,11 +61,11 @@
   flex-wrap: wrap;
 
   @include breakpoint ($bp-sm) {
-    max-width: 600px;
+    max-width: 37.5rem;
   }
 
   @include breakpoint ($bp-lg) {
-    max-width: 1060px;
+    max-width: 66.25rem;
   }
 }
 
@@ -76,8 +76,8 @@
   position: relative;
   width: 100%;
   background: $color-white;
-  max-width: 225px;
-  max-height: 300px;
+  max-width: 14.0625rem;
+  max-height: 18.75rem;
   margin-bottom: $padding-md;
 
   &:hover {
@@ -97,15 +97,15 @@
 }
 
 .cards__item-content {
-  padding: $padding-sm $padding-md $padding-md;
   background: rgba($color-white, 0.9);
+  height: 100%;
+  left: 0;
+  padding: $padding-sm $padding-md $padding-md;
   position: absolute;
   top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateY(-60px);
+  transform: translateY(-3.75rem);
   transition: transform $anim-standard $anim-speed-moderate;
+  width: 100%;
 }
 
 .cards__item-description {
@@ -114,15 +114,15 @@
   margin-bottom: 0;
   font-size: $padding-sm;
   color: $color-midnight;
-  height: 175px;
+  height: 10.9375rem;
   overflow: hidden;
 }
 
 .cards__item-image {
   margin: auto;
   display: block;
-  height: 170px;
-  width: 225px;
+  height: 10.625rem;
+  width: 14.0625rem;
 
   img {
     display: block;
@@ -144,7 +144,7 @@
   text-align: center;
   display: flex;
   line-height: 1;
-  height: 85px;
+  height: 5.3125rem;
 
   a {
     text-align: center;
@@ -202,12 +202,12 @@
   align-items: stretch;
   justify-content: center;
   margin: 0 auto;
-  min-height: 300px;
-  min-width: 225px;
+  min-height: 18.75rem;
+  min-width: 14.0265rem;
 }
 
 .cards__front {
-  min-height: 202px;
+  min-height: 12.625rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -219,8 +219,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 225px;
-    height: 100px;
+    width: 14.0625rem;
+    height: 6.25rem;
   }
 }
 

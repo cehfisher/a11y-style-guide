@@ -18,10 +18,9 @@
 .checkbox {
 
   &.row label {
-    display: block;
+    clear: none;
     float: left;
     padding-bottom: $padding-sm;
-    clear: none;
   }
 
   &.column {
@@ -45,28 +44,27 @@
 
 .checkbox label::before,
 .checkbox label::after {
-  position: absolute;
   content: '';
-  display: inline-block;
+  position: absolute;
 }
 
 .checkbox label::before {
-  height: 22px;
-  width: 22px;
-  left: 0;
-  top: 1px;
   background: $color-gallery;
   border: 1px solid $color-silver;
+  height: 1.375rem;
+  left: 0;
+  top: 1px;
+  width: 1.375rem;
 }
 
 .checkbox label::after {
+  border-width: 0 2px 2px 0;
+  border: solid $color-white;
+  height: .875rem;
   left: 7px;
   top: 3px;
-  width: 8px;
-  height: 14px;
-  border: solid $color-white;
-  border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+  width: .5rem;
 }
 
 .checkbox input[type='checkbox'] + label::after {

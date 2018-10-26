@@ -3,15 +3,15 @@
 
 .icon {
   @include image-replace;
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: 36px;
-  height: 36px;
-  max-width: 100%;
   background-position: center;
-  background-size: contain;
   background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 2.25rem;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  width: 2.25rem;
 }
 
 // Social Footer Icons
@@ -35,7 +35,7 @@
 
 .icon--youtube {
   background-image: url('#{$asset-path}/icon_you-tube_small.svg');
-  width: 50px;
+  width: 3.125rem;
   max-width: 100%;
 
   &:hover,
@@ -66,23 +66,23 @@
 .icon--phone {
   background-image: url('#{$asset-path}/icon_phone.svg');
   content: '';
-  background-size: 15px 15px;
+  background-size: .9375rem .9375rem;
   background-repeat: no-repeat;
-  padding: 0 4px 0 25px;
+  padding: 0 .25rem 0 1.5625rem;
 }
 
 .icon--email {
   background-image: url('#{$asset-path}/icon_email.svg');
   content: '';
-  background-size: 17px 21px;
+  background-size: 1.0625rem 1.3125rem;
   background-repeat: no-repeat;
-  padding: 0 4px 0 25px;
+  padding: 0 .25rem 0 1.5625rem;
 }
 
 .icon--address {
   background-image: url('#{$asset-path}/icon_address.svg');
   content: '';
-  background-size: 17px 19px;
+  background-size: 1.0625rem 1.1875rem;
   background-repeat: no-repeat;
-  padding: 0 4px 0 25px;
+  padding: 0 .25rem 0 1.5625rem;
 }

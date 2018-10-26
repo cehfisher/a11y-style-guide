@@ -40,7 +40,7 @@
   left: -9999px;
   opacity: 0;
   transition: 0.1s linear opacity;
-  min-width: 150px;
+  min-width: 9.375rem;
   background: $color-midnight;
   background: rgba(0, 0, 0, 0.9);
 }
@@ -54,7 +54,7 @@
 /* Top level nav items */
 .nav li > a {
   float: left;
-  padding: 10px 15px;
+  padding: .625rem 1rem;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   color: $color-midnight;
@@ -86,7 +86,7 @@
 ul.show-menu { // sass-lint:disable-line no-qualifying-elements
   left: 0;
   opacity: 0.95;
-  margin-top: 4px;
+  margin-top: .25rem;
 }
 
 .nav ul li {
@@ -98,7 +98,7 @@ ul.show-menu { // sass-lint:disable-line no-qualifying-elements
   float: none;
   display: block;
   color: $color-white;
-  font-size: 12px;
+  font-size: .75rem;
   border: 1px solid $color-midnight;
   border-width: 0 0 1px;
   transition: 0.1s linear all; // sass-lint:disable-line no-transition-all
