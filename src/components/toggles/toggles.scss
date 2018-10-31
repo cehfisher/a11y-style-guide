@@ -1,8 +1,7 @@
 // Toggles
 //
-//  - When you can, use a `<button>` element and include `aria-pressed` or `role="switch"` for your toggles.
-//  - You can add optional labels to your toggles, just make sure the label element includes an `id` and the toggle button includes an `aria-labelledby` tag that match.
-//  - Make sure you include `aria-checked` on toggles, with JavaScript changing the state on click from true to false (or the reverse).
+//  - Toggles use hidden `<input type="checkbox">` elements to change the toggle visual via CSS.
+//  - Be sure to include a `for` attribute on the parent `label` element with a value that corresponds to the checkbox `id`.
 //  - Make sure you check the contrast of the toggle text against the background (if text is used).
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#toggle_res">Resources</a></h3><div id="toggle_res" class="atblock__panel"><ul><li><a href="https://github.com/scottaohara/aria-switch-button" target="_blank">ARIA Switch Button</a></li><li><a href="https://inclusive-components.club/toggle-button" target="_blank">Inclusive Components - Toggle Buttons</a></li><li><a href="https://www.w3.org/TR/wai-aria-1.1/#switch" target="_blank">Switch Role (WAI-ARIA)</a></li></ul></div></section>
@@ -20,199 +19,82 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
-[data-action='aria-switch'] {
-  background: $color-gallery;
-  border-radius: $border-rd-lg;
+$switch-size: 30px;
+$chrome-default-focus-color: #4D90FE;
+
+.a11-y-check-switch {
   display: inline-block;
-  position: relative;
-  transition: background 0.1s ease-in-out;
-  border: 0;
-  width: 75px;
-  min-height: 34px;
-  overflow: hidden;
-  clear: both;
-  float: left;
+  margin: 0 0 20px;
 
-  &:focus {
-    background: $color-gallery;
-  }
-
-  &:hover {
-    background-color: $color-gallery;
-  }
-
-  &:not([disabled]):hover,
-  &:not([disabled]):focus {
-    border: 0;
+  [type='checkbox'] {
+    @include element-invisible();
   }
 
   span {
-    border-radius: $border-rd-lg;
+    background-color: $color-gallery;
+    border: 1px solid $color-manatee;
+    border-radius: 3rem;
     display: inline-block;
-    font-weight: bold;
-    pointer-events: none;
-    text-transform: uppercase;
-    position: absolute;
-  }
-
-  &[aria-checked='false'] {
-
-    span {
-      background: $color-white;
-      border: 1px solid $color-alto;
-      border-radius: 50%;
-      height: 30px;
-      width: 30px;
-      top: 2px;
-      left: 2px;
-      transition: 0.4s;
-    }
-  }
-
-  &[aria-checked='true'] span {
-    background: $color-white;
-    border: 1px solid $color-alto;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    top: 2px;
-    left: 43px;
-    transition: 0.4s;
-  }
-
-  &[aria-checked='true'] {
-    background: $color-grass;
-  }
-
-  &.text[aria-checked='false'] span::after {
-    content: 'OFF';
-    display: block;
-    color: $color-midnight;
-    position: absolute;
-    right: -36px;
-    top: 7px;
-  }
-
-  &.text[aria-checked='true'] span::before {
-    content: 'ON';
-    display: block;
-    color: $color-midnight;
-    position: absolute;
-    left: -32px;
-    top: 7px;
-  }
-
-  &.reverse[aria-checked='false'] {
-    background: $color-white;
-
-    span {
-      background: $color-alto;
-      border: 1px solid $color-alto;
-      border-radius: 50%;
-      height: 30px;
-      width: 30px;
-      top: 2px;
-      left: 2px;
-      transition: 0.4s;
-    }
-  }
-
-  &.reverse[aria-checked='true'] {
-    background: $color-white;
-
-    span {
-      background: $color-grass;
-      border: 1px solid $color-alto;
-      border-radius: 50%;
-      height: 30px;
-      width: 30px;
-      top: 2px;
-      left: 43px;
-      transition: 0.4s;
-    }
-  }
-
-  &.flip {
-    background: $color-gallery;
-    border-radius: 0;
-    display: inline-block;
+    height: $switch-size + 4;
     position: relative;
-    transition: background 0.1s ease-in-out;
-    border: 0;
-    width: 75px;
-    height: 75px;
-    overflow: hidden;
-    clear: both;
-    float: left;
+    transition: all .3s linear;
+    vertical-align: middle;
+    width: $switch-size * 2 + 2;
+
+    &:after {
+      background-color: $color-white;
+      border: 1px solid $color-manatee;
+      content: '';
+      display: block;
+      border-radius: 50%;
+      height: $switch-size;
+      left: 1px;
+      position: absolute;
+      top: calc(50% - #{$switch-size/2});
+      transition: all .1s linear;
+      width: $switch-size;
+    }
+  }
+
+  [type='checkbox']:not(:disabled) + span {
 
     &:hover {
-      background: $color-gallery;
-    }
+      cursor: pointer;
 
-    span {
-      border: 1px solid;
-      border-radius: 0;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left: 0;
-      transition: 0.4s;
-
-      &::after,
-      &::before {
-        display: block;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        padding: $padding-xsm;
-        top: 50%;
-        transform: translateY(-50%);
+      &:after {
+        border-color: $color-cornflower;
+        left: 3px;
       }
     }
   }
 
-  &.flip[aria-checked='false'] {
-    background: $color-white;
+  [type='checkbox']:checked + span {
 
-    span {
-      background: $color-cherry;
-      border-color: $color-alto;
+    background-color: $color-cornflower;
+
+    &:after {
+      left: $switch-size - 1;
+    }
+
+    &:hover {
+
+      &:after {
+        left: $switch-size - 2;
+      }
     }
   }
 
-  &.flip[aria-checked='true'] {
-    background: $color-white;
+  [type='checkbox']:focus + span {
 
-    span {
-      background: $color-grass;
+    box-shadow: 0 0 4px 2px $chrome-default-focus-color;
+  }
+
+  [type='checkbox']:disabled + span {
+    border-color: $color-alto;
+    opacity: 0.75;
+
+    &:after {
       border-color: $color-alto;
     }
   }
-
-  &.flip[aria-checked='false'] span::after {
-    content: 'No way!';
-    color: $color-white;
-  }
-
-  &.flip[aria-checked='true'] span::before {
-    content: 'Heck Yes!';
-    color: $color-midnight;
-  }
-}
-
-.optional-label {
-  display: inline-block;
-  padding: 12px 18px;
-}
-
-.no-js [data-action='aria-switch']:not([aria-checked]) span {
-  background: $color-white;
-  border: 1px solid $color-alto;
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  top: 2px;
-  left: 43px;
-  transition: 0.4s;
 }

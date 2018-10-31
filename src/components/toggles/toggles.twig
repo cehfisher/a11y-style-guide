@@ -1,20 +1,17 @@
 <section class="toggles-section">
   <div>
-    <button type="button" data-action="aria-switch" aria-labelledby="toggle_label" aria-checked="false" role="switch">
-      <span></span>
-    </button>
-    <span id="toggle_label" class="optional-label">Optional Label</span>
+    <label class="a11-y-check-switch" for="a11y-switch-example-1">
+      Switch 1 Label
+      <input id="a11y-switch-example-1" type="checkbox">
+      <span aria-hidden="true"></span>
+    </label>
   </div>
-  <button type="button" data-action="aria-switch" aria-label="Toggle Text" aria-checked="true" role="switch" class="text">
-    <span></span>
-  </button>
-  <button type="button" data-action="aria-switch" aria-label="Toggle Reverse" aria-checked="true" role="switch" class="reverse">
-    <span></span>
-  </button>
-  <button type="button" data-action="aria-switch" aria-label="Toggle Reverse with Text" aria-checked="false" role="switch" class="reverse text">
-    <span></span>
-  </button>
-  <button type="button" data-action="aria-switch" aria-label="Toggle Flip" aria-checked="false" role="switch" class="flip">
-    <span></span>
-  </button>
+
+  <div>
+    <label class="a11-y-check-switch" for="a11y-switch-example-2">
+      Switch 2 Label
+      <input id="a11y-switch-example-2" type="checkbox" disabled>
+      <span aria-hidden="true"></span>
+    </label>
+  </div>
 </section>
