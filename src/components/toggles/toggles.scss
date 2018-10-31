@@ -2,6 +2,7 @@
 //
 //  - Toggles use hidden `<input type="checkbox">` elements to change the toggle visual via CSS.
 //  - Be sure to include a `for` attribute on the parent `label` element with a value that corresponds to the checkbox `id`.
+//  - For Toggles without labels add an `aria-label` attribute to the checkbox element.
 //  - Make sure you check the contrast of the toggle text against the background (if text is used).
 //
 // <section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#toggle_res">Resources</a></h3><div id="toggle_res" class="atblock__panel"><ul><li><a href="https://github.com/scottaohara/aria-switch-button" target="_blank">ARIA Switch Button</a></li><li><a href="https://inclusive-components.club/toggle-button" target="_blank">Inclusive Components - Toggle Buttons</a></li><li><a href="https://www.w3.org/TR/wai-aria-1.1/#switch" target="_blank">Switch Role (WAI-ARIA)</a></li></ul></div></section>
