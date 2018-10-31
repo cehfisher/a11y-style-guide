@@ -3,8 +3,14 @@
     <label for="first-name">First Name</label>
     <input id="first-name" type="text" name="textfield">
     <label for="last-name" class="required-field">Last Name</label>
-    <input id="last-name" type="text" name="textfield" aria-describedby="error-message" required>
-    <div id="error-message" class="visuallyhidden">This field is required.</div>
+    <input id="last-name" type="text" name="textfield" aria-describedby="required-message" required>
+    <div id="required-message" class="visuallyhidden">This field is required.</div>
+    <label for="username">Username</label>
+    <input id="username" type="text" name="textfield" aria-describedby="username-help-text" aria-invalid="true">
+    <span id="username-help-text" role="alert">There was an error with the input above.</span>
+    <label for="city">City</label>
+    <input id="city" type="text" name="textfield" aria-describedby="city-help-text" aria-invalid="false">
+    <span id="city-help-text" role="alert">The input above is successful.</span>
     <label for="address">Enter your street address</label>
     <textarea id="address" name="addresstext"></textarea>
     <input type="submit" value="Submit">

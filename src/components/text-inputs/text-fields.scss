@@ -29,11 +29,41 @@ textarea {
   min-height: 49px;
 }
 
-input:required,
-textarea:required {
+input,
+textarea {
 
-  &:focus {
-    outline: auto 5px $color-cherry;
+  &[aria-invalid] {
+    outline-width: 5px;
+
+    & + span {
+      display: block;
+      font-weight: $font-weight-bold;
+      margin: -15px 0 20px;
+    }
+  }
+
+  &[aria-invalid='true'] {
+    border-color: $notification-color-error;
+
+    &:focus {
+      outline-color: $notification-color-error;
+    }
+
+    & + span {
+      color: $color-cherry;
+    }
+  }
+
+  &[aria-invalid='false'] {
+    border-color: $notification-color-success;
+
+    &:focus {
+      outline-color: $notification-color-success;
+    }
+
+    & + span {
+      color: $notification-color-success;
+    }
   }
 }
 
