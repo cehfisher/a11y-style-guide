@@ -596,8 +596,14 @@
     <label for="first-name">First Name</label>
     <input id="first-name" type="text" name="textfield">
     <label for="last-name" class="required-field">Last Name</label>
-    <input id="last-name" type="text" name="textfield" aria-describedby="error-message" required>
-    <div id="error-message" class="visuallyhidden">This field is required.</div>
+    <input id="last-name" type="text" name="textfield" aria-describedby="required-message" required>
+    <div id="required-message" class="visuallyhidden">This field is required.</div>
+    <label for="username">Username</label>
+    <input id="username" type="text" name="textfield" aria-describedby="username-help-text" aria-invalid="true">
+    <span id="username-help-text" role="alert">There was an error with the input above.</span>
+    <label for="city">City</label>
+    <input id="city" type="text" name="textfield" aria-describedby="city-help-text" aria-invalid="false">
+    <span id="city-help-text" role="alert">The input above is successful.</span>
     <label for="address">Enter your street address</label>
     <textarea id="address" name="addresstext"></textarea>
     <input type="submit" value="Submit">
@@ -617,8 +623,14 @@
     &lt;label for=&quot;first-name&quot;&gt;First Name&lt;/label&gt;
     &lt;input id=&quot;first-name&quot; type=&quot;text&quot; name=&quot;textfield&quot;&gt;
     &lt;label for=&quot;last-name&quot; class=&quot;required-field&quot;&gt;Last Name&lt;/label&gt;
-    &lt;input id=&quot;last-name&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;error-message&quot; required&gt;
-    &lt;div id=&quot;error-message&quot; class=&quot;visuallyhidden&quot;&gt;This field is required.&lt;/div&gt;
+    &lt;input id=&quot;last-name&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;required-message&quot; required&gt;
+    &lt;div id=&quot;required-message&quot; class=&quot;visuallyhidden&quot;&gt;This field is required.&lt;/div&gt;
+    &lt;label for=&quot;username&quot;&gt;Username&lt;/label&gt;
+    &lt;input id=&quot;username&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;username-help-text&quot; aria-invalid=&quot;true&quot;&gt;
+    &lt;span id=&quot;username-help-text&quot; role=&quot;alert&quot;&gt;There was an error with the input above.&lt;/span&gt;
+    &lt;label for=&quot;city&quot;&gt;City&lt;/label&gt;
+    &lt;input id=&quot;city&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;city-help-text&quot; aria-invalid=&quot;false&quot;&gt;
+    &lt;span id=&quot;city-help-text&quot; role=&quot;alert&quot;&gt;The input above is successful.&lt;/span&gt;
     &lt;label for=&quot;address&quot;&gt;Enter your street address&lt;/label&gt;
     &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;
     &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;

@@ -617,9 +617,34 @@ textarea {
   font-size: 1rem;
   min-height: 49px; }
 
-input:required:focus,
-textarea:required:focus {
-  outline: auto 5px #e00000; }
+input[aria-invalid],
+textarea[aria-invalid] {
+  outline-width: 5px; }
+  input[aria-invalid] + span,
+  textarea[aria-invalid] + span {
+    display: block;
+    font-weight: bold;
+    margin: -15px 0 20px; }
+
+input[aria-invalid='true'],
+textarea[aria-invalid='true'] {
+  border-color: #e00000; }
+  input[aria-invalid='true']:focus,
+  textarea[aria-invalid='true']:focus {
+    outline-color: #e00000; }
+  input[aria-invalid='true'] + span,
+  textarea[aria-invalid='true'] + span {
+    color: #e00000; }
+
+input[aria-invalid='false'],
+textarea[aria-invalid='false'] {
+  border-color: #218003; }
+  input[aria-invalid='false']:focus,
+  textarea[aria-invalid='false']:focus {
+    outline-color: #218003; }
+  input[aria-invalid='false'] + span,
+  textarea[aria-invalid='false'] + span {
+    color: #218003; }
 
 textarea {
   min-height: 8rem; }
