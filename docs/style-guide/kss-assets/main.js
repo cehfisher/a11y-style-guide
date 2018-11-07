@@ -67,15 +67,29 @@
         // Show markup when the button is clicked.
         $('.js-show-markup').on('click', function() {
           var $self = $(this);
+          var buttonLabel = $self.text();
 
-          // Grab the inner html of the next available template tag.
-          var markup = $self.next('template').html();
+          $self.toggleClass('js-show-markup--is-visible');
 
-          // Replace the button with the markup.
-          $self.replaceWith(markup);
+          if ($self.hasClass('js-show-markup--is-visible')) {
+            // Toggle button label
+            $self.text(buttonLabel.replace('Show', 'Hide'));
+            // Grab the inner html of the next available template tag.
+            var markup = $self.next('template').html();
 
-          // Syntax hightlignting with Rainbow.js
-          Rainbow.color();
+            // Insert markup into markup container
+            var markupElement = '<div class="js-markup-container">' + markup + '</div>';
+            $(markupElement).hide().insertAfter(this).fadeIn();
+
+            // Syntax hightlignting with Rainbow.js
+            Rainbow.color();
+          } else {
+            // Toggle button label
+            $self.text(buttonLabel.replace('Hide', 'Show'));
+            $self.next('.js-markup-container').fadeOut(function(){
+              $(this).remove();
+            });
+          }
         });
 
         var fullWidth = function (appendUrl) {
