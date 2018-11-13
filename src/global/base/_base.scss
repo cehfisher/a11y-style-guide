@@ -23,7 +23,7 @@
  */
 html {
   box-sizing: border-box;
-  font-family: sans-serif; /* 1 */
+  font-family: 'Open Sans', 'Arial', sans-serif; /* 1 */
   line-height: 1.15; /* 2 */
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
@@ -292,7 +292,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif; /* 1 */
+  font-family: 'Open Sans', 'Arial', sans-serif; /* 1 */
   margin: 0; /* 2 */
 }
 

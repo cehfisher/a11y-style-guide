@@ -134,3 +134,24 @@ html [type='button'],
     color: $color-midnight;
   }
 }
+
+.button-hover {
+  background-color: $color-ruby;
+  border: 3px solid $color-ruby;
+  text-decoration: underline;
+}
+
+.button-active,
+.button-focus {
+  background-color: $color-blood;
+  border: 3px solid $color-blood;
+  text-decoration: underline;
+}
+
+.button-disabled,
+button[disabled],
+:disabled {
+  background-color: $color-manatee;
+  border: 3px solid $color-manatee;
+  pointer-events: none;
+}

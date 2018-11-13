@@ -78,7 +78,7 @@
 
 /* time */
 .px-video-time {
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: 'Open Sans', 'Arial', sans-serif;
 	float: right;
 	margin-top: 2px;
 	font-size: 14px;
@@ -321,13 +321,14 @@
 
 .px-timetip {
 	padding: 5px 10px;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 14px;
 	background: rgba(0,0,0,0.83);
 	border-radius: 3px;
 	color: #fff;
 	width: auto;
 }
+
 .px-timetip:after {
 	top: 100%;
 	left: 50%;
