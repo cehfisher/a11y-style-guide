@@ -459,7 +459,7 @@ abbr[title] {
   -webkit-box-shadow: none;
   box-shadow: none;
   background-color: transparent;
-  font-family: 'Verdana', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   height: 30px;
   line-height: 1.5;
   margin: 0.5rem 0; }
@@ -652,7 +652,7 @@ a[target='_blank']::after {
 
 /* time */
 .px-video-time {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   float: right;
   margin-top: 2px;
   font-size: 14px; }
@@ -876,7 +876,7 @@ a[target='_blank']::after {
 
 .px-timetip {
   padding: 5px 10px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 14px;
   background: rgba(0, 0, 0, 0.83);
   border-radius: 3px;

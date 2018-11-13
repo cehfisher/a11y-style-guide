@@ -65,11 +65,20 @@
   position: relative;
   margin: $padding-xsm 0;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: $color-ruby;
     color: $color-white;
     border: 3px solid $hover-color;
+    text-decoration: underline;
+    @include box-shadow;
+  }
+
+  &:focus,
+  &:active,
+  .active {
+    background-color: $color-blood;
+    color: $color-white;
+    border: 3px solid $color-blood;
     text-decoration: underline;
     @include box-shadow;
   }

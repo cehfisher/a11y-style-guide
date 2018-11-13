@@ -459,7 +459,7 @@ abbr[title] {
   -webkit-box-shadow: none;
   box-shadow: none;
   background-color: transparent;
-  font-family: 'Verdana', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   height: 30px;
   line-height: 1.5;
   margin: 0.5rem 0; }
@@ -659,10 +659,18 @@ a[target='_blank']::after {
     position: relative;
     margin: 0.5rem 0;
     width: 175px; }
-    .footer .button:hover, .footer .button:focus {
+    .footer .button:hover {
       background-color: #a51323;
       color: #ffffff;
       border: 3px solid #a51323;
+      text-decoration: underline;
+      -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+    .footer .button:focus, .footer .button:active,
+    .footer .button .active {
+      background-color: #7c0b18;
+      color: #ffffff;
+      border: 3px solid #7c0b18;
       text-decoration: underline;
       -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }

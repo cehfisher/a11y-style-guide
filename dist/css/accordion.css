@@ -459,7 +459,7 @@ abbr[title] {
   -webkit-box-shadow: none;
   box-shadow: none;
   background-color: transparent;
-  font-family: 'Verdana', 'Arial', sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   height: 30px;
   line-height: 1.5;
   margin: 0.5rem 0; }
@@ -620,7 +620,7 @@ a[target='_blank']::after {
   text-align: left;
   padding: 10px 40px 10px 16px;
   font-size: 1rem;
-  color: #000000;
+  color: #222222;
   background-color: #f7f7f7;
   border: 1px solid #bbbbbb;
   display: block;
