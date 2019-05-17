@@ -49,9 +49,9 @@
   }
 
   // Each card needs its own specific ID
-  doc.getElementById('flip1').addEventListener('click', toggle);
-  doc.getElementById('flip2').addEventListener('click', toggle);
-  doc.getElementById('flip3').addEventListener('click', toggle);
-  doc.getElementById('flip4').addEventListener('click', toggle);
+  doc.getElementById('flip1').addEventListener('click', toggle, false);
+  doc.getElementById('flip2').addEventListener('click', toggle, false);
+  doc.getElementById('flip3').addEventListener('click', toggle, false);
+  doc.getElementById('flip4').addEventListener('click', toggle, false);
 
 }(this, this.document));
