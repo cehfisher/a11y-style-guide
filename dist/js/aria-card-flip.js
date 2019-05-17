@@ -14,7 +14,6 @@
     togglecontent = doc.getElementById(toggleID);
     togglecontent.setAttribute('aria-hidden', 'true');
     togglecontent.setAttribute('tabindex', '-1');
-    toggles[i].setAttribute('aria-expanded', 'false');
   }
 
   var cards = document.querySelectorAll(".card.effect__click");
@@ -50,9 +49,9 @@
   }
 
   // Each card needs its own specific ID
-  doc.getElementById('flip1').addEventListener('click', toggle, false);
-  doc.getElementById('flip2').addEventListener('click', toggle, false);
-  doc.getElementById('flip3').addEventListener('click', toggle, false);
-  doc.getElementById('flip4').addEventListener('click', toggle, false);
+  doc.getElementById('flip1').addEventListener('click', toggle);
+  doc.getElementById('flip2').addEventListener('click', toggle);
+  doc.getElementById('flip3').addEventListener('click', toggle);
+  doc.getElementById('flip4').addEventListener('click', toggle);
 
 }(this, this.document));
