@@ -1,6 +1,6 @@
 <section class="tooltips">
   <h3>Option #1: Simple tooltip with no JS</h3>
-    <form action="" class="no-js-tooltip">
+    <form action="#" class="no-js-tooltip">
     <fieldset>
       <legend>Login</legend>
       <div>
@@ -16,17 +16,7 @@
     </fieldset>
   </form>
   <div class="break"></div>
-  <h3>Option #2: Tooltip with a span</h3>
-  <span class="a11y-tip">
-  	<span class="a11y-tip__trigger">
-  		Why did the Clydesdale give the pony a glass of water?
-  	</span>
-  	<span role="tooltip" class="a11y-tip__help">
-  		Because he was a little horse!
-  	</span>
-  </span>
-  <div class="break"></div>
-  <h3>Option #3: Tooltip with a link</h3>
+  <h3>Option #2: Tooltip with a link</h3>
   <span class="a11y-tip a11y-tip--no-delay">
   	<a href="#" class="a11y-tip__trigger">
   		What is Beethoven's favorite fruit?
@@ -36,7 +26,7 @@
   	</span>
   </span>
   <div class="break"></div>
-  <h3>Option #4: Tooltip with a button</h3>
+  <h3>Option #3: Tooltip with a button</h3>
   <span class="a11y-tip">
   	<button type="button" class="a11y-tip__trigger" aria-describedby="tt_id">
   		Don't trust atoms
@@ -46,24 +36,14 @@
   	</span>
   </span>
   <div class="break"></div>
-  <h3>Option #5: Input with right tooltip</h3>
+  <h3>Option #4: Input with right tooltip</h3>
   <label for="test">
   	Why did the invisible man turn down the job offer?
   </label>
   <span class="a11y-tip">
-  	<input id="test" placeholder="enter text" class="a11y-tip__trigger" aria-describedby="test_desc" type="text">
+  	<input id="test" class="a11y-tip__trigger" aria-describedby="test_desc" type="text">
   	<span id="test_desc" role="tooltip" class="a11y-tip__help a11y-tip__help--right">
   		He couldn't see himself doing it.
-  	</span>
-  </span>
-  <div class="break"></div>
-  <h3>Option #6: Click to show/hide tooltip</h3>
-  <span class="a11y-tip a11y-tip--toggle">
-  	<span class="a11y-tip__trigger">
-  	  Why do seagulls fly over the sea?
-  	</span>
-  	<span role="tooltip" class="a11y-tip__help">
-  	  If they flew over the bay, they would be bagels.
   	</span>
   </span>
 </section>
