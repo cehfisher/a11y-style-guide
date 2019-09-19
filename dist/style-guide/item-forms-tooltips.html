@@ -133,7 +133,7 @@
                 <div class="kss-modifier-example">
                   <section class="tooltips">
   <h3>Option #1: Simple tooltip with no JS</h3>
-    <form action="" class="no-js-tooltip">
+    <form action="#" class="no-js-tooltip">
     <fieldset>
       <legend>Login</legend>
       <div>
@@ -149,17 +149,7 @@
     </fieldset>
   </form>
   <div class="break"></div>
-  <h3>Option #2: Tooltip with a span</h3>
-  <span class="a11y-tip">
-  	<span class="a11y-tip__trigger">
-  		Why did the Clydesdale give the pony a glass of water?
-  	</span>
-  	<span role="tooltip" class="a11y-tip__help">
-  		Because he was a little horse!
-  	</span>
-  </span>
-  <div class="break"></div>
-  <h3>Option #3: Tooltip with a link</h3>
+  <h3>Option #2: Tooltip with a link</h3>
   <span class="a11y-tip a11y-tip--no-delay">
   	<a href="#" class="a11y-tip__trigger">
   		What is Beethoven's favorite fruit?
@@ -169,7 +159,7 @@
   	</span>
   </span>
   <div class="break"></div>
-  <h3>Option #4: Tooltip with a button</h3>
+  <h3>Option #3: Tooltip with a button</h3>
   <span class="a11y-tip">
   	<button type="button" class="a11y-tip__trigger" aria-describedby="tt_id">
   		Don't trust atoms
@@ -179,24 +169,14 @@
   	</span>
   </span>
   <div class="break"></div>
-  <h3>Option #5: Input with right tooltip</h3>
+  <h3>Option #4: Input with right tooltip</h3>
   <label for="test">
   	Why did the invisible man turn down the job offer?
   </label>
   <span class="a11y-tip">
-  	<input id="test" placeholder="enter text" class="a11y-tip__trigger" aria-describedby="test_desc" type="text">
+  	<input id="test" class="a11y-tip__trigger" aria-describedby="test_desc" type="text">
   	<span id="test_desc" role="tooltip" class="a11y-tip__help a11y-tip__help--right">
   		He couldn't see himself doing it.
-  	</span>
-  </span>
-  <div class="break"></div>
-  <h3>Option #6: Click to show/hide tooltip</h3>
-  <span class="a11y-tip a11y-tip--toggle">
-  	<span class="a11y-tip__trigger">
-  	  Why do seagulls fly over the sea?
-  	</span>
-  	<span role="tooltip" class="a11y-tip__help">
-  	  If they flew over the bay, they would be bagels.
   	</span>
   </span>
 </section>
@@ -211,7 +191,7 @@
                 <template>
                       <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;tooltips&quot;&gt;
   &lt;h3&gt;Option #1: Simple tooltip with no JS&lt;/h3&gt;
-    &lt;form action=&quot;&quot; class=&quot;no-js-tooltip&quot;&gt;
+    &lt;form action=&quot;#&quot; class=&quot;no-js-tooltip&quot;&gt;
     &lt;fieldset&gt;
       &lt;legend&gt;Login&lt;/legend&gt;
       &lt;div&gt;
@@ -227,17 +207,7 @@
     &lt;/fieldset&gt;
   &lt;/form&gt;
   &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-  &lt;h3&gt;Option #2: Tooltip with a span&lt;/h3&gt;
-  &lt;span class=&quot;a11y-tip&quot;&gt;
-  	&lt;span class=&quot;a11y-tip__trigger&quot;&gt;
-  		Why did the Clydesdale give the pony a glass of water?
-  	&lt;/span&gt;
-  	&lt;span role=&quot;tooltip&quot; class=&quot;a11y-tip__help&quot;&gt;
-  		Because he was a little horse!
-  	&lt;/span&gt;
-  &lt;/span&gt;
-  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-  &lt;h3&gt;Option #3: Tooltip with a link&lt;/h3&gt;
+  &lt;h3&gt;Option #2: Tooltip with a link&lt;/h3&gt;
   &lt;span class=&quot;a11y-tip a11y-tip--no-delay&quot;&gt;
   	&lt;a href=&quot;#&quot; class=&quot;a11y-tip__trigger&quot;&gt;
   		What is Beethoven&#039;s favorite fruit?
@@ -247,7 +217,7 @@
   	&lt;/span&gt;
   &lt;/span&gt;
   &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-  &lt;h3&gt;Option #4: Tooltip with a button&lt;/h3&gt;
+  &lt;h3&gt;Option #3: Tooltip with a button&lt;/h3&gt;
   &lt;span class=&quot;a11y-tip&quot;&gt;
   	&lt;button type=&quot;button&quot; class=&quot;a11y-tip__trigger&quot; aria-describedby=&quot;tt_id&quot;&gt;
   		Don&#039;t trust atoms
@@ -257,24 +227,14 @@
   	&lt;/span&gt;
   &lt;/span&gt;
   &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-  &lt;h3&gt;Option #5: Input with right tooltip&lt;/h3&gt;
+  &lt;h3&gt;Option #4: Input with right tooltip&lt;/h3&gt;
   &lt;label for=&quot;test&quot;&gt;
   	Why did the invisible man turn down the job offer?
   &lt;/label&gt;
   &lt;span class=&quot;a11y-tip&quot;&gt;
-  	&lt;input id=&quot;test&quot; placeholder=&quot;enter text&quot; class=&quot;a11y-tip__trigger&quot; aria-describedby=&quot;test_desc&quot; type=&quot;text&quot;&gt;
+  	&lt;input id=&quot;test&quot; class=&quot;a11y-tip__trigger&quot; aria-describedby=&quot;test_desc&quot; type=&quot;text&quot;&gt;
   	&lt;span id=&quot;test_desc&quot; role=&quot;tooltip&quot; class=&quot;a11y-tip__help a11y-tip__help--right&quot;&gt;
   		He couldn&#039;t see himself doing it.
-  	&lt;/span&gt;
-  &lt;/span&gt;
-  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-  &lt;h3&gt;Option #6: Click to show/hide tooltip&lt;/h3&gt;
-  &lt;span class=&quot;a11y-tip a11y-tip--toggle&quot;&gt;
-  	&lt;span class=&quot;a11y-tip__trigger&quot;&gt;
-  	  Why do seagulls fly over the sea?
-  	&lt;/span&gt;
-  	&lt;span role=&quot;tooltip&quot; class=&quot;a11y-tip__help&quot;&gt;
-  	  If they flew over the bay, they would be bagels.
   	&lt;/span&gt;
   &lt;/span&gt;
 &lt;/section&gt;
