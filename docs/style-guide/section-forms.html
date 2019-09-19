@@ -578,7 +578,7 @@
 
                             <div class="kss-description">
                 <ul>
-<li>Keep it simple - screen readers do not support multiple labels that are linked to the same form element.</li>
+<li>Keep it simple - not all browsers correctly expose multiple labels that are linked to the same form element.</li>
 <li>Use labels for every input and make the <code>for=&quot;&quot;</code> and <code>id=&quot;&quot;</code> values match. IDs must be unique on each page, only one label can be associated to each unique form element.</li>
 <li>Make required fields obvious by using an indicator - border color change, asterisk, description text, etc.</li>
 <li>Fields with error validation should have <code>aria-describedby</code> to insure that the associated field level error message is read by assistive technology. If the error message has an <code>id=&quot;my-error-message&quot;</code>, then the input should have <code>aria-describedby=&quot;my-error-message&quot;</code>.</li>
@@ -600,10 +600,10 @@
     <div id="required-message" class="visuallyhidden">This field is required.</div>
     <label for="username">Username</label>
     <input id="username" type="text" name="textfield" aria-describedby="username-help-text" aria-invalid="true">
-    <span id="username-help-text" role="alert">There was an error with the input above.</span>
+    <span id="username-help-text">There was an error with the input above.</span>
     <label for="city">City</label>
     <input id="city" type="text" name="textfield" aria-describedby="city-help-text" aria-invalid="false">
-    <span id="city-help-text" role="alert">The input above is successful.</span>
+    <span id="city-help-text">The input above is successful.</span>
     <label for="address">Enter your street address</label>
     <textarea id="address" name="addresstext"></textarea>
     <input type="submit" value="Submit">
@@ -627,10 +627,10 @@
     &lt;div id=&quot;required-message&quot; class=&quot;visuallyhidden&quot;&gt;This field is required.&lt;/div&gt;
     &lt;label for=&quot;username&quot;&gt;Username&lt;/label&gt;
     &lt;input id=&quot;username&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;username-help-text&quot; aria-invalid=&quot;true&quot;&gt;
-    &lt;span id=&quot;username-help-text&quot; role=&quot;alert&quot;&gt;There was an error with the input above.&lt;/span&gt;
+    &lt;span id=&quot;username-help-text&quot;&gt;There was an error with the input above.&lt;/span&gt;
     &lt;label for=&quot;city&quot;&gt;City&lt;/label&gt;
     &lt;input id=&quot;city&quot; type=&quot;text&quot; name=&quot;textfield&quot; aria-describedby=&quot;city-help-text&quot; aria-invalid=&quot;false&quot;&gt;
-    &lt;span id=&quot;city-help-text&quot; role=&quot;alert&quot;&gt;The input above is successful.&lt;/span&gt;
+    &lt;span id=&quot;city-help-text&quot;&gt;The input above is successful.&lt;/span&gt;
     &lt;label for=&quot;address&quot;&gt;Enter your street address&lt;/label&gt;
     &lt;textarea id=&quot;address&quot; name=&quot;addresstext&quot;&gt;&lt;/textarea&gt;
     &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
@@ -749,7 +749,7 @@
                 <div class="kss-modifier-example">
                   <section class="tooltips">
   <h3>Option #1: Simple tooltip with no JS</h3>
-    <form action="" class="no-js-tooltip">
+    <form action="#" class="no-js-tooltip">
     <fieldset>
       <legend>Login</legend>
       <div>
@@ -765,17 +765,7 @@
     </fieldset>
   </form>
   <div class="break"></div>
-  <h3>Option #2: Tooltip with a span</h3>
-  <span class="a11y-tip">
-  	<span class="a11y-tip__trigger">
-  		Why did the Clydesdale give the pony a glass of water?
-  	</span>
-  	<span role="tooltip" class="a11y-tip__help">
-  		Because he was a little horse!
-  	</span>
-  </span>
-  <div class="break"></div>
-  <h3>Option #3: Tooltip with a link</h3>
+  <h3>Option #2: Tooltip with a link</h3>
   <span class="a11y-tip a11y-tip--no-delay">
   	<a href="#" class="a11y-tip__trigger">
   		What is Beethoven's favorite fruit?
@@ -785,7 +775,7 @@
   	</span>
   </span>
   <div class="break"></div>
-  <h3>Option #4: Tooltip with a button</h3>
+  <h3>Option #3: Tooltip with a button</h3>
   <span class="a11y-tip">
   	<button type="button" class="a11y-tip__trigger" aria-describedby="tt_id">
   		Don't trust atoms
@@ -795,24 +785,14 @@
   	</span>
   </span>
   <div class="break"></div>
-  <h3>Option #5: Input with right tooltip</h3>
+  <h3>Option #4: Input with right tooltip</h3>
   <label for="test">
   	Why did the invisible man turn down the job offer?
   </label>
   <span class="a11y-tip">
-  	<input id="test" placeholder="enter text" class="a11y-tip__trigger" aria-describedby="test_desc" type="text">
+  	<input id="test" class="a11y-tip__trigger" aria-describedby="test_desc" type="text">
   	<span id="test_desc" role="tooltip" class="a11y-tip__help a11y-tip__help--right">
   		He couldn't see himself doing it.
-  	</span>
-  </span>
-  <div class="break"></div>
-  <h3>Option #6: Click to show/hide tooltip</h3>
-  <span class="a11y-tip a11y-tip--toggle">
-  	<span class="a11y-tip__trigger">
-  	  Why do seagulls fly over the sea?
-  	</span>
-  	<span role="tooltip" class="a11y-tip__help">
-  	  If they flew over the bay, they would be bagels.
   	</span>
   </span>
 </section>
@@ -827,7 +807,7 @@
                 <template>
                       <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;tooltips&quot;&gt;
   &lt;h3&gt;Option #1: Simple tooltip with no JS&lt;/h3&gt;
-    &lt;form action=&quot;&quot; class=&quot;no-js-tooltip&quot;&gt;
+    &lt;form action=&quot;#&quot; class=&quot;no-js-tooltip&quot;&gt;
     &lt;fieldset&gt;
       &lt;legend&gt;Login&lt;/legend&gt;
       &lt;div&gt;
@@ -843,17 +823,7 @@
     &lt;/fieldset&gt;
   &lt;/form&gt;
   &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-  &lt;h3&gt;Option #2: Tooltip with a span&lt;/h3&gt;
-  &lt;span class=&quot;a11y-tip&quot;&gt;
-  	&lt;span class=&quot;a11y-tip__trigger&quot;&gt;
-  		Why did the Clydesdale give the pony a glass of water?
-  	&lt;/span&gt;
-  	&lt;span role=&quot;tooltip&quot; class=&quot;a11y-tip__help&quot;&gt;
-  		Because he was a little horse!
-  	&lt;/span&gt;
-  &lt;/span&gt;
-  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-  &lt;h3&gt;Option #3: Tooltip with a link&lt;/h3&gt;
+  &lt;h3&gt;Option #2: Tooltip with a link&lt;/h3&gt;
   &lt;span class=&quot;a11y-tip a11y-tip--no-delay&quot;&gt;
   	&lt;a href=&quot;#&quot; class=&quot;a11y-tip__trigger&quot;&gt;
   		What is Beethoven&#039;s favorite fruit?
@@ -863,7 +833,7 @@
   	&lt;/span&gt;
   &lt;/span&gt;
   &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-  &lt;h3&gt;Option #4: Tooltip with a button&lt;/h3&gt;
+  &lt;h3&gt;Option #3: Tooltip with a button&lt;/h3&gt;
   &lt;span class=&quot;a11y-tip&quot;&gt;
   	&lt;button type=&quot;button&quot; class=&quot;a11y-tip__trigger&quot; aria-describedby=&quot;tt_id&quot;&gt;
   		Don&#039;t trust atoms
@@ -873,24 +843,14 @@
   	&lt;/span&gt;
   &lt;/span&gt;
   &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-  &lt;h3&gt;Option #5: Input with right tooltip&lt;/h3&gt;
+  &lt;h3&gt;Option #4: Input with right tooltip&lt;/h3&gt;
   &lt;label for=&quot;test&quot;&gt;
   	Why did the invisible man turn down the job offer?
   &lt;/label&gt;
   &lt;span class=&quot;a11y-tip&quot;&gt;
-  	&lt;input id=&quot;test&quot; placeholder=&quot;enter text&quot; class=&quot;a11y-tip__trigger&quot; aria-describedby=&quot;test_desc&quot; type=&quot;text&quot;&gt;
+  	&lt;input id=&quot;test&quot; class=&quot;a11y-tip__trigger&quot; aria-describedby=&quot;test_desc&quot; type=&quot;text&quot;&gt;
   	&lt;span id=&quot;test_desc&quot; role=&quot;tooltip&quot; class=&quot;a11y-tip__help a11y-tip__help--right&quot;&gt;
   		He couldn&#039;t see himself doing it.
-  	&lt;/span&gt;
-  &lt;/span&gt;
-  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-  &lt;h3&gt;Option #6: Click to show/hide tooltip&lt;/h3&gt;
-  &lt;span class=&quot;a11y-tip a11y-tip--toggle&quot;&gt;
-  	&lt;span class=&quot;a11y-tip__trigger&quot;&gt;
-  	  Why do seagulls fly over the sea?
-  	&lt;/span&gt;
-  	&lt;span role=&quot;tooltip&quot; class=&quot;a11y-tip__help&quot;&gt;
-  	  If they flew over the bay, they would be bagels.
   	&lt;/span&gt;
   &lt;/span&gt;
 &lt;/section&gt;
