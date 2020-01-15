@@ -49,7 +49,7 @@
     "gulp-babel": "^6.1.2",
     "gulp-concat": "^2.6.1",
     "gulp-eslint": "^4.0.0",
-    "gulp-imagemin": "^3.3.0",
+    "gulp-imagemin": "^6.2.0",
     "gulp-order": "^1.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.2.1",
