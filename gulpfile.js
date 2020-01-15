@@ -10,7 +10,7 @@ var gulp = require('gulp');
 // Include Our Plugins
 //=======================================================
 var sync        = require('browser-sync');
-var runSequence = require('run-sequence');
+// var runSequence = require('run-sequence');
 
 //=======================================================
 // Include Our tasks.
@@ -32,7 +32,6 @@ var taskConcat      = require('./gulp-tasks/concat.js');
 // We also move some files if they don't need
 // to be compiled.
 //=======================================================
-gulp.task('compile', ['compile:sass', 'compile:js', 'move:js']);
 
 // Compile Sass
 gulp.task('compile:sass', function() {
@@ -57,10 +56,13 @@ gulp.task('move:docs', function() {
   return taskMove.docs();
 });
 
+gulp.task('compile', gulp.series(['compile:sass', 'compile:js', 'move:js']));
+
+
 //=======================================================
 // Lint Sass and JavaScript
 //=======================================================
-gulp.task('lint', ['lint:sass', 'lint:js']);
+
 
 // Lint Sass based on .sass-lint.yml config.
 gulp.task('lint:sass', function () {
@@ -71,6 +73,8 @@ gulp.task('lint:sass', function () {
 gulp.task('lint:js', function () {
   return taskLint.js();
 });
+
+gulp.task('lint', gulp.series(['lint:sass', 'lint:js']));
 
 //=======================================================
 // Compress Files
@@ -96,7 +100,7 @@ gulp.task('concat', function () {
 //=======================================================
 // Clean all directories.
 //=======================================================
-gulp.task('clean', ['clean:css', 'clean:js', 'clean:styleguide']);
+
 
 // Clean style guide files.
 gulp.task('clean:styleguide', function () {
@@ -118,19 +122,21 @@ gulp.task('clean:docs', function() {
   return taskClean.docs();
 });
 
+gulp.task('clean', function(callback){
+  gulp.series(['clean:css', 'clean:js', 'clean:styleguide']);
+  callback();
+});
+
 //=======================================================
 // Watch and recompile sass.
 //=======================================================
 
 // Pull the sass watch task out so we can use run sequence.
 
-gulp.task('watch:sass', function(callback) {
-  runSequence(
+gulp.task('watch:sass', gulp.series(
     ['lint:sass', 'compile:sass'],
     'concat',
-    callback
-  );
-});
+  ));
 
 // Main watch task.
 gulp.task('watch', function() {
@@ -151,37 +157,35 @@ gulp.task('watch', function() {
   // Watch all my sass files and compile sass if a file changes.
   gulp.watch(
     './src/{global,layout,components}/**/*.scss',
-    ['watch:sass']
+    gulp.series(['watch:sass'])
   );
 
   // Watch all my JS files and compile if a file changes.
   gulp.watch([
     './src/{global,layout,components}/**/*.js'
-  ], ['lint:js', 'compile:js']);
+  ], gulp.series(['lint:js', 'compile:js']));
 
   // Watch all my twig files and rebuild the style guide if a file changes.
   gulp.watch(
     './src/{layout,components}/**/*.twig',
-    ['watch:styleguide']
+    gulp.series(['watch:styleguide'])
   );
 
 });
 
 // Reload the browser if the style guide is updated.
-gulp.task('watch:styleguide', ['styleguide'], sync.reload);
+gulp.task('watch:styleguide', gulp.series(['styleguide'], sync.reload));
 
 //=======================================================
 // Default Task
 //
-// runSequence runs 'clean' first, and when that finishes
+// Runs 'clean' first, and when that finishes
 // 'lint', 'compile', 'compress', 'styleguide' run
 // at the same time. 'concat' runs last.
 //=======================================================
-gulp.task('default', function(callback) {
-  runSequence(
+gulp.task('default', 
+  gulp.series(
     'clean',
     ['compile', 'compress', 'styleguide'],
-    'concat',
-    callback
-  );
-});
+    'concat'
+  ));
