@@ -28,7 +28,7 @@
 
 <div class="break"></div>
 <div><h2>How did you get here?</h2>
-<p>Maybe you are a total beginner and wondering where to start? That's cool...welcome! Learning accessibility can feel a bit like drinking out of a firehose, so here are some tips to follow on your journey toward accessibility: <a href="https://medium.com/cariefisher/getting-started-with-website-accessibility-5586c7febc92" target="_blank" aria-label="Getting Started with Website Accessibility article">Getting Started with Website Accessibility</a> or check out the <a href="http://a11y-style-guide.com/style-guide/section-resources.html" target="_blank">Resources</a> page.</p>
+<p>Maybe you are a total beginner and wondering where to start? That's cool...welcome! Learning accessibility can feel a bit like drinking out of a firehose, so here are some tips to follow on your journey toward accessibility: <a href="https://cariefisher.com/a11y-start" target="_blank" aria-label="Getting Started with Website Accessibility article">Getting Started with Website Accessibility</a> or check out the <a href="http://a11y-style-guide.com/style-guide/section-resources.html" target="_blank">Resources</a> page. For more information on my past articles, conference talks, or to see some fun accessible SVGs in action, check out my personal website <a href="https://cariefisher.com" target="_blank">cariefisher.com</a></p>
 
 <div class="break"></div>
 <div><h2>Thanks!</h2>
