@@ -57,5 +57,8 @@
     "gulp-sourcemaps": "^2.6.5",
     "kss": "^3.0.1",
     "run-sequence": "^2.0.0"
+  },
+  "dependencies": {
+    "lodash.template": "^4.5.0"
   }
 }
