@@ -4,7 +4,7 @@
 <ul>
 <li>Fork or clone the project</li>
 <li>Navigate to the project root (a11y-style-guide)</li>
-<li><code>nvm install stable</code> (only need to do once - see the <a href="https://github.com/creationix/nvm" target="_blank"><abbr title="node version manager">NVM</abbr> project</a> for troubleshooting)</li>
+<li><code>nvm install stable</code> (OPTIONAL and only need to do once - see the <a href="https://github.com/creationix/nvm" target="_blank"><abbr title="node version manager">NVM</abbr> project</a> for troubleshooting)</li>
 <li><code>nvm use stable</code></li>
 <li><code>npm install</code> (only need to do once)</li>
 <li><code>git checkout -b my-new-feature</code> (create your feature branch)</li>
