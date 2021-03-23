@@ -5,6 +5,6 @@
   "email": "email@email.com",
   "phone": "555-555-1212",
   "address": "<div><strong>Office Address</strong></div><div>123 Maple St.</div><div>West Lafayette, IN</div>",
-  "external_link": "<a href=\"#\">https://en.wikipedia.org/wiki/Gus_Grissom</a>",
+  "external_link": "<a target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Gus_Grissom\">Learn more about Gus Grissom</a>",
   "brief_description": "<p>Lieutenant Colonel Virgil Ivan (Gus) Grissom (April 3, 1926 – January 27, 1967) was one of the original NASA Project Mercury astronauts, a United States Air Force test pilot, and a mechanical engineer. He was the second American to fly in space, and the first member of the NASA Astronaut Corps to fly in space twice.</p>"
 }
