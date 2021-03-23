@@ -106,101 +106,44 @@
             <a href="https://twitter.com/cariefisher" target="_blank" class="social-link-twitter"><span class="visuallyhidden">Carie Fisher on Twitter</span></a>
             <a href="https://github.com/cehfisher" target="_blank" class="social-link-github"><span class="visuallyhidden">Carie Fisher on GitHub</span></a>
           </div>
+<div><h1>A11Y Style Guide</h1><div class="social-link-out"><a href="https://twitter.com/cariefisher" target="_blank" class="social-link-twitter"><span class="visuallyhidden">Carie Fisher on Twitter</span></a><a href="https://github.com/cehfisher" target="_blank" class="social-link-github"><span class="visuallyhidden">Carie Fisher on GitHub</span></a></div>
+<p>This application is a living style guide or pattern library, generated from <abbr title="Knyle Style Sheets">KSS</abbr> documented styles...with an accessibility twist. No matter your level of development or accessibility expertise, there are ways to <a href="https://github.com/cehfisher/a11y-style-guide" target="_blank">help contribute<span class="visuallyhidden"> to the a11y style guide</span></a>.</p></div>
 
-                     <div id="kssref-navigation-breadcrumbs" class="kss-section kss-depth-2">
-            <div class="kss-style">
-                            <h2 class="kss-title kss-title--level-2">
-                <a class="kss-title__permalink" href="#kssref-navigation-breadcrumbs">
-                    Breadcrumbs
-                  </a>
-              </h2>
+<div class="break"></div>
+<div><h2>Why did this project start?</h2>
 
-                            <div class="kss-description">
-                <ul>
-<li>Place the breadcrumb in a <code>&lt;nav&gt;</code> element when you can.</li>
-<li>If you do not use a <code>&lt;nav&gt;</code> element, you need to add <code>role=&quot;navigation&quot;</code> to the markup. <strong>Note:</strong> this role is implied when you use the <code>&lt;nav&gt;</code> element so it is a bit redundant to use both at the same time.</li>
-<li>The markup includes an <code>aria-label=&quot;breadcrumbs&quot;</code> to describe the type of navigation.</li>
-<li>Add <code>aria-current=&quot;page&quot;</code> to the link that points to the current page. This will tell assistive technology (AT) devices that the focused link is pointing to the current page.</li>
+<p>We wear a lot of hats as front-end developers. Depending on the client or company you work for, you may be the designer, UX/UI specialist, site-builder, QA tester, and developer all rolled into one. How can we possibly add the accessibility hat on top of all that? What accessible pieces should we even include? Which pieces are easy wins vs. impossible juggernauts? How do we implement inclusive design and development when a project does not have a lot of time or budget to include that piece?</p>
+
+<p>One way we can tackle these issues is by using an accessible component driven approach. By thinking about inclusiveness from the start, we can get a head start on accessibility while still building the required site components.</p>
+
+<p>The A11Y style guide comes with pre-populated accessible components that include helpful links to related tools, articles, and WCAG guidelines to make your site more inclusive. These components also serve as a guide for both HTML markup and SCSS/CSS code, to inform designers, front-end and back-end developers at every stage of the website’s creation.</p></div>
+
+<div class="break"></div>
+<div><h2>How do you use this tool?</h2>
+<ul>
+<li>As a reference.</li>
+<li>As a base for your own style guide.</li>
+<li>As a base for creating your own accessible components.</li>
+<li>As a base for a new accessible theme.</li>
+<li>Contribute to the style guide and make it better.</li>
 </ul>
-<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#breadcrumbs_res">Resources</a></h3><div id="breadcrumbs_res" class="atblock__panel"><ul><li><a href="https://w3c.github.io/aria/" target="_blank">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li><li><a href="http://tink.uk/using-the-aria-current-attribute/" target="_blank">Using the aria-current attribute</a></li></ul></div></section>
-<section data-action="aria-toggle" class="atblock"><h3 class="atblock__title"><a href="#breadcrumbs_guide">WCAG 2.1 Guidelines</a></h3><div id="breadcrumbs_guide" class="atblock__panel guidelines"><p><a href="https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=131#navigation-mechanisms-location" target="_blank">2.4.8 Location</a> - Information about the user's location within a set of Web pages is available. (Level AAA)</p></div><div class="markup"></div></section>
+<p>Really? What can't you do with it is an easier question?</p></div>
 
-              </div>
-                           </div>
-                        <div class="kss-modifier-block">
+<div class="break"></div>
+<div><h2>How can you contribute?</h2>
+<p>Please see the <a href="https://github.com/cehfisher/a11y-style-guide/blob/master/CONTRIBUTING.md" target="_blank">Contributing Guide</a> for more information.</p>
+</div>
 
-              <div class="kss-modifier kss-modifier-original">
-                <div class="kss-modifier-example">
-                  <section class="breadcrumbs-section">
-  <h3>Option #1: List styling with nav element</h3>
-  <nav aria-label="breadcrumbs">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#" aria-current="page">Home</a></li>
-    </ol>
+<div class="break"></div>
+<div><h2>How did you get here?</h2>
+<p>Maybe you are a total beginner and wondering where to start? That's cool...welcome! Learning accessibility can feel a bit like drinking out of a firehose, so here are some tips to follow on your journey toward accessibility: <a href="https://cariefisher.com/a11y-start" target="_blank" aria-label="Getting Started with Website Accessibility article">Getting Started with Website Accessibility</a> or check out the <a href="http://a11y-style-guide.com/style-guide/section-resources.html" target="_blank">Resources</a> page. For more information on my past articles, conference talks, or to see some accessible SVGs in action, check out my personal website <a href="https://cariefisher.com" target="_blank">cariefisher.com</a></p>
 
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item"><a href="#" aria-current="page">Parent</a></li>
-    </ol>
+<div class="break"></div>
+<div><h2>Thanks!</h2>
+<p>Last but not least, this project would not be possible without the people who have contributed to it! Muchas gracias! A special shout-out to the A11y Style Guide co-developer/co-maintainer <a href ="https://github.com/scottaohara/" target="_blank">Scott O'Hara</a> who selflessly writes code, reviews PRs, and is an overall great person who supports his friends and their wacky ideas. He is an inspiration to all who are lucky enough to know him.</p>  
+</div>
 
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item"><a href="#">Parent</a></li>
-      <li class="breadcrumb-item"><a href="#" aria-current="page">Child</a></li>
-    </ol>
-  </nav>
 
-  <div class="break"></div>
-  <h3>Option #2: Link styling with no nav element</h3>
-  <div role="navigation" aria-label="breadcrumbs" class="breadcrumb">
-    <a class="breadcrumb-item" href="#">Home</a>
-    <a class="breadcrumb-item" href="#">Parent</a>
-    <a class="breadcrumb-item" href="#" aria-current="page">Child</a>
-  </div>
-</section>
-
-                </div>
-              </div>
-
-                             <div class="kss-markup">
-                <button type="button" class="js-show-markup">
-                      Show Markup Example
-                    </button>
-                <template>
-                      <pre><code id="post-shortlink" data-language="html">&lt;section class=&quot;breadcrumbs-section&quot;&gt;
-  &lt;h3&gt;Option #1: List styling with nav element&lt;/h3&gt;
-  &lt;nav aria-label=&quot;breadcrumbs&quot;&gt;
-    &lt;ol class=&quot;breadcrumb&quot;&gt;
-      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot; aria-current=&quot;page&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-
-    &lt;ol class=&quot;breadcrumb&quot;&gt;
-      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot; aria-current=&quot;page&quot;&gt;Parent&lt;/a&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-
-    &lt;ol class=&quot;breadcrumb&quot;&gt;
-      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Parent&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot; aria-current=&quot;page&quot;&gt;Child&lt;/a&gt;&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/nav&gt;
-
-  &lt;div class=&quot;break&quot;&gt;&lt;/div&gt;
-  &lt;h3&gt;Option #2: Link styling with no nav element&lt;/h3&gt;
-  &lt;div role=&quot;navigation&quot; aria-label=&quot;breadcrumbs&quot; class=&quot;breadcrumb&quot;&gt;
-    &lt;a class=&quot;breadcrumb-item&quot; href=&quot;#&quot;&gt;Home&lt;/a&gt;
-    &lt;a class=&quot;breadcrumb-item&quot; href=&quot;#&quot;&gt;Parent&lt;/a&gt;
-    &lt;a class=&quot;breadcrumb-item&quot; href=&quot;#&quot; aria-current=&quot;page&quot;&gt;Child&lt;/a&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-</code></pre>
-                      <button type="button" class="copy-button" data-clipboard-target="#post-shortlink" aria-label="copy markup above this button">Copy</button>
-                      <p>&nbsp;<span class="copied" aria-label="successfully copied markup">Copied!</span></p>
-                    </template>
-              </div>
-                          </div>
-                       </div>
                   </div>
               </article>
     </main>
