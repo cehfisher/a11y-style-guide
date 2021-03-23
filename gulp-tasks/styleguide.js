@@ -38,7 +38,7 @@ module.exports = {
       ],
       js: [
       ],
-      homepage: 'homepage.md',
+      homepage: 'style-guide.md',
       title: 'Style Guide'
     });
   }
