@@ -30,6 +30,5 @@
 <p>Maybe you are a total beginner and wondering where to start? That's cool...welcome! Learning accessibility can feel a bit like drinking out of a firehose, so here are some tips to follow on your journey toward accessibility: <a href="https://cariefisher.com/a11y-start" target="_blank" aria-label="Getting Started with Website Accessibility article">Getting Started with Website Accessibility</a> or check out the <a href="http://a11y-style-guide.com/style-guide/section-resources.html" target="_blank">Resources</a> page. For more information on my past articles, conference talks, or to see some accessible SVGs in action, check out my personal website <a href="https://cariefisher.com" target="_blank">cariefisher.com</a></p>
 
 <div class="break"></div>
-<div><h2>Thanks!</h2>
-<p>Last but not least, this project would not be possible without the people who have contributed to it! Muchas gracias! A special shout-out to the A11y Style Guide co-developer/co-maintainer <a href ="https://github.com/scottaohara/" target="_blank">Scott O'Hara</a> who selflessly writes code, reviews PRs, and is an overall great person who supports his friends and their wacky ideas. He is an inspiration to all who are lucky enough to know him.</p>  
+<div><h2>Thanks!</h2> 
 </div>
